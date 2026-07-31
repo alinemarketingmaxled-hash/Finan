@@ -133,9 +133,22 @@
     return wrap;
   }
 
+  function periodLabel(month) {
+    if (month === "acum") {
+      const months = AppState.detailedMonths;
+      const year = months.length ? months[months.length - 1].slice(0, 4) : "";
+      return `Ano ${year} (acumulado)`;
+    }
+    return Fmt.monthLabel(month, "full");
+  }
+
   function monthOptions(withAccum) {
-    const opts = AppState.detailedMonths.map((m) => ({ value: m, label: Fmt.monthLabel(m, "full") }));
-    if (withAccum !== false) opts.push({ value: "acum", label: `Acumulado (${Fmt.monthLabel(AppState.detailedMonths[0])}–${Fmt.monthLabel(AppState.detailedMonths[AppState.detailedMonths.length - 1])})` });
+    const opts = AppState.aggregateYears.map((y) => ({ value: y, label: `Ano ${y}` }));
+    AppState.detailedMonths.forEach((m) => opts.push({ value: m, label: Fmt.monthLabel(m, "full") }));
+    if (withAccum !== false && AppState.detailedMonths.length) {
+      const year = AppState.detailedMonths[AppState.detailedMonths.length - 1].slice(0, 4);
+      opts.push({ value: "acum", label: `Ano ${year} (acumulado)` });
+    }
     return opts;
   }
 
@@ -273,6 +286,6 @@
     chartCardWithTable,
     h, clear, badgeDivision, badge, card, sectionTitle, emptyState, deltaEl, statTile,
     insightCard, table, monthOptions, select, segmented, filterBar, toast, modal,
-    confirmDialog, field, closeAllModals, divisionLabel: (d) => DIVISION_LABEL()[d] || d,
+    confirmDialog, field, closeAllModals, periodLabel, divisionLabel: (d) => DIVISION_LABEL()[d] || d,
   };
 })(window);

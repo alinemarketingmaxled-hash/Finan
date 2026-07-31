@@ -1,12 +1,16 @@
 (function () {
   function kpiDelta(division, month, metricFn) {
-    if (month === "acum") return null;
+    if (month === "acum" || /^\d{4}$/.test(month)) return null;
     const prev = Compute.previousMonth(month);
     if (!AppState.detailedMonths.includes(prev)) return null;
     const cur = metricFn(month);
     const prevVal = metricFn(prev);
     if (!prevVal) return null;
     return (cur - prevVal) / Math.abs(prevVal);
+  }
+  function periodFoot(month) {
+    if (/^\d{4}$/.test(month)) return `Ano ${month} · totais mensais da planilha`;
+    return UI.periodLabel(month);
   }
 
   function render(container) {
@@ -24,7 +28,7 @@
         label: "Receita bruta", value: Fmt.money(dre.receita_bruta),
         delta: kpiDelta(st.division, st.month, (m) => Compute.dreForPeriod(st.division, m, "financeiro").receita_bruta),
         sparkValues: sparkSlice("entradas"),
-        foot: st.month === "acum" ? `Acumulado · ${AppState.detailedMonths.length} meses` : Fmt.monthLabel(st.month, "full"),
+        foot: periodFoot(st.month),
       }),
       UI.statTile({
         label: "Custos e despesas totais", value: Fmt.money(totalSaidas),

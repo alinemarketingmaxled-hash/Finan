@@ -5,6 +5,7 @@
 
   function monthLabel(monthKey, style) {
     if (!monthKey || typeof monthKey !== "string") return monthKey;
+    if (/^\d{4}$/.test(monthKey)) return `Ano ${monthKey}`;
     const [y, m] = monthKey.split("-").map(Number);
     if (!m) return monthKey;
     const name = style === "full" ? MONTH_FULL[m - 1] : MONTH_ABBR[m - 1];

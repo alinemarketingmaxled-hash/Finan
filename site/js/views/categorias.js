@@ -6,7 +6,10 @@
     const totalDespesas = cats.reduce((s, c) => s + c.valor, 0);
 
     if (!cats.length) {
-      container.appendChild(UI.card([UI.emptyState({ icon: "tag", title: "Sem despesas categorizadas nesse período" })]));
+      const body = /^\d{4}$/.test(st.month)
+        ? `A planilha só registra totais mensais para ${st.month} — sem categoria por lançamento. Escolha um mês de 2026 ou "Acumulado" para ver o detalhamento.`
+        : "Sem despesas categorizadas nesse período.";
+      container.appendChild(UI.card([UI.emptyState({ icon: "tag", title: "Sem detalhamento por categoria", body })]));
       return;
     }
 

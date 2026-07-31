@@ -15,9 +15,9 @@
     const dre = Compute.dreForPeriod(division, st.month, "financeiro");
     const cf = Compute.cashflowSeries(division);
     const forecastIdx = cf.findIndex((r) => r.tipo === "previsao");
-    const cats = Compute.expenseCategoriesAgg(division).slice(0, 5);
-    const topSup = Compute.topCounterparties(division, "saida", "financeiro", 1)[0];
-    const topCli = Compute.topCounterparties(division, "entrada", "financeiro", 1)[0];
+    const cats = Compute.expenseCategoriesAgg(division, st.month).slice(0, 5);
+    const topSup = Compute.topCounterparties(division, "saida", "financeiro", 1, st.month)[0];
+    const topCli = Compute.topCounterparties(division, "entrada", "financeiro", 1, st.month)[0];
 
     const card = UI.h("div", { class: "card" }, [
       UI.h("div", { style: "display:flex;align-items:center;justify-content:space-between;margin-bottom:4px;" }, [
@@ -42,10 +42,14 @@
     card.appendChild(UI.h("div", { class: "section-title", style: "font-size:12.5px;margin:18px 0 8px;" }, ["Maiores categorias de despesa"]));
     const rankWrap = UI.h("div", {});
     card.appendChild(rankWrap);
-    Charts.barListRanked(rankWrap, {
-      items: cats.map((c) => ({ label: Fmt.titleCase(c.categoria), value: c.valor, color: Categories.groupColor(c.grupo) })),
-      formatValue: (v) => Fmt.money(v, { compact: true }),
-    });
+    if (cats.length) {
+      Charts.barListRanked(rankWrap, {
+        items: cats.map((c) => ({ label: Fmt.titleCase(c.categoria), value: c.valor, color: Categories.groupColor(c.grupo) })),
+        formatValue: (v) => Fmt.money(v, { compact: true }),
+      });
+    } else {
+      rankWrap.appendChild(UI.h("div", { style: "font-size:12px;color:var(--text-muted);" }, ["Sem detalhamento por categoria disponível para esse período."]));
+    }
 
     const foot = UI.h("div", { style: "display:flex;justify-content:space-between;margin-top:16px;font-size:11.5px;color:var(--text-muted);border-top:1px solid var(--border);padding-top:12px;" }, [
       UI.h("span", {}, [topCli ? `Maior cliente: ${Fmt.titleCase(topCli.nome)}` : "Sem clientes no período"]),

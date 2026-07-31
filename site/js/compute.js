@@ -113,10 +113,38 @@
   }
 
   // ---------------------------------------------------------------------
+  // DRE por ano-calendário sem detalhe de transação (hoje: 2025) — só dá pra
+  // somar entradas/saídas mensais já agregadas na planilha; sem categoria,
+  // impostos ou custo de mercadorias separados (a fonte não distingue isso).
+  // ---------------------------------------------------------------------
+  function dreForYear(division, year, basis) {
+    if (basis !== "financeiro") {
+      return {
+        division, month: year, basis, receita_bruta: 0, impostos: null, receita_liquida: null,
+        custo_mercadorias: null, lucro_bruto: null, despesas: [], despesas_total: 0,
+        resultado_operacional: 0, margem_bruta: null, margem_liquida: null,
+        limited: true, noData: true,
+      };
+    }
+    const rows = MAXLED_DATA.cashflow.filter((r) => r.division === division && r.tipo === "realizado" && r.month.startsWith(year));
+    const receita_bruta = round2(rows.reduce((s, r) => s + r.entradas, 0));
+    const saidas_total = round2(rows.reduce((s, r) => s + r.saidas, 0));
+    const resultado_operacional = round2(receita_bruta - saidas_total);
+    return {
+      division, month: year, basis, receita_bruta, impostos: null, receita_liquida: null,
+      custo_mercadorias: null, lucro_bruto: null, despesas: [], despesas_total: saidas_total,
+      resultado_operacional, margem_bruta: null,
+      margem_liquida: receita_bruta ? resultado_operacional / receita_bruta : 0,
+      limited: true,
+    };
+  }
+
+  // ---------------------------------------------------------------------
   // DRE (financeiro completo / nfe simplificado — sem categoria, ver README)
   // ---------------------------------------------------------------------
   function dreForPeriod(division, month, basis) {
     basis = basis || "financeiro";
+    if (/^\d{4}$/.test(month)) return dreForYear(division, month, basis);
     const monthOpt = month === "acum" ? {} : { month };
     const flowIn = basis === "financeiro" ? "entrada" : "venda";
     const flowOut = basis === "financeiro" ? "saida" : "compra";

@@ -3,7 +3,7 @@
     const st = AppState.get();
     UI.filterBar(container, { showMonth: true, showBasis: true });
     const dre = Compute.dreForPeriod(st.division, st.month, st.basis);
-    const periodLabel = st.month === "acum" ? `Acumulado (${Fmt.monthLabel(AppState.detailedMonths[0])}–${Fmt.monthLabel(AppState.detailedMonths[AppState.detailedMonths.length - 1])})` : Fmt.monthLabel(st.month, "full");
+    const periodLabel = UI.periodLabel(st.month);
 
     container.appendChild(UI.h("div", { class: "grid grid-4" }, [
       UI.statTile({ label: "Receita bruta", value: Fmt.money(dre.receita_bruta), foot: periodLabel }),
@@ -12,7 +12,10 @@
       UI.statTile({ label: "Margem líquida", value: Fmt.pct(dre.margem_liquida), foot: "Resultado / receita bruta" }),
     ]));
 
-    if (st.basis === "nfe") {
+    if (dre.limited) {
+      container.appendChild(limitedDataNotice(dre));
+    }
+    if (st.basis === "nfe" && !dre.limited) {
       container.appendChild(nfeReconciliation(st));
     }
 
@@ -70,6 +73,19 @@
       strong: true, border: true, color: dre.resultado_operacional >= 0 ? "var(--good-text)" : "var(--critical-text)",
     }));
     return card;
+  }
+
+  function limitedDataNotice(dre) {
+    const body = dre.noData
+      ? "A planilha não tem lançamentos de Nota Fiscal para esse ano — só o controle Financeiro (caixa) tem histórico anterior a 2026."
+      : "Para esse período a planilha só registra totais mensais de entradas e saídas — sem detalhar categoria, fornecedor, impostos ou custo de mercadorias. Por isso o demonstrativo abaixo mostra só receita, saídas totais e resultado.";
+    return UI.h("div", { class: "insight warning", style: "margin-bottom:20px;" }, [
+      UI.h("div", { class: "insight-icon" }, [Icon("info", { size: 17 })]),
+      UI.h("div", {}, [
+        UI.h("div", { class: "insight-title" }, ["Dados limitados para esse período"]),
+        UI.h("div", { class: "insight-body" }, [body]),
+      ]),
+    ]);
   }
 
   function nfeReconciliation(st) {
