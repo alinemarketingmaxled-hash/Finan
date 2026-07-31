@@ -103,7 +103,7 @@
   }
 
   function actionsCell(r, onDone) {
-    const wrap = UI.h("div", { style: "display:flex;gap:2px;justify-content:flex-end;" }, [
+    const wrap = UI.h("div", { style: "display:flex;gap:5px;justify-content:flex-end;" }, [
       editBtn(r, onDone), cancelToggleBtn(r, onDone),
     ]);
     if (r.manual) wrap.appendChild(removeBtn(r, onDone));

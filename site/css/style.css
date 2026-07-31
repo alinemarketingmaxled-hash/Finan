@@ -435,6 +435,11 @@ table.data-table { width: 100%; font-size: 13px; }
   .content { padding: 18px 16px 50px; }
   .topbar { padding: 0 14px; }
   .app-shell.nav-open .nav-scrim { display: block; }
+
+  /* Campos com >=16px evitam o zoom automático do Safari iOS ao focar. */
+  select, .input { font-size: 16px; padding: 9px 10px; }
+  .search-box input { width: 100%; }
+  .field-row { grid-template-columns: 1fr; }
 }
 
 /* Print */

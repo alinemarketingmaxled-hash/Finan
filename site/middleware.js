@@ -58,7 +58,7 @@ export default async function middleware(request) {
     try {
       const bodyText = await request.text();
       const form = new URLSearchParams(bodyText);
-      const user = form.get("user") || "";
+      const user = (form.get("user") || "").trim();
       const pass = form.get("pass") || "";
       if (timingSafeEqual(user, expectedUser) && timingSafeEqual(pass, expectedPassword)) {
         const res = new Response(null, { status: 303, headers: { Location: "/" } });
