@@ -33,7 +33,14 @@
     "INSUMOS": "Outras",
     "SERVIÇOS": "Outras",
     "OUTRAS DESPESAS": "Outras",
+    "EMPRÉSTIMO": "Dívida/Empréstimos",
+    "SEGURO SAÚDE": "Pessoal",
   };
+
+  // Categorias de cliente: não vêm da planilha (não existe essa coluna na base) —
+  // são definidas manualmente pelo usuário por contraparte (ver Storage.setClienteCategoria).
+  // Lista inicial só de sugestão; o campo aceita texto livre.
+  const CLIENT_CATEGORIES = ["ATACADO", "VAREJO", "DISTRIBUIDOR", "GOVERNO", "EXPORTAÇÃO", "INDÚSTRIA", "REVENDA", "OUTROS"];
 
   const GROUP_COLOR_VAR = {
     "Custo de Mercadorias": "--series-1",
@@ -59,6 +66,7 @@
   global.Categories = {
     GROUPS, GROUP_ORDER,
     list: Object.keys(GROUPS).sort(),
+    clientList: CLIENT_CATEGORIES,
     groupOf, colorOf, groupColor,
   };
 })(window);

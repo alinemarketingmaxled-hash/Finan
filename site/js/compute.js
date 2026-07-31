@@ -10,12 +10,21 @@
       id: m.id, date: m.date, division: m.division, basis: m.basis || "financeiro",
       flow: m.flow, category: m.category || null, counterparty: m.counterparty || null,
       value: Number(m.value) || 0, manual: true, origin: m.origin || null, note: m.note || "",
+      nota_fiscal: m.nota_fiscal || null, cancelled: !!m.cancelled,
     };
   }
 
+  // Lançamentos da base Excel/importados podem ter sido editados ou cancelados
+  // pelo usuário depois — isso fica guardado à parte (Storage.overrides, por id)
+  // em vez de reescrever a base, pra sempre dar pra reverter.
   function allTransactions() {
     const manual = Storage.listLancamentos().map(manualAsTx);
-    return manual.length ? MAXLED_DATA.transactions.concat(manual) : MAXLED_DATA.transactions;
+    const overrides = Storage.getOverrides();
+    const hasOverrides = Object.keys(overrides).length > 0;
+    const base = hasOverrides
+      ? MAXLED_DATA.transactions.map((t) => (overrides[t.id] ? Object.assign({}, t, overrides[t.id]) : t))
+      : MAXLED_DATA.transactions;
+    return manual.length ? base.concat(manual) : base;
   }
 
   function detailedMonths() {
@@ -25,6 +34,7 @@
   function filterTx(opts) {
     opts = opts || {};
     return allTransactions().filter((t) => {
+      if (!opts.includeCancelled && t.cancelled) return false;
       if (opts.division && opts.division !== "consolidado" && t.division !== opts.division) return false;
       if (opts.basis && t.basis !== opts.basis) return false;
       if (opts.flow && t.flow !== opts.flow) return false;
@@ -34,11 +44,19 @@
       if (opts.category && t.category !== opts.category) return false;
       if (opts.search) {
         const s = opts.search.toLowerCase();
-        const hay = `${t.counterparty || ""} ${t.category || ""}`.toLowerCase();
+        const hay = `${t.counterparty || ""} ${t.category || ""} ${t.nota_fiscal || ""}`.toLowerCase();
         if (!hay.includes(s)) return false;
       }
       return true;
     });
+  }
+
+  // Categoria de cliente: não é um campo por lançamento, é um rótulo por
+  // contraparte (definido manualmente pelo usuário) — vale pra tudo que já
+  // veio e pra tudo que vier depois daquele mesmo cliente.
+  function clienteCategoria(nome) {
+    if (!nome) return null;
+    return Storage.getClienteCategorias()[nome] || null;
   }
 
   function previousMonth(monthKey) {
@@ -219,6 +237,7 @@
   function topCounterparties(division, flow, basis, n, month) {
     basis = basis || "financeiro";
     const monthOpt = month && month !== "acum" ? { month } : {};
+    const isClientSide = flow === "entrada" || flow === "venda";
     const map = new Map();
     filterTx(Object.assign({ division, basis, flow }, monthOpt)).forEach((t) => {
       if (!t.counterparty) return;
@@ -228,7 +247,7 @@
       rec.valor += t.value; rec.n += 1;
     });
     return Array.from(map.entries())
-      .map(([nome, v]) => ({ nome, valor: round2(v.valor), n_transacoes: v.n }))
+      .map(([nome, v]) => ({ nome, valor: round2(v.valor), n_transacoes: v.n, categoria: isClientSide ? clienteCategoria(nome) : null }))
       .sort((a, b) => b.valor - a.valor)
       .slice(0, n || 12);
   }
@@ -430,7 +449,7 @@
 
   global.Compute = {
     DIVISIONS, round2,
-    allTransactions, detailedMonths, filterTx, previousMonth,
+    allTransactions, detailedMonths, filterTx, previousMonth, clienteCategoria,
     cashflowSeries, dreForPeriod, expenseCategoriesAgg, topCounterparties,
     loans, loansTotals, receivablesPayables, healthScore, insights, budgetStatus,
   };

@@ -117,7 +117,7 @@
       tr.appendChild(td); tbody.appendChild(tr);
     } else {
       opts.rows.forEach((row) => {
-        const tr = h("tr");
+        const tr = h("tr", opts.rowAttrs ? opts.rowAttrs(row) : null);
         opts.columns.forEach((c) => {
           const td = h("td", { class: (c.align === "right" ? "num" : "") + (c.wrap ? " wrap" : "") });
           const val = c.render ? c.render(row) : row[c.key];

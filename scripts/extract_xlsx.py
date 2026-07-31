@@ -102,6 +102,8 @@ GROUPS = {
     "INSUMOS": "Outras",
     "SERVIÇOS": "Outras",
     "OUTRAS DESPESAS": "Outras",
+    "EMPRÉSTIMO": "Dívida/Empréstimos",
+    "SEGURO SAÚDE": "Pessoal",
 }
 
 DIVISIONS = ["iluminacao", "importacao"]
@@ -117,7 +119,16 @@ DIVISION_LABELS = {
 tx = []  # list of dicts: date, division, basis, flow, category, counterparty, value
 
 
-def read_rows(sheet, division, basis, flow, date_col, cat_col, cp_col, val_col):
+def fmt_nota(v):
+    """Normaliza o número/referência da nota fiscal (célula pode ser int, float ou string)."""
+    if v is None or v == "":
+        return None
+    if isinstance(v, float) and v.is_integer():
+        return str(int(v))
+    return str(v).strip() or None
+
+
+def read_rows(sheet, division, basis, flow, date_col, cat_col, cp_col, val_col, nota_col=None):
     ws = wb[sheet]
     for row in ws.iter_rows(min_row=2):
         d = row[date_col].value
@@ -126,27 +137,30 @@ def read_rows(sheet, division, basis, flow, date_col, cat_col, cp_col, val_col):
             continue
         cat = norm_cat(row[cat_col].value) if cat_col is not None else None
         cp = row[cp_col].value if cp_col is not None else None
+        nota = fmt_nota(row[nota_col].value) if nota_col is not None else None
         tx.append(
             dict(
                 date=d, division=division, basis=basis, flow=flow,
                 category=cat, counterparty=(str(cp).strip() if cp else None),
-                value=float(v),
+                value=float(v), nota_fiscal=nota,
             )
         )
 
 
-# Iluminação - financeiro (cash)
-read_rows("ENTRADAS - FIN - ilumi", "iluminacao", "financeiro", "entrada", 0, None, 1, 3)
+# Iluminação - financeiro (cash). "Nota" é a referência da nota fiscal (col. 2).
+read_rows("ENTRADAS - FIN - ilumi", "iluminacao", "financeiro", "entrada", 0, None, 1, 3, nota_col=2)
 read_rows("SAIDAS-FIN-ilumi", "iluminacao", "financeiro", "saida", 0, 2, 1, 3)
-# Iluminação - NFe (invoice)
-read_rows("ENTRADA NFE ILUMI", "iluminacao", "nfe", "compra", 0, None, 1, 3)
-read_rows("SAÍDA NFE ILUMI", "iluminacao", "nfe", "venda", 0, None, 2, 3)
-# Importação - financeiro (cash)
-read_rows("Entradas- fin- import", "importacao", "financeiro", "entrada", 0, None, 1, 3)
+# Iluminação - NFe (invoice). Nessa aba os cabeçalhos "Cliente"/"Nota" estão trocados
+# em relação ao conteúdo real: col. 1 é o número da nota, col. 2 é o nome do cliente.
+read_rows("ENTRADA NFE ILUMI", "iluminacao", "nfe", "compra", 0, None, 2, 3, nota_col=1)
+read_rows("SAÍDA NFE ILUMI", "iluminacao", "nfe", "venda", 0, None, 2, 3, nota_col=1)
+# Importação - financeiro (cash). "Justificativa" nas entradas é na prática a
+# referência da nota/pedido (numérica na maioria das linhas).
+read_rows("Entradas- fin- import", "importacao", "financeiro", "entrada", 0, None, 1, 3, nota_col=2)
 read_rows("Saidas-fin-import", "importacao", "financeiro", "saida", 0, 2, 1, 3)
 # Importação - NFe (invoice)
-read_rows("Entradas-NFE-Import", "importacao", "nfe", "compra", 0, None, 2, 3)
-read_rows("Saídas-NFE-import", "importacao", "nfe", "venda", 0, None, 2, 3)
+read_rows("Entradas-NFE-Import", "importacao", "nfe", "compra", 0, None, 2, 3, nota_col=1)
+read_rows("Saídas-NFE-import", "importacao", "nfe", "venda", 0, None, 2, 3, nota_col=1)
 
 print(f"Total transactions parsed: {len(tx)}")
 detailed_months = sorted({mkey(t["date"]) for t in tx})
@@ -160,6 +174,7 @@ tx_export = [
         id=f"tx{i:05d}", date=t["date"].date().isoformat(), division=t["division"],
         basis=t["basis"], flow=t["flow"], category=t["category"],
         counterparty=t["counterparty"], value=round(t["value"], 2),
+        nota_fiscal=t.get("nota_fiscal"),
     )
     for i, t in enumerate(tx_sorted)
 ]

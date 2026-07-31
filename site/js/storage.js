@@ -8,6 +8,8 @@
     metas: NS + "metas",
     orcamento: NS + "orcamento",
     config: NS + "config",
+    overrides: NS + "overrides",
+    clienteCategorias: NS + "clienteCategorias",
   };
 
   function read(key, fallback) {
@@ -49,6 +51,10 @@
       const list = this.listLancamentos().filter((r) => r.id !== id);
       write(KEYS.lancamentos, list);
     },
+    updateLancamento(id, patch) {
+      const list = this.listLancamentos().map((r) => (r.id === id ? Object.assign({}, r, patch) : r));
+      write(KEYS.lancamentos, list);
+    },
     addLancamentosBulk(entries, origin) {
       const list = this.listLancamentos();
       const now = new Date().toISOString();
@@ -59,6 +65,28 @@
     removeByOrigin(origin) {
       const list = this.listLancamentos().filter((r) => r.origin !== origin);
       write(KEYS.lancamentos, list);
+    },
+
+    // ---- overrides (edição/cancelamento de lançamentos da base Excel ou importados) ----
+    getOverrides() { return read(KEYS.overrides, {}); },
+    setOverride(id, patch) {
+      const map = this.getOverrides();
+      map[id] = Object.assign({}, map[id], patch);
+      write(KEYS.overrides, map);
+    },
+    clearOverride(id) {
+      const map = this.getOverrides();
+      delete map[id];
+      write(KEYS.overrides, map);
+    },
+
+    // ---- categoria de cliente (por contraparte — vale pra todos os lançamentos dela) ----
+    getClienteCategorias() { return read(KEYS.clienteCategorias, {}); },
+    setClienteCategoria(nome, categoria) {
+      if (!nome) return;
+      const map = this.getClienteCategorias();
+      if (categoria) map[nome] = categoria; else delete map[nome];
+      write(KEYS.clienteCategorias, map);
     },
 
     // ---- metas ----
@@ -110,6 +138,8 @@
         metas: this.listMetas(),
         orcamento: this.listOrcamento(),
         config: this.getConfig(),
+        overrides: this.getOverrides(),
+        clienteCategorias: this.getClienteCategorias(),
       };
     },
     importAll(payload) {
@@ -118,6 +148,8 @@
       if (Array.isArray(payload.metas)) write(KEYS.metas, payload.metas);
       if (Array.isArray(payload.orcamento)) write(KEYS.orcamento, payload.orcamento);
       if (payload.config) write(KEYS.config, payload.config);
+      if (payload.overrides) write(KEYS.overrides, payload.overrides);
+      if (payload.clienteCategorias) write(KEYS.clienteCategorias, payload.clienteCategorias);
     },
     resetAll() {
       Object.values(KEYS).forEach((k) => localStorage.removeItem(k));

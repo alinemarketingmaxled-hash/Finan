@@ -69,7 +69,10 @@
     card.appendChild(wrap);
     const color = flow === "saida" ? Charts.cssVar("--series-2") : Charts.cssVar("--series-1");
     Charts.barListRanked(wrap, {
-      items: list.map((c) => ({ label: Fmt.titleCase(c.nome), value: c.valor, color, sub: `${c.n_transacoes} transação(ões)` })),
+      items: list.map((c) => ({
+        label: Fmt.titleCase(c.nome), value: c.valor, color,
+        sub: c.categoria ? `${c.n_transacoes} transação(ões) · ${Fmt.titleCase(c.categoria)}` : `${c.n_transacoes} transação(ões)`,
+      })),
       formatValue: (v) => Fmt.money(v, { compact: true }),
     });
     return card;

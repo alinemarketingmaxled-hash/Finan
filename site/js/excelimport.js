@@ -3,16 +3,18 @@
 // com o mesmo mapeamento de colunas, para que dados novos (meses seguintes)
 // possam ser adicionados sem precisar gerar um novo data.js.
 (function (global) {
-  // sheet: [division, basis, flow, dateCol, catCol, cpCol, valCol] (índices 0-based, iguais ao ETL em Python)
+  // sheet: [division, basis, flow, dateCol, catCol, cpCol, valCol, notaCol] (índices 0-based, iguais ao ETL em Python)
+  // ENTRADA NFE ILUMI: os cabeçalhos "Cliente"/"Nota" estão trocados em relação ao
+  // conteúdo real da planilha — col. 1 é o número da nota, col. 2 é o nome do cliente.
   const SHEETS = [
-    ["ENTRADAS - FIN - ilumi", "iluminacao", "financeiro", "entrada", 0, null, 1, 3],
-    ["SAIDAS-FIN-ilumi", "iluminacao", "financeiro", "saida", 0, 2, 1, 3],
-    ["ENTRADA NFE ILUMI", "iluminacao", "nfe", "compra", 0, null, 1, 3],
-    ["SAÍDA NFE ILUMI", "iluminacao", "nfe", "venda", 0, null, 2, 3],
-    ["Entradas- fin- import", "importacao", "financeiro", "entrada", 0, null, 1, 3],
-    ["Saidas-fin-import", "importacao", "financeiro", "saida", 0, 2, 1, 3],
-    ["Entradas-NFE-Import", "importacao", "nfe", "compra", 0, null, 2, 3],
-    ["Saídas-NFE-import", "importacao", "nfe", "venda", 0, null, 2, 3],
+    ["ENTRADAS - FIN - ilumi", "iluminacao", "financeiro", "entrada", 0, null, 1, 3, 2],
+    ["SAIDAS-FIN-ilumi", "iluminacao", "financeiro", "saida", 0, 2, 1, 3, null],
+    ["ENTRADA NFE ILUMI", "iluminacao", "nfe", "compra", 0, null, 2, 3, 1],
+    ["SAÍDA NFE ILUMI", "iluminacao", "nfe", "venda", 0, null, 2, 3, 1],
+    ["Entradas- fin- import", "importacao", "financeiro", "entrada", 0, null, 1, 3, 2],
+    ["Saidas-fin-import", "importacao", "financeiro", "saida", 0, 2, 1, 3, null],
+    ["Entradas-NFE-Import", "importacao", "nfe", "compra", 0, null, 2, 3, 1],
+    ["Saídas-NFE-import", "importacao", "nfe", "venda", 0, null, 2, 3, 1],
   ];
   const ALIASES = {
     "EMPRÉSTIMOS FGI": "EMPRÉSTIMO FGI",
@@ -33,6 +35,11 @@
     return `${y}-${m}-${day}`;
   }
 
+  function fmtNota(v) {
+    if (v === null || v === undefined || v === "") return null;
+    return String(v).trim() || null;
+  }
+
   function fingerprint(t) {
     return [t.date, t.division, t.basis, t.flow, t.category || "", (t.counterparty || "").trim().toUpperCase(), t.value.toFixed(2)].join("|");
   }
@@ -43,7 +50,7 @@
     const missingSheets = [];
     const rows = [];
 
-    SHEETS.forEach(([sheetName, division, basis, flow, dateCol, catCol, cpCol, valCol]) => {
+    SHEETS.forEach(([sheetName, division, basis, flow, dateCol, catCol, cpCol, valCol, notaCol]) => {
       const ws = wb.Sheets[sheetName];
       if (!ws) { missingSheets.push(sheetName); return; }
       found.push(sheetName);
@@ -60,6 +67,7 @@
           category: catCol !== null ? normCat(row[catCol]) : null,
           counterparty: cpCol !== null && row[cpCol] !== null && row[cpCol] !== undefined ? String(row[cpCol]).trim() : null,
           value: Math.round(valueVal * 100) / 100,
+          nota_fiscal: notaCol !== null && notaCol !== undefined ? fmtNota(row[notaCol]) : null,
         });
       }
     });

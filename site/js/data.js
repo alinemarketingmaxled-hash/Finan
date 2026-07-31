@@ -1,7 +1,7 @@
 // AUTO-GERADO por scripts/extract_xlsx.py -- não editar à mão.
 const MAXLED_DATA = {
   "meta": {
-    "generated_at": "2026-07-31T18:43:59.292409Z",
+    "generated_at": "2026-07-31T22:51:26.017453Z",
     "company": "Max Led",
     "divisions": [
       "iluminacao",
@@ -35,7 +35,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "RUSSER BRASIL",
-      "value": 175.0
+      "value": 175.0,
+      "nota_fiscal": "11853"
     },
     {
       "id": "tx00001",
@@ -45,7 +46,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO - 0000660",
-      "value": 594.35
+      "value": 594.35,
+      "nota_fiscal": "11850/01"
     },
     {
       "id": "tx00002",
@@ -55,7 +57,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO - 0000660",
-      "value": 1255.08
+      "value": 1255.08,
+      "nota_fiscal": "11762/04"
     },
     {
       "id": "tx00003",
@@ -65,7 +68,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ALLPRINT LATINA AUTOMACAO DE MAQUINAS EA - 0000291",
-      "value": 1875.0
+      "value": 1875.0,
+      "nota_fiscal": "11861/01"
     },
     {
       "id": "tx00004",
@@ -75,7 +79,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SSAT SINALIZACAO E ADESIVOS EIRELI EPP - 0000072",
-      "value": 1016.84
+      "value": 1016.84,
+      "nota_fiscal": "11836/01"
     },
     {
       "id": "tx00005",
@@ -85,7 +90,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "NEW TRAFFIC CONTROL TEC. E INOVACAO LTDA - 0000773",
-      "value": 1331.67
+      "value": 1331.67,
+      "nota_fiscal": "11825/02"
     },
     {
       "id": "tx00006",
@@ -95,7 +101,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO - 0000660",
-      "value": 2142.07
+      "value": 2142.07,
+      "nota_fiscal": "11808/02"
     },
     {
       "id": "tx00007",
@@ -105,7 +112,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CARINE G RODRIGUES - 0000764",
-      "value": 2180.96
+      "value": 2180.96,
+      "nota_fiscal": "11846/01"
     },
     {
       "id": "tx00008",
@@ -115,7 +123,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CITTA ELETRONICA IND. E COM. LTDA ME - 0000532",
-      "value": 843.67
+      "value": 843.67,
+      "nota_fiscal": "11810/02"
     },
     {
       "id": "tx00009",
@@ -125,7 +134,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "NEW TRAFFIC CONTROL TEC. E INOVACAO LTDA - 0000773",
-      "value": 797.0
+      "value": 797.0,
+      "nota_fiscal": "11855/01"
     },
     {
       "id": "tx00010",
@@ -135,7 +145,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "POWERFLEET",
-      "value": 3850.0
+      "value": 3850.0,
+      "nota_fiscal": "11834"
     },
     {
       "id": "tx00011",
@@ -145,7 +156,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "CIKA ELETRONICA",
-      "value": 955.53
+      "value": 955.53,
+      "nota_fiscal": null
     },
     {
       "id": "tx00012",
@@ -155,7 +167,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ALLSEMI TECNOLOGIA E EIRELI",
-      "value": 905.25
+      "value": 905.25,
+      "nota_fiscal": null
     },
     {
       "id": "tx00013",
@@ -165,7 +178,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ZENNER",
-      "value": 350.0
+      "value": 350.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00014",
@@ -175,7 +189,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 15.3
+      "value": 15.3,
+      "nota_fiscal": null
     },
     {
       "id": "tx00015",
@@ -185,7 +200,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "JOSÉ PINHEIRO MERCUR",
-      "value": 850.0
+      "value": 850.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00016",
@@ -195,7 +211,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "LECOMP COMERCIAL DE COMPONENTE",
-      "value": 528.8
+      "value": 528.8,
+      "nota_fiscal": null
     },
     {
       "id": "tx00017",
@@ -205,7 +222,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRICOMP COMERCIAL E LTDA",
-      "value": 418.56
+      "value": 418.56,
+      "nota_fiscal": null
     },
     {
       "id": "tx00018",
@@ -215,7 +233,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ALLNETSYS COMERCIO I S LTDA",
-      "value": 401.4
+      "value": 401.4,
+      "nota_fiscal": null
     },
     {
       "id": "tx00019",
@@ -225,7 +244,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL COMERCIO ATACADISTA DE C",
-      "value": 570.0
+      "value": 570.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00020",
@@ -235,7 +255,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MEGAPIX",
-      "value": 610.0
+      "value": 610.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00021",
@@ -245,7 +266,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DLT SUPRIMENTOS",
-      "value": 391.0
+      "value": 391.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00022",
@@ -255,7 +277,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "SEGURO DE EMPRÉSTIMO",
       "counterparty": "SEGURO DE EMPRÉSTIMO",
-      "value": 109.79
+      "value": 109.79,
+      "nota_fiscal": null
     },
     {
       "id": "tx00023",
@@ -265,7 +288,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "EMPRÉSTIMO FGI",
       "counterparty": "CAPITAL DE GIRO",
-      "value": 2920.88
+      "value": 2920.88,
+      "nota_fiscal": null
     },
     {
       "id": "tx00024",
@@ -275,7 +299,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "TRANSPORTES IMPORTAÇÃO",
       "counterparty": "FEDEX",
-      "value": 2011.61
+      "value": 2011.61,
+      "nota_fiscal": null
     },
     {
       "id": "tx00025",
@@ -285,7 +310,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 1.7
+      "value": 1.7,
+      "nota_fiscal": null
     },
     {
       "id": "tx00026",
@@ -295,7 +321,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "DENTSCLER IND. DE APAR. ODONTO. EIRELLI - 0000390",
-      "value": 373.25
+      "value": 373.25,
+      "nota_fiscal": "11827/02"
     },
     {
       "id": "tx00027",
@@ -305,7 +332,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "S.T.E.E. TECNOLOGIA ELETROELETRONICA LT - 0000062",
-      "value": 853.9
+      "value": 853.9,
+      "nota_fiscal": "11862/01"
     },
     {
       "id": "tx00028",
@@ -315,7 +343,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SPECTO PAINEIS ELETRONICO LTDA - 0000071",
-      "value": 769.25
+      "value": 769.25,
+      "nota_fiscal": "11718/02"
     },
     {
       "id": "tx00029",
@@ -325,7 +354,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
-      "value": 550.46
+      "value": 550.46,
+      "nota_fiscal": "11815/02"
     },
     {
       "id": "tx00030",
@@ -335,7 +365,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "MEGAPIX COMPONENTES ELETRONICOS EIRELLI - 0000325",
-      "value": 780.0
+      "value": 780.0,
+      "nota_fiscal": "11852/01"
     },
     {
       "id": "tx00031",
@@ -345,7 +376,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "PRODUTOS ELETRONICOS FRATA LTDA - 0000223",
-      "value": 1540.0
+      "value": 1540.0,
+      "nota_fiscal": "11849/01"
     },
     {
       "id": "tx00032",
@@ -355,7 +387,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "NIATRON IND. E COM. DE EQUIP. ELETRO. - 0000143",
-      "value": 680.48
+      "value": 680.48,
+      "nota_fiscal": "11844/01"
     },
     {
       "id": "tx00033",
@@ -365,7 +398,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "L S R COMERCIO DE TECNOLOGIA LTDA - 0000565",
-      "value": 396.26
+      "value": 396.26,
+      "nota_fiscal": "11860/01"
     },
     {
       "id": "tx00034",
@@ -375,7 +409,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CRISTOFOLI EQUIP. DE BIOSSEGURANCA LTDA - 0000146",
-      "value": 325.0
+      "value": 325.0,
+      "nota_fiscal": "11865/01"
     },
     {
       "id": "tx00035",
@@ -385,7 +420,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CONDUVOX TELEMATICA LTDA - 0000031",
-      "value": 557.1
+      "value": 557.1,
+      "nota_fiscal": "11828/02"
     },
     {
       "id": "tx00036",
@@ -395,7 +431,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "J. ROSSAN ELETRONICA E TELEFONIA LTDA - 0000344",
-      "value": 777.3
+      "value": 777.3,
+      "nota_fiscal": "11823/01"
     },
     {
       "id": "tx00037",
@@ -405,7 +442,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "COMPANHIA DOS RELES - COMPONENTES LTDA - 0000985",
-      "value": 423.84
+      "value": 423.84,
+      "nota_fiscal": "11795/01"
     },
     {
       "id": "tx00038",
@@ -415,7 +453,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "NEW TRAFFIC CONTROL TEC. E INOVACAO LTDA - 0000773",
-      "value": 476.66
+      "value": 476.66,
+      "nota_fiscal": "11854/01"
     },
     {
       "id": "tx00039",
@@ -425,7 +464,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
-      "value": 1144.12
+      "value": 1144.12,
+      "nota_fiscal": "11863/01"
     },
     {
       "id": "tx00040",
@@ -435,7 +475,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "LECOMP COMERCIAL DE COMPONENTE",
-      "value": 550.0
+      "value": 550.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00041",
@@ -445,7 +486,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL COMERCIO ATACADISTA DE C",
-      "value": 800.0
+      "value": 800.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00042",
@@ -455,7 +497,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP C A COMP ELETRONICOS LTDA",
-      "value": 452.67
+      "value": 452.67,
+      "nota_fiscal": null
     },
     {
       "id": "tx00043",
@@ -465,7 +508,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP C A COMP ELETRONICOS LTDA",
-      "value": 372.33
+      "value": 372.33,
+      "nota_fiscal": null
     },
     {
       "id": "tx00044",
@@ -475,7 +519,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP C A COMP ELETRONICOS LTDA",
-      "value": 2064.71
+      "value": 2064.71,
+      "nota_fiscal": null
     },
     {
       "id": "tx00045",
@@ -485,7 +530,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "GASTOS FIXOS",
       "counterparty": "IUVEN SISTEMA",
-      "value": 1270.0
+      "value": 1270.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00046",
@@ -495,7 +541,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY MAX ELETRONICA LTDA",
-      "value": 1344.74
+      "value": 1344.74,
+      "nota_fiscal": null
     },
     {
       "id": "tx00047",
@@ -505,7 +552,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "HEKTRON COMERCIO C E LTDA",
-      "value": 589.72
+      "value": 589.72,
+      "nota_fiscal": null
     },
     {
       "id": "tx00048",
@@ -515,7 +563,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "LEDCOMP CREDERE",
-      "value": 2780.0
+      "value": 2780.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00049",
@@ -525,7 +574,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL COMERCIO ATACADISTA DE C",
-      "value": 799.06
+      "value": 799.06,
+      "nota_fiscal": null
     },
     {
       "id": "tx00050",
@@ -535,7 +585,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY MAX ELETRONICA LTDA",
-      "value": 254.46
+      "value": 254.46,
+      "nota_fiscal": null
     },
     {
       "id": "tx00051",
@@ -545,7 +596,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "ELLO PRESTACAO DE SERVICOS LTD",
-      "value": 70.0
+      "value": 70.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00052",
@@ -555,7 +607,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ZENNER",
-      "value": 141.0
+      "value": 141.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00053",
@@ -565,7 +618,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "MATHEUS COND",
-      "value": 250.0
+      "value": 250.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00054",
@@ -575,7 +629,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "TRANSPORTES",
       "counterparty": "CORREIOS",
-      "value": 1928.84
+      "value": 1928.84,
+      "nota_fiscal": null
     },
     {
       "id": "tx00055",
@@ -585,7 +640,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 28.87
+      "value": 28.87,
+      "nota_fiscal": null
     },
     {
       "id": "tx00056",
@@ -595,7 +651,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "J. ROSSAN",
-      "value": 272.0
+      "value": 272.0,
+      "nota_fiscal": "777"
     },
     {
       "id": "tx00057",
@@ -605,7 +662,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH",
-      "value": 1343.16
+      "value": 1343.16,
+      "nota_fiscal": "768"
     },
     {
       "id": "tx00058",
@@ -615,7 +673,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL",
-      "value": 658.67
+      "value": 658.67,
+      "nota_fiscal": null
     },
     {
       "id": "tx00059",
@@ -625,7 +684,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "MATHEUS",
-      "value": 250.0
+      "value": 250.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00060",
@@ -635,7 +695,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "THAMIRES",
-      "value": 250.0
+      "value": 250.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00061",
@@ -645,7 +706,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 3.4
+      "value": 3.4,
+      "nota_fiscal": null
     },
     {
       "id": "tx00062",
@@ -655,7 +717,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "AWA EQUIPAMENTOS E SISTEMA - 0000433",
-      "value": 726.23
+      "value": 726.23,
+      "nota_fiscal": "11822/03"
     },
     {
       "id": "tx00063",
@@ -665,7 +728,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "EDERSON VARANDA BORGES LTDA - 0000785",
-      "value": 1320.14
+      "value": 1320.14,
+      "nota_fiscal": "11807/01"
     },
     {
       "id": "tx00064",
@@ -675,7 +739,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "AWA EQUIPAMENTOS E SISTEMA - 0000433",
-      "value": 767.14
+      "value": 767.14,
+      "nota_fiscal": "11822/01"
     },
     {
       "id": "tx00065",
@@ -685,7 +750,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "AWA EQUIPAMENTOS E SISTEMA - 0000433",
-      "value": 750.35
+      "value": 750.35,
+      "nota_fiscal": "11822/02"
     },
     {
       "id": "tx00066",
@@ -695,7 +761,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "REVAL INDUSTRIA E COMERCIO DE EQUIPAMENA - 0000416",
-      "value": 867.2
+      "value": 867.2,
+      "nota_fiscal": "11880/01"
     },
     {
       "id": "tx00067",
@@ -705,7 +772,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO - 0000660",
-      "value": 745.0
+      "value": 745.0,
+      "nota_fiscal": "11839/02"
     },
     {
       "id": "tx00068",
@@ -715,7 +783,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "COMP TOTAL DEVOLÇÃO",
-      "value": 35.0
+      "value": 35.0,
+      "nota_fiscal": "DEVOLUÇÃO"
     },
     {
       "id": "tx00069",
@@ -725,7 +794,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 10.2
+      "value": 10.2,
+      "nota_fiscal": null
     },
     {
       "id": "tx00070",
@@ -735,7 +805,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "COMP TOTAL C I C ELETRONICOS",
-      "value": 35.0
+      "value": 35.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00071",
@@ -745,7 +816,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MEGAPIX",
-      "value": 28.0
+      "value": 28.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00072",
@@ -755,7 +827,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ALLNETSYS COMERCIO I S LTDA",
-      "value": 75.0
+      "value": 75.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00073",
@@ -765,7 +838,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MKB ELETRONICA LTDA",
-      "value": 1159.86
+      "value": 1159.86,
+      "nota_fiscal": null
     },
     {
       "id": "tx00074",
@@ -775,7 +849,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ALLNETSYS COMERCIO I S LTDA",
-      "value": 305.0
+      "value": 305.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00075",
@@ -785,7 +860,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "COMP TOTAL C I C ELETRONICOS",
-      "value": 215.13
+      "value": 215.13,
+      "nota_fiscal": null
     },
     {
       "id": "tx00076",
@@ -795,7 +871,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "COMLINK EQUIPAMENTOS ELETRONICOS LTDA (0000028)",
-      "value": 5100.0
+      "value": 5100.0,
+      "nota_fiscal": "11916"
     },
     {
       "id": "tx00077",
@@ -805,7 +882,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "EDERSON VARANDA BORGES LTDA (0000785)",
-      "value": 1062.85
+      "value": 1062.85,
+      "nota_fiscal": "11917"
     },
     {
       "id": "tx00078",
@@ -815,7 +893,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "R. BAIAO INDUSTRIA E COMERCIO LTDA (0000060)",
-      "value": 16157.91
+      "value": 16157.91,
+      "nota_fiscal": "11918"
     },
     {
       "id": "tx00079",
@@ -825,7 +904,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "R. BAIAO INDUSTRIA E COMERCIO LTDA (0000060)",
-      "value": 980.84
+      "value": 980.84,
+      "nota_fiscal": "781"
     },
     {
       "id": "tx00080",
@@ -835,7 +915,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "HIGTHZ",
-      "value": 23.76
+      "value": 23.76,
+      "nota_fiscal": "11813"
     },
     {
       "id": "tx00081",
@@ -845,7 +926,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CHARLES",
-      "value": 160.0
+      "value": 160.0,
+      "nota_fiscal": "SNF"
     },
     {
       "id": "tx00082",
@@ -855,7 +937,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CURTIS",
-      "value": 316.0
+      "value": 316.0,
+      "nota_fiscal": "11885"
     },
     {
       "id": "tx00083",
@@ -865,7 +948,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO - 0000660",
-      "value": 2396.4
+      "value": 2396.4,
+      "nota_fiscal": "11886/01"
     },
     {
       "id": "tx00084",
@@ -875,7 +959,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "T.G.L. ELETRO ELETRONICO LTDA - ME - 0000073",
-      "value": 376.67
+      "value": 376.67,
+      "nota_fiscal": "11802/03"
     },
     {
       "id": "tx00085",
@@ -885,7 +970,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CITTA ELETRONICA IND. E COM. LTDA ME - 0000532",
-      "value": 589.0
+      "value": 589.0,
+      "nota_fiscal": "11882/01"
     },
     {
       "id": "tx00086",
@@ -895,7 +981,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO - 0000660",
-      "value": 2142.07
+      "value": 2142.07,
+      "nota_fiscal": "11808/03"
     },
     {
       "id": "tx00087",
@@ -905,7 +992,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CARINE G RODRIGUES - 0000764",
-      "value": 659.52
+      "value": 659.52,
+      "nota_fiscal": "11846/02"
     },
     {
       "id": "tx00088",
@@ -915,7 +1003,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY MAX ELETRONICA LTDA",
-      "value": 93.0
+      "value": 93.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00089",
@@ -925,7 +1014,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "INVESTIMENTO",
       "counterparty": "FADAMAR",
-      "value": 800.0
+      "value": 800.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00090",
@@ -935,7 +1025,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRYNIT WWG4 COBR",
-      "value": 177.1
+      "value": 177.1,
+      "nota_fiscal": null
     },
     {
       "id": "tx00091",
@@ -945,7 +1036,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ZENER COMPONENTES ELETRONIC LT",
-      "value": 558.5
+      "value": 558.5,
+      "nota_fiscal": null
     },
     {
       "id": "tx00092",
@@ -955,7 +1047,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 17.64
+      "value": 17.64,
+      "nota_fiscal": null
     },
     {
       "id": "tx00093",
@@ -964,8 +1057,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "16954",
-      "value": 791.35
+      "counterparty": "FILCRILL COMPS ELETRS IMP E EXP EIRELLI (0000048)",
+      "value": 791.35,
+      "nota_fiscal": "16954"
     },
     {
       "id": "tx00094",
@@ -974,8 +1068,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "258188",
-      "value": 1610.87
+      "counterparty": "ACP COMERCIO ATACADISTA DE COMPONENTES E (0000249)",
+      "value": 1610.87,
+      "nota_fiscal": "258188"
     },
     {
       "id": "tx00095",
@@ -984,8 +1079,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "84539",
-      "value": 181.05
+      "counterparty": "COMP TOTAL COM. E IMP. DE COMP. ELETRON. (0000267)",
+      "value": 181.05,
+      "nota_fiscal": "84539"
     },
     {
       "id": "tx00096",
@@ -995,7 +1091,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "E DE OLIVEIRA",
-      "value": 232.0
+      "value": 232.0,
+      "nota_fiscal": "11919"
     },
     {
       "id": "tx00097",
@@ -1005,7 +1102,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
-      "value": 532.77
+      "value": 532.77,
+      "nota_fiscal": "11815/03"
     },
     {
       "id": "tx00098",
@@ -1015,7 +1113,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ALIGERA EQUIPAMENTOS DIGITAIS LTDA - 0000188",
-      "value": 250.0
+      "value": 250.0,
+      "nota_fiscal": "11896/01"
     },
     {
       "id": "tx00099",
@@ -1025,7 +1124,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO - 0000660",
-      "value": 594.35
+      "value": 594.35,
+      "nota_fiscal": "11850/02"
     },
     {
       "id": "tx00100",
@@ -1035,7 +1135,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CITTA ELETRONICA IND. E COM. LTDA ME - 0000532",
-      "value": 843.67
+      "value": 843.67,
+      "nota_fiscal": "11810/03"
     },
     {
       "id": "tx00101",
@@ -1045,7 +1146,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ELETROFELIX INDUSTRIA E COMERCIO LTDA - 0000477",
-      "value": 723.23
+      "value": 723.23,
+      "nota_fiscal": "11800/03"
     },
     {
       "id": "tx00102",
@@ -1055,7 +1157,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CONDUVOX TELEMATICA LTDA - 0000031",
-      "value": 481.94
+      "value": 481.94,
+      "nota_fiscal": "11895/01"
     },
     {
       "id": "tx00103",
@@ -1065,7 +1168,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "LECOMP COMERCIAL DE COMPONENTE",
-      "value": 486.5
+      "value": 486.5,
+      "nota_fiscal": null
     },
     {
       "id": "tx00104",
@@ -1075,7 +1179,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP C A COMP ELETRONICOS LTDA",
-      "value": 533.93
+      "value": 533.93,
+      "nota_fiscal": null
     },
     {
       "id": "tx00105",
@@ -1085,7 +1190,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "VETRONIC COM ELETRONICA LTDA",
-      "value": 774.38
+      "value": 774.38,
+      "nota_fiscal": null
     },
     {
       "id": "tx00106",
@@ -1095,7 +1201,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "REIMOLD INDUSTRIA E COMERCIO D",
-      "value": 1847.75
+      "value": 1847.75,
+      "nota_fiscal": null
     },
     {
       "id": "tx00107",
@@ -1105,7 +1212,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY MAX ELETRONICA LTDA",
-      "value": 607.53
+      "value": 607.53,
+      "nota_fiscal": null
     },
     {
       "id": "tx00108",
@@ -1115,7 +1223,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRYNIT CREDERE CONS",
-      "value": 264.0
+      "value": 264.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00109",
@@ -1125,7 +1234,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRICOMP COMERCIAL E LTDA",
-      "value": 633.2
+      "value": 633.2,
+      "nota_fiscal": null
     },
     {
       "id": "tx00110",
@@ -1135,7 +1245,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MKB SENSORES LTDA",
-      "value": 945.24
+      "value": 945.24,
+      "nota_fiscal": null
     },
     {
       "id": "tx00111",
@@ -1145,7 +1256,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRYNIT CREDERE CO",
-      "value": 150.0
+      "value": 150.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00112",
@@ -1155,7 +1267,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 10.2
+      "value": 10.2,
+      "nota_fiscal": null
     },
     {
       "id": "tx00113",
@@ -1164,8 +1277,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "197630",
-      "value": 93.0
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 93.0,
+      "nota_fiscal": "197630"
     },
     {
       "id": "tx00114",
@@ -1174,8 +1288,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "23467",
-      "value": 612.5
+      "counterparty": "ZENER COMPONENTES ELETRONICOS LTDA - ME (0000317)",
+      "value": 612.5,
+      "nota_fiscal": "23467"
     },
     {
       "id": "tx00115",
@@ -1184,8 +1299,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "75348",
-      "value": 1982.2
+      "counterparty": "IDALL COM. ATAC. DE COMP. ELETR. LTDA (0000011)",
+      "value": 1982.2,
+      "nota_fiscal": "75348"
     },
     {
       "id": "tx00116",
@@ -1194,8 +1310,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "84851",
-      "value": 28.0
+      "counterparty": "MEGAPIX COMP. ELETRONICOS LTDA-EPP (0000275)",
+      "value": 28.0,
+      "nota_fiscal": "84851"
     },
     {
       "id": "tx00117",
@@ -1205,7 +1322,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "E DE OLIVEIRA BARBOSA ELETRONICA (0000898)",
-      "value": 232.0
+      "value": 232.0,
+      "nota_fiscal": "11919"
     },
     {
       "id": "tx00118",
@@ -1215,7 +1333,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E (0000081)",
-      "value": 221.46
+      "value": 221.46,
+      "nota_fiscal": "11920"
     },
     {
       "id": "tx00119",
@@ -1225,7 +1344,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "NIATRON IND. E COM. DE EQUIP. ELETRO. (0000143)",
-      "value": 476.7
+      "value": 476.7,
+      "nota_fiscal": "11921"
     },
     {
       "id": "tx00120",
@@ -1235,7 +1355,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E (0000081)",
-      "value": 542.0
+      "value": 542.0,
+      "nota_fiscal": "11922"
     },
     {
       "id": "tx00121",
@@ -1245,7 +1366,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FIBERWAN IND. DE EQUIP. ELETTR. LTDA-EPP (0000411)",
-      "value": 407.0
+      "value": 407.0,
+      "nota_fiscal": "11923"
     },
     {
       "id": "tx00122",
@@ -1255,7 +1377,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "WKS TECHNOLOGY DO BRASIL (0000208)",
-      "value": 400.0
+      "value": 400.0,
+      "nota_fiscal": "11924"
     },
     {
       "id": "tx00123",
@@ -1265,7 +1388,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "SEBASTIAO CESAR GRASSI ELETRONICOS - M.. (0000279)",
-      "value": 2307.61
+      "value": 2307.61,
+      "nota_fiscal": "11925"
     },
     {
       "id": "tx00124",
@@ -1275,7 +1399,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "IMPORTAÇÃO",
       "counterparty": "DHL EXPRES",
-      "value": 459.73
+      "value": 459.73,
+      "nota_fiscal": null
     },
     {
       "id": "tx00125",
@@ -1285,7 +1410,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SEMI-DIGITAL LTDA - 0000450",
-      "value": 270.0
+      "value": 270.0,
+      "nota_fiscal": "11798/01"
     },
     {
       "id": "tx00126",
@@ -1295,7 +1421,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "IMPACTO COMPONENTES ELETRO ELETRRONICOS - 0000154",
-      "value": 252.0
+      "value": 252.0,
+      "nota_fiscal": "11901/01"
     },
     {
       "id": "tx00127",
@@ -1305,7 +1432,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FOCUS TECNOLOGIA E SOLUCOES LTDA - 0000742",
-      "value": 340.84
+      "value": 340.84,
+      "nota_fiscal": "11883/01"
     },
     {
       "id": "tx00128",
@@ -1315,7 +1443,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "NEW TRAFFIC CONTROL TEC. E INOVACAO LTDA - 0000773",
-      "value": 1331.67
+      "value": 1331.67,
+      "nota_fiscal": "11825/03"
     },
     {
       "id": "tx00129",
@@ -1325,7 +1454,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "NEW TRAFFIC CONTROL TEC. E INOVACAO LTDA - 0000773",
-      "value": 797.0
+      "value": 797.0,
+      "nota_fiscal": "11855/02"
     },
     {
       "id": "tx00130",
@@ -1335,7 +1465,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FZW INNOVATION LTDA - 0000848",
-      "value": 1943.46
+      "value": 1943.46,
+      "nota_fiscal": "11811"
     },
     {
       "id": "tx00131",
@@ -1345,7 +1476,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FZW INNOVATION LTDA - 0000848",
-      "value": 35.27
+      "value": 35.27,
+      "nota_fiscal": "11838"
     },
     {
       "id": "tx00132",
@@ -1355,7 +1487,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FZW INNOVATION LTDA - 0000848",
-      "value": 963.16
+      "value": 963.16,
+      "nota_fiscal": "11868"
     },
     {
       "id": "tx00133",
@@ -1365,7 +1498,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "EXPOENTE TECNOLOGIA ELETRONICA LTDA - 0000079",
-      "value": 558.75
+      "value": 558.75,
+      "nota_fiscal": "11797/02"
     },
     {
       "id": "tx00134",
@@ -1375,7 +1509,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ZILOCCHI ELETRONICA LTDA - EPP - 0000130",
-      "value": 811.2
+      "value": 811.2,
+      "nota_fiscal": "11902/01"
     },
     {
       "id": "tx00135",
@@ -1385,7 +1520,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MPC DISTRIBUIDORA E LTDA",
-      "value": 3830.0
+      "value": 3830.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00136",
@@ -1395,7 +1531,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "WKS FVS",
-      "value": 506.96
+      "value": 506.96,
+      "nota_fiscal": null
     },
     {
       "id": "tx00137",
@@ -1405,7 +1542,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "ALINE ROCHA DOS SANTOS",
-      "value": 1500.0
+      "value": 1500.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00138",
@@ -1415,7 +1553,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "CX COMERCIAL EIRELI",
-      "value": 455.4
+      "value": 455.4,
+      "nota_fiscal": null
     },
     {
       "id": "tx00139",
@@ -1425,7 +1564,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "MATHEUS SOARES ROCHA",
-      "value": 1167.5
+      "value": 1167.5,
+      "nota_fiscal": null
     },
     {
       "id": "tx00140",
@@ -1435,7 +1575,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 17.0
+      "value": 17.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00141",
@@ -1445,7 +1586,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "TAMIRES",
-      "value": 970.49
+      "value": 970.49,
+      "nota_fiscal": null
     },
     {
       "id": "tx00142",
@@ -1454,8 +1596,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "45349",
-      "value": 1079.58
+      "counterparty": "ALLSEMI TECNOLOGIA ELETRONICA LTDA (0000299)",
+      "value": 1079.58,
+      "nota_fiscal": "45349"
     },
     {
       "id": "tx00143",
@@ -1465,7 +1608,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "CRISTOFOLI EQUIP. DE BIOSSEGURANÇA LTDA (0000146)",
-      "value": 325.0
+      "value": 325.0,
+      "nota_fiscal": "11926"
     },
     {
       "id": "tx00144",
@@ -1475,7 +1619,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "CRISTOFOLI EQUIP. DE BIOSSEGURANÇA LTDA (0000146)",
-      "value": 650.0
+      "value": 650.0,
+      "nota_fiscal": "11927"
     },
     {
       "id": "tx00145",
@@ -1485,7 +1630,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ARIELTEK INDUSTRIA E COMERCIO LTDA (0000314)",
-      "value": 834.0
+      "value": 834.0,
+      "nota_fiscal": "11928"
     },
     {
       "id": "tx00146",
@@ -1495,7 +1641,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO (0000660)",
-      "value": 986.1
+      "value": 986.1,
+      "nota_fiscal": "11929"
     },
     {
       "id": "tx00147",
@@ -1505,7 +1652,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "SIMPLES CONNECT INDUSTRIA E COMERCIO LTA (0000308)",
-      "value": 442.0
+      "value": 442.0,
+      "nota_fiscal": "11930"
     },
     {
       "id": "tx00148",
@@ -1515,7 +1663,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "M. POWER IND.E COM. DE ELETR.  LTDA (0000216)",
-      "value": 1104.0
+      "value": 1104.0,
+      "nota_fiscal": "11931"
     },
     {
       "id": "tx00149",
@@ -1525,7 +1674,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E (0000081)",
-      "value": 19.92
+      "value": 19.92,
+      "nota_fiscal": "11932"
     },
     {
       "id": "tx00150",
@@ -1535,7 +1685,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "LS",
-      "value": 1114.33
+      "value": 1114.33,
+      "nota_fiscal": null
     },
     {
       "id": "tx00151",
@@ -1545,7 +1696,8 @@ const MAXLED_DATA = {
       "flow": "compra",
       "category": null,
       "counterparty": "IDALL",
-      "value": 3800.0
+      "value": 3800.0,
+      "nota_fiscal": "75376"
     },
     {
       "id": "tx00152",
@@ -1555,7 +1707,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "SIMPLES CONNECT INDUSTRIA E COMERCIO LTA (0000308)",
-      "value": 5700.0
+      "value": 5700.0,
+      "nota_fiscal": "782"
     },
     {
       "id": "tx00153",
@@ -1565,7 +1718,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "LANZA MEDICAL EQUIP. ODONTO MEDICOS LTDA (0000452)",
-      "value": 5142.0
+      "value": 5142.0,
+      "nota_fiscal": "783"
     },
     {
       "id": "tx00154",
@@ -1575,7 +1729,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "VINTEK IND., COMERCIO E SERVICOS LTDA - 0000894",
-      "value": 7299.76
+      "value": 7299.76,
+      "nota_fiscal": "11803/02"
     },
     {
       "id": "tx00155",
@@ -1585,7 +1740,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ZILOCCHI ELETRONICA LTDA - EPP - 0000130",
-      "value": 794.1
+      "value": 794.1,
+      "nota_fiscal": "11821/01"
     },
     {
       "id": "tx00156",
@@ -1595,7 +1751,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "NIATRON IND. E COM. DE EQUIP. ELETRO. - 0000143",
-      "value": 765.87
+      "value": 765.87,
+      "nota_fiscal": "11891/01"
     },
     {
       "id": "tx00157",
@@ -1605,7 +1762,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
-      "value": 306.14
+      "value": 306.14,
+      "nota_fiscal": "11894/01"
     },
     {
       "id": "tx00158",
@@ -1615,7 +1773,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ASOR ELETROMEDICA EQUIP. ELETRO. E ELETO - 0000246",
-      "value": 718.26
+      "value": 718.26,
+      "nota_fiscal": "11897/01"
     },
     {
       "id": "tx00159",
@@ -1625,7 +1784,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "PRODUTOS ELETRONICOS FRATA LTDA - 0000223",
-      "value": 2076.0
+      "value": 2076.0,
+      "nota_fiscal": "11903/01"
     },
     {
       "id": "tx00160",
@@ -1635,7 +1795,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ARIELTEK INDUSTRIA E COMERCIO LTDA - 0000314",
-      "value": 900.72
+      "value": 900.72,
+      "nota_fiscal": "11908/01"
     },
     {
       "id": "tx00161",
@@ -1645,7 +1806,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ELCOMP COMERCIO C E LTDA EPP",
-      "value": 1426.53
+      "value": 1426.53,
+      "nota_fiscal": null
     },
     {
       "id": "tx00162",
@@ -1655,7 +1817,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MKB SENSORES LTDA",
-      "value": 1574.91
+      "value": 1574.91,
+      "nota_fiscal": null
     },
     {
       "id": "tx00163",
@@ -1665,7 +1828,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DIGICOMP ELETRONICA LTDA",
-      "value": 790.56
+      "value": 790.56,
+      "nota_fiscal": null
     },
     {
       "id": "tx00164",
@@ -1675,7 +1839,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ALLNETSYS COMERCIO IMPORTACAO",
-      "value": 20.0
+      "value": 20.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00165",
@@ -1685,7 +1850,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL COMERCIO ATACADISTA DE C",
-      "value": 225.7
+      "value": 225.7,
+      "nota_fiscal": null
     },
     {
       "id": "tx00166",
@@ -1695,7 +1861,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "HEKTRON COMERCIO C E LTDA",
-      "value": 589.73
+      "value": 589.73,
+      "nota_fiscal": null
     },
     {
       "id": "tx00167",
@@ -1705,7 +1872,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DLT SUPRIMENTOS LTDA",
-      "value": 455.0
+      "value": 455.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00168",
@@ -1715,7 +1883,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DALEC SECURECOM",
-      "value": 457.04
+      "value": 457.04,
+      "nota_fiscal": null
     },
     {
       "id": "tx00169",
@@ -1725,7 +1894,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY MAX ELETRONICA LTDA",
-      "value": 45.26
+      "value": 45.26,
+      "nota_fiscal": null
     },
     {
       "id": "tx00170",
@@ -1735,7 +1905,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "E2E IND COMERCIO COMPONENTES",
-      "value": 869.1
+      "value": 869.1,
+      "nota_fiscal": null
     },
     {
       "id": "tx00171",
@@ -1745,7 +1916,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL COMERCIO ATACADISTA DE C",
-      "value": 628.5
+      "value": 628.5,
+      "nota_fiscal": null
     },
     {
       "id": "tx00172",
@@ -1753,9 +1925,10 @@ const MAXLED_DATA = {
       "division": "iluminacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "PLANO DE SAÚDE",
+      "category": "SEGURO SAÚDE",
       "counterparty": "PORTO SEGURO   SEGURO SAUDE S",
-      "value": 2261.32
+      "value": 2261.32,
+      "nota_fiscal": null
     },
     {
       "id": "tx00173",
@@ -1765,7 +1938,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ORIELEC COMERCIO E IMPORTACAO",
-      "value": 592.01
+      "value": 592.01,
+      "nota_fiscal": null
     },
     {
       "id": "tx00174",
@@ -1775,7 +1949,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "SINDICATO DOS COMERCIARIOS DE",
-      "value": 47.37
+      "value": 47.37,
+      "nota_fiscal": null
     },
     {
       "id": "tx00175",
@@ -1785,7 +1960,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "COMP TOTAL C I C ELETRONICOS",
-      "value": 451.13
+      "value": 451.13,
+      "nota_fiscal": null
     },
     {
       "id": "tx00176",
@@ -1795,7 +1971,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "COMP TOTAL C I C ELETRONICOS",
-      "value": 553.81
+      "value": 553.81,
+      "nota_fiscal": null
     },
     {
       "id": "tx00177",
@@ -1805,7 +1982,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MULT COMERCIAL LTDA",
-      "value": 35.0
+      "value": 35.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00178",
@@ -1815,7 +1993,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP C A COMP ELETRONICOS LTDA",
-      "value": 601.2
+      "value": 601.2,
+      "nota_fiscal": null
     },
     {
       "id": "tx00179",
@@ -1825,7 +2004,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP C A COMP ELETRONICOS LTDA",
-      "value": 544.3
+      "value": 544.3,
+      "nota_fiscal": null
     },
     {
       "id": "tx00180",
@@ -1835,7 +2015,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 11.9
+      "value": 11.9,
+      "nota_fiscal": null
     },
     {
       "id": "tx00181",
@@ -1844,8 +2025,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "115266",
-      "value": 272.0
+      "counterparty": "LECOMP Com. de Comp. Eletronicos LTDA (0000312)",
+      "value": 272.0,
+      "nota_fiscal": "115266"
     },
     {
       "id": "tx00182",
@@ -1854,8 +2036,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "258290",
-      "value": 1319.59
+      "counterparty": "ACP COMERCIO ATACADISTA DE COMPONENTES E (0000249)",
+      "value": 1319.59,
+      "nota_fiscal": "258290"
     },
     {
       "id": "tx00183",
@@ -1864,8 +2047,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "75375",
-      "value": 6646.2
+      "counterparty": "IDALL COM. ATAC. DE COMP. ELETR. LTDA (0000011)",
+      "value": 6646.2,
+      "nota_fiscal": "75375"
     },
     {
       "id": "tx00184",
@@ -1875,7 +2059,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "CONSTRUTEC FACILITIES COM. E SERV. DE EN (0000033)",
-      "value": 109.68
+      "value": 109.68,
+      "nota_fiscal": "11934"
     },
     {
       "id": "tx00185",
@@ -1885,7 +2070,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "TRANSFIX ASSISTENCIA TECN. E VENDAS EQUI (0000199)",
-      "value": 2978.0
+      "value": 2978.0,
+      "nota_fiscal": "11935"
     },
     {
       "id": "tx00186",
@@ -1895,7 +2081,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ELETROFELIX INDUSTRIA E COMERCIO LTDA (0000477)",
-      "value": 653.5
+      "value": 653.5,
+      "nota_fiscal": "11936"
     },
     {
       "id": "tx00187",
@@ -1905,7 +2092,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "MOTOPPAR INDUSTRIA E COMERCIO DE AUTOMAT (0001056)",
-      "value": 570.0
+      "value": 570.0,
+      "nota_fiscal": "11937"
     },
     {
       "id": "tx00188",
@@ -1915,7 +2103,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FZW INNOVATION LTDA (0000848)",
-      "value": 3083.36
+      "value": 3083.36,
+      "nota_fiscal": "11938"
     },
     {
       "id": "tx00189",
@@ -1925,7 +2114,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "EXPOENTE TECNOLOGIA ELETRONICA LTDA (0000079)",
-      "value": 548.9
+      "value": 548.9,
+      "nota_fiscal": "11939"
     },
     {
       "id": "tx00190",
@@ -1935,7 +2125,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "NEW TRAFFIC CONTROL TEC. E INOVACAO LTDA (0000773)",
-      "value": 1224.0
+      "value": 1224.0,
+      "nota_fiscal": "11940"
     },
     {
       "id": "tx00191",
@@ -1945,7 +2136,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "MDI PROD E SISTEMAS LTDA (0000101)",
-      "value": 654.2
+      "value": 654.2,
+      "nota_fiscal": "11941"
     },
     {
       "id": "tx00192",
@@ -1955,7 +2147,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH",
-      "value": 1762.68
+      "value": 1762.68,
+      "nota_fiscal": "778"
     },
     {
       "id": "tx00193",
@@ -1965,7 +2158,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "TELESHESK",
-      "value": 480.0
+      "value": 480.0,
+      "nota_fiscal": "779"
     },
     {
       "id": "tx00194",
@@ -1975,7 +2169,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 3.4
+      "value": 3.4,
+      "nota_fiscal": null
     },
     {
       "id": "tx00195",
@@ -1985,7 +2180,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "MATERIAL DE ESCRITÓRIO",
       "counterparty": "MATERIAL DE ESCRITÓRIO",
-      "value": 1242.0
+      "value": 1242.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00196",
@@ -1995,7 +2191,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BRINDES",
       "counterparty": "BRINDES FUNCIONÁRIOS",
-      "value": 1327.0
+      "value": 1327.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00197",
@@ -2005,7 +2202,8 @@ const MAXLED_DATA = {
       "flow": "compra",
       "category": null,
       "counterparty": "FCP",
-      "value": 3363.76
+      "value": 3363.76,
+      "nota_fiscal": "302"
     },
     {
       "id": "tx00198",
@@ -2015,7 +2213,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "TRANSFIX ASSISTENCIA TECN. E VENDAS EQUI (0000199)",
-      "value": 1825.0
+      "value": 1825.0,
+      "nota_fiscal": "784"
     },
     {
       "id": "tx00199",
@@ -2025,7 +2224,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BRASMEDICAL IND. E COM. DE PRODUTOS PAR - 0000017",
-      "value": 1305.37
+      "value": 1305.37,
+      "nota_fiscal": "11774/03"
     },
     {
       "id": "tx00200",
@@ -2035,7 +2235,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CHARLES",
-      "value": 160.0
+      "value": 160.0,
+      "nota_fiscal": "SNF"
     },
     {
       "id": "tx00201",
@@ -2045,7 +2246,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "Taikon JAGUARY",
-      "value": 4029.0
+      "value": 4029.0,
+      "nota_fiscal": "11973"
     },
     {
       "id": "tx00202",
@@ -2055,7 +2257,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "BING",
-      "value": 529.5
+      "value": 529.5,
+      "nota_fiscal": null
     },
     {
       "id": "tx00203",
@@ -2065,7 +2268,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRICOMP COMERCIAL E LTDA",
-      "value": 286.66
+      "value": 286.66,
+      "nota_fiscal": null
     },
     {
       "id": "tx00204",
@@ -2075,7 +2279,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 5.1
+      "value": 5.1,
+      "nota_fiscal": null
     },
     {
       "id": "tx00205",
@@ -2084,8 +2289,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "2033",
-      "value": 365.4
+      "counterparty": "CX COMERCIAL EIRELI EPP (0000329)",
+      "value": 365.4,
+      "nota_fiscal": "2033"
     },
     {
       "id": "tx00206",
@@ -2094,8 +2300,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "23489",
-      "value": 816.8
+      "counterparty": "ZENER COMPONENTES ELETRONICOS LTDA - ME (0000317)",
+      "value": 816.8,
+      "nota_fiscal": "23489"
     },
     {
       "id": "tx00207",
@@ -2104,8 +2311,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "258088",
-      "value": 717.27
+      "counterparty": "ACP COMERCIO ATACADISTA DE COMPONENTES E (0000249)",
+      "value": 717.27,
+      "nota_fiscal": "258088"
     },
     {
       "id": "tx00208",
@@ -2114,8 +2322,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "266825",
-      "value": 35.0
+      "counterparty": "MULT COMERCIAL LTDA (0000311)",
+      "value": 35.0,
+      "nota_fiscal": "266825"
     },
     {
       "id": "tx00209",
@@ -2124,8 +2333,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "31991",
-      "value": 50.0
+      "counterparty": "ALLNETSYS COMERCIO IMPORTACAO E SERVICOS (0000036)",
+      "value": 50.0,
+      "nota_fiscal": "31991"
     },
     {
       "id": "tx00210",
@@ -2134,8 +2344,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "32061",
-      "value": 75.0
+      "counterparty": "ALLNETSYS COMERCIO IMPORTACAO E SERVICOS (0000036)",
+      "value": 75.0,
+      "nota_fiscal": "32061"
     },
     {
       "id": "tx00211",
@@ -2144,8 +2355,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "3499",
-      "value": 490.0
+      "counterparty": "UP TRONIC ELETRONICA LTDA (0000409)",
+      "value": 490.0,
+      "nota_fiscal": "3499"
     },
     {
       "id": "tx00212",
@@ -2154,8 +2366,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "36032",
-      "value": 2301.69
+      "counterparty": "ELCOMP COMERCIO COMPONENTES ELETR. LTDA (0000246)",
+      "value": 2301.69,
+      "nota_fiscal": "36032"
     },
     {
       "id": "tx00213",
@@ -2165,7 +2378,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "R. BAIAO INDUSTRIA E COMERCIO LTDA (0000060)",
-      "value": 1858.5
+      "value": 1858.5,
+      "nota_fiscal": "11942"
     },
     {
       "id": "tx00214",
@@ -2175,7 +2389,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "J.M. MAQUINAS AUTOMOTIVAS EIRELI (0000387)",
-      "value": 4432.1
+      "value": 4432.1,
+      "nota_fiscal": "11943"
     },
     {
       "id": "tx00215",
@@ -2185,7 +2400,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FZW INNOVATION LTDA (0000848)",
-      "value": 509.3
+      "value": 509.3,
+      "nota_fiscal": "11944"
     },
     {
       "id": "tx00216",
@@ -2195,7 +2411,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "HIGHZ VALE INDUSTRIA ELETRONICA LTDA (0000526)",
-      "value": 56.0
+      "value": 56.0,
+      "nota_fiscal": "11945"
     },
     {
       "id": "tx00217",
@@ -2205,7 +2422,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "B. P. S. SISTEMAS DE AUTOMACAO LTDA (0000010)",
-      "value": 567.8
+      "value": 567.8,
+      "nota_fiscal": "11946"
     },
     {
       "id": "tx00218",
@@ -2215,7 +2433,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "OSVALDO VENTURINI PINTO (0001060)",
-      "value": 67.96
+      "value": 67.96,
+      "nota_fiscal": "11947"
     },
     {
       "id": "tx00219",
@@ -2225,7 +2444,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ELIANE APARECIDA RIBEIRO MARTINS (0001059)",
-      "value": 33.98
+      "value": 33.98,
+      "nota_fiscal": "11948"
     },
     {
       "id": "tx00220",
@@ -2235,7 +2455,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "DENTSCLER IND. DE APAR. ODONTO. EIRELLI (0000390)",
-      "value": 2039.0
+      "value": 2039.0,
+      "nota_fiscal": "11949"
     },
     {
       "id": "tx00221",
@@ -2245,7 +2466,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ALLPRINT LATINA AUTOMACAO DE MAQUINAS EA (0000291)",
-      "value": 1716.0
+      "value": 1716.0,
+      "nota_fiscal": "11950"
     },
     {
       "id": "tx00222",
@@ -2255,7 +2477,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "PRODUTOS ELETRONICOS FRATA LTDA (0000223)",
-      "value": 13551.0
+      "value": 13551.0,
+      "nota_fiscal": "11951"
     },
     {
       "id": "tx00223",
@@ -2265,7 +2488,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "TRANSFIX ASSISTENCIA TECN. E VENDAS EQUI (0000199)",
-      "value": 75.0
+      "value": 75.0,
+      "nota_fiscal": "11953"
     },
     {
       "id": "tx00224",
@@ -2275,7 +2499,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "DIGISYSTEM IND. DE SIST. ELETRO. LTDA (0000040)",
-      "value": 3039.5
+      "value": 3039.5,
+      "nota_fiscal": "11954"
     },
     {
       "id": "tx00225",
@@ -2285,7 +2510,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "CITTA ELETRONICA IND. E COM. LTDA ME (0000532)",
-      "value": 338.5
+      "value": 338.5,
+      "nota_fiscal": "11955"
     },
     {
       "id": "tx00226",
@@ -2295,7 +2521,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "EMPRÉSTIMO PRONAMP",
       "counterparty": "CAPITAL DE GIRO 12/48",
-      "value": 3540.29
+      "value": 3540.29,
+      "nota_fiscal": null
     },
     {
       "id": "tx00227",
@@ -2305,7 +2532,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "J.M. MAQUINAS AUTOMOTIVAS EIRELI (0000387)",
-      "value": 5272.5
+      "value": 5272.5,
+      "nota_fiscal": "785"
     },
     {
       "id": "tx00228",
@@ -2315,7 +2543,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "DIGISYSTEM IND. DE SIST. ELETRO. LTDA (0000040)",
-      "value": 904.0
+      "value": 904.0,
+      "nota_fiscal": "786"
     },
     {
       "id": "tx00229",
@@ -2325,7 +2554,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "VALNEI",
-      "value": 253.2
+      "value": 253.2,
+      "nota_fiscal": "11959"
     },
     {
       "id": "tx00230",
@@ -2335,7 +2565,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "PRODUPARK EQUIP. ELETRO. E IMP. LTDA - 0000056",
-      "value": 1359.74
+      "value": 1359.74,
+      "nota_fiscal": "11725/01"
     },
     {
       "id": "tx00231",
@@ -2345,7 +2576,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "PRODUPARK EQUIP. ELETRO. E IMP. LTDA - 0000056",
-      "value": 1300.95
+      "value": 1300.95,
+      "nota_fiscal": "11725/02"
     },
     {
       "id": "tx00232",
@@ -2355,7 +2587,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "PRODUPARK EQUIP. ELETRO. E IMP. LTDA - 0000056",
-      "value": 1242.15
+      "value": 1242.15,
+      "nota_fiscal": "11725/03"
     },
     {
       "id": "tx00233",
@@ -2365,7 +2598,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO - 0000660",
-      "value": 2396.4
+      "value": 2396.4,
+      "nota_fiscal": "11886/02"
     },
     {
       "id": "tx00234",
@@ -2375,7 +2609,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SEBASTIAO CESAR GRASSI ELETRONICOS - M.. - 0000279",
-      "value": 1153.8
+      "value": 1153.8,
+      "nota_fiscal": "11925/01"
     },
     {
       "id": "tx00235",
@@ -2385,7 +2620,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 8.5
+      "value": 8.5,
+      "nota_fiscal": null
     },
     {
       "id": "tx00236",
@@ -2395,7 +2631,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP C A COMP ELETRONICOS LTDA",
-      "value": 2064.71
+      "value": 2064.71,
+      "nota_fiscal": null
     },
     {
       "id": "tx00237",
@@ -2405,7 +2642,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP C A COMP ELETRONICOS LTDA",
-      "value": 717.27
+      "value": 717.27,
+      "nota_fiscal": null
     },
     {
       "id": "tx00238",
@@ -2415,7 +2653,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "EMPRÉSTIMO CAPITAL DE GIRO BRADESCO",
       "counterparty": "CAPITAL DE GIRO",
-      "value": 6175.89
+      "value": 6175.89,
+      "nota_fiscal": null
     },
     {
       "id": "tx00239",
@@ -2424,8 +2663,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "197872",
-      "value": 95.55
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 95.55,
+      "nota_fiscal": "197872"
     },
     {
       "id": "tx00240",
@@ -2434,8 +2674,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "197948",
-      "value": 45.26
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 45.26,
+      "nota_fiscal": "197948"
     },
     {
       "id": "tx00241",
@@ -2444,8 +2685,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "258375",
-      "value": 367.17
+      "counterparty": "ACP COMERCIO ATACADISTA DE COMPONENTES E (0000249)",
+      "value": 367.17,
+      "nota_fiscal": "258375"
     },
     {
       "id": "tx00242",
@@ -2454,8 +2696,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "32115",
-      "value": 20.0
+      "counterparty": "ALLNETSYS COMERCIO IMPORTACAO E SERVICOS (0000036)",
+      "value": 20.0,
+      "nota_fiscal": "32115"
     },
     {
       "id": "tx00243",
@@ -2464,8 +2707,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "75436",
-      "value": 2047.42
+      "counterparty": "IDALL COM. ATAC. DE COMP. ELETR. LTDA (0000011)",
+      "value": 2047.42,
+      "nota_fiscal": "75436"
     },
     {
       "id": "tx00244",
@@ -2474,8 +2718,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "84633",
-      "value": 697.57
+      "counterparty": "COMP TOTAL COM. E IMP. DE COMP. ELETRON. (0000267)",
+      "value": 697.57,
+      "nota_fiscal": "84633"
     },
     {
       "id": "tx00245",
@@ -2484,8 +2729,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "8781",
-      "value": 250.0
+      "counterparty": "TRYNIT LED COMPONENTES ELETRONICOS EIREL (0000259)",
+      "value": 250.0,
+      "nota_fiscal": "8781"
     },
     {
       "id": "tx00246",
@@ -2495,7 +2741,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "SSAT SINALIZACAO E ADESIVOS EIRELI EPP (0000072)",
-      "value": 5405.0
+      "value": 5405.0,
+      "nota_fiscal": "11956"
     },
     {
       "id": "tx00247",
@@ -2505,7 +2752,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "CONDUVOX TELEMATICA LTDA (0000031)",
-      "value": 265.0
+      "value": 265.0,
+      "nota_fiscal": "11957"
     },
     {
       "id": "tx00248",
@@ -2515,7 +2763,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "EVOLUTEC INDUSTRIA E COMERCIO DE ELETROA (0000229)",
-      "value": 223.6
+      "value": 223.6,
+      "nota_fiscal": "11958"
     },
     {
       "id": "tx00249",
@@ -2525,7 +2774,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "VALNEI VIEIRA DA SILVA 00391345630 (0000070)",
-      "value": 253.2
+      "value": 253.2,
+      "nota_fiscal": "11959"
     },
     {
       "id": "tx00250",
@@ -2535,7 +2785,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "VINTEK IND., COMERCIO E SERVICOS LTDA (0000894)",
-      "value": 14513.29
+      "value": 14513.29,
+      "nota_fiscal": "11960"
     },
     {
       "id": "tx00251",
@@ -2545,7 +2796,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "S.T.E.E. TECNOLOGIA ELETROELETRONICA LT (0000062)",
-      "value": 1006.4
+      "value": 1006.4,
+      "nota_fiscal": "11961"
     },
     {
       "id": "tx00252",
@@ -2555,7 +2807,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "DENTSCLER IND. DE APAR. ODONTO. EIRELLI (0000390)",
-      "value": 732.0
+      "value": 732.0,
+      "nota_fiscal": "787"
     },
     {
       "id": "tx00253",
@@ -2565,7 +2818,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CHARLES",
-      "value": 489.5
+      "value": 489.5,
+      "nota_fiscal": "SNF"
     },
     {
       "id": "tx00254",
@@ -2575,7 +2829,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "LSR",
-      "value": 93.2
+      "value": 93.2,
+      "nota_fiscal": "11968"
     },
     {
       "id": "tx00255",
@@ -2585,7 +2840,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRICOMP COMERCIAL E LTDA",
-      "value": 545.0
+      "value": 545.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00256",
@@ -2595,7 +2851,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "JKJ",
-      "value": 725.0
+      "value": 725.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00257",
@@ -2605,7 +2862,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY MAX ELETRONICA LTDA",
-      "value": 277.94
+      "value": 277.94,
+      "nota_fiscal": null
     },
     {
       "id": "tx00258",
@@ -2615,7 +2873,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "GASTOS FIXOS",
       "counterparty": "HANSER",
-      "value": 573.0
+      "value": 573.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00259",
@@ -2625,7 +2884,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "CIKA ELETRONICA",
-      "value": 955.52
+      "value": 955.52,
+      "nota_fiscal": null
     },
     {
       "id": "tx00260",
@@ -2635,7 +2895,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "CAPITALIZAÇÃO",
-      "value": 209.66
+      "value": 209.66,
+      "nota_fiscal": null
     },
     {
       "id": "tx00261",
@@ -2644,8 +2905,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "119910",
-      "value": 1738.19
+      "counterparty": "E2E INDUSTRIA E COMERCIO DE COMPONENTES (0000306)",
+      "value": 1738.19,
+      "nota_fiscal": "119910"
     },
     {
       "id": "tx00262",
@@ -2654,8 +2916,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "198171",
-      "value": 1214.1
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 1214.1,
+      "nota_fiscal": "198171"
     },
     {
       "id": "tx00263",
@@ -2664,8 +2927,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "32174",
-      "value": 425.0
+      "counterparty": "ALLNETSYS COMERCIO IMPORTACAO E SERVICOS (0000036)",
+      "value": 425.0,
+      "nota_fiscal": "32174"
     },
     {
       "id": "tx00264",
@@ -2674,8 +2938,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "3839",
-      "value": 7650.0
+      "counterparty": "LEDCOMP COMERCIO DE COMPONENTES ELETRONI (0000313)",
+      "value": 7650.0,
+      "nota_fiscal": "3839"
     },
     {
       "id": "tx00265",
@@ -2685,7 +2950,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ZILOCCHI ELETRONICA LTDA - EPP (0000130)",
-      "value": 753.2
+      "value": 753.2,
+      "nota_fiscal": "11962"
     },
     {
       "id": "tx00266",
@@ -2695,7 +2961,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "CURTIS ELETRONICA INDUSTRIA E COMERCIO A (0000295)",
-      "value": 438.0
+      "value": 438.0,
+      "nota_fiscal": "11963"
     },
     {
       "id": "tx00267",
@@ -2705,7 +2972,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "S.T.E.E. TECNOLOGIA ELETROELETRONICA LT (0000062)",
-      "value": 1737.9
+      "value": 1737.9,
+      "nota_fiscal": "11964"
     },
     {
       "id": "tx00268",
@@ -2715,7 +2983,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ALLPRINT LATINA AUTOMACAO DE MAQUINAS EA (0000291)",
-      "value": 569.0
+      "value": 569.0,
+      "nota_fiscal": "11965"
     },
     {
       "id": "tx00269",
@@ -2725,7 +2994,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "REVAL INDUSTRIA E COMERCIO DE EQUIPAMENA (0000416)",
-      "value": 2193.0
+      "value": 2193.0,
+      "nota_fiscal": "11966"
     },
     {
       "id": "tx00270",
@@ -2735,7 +3005,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E (0000081)",
-      "value": 4332.2
+      "value": 4332.2,
+      "nota_fiscal": "11967"
     },
     {
       "id": "tx00271",
@@ -2745,7 +3016,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "L S R COMERCIO DE TECNOLOGIA LTDA (0000565)",
-      "value": 93.2
+      "value": 93.2,
+      "nota_fiscal": "11968"
     },
     {
       "id": "tx00272",
@@ -2755,7 +3027,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "PROVOLT TECNOLOGIA ELETRONICA LTDA (0000886)",
-      "value": 651.0
+      "value": 651.0,
+      "nota_fiscal": "11969"
     },
     {
       "id": "tx00273",
@@ -2765,7 +3038,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "INVESTIMENTO",
       "counterparty": "IA INTELIGENCIA ARTIFI",
-      "value": 112.82
+      "value": 112.82,
+      "nota_fiscal": null
     },
     {
       "id": "tx00274",
@@ -2775,7 +3049,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "CONSUMO",
       "counterparty": "BOLO CONSUMO",
-      "value": 95.0
+      "value": 95.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00275",
@@ -2785,7 +3060,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "GASTOS FIXOS",
       "counterparty": "HANSER",
-      "value": 573.0
+      "value": 573.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00276",
@@ -2795,7 +3071,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "NIATRON IND. E COM. DE EQUIP. ELETRO. - 0000143",
-      "value": 811.07
+      "value": 811.07,
+      "nota_fiscal": "11761/03"
     },
     {
       "id": "tx00277",
@@ -2805,7 +3082,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ACHEI COMPONENTES ELETRONICOS - 0000503",
-      "value": 1012.38
+      "value": 1012.38,
+      "nota_fiscal": "11777/03"
     },
     {
       "id": "tx00278",
@@ -2815,7 +3093,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "TELECHESKI E TELECHESKI LTDA ME - 0000074",
-      "value": 485.0
+      "value": 485.0,
+      "nota_fiscal": "11779/02"
     },
     {
       "id": "tx00279",
@@ -2825,7 +3104,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SSAT SINALIZACAO E ADESIVOS EIRELI EPP - 0000072",
-      "value": 1016.83
+      "value": 1016.83,
+      "nota_fiscal": "11836/02"
     },
     {
       "id": "tx00280",
@@ -2835,7 +3115,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "RALCOMP COMP. ELETRONICOS EIRELI ME - 0000474",
-      "value": 880.0
+      "value": 880.0,
+      "nota_fiscal": "11775/03"
     },
     {
       "id": "tx00281",
@@ -2845,7 +3126,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "HIGTHZ",
-      "value": 56.0
+      "value": 56.0,
+      "nota_fiscal": "11945"
     },
     {
       "id": "tx00282",
@@ -2855,7 +3137,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "GISLENE",
-      "value": 380.34
+      "value": 380.34,
+      "nota_fiscal": "37"
     },
     {
       "id": "tx00283",
@@ -2865,7 +3148,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DLT",
-      "value": 391.0
+      "value": 391.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00284",
@@ -2875,7 +3159,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "JOSÉ PINHEIRO MERCUR",
-      "value": 850.0
+      "value": 850.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00285",
@@ -2885,7 +3170,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "TRANSPORTES",
       "counterparty": "Wando motoboy",
-      "value": 550.0
+      "value": 550.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00286",
@@ -2895,7 +3181,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 30.6
+      "value": 30.6,
+      "nota_fiscal": null
     },
     {
       "id": "tx00287",
@@ -2904,8 +3191,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "115342",
-      "value": 466.5
+      "counterparty": "LECOMP Com. de Comp. Eletronicos LTDA (0000312)",
+      "value": 466.5,
+      "nota_fiscal": "115342"
     },
     {
       "id": "tx00288",
@@ -2914,8 +3202,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "1503",
-      "value": 9773.8
+      "counterparty": "MKB ELETRONICA E SENSORES LTDA (0000171)",
+      "value": 9773.8,
+      "nota_fiscal": "1503"
     },
     {
       "id": "tx00289",
@@ -2924,8 +3213,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "16760",
-      "value": 182.32
+      "counterparty": "TRICONECT COMERCIAL ELETR. LTDA (0000321)",
+      "value": 182.32,
+      "nota_fiscal": "16760"
     },
     {
       "id": "tx00290",
@@ -2934,8 +3224,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "2526",
-      "value": 315.0
+      "counterparty": "CX COMERCIAL EIRELI EPP (0000329)",
+      "value": 315.0,
+      "nota_fiscal": "2526"
     },
     {
       "id": "tx00291",
@@ -2944,8 +3235,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "258451",
-      "value": 368.82
+      "counterparty": "ACP COMERCIO ATACADISTA DE COMPONENTES E (0000249)",
+      "value": 368.82,
+      "nota_fiscal": "258451"
     },
     {
       "id": "tx00292",
@@ -2954,8 +3246,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "34435",
-      "value": 1044.0
+      "counterparty": "MRD COMPONENTES ELETRONICOS LTDA. (0000388)",
+      "value": 1044.0,
+      "nota_fiscal": "34435"
     },
     {
       "id": "tx00293",
@@ -2964,8 +3257,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "67413",
-      "value": 91.58
+      "counterparty": "TRICOMP COMERCIAL ELETR. LTDA (0000278)",
+      "value": 91.58,
+      "nota_fiscal": "67413"
     },
     {
       "id": "tx00294",
@@ -2975,7 +3269,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "NEW TRAFFIC CONTROL TEC. E INOVACAO LTDA (0000773)",
-      "value": 1340.0
+      "value": 1340.0,
+      "nota_fiscal": "11970"
     },
     {
       "id": "tx00295",
@@ -2985,7 +3280,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FOCUS TECNOLOGIA E SOLUCOES LTDA (0000742)",
-      "value": 1053.0
+      "value": 1053.0,
+      "nota_fiscal": "11971"
     },
     {
       "id": "tx00296",
@@ -2995,7 +3291,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "B. P. S. SISTEMAS DE AUTOMACAO LTDA (0000010)",
-      "value": 1260.0
+      "value": 1260.0,
+      "nota_fiscal": "11972"
     },
     {
       "id": "tx00297",
@@ -3005,7 +3302,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "TAIKON INDUSTRIA E COM DE APARELHOS ELET (0001061)",
-      "value": 4023.0
+      "value": 4023.0,
+      "nota_fiscal": "11973"
     },
     {
       "id": "tx00298",
@@ -3015,7 +3313,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "DENTSCLER IND. DE APAR. ODONTO. EIRELLI (0000390)",
-      "value": 420.75
+      "value": 420.75,
+      "nota_fiscal": "11974"
     },
     {
       "id": "tx00299",
@@ -3025,7 +3324,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "TRANSFIX",
-      "value": 980.0
+      "value": 980.0,
+      "nota_fiscal": "771"
     },
     {
       "id": "tx00300",
@@ -3035,7 +3335,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ALLPRINT",
-      "value": 4105.0
+      "value": 4105.0,
+      "nota_fiscal": "770"
     },
     {
       "id": "tx00301",
@@ -3045,7 +3346,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "TELESHESK",
-      "value": 3435.92
+      "value": 3435.92,
+      "nota_fiscal": "769"
     },
     {
       "id": "tx00302",
@@ -3055,7 +3357,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 3.4
+      "value": 3.4,
+      "nota_fiscal": null
     },
     {
       "id": "tx00303",
@@ -3065,7 +3368,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "M. POWER IND.E COM. DE ELETR.  LTDA (0000216)",
-      "value": 860.0
+      "value": 860.0,
+      "nota_fiscal": "789"
     },
     {
       "id": "tx00304",
@@ -3075,7 +3379,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "PROVOLT TECNOLOGIA ELETRONICA LTDA (0000886)",
-      "value": 1160.5
+      "value": 1160.5,
+      "nota_fiscal": "790"
     },
     {
       "id": "tx00305",
@@ -3085,7 +3390,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "PRODUTOS ELETRONICOS FRATA LTDA - 0000223",
-      "value": 1540.0
+      "value": 1540.0,
+      "nota_fiscal": "11849"
     },
     {
       "id": "tx00306",
@@ -3095,7 +3401,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "NEW TRAFFIC CONTROL TEC. E INOVACAO LTDA - 0000773",
-      "value": 476.67
+      "value": 476.67,
+      "nota_fiscal": "11854"
     },
     {
       "id": "tx00307",
@@ -3105,7 +3412,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SIMPLES CONECT",
-      "value": 481.0
+      "value": 481.0,
+      "nota_fiscal": "11913"
     },
     {
       "id": "tx00308",
@@ -3115,7 +3423,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SEBASTIAO CESAR GRASSI ELETRONICOS - M.. - 0000279",
-      "value": 1153.81
+      "value": 1153.81,
+      "nota_fiscal": "11925"
     },
     {
       "id": "tx00309",
@@ -3125,7 +3434,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "MAX LED ILUM. BRAD",
-      "value": 10000.0
+      "value": 10000.0,
+      "nota_fiscal": "MOVIMENTO"
     },
     {
       "id": "tx00310",
@@ -3135,7 +3445,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP C A COMP ELETRONICOS LTDA",
-      "value": 433.71
+      "value": 433.71,
+      "nota_fiscal": null
     },
     {
       "id": "tx00311",
@@ -3145,7 +3456,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY MAX ELETRONICA LTDA",
-      "value": 1253.33
+      "value": 1253.33,
+      "nota_fiscal": null
     },
     {
       "id": "tx00312",
@@ -3155,7 +3467,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MKB",
-      "value": 1203.61
+      "value": 1203.61,
+      "nota_fiscal": null
     },
     {
       "id": "tx00313",
@@ -3165,7 +3478,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "MOVIMENTO",
       "counterparty": "MAX LED ILUM. BRAD",
-      "value": 10000.0
+      "value": 10000.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00314",
@@ -3175,7 +3489,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 6.8
+      "value": 6.8,
+      "nota_fiscal": null
     },
     {
       "id": "tx00315",
@@ -3184,8 +3499,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "115387",
-      "value": 900.0
+      "counterparty": "LECOMP Com. de Comp. Eletronicos LTDA (0000312)",
+      "value": 900.0,
+      "nota_fiscal": "115387"
     },
     {
       "id": "tx00316",
@@ -3195,7 +3511,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "MARCIO JOSE DE MORAES (0001073)",
-      "value": 29.98
+      "value": 29.98,
+      "nota_fiscal": "11975"
     },
     {
       "id": "tx00317",
@@ -3205,7 +3522,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "VAGNER RIBEIRO DE CARVALHO 97776688568 (0001069)",
-      "value": 44.99
+      "value": 44.99,
+      "nota_fiscal": "11976"
     },
     {
       "id": "tx00318",
@@ -3215,7 +3533,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "JULIANA CHIARETTI NOVI (0001071)",
-      "value": 19.99
+      "value": 19.99,
+      "nota_fiscal": "11977"
     },
     {
       "id": "tx00319",
@@ -3225,7 +3544,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "HELIO JOSE MOREIRA (0001067)",
-      "value": 19.99
+      "value": 19.99,
+      "nota_fiscal": "11978"
     },
     {
       "id": "tx00320",
@@ -3235,7 +3555,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "GUILHERME NOBORU ISIRI TADA (0001066)",
-      "value": 44.99
+      "value": 44.99,
+      "nota_fiscal": "11979"
     },
     {
       "id": "tx00321",
@@ -3245,7 +3566,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ROBERTO GADDUCCI (0001070)",
-      "value": 24.99
+      "value": 24.99,
+      "nota_fiscal": "11980"
     },
     {
       "id": "tx00322",
@@ -3255,7 +3577,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "VALMIR OLIVEIRA SOARES (0001075)",
-      "value": 33.98
+      "value": 33.98,
+      "nota_fiscal": "11981"
     },
     {
       "id": "tx00323",
@@ -3265,7 +3588,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "R. BAIÃO",
-      "value": 700.6
+      "value": 700.6,
+      "nota_fiscal": "775"
     },
     {
       "id": "tx00324",
@@ -3275,7 +3599,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "SÓCIOS",
       "counterparty": "ALEX",
-      "value": 10000.0
+      "value": 10000.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00325",
@@ -3285,7 +3610,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 3.4
+      "value": 3.4,
+      "nota_fiscal": null
     },
     {
       "id": "tx00326",
@@ -3295,7 +3621,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ROYALCOMP",
-      "value": 1150.0
+      "value": 1150.0,
+      "nota_fiscal": "11712"
     },
     {
       "id": "tx00327",
@@ -3305,7 +3632,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "FGTS",
-      "value": 207.97
+      "value": 207.97,
+      "nota_fiscal": null
     },
     {
       "id": "tx00328",
@@ -3315,7 +3643,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "FGTS 13°",
-      "value": 477.44
+      "value": 477.44,
+      "nota_fiscal": null
     },
     {
       "id": "tx00329",
@@ -3325,7 +3654,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "DARF",
-      "value": 1102.52
+      "value": 1102.52,
+      "nota_fiscal": null
     },
     {
       "id": "tx00330",
@@ -3335,7 +3665,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "VALE MATHEUS SOUZA",
-      "value": 720.0
+      "value": 720.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00331",
@@ -3345,7 +3676,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "IMPOSTOS",
       "counterparty": "DAS",
-      "value": 7456.26
+      "value": 7456.26,
+      "nota_fiscal": null
     },
     {
       "id": "tx00332",
@@ -3355,7 +3687,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "SEGURO DE VIDA SÓCIO",
       "counterparty": "PREVIDENCIA",
-      "value": 496.24
+      "value": 496.24,
+      "nota_fiscal": null
     },
     {
       "id": "tx00333",
@@ -3365,7 +3698,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "SEGURO DE VIDA SÓCIO",
       "counterparty": "PREVIDENCIA",
-      "value": 473.47
+      "value": 473.47,
+      "nota_fiscal": null
     },
     {
       "id": "tx00334",
@@ -3374,8 +3708,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "1",
-      "value": 1950.0
+      "counterparty": "CP DOS SANTOS ELETROELETRONICOS (0000244)",
+      "value": 1950.0,
+      "nota_fiscal": "1"
     },
     {
       "id": "tx00335",
@@ -3385,7 +3720,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ANDRE MAURO DE ANDRADE SILVEIRA (0001081)",
-      "value": 19.99
+      "value": 19.99,
+      "nota_fiscal": "11982"
     },
     {
       "id": "tx00336",
@@ -3395,7 +3731,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "BRUNA DOS SANTOS CABOATAN (0001077)",
-      "value": 34.5
+      "value": 34.5,
+      "nota_fiscal": "11983"
     },
     {
       "id": "tx00337",
@@ -3405,7 +3742,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "JAMILI ROBERTA MOURO (0001078)",
-      "value": 13.0
+      "value": 13.0,
+      "nota_fiscal": "11984"
     },
     {
       "id": "tx00338",
@@ -3415,7 +3753,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ELIAS MATIAS ROCHA (0001076)",
-      "value": 12.99
+      "value": 12.99,
+      "nota_fiscal": "11985"
     },
     {
       "id": "tx00339",
@@ -3425,7 +3764,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "IMPOSTOS",
       "counterparty": "DAS",
-      "value": 440.26
+      "value": 440.26,
+      "nota_fiscal": null
     },
     {
       "id": "tx00340",
@@ -3435,7 +3775,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "SÓCIOS",
       "counterparty": "ELVANI",
-      "value": 850.0
+      "value": 850.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00341",
@@ -3445,7 +3786,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ALLPRINT LATINA AUTOMACAO DE MAQUINAS EA - 0000291",
-      "value": 785.77
+      "value": 785.77,
+      "nota_fiscal": "11650"
     },
     {
       "id": "tx00342",
@@ -3455,7 +3797,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO - 0000660",
-      "value": 2396.4
+      "value": 2396.4,
+      "nota_fiscal": "11886"
     },
     {
       "id": "tx00343",
@@ -3465,7 +3808,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "MCM",
-      "value": 1500.0
+      "value": 1500.0,
+      "nota_fiscal": "11995"
     },
     {
       "id": "tx00344",
@@ -3475,7 +3819,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "GISLENE",
-      "value": 380.33
+      "value": 380.33,
+      "nota_fiscal": "37"
     },
     {
       "id": "tx00345",
@@ -3485,7 +3830,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 3.4
+      "value": 3.4,
+      "nota_fiscal": null
     },
     {
       "id": "tx00346",
@@ -3495,7 +3841,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "CESAR AUGUSTO ALVES DE LIMA (0001083)",
-      "value": 42.99
+      "value": 42.99,
+      "nota_fiscal": "11986"
     },
     {
       "id": "tx00347",
@@ -3505,7 +3852,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "SILVIA FELIPE COSTA (0001084)",
-      "value": 9.99
+      "value": 9.99,
+      "nota_fiscal": "11987"
     },
     {
       "id": "tx00348",
@@ -3515,7 +3863,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "NANOTEC ELETRONICA DIGITAL LTDA (0001082)",
-      "value": 25.98
+      "value": 25.98,
+      "nota_fiscal": "11988"
     },
     {
       "id": "tx00349",
@@ -3525,7 +3874,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "J.M. MAQUINAS AUTOMOTIVAS EIRELI (0000387)",
-      "value": 242.62
+      "value": 242.62,
+      "nota_fiscal": "11989"
     },
     {
       "id": "tx00350",
@@ -3535,7 +3885,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "DIGISYSTEM IND. DE SIST. ELETRO. LTDA (0000040)",
-      "value": 2138.5
+      "value": 2138.5,
+      "nota_fiscal": "11990"
     },
     {
       "id": "tx00351",
@@ -3545,7 +3896,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "BRASMEDICAL IND. E COM. DE PRODUTOS PAR (0000017)",
-      "value": 5024.1
+      "value": 5024.1,
+      "nota_fiscal": "11991"
     },
     {
       "id": "tx00352",
@@ -3555,7 +3907,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO (0000660)",
-      "value": 3631.4
+      "value": 3631.4,
+      "nota_fiscal": "11992"
     },
     {
       "id": "tx00353",
@@ -3565,7 +3918,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FOCUS TECNOLOGIA E SOLUCOES LTDA (0000742)",
-      "value": 2002.2
+      "value": 2002.2,
+      "nota_fiscal": "11993"
     },
     {
       "id": "tx00354",
@@ -3575,7 +3929,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "CITHEC CIENCIAS E TECNOLOGYA EIRELI (0000027)",
-      "value": 2227.0
+      "value": 2227.0,
+      "nota_fiscal": "11994"
     },
     {
       "id": "tx00355",
@@ -3585,7 +3940,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "MCM TECNOLOGIA INDUSTRIAL (0000460)",
-      "value": 1500.0
+      "value": 1500.0,
+      "nota_fiscal": "11995"
     },
     {
       "id": "tx00356",
@@ -3595,7 +3951,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "BING COMERCIO DE COMPONENTES ELETRONICOS (0001085)",
-      "value": 288.0
+      "value": 288.0,
+      "nota_fiscal": "11996"
     },
     {
       "id": "tx00357",
@@ -3605,7 +3962,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "TRANSCICAP COM. DE COMP. ELETR. LTDA (0000661)",
-      "value": 990.0
+      "value": 990.0,
+      "nota_fiscal": "11997"
     },
     {
       "id": "tx00358",
@@ -3615,7 +3973,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "extorno cartão de crédito",
-      "value": 1479.32
+      "value": 1479.32,
+      "nota_fiscal": "investimento"
     },
     {
       "id": "tx00359",
@@ -3625,7 +3984,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "SÓCIOS",
       "counterparty": "ALEX",
-      "value": 200.0
+      "value": 200.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00360",
@@ -3635,7 +3995,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "IMPORTAÇÃO",
       "counterparty": "SIMENTOR",
-      "value": 30000.0
+      "value": 30000.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00361",
@@ -3645,7 +4006,8 @@ const MAXLED_DATA = {
       "flow": "compra",
       "category": null,
       "counterparty": "WORL",
-      "value": 4295.5
+      "value": 4295.5,
+      "nota_fiscal": "1"
     },
     {
       "id": "tx00362",
@@ -3655,7 +4017,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "DIGISYSTEM IND. DE SIST. ELETRO. LTDA (0000040)",
-      "value": 121.7
+      "value": 121.7,
+      "nota_fiscal": "791"
     },
     {
       "id": "tx00363",
@@ -3665,7 +4028,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "MCM",
-      "value": 5039.6
+      "value": 5039.6,
+      "nota_fiscal": "12013"
     },
     {
       "id": "tx00364",
@@ -3675,7 +4039,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
-      "value": 333.36
+      "value": 333.36,
+      "nota_fiscal": "11920"
     },
     {
       "id": "tx00365",
@@ -3685,7 +4050,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "NEW TEC",
-      "value": 160.0
+      "value": 160.0,
+      "nota_fiscal": "45"
     },
     {
       "id": "tx00366",
@@ -3695,7 +4061,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "JBT",
-      "value": 410.87
+      "value": 410.87,
+      "nota_fiscal": null
     },
     {
       "id": "tx00367",
@@ -3705,7 +4072,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 1.7
+      "value": 1.7,
+      "nota_fiscal": null
     },
     {
       "id": "tx00368",
@@ -3715,7 +4083,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MKB",
-      "value": 945.24
+      "value": 945.24,
+      "nota_fiscal": null
     },
     {
       "id": "tx00369",
@@ -3725,7 +4094,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "REIMOLD INDUSTRIA E COMERCIO D",
-      "value": 1327.43
+      "value": 1327.43,
+      "nota_fiscal": null
     },
     {
       "id": "tx00370",
@@ -3735,7 +4105,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "MARKETING",
       "counterparty": "MARCELO SITE",
-      "value": 1207.0
+      "value": 1207.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00371",
@@ -3744,8 +4115,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "16790",
-      "value": 558.62
+      "counterparty": "TRICONECT COMERCIAL ELETR. LTDA (0000321)",
+      "value": 558.62,
+      "nota_fiscal": "16790"
     },
     {
       "id": "tx00372",
@@ -3754,8 +4126,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "267008",
-      "value": 303.75
+      "counterparty": "MULT COMERCIAL LTDA (0000311)",
+      "value": 303.75,
+      "nota_fiscal": "267008"
     },
     {
       "id": "tx00373",
@@ -3764,8 +4137,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "3174",
-      "value": 61.0
+      "counterparty": "NEXXO EQUIPAMENTOS ELETRONICOS LTDA (C) (0000225)",
+      "value": 61.0,
+      "nota_fiscal": "3174"
     },
     {
       "id": "tx00374",
@@ -3774,8 +4148,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "32204",
-      "value": 230.0
+      "counterparty": "ALLNETSYS COMERCIO IMPORTACAO E SERVICOS (0000036)",
+      "value": 230.0,
+      "nota_fiscal": "32204"
     },
     {
       "id": "tx00375",
@@ -3784,8 +4159,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "75478",
-      "value": 574.75
+      "counterparty": "IDALL COM. ATAC. DE COMP. ELETR. LTDA (0000011)",
+      "value": 574.75,
+      "nota_fiscal": "75478"
     },
     {
       "id": "tx00376",
@@ -3795,7 +4171,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ARIELTEK INDUSTRIA E COMERCIO LTDA (0000314)",
-      "value": 600.0
+      "value": 600.0,
+      "nota_fiscal": "11998"
     },
     {
       "id": "tx00377",
@@ -3805,7 +4182,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ROBERTO GADDUCCI (0001070)",
-      "value": 24.99
+      "value": 24.99,
+      "nota_fiscal": "11999"
     },
     {
       "id": "tx00378",
@@ -3815,7 +4193,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "SULAMERICANA DE FIEIRAS INDUSTRIA E COME (0001089)",
-      "value": 129.99
+      "value": 129.99,
+      "nota_fiscal": "12000"
     },
     {
       "id": "tx00379",
@@ -3825,7 +4204,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "JESSE SMILE DANIEL (0001088)",
-      "value": 24.99
+      "value": 24.99,
+      "nota_fiscal": "12001"
     },
     {
       "id": "tx00380",
@@ -3835,7 +4215,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "SSAT SINALIZACAO E ADESIVOS EIRELI EPP (0000072)",
-      "value": 2847.82
+      "value": 2847.82,
+      "nota_fiscal": "12005"
     },
     {
       "id": "tx00381",
@@ -3845,7 +4226,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "HCM MALTA",
-      "value": 538.33
+      "value": 538.33,
+      "nota_fiscal": "11796"
     },
     {
       "id": "tx00382",
@@ -3855,7 +4237,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP C A COMP ELETRONICOS LTDA",
-      "value": 533.93
+      "value": 533.93,
+      "nota_fiscal": null
     },
     {
       "id": "tx00383",
@@ -3865,7 +4248,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 1.7
+      "value": 1.7,
+      "nota_fiscal": null
     },
     {
       "id": "tx00384",
@@ -3874,8 +4258,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "120125",
-      "value": 1336.67
+      "counterparty": "E2E INDUSTRIA E COMERCIO DE COMPONENTES (0000306)",
+      "value": 1336.67,
+      "nota_fiscal": "120125"
     },
     {
       "id": "tx00385",
@@ -3884,8 +4269,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "148103",
-      "value": 1438.41
+      "counterparty": "MEGADEF COMPONENTES ELETRONICOS LTDA (0000039)",
+      "value": 1438.41,
+      "nota_fiscal": "148103"
     },
     {
       "id": "tx00386",
@@ -3894,8 +4280,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "16875",
-      "value": 371.0
+      "counterparty": "TRICONECT COMERCIAL ELETR. LTDA (0000321)",
+      "value": 371.0,
+      "nota_fiscal": "16875"
     },
     {
       "id": "tx00387",
@@ -3904,8 +4291,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "198570",
-      "value": 271.58
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 271.58,
+      "nota_fiscal": "198570"
     },
     {
       "id": "tx00388",
@@ -3914,8 +4302,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "2541",
-      "value": 333.0
+      "counterparty": "CX COMERCIAL EIRELI EPP (0000329)",
+      "value": 333.0,
+      "nota_fiscal": "2541"
     },
     {
       "id": "tx00389",
@@ -3924,8 +4313,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "258676",
-      "value": 3967.59
+      "counterparty": "ACP COMERCIO ATACADISTA DE COMPONENTES E (0000249)",
+      "value": 3967.59,
+      "nota_fiscal": "258676"
     },
     {
       "id": "tx00390",
@@ -3934,8 +4324,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "258833",
-      "value": 2528.7
+      "counterparty": "ACP COMERCIO ATACADISTA DE COMPONENTES E (0000249)",
+      "value": 2528.7,
+      "nota_fiscal": "258833"
     },
     {
       "id": "tx00391",
@@ -3944,8 +4335,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "32235",
-      "value": 150.0
+      "counterparty": "ALLNETSYS COMERCIO IMPORTACAO E SERVICOS (0000036)",
+      "value": 150.0,
+      "nota_fiscal": "32235"
     },
     {
       "id": "tx00392",
@@ -3954,8 +4346,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "3293",
-      "value": 257.0
+      "counterparty": "S-ohm Comercial Ltda. (0000183)",
+      "value": 257.0,
+      "nota_fiscal": "3293"
     },
     {
       "id": "tx00393",
@@ -3964,8 +4357,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "67473",
-      "value": 457.8
+      "counterparty": "TRICOMP COMERCIAL ELETR. LTDA (0000278)",
+      "value": 457.8,
+      "nota_fiscal": "67473"
     },
     {
       "id": "tx00394",
@@ -3974,8 +4368,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "67481",
-      "value": 190.8
+      "counterparty": "TRICOMP COMERCIAL ELETR. LTDA (0000278)",
+      "value": 190.8,
+      "nota_fiscal": "67481"
     },
     {
       "id": "tx00395",
@@ -3984,8 +4379,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "75523",
-      "value": 737.0
+      "counterparty": "IDALL COM. ATAC. DE COMP. ELETR. LTDA (0000011)",
+      "value": 737.0,
+      "nota_fiscal": "75523"
     },
     {
       "id": "tx00396",
@@ -3994,8 +4390,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "7644",
-      "value": 550.0
+      "counterparty": "UNIVERSE LIGHTING IMPORTACAO EXPORTA€CO (0000305)",
+      "value": 550.0,
+      "nota_fiscal": "7644"
     },
     {
       "id": "tx00397",
@@ -4004,8 +4401,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "84761",
-      "value": 378.29
+      "counterparty": "COMP TOTAL COM. E IMP. DE COMP. ELETRON. (0000267)",
+      "value": 378.29,
+      "nota_fiscal": "84761"
     },
     {
       "id": "tx00398",
@@ -4014,8 +4412,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "85548",
-      "value": 466.21
+      "counterparty": "MEGAPIX COMP. ELETRONICOS LTDA-EPP (0000275)",
+      "value": 466.21,
+      "nota_fiscal": "85548"
     },
     {
       "id": "tx00399",
@@ -4025,7 +4424,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "TRANSFIX ASSISTENCIA TECN. E VENDAS EQUI (0000199)",
-      "value": 480.0
+      "value": 480.0,
+      "nota_fiscal": "12006"
     },
     {
       "id": "tx00400",
@@ -4035,7 +4435,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "BRUNO AUGUSTO PINTO CORREIA (0001093)",
-      "value": 21.99
+      "value": 21.99,
+      "nota_fiscal": "12007"
     },
     {
       "id": "tx00401",
@@ -4045,7 +4446,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "HEMILLY CHRISTINA CORTE SPERTINI D (0001090)",
-      "value": 34.5
+      "value": 34.5,
+      "nota_fiscal": "12008"
     },
     {
       "id": "tx00402",
@@ -4055,7 +4457,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "BPM INDUSTRIA E COMERCIO (0000541)",
-      "value": 1441.6
+      "value": 1441.6,
+      "nota_fiscal": "12009"
     },
     {
       "id": "tx00403",
@@ -4065,7 +4468,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ALLPRINT LATINA AUTOMACAO DE MAQUINAS EA (0000291)",
-      "value": 623.0
+      "value": 623.0,
+      "nota_fiscal": "12010"
     },
     {
       "id": "tx00404",
@@ -4075,7 +4479,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ASOR ELETROMEDICA EQUIP. ELETRO. E ELETO (0000246)",
-      "value": 1208.0
+      "value": 1208.0,
+      "nota_fiscal": "12011"
     },
     {
       "id": "tx00405",
@@ -4085,7 +4490,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "HIGHZ VALE INDUSTRIA ELETRONICA LTDA (0000526)",
-      "value": 76.0
+      "value": 76.0,
+      "nota_fiscal": "12012"
     },
     {
       "id": "tx00406",
@@ -4095,7 +4501,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "MCM TECNOLOGIA INDUSTRIAL (0000460)",
-      "value": 5039.6
+      "value": 5039.6,
+      "nota_fiscal": "12013"
     },
     {
       "id": "tx00407",
@@ -4105,7 +4512,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "T.G.L",
-      "value": 170.0
+      "value": 170.0,
+      "nota_fiscal": "776"
     },
     {
       "id": "tx00408",
@@ -4115,7 +4523,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 1.7
+      "value": 1.7,
+      "nota_fiscal": null
     },
     {
       "id": "tx00409",
@@ -4125,7 +4534,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "TRANSFIX ASSISTENCIA TECN. E VENDAS EQUI (0000199)",
-      "value": 974.0
+      "value": 974.0,
+      "nota_fiscal": "792"
     },
     {
       "id": "tx00410",
@@ -4135,7 +4545,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "VBN",
-      "value": 145.0
+      "value": 145.0,
+      "nota_fiscal": "11847"
     },
     {
       "id": "tx00411",
@@ -4145,7 +4556,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "R. BAIÃO",
-      "value": 3608.71
+      "value": 3608.71,
+      "nota_fiscal": "11804"
     },
     {
       "id": "tx00412",
@@ -4155,7 +4567,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "EXPOENTE TECNOLOGIA ELETRONICA LTDA - 0000079",
-      "value": 558.75
+      "value": 558.75,
+      "nota_fiscal": "11797"
     },
     {
       "id": "tx00413",
@@ -4165,7 +4578,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "VINTEK IND., COMERCIO E SERVICOS LTDA - 0000894",
-      "value": 7299.76
+      "value": 7299.76,
+      "nota_fiscal": "11803"
     },
     {
       "id": "tx00414",
@@ -4175,7 +4589,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ASOR ELETROMEDICA EQUIP. ELETRO. E ELETO - 0000246",
-      "value": 718.27
+      "value": 718.27,
+      "nota_fiscal": "11897"
     },
     {
       "id": "tx00415",
@@ -4185,7 +4600,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "PRODUTOS ELETRONICOS FRATA LTDA - 0000223",
-      "value": 2076.0
+      "value": 2076.0,
+      "nota_fiscal": "11903"
     },
     {
       "id": "tx00416",
@@ -4195,7 +4611,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 8.5
+      "value": 8.5,
+      "nota_fiscal": null
     },
     {
       "id": "tx00417",
@@ -4205,7 +4622,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "GASTOS FIXOS",
       "counterparty": "CLARO NET",
-      "value": 213.32
+      "value": 213.32,
+      "nota_fiscal": null
     },
     {
       "id": "tx00418",
@@ -4215,7 +4633,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "CONSUMO",
       "counterparty": "REFEIÇÃO",
-      "value": 378.0
+      "value": 378.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00419",
@@ -4225,7 +4644,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MPC DISTRIBUIDORA E LTDA",
-      "value": 3830.0
+      "value": 3830.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00420",
@@ -4235,7 +4655,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP C A COMP ELETRONICOS LTDA",
-      "value": 2064.71
+      "value": 2064.71,
+      "nota_fiscal": null
     },
     {
       "id": "tx00421",
@@ -4245,7 +4666,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ELCOMP COMERCIO C E LTDA EPP",
-      "value": 1426.53
+      "value": 1426.53,
+      "nota_fiscal": null
     },
     {
       "id": "tx00422",
@@ -4255,7 +4677,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "COMP TOTAL C I C ELETRONICOS",
-      "value": 490.1
+      "value": 490.1,
+      "nota_fiscal": null
     },
     {
       "id": "tx00423",
@@ -4265,7 +4688,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "GASTOS FIXOS",
       "counterparty": "SERASA",
-      "value": 368.11
+      "value": 368.11,
+      "nota_fiscal": null
     },
     {
       "id": "tx00424",
@@ -4275,7 +4699,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MKB",
-      "value": 1203.61
+      "value": 1203.61,
+      "nota_fiscal": null
     },
     {
       "id": "tx00425",
@@ -4285,7 +4710,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP C A COMP ELETRONICOS LTDA",
-      "value": 544.3
+      "value": 544.3,
+      "nota_fiscal": null
     },
     {
       "id": "tx00426",
@@ -4295,7 +4721,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "CONSUMO",
       "counterparty": "LOTUS MATERIAL LIMPEZA",
-      "value": 1363.18
+      "value": 1363.18,
+      "nota_fiscal": null
     },
     {
       "id": "tx00427",
@@ -4305,7 +4732,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL COMERCIO ATACADISTA DE C",
-      "value": 628.5
+      "value": 628.5,
+      "nota_fiscal": null
     },
     {
       "id": "tx00428",
@@ -4315,7 +4743,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "LECOMP COMERCIAL DE COMPONENTE",
-      "value": 272.0
+      "value": 272.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00429",
@@ -4325,7 +4754,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "MARKETING",
       "counterparty": "FADAMAR",
-      "value": 800.0
+      "value": 800.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00430",
@@ -4335,7 +4765,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY MAX ELETRONICA LTDA",
-      "value": 95.55
+      "value": 95.55,
+      "nota_fiscal": null
     },
     {
       "id": "tx00431",
@@ -4345,7 +4776,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY MAX ELETRONICA LTDA",
-      "value": 32.01
+      "value": 32.01,
+      "nota_fiscal": null
     },
     {
       "id": "tx00432",
@@ -4354,8 +4786,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "144",
-      "value": 1176.0
+      "counterparty": "JOSÃ‰ PINHEIRO CASSINI - ME (0000404)",
+      "value": 1176.0,
+      "nota_fiscal": "144"
     },
     {
       "id": "tx00433",
@@ -4364,8 +4797,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "148165",
-      "value": 282.85
+      "counterparty": "MEGADEF COMPONENTES ELETRONICOS LTDA (0000039)",
+      "value": 282.85,
+      "nota_fiscal": "148165"
     },
     {
       "id": "tx00434",
@@ -4374,8 +4808,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "198820",
-      "value": 32.01
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 32.01,
+      "nota_fiscal": "198820"
     },
     {
       "id": "tx00435",
@@ -4384,8 +4819,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "4056",
-      "value": 278.0
+      "counterparty": "MDS COMPONENTES ELETRONICOS LTDA (0000297)",
+      "value": 278.0,
+      "nota_fiscal": "4056"
     },
     {
       "id": "tx00436",
@@ -4394,8 +4830,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "45446",
-      "value": 4224.67
+      "counterparty": "ALLSEMI TECNOLOGIA ELETRONICA LTDA (0000299)",
+      "value": 4224.67,
+      "nota_fiscal": "45446"
     },
     {
       "id": "tx00437",
@@ -4404,8 +4841,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "5522",
-      "value": 445.0
+      "counterparty": "DELTA SUPRIMENTOS DE INFORMATICA (0000161)",
+      "value": 445.0,
+      "nota_fiscal": "5522"
     },
     {
       "id": "tx00438",
@@ -4414,8 +4852,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "84829",
-      "value": 546.57
+      "counterparty": "COMP TOTAL COM. E IMP. DE COMP. ELETRON. (0000267)",
+      "value": 546.57,
+      "nota_fiscal": "84829"
     },
     {
       "id": "tx00439",
@@ -4425,7 +4864,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "DANYELLA BARROSO DE OLIVEIRA (0001096)",
-      "value": 39.97
+      "value": 39.97,
+      "nota_fiscal": "12014"
     },
     {
       "id": "tx00440",
@@ -4435,7 +4875,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "JOSE BENATTI DE MOURA (0001095)",
-      "value": 24.99
+      "value": 24.99,
+      "nota_fiscal": "12015"
     },
     {
       "id": "tx00441",
@@ -4445,7 +4886,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "MARIO DOS SANTOS RATTO FILHO (0001098)",
-      "value": 9.99
+      "value": 9.99,
+      "nota_fiscal": "12017"
     },
     {
       "id": "tx00442",
@@ -4455,7 +4897,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "EWERTON WILLIAN DA SILVA (0001097)",
-      "value": 9.99
+      "value": 9.99,
+      "nota_fiscal": "12018"
     },
     {
       "id": "tx00443",
@@ -4465,7 +4908,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "CONDUVOX TELEMATICA LTDA (0000031)",
-      "value": 725.1
+      "value": 725.1,
+      "nota_fiscal": "12019"
     },
     {
       "id": "tx00444",
@@ -4475,7 +4919,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ARIELTEK INDUSTRIA E COMERCIO LTDA (0000314)",
-      "value": 390.5
+      "value": 390.5,
+      "nota_fiscal": "12020"
     },
     {
       "id": "tx00445",
@@ -4485,7 +4930,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "TELESHESK",
-      "value": 480.0
+      "value": 480.0,
+      "nota_fiscal": "779"
     },
     {
       "id": "tx00446",
@@ -4495,7 +4941,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "LS",
-      "value": 1114.34
+      "value": 1114.34,
+      "nota_fiscal": null
     },
     {
       "id": "tx00447",
@@ -4505,7 +4952,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "SÓCIOS",
       "counterparty": "CARTÃO",
-      "value": 17119.18
+      "value": 17119.18,
+      "nota_fiscal": null
     },
     {
       "id": "tx00448",
@@ -4515,7 +4963,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 1.7
+      "value": 1.7,
+      "nota_fiscal": null
     },
     {
       "id": "tx00449",
@@ -4525,7 +4974,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "HIGTHZ",
-      "value": 76.0
+      "value": 76.0,
+      "nota_fiscal": "12012"
     },
     {
       "id": "tx00450",
@@ -4535,7 +4985,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CONSTRUTEC",
-      "value": 109.68
+      "value": 109.68,
+      "nota_fiscal": "11934"
     },
     {
       "id": "tx00451",
@@ -4545,7 +4996,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "R. BAIÃO",
-      "value": 4977.29
+      "value": 4977.29,
+      "nota_fiscal": "11668"
     },
     {
       "id": "tx00452",
@@ -4555,7 +5007,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "GASTOS FIXOS",
       "counterparty": "ALUGUEL MENSAL",
-      "value": 4200.0
+      "value": 4200.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00453",
@@ -4565,7 +5018,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 1.7
+      "value": 1.7,
+      "nota_fiscal": null
     },
     {
       "id": "tx00454",
@@ -4575,7 +5029,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "BPM INDUSTRIA E COMERCIO (0000541)",
-      "value": 528.85
+      "value": 528.85,
+      "nota_fiscal": "12021"
     },
     {
       "id": "tx00455",
@@ -4585,7 +5040,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "NEXXO EQUIPAMENTOS ELETRONICOS LTDA (0000225)",
-      "value": 1128.5
+      "value": 1128.5,
+      "nota_fiscal": "12022"
     },
     {
       "id": "tx00456",
@@ -4595,7 +5051,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "GEORGE BROERING KOERICH (0001100)",
-      "value": 14.99
+      "value": 14.99,
+      "nota_fiscal": "12023"
     },
     {
       "id": "tx00457",
@@ -4605,7 +5062,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "CASH EQUIPAMENTOS MEDICOS ODONTOLOGICOS (0001014)",
-      "value": 118.0
+      "value": 118.0,
+      "nota_fiscal": "12024"
     },
     {
       "id": "tx00458",
@@ -4615,7 +5073,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E (0000081)",
-      "value": 360.0
+      "value": 360.0,
+      "nota_fiscal": "12025"
     },
     {
       "id": "tx00459",
@@ -4625,7 +5084,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "MS TECNOPON EQUIPAMENTOS ESPECIAIS LTDA (0000373)",
-      "value": 902.0
+      "value": 902.0,
+      "nota_fiscal": "12026"
     },
     {
       "id": "tx00460",
@@ -4635,7 +5095,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "GISLENE",
-      "value": 380.33
+      "value": 380.33,
+      "nota_fiscal": "37"
     },
     {
       "id": "tx00461",
@@ -4645,7 +5106,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRICOMP COMERCIAL E LTDA",
-      "value": 53.0
+      "value": 53.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00462",
@@ -4655,7 +5117,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "MANUTENÇÃO",
       "counterparty": "GILBERTO",
-      "value": 250.0
+      "value": 250.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00463",
@@ -4665,7 +5128,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "PUBLICIDADE",
       "counterparty": "DANILO MARKETING POTAL JÁ",
-      "value": 147.0
+      "value": 147.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00464",
@@ -4675,7 +5139,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS (VR)",
       "counterparty": "PLUXXE VR E VA",
-      "value": 1000.0
+      "value": 1000.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00465",
@@ -4684,8 +5149,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "1352",
-      "value": 464.29
+      "counterparty": "PROELETRONICA COMPS ELETS IMPO E EXPO LT (0000273)",
+      "value": 464.29,
+      "nota_fiscal": "1352"
     },
     {
       "id": "tx00466",
@@ -4694,8 +5160,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "198939",
-      "value": 150.0
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 150.0,
+      "nota_fiscal": "198939"
     },
     {
       "id": "tx00467",
@@ -4704,8 +5171,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "2982",
-      "value": 385.0
+      "counterparty": "MARKCEL COMPONENTES ELETRONICOS LTDA (0000245)",
+      "value": 385.0,
+      "nota_fiscal": "2982"
     },
     {
       "id": "tx00468",
@@ -4714,8 +5182,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "32332",
-      "value": 115.0
+      "counterparty": "ALLNETSYS COMERCIO IMPORTACAO E SERVICOS (0000036)",
+      "value": 115.0,
+      "nota_fiscal": "32332"
     },
     {
       "id": "tx00469",
@@ -4724,8 +5193,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "5578",
-      "value": 139.0
+      "counterparty": "DELTA SUPRIMENTOS DE INFORMATICA (0000161)",
+      "value": 139.0,
+      "nota_fiscal": "5578"
     },
     {
       "id": "tx00470",
@@ -4734,8 +5204,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "75603",
-      "value": 470.0
+      "counterparty": "IDALL COM. ATAC. DE COMP. ELETR. LTDA (0000011)",
+      "value": 470.0,
+      "nota_fiscal": "75603"
     },
     {
       "id": "tx00471",
@@ -4745,7 +5216,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "RALCOMP COMP. ELETRONICOS EIRELI ME (0000474)",
-      "value": 975.0
+      "value": 975.0,
+      "nota_fiscal": "12027"
     },
     {
       "id": "tx00472",
@@ -4755,7 +5227,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "GGP INDUSTRIA E COMERCIO (0000204)",
-      "value": 1032.0
+      "value": 1032.0,
+      "nota_fiscal": "12028"
     },
     {
       "id": "tx00473",
@@ -4765,7 +5238,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "VIEWMED IND. A E COM. DE PROD. MEDICOSA (0000343)",
-      "value": 624.0
+      "value": 624.0,
+      "nota_fiscal": "12029"
     },
     {
       "id": "tx00474",
@@ -4775,7 +5249,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E (0000081)",
-      "value": 2185.6
+      "value": 2185.6,
+      "nota_fiscal": "12030"
     },
     {
       "id": "tx00475",
@@ -4785,7 +5260,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "R. BAIAO INDUSTRIA E COMERCIO LTDA (0000060)",
-      "value": 12838.32
+      "value": 12838.32,
+      "nota_fiscal": "12031"
     },
     {
       "id": "tx00476",
@@ -4795,7 +5271,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "CHAVE DIGITAL TECNOLOGIA ELETRONICA LTDA (0000022)",
-      "value": 350.0
+      "value": 350.0,
+      "nota_fiscal": "12032"
     },
     {
       "id": "tx00477",
@@ -4805,7 +5282,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "R. BAIAO INDUSTRIA E COMERCIO LTDA (0000060)",
-      "value": 1386.0
+      "value": 1386.0,
+      "nota_fiscal": "793"
     },
     {
       "id": "tx00478",
@@ -4815,7 +5293,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ACHEI COMPONENTES ELETRONICOS - 0000503",
-      "value": 163.5
+      "value": 163.5,
+      "nota_fiscal": "12040"
     },
     {
       "id": "tx00479",
@@ -4825,7 +5304,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CRDS",
-      "value": 319.5
+      "value": 319.5,
+      "nota_fiscal": "12033 E 794"
     },
     {
       "id": "tx00480",
@@ -4835,7 +5315,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "NEXXO",
-      "value": 32.0
+      "value": 32.0,
+      "nota_fiscal": "11757"
     },
     {
       "id": "tx00481",
@@ -4845,7 +5326,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "EASTEC",
-      "value": 120.0
+      "value": 120.0,
+      "nota_fiscal": "11814"
     },
     {
       "id": "tx00482",
@@ -4855,7 +5337,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "E DE OLIVEIRA",
-      "value": 301.0
+      "value": 301.0,
+      "nota_fiscal": "12038"
     },
     {
       "id": "tx00483",
@@ -4865,7 +5348,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "T.G.L. ELETRO ELETRONICO LTDA - ME - 0000073",
-      "value": 2040.0
+      "value": 2040.0,
+      "nota_fiscal": "11910"
     },
     {
       "id": "tx00484",
@@ -4875,7 +5359,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 1.7
+      "value": 1.7,
+      "nota_fiscal": null
     },
     {
       "id": "tx00485",
@@ -4884,8 +5369,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "115553",
-      "value": 907.0
+      "counterparty": "LECOMP Com. de Comp. Eletronicos LTDA (0000312)",
+      "value": 907.0,
+      "nota_fiscal": "115553"
     },
     {
       "id": "tx00486",
@@ -4894,8 +5380,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "115575",
-      "value": 611.5
+      "counterparty": "LECOMP Com. de Comp. Eletronicos LTDA (0000312)",
+      "value": 611.5,
+      "nota_fiscal": "115575"
     },
     {
       "id": "tx00487",
@@ -4904,8 +5391,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "2570",
-      "value": 414.0
+      "counterparty": "CX COMERCIAL EIRELI EPP (0000329)",
+      "value": 414.0,
+      "nota_fiscal": "2570"
     },
     {
       "id": "tx00488",
@@ -4914,8 +5402,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "32347",
-      "value": 240.0
+      "counterparty": "ALLNETSYS COMERCIO IMPORTACAO E SERVICOS (0000036)",
+      "value": 240.0,
+      "nota_fiscal": "32347"
     },
     {
       "id": "tx00489",
@@ -4924,8 +5413,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "67594",
-      "value": 53.0
+      "counterparty": "TRICOMP COMERCIAL ELETR. LTDA (0000278)",
+      "value": 53.0,
+      "nota_fiscal": "67594"
     },
     {
       "id": "tx00490",
@@ -4934,8 +5424,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "8823",
-      "value": 1200.0
+      "counterparty": "TRYNIT LED COMPONENTES ELETRONICOS EIREL (0000259)",
+      "value": 1200.0,
+      "nota_fiscal": "8823"
     },
     {
       "id": "tx00491",
@@ -4945,7 +5436,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "CRDS DESENVOLVIMENTO E TECNOLOGIA LTDA. (0001101)",
-      "value": 89.5
+      "value": 89.5,
+      "nota_fiscal": "12033"
     },
     {
       "id": "tx00492",
@@ -4955,7 +5447,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ALEX SANDRO FRANCA (0001102)",
-      "value": 44.97
+      "value": 44.97,
+      "nota_fiscal": "12034"
     },
     {
       "id": "tx00493",
@@ -4965,7 +5458,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "JOAO COSTA CARDOSO (0001103)",
-      "value": 19.99
+      "value": 19.99,
+      "nota_fiscal": "12035"
     },
     {
       "id": "tx00494",
@@ -4975,7 +5469,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "JOAO FERNANDO CALCAGNO CAMARGO (0001106)",
-      "value": 44.97
+      "value": 44.97,
+      "nota_fiscal": "12036"
     },
     {
       "id": "tx00495",
@@ -4985,7 +5480,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "BIQUAD TECNOLOGIA LTDA (0000013)",
-      "value": 4287.9
+      "value": 4287.9,
+      "nota_fiscal": "12037"
     },
     {
       "id": "tx00496",
@@ -4995,7 +5491,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "E DE OLIVEIRA BARBOSA ELETRONICA (0000898)",
-      "value": 302.0
+      "value": 302.0,
+      "nota_fiscal": "12038"
     },
     {
       "id": "tx00497",
@@ -5005,7 +5502,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E (0000081)",
-      "value": 328.55
+      "value": 328.55,
+      "nota_fiscal": "12039"
     },
     {
       "id": "tx00498",
@@ -5015,7 +5513,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ACHEI COMPONENTES ELETRONICOS (0000503)",
-      "value": 163.5
+      "value": 163.5,
+      "nota_fiscal": "12040"
     },
     {
       "id": "tx00499",
@@ -5025,7 +5524,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "LEO COMEDES",
-      "value": 500.0
+      "value": 500.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00500",
@@ -5035,7 +5535,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "SÓCIOS",
       "counterparty": "MARIA",
-      "value": 3000.0
+      "value": 3000.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00501",
@@ -5045,7 +5546,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "CRDS DESENVOLVIMENTO E TECNOLOGIA LTDA. (0001101)",
-      "value": 230.0
+      "value": 230.0,
+      "nota_fiscal": "794"
     },
     {
       "id": "tx00502",
@@ -5055,7 +5557,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "LIFE",
-      "value": 1016.83
+      "value": 1016.83,
+      "nota_fiscal": "11836"
     },
     {
       "id": "tx00503",
@@ -5065,7 +5568,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SSAT SINALIZACAO E ADESIVOS EIRELI EPP - 0000072",
-      "value": 2566.68
+      "value": 2566.68,
+      "nota_fiscal": "11830"
     },
     {
       "id": "tx00504",
@@ -5075,7 +5579,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "TRANSPORTES",
       "counterparty": "MOTOBOY WANDO",
-      "value": 820.0
+      "value": 820.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00505",
@@ -5085,7 +5590,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "LECOMP COMERCIAL DE COMPONENTE",
-      "value": 450.0
+      "value": 450.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00506",
@@ -5095,7 +5601,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "SÓCIOS",
       "counterparty": "MARIA",
-      "value": 2500.0
+      "value": 2500.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00507",
@@ -5105,7 +5612,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 3.4
+      "value": 3.4,
+      "nota_fiscal": null
     },
     {
       "id": "tx00508",
@@ -5114,8 +5622,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "115617",
-      "value": 633.75
+      "counterparty": "LECOMP Com. de Comp. Eletronicos LTDA (0000312)",
+      "value": 633.75,
+      "nota_fiscal": "115617"
     },
     {
       "id": "tx00509",
@@ -5124,8 +5633,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "13735",
-      "value": 410.87
+      "counterparty": "JBT COMPONENTES FILIAL ITAPEVA/MG (0000414)",
+      "value": 410.87,
+      "nota_fiscal": "13735"
     },
     {
       "id": "tx00510",
@@ -5134,8 +5644,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "199222",
-      "value": 660.8
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 660.8,
+      "nota_fiscal": "199222"
     },
     {
       "id": "tx00511",
@@ -5144,8 +5655,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "2576",
-      "value": 432.9
+      "counterparty": "CX COMERCIAL EIRELI EPP (0000329)",
+      "value": 432.9,
+      "nota_fiscal": "2576"
     },
     {
       "id": "tx00512",
@@ -5154,8 +5666,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "258998",
-      "value": 972.5
+      "counterparty": "ACP COMERCIO ATACADISTA DE COMPONENTES E (0000249)",
+      "value": 972.5,
+      "nota_fiscal": "258998"
     },
     {
       "id": "tx00513",
@@ -5164,8 +5677,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "32373",
-      "value": 120.0
+      "counterparty": "ALLNETSYS COMERCIO IMPORTACAO E SERVICOS (0000036)",
+      "value": 120.0,
+      "nota_fiscal": "32373"
     },
     {
       "id": "tx00514",
@@ -5174,8 +5688,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "3351",
-      "value": 35.0
+      "counterparty": "S-ohm Comercial Ltda. (0000183)",
+      "value": 35.0,
+      "nota_fiscal": "3351"
     },
     {
       "id": "tx00515",
@@ -5184,8 +5699,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "34563",
-      "value": 348.0
+      "counterparty": "MRD COMPONENTES ELETRONICOS LTDA. (0000388)",
+      "value": 348.0,
+      "nota_fiscal": "34563"
     },
     {
       "id": "tx00516",
@@ -5194,8 +5710,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "72122",
-      "value": 402.68
+      "counterparty": "CIKA ELETRONICA DO BRASIL LTDA (0000021)",
+      "value": 402.68,
+      "nota_fiscal": "72122"
     },
     {
       "id": "tx00517",
@@ -5204,8 +5721,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "75625",
-      "value": 2069.0
+      "counterparty": "IDALL COM. ATAC. DE COMP. ELETR. LTDA (0000011)",
+      "value": 2069.0,
+      "nota_fiscal": "75625"
     },
     {
       "id": "tx00518",
@@ -5215,7 +5733,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ACHEI",
-      "value": 1012.38
+      "value": 1012.38,
+      "nota_fiscal": "11777"
     },
     {
       "id": "tx00519",
@@ -5225,7 +5744,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "PRODUTOS FRATA",
-      "value": 1540.0
+      "value": 1540.0,
+      "nota_fiscal": "11849"
     },
     {
       "id": "tx00520",
@@ -5235,7 +5755,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SIMPLES CONECT",
-      "value": 481.0
+      "value": 481.0,
+      "nota_fiscal": "11913"
     },
     {
       "id": "tx00521",
@@ -5245,7 +5766,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "JOSÉ PINHEIRO",
-      "value": 1176.0
+      "value": 1176.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00522",
@@ -5255,7 +5777,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "LECOMP",
-      "value": 466.5
+      "value": 466.5,
+      "nota_fiscal": null
     },
     {
       "id": "tx00523",
@@ -5265,7 +5788,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 5.1
+      "value": 5.1,
+      "nota_fiscal": null
     },
     {
       "id": "tx00524",
@@ -5275,7 +5799,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "MARCOS JADIR WOLFART SEIDEL (0001111)",
-      "value": 24.99
+      "value": 24.99,
+      "nota_fiscal": "12047"
     },
     {
       "id": "tx00525",
@@ -5285,7 +5810,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "RUSSER BRASIL EIRELI (0000403)",
-      "value": 438.5
+      "value": 438.5,
+      "nota_fiscal": "12049"
     },
     {
       "id": "tx00526",
@@ -5295,7 +5821,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "EXPOENTE TECNOLOGIA ELETRONICA LTDA (0000079)",
-      "value": 840.5
+      "value": 840.5,
+      "nota_fiscal": "12050"
     },
     {
       "id": "tx00527",
@@ -5305,7 +5832,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "RYON MAQUINAS LTDA (0000662)",
-      "value": 1865.0
+      "value": 1865.0,
+      "nota_fiscal": "12051"
     },
     {
       "id": "tx00528",
@@ -5315,7 +5843,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "SEGURO DE EMPRÉSTIMO",
       "counterparty": "SEGURO DE EMPRÉSTIMO",
-      "value": 109.79
+      "value": 109.79,
+      "nota_fiscal": null
     },
     {
       "id": "tx00529",
@@ -5325,7 +5854,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "EMPRÉSTIMO FGI",
       "counterparty": "CAPITAL DE GIRO",
-      "value": 3019.29
+      "value": 3019.29,
+      "nota_fiscal": null
     },
     {
       "id": "tx00530",
@@ -5335,7 +5865,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "PRICILA",
-      "value": 190.8
+      "value": 190.8,
+      "nota_fiscal": null
     },
     {
       "id": "tx00531",
@@ -5345,7 +5876,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "DAIANE",
-      "value": 190.8
+      "value": 190.8,
+      "nota_fiscal": null
     },
     {
       "id": "tx00532",
@@ -5355,7 +5887,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "FRANCISCO",
-      "value": 190.08
+      "value": 190.08,
+      "nota_fiscal": null
     },
     {
       "id": "tx00533",
@@ -5365,7 +5898,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "MANUTENÇÃO",
       "counterparty": "GILBERTO",
-      "value": 250.0
+      "value": 250.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00534",
@@ -5375,7 +5909,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 1.7
+      "value": 1.7,
+      "nota_fiscal": null
     },
     {
       "id": "tx00535",
@@ -5385,7 +5920,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "NEW TRAFIC",
-      "value": 476.67
+      "value": 476.67,
+      "nota_fiscal": "11854"
     },
     {
       "id": "tx00536",
@@ -5395,7 +5931,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "COMLINK",
-      "value": 2550.0
+      "value": 2550.0,
+      "nota_fiscal": "11916"
     },
     {
       "id": "tx00537",
@@ -5405,7 +5942,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "PREMIX",
-      "value": 265.5
+      "value": 265.5,
+      "nota_fiscal": "12052"
     },
     {
       "id": "tx00538",
@@ -5415,7 +5953,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 3.4
+      "value": 3.4,
+      "nota_fiscal": null
     },
     {
       "id": "tx00539",
@@ -5425,7 +5964,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "FILCRIL",
-      "value": 791.35
+      "value": 791.35,
+      "nota_fiscal": null
     },
     {
       "id": "tx00540",
@@ -5435,7 +5975,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY MAX",
-      "value": 1253.33
+      "value": 1253.33,
+      "nota_fiscal": null
     },
     {
       "id": "tx00541",
@@ -5445,7 +5986,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP",
-      "value": 2064.71
+      "value": 2064.71,
+      "nota_fiscal": null
     },
     {
       "id": "tx00542",
@@ -5455,7 +5997,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "COMP TOTAL",
-      "value": 181.05
+      "value": 181.05,
+      "nota_fiscal": null
     },
     {
       "id": "tx00543",
@@ -5465,7 +6008,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 1.7
+      "value": 1.7,
+      "nota_fiscal": null
     },
     {
       "id": "tx00544",
@@ -5474,8 +6018,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "17226",
-      "value": 420.0
+      "counterparty": "TRICONECT COMERCIAL ELETR. LTDA (0000321)",
+      "value": 420.0,
+      "nota_fiscal": "17226"
     },
     {
       "id": "tx00545",
@@ -5484,8 +6029,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "199519",
-      "value": 21.3
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 21.3,
+      "nota_fiscal": "199519"
     },
     {
       "id": "tx00546",
@@ -5495,7 +6041,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "PREMIX INDUSTRIA ELETROMECANIA LTDA (0000047)",
-      "value": 265.5
+      "value": 265.5,
+      "nota_fiscal": "12052"
     },
     {
       "id": "tx00547",
@@ -5505,7 +6052,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "NEXXO EQUIPAMENTOS ELETRONICOS LTDA (0000225)",
-      "value": 673.0
+      "value": 673.0,
+      "nota_fiscal": "12053"
     },
     {
       "id": "tx00548",
@@ -5515,7 +6063,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "DOUGLAS FLORENCIO (0001112)",
-      "value": 39.99
+      "value": 39.99,
+      "nota_fiscal": "12054"
     },
     {
       "id": "tx00549",
@@ -5525,7 +6074,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "R. BAIÃO",
-      "value": 980.84
+      "value": 980.84,
+      "nota_fiscal": "773"
     },
     {
       "id": "tx00550",
@@ -5535,7 +6085,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 1.7
+      "value": 1.7,
+      "nota_fiscal": null
     },
     {
       "id": "tx00551",
@@ -5545,7 +6096,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "MARTINS",
-      "value": 1000.0
+      "value": 1000.0,
+      "nota_fiscal": "797"
     },
     {
       "id": "tx00552",
@@ -5555,7 +6107,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "EDERSON LP",
-      "value": 1087.61
+      "value": 1087.61,
+      "nota_fiscal": "11917"
     },
     {
       "id": "tx00553",
@@ -5565,7 +6118,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ZENER",
-      "value": 612.5
+      "value": 612.5,
+      "nota_fiscal": null
     },
     {
       "id": "tx00554",
@@ -5575,7 +6129,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ALLNETS",
-      "value": 150.0
+      "value": 150.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00555",
@@ -5584,8 +6139,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "199619",
-      "value": 40.29
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 40.29,
+      "nota_fiscal": "199619"
     },
     {
       "id": "tx00556",
@@ -5594,8 +6150,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "259338",
-      "value": 375.23
+      "counterparty": "ACP COMERCIO ATACADISTA DE COMPONENTES E (0000249)",
+      "value": 375.23,
+      "nota_fiscal": "259338"
     },
     {
       "id": "tx00557",
@@ -5605,7 +6162,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ERICA FEITOSA DOS ANJOS, 378 (0001114)",
-      "value": 53.98
+      "value": 53.98,
+      "nota_fiscal": "12055"
     },
     {
       "id": "tx00558",
@@ -5615,7 +6173,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "EVOLUTEC INDUSTRIA E COMERCIO DE ELETROA (0000229)",
-      "value": 252.0
+      "value": 252.0,
+      "nota_fiscal": "12056"
     },
     {
       "id": "tx00559",
@@ -5625,7 +6184,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "CONDUVOX TELEMATICA LTDA (0000031)",
-      "value": 261.9
+      "value": 261.9,
+      "nota_fiscal": "12057"
     },
     {
       "id": "tx00560",
@@ -5635,7 +6195,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "MDI PROD E SISTEMAS LTDA (0000101)",
-      "value": 486.8
+      "value": 486.8,
+      "nota_fiscal": "12058"
     },
     {
       "id": "tx00561",
@@ -5645,7 +6206,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "L G NOVA COMERCIAL IMPORT. E EXPORT. LTD (0000124)",
-      "value": 276.0
+      "value": 276.0,
+      "nota_fiscal": "12059"
     },
     {
       "id": "tx00562",
@@ -5655,7 +6217,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "TRANSFIX ASSISTENCIA TECN. E VENDAS EQUI (0000199)",
-      "value": 16832.0
+      "value": 16832.0,
+      "nota_fiscal": "795"
     },
     {
       "id": "tx00563",
@@ -5665,7 +6228,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ALLPRINT",
-      "value": 7745.0
+      "value": 7745.0,
+      "nota_fiscal": "796"
     },
     {
       "id": "tx00564",
@@ -5675,7 +6239,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FZW",
-      "value": 1925.37
+      "value": 1925.37,
+      "nota_fiscal": "11811"
     },
     {
       "id": "tx00565",
@@ -5685,7 +6250,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "R.BAIÃO",
-      "value": 5385.97
+      "value": 5385.97,
+      "nota_fiscal": "11918"
     },
     {
       "id": "tx00566",
@@ -5695,7 +6261,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "NIATRON",
-      "value": 476.7
+      "value": 476.7,
+      "nota_fiscal": "11921"
     },
     {
       "id": "tx00567",
@@ -5705,7 +6272,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH",
-      "value": 542.0
+      "value": 542.0,
+      "nota_fiscal": "11922"
     },
     {
       "id": "tx00568",
@@ -5715,7 +6283,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FIBERWAM",
-      "value": 407.0
+      "value": 407.0,
+      "nota_fiscal": "11923"
     },
     {
       "id": "tx00569",
@@ -5725,7 +6294,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "TRANSFIX",
-      "value": 1067.66
+      "value": 1067.66,
+      "nota_fiscal": "11953 + 11935"
     },
     {
       "id": "tx00570",
@@ -5735,7 +6305,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "GASTOS FIXOS",
       "counterparty": "IUVEM FIDC MUL",
-      "value": 1270.0
+      "value": 1270.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00571",
@@ -5745,7 +6316,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "TRANSPORTES",
       "counterparty": "EMP. BRASIL CORREIOS",
-      "value": 1523.39
+      "value": 1523.39,
+      "nota_fiscal": null
     },
     {
       "id": "tx00572",
@@ -5755,7 +6327,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY MAX ELETRONICA LTDA",
-      "value": 61.59
+      "value": 61.59,
+      "nota_fiscal": null
     },
     {
       "id": "tx00573",
@@ -5765,7 +6338,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRICONECT COMERCIAL ELETRONICA",
-      "value": 182.32
+      "value": 182.32,
+      "nota_fiscal": null
     },
     {
       "id": "tx00574",
@@ -5775,7 +6349,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MEGADEF COMPONENTES ELETRONICO",
-      "value": 282.85
+      "value": 282.85,
+      "nota_fiscal": null
     },
     {
       "id": "tx00575",
@@ -5785,7 +6360,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRICOMP COMERCIAL E LTDA",
-      "value": 91.58
+      "value": 91.58,
+      "nota_fiscal": null
     },
     {
       "id": "tx00576",
@@ -5795,7 +6371,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "S-OHM COMERCIAL LTDA",
-      "value": 35.0
+      "value": 35.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00577",
@@ -5805,7 +6382,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 9.05
+      "value": 9.05,
+      "nota_fiscal": null
     },
     {
       "id": "tx00578",
@@ -5814,8 +6392,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "115641",
-      "value": 4100.0
+      "counterparty": "LECOMP Com. de Comp. Eletronicos LTDA (0000312)",
+      "value": 4100.0,
+      "nota_fiscal": "115641"
     },
     {
       "id": "tx00579",
@@ -5824,8 +6403,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "2605",
-      "value": 398.88
+      "counterparty": "CX COMERCIAL EIRELI EPP (0000329)",
+      "value": 398.88,
+      "nota_fiscal": "2605"
     },
     {
       "id": "tx00580",
@@ -5834,8 +6414,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "5798",
-      "value": 261.17
+      "counterparty": "DALEC INDUSTRIA E COMERCIO DE COMPONENTE (0000056)",
+      "value": 261.17,
+      "nota_fiscal": "5798"
     },
     {
       "id": "tx00581",
@@ -5844,8 +6425,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "67719",
-      "value": 842.7
+      "counterparty": "TRICOMP COMERCIAL ELETR. LTDA (0000278)",
+      "value": 842.7,
+      "nota_fiscal": "67719"
     },
     {
       "id": "tx00582",
@@ -5855,7 +6437,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "INELTEC TECNOLOGIAS LTDA (0000193)",
-      "value": 6932.0
+      "value": 6932.0,
+      "nota_fiscal": "12060"
     },
     {
       "id": "tx00583",
@@ -5865,7 +6448,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "SAYRON RIBEIRO MARCELINO (0001116)",
-      "value": 34.99
+      "value": 34.99,
+      "nota_fiscal": "12061"
     },
     {
       "id": "tx00584",
@@ -5875,7 +6459,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "PAULO HENRIQUE SOUSA LIMA (0001117)",
-      "value": 29.98
+      "value": 29.98,
+      "nota_fiscal": "12062"
     },
     {
       "id": "tx00585",
@@ -5885,7 +6470,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "HIGHZ VALE INDUSTRIA ELETRONICA LTDA (0000526)",
-      "value": 62.0
+      "value": 62.0,
+      "nota_fiscal": "12063"
     },
     {
       "id": "tx00586",
@@ -5895,7 +6481,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E (0000081)",
-      "value": 1249.46
+      "value": 1249.46,
+      "nota_fiscal": "12064"
     },
     {
       "id": "tx00587",
@@ -5905,7 +6492,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "TRANSFIX",
-      "value": 608.34
+      "value": 608.34,
+      "nota_fiscal": "784"
     },
     {
       "id": "tx00588",
@@ -5915,7 +6503,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FZW",
-      "value": 482.09
+      "value": 482.09,
+      "nota_fiscal": "767 + 11610"
     },
     {
       "id": "tx00589",
@@ -5925,7 +6514,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 1.81
+      "value": 1.81,
+      "nota_fiscal": null
     },
     {
       "id": "tx00590",
@@ -5935,7 +6525,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "MARTINS",
-      "value": 1000.0
+      "value": 1000.0,
+      "nota_fiscal": "797"
     },
     {
       "id": "tx00591",
@@ -5945,7 +6536,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "NEW TEC",
-      "value": 393.5
+      "value": 393.5,
+      "nota_fiscal": "snf 45,46,47"
     },
     {
       "id": "tx00592",
@@ -5955,7 +6547,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "WKS TECHNOLOGY DO BRASIL - 0000208",
-      "value": 409.32
+      "value": 409.32,
+      "nota_fiscal": "11924/01"
     },
     {
       "id": "tx00593",
@@ -5965,7 +6558,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CRISTOFOLI EQUIP. DE BIOSSEGURANCA LTDA - 0000146",
-      "value": 325.0
+      "value": 325.0,
+      "nota_fiscal": "11926/01"
     },
     {
       "id": "tx00594",
@@ -5975,7 +6569,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CRISTOFOLI EQUIP. DE BIOSSEGURANCA LTDA - 0000146",
-      "value": 650.0
+      "value": 650.0,
+      "nota_fiscal": "11927/01"
     },
     {
       "id": "tx00595",
@@ -5985,7 +6580,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ARIELTEK INDUSTRIA E COMERCIO LTDA - 0000314",
-      "value": 834.0
+      "value": 834.0,
+      "nota_fiscal": "11928/01"
     },
     {
       "id": "tx00596",
@@ -5995,7 +6591,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO - 0000660",
-      "value": 986.1
+      "value": 986.1,
+      "nota_fiscal": "11929/01"
     },
     {
       "id": "tx00597",
@@ -6005,7 +6602,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SIMPLES CONNECT INDUSTRIA E COMERCIO LTA - 0000308",
-      "value": 442.0
+      "value": 442.0,
+      "nota_fiscal": "11930/01"
     },
     {
       "id": "tx00598",
@@ -6015,7 +6613,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "M. POWER IND.E COM. DE ELETR. LTDA - 0000216",
-      "value": 552.0
+      "value": 552.0,
+      "nota_fiscal": "11931/01"
     },
     {
       "id": "tx00599",
@@ -6025,7 +6624,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BIQUAD",
-      "value": 175.0
+      "value": 175.0,
+      "nota_fiscal": "12108"
     },
     {
       "id": "tx00600",
@@ -6035,7 +6635,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ZENER",
-      "value": 816.8
+      "value": 816.8,
+      "nota_fiscal": null
     },
     {
       "id": "tx00601",
@@ -6045,7 +6646,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP",
-      "value": 536.9
+      "value": 536.9,
+      "nota_fiscal": null
     },
     {
       "id": "tx00602",
@@ -6055,7 +6657,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL",
-      "value": 660.73
+      "value": 660.73,
+      "nota_fiscal": null
     },
     {
       "id": "tx00603",
@@ -6065,7 +6668,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRYNIT",
-      "value": 250.0
+      "value": 250.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00604",
@@ -6075,7 +6679,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "SEGURO SÓCIO CARRO",
       "counterparty": "SUHAY SEGURO",
-      "value": 931.72
+      "value": 931.72,
+      "nota_fiscal": null
     },
     {
       "id": "tx00605",
@@ -6085,7 +6690,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "CONTABILIDADE",
       "counterparty": "HANSER",
-      "value": 2500.0
+      "value": 2500.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00606",
@@ -6095,7 +6701,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "ALINE",
-      "value": 1500.0
+      "value": 1500.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00607",
@@ -6105,7 +6712,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "TAMIRES",
-      "value": 1405.87
+      "value": 1405.87,
+      "nota_fiscal": null
     },
     {
       "id": "tx00608",
@@ -6115,7 +6723,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "MATHEUS SOARES",
-      "value": 1220.8
+      "value": 1220.8,
+      "nota_fiscal": null
     },
     {
       "id": "tx00609",
@@ -6125,7 +6734,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "MATHEUS SILVA",
-      "value": 1163.92
+      "value": 1163.92,
+      "nota_fiscal": null
     },
     {
       "id": "tx00610",
@@ -6135,7 +6745,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "TRANSPORTES",
       "counterparty": "IPVA + LICENCIAMENTO",
-      "value": 5171.87
+      "value": 5171.87,
+      "nota_fiscal": null
     },
     {
       "id": "tx00611",
@@ -6145,7 +6756,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 12.67
+      "value": 12.67,
+      "nota_fiscal": null
     },
     {
       "id": "tx00612",
@@ -6154,8 +6766,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "115737",
-      "value": 598.6
+      "counterparty": "LECOMP Com. de Comp. Eletronicos LTDA (0000312)",
+      "value": 598.6,
+      "nota_fiscal": "115737"
     },
     {
       "id": "tx00613",
@@ -6164,8 +6777,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "23498",
-      "value": 1548.75
+      "counterparty": "VETRONIC COMERCIO ELETRONICA LTDA (0000038)",
+      "value": 1548.75,
+      "nota_fiscal": "23498"
     },
     {
       "id": "tx00614",
@@ -6174,8 +6788,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "3953",
-      "value": 6900.0
+      "counterparty": "LEDCOMP COMERCIO DE COMPONENTES ELETRONI (0000313)",
+      "value": 6900.0,
+      "nota_fiscal": "3953"
     },
     {
       "id": "tx00615",
@@ -6184,8 +6799,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "7935",
-      "value": 250.0
+      "counterparty": "DICEL COMERCIO DE COMPONENTES ELETRONICO (0000298)",
+      "value": 250.0,
+      "nota_fiscal": "7935"
     },
     {
       "id": "tx00616",
@@ -6195,7 +6811,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ISRAEL RODRIGUES DE CARVALHO (0001119)",
-      "value": 22.99
+      "value": 22.99,
+      "nota_fiscal": "12065"
     },
     {
       "id": "tx00617",
@@ -6205,7 +6822,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "49.639.358 VINICIUS RENATO TIMI (0001121)",
-      "value": 33.98
+      "value": 33.98,
+      "nota_fiscal": "12066"
     },
     {
       "id": "tx00618",
@@ -6215,7 +6833,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "BALMARC SOLUCOES EIRELI (0000011)",
-      "value": 191.0
+      "value": 191.0,
+      "nota_fiscal": "12067"
     },
     {
       "id": "tx00619",
@@ -6225,7 +6844,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FIBERWAN IND. DE EQUIP. ELETTR. LTDA-EPP (0000411)",
-      "value": 1149.0
+      "value": 1149.0,
+      "nota_fiscal": "12068"
     },
     {
       "id": "tx00620",
@@ -6235,7 +6855,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "J. M. MAQUINAS E EQUIPAMENTOS EIRELI (0000091)",
-      "value": 203.0
+      "value": 203.0,
+      "nota_fiscal": "12069"
     },
     {
       "id": "tx00621",
@@ -6245,7 +6866,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "LANZA",
-      "value": 1714.0
+      "value": 1714.0,
+      "nota_fiscal": "783"
     },
     {
       "id": "tx00622",
@@ -6255,7 +6877,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "FCP",
-      "value": 1121.26
+      "value": 1121.26,
+      "nota_fiscal": null
     },
     {
       "id": "tx00623",
@@ -6265,7 +6888,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 1.81
+      "value": 1.81,
+      "nota_fiscal": null
     },
     {
       "id": "tx00624",
@@ -6275,7 +6899,8 @@ const MAXLED_DATA = {
       "flow": "compra",
       "category": null,
       "counterparty": "KUM LI",
-      "value": 9065.0
+      "value": 9065.0,
+      "nota_fiscal": "1"
     },
     {
       "id": "tx00625",
@@ -6285,7 +6910,8 @@ const MAXLED_DATA = {
       "flow": "compra",
       "category": null,
       "counterparty": "SIMENTOR",
-      "value": 5775.0
+      "value": 5775.0,
+      "nota_fiscal": "2"
     },
     {
       "id": "tx00626",
@@ -6295,7 +6921,8 @@ const MAXLED_DATA = {
       "flow": "compra",
       "category": null,
       "counterparty": "SIMENTOR",
-      "value": 13191.72
+      "value": 13191.72,
+      "nota_fiscal": "3"
     },
     {
       "id": "tx00627",
@@ -6305,7 +6932,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "HIGTHZ",
-      "value": 62.0
+      "value": 62.0,
+      "nota_fiscal": "12063"
     },
     {
       "id": "tx00628",
@@ -6315,7 +6943,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
-      "value": 306.15
+      "value": 306.15,
+      "nota_fiscal": "11894/02"
     },
     {
       "id": "tx00629",
@@ -6325,7 +6954,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ASOR ELETROMEDICA EQUIP. ELETRO. E ELETO - 0000246",
-      "value": 718.27
+      "value": 718.27,
+      "nota_fiscal": "11897/03"
     },
     {
       "id": "tx00630",
@@ -6335,7 +6965,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "EXPOENTE TECNOLOGIA ELETRONICA LTDA - 0000079",
-      "value": 548.9
+      "value": 548.9,
+      "nota_fiscal": "11939/01"
     },
     {
       "id": "tx00631",
@@ -6345,7 +6976,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "MDI PROD E SISTEMAS LTDA - 0000101",
-      "value": 654.2
+      "value": 654.2,
+      "nota_fiscal": "11941/01"
     },
     {
       "id": "tx00632",
@@ -6355,7 +6987,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 7.24
+      "value": 7.24,
+      "nota_fiscal": null
     },
     {
       "id": "tx00633",
@@ -6365,7 +6998,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP",
-      "value": 534.1
+      "value": 534.1,
+      "nota_fiscal": null
     },
     {
       "id": "tx00634",
@@ -6375,7 +7009,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MPC",
-      "value": 3830.0
+      "value": 3830.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00635",
@@ -6385,7 +7020,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ALLSEMI",
-      "value": 1079.58
+      "value": 1079.58,
+      "nota_fiscal": null
     },
     {
       "id": "tx00636",
@@ -6395,7 +7031,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL",
-      "value": 1661.55
+      "value": 1661.55,
+      "nota_fiscal": null
     },
     {
       "id": "tx00637",
@@ -6405,7 +7042,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ELCOMP",
-      "value": 1426.55
+      "value": 1426.55,
+      "nota_fiscal": null
     },
     {
       "id": "tx00638",
@@ -6415,7 +7053,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "LUCK IMPORT",
-      "value": 812.5
+      "value": 812.5,
+      "nota_fiscal": null
     },
     {
       "id": "tx00639",
@@ -6425,7 +7064,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ROGERIO NOVAES BUENO (0001133)",
-      "value": 59.96
+      "value": 59.96,
+      "nota_fiscal": "12072"
     },
     {
       "id": "tx00640",
@@ -6435,7 +7075,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "R E M COMPONENTES COMERCIAL ELETRONICA L (0000826)",
-      "value": 816.0
+      "value": 816.0,
+      "nota_fiscal": "12073"
     },
     {
       "id": "tx00641",
@@ -6445,7 +7086,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "T.G.L. ELETRO ELETRONICO LTDA - ME (0000073)",
-      "value": 80.0
+      "value": 80.0,
+      "nota_fiscal": "12075"
     },
     {
       "id": "tx00642",
@@ -6455,7 +7097,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "T.G.L. ELETRO ELETRONICO LTDA - ME (0000073)",
-      "value": 240.0
+      "value": 240.0,
+      "nota_fiscal": "12076"
     },
     {
       "id": "tx00643",
@@ -6465,7 +7108,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH",
-      "value": 1711.5
+      "value": 1711.5,
+      "nota_fiscal": "778"
     },
     {
       "id": "tx00644",
@@ -6475,7 +7119,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SIMPLES CONECT",
-      "value": 2850.0
+      "value": 2850.0,
+      "nota_fiscal": "782"
     },
     {
       "id": "tx00645",
@@ -6485,7 +7130,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 3.62
+      "value": 3.62,
+      "nota_fiscal": null
     },
     {
       "id": "tx00646",
@@ -6495,7 +7141,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL",
-      "value": 1266.67
+      "value": 1266.67,
+      "nota_fiscal": null
     },
     {
       "id": "tx00647",
@@ -6505,7 +7152,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "LS",
-      "value": 1114.33
+      "value": 1114.33,
+      "nota_fiscal": null
     },
     {
       "id": "tx00648",
@@ -6515,7 +7163,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "PRODUTOS ELETRONICOS FRATA LTDA - 0000223",
-      "value": 2076.0
+      "value": 2076.0,
+      "nota_fiscal": "11903/03"
     },
     {
       "id": "tx00649",
@@ -6525,7 +7174,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "COMLINK EQUIPAMENTOS ELETRONICOS LTDA - 0000028",
-      "value": 2550.0
+      "value": 2550.0,
+      "nota_fiscal": "11916/02"
     },
     {
       "id": "tx00650",
@@ -6535,7 +7185,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "B. P. S. SISTEMAS DE AUTOMACAO LTDA - 0000010",
-      "value": 567.8
+      "value": 567.8,
+      "nota_fiscal": "11946/01"
     },
     {
       "id": "tx00651",
@@ -6545,7 +7196,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ALLPRINT LATINA AUTOMACAO DE MAQUINAS EA - 0000291",
-      "value": 572.0
+      "value": 572.0,
+      "nota_fiscal": "11950/01"
     },
     {
       "id": "tx00652",
@@ -6555,7 +7207,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CITTA ELETRONICA IND. E COM. LTDA ME - 0000532",
-      "value": 338.5
+      "value": 338.5,
+      "nota_fiscal": "11955/01"
     },
     {
       "id": "tx00653",
@@ -6565,7 +7218,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FZW INNOVATION LTDA - 0000848",
-      "value": 509.3
+      "value": 509.3,
+      "nota_fiscal": "11944/01"
     },
     {
       "id": "tx00654",
@@ -6575,7 +7229,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "LSR",
-      "value": 63.0
+      "value": 63.0,
+      "nota_fiscal": "12077"
     },
     {
       "id": "tx00655",
@@ -6585,7 +7240,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 10.86
+      "value": 10.86,
+      "nota_fiscal": null
     },
     {
       "id": "tx00656",
@@ -6595,7 +7251,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "GASTOS FIXOS",
       "counterparty": "CLARO",
-      "value": 213.16
+      "value": 213.16,
+      "nota_fiscal": null
     },
     {
       "id": "tx00657",
@@ -6605,7 +7262,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "SINDICATO DOS COMERCIARIOS DE",
-      "value": 65.37
+      "value": 65.37,
+      "nota_fiscal": null
     },
     {
       "id": "tx00658",
@@ -6613,9 +7271,10 @@ const MAXLED_DATA = {
       "division": "iluminacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "PLANO DE SAÚDE",
+      "category": "FUNCIONÁRIOS",
       "counterparty": "PORTO SEGURO SEGURO SAUDE S",
-      "value": 2620.16
+      "value": 2620.16,
+      "nota_fiscal": null
     },
     {
       "id": "tx00659",
@@ -6625,7 +7284,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "UP TRONIC ELETRONICA LTDA",
-      "value": 490.0
+      "value": 490.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00660",
@@ -6635,7 +7295,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP C A COMP ELETRONICOS LTDA",
-      "value": 367.17
+      "value": 367.17,
+      "nota_fiscal": null
     },
     {
       "id": "tx00661",
@@ -6645,7 +7306,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY MAX ELETRONICA LTDA",
-      "value": 150.0
+      "value": 150.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00662",
@@ -6655,7 +7317,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP C A COMP ELETRONICOS LTDA",
-      "value": 544.47
+      "value": 544.47,
+      "nota_fiscal": null
     },
     {
       "id": "tx00663",
@@ -6665,7 +7328,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL COMERCIO ATACADISTA DE C",
-      "value": 628.5
+      "value": 628.5,
+      "nota_fiscal": null
     },
     {
       "id": "tx00664",
@@ -6674,8 +7338,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "23713",
-      "value": 390.3
+      "counterparty": "ZENER COMPONENTES ELETRONICOS LTDA - ME (0000317)",
+      "value": 390.3,
+      "nota_fiscal": "23713"
     },
     {
       "id": "tx00665",
@@ -6685,7 +7350,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "L S R COMERCIO DE TECNOLOGIA LTDA (0000565)",
-      "value": 63.0
+      "value": 63.0,
+      "nota_fiscal": "12077"
     },
     {
       "id": "tx00666",
@@ -6695,7 +7361,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "NILTON TADEU HENRIQUE DA SILVA (0001125)",
-      "value": 10.99
+      "value": 10.99,
+      "nota_fiscal": "12078"
     },
     {
       "id": "tx00667",
@@ -6705,7 +7372,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "SONIA DE SOUZA SANTOS (0001130)",
-      "value": 22.99
+      "value": 22.99,
+      "nota_fiscal": "12079"
     },
     {
       "id": "tx00668",
@@ -6715,7 +7383,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "PIRASSUNUNGA SUPERMERCADO DO ARTESANATO (0001126)",
-      "value": 45.97
+      "value": 45.97,
+      "nota_fiscal": "12081"
     },
     {
       "id": "tx00669",
@@ -6725,7 +7394,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "JONATHAN DA SILVA OLIVEIRA (0001144)",
-      "value": 33.98
+      "value": 33.98,
+      "nota_fiscal": "12082"
     },
     {
       "id": "tx00670",
@@ -6735,7 +7405,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ANTONIO JOSE LOPES (0001141)",
-      "value": 59.96
+      "value": 59.96,
+      "nota_fiscal": "12083"
     },
     {
       "id": "tx00671",
@@ -6745,7 +7416,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "EDSON GOMES DE SOUSA (0001137)",
-      "value": 14.99
+      "value": 14.99,
+      "nota_fiscal": "12084"
     },
     {
       "id": "tx00672",
@@ -6755,7 +7427,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "LUCAS SANCHES MIRALHAS (0001136)",
-      "value": 24.99
+      "value": 24.99,
+      "nota_fiscal": "12085"
     },
     {
       "id": "tx00673",
@@ -6765,7 +7438,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "NIATRON IND. E COM. DE EQUIP. ELETRO. (0000143)",
-      "value": 1177.0
+      "value": 1177.0,
+      "nota_fiscal": "12087"
     },
     {
       "id": "tx00674",
@@ -6775,7 +7449,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "LP INDUSTRIA TECNOLOGICA LTDA (0000495)",
-      "value": 614.74
+      "value": 614.74,
+      "nota_fiscal": "12089"
     },
     {
       "id": "tx00675",
@@ -6785,7 +7460,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "DIGISYSTEM",
-      "value": 452.0
+      "value": 452.0,
+      "nota_fiscal": "786"
     },
     {
       "id": "tx00676",
@@ -6795,7 +7471,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "TELESHESK",
-      "value": 480.0
+      "value": 480.0,
+      "nota_fiscal": "779"
     },
     {
       "id": "tx00677",
@@ -6805,7 +7482,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 3.62
+      "value": 3.62,
+      "nota_fiscal": null
     },
     {
       "id": "tx00678",
@@ -6815,7 +7493,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "SÓCIOS",
       "counterparty": "ALEX",
-      "value": 3000.0
+      "value": 3000.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00679",
@@ -6825,7 +7504,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "SÓCIOS",
       "counterparty": "COLEGIO",
-      "value": 1166.4
+      "value": 1166.4,
+      "nota_fiscal": null
     },
     {
       "id": "tx00680",
@@ -6835,7 +7515,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FERRTECH",
-      "value": 5145.89
+      "value": 5145.89,
+      "nota_fiscal": "798"
     },
     {
       "id": "tx00681",
@@ -6845,7 +7526,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "MOTOPPAR INDUSTRIA E COMERCIO DE AUTOMAT - 0001056",
-      "value": 570.0
+      "value": 570.0,
+      "nota_fiscal": "11937/01"
     },
     {
       "id": "tx00682",
@@ -6855,7 +7537,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "NEW TRAFFIC CONTROL TEC. E INOVACAO LTDA - 0000773",
-      "value": 612.0
+      "value": 612.0,
+      "nota_fiscal": "11940/01"
     },
     {
       "id": "tx00683",
@@ -6865,7 +7548,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CONDUVOX TELEMATICA LTDA - 0000031",
-      "value": 265.0
+      "value": 265.0,
+      "nota_fiscal": "11957/01"
     },
     {
       "id": "tx00684",
@@ -6875,7 +7559,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "R. BAIAO INDUSTRIA E COMERCIO LTDA - 0000060",
-      "value": 1858.5
+      "value": 1858.5,
+      "nota_fiscal": "11942/01"
     },
     {
       "id": "tx00685",
@@ -6885,7 +7570,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "EVOLUTEC INDUSTRIA E COMERCIO DE ELETROA - 0000229",
-      "value": 223.6
+      "value": 223.6,
+      "nota_fiscal": "11958/01"
     },
     {
       "id": "tx00686",
@@ -6895,7 +7581,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "VINTEK IND., COMERCIO E SERVICOS LTDA - 0000894",
-      "value": 4837.77
+      "value": 4837.77,
+      "nota_fiscal": "11960/01"
     },
     {
       "id": "tx00687",
@@ -6905,7 +7592,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "S.T.E.E. TECNOLOGIA ELETROELETRONICA LT - 0000062",
-      "value": 1006.4
+      "value": 1006.4,
+      "nota_fiscal": "11961/01"
     },
     {
       "id": "tx00688",
@@ -6915,7 +7603,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ALLNETSYS COMERCIO I S LTDA",
-      "value": 115.0
+      "value": 115.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00689",
@@ -6925,7 +7614,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ELCOMP COMERCIO C E LTDA EPP",
-      "value": 767.23
+      "value": 767.23,
+      "nota_fiscal": null
     },
     {
       "id": "tx00690",
@@ -6935,7 +7625,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "COMP TOTAL C I C ELETRONICOS",
-      "value": 697.57
+      "value": 697.57,
+      "nota_fiscal": null
     },
     {
       "id": "tx00691",
@@ -6945,7 +7636,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP C A COMP ELETRONICOS LTDA",
-      "value": 439.82
+      "value": 439.82,
+      "nota_fiscal": null
     },
     {
       "id": "tx00692",
@@ -6955,7 +7647,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DELTAS SUPRIMENTOS",
-      "value": 139.0
+      "value": 139.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00693",
@@ -6965,7 +7658,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "LECOMP",
-      "value": 66.0
+      "value": 66.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00694",
@@ -6974,8 +7668,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "115773",
-      "value": 450.0
+      "counterparty": "LECOMP Com. de Comp. Eletronicos LTDA (0000312)",
+      "value": 450.0,
+      "nota_fiscal": "115773"
     },
     {
       "id": "tx00695",
@@ -6984,8 +7679,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "130225",
-      "value": 82.6
+      "counterparty": "WKS TECHNOLOGY DO BRASIL LTDA (0000320)",
+      "value": 82.6,
+      "nota_fiscal": "130225"
     },
     {
       "id": "tx00696",
@@ -6994,8 +7690,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "148445",
-      "value": 1914.51
+      "counterparty": "MEGADEF COMPONENTES ELETRONICOS LTDA (0000039)",
+      "value": 1914.51,
+      "nota_fiscal": "148445"
     },
     {
       "id": "tx00697",
@@ -7004,8 +7701,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "1559",
-      "value": 13785.4
+      "counterparty": "MKB ELETRONICA E SENSORES LTDA (0000171)",
+      "value": 13785.4,
+      "nota_fiscal": "1559"
     },
     {
       "id": "tx00698",
@@ -7014,8 +7712,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "259563",
-      "value": 1593.64
+      "counterparty": "ACP COMERCIO ATACADISTA DE COMPONENTES E (0000249)",
+      "value": 1593.64,
+      "nota_fiscal": "259563"
     },
     {
       "id": "tx00699",
@@ -7025,7 +7724,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "DENTSCLER IND. DE APAR. ODONTO. EIRELLI (0000390)",
-      "value": 3573.0
+      "value": 3573.0,
+      "nota_fiscal": "12091"
     },
     {
       "id": "tx00700",
@@ -7035,7 +7735,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "BRASMEDICAL IND. E COM. DE PRODUTOS PAR (0000017)",
-      "value": 1907.0
+      "value": 1907.0,
+      "nota_fiscal": "12092"
     },
     {
       "id": "tx00701",
@@ -7045,7 +7746,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "EDSON LUIS DIOGO (0001132)",
-      "value": 24.99
+      "value": 24.99,
+      "nota_fiscal": "12093"
     },
     {
       "id": "tx00702",
@@ -7055,7 +7757,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "JOSE LUIS MAMANI CABEZAS (0001122)",
-      "value": 74.95
+      "value": 74.95,
+      "nota_fiscal": "12094"
     },
     {
       "id": "tx00703",
@@ -7065,7 +7768,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "AMAURI FERREIRA DE MOURA (0001127)",
-      "value": 29.98
+      "value": 29.98,
+      "nota_fiscal": "12095"
     },
     {
       "id": "tx00704",
@@ -7075,7 +7779,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO (0000660)",
-      "value": 5447.4
+      "value": 5447.4,
+      "nota_fiscal": "12096"
     },
     {
       "id": "tx00705",
@@ -7085,7 +7790,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "AWA EQUIPAMENTOS E SISTEMA (0000433)",
-      "value": 403.28
+      "value": 403.28,
+      "nota_fiscal": "12097"
     },
     {
       "id": "tx00706",
@@ -7095,7 +7801,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "SOLSUSTENTAVEL PROD. ELETRO ELETRONICOS (0000125)",
-      "value": 1119.0
+      "value": 1119.0,
+      "nota_fiscal": "12098"
     },
     {
       "id": "tx00707",
@@ -7105,7 +7812,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FZW INNOVATION LTDA (0000848)",
-      "value": 4067.66
+      "value": 4067.66,
+      "nota_fiscal": "12099"
     },
     {
       "id": "tx00708",
@@ -7115,7 +7823,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "MS TECNOPON EQUIPAMENTOS ESPECIAIS LTDA (0000373)",
-      "value": 3705.3
+      "value": 3705.3,
+      "nota_fiscal": "12100"
     },
     {
       "id": "tx00709",
@@ -7125,7 +7834,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "RALCOMP COMP. ELETRONICOS EIRELI ME (0000474)",
-      "value": 550.0
+      "value": 550.0,
+      "nota_fiscal": "12101"
     },
     {
       "id": "tx00710",
@@ -7135,7 +7845,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "J.M MÁQUINAS",
-      "value": 5272.5
+      "value": 5272.5,
+      "nota_fiscal": "785"
     },
     {
       "id": "tx00711",
@@ -7145,7 +7856,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "DENTSCLER",
-      "value": 732.0
+      "value": 732.0,
+      "nota_fiscal": "787"
     },
     {
       "id": "tx00712",
@@ -7155,7 +7867,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "MATHEUS ROCHA EMPRESTIMO",
-      "value": 2000.0
+      "value": 2000.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00713",
@@ -7165,7 +7878,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "SÓCIOS",
       "counterparty": "GÁS",
-      "value": 316.66
+      "value": 316.66,
+      "nota_fiscal": null
     },
     {
       "id": "tx00714",
@@ -7175,7 +7889,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 3.62
+      "value": 3.62,
+      "nota_fiscal": null
     },
     {
       "id": "tx00715",
@@ -7185,7 +7900,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ELETROFELIX INDUSTRIA E COMERCIO LTDA - 0000477",
-      "value": 673.05
+      "value": 673.05,
+      "nota_fiscal": "11936/01"
     },
     {
       "id": "tx00716",
@@ -7195,7 +7911,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "DENTSCLER IND. DE APAR. ODONTO. EIRELLI - 0000390",
-      "value": 509.75
+      "value": 509.75,
+      "nota_fiscal": "11949/01"
     },
     {
       "id": "tx00717",
@@ -7205,7 +7922,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "PRODUTOS ELETRONICOS FRATA LTDA - 0000223",
-      "value": 4517.0
+      "value": 4517.0,
+      "nota_fiscal": "11951/01"
     },
     {
       "id": "tx00718",
@@ -7215,7 +7933,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "DIGISYSTEM IND. DE SIST. ELETRO. LTDA - 0000040",
-      "value": 1013.16
+      "value": 1013.16,
+      "nota_fiscal": "11954/01"
     },
     {
       "id": "tx00719",
@@ -7225,7 +7944,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ZILOCCHI ELETRONICA LTDA - EPP - 0000130",
-      "value": 753.2
+      "value": 753.2,
+      "nota_fiscal": "11962/01"
     },
     {
       "id": "tx00720",
@@ -7235,7 +7955,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "S.T.E.E. TECNOLOGIA ELETROELETRONICA LT - 0000062",
-      "value": 868.95
+      "value": 868.95,
+      "nota_fiscal": "11964/01"
     },
     {
       "id": "tx00721",
@@ -7245,7 +7966,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ALLPRINT LATINA AUTOMACAO DE MAQUINAS EA - 0000291",
-      "value": 569.0
+      "value": 569.0,
+      "nota_fiscal": "11965/01"
     },
     {
       "id": "tx00722",
@@ -7255,7 +7977,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "REVAL INDUSTRIA E COMERCIO DE EQUIPAMENA - 0000416",
-      "value": 1096.5
+      "value": 1096.5,
+      "nota_fiscal": "11966/01"
     },
     {
       "id": "tx00723",
@@ -7265,7 +7988,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "J.M. MAQUINAS AUTOMOTIVAS EIRELI - 0000387",
-      "value": 4432.1
+      "value": 4432.1,
+      "nota_fiscal": "11943/01"
     },
     {
       "id": "tx00724",
@@ -7275,7 +7999,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CURTIS ELETRONICA INDUSTRIA E COMERCIO A - 0000295",
-      "value": 438.0
+      "value": 438.0,
+      "nota_fiscal": "11963/01"
     },
     {
       "id": "tx00725",
@@ -7285,7 +8010,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "JAIROTEC",
-      "value": 668.0
+      "value": 668.0,
+      "nota_fiscal": "12058"
     },
     {
       "id": "tx00726",
@@ -7295,7 +8021,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "RM PLACARES",
-      "value": 658.1
+      "value": 658.1,
+      "nota_fiscal": "6616"
     },
     {
       "id": "tx00727",
@@ -7305,7 +8032,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "RM PLACARES",
-      "value": 640.61
+      "value": 640.61,
+      "nota_fiscal": "6617"
     },
     {
       "id": "tx00728",
@@ -7315,7 +8043,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 18.1
+      "value": 18.1,
+      "nota_fiscal": null
     },
     {
       "id": "tx00729",
@@ -7325,7 +8054,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRICOMP COMERCIAL E LTDA",
-      "value": 74.2
+      "value": 74.2,
+      "nota_fiscal": null
     },
     {
       "id": "tx00730",
@@ -7335,7 +8065,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "LEDCOMP CREDERE",
-      "value": 1912.5
+      "value": 1912.5,
+      "nota_fiscal": null
     },
     {
       "id": "tx00731",
@@ -7345,7 +8076,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP C A COMP ELETRONICOS LTDA",
-      "value": 368.82
+      "value": 368.82,
+      "nota_fiscal": null
     },
     {
       "id": "tx00732",
@@ -7355,7 +8087,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "LECOMP COMERCIAL DE COMPONENTE",
-      "value": 305.75
+      "value": 305.75,
+      "nota_fiscal": null
     },
     {
       "id": "tx00733",
@@ -7365,7 +8098,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "CX COMERCIAL EIRELI",
-      "value": 315.0
+      "value": 315.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00734",
@@ -7375,7 +8109,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MKB",
-      "value": 3865.92
+      "value": 3865.92,
+      "nota_fiscal": null
     },
     {
       "id": "tx00735",
@@ -7384,8 +8119,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "115787",
-      "value": 425.0
+      "counterparty": "LECOMP Com. de Comp. Eletronicos LTDA (0000312)",
+      "value": 425.0,
+      "nota_fiscal": "115787"
     },
     {
       "id": "tx00736",
@@ -7394,8 +8130,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "199977",
-      "value": 1015.0
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 1015.0,
+      "nota_fiscal": "199977"
     },
     {
       "id": "tx00737",
@@ -7404,8 +8141,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "2327",
-      "value": 812.5
+      "counterparty": "LUCKY COMERCIAL IMPORTADORA LTDA (0000417)",
+      "value": 812.5,
+      "nota_fiscal": "2327"
     },
     {
       "id": "tx00738",
@@ -7414,8 +8152,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "23524",
-      "value": 749.09
+      "counterparty": "VETRONIC COMERCIO ELETRONICA LTDA (0000038)",
+      "value": 749.09,
+      "nota_fiscal": "23524"
     },
     {
       "id": "tx00739",
@@ -7424,8 +8163,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "259678",
-      "value": 1730.93
+      "counterparty": "ACP COMERCIO ATACADISTA DE COMPONENTES E (0000249)",
+      "value": 1730.93,
+      "nota_fiscal": "259678"
     },
     {
       "id": "tx00740",
@@ -7434,8 +8174,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "2619",
-      "value": 342.0
+      "counterparty": "CX COMERCIAL EIRELI EPP (0000329)",
+      "value": 342.0,
+      "nota_fiscal": "2619"
     },
     {
       "id": "tx00741",
@@ -7444,8 +8185,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "2889",
-      "value": 360.0
+      "counterparty": "ORANGE E BLACK DISTRIBUIDORA LTDA (0000198)",
+      "value": 360.0,
+      "nota_fiscal": "2889"
     },
     {
       "id": "tx00742",
@@ -7454,8 +8196,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "33678",
-      "value": 521.05
+      "counterparty": "SQUIB TECNOLOGIA ELETR. IMPOT. E EX. LTD (0000283)",
+      "value": 521.05,
+      "nota_fiscal": "33678"
     },
     {
       "id": "tx00743",
@@ -7464,8 +8207,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "347",
-      "value": 1966.56
+      "counterparty": "FCP IMPORTACAO E COMERCIO LTDA (0000398)",
+      "value": 1966.56,
+      "nota_fiscal": "347"
     },
     {
       "id": "tx00744",
@@ -7474,8 +8218,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "67804",
-      "value": 74.2
+      "counterparty": "TRICOMP COMERCIAL ELETR. LTDA (0000278)",
+      "value": 74.2,
+      "nota_fiscal": "67804"
     },
     {
       "id": "tx00745",
@@ -7484,8 +8229,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "67805",
-      "value": 201.4
+      "counterparty": "TRICOMP COMERCIAL ELETR. LTDA (0000278)",
+      "value": 201.4,
+      "nota_fiscal": "67805"
     },
     {
       "id": "tx00746",
@@ -7494,8 +8240,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "85082",
-      "value": 739.08
+      "counterparty": "COMP TOTAL COM. E IMP. DE COMP. ELETRON. (0000267)",
+      "value": 739.08,
+      "nota_fiscal": "85082"
     },
     {
       "id": "tx00747",
@@ -7504,8 +8251,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "8847",
-      "value": 250.0
+      "counterparty": "TRYNIT LED COMPONENTES ELETRONICOS EIREL (0000259)",
+      "value": 250.0,
+      "nota_fiscal": "8847"
     },
     {
       "id": "tx00748",
@@ -7515,7 +8263,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "DF AUTOMACAO INDUSTRIA E COMERCIO LTDA (0000434)",
-      "value": 652.0
+      "value": 652.0,
+      "nota_fiscal": "12102"
     },
     {
       "id": "tx00749",
@@ -7525,7 +8274,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "SPECTO PAINEIS ELETRONICO LTDA (0000071)",
-      "value": 1023.0
+      "value": 1023.0,
+      "nota_fiscal": "12103"
     },
     {
       "id": "tx00750",
@@ -7535,7 +8285,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CASH",
-      "value": 118.0
+      "value": 118.0,
+      "nota_fiscal": "12024"
     },
     {
       "id": "tx00751",
@@ -7545,7 +8296,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FOCUS",
-      "value": 1720.4
+      "value": 1720.4,
+      "nota_fiscal": "6675 6700"
     },
     {
       "id": "tx00752",
@@ -7555,7 +8307,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "TELECHESKI E TELECHESKI LTDA ME - 0000074",
-      "value": 485.0
+      "value": 485.0,
+      "nota_fiscal": "11779/03"
     },
     {
       "id": "tx00753",
@@ -7565,7 +8318,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "M. POWER IND.E COM. DE ELETR. LTDA - 0000216",
-      "value": 552.0
+      "value": 552.0,
+      "nota_fiscal": "11931/02"
     },
     {
       "id": "tx00754",
@@ -7575,7 +8329,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SSAT SINALIZACAO E ADESIVOS EIRELI EPP - 0000072",
-      "value": 1801.66
+      "value": 1801.66,
+      "nota_fiscal": "11956/01"
     },
     {
       "id": "tx00755",
@@ -7585,7 +8340,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "NEW TRAFFIC CONTROL TEC. E INOVACAO LTDA - 0000773",
-      "value": 670.0
+      "value": 670.0,
+      "nota_fiscal": "11970/01"
     },
     {
       "id": "tx00756",
@@ -7595,7 +8351,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "B. P. S. SISTEMAS DE AUTOMACAO LTDA - 0000010",
-      "value": 630.0
+      "value": 630.0,
+      "nota_fiscal": "11972/01"
     },
     {
       "id": "tx00757",
@@ -7605,7 +8362,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "DENTSCLER IND. DE APAR. ODONTO. EIRELLI - 0000390",
-      "value": 420.75
+      "value": 420.75,
+      "nota_fiscal": "11974/01"
     },
     {
       "id": "tx00758",
@@ -7615,7 +8373,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "J.M. MAQUINAS AUTOMOTIVAS EIRELI - 0000387",
-      "value": 242.62
+      "value": 242.62,
+      "nota_fiscal": "11989/01"
     },
     {
       "id": "tx00759",
@@ -7625,7 +8384,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "GASTOS FIXOS",
       "counterparty": "UESLEY PDF",
-      "value": 1080.0
+      "value": 1080.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00760",
@@ -7635,7 +8395,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "DAIANE",
-      "value": 613.93
+      "value": 613.93,
+      "nota_fiscal": null
     },
     {
       "id": "tx00761",
@@ -7645,7 +8406,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 12.67
+      "value": 12.67,
+      "nota_fiscal": null
     },
     {
       "id": "tx00762",
@@ -7655,7 +8417,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ALLNETSYS COMERCIO I S LTDA",
-      "value": 230.0
+      "value": 230.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00763",
@@ -7665,7 +8428,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY MAX ELETRONICA LTDA",
-      "value": 644.1
+      "value": 644.1,
+      "nota_fiscal": null
     },
     {
       "id": "tx00764",
@@ -7675,7 +8439,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL COMERCIO ATACADISTA DE C",
-      "value": 682.47
+      "value": 682.47,
+      "nota_fiscal": null
     },
     {
       "id": "tx00765",
@@ -7685,7 +8450,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MULT COMERCIAL LT",
-      "value": 303.75
+      "value": 303.75,
+      "nota_fiscal": null
     },
     {
       "id": "tx00766",
@@ -7695,7 +8461,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRICONECT COMERCIAL ELETRONICA",
-      "value": 558.62
+      "value": 558.62,
+      "nota_fiscal": null
     },
     {
       "id": "tx00767",
@@ -7705,7 +8472,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP C A COMP ELETRONICOS LTDA",
-      "value": 2064.71
+      "value": 2064.71,
+      "nota_fiscal": null
     },
     {
       "id": "tx00768",
@@ -7715,7 +8483,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "WILSON",
-      "value": 1600.0
+      "value": 1600.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00769",
@@ -7725,7 +8494,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "RUSSER BRASIL EIRELI (0000403)",
-      "value": 89.0
+      "value": 89.0,
+      "nota_fiscal": "12104"
     },
     {
       "id": "tx00770",
@@ -7735,7 +8505,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "DIGISYSTEM IND. DE SIST. ELETRO. LTDA (0000040)",
-      "value": 1518.56
+      "value": 1518.56,
+      "nota_fiscal": "12106"
     },
     {
       "id": "tx00771",
@@ -7745,7 +8516,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "SISTRANS SISTEMA DE SIN. DE TRANSITO LTA (0000067)",
-      "value": 199.0
+      "value": 199.0,
+      "nota_fiscal": "12107"
     },
     {
       "id": "tx00772",
@@ -7755,7 +8527,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "BIQUAD TECNOLOGIA LTDA (0000013)",
-      "value": 175.0
+      "value": 175.0,
+      "nota_fiscal": "12108"
     },
     {
       "id": "tx00773",
@@ -7765,7 +8538,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "DIGISYSTEM IND. DE SIST. ELETRO. LTDA (0000040)",
-      "value": 180.0
+      "value": 180.0,
+      "nota_fiscal": "12109"
     },
     {
       "id": "tx00774",
@@ -7775,7 +8549,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "J.M. MAQUINAS AUTOMOTIVAS EIRELI (0000387)",
-      "value": 1324.3
+      "value": 1324.3,
+      "nota_fiscal": "12110"
     },
     {
       "id": "tx00775",
@@ -7785,7 +8560,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "CJS DOS SANTOS GONDOLAS (0000637)",
-      "value": 2946.2
+      "value": 2946.2,
+      "nota_fiscal": "12111"
     },
     {
       "id": "tx00776",
@@ -7795,7 +8571,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "TELECHESKI E TELECHESKI LTDA ME - 0000074",
-      "value": 3435.92
+      "value": 3435.92,
+      "nota_fiscal": "769/03"
     },
     {
       "id": "tx00777",
@@ -7805,7 +8582,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "LANZA MEDICAL EQUIP. ODONTO MEDICOS LTDA - 0000452",
-      "value": 1714.0
+      "value": 1714.0,
+      "nota_fiscal": "783/02"
     },
     {
       "id": "tx00778",
@@ -7815,7 +8593,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "M. POWER IND.E COM. DE ELETR. LTDA - 0000216",
-      "value": 860.0
+      "value": 860.0,
+      "nota_fiscal": "789/01"
     },
     {
       "id": "tx00779",
@@ -7825,7 +8604,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "EMPRÉSTIMO FGI",
       "counterparty": "CAPITAL DE GIRO",
-      "value": 3585.46
+      "value": 3585.46,
+      "nota_fiscal": null
     },
     {
       "id": "tx00780",
@@ -7835,7 +8615,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "SÓCIOS",
       "counterparty": "MARIA",
-      "value": 2500.0
+      "value": 2500.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00781",
@@ -7845,7 +8626,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 5.43
+      "value": 5.43,
+      "nota_fiscal": null
     },
     {
       "id": "tx00782",
@@ -7855,7 +8637,8 @@ const MAXLED_DATA = {
       "flow": "compra",
       "category": null,
       "counterparty": "LS",
-      "value": 1310.0
+      "value": 1310.0,
+      "nota_fiscal": "144"
     },
     {
       "id": "tx00783",
@@ -7865,7 +8648,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "J.M. MAQUINAS AUTOMOTIVAS EIRELI (0000387)",
-      "value": 2081.25
+      "value": 2081.25,
+      "nota_fiscal": "799"
     },
     {
       "id": "tx00784",
@@ -7875,7 +8659,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CHARLES",
-      "value": 170.0
+      "value": 170.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00785",
@@ -7885,7 +8670,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SIMPLES CONNECT INDUSTRIA E COMERCIO LTA - 0000308",
-      "value": 481.0
+      "value": 481.0,
+      "nota_fiscal": "11913/03"
     },
     {
       "id": "tx00786",
@@ -7895,7 +8681,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ALLPRINT LATINA AUTOMACAO DE MAQUINAS EA - 0000291",
-      "value": 572.0
+      "value": 572.0,
+      "nota_fiscal": "11950/02"
     },
     {
       "id": "tx00787",
@@ -7905,7 +8692,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
-      "value": 1444.06
+      "value": 1444.06,
+      "nota_fiscal": "11967/01"
     },
     {
       "id": "tx00788",
@@ -7915,7 +8703,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "PROVOLT TECNOLOGIA ELETRONICA LTDA - 0000886",
-      "value": 651.0
+      "value": 651.0,
+      "nota_fiscal": "11969/01"
     },
     {
       "id": "tx00789",
@@ -7925,7 +8714,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "VINTEK IND., COMERCIO E SERVICOS LTDA - 0000894",
-      "value": 4837.76
+      "value": 4837.76,
+      "nota_fiscal": "11960/02"
     },
     {
       "id": "tx00790",
@@ -7935,7 +8725,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "DIGISYSTEM IND. DE SIST. ELETRO. LTDA - 0000040",
-      "value": 2138.5
+      "value": 2138.5,
+      "nota_fiscal": "11990/01"
     },
     {
       "id": "tx00791",
@@ -7945,7 +8736,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BING COMERCIO DE COMPONENTES ELETRONICOS - 0001085",
-      "value": 288.0
+      "value": 288.0,
+      "nota_fiscal": "11996/01"
     },
     {
       "id": "tx00792",
@@ -7955,7 +8747,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 12.67
+      "value": 12.67,
+      "nota_fiscal": null
     },
     {
       "id": "tx00793",
@@ -7965,7 +8758,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "LECOMP COMERCIAL DE COMPONENTE",
-      "value": 450.0
+      "value": 450.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00794",
@@ -7975,7 +8769,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MRD COMPONENTES ELETRONICOS LT",
-      "value": 1044.0
+      "value": 1044.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00795",
@@ -7985,7 +8780,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "LECOMP COMERCIAL DE COMPONENTE",
-      "value": 316.88
+      "value": 316.88,
+      "nota_fiscal": null
     },
     {
       "id": "tx00796",
@@ -7995,7 +8791,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "GASTOS FIXOS",
       "counterparty": "HANSER CONTABIL S S LTDA",
-      "value": 612.0
+      "value": 612.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00797",
@@ -8005,7 +8802,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL COMERCIO ATACADISTA DE C",
-      "value": 574.75
+      "value": 574.75,
+      "nota_fiscal": null
     },
     {
       "id": "tx00798",
@@ -8015,7 +8813,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ALLNETSYS COMERCIO I S LTDA",
-      "value": 425.0
+      "value": 425.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00799",
@@ -8025,7 +8824,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL COMERCIO ATACADISTA DE C",
-      "value": 470.0
+      "value": 470.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00800",
@@ -8035,7 +8835,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ALLNETSYS COMERCIO I S LTDA",
-      "value": 120.0
+      "value": 120.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00801",
@@ -8045,7 +8846,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "PROELETRONICA C E IMP EXP LTDA",
-      "value": 464.29
+      "value": 464.29,
+      "nota_fiscal": null
     },
     {
       "id": "tx00802",
@@ -8055,7 +8857,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRICOMP COMERCIAL E LTDA",
-      "value": 190.8
+      "value": 190.8,
+      "nota_fiscal": null
     },
     {
       "id": "tx00803",
@@ -8065,7 +8868,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MEGADEF COMPONENTES ELETRONICO",
-      "value": 763.1
+      "value": 763.1,
+      "nota_fiscal": null
     },
     {
       "id": "tx00804",
@@ -8075,7 +8879,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "UNIVERSE LIGHTING I EXP LTDA",
-      "value": 550.0
+      "value": 550.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00805",
@@ -8085,7 +8890,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "CX COMERCIAL EIRELI",
-      "value": 333.0
+      "value": 333.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00806",
@@ -8095,7 +8901,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY MAX ELETRONICA LTDA",
-      "value": 271.58
+      "value": 271.58,
+      "nota_fiscal": null
     },
     {
       "id": "tx00807",
@@ -8105,7 +8912,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRICONECT COMERCIAL ELETRONICA",
-      "value": 371.0
+      "value": 371.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00808",
@@ -8115,7 +8923,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "COMP TOTAL C I C ELETRONICOS",
-      "value": 378.29
+      "value": 378.29,
+      "nota_fiscal": null
     },
     {
       "id": "tx00809",
@@ -8125,7 +8934,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRICOMP COMERCIAL E LTDA",
-      "value": 457.8
+      "value": 457.8,
+      "nota_fiscal": null
     },
     {
       "id": "tx00810",
@@ -8135,7 +8945,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MEGAPIX",
-      "value": 466.21
+      "value": 466.21,
+      "nota_fiscal": null
     },
     {
       "id": "tx00811",
@@ -8145,7 +8956,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "S OHM COMERCIAL LTDA",
-      "value": 257.0
+      "value": 257.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00812",
@@ -8155,7 +8967,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DELTAS SUPRIMENTOS",
-      "value": 445.0
+      "value": 445.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00813",
@@ -8165,7 +8978,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "INVESTIMENTO",
       "counterparty": "CAPITALIZAÇÃO",
-      "value": 209.66
+      "value": 209.66,
+      "nota_fiscal": null
     },
     {
       "id": "tx00814",
@@ -8175,7 +8989,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "EMPRÉSTIMO CAPITAL DE GIRO BRADESCO",
       "counterparty": "CAPITAL DE GIRO",
-      "value": 6241.39
+      "value": 6241.39,
+      "nota_fiscal": null
     },
     {
       "id": "tx00815",
@@ -8184,8 +8999,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "115844",
-      "value": 66.0
+      "counterparty": "LECOMP Com. de Comp. Eletronicos LTDA (0000312)",
+      "value": 66.0,
+      "nota_fiscal": "115844"
     },
     {
       "id": "tx00816",
@@ -8194,8 +9010,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "148524",
-      "value": 333.62
+      "counterparty": "MEGADEF COMPONENTES ELETRONICOS LTDA (0000039)",
+      "value": 333.62,
+      "nota_fiscal": "148524"
     },
     {
       "id": "tx00817",
@@ -8204,8 +9021,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "17485",
-      "value": 365.7
+      "counterparty": "TRICONECT COMERCIAL ELETR. LTDA (0000321)",
+      "value": 365.7,
+      "nota_fiscal": "17485"
     },
     {
       "id": "tx00818",
@@ -8214,8 +9032,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "200226",
-      "value": 164.01
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 164.01,
+      "nota_fiscal": "200226"
     },
     {
       "id": "tx00819",
@@ -8224,8 +9043,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "200383",
-      "value": 1070.77
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 1070.77,
+      "nota_fiscal": "200383"
     },
     {
       "id": "tx00820",
@@ -8234,8 +9054,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "200384",
-      "value": 226.12
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 226.12,
+      "nota_fiscal": "200384"
     },
     {
       "id": "tx00821",
@@ -8244,8 +9065,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "200385",
-      "value": 97.04
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 97.04,
+      "nota_fiscal": "200385"
     },
     {
       "id": "tx00822",
@@ -8254,8 +9076,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "268057",
-      "value": 375.0
+      "counterparty": "MULT COMERCIAL LTDA (0000311)",
+      "value": 375.0,
+      "nota_fiscal": "268057"
     },
     {
       "id": "tx00823",
@@ -8264,8 +9087,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "3460",
-      "value": 264.0
+      "counterparty": "S-ohm Comercial Ltda. (0000183)",
+      "value": 264.0,
+      "nota_fiscal": "3460"
     },
     {
       "id": "tx00824",
@@ -8274,8 +9098,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "67823",
-      "value": 960.62
+      "counterparty": "TRICOMP COMERCIAL ELETR. LTDA (0000278)",
+      "value": 960.62,
+      "nota_fiscal": "67823"
     },
     {
       "id": "tx00825",
@@ -8284,8 +9109,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "67829",
-      "value": 38.16
+      "counterparty": "TRICOMP COMERCIAL ELETR. LTDA (0000278)",
+      "value": 38.16,
+      "nota_fiscal": "67829"
     },
     {
       "id": "tx00826",
@@ -8294,8 +9120,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "75844",
-      "value": 576.75
+      "counterparty": "IDALL COM. ATAC. DE COMP. ELETR. LTDA (0000011)",
+      "value": 576.75,
+      "nota_fiscal": "75844"
     },
     {
       "id": "tx00827",
@@ -8304,8 +9131,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "8872",
-      "value": 317.0
+      "counterparty": "TRYNIT LED COMPONENTES ELETRONICOS EIREL (0000259)",
+      "value": 317.0,
+      "nota_fiscal": "8872"
     },
     {
       "id": "tx00828",
@@ -8315,7 +9143,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "CRISTOFOLI EQUIP. DE BIOSSEGURANÇA LTDA (0000146)",
-      "value": 100.0
+      "value": 100.0,
+      "nota_fiscal": "12112"
     },
     {
       "id": "tx00829",
@@ -8325,7 +9154,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "PAULO ALEXANDRE BRITA (0001124)",
-      "value": 19.99
+      "value": 19.99,
+      "nota_fiscal": "12113"
     },
     {
       "id": "tx00830",
@@ -8335,7 +9165,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "PAULO ALEXANDRE BRITA (0001124)",
-      "value": 24.99
+      "value": 24.99,
+      "nota_fiscal": "12115"
     },
     {
       "id": "tx00831",
@@ -8345,7 +9176,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "PAULO ALEXANDRE BRITA (0001124)",
-      "value": 25.98
+      "value": 25.98,
+      "nota_fiscal": "12117"
     },
     {
       "id": "tx00832",
@@ -8355,7 +9187,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "E DE OLIVEIRA BARBOSA ELETRONICA (0000898)",
-      "value": 1021.0
+      "value": 1021.0,
+      "nota_fiscal": "12118"
     },
     {
       "id": "tx00833",
@@ -8365,7 +9198,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E (0000081)",
-      "value": 625.85
+      "value": 625.85,
+      "nota_fiscal": "12119"
     },
     {
       "id": "tx00834",
@@ -8375,7 +9209,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "RASATRONIC ELETRÔNICA INDUSTRIAL LTDA (0000057)",
-      "value": 544.7
+      "value": 544.7,
+      "nota_fiscal": "12120"
     },
     {
       "id": "tx00835",
@@ -8385,7 +9220,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ALLPRINT LATINA AUTOMACAO DE MAQUINAS EA - 0000291",
-      "value": 4105.0
+      "value": 4105.0,
+      "nota_fiscal": "770/03"
     },
     {
       "id": "tx00836",
@@ -8395,7 +9231,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "DIGISYSTEM IND. DE SIST. ELETRO. LTDA - 0000040",
-      "value": 452.0
+      "value": 452.0,
+      "nota_fiscal": "786/02"
     },
     {
       "id": "tx00837",
@@ -8405,7 +9242,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "PROVOLT TECNOLOGIA ELETRONICA LTDA - 0000886",
-      "value": 1160.5
+      "value": 1160.5,
+      "nota_fiscal": "790/01"
     },
     {
       "id": "tx00838",
@@ -8415,7 +9253,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "DIGISYSTEM IND. DE SIST. ELETRO. LTDA - 0000040",
-      "value": 121.7
+      "value": 121.7,
+      "nota_fiscal": "791/01"
     },
     {
       "id": "tx00839",
@@ -8425,7 +9264,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "INVESTIMENTO",
       "counterparty": "IA",
-      "value": 112.82
+      "value": 112.82,
+      "nota_fiscal": null
     },
     {
       "id": "tx00840",
@@ -8435,7 +9275,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 9.05
+      "value": 9.05,
+      "nota_fiscal": null
     },
     {
       "id": "tx00841",
@@ -8445,7 +9286,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "GASTOS FIXOS",
       "counterparty": "HANSER CONTABIL",
-      "value": 612.0
+      "value": 612.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00842",
@@ -8455,7 +9297,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FERRTECH",
-      "value": 1419.0
+      "value": 1419.0,
+      "nota_fiscal": "800"
     },
     {
       "id": "tx00843",
@@ -8465,7 +9308,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "HENRY CP DOS SANTOS",
-      "value": 2971.0
+      "value": 2971.0,
+      "nota_fiscal": "SNF"
     },
     {
       "id": "tx00844",
@@ -8475,7 +9319,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "DIOGO, SABRINA",
-      "value": 599.75
+      "value": 599.75,
+      "nota_fiscal": "12189"
     },
     {
       "id": "tx00845",
@@ -8485,7 +9330,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "S.T.E.E. TECNOLOGIA ELETROELETRONICA LT - 0000062",
-      "value": 868.95
+      "value": 868.95,
+      "nota_fiscal": "11964/02"
     },
     {
       "id": "tx00846",
@@ -8495,7 +9341,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "REVAL INDUSTRIA E COMERCIO DE EQUIPAMENA - 0000416",
-      "value": 1096.5
+      "value": 1096.5,
+      "nota_fiscal": "11966/02"
     },
     {
       "id": "tx00847",
@@ -8505,7 +9352,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ARIELTEK INDUSTRIA E COMERCIO LTDA - 0000314",
-      "value": 600.0
+      "value": 600.0,
+      "nota_fiscal": "11998/01"
     },
     {
       "id": "tx00848",
@@ -8515,7 +9363,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SSAT SINALIZACAO E ADESIVOS EIRELI EPP - 0000072",
-      "value": 1423.91
+      "value": 1423.91,
+      "nota_fiscal": "12005/01"
     },
     {
       "id": "tx00849",
@@ -8525,7 +9374,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "DEVOLUÇÃO",
       "counterparty": "ALIGERA DEVOLUÇÃO",
-      "value": 400.0
+      "value": 400.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00850",
@@ -8535,7 +9385,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "LECOMP",
-      "value": 174.8
+      "value": 174.8,
+      "nota_fiscal": null
     },
     {
       "id": "tx00851",
@@ -8545,7 +9396,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 7.24
+      "value": 7.24,
+      "nota_fiscal": null
     },
     {
       "id": "tx00852",
@@ -8555,7 +9407,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL COMERCIO ATACADISTA DE C",
-      "value": 737.0
+      "value": 737.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00853",
@@ -8565,7 +9418,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "E2E IND COMERCIO COMPONENTES",
-      "value": 668.34
+      "value": 668.34,
+      "nota_fiscal": null
     },
     {
       "id": "tx00854",
@@ -8574,8 +9428,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "1263",
-      "value": 1710.0
+      "counterparty": "DLT SUPRIMENTOS LTDA (0000389)",
+      "value": 1710.0,
+      "nota_fiscal": "1263"
     },
     {
       "id": "tx00855",
@@ -8584,8 +9439,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "2922",
-      "value": 235.0
+      "counterparty": "ORANGE E BLACK DISTRIBUIDORA LTDA (0000198)",
+      "value": 235.0,
+      "nota_fiscal": "2922"
     },
     {
       "id": "tx00856",
@@ -8595,7 +9451,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ITA FRIA INDUSTRIA E COMERCIO LTDA (0001151)",
-      "value": 16.99
+      "value": 16.99,
+      "nota_fiscal": "12121"
     },
     {
       "id": "tx00857",
@@ -8605,7 +9462,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "DGL SOLUÇÕES EM ELETRONICA LTDA (0000564)",
-      "value": 39.99
+      "value": 39.99,
+      "nota_fiscal": "12122"
     },
     {
       "id": "tx00858",
@@ -8615,7 +9473,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "DGL SOLUÇÕES EM ELETRONICA LTDA (0000564)",
-      "value": 214.95
+      "value": 214.95,
+      "nota_fiscal": "12123"
     },
     {
       "id": "tx00859",
@@ -8625,7 +9484,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "JOSE MARTINHO DA SILVA (0001154)",
-      "value": 9.99
+      "value": 9.99,
+      "nota_fiscal": "12124"
     },
     {
       "id": "tx00860",
@@ -8635,7 +9495,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "JOSE FRANCISCO XAVIER (0001152)",
-      "value": 139.93
+      "value": 139.93,
+      "nota_fiscal": "12125"
     },
     {
       "id": "tx00861",
@@ -8645,7 +9506,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "RAFAEL RODRIGUES GURGEL GOMES (0001149)",
-      "value": 19.99
+      "value": 19.99,
+      "nota_fiscal": "12126"
     },
     {
       "id": "tx00862",
@@ -8655,7 +9517,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "LUCINEI POSSAMAI (0001150)",
-      "value": 77.94
+      "value": 77.94,
+      "nota_fiscal": "12127"
     },
     {
       "id": "tx00863",
@@ -8665,7 +9528,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ANTONIO CARLOS DIAS JUNIOR (0001153)",
-      "value": 29.98
+      "value": 29.98,
+      "nota_fiscal": "12128"
     },
     {
       "id": "tx00864",
@@ -8675,7 +9539,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "MARCIO REIS PEREIRA DE SOUSA (0001155)",
-      "value": 22.99
+      "value": 22.99,
+      "nota_fiscal": "12129"
     },
     {
       "id": "tx00865",
@@ -8685,7 +9550,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "WILLIAM SANTOS BEZERRA (0001156)",
-      "value": 26.99
+      "value": 26.99,
+      "nota_fiscal": "12130"
     },
     {
       "id": "tx00866",
@@ -8695,7 +9561,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ITA FRIA INDUSTRIA E COMERCIO LTDA (0001151)",
-      "value": 16.99
+      "value": 16.99,
+      "nota_fiscal": "12131"
     },
     {
       "id": "tx00867",
@@ -8705,7 +9572,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "GRANDE TECH COM, IMPORT, E EXPORT, DE CA (0000506)",
-      "value": 288.0
+      "value": 288.0,
+      "nota_fiscal": "12132"
     },
     {
       "id": "tx00868",
@@ -8715,7 +9583,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ARIELTEK INDUSTRIA E COMERCIO LTDA (0000314)",
-      "value": 827.0
+      "value": 827.0,
+      "nota_fiscal": "12133"
     },
     {
       "id": "tx00869",
@@ -8725,7 +9594,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "TRANSPORTES",
       "counterparty": "WANDO",
-      "value": 820.0
+      "value": 820.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00870",
@@ -8735,7 +9605,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "SÓCIOS",
       "counterparty": "ALEX",
-      "value": 5000.0
+      "value": 5000.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00871",
@@ -8745,7 +9616,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 1.81
+      "value": 1.81,
+      "nota_fiscal": null
     },
     {
       "id": "tx00872",
@@ -8755,7 +9627,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "MONTEC EXODO",
-      "value": 535.5
+      "value": 535.5,
+      "nota_fiscal": "12147"
     },
     {
       "id": "tx00873",
@@ -8765,7 +9638,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "NEW TRAFFIC CONTROL TEC. E INOVACAO LTDA - 0000773",
-      "value": 670.0
+      "value": 670.0,
+      "nota_fiscal": "11970/02"
     },
     {
       "id": "tx00874",
@@ -8775,7 +9649,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "B. P. S. SISTEMAS DE AUTOMACAO LTDA - 0000010",
-      "value": 630.0
+      "value": 630.0,
+      "nota_fiscal": "11972/02"
     },
     {
       "id": "tx00875",
@@ -8785,7 +9660,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ASOR ELETROMEDICA EQUIP. ELETRO. E ELETO - 0000246",
-      "value": 273.18
+      "value": 273.18,
+      "nota_fiscal": "12011/01"
     },
     {
       "id": "tx00876",
@@ -8795,7 +9671,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO - 0000660",
-      "value": 1210.46
+      "value": 1210.46,
+      "nota_fiscal": "11992/01"
     },
     {
       "id": "tx00877",
@@ -8805,7 +9682,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CITHEC CIENCIAS E TECNOLOGYA EIRELI - 0000027",
-      "value": 742.34
+      "value": 742.34,
+      "nota_fiscal": "11994/01"
     },
     {
       "id": "tx00878",
@@ -8815,7 +9693,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BPM INDUSTRIA E COMERCIO - 000",
-      "value": 720.8
+      "value": 720.8,
+      "nota_fiscal": "12009/01"
     },
     {
       "id": "tx00879",
@@ -8825,7 +9704,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ALLPRINT LATINA AUTOMACAO DE M",
-      "value": 623.0
+      "value": 623.0,
+      "nota_fiscal": "12010/01"
     },
     {
       "id": "tx00880",
@@ -8835,7 +9715,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP C A COMP ELETRONICOS LTDA",
-      "value": 1322.4
+      "value": 1322.4,
+      "nota_fiscal": null
     },
     {
       "id": "tx00881",
@@ -8845,7 +9726,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 12.67
+      "value": 12.67,
+      "nota_fiscal": null
     },
     {
       "id": "tx00882",
@@ -8855,7 +9737,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "IMPOSTOS",
       "counterparty": "DAS",
-      "value": 16586.81
+      "value": 16586.81,
+      "nota_fiscal": null
     },
     {
       "id": "tx00883",
@@ -8865,7 +9748,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "IMPOSTOS",
       "counterparty": "DARF",
-      "value": 1147.75
+      "value": 1147.75,
+      "nota_fiscal": null
     },
     {
       "id": "tx00884",
@@ -8875,7 +9759,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "IMPOSTOS",
       "counterparty": "GPS / FGTS",
-      "value": 615.52
+      "value": 615.52,
+      "nota_fiscal": null
     },
     {
       "id": "tx00885",
@@ -8885,7 +9770,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "TAMIRES",
-      "value": 855.2
+      "value": 855.2,
+      "nota_fiscal": null
     },
     {
       "id": "tx00886",
@@ -8895,7 +9781,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "MATHEUS SOUSA",
-      "value": 720.0
+      "value": 720.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00887",
@@ -8905,7 +9792,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "SÓCIOS",
       "counterparty": "MARIA",
-      "value": 5000.0
+      "value": 5000.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00888",
@@ -8914,8 +9802,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "115876",
-      "value": 174.8
+      "counterparty": "LECOMP Com. de Comp. Eletronicos LTDA (0000312)",
+      "value": 174.8,
+      "nota_fiscal": "115876"
     },
     {
       "id": "tx00889",
@@ -8924,8 +9813,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "17047",
-      "value": 1092.71
+      "counterparty": "FILCRILL COMPS ELETRS IMP E EXP EIRELLI (0000048)",
+      "value": 1092.71,
+      "nota_fiscal": "17047"
     },
     {
       "id": "tx00890",
@@ -8934,8 +9824,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "259771",
-      "value": 457.49
+      "counterparty": "ACP COMERCIO ATACADISTA DE COMPONENTES E (0000249)",
+      "value": 457.49,
+      "nota_fiscal": "259771"
     },
     {
       "id": "tx00891",
@@ -8945,7 +9836,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "CARINE G RODRIGUES (0000764)",
-      "value": 6651.6
+      "value": 6651.6,
+      "nota_fiscal": "12134"
     },
     {
       "id": "tx00892",
@@ -8955,7 +9847,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E (0000081)",
-      "value": 592.5
+      "value": 592.5,
+      "nota_fiscal": "12135"
     },
     {
       "id": "tx00893",
@@ -8965,7 +9858,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E (0000081)",
-      "value": 3285.32
+      "value": 3285.32,
+      "nota_fiscal": "12136"
     },
     {
       "id": "tx00894",
@@ -8975,7 +9869,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "MARIO SERGIO TWARDOWSCH (0001159)",
-      "value": 24.99
+      "value": 24.99,
+      "nota_fiscal": "12137"
     },
     {
       "id": "tx00895",
@@ -8985,7 +9880,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "L.M.K. COMERCIO E SERVICOS TECNOLOGICOS (0001162)",
-      "value": 54.99
+      "value": 54.99,
+      "nota_fiscal": "12138"
     },
     {
       "id": "tx00896",
@@ -8995,7 +9891,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "LEOPOLDO FERNANDES PASSOS (0001160)",
-      "value": 13.0
+      "value": 13.0,
+      "nota_fiscal": "12139"
     },
     {
       "id": "tx00897",
@@ -9005,7 +9902,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ANDERSON SERRANO DE SOUSA (0001157)",
-      "value": 19.99
+      "value": 19.99,
+      "nota_fiscal": "12140"
     },
     {
       "id": "tx00898",
@@ -9015,7 +9913,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ZILMAR RIBEIRO DE LIMA (0001161)",
-      "value": 19.99
+      "value": 19.99,
+      "nota_fiscal": "12141"
     },
     {
       "id": "tx00899",
@@ -9025,7 +9924,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FOCUS TECNOLOGIA E SOLUCOES LTDA (0000742)",
-      "value": 2069.0
+      "value": 2069.0,
+      "nota_fiscal": "12142"
     },
     {
       "id": "tx00900",
@@ -9035,7 +9935,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ROYALCOMP COMPONENTES ELETR. LTDA (0000570)",
-      "value": 706.0
+      "value": 706.0,
+      "nota_fiscal": "12143"
     },
     {
       "id": "tx00901",
@@ -9045,7 +9946,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "LANZA MEDICAL EQUIP. ODONTO ME",
-      "value": 1714.0
+      "value": 1714.0,
+      "nota_fiscal": "783/03"
     },
     {
       "id": "tx00902",
@@ -9055,7 +9957,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "TRANSFIX",
-      "value": 324.66
+      "value": 324.66,
+      "nota_fiscal": "792"
     },
     {
       "id": "tx00903",
@@ -9065,7 +9968,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "FRANCISCO",
-      "value": 855.2
+      "value": 855.2,
+      "nota_fiscal": null
     },
     {
       "id": "tx00904",
@@ -9075,7 +9979,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "PRICILA",
-      "value": 855.2
+      "value": 855.2,
+      "nota_fiscal": null
     },
     {
       "id": "tx00905",
@@ -9085,7 +9990,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "FCP",
-      "value": 1121.25
+      "value": 1121.25,
+      "nota_fiscal": null
     },
     {
       "id": "tx00906",
@@ -9095,7 +10001,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "IMPOSTOS",
       "counterparty": "DAS",
-      "value": 1565.41
+      "value": 1565.41,
+      "nota_fiscal": null
     },
     {
       "id": "tx00907",
@@ -9105,7 +10012,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 1.81
+      "value": 1.81,
+      "nota_fiscal": null
     },
     {
       "id": "tx00908",
@@ -9115,7 +10023,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "HCM MALTA INDUSTRIA DE BRINQUEDOS - 0000181",
-      "value": 538.33
+      "value": 538.33,
+      "nota_fiscal": "11796/03"
     },
     {
       "id": "tx00909",
@@ -9125,7 +10034,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ARIELTEK INDUSTRIA E COMERCIO LTDA - 0000314",
-      "value": 390.5
+      "value": 390.5,
+      "nota_fiscal": "12020/01"
     },
     {
       "id": "tx00910",
@@ -9135,7 +10045,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CHAVE DIGITAL TECNOLOGIA ELETRONICA LTDA - 0000022",
-      "value": 350.0
+      "value": 350.0,
+      "nota_fiscal": "12032/01"
     },
     {
       "id": "tx00911",
@@ -9145,7 +10056,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CONDUVOX TELEMATICA LTDA - 0000031",
-      "value": 725.1
+      "value": 725.1,
+      "nota_fiscal": "12019/01"
     },
     {
       "id": "tx00912",
@@ -9155,7 +10067,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "MARIA GONÇALVES PREMIX",
-      "value": 216.0
+      "value": 216.0,
+      "nota_fiscal": "12162+12198"
     },
     {
       "id": "tx00913",
@@ -9165,7 +10078,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 7.24
+      "value": 7.24,
+      "nota_fiscal": null
     },
     {
       "id": "tx00914",
@@ -9175,7 +10089,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP",
-      "value": 536.9
+      "value": 536.9,
+      "nota_fiscal": null
     },
     {
       "id": "tx00915",
@@ -9185,7 +10100,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP",
-      "value": 2062.26
+      "value": 2062.26,
+      "nota_fiscal": null
     },
     {
       "id": "tx00916",
@@ -9195,7 +10111,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP",
-      "value": 842.82
+      "value": 842.82,
+      "nota_fiscal": null
     },
     {
       "id": "tx00917",
@@ -9205,7 +10122,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL",
-      "value": 660.73
+      "value": 660.73,
+      "nota_fiscal": null
     },
     {
       "id": "tx00918",
@@ -9215,7 +10133,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "LECOMP",
-      "value": 299.3
+      "value": 299.3,
+      "nota_fiscal": null
     },
     {
       "id": "tx00919",
@@ -9225,7 +10144,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "COMP TOTAL",
-      "value": 546.57
+      "value": 546.57,
+      "nota_fiscal": null
     },
     {
       "id": "tx00920",
@@ -9235,7 +10155,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ALLSEMI",
-      "value": 1694.66
+      "value": 1694.66,
+      "nota_fiscal": null
     },
     {
       "id": "tx00921",
@@ -9245,7 +10166,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL",
-      "value": 1661.55
+      "value": 1661.55,
+      "nota_fiscal": null
     },
     {
       "id": "tx00922",
@@ -9255,7 +10177,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "WKS",
-      "value": 82.6
+      "value": 82.6,
+      "nota_fiscal": null
     },
     {
       "id": "tx00923",
@@ -9265,7 +10188,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "SEGURO DE VIDA SÓCIO",
       "counterparty": "PREVIDENCIA",
-      "value": 473.47
+      "value": 473.47,
+      "nota_fiscal": null
     },
     {
       "id": "tx00924",
@@ -9275,7 +10199,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "SEGURO DE VIDA SÓCIO",
       "counterparty": "PREVIDENCIA",
-      "value": 496.24
+      "value": 496.24,
+      "nota_fiscal": null
     },
     {
       "id": "tx00925",
@@ -9284,8 +10209,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "1579",
-      "value": 1603.59
+      "counterparty": "MKB ELETRONICA E SENSORES LTDA (0000171)",
+      "value": 1603.59,
+      "nota_fiscal": "1579"
     },
     {
       "id": "tx00926",
@@ -9294,8 +10220,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "23814",
-      "value": 575.0
+      "counterparty": "ZENER COMPONENTES ELETRONICOS LTDA - ME (0000317)",
+      "value": 575.0,
+      "nota_fiscal": "23814"
     },
     {
       "id": "tx00927",
@@ -9304,8 +10231,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "259855",
-      "value": 1000.95
+      "counterparty": "ACP COMERCIO ATACADISTA DE COMPONENTES E (0000249)",
+      "value": 1000.95,
+      "nota_fiscal": "259855"
     },
     {
       "id": "tx00928",
@@ -9314,8 +10242,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "36281",
-      "value": 1841.35
+      "counterparty": "ELCOMP COMERCIO COMPONENTES ELETR. LTDA (0000246)",
+      "value": 1841.35,
+      "nota_fiscal": "36281"
     },
     {
       "id": "tx00929",
@@ -9324,8 +10253,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "67878",
-      "value": 328.6
+      "counterparty": "TRICOMP COMERCIAL ELETR. LTDA (0000278)",
+      "value": 328.6,
+      "nota_fiscal": "67878"
     },
     {
       "id": "tx00930",
@@ -9334,8 +10264,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "85175",
-      "value": 378.29
+      "counterparty": "COMP TOTAL COM. E IMP. DE COMP. ELETRON. (0000267)",
+      "value": 378.29,
+      "nota_fiscal": "85175"
     },
     {
       "id": "tx00931",
@@ -9345,7 +10276,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ZENER COMPONENTES ELETRONICOS LTDA - ME (0000142)",
-      "value": 1020.0
+      "value": 1020.0,
+      "nota_fiscal": "12144"
     },
     {
       "id": "tx00932",
@@ -9355,7 +10287,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ELIEZER LOPES BUENO (0001164)",
-      "value": 29.98
+      "value": 29.98,
+      "nota_fiscal": "12145"
     },
     {
       "id": "tx00933",
@@ -9365,7 +10298,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "POWERFLEET BRASIL LTDA (0000692)",
-      "value": 7700.0
+      "value": 7700.0,
+      "nota_fiscal": "12146"
     },
     {
       "id": "tx00934",
@@ -9375,7 +10309,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "EXODO TECNOLOGIA EM SISTEMAS ELETRICOS L (0000851)",
-      "value": 535.5
+      "value": 535.5,
+      "nota_fiscal": "12147"
     },
     {
       "id": "tx00935",
@@ -9385,7 +10320,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "E DE OLIVEIRA BARBOSA ELETRONICA (0000898)",
-      "value": 215.0
+      "value": 215.0,
+      "nota_fiscal": "12148"
     },
     {
       "id": "tx00936",
@@ -9395,7 +10331,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "E DE OLIVEIRA BARBOSA ELETRONICA (0000898)",
-      "value": 308.04
+      "value": 308.04,
+      "nota_fiscal": "12149"
     },
     {
       "id": "tx00937",
@@ -9405,7 +10342,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "PRODUTOS ELETRONICOS FRATA LTDA (0000223)",
-      "value": 7290.0
+      "value": 7290.0,
+      "nota_fiscal": "12150"
     },
     {
       "id": "tx00938",
@@ -9415,7 +10353,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ACHEI COMPONENTES ELETRONICOS (0000503)",
-      "value": 208.0
+      "value": 208.0,
+      "nota_fiscal": "12151"
     },
     {
       "id": "tx00939",
@@ -9425,7 +10364,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO (0000660)",
-      "value": 166.0
+      "value": 166.0,
+      "nota_fiscal": "12152"
     },
     {
       "id": "tx00940",
@@ -9435,7 +10375,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SIMPLES CONNECT INDUSTRIA E COMERCIO LTA - 0000308",
-      "value": 2850.0
+      "value": 2850.0,
+      "nota_fiscal": "782/02"
     },
     {
       "id": "tx00941",
@@ -9445,7 +10386,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 1.81
+      "value": 1.81,
+      "nota_fiscal": null
     },
     {
       "id": "tx00942",
@@ -9455,7 +10397,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL",
-      "value": 1266.67
+      "value": 1266.67,
+      "nota_fiscal": null
     },
     {
       "id": "tx00943",
@@ -9465,7 +10408,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FERRTECH",
-      "value": 543.0
+      "value": 543.0,
+      "nota_fiscal": "801"
     },
     {
       "id": "tx00944",
@@ -9475,7 +10419,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "R. BAIAO INDUSTRIA E COMERCIO LTDA - 0000060",
-      "value": 3608.71
+      "value": 3608.71,
+      "nota_fiscal": "11804/03"
     },
     {
       "id": "tx00945",
@@ -9485,7 +10430,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ALLPRINT LATINA AUTOMACAO DE MAQUINAS EA - 0000291",
-      "value": 572.0
+      "value": 572.0,
+      "nota_fiscal": "11950/03"
     },
     {
       "id": "tx00946",
@@ -9495,7 +10441,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BPM INDUSTRIA E COMERCIO - 0000541",
-      "value": 528.85
+      "value": 528.85,
+      "nota_fiscal": "12021/01"
     },
     {
       "id": "tx00947",
@@ -9505,7 +10452,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
-      "value": 360.0
+      "value": 360.0,
+      "nota_fiscal": "12025/01"
     },
     {
       "id": "tx00948",
@@ -9515,7 +10463,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "MS TECNOPON EQUIPAMENTOS ESPECIAIS LTDA - 0000373",
-      "value": 902.0
+      "value": 902.0,
+      "nota_fiscal": "12026/01"
     },
     {
       "id": "tx00949",
@@ -9525,7 +10474,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "R. BAIAO INDUSTRIA E COMERCIO LTDA - 0000060",
-      "value": 4279.0
+      "value": 4279.0,
+      "nota_fiscal": "12031/01"
     },
     {
       "id": "tx00950",
@@ -9535,7 +10485,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ENGEMED",
-      "value": 145.9
+      "value": 145.9,
+      "nota_fiscal": "12161"
     },
     {
       "id": "tx00951",
@@ -9545,7 +10496,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "R.B. DA SILVA",
-      "value": 75.54
+      "value": 75.54,
+      "nota_fiscal": "12159"
     },
     {
       "id": "tx00952",
@@ -9555,7 +10507,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 10.86
+      "value": 10.86,
+      "nota_fiscal": null
     },
     {
       "id": "tx00953",
@@ -9565,7 +10518,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "A TREE",
-      "value": 60.0
+      "value": 60.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00954",
@@ -9575,7 +10529,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "CX COMERCIAL EIRELI",
-      "value": 414.0
+      "value": 414.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00955",
@@ -9585,7 +10540,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "CREDERE TRYNIT",
-      "value": 600.0
+      "value": 600.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00956",
@@ -9595,7 +10551,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MEGADEF COMPONENTES ELETRONICO",
-      "value": 675.31
+      "value": 675.31,
+      "nota_fiscal": null
     },
     {
       "id": "tx00957",
@@ -9605,7 +10562,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MARKCEL COMPONENTES ELETRONICO",
-      "value": 385.0
+      "value": 385.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00958",
@@ -9614,8 +10572,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "200774",
-      "value": 179.01
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 179.01,
+      "nota_fiscal": "200774"
     },
     {
       "id": "tx00959",
@@ -9624,8 +10583,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "200875",
-      "value": 27.9
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 27.9,
+      "nota_fiscal": "200875"
     },
     {
       "id": "tx00960",
@@ -9635,7 +10595,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "DUNEXA ENGENHARIA ELETRICA LTDA (0001170)",
-      "value": 12.99
+      "value": 12.99,
+      "nota_fiscal": "12153"
     },
     {
       "id": "tx00961",
@@ -9645,7 +10606,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "JOSE GERONIMO ALVES DA PAZ (0001169)",
-      "value": 19.99
+      "value": 19.99,
+      "nota_fiscal": "12154"
     },
     {
       "id": "tx00962",
@@ -9655,7 +10617,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "DARIO GEOVANIO DO NASCIMENTO (0001167)",
-      "value": 25.98
+      "value": 25.98,
+      "nota_fiscal": "12155"
     },
     {
       "id": "tx00963",
@@ -9665,7 +10628,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "CARLOS CESAR CAIRES (0001168)",
-      "value": 26.99
+      "value": 26.99,
+      "nota_fiscal": "12156"
     },
     {
       "id": "tx00964",
@@ -9675,7 +10639,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "SPECTO PAINEIS ELETRONICO LTDA (0000071)",
-      "value": 629.0
+      "value": 629.0,
+      "nota_fiscal": "12157"
     },
     {
       "id": "tx00965",
@@ -9685,7 +10650,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "TRANSFIX ASSISTENCIA TECN. E VENDAS EQUI (0000199)",
-      "value": 1057.5
+      "value": 1057.5,
+      "nota_fiscal": "12158"
     },
     {
       "id": "tx00966",
@@ -9695,7 +10661,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "R.B. DA SILVA AUTOMAÇÕES (0000562)",
-      "value": 74.54
+      "value": 74.54,
+      "nota_fiscal": "12159"
     },
     {
       "id": "tx00967",
@@ -9705,7 +10672,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "CITTA ELETRONICA IND. E COM. LTDA ME (0000532)",
-      "value": 142.9
+      "value": 142.9,
+      "nota_fiscal": "12160"
     },
     {
       "id": "tx00968",
@@ -9715,7 +10683,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ENGEMED INDUSTRIA E COMERCIO LTDA (0000663)",
-      "value": 145.9
+      "value": 145.9,
+      "nota_fiscal": "12161"
     },
     {
       "id": "tx00969",
@@ -9725,7 +10694,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "R. BAIÃO",
-      "value": 462.0
+      "value": 462.0,
+      "nota_fiscal": "793"
     },
     {
       "id": "tx00970",
@@ -9735,7 +10705,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "SIMPLES CONNECT INDUSTRIA E COMERCIO LTA (0000308)",
-      "value": 5808.0
+      "value": 5808.0,
+      "nota_fiscal": "802"
     },
     {
       "id": "tx00971",
@@ -9745,7 +10716,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "TRANSFIX ASSISTENCIA TECN. E VENDAS EQUI (0000199)",
-      "value": 575.0
+      "value": 575.0,
+      "nota_fiscal": "803"
     },
     {
       "id": "tx00972",
@@ -9755,7 +10727,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "TRANSFIX",
-      "value": 992.67
+      "value": 992.67,
+      "nota_fiscal": "11935"
     },
     {
       "id": "tx00973",
@@ -9765,7 +10738,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "VINTEK IND., COMERCIO E SERVICOS LTDA - 0000894",
-      "value": 4837.76
+      "value": 4837.76,
+      "nota_fiscal": "11960"
     },
     {
       "id": "tx00974",
@@ -9775,7 +10749,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "VIEWMED",
-      "value": 624.0
+      "value": 624.0,
+      "nota_fiscal": "12029"
     },
     {
       "id": "tx00975",
@@ -9785,7 +10760,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH",
-      "value": 546.4
+      "value": 546.4,
+      "nota_fiscal": "12030"
     },
     {
       "id": "tx00976",
@@ -9795,7 +10771,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 5.43
+      "value": 5.43,
+      "nota_fiscal": null
     },
     {
       "id": "tx00977",
@@ -9805,7 +10782,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY MAX ELETRONICA LTDA",
-      "value": 97.04
+      "value": 97.04,
+      "nota_fiscal": null
     },
     {
       "id": "tx00978",
@@ -9815,7 +10793,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY MAX ELETRONICA LTDA",
-      "value": 27.9
+      "value": 27.9,
+      "nota_fiscal": null
     },
     {
       "id": "tx00979",
@@ -9825,7 +10804,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MDS",
-      "value": 278.0
+      "value": 278.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00980",
@@ -9835,7 +10815,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "GASTOS FIXOS",
       "counterparty": "SERASA SA",
-      "value": 368.11
+      "value": 368.11,
+      "nota_fiscal": null
     },
     {
       "id": "tx00981",
@@ -9845,7 +10826,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ALLNETSYS COMERCIO I S LTDA",
-      "value": 240.0
+      "value": 240.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx00982",
@@ -9855,7 +10837,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "CX COMERCIAL EIRELI",
-      "value": 432.9
+      "value": 432.9,
+      "nota_fiscal": null
     },
     {
       "id": "tx00983",
@@ -9864,8 +10847,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "260036",
-      "value": 1147.45
+      "counterparty": "ACP COMERCIO ATACADISTA DE COMPONENTES E (0000249)",
+      "value": 1147.45,
+      "nota_fiscal": "260036"
     },
     {
       "id": "tx00984",
@@ -9874,8 +10858,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "4148",
-      "value": 268.5
+      "counterparty": "MDS COMPONENTES ELETRONICOS LTDA (0000297)",
+      "value": 268.5,
+      "nota_fiscal": "4148"
     },
     {
       "id": "tx00985",
@@ -9884,8 +10869,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "44132",
-      "value": 60.0
+      "counterparty": "A TREE 2012 LUMINARIAS EIRELI (0000248)",
+      "value": 60.0,
+      "nota_fiscal": "44132"
     },
     {
       "id": "tx00986",
@@ -9894,8 +10880,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "75905",
-      "value": 720.0
+      "counterparty": "IDALL COM. ATAC. DE COMP. ELETR. LTDA (0000011)",
+      "value": 720.0,
+      "nota_fiscal": "75905"
     },
     {
       "id": "tx00987",
@@ -9905,7 +10892,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "PREMIX INDUSTRIA ELETROMECANIA LTDA (0000047)",
-      "value": 188.5
+      "value": 188.5,
+      "nota_fiscal": "12162"
     },
     {
       "id": "tx00988",
@@ -9915,7 +10903,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "CARLOS HENRIQUE COSTA (0001172)",
-      "value": 26.99
+      "value": 26.99,
+      "nota_fiscal": "12163"
     },
     {
       "id": "tx00989",
@@ -9925,7 +10914,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "SSAT SINALIZACAO E ADESIVOS EIRELI EPP (0000072)",
-      "value": 300.0
+      "value": 300.0,
+      "nota_fiscal": "12164"
     },
     {
       "id": "tx00990",
@@ -9935,7 +10925,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "UPSAI SISTEMAS DE ENERGIA LTD (0000485)",
-      "value": 1111.0
+      "value": 1111.0,
+      "nota_fiscal": "12165"
     },
     {
       "id": "tx00991",
@@ -9945,7 +10936,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO (0000660)",
-      "value": 13637.3
+      "value": 13637.3,
+      "nota_fiscal": "12166"
     },
     {
       "id": "tx00992",
@@ -9955,7 +10947,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "TRANSFIX",
-      "value": 608.33
+      "value": 608.33,
+      "nota_fiscal": "803"
     },
     {
       "id": "tx00993",
@@ -9965,7 +10958,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "CARTÃO DE CRÉDITO",
       "counterparty": "CARTÃO DE CRÉDITO",
-      "value": 10246.03
+      "value": 10246.03,
+      "nota_fiscal": null
     },
     {
       "id": "tx00994",
@@ -9975,7 +10969,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 1.81
+      "value": 1.81,
+      "nota_fiscal": null
     },
     {
       "id": "tx00995",
@@ -9985,7 +10980,8 @@ const MAXLED_DATA = {
       "flow": "compra",
       "category": null,
       "counterparty": "IDALL",
-      "value": 3800.0
+      "value": 3800.0,
+      "nota_fiscal": "75906"
     },
     {
       "id": "tx00996",
@@ -9995,7 +10991,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "TAICON",
-      "value": 3110.8
+      "value": 3110.8,
+      "nota_fiscal": "12192"
     },
     {
       "id": "tx00997",
@@ -10005,7 +11002,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "NEW TRAFFIC CONTROL TEC. E INOVACAO LTDA - 0000773",
-      "value": 612.0
+      "value": 612.0,
+      "nota_fiscal": "11940/02"
     },
     {
       "id": "tx00998",
@@ -10015,7 +11013,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SSAT SINALIZACAO E ADESIVOS EIRELI EPP - 0000072",
-      "value": 1423.91
+      "value": 1423.91,
+      "nota_fiscal": "12005/02"
     },
     {
       "id": "tx00999",
@@ -10025,7 +11024,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "NEXXO EQUIPAMENTOS ELETRONICOS LTDA - 0000225",
-      "value": 564.25
+      "value": 564.25,
+      "nota_fiscal": "12022/01"
     },
     {
       "id": "tx01000",
@@ -10035,7 +11035,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
-      "value": 328.55
+      "value": 328.55,
+      "nota_fiscal": "12039/01"
     },
     {
       "id": "tx01001",
@@ -10045,7 +11046,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 7.24
+      "value": 7.24,
+      "nota_fiscal": null
     },
     {
       "id": "tx01002",
@@ -10055,7 +11057,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "COMISSÃO TAICON",
-      "value": 500.0
+      "value": 500.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01003",
@@ -10065,7 +11068,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "E2E IND COMERCIO COMPONENTES",
-      "value": 869.09
+      "value": 869.09,
+      "nota_fiscal": null
     },
     {
       "id": "tx01004",
@@ -10075,7 +11079,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ELCOMP COMERCIO C E LTDA EPP",
-      "value": 767.23
+      "value": 767.23,
+      "nota_fiscal": null
     },
     {
       "id": "tx01005",
@@ -10085,7 +11090,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP C A COMP ELETRONICOS LTDA",
-      "value": 439.82
+      "value": 439.82,
+      "nota_fiscal": null
     },
     {
       "id": "tx01006",
@@ -10095,7 +11101,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP C A COMP ELETRONICOS LTDA",
-      "value": 486.25
+      "value": 486.25,
+      "nota_fiscal": null
     },
     {
       "id": "tx01007",
@@ -10105,7 +11112,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "LECOMP COMERCIAL DE COMPONENTE",
-      "value": 907.0
+      "value": 907.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01008",
@@ -10115,7 +11123,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MKB SENSORES LTDA",
-      "value": 2953.94
+      "value": 2953.94,
+      "nota_fiscal": null
     },
     {
       "id": "tx01009",
@@ -10125,7 +11134,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY MAX ELETRONICA LTDA",
-      "value": 164.01
+      "value": 164.01,
+      "nota_fiscal": null
     },
     {
       "id": "tx01010",
@@ -10135,7 +11145,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "MOVIMENTO",
       "counterparty": "MAX IMPORT",
-      "value": 4000.0
+      "value": 4000.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01011",
@@ -10145,7 +11156,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "GASTOS FIXOS",
       "counterparty": "ALUGUEL",
-      "value": 4200.0
+      "value": 4200.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01012",
@@ -10154,8 +11166,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "148681",
-      "value": 1256.16
+      "counterparty": "MEGADEF COMPONENTES ELETRONICOS LTDA (0000039)",
+      "value": 1256.16,
+      "nota_fiscal": "148681"
     },
     {
       "id": "tx01013",
@@ -10164,8 +11177,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "1583",
-      "value": 7496.24
+      "counterparty": "MKB ELETRONICA E SENSORES LTDA (0000171)",
+      "value": 7496.24,
+      "nota_fiscal": "1583"
     },
     {
       "id": "tx01014",
@@ -10174,8 +11188,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "3028",
-      "value": 297.0
+      "counterparty": "ORANGE E BLACK DISTRIBUIDORA LTDA (0000198)",
+      "value": 297.0,
+      "nota_fiscal": "3028"
     },
     {
       "id": "tx01015",
@@ -10184,8 +11199,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "3513",
-      "value": 500.0
+      "counterparty": "S-ohm Comercial Ltda. (0000183)",
+      "value": 500.0,
+      "nota_fiscal": "3513"
     },
     {
       "id": "tx01016",
@@ -10194,8 +11210,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "4158",
-      "value": 324.0
+      "counterparty": "MDS COMPONENTES ELETRONICOS LTDA (0000297)",
+      "value": 324.0,
+      "nota_fiscal": "4158"
     },
     {
       "id": "tx01017",
@@ -10204,8 +11221,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "75944",
-      "value": 2318.18
+      "counterparty": "IDALL COM. ATAC. DE COMP. ELETR. LTDA (0000011)",
+      "value": 2318.18,
+      "nota_fiscal": "75944"
     },
     {
       "id": "tx01018",
@@ -10215,7 +11233,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E (0000081)",
-      "value": 202.0
+      "value": 202.0,
+      "nota_fiscal": "12167"
     },
     {
       "id": "tx01019",
@@ -10225,7 +11244,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "MARCIO WELLINTON FERREIRA OLIVEIRA (0001176)",
-      "value": 57.6
+      "value": 57.6,
+      "nota_fiscal": "12168"
     },
     {
       "id": "tx01020",
@@ -10235,7 +11255,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "RENILSON JOSE TEIXEIRA (0001178)",
-      "value": 14.99
+      "value": 14.99,
+      "nota_fiscal": "12169"
     },
     {
       "id": "tx01021",
@@ -10245,7 +11266,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "BIZMAQ INDUSTRIA DE IMPLEMENTOS AGROFLOR (0001175)",
-      "value": 33.98
+      "value": 33.98,
+      "nota_fiscal": "12170"
     },
     {
       "id": "tx01022",
@@ -10255,7 +11277,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FERNANDO DA SILVA SENA (0001173)",
-      "value": 19.99
+      "value": 19.99,
+      "nota_fiscal": "12171"
     },
     {
       "id": "tx01023",
@@ -10265,7 +11288,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "HERNANI JUNIOR DE CASTRO (0001174)",
-      "value": 33.98
+      "value": 33.98,
+      "nota_fiscal": "12172"
     },
     {
       "id": "tx01024",
@@ -10275,7 +11299,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ROGERIO GULARTE ANDREOLI - (0001177)",
-      "value": 29.98
+      "value": 29.98,
+      "nota_fiscal": "12173"
     },
     {
       "id": "tx01025",
@@ -10285,7 +11310,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E (0000081)",
-      "value": 1300.96
+      "value": 1300.96,
+      "nota_fiscal": "12174"
     },
     {
       "id": "tx01026",
@@ -10295,7 +11321,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "M. POWER IND.E COM. DE ELETR.  LTDA (0000216)",
-      "value": 306.0
+      "value": 306.0,
+      "nota_fiscal": "12175"
     },
     {
       "id": "tx01027",
@@ -10305,7 +11332,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "RUSSER BRASIL EIRELI (0000403)",
-      "value": 951.0
+      "value": 951.0,
+      "nota_fiscal": "12176"
     },
     {
       "id": "tx01028",
@@ -10315,7 +11343,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "HTR EQUIPAMENTOS ELETRONICOS LTDA (0000268)",
-      "value": 3760.0
+      "value": 3760.0,
+      "nota_fiscal": "12177"
     },
     {
       "id": "tx01029",
@@ -10325,7 +11354,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "BPM INDUSTRIA E COMERCIO (0000541)",
-      "value": 1497.0
+      "value": 1497.0,
+      "nota_fiscal": "12178"
     },
     {
       "id": "tx01030",
@@ -10335,7 +11365,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ALLPRINT LATINA AUTOMACAO DE MAQUINAS EA (0000291)",
-      "value": 1188.0
+      "value": 1188.0,
+      "nota_fiscal": "12179"
     },
     {
       "id": "tx01031",
@@ -10345,7 +11376,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "MAX LED",
-      "value": 4000.0
+      "value": 4000.0,
+      "nota_fiscal": "MOVIMENTAÇÃO"
     },
     {
       "id": "tx01032",
@@ -10355,7 +11387,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "TRANSPORTES IMPORTAÇÃO",
       "counterparty": "DHL",
-      "value": 1248.66
+      "value": 1248.66,
+      "nota_fiscal": null
     },
     {
       "id": "tx01033",
@@ -10365,7 +11398,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "EDUARDO",
-      "value": 1000.0
+      "value": 1000.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01034",
@@ -10375,7 +11409,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "DENTSCLER IND. DE APAR. ODONTO. EIRELLI - 0000390",
-      "value": 509.75
+      "value": 509.75,
+      "nota_fiscal": "11949/02"
     },
     {
       "id": "tx01035",
@@ -10385,7 +11420,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "PRODUTOS ELETRONICOS FRATA LTDA - 0000223",
-      "value": 4517.0
+      "value": 4517.0,
+      "nota_fiscal": "11951/02"
     },
     {
       "id": "tx01036",
@@ -10395,7 +11431,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "DIGISYSTEM IND. DE SIST. ELETRO. LTDA - 0000040",
-      "value": 1013.17
+      "value": 1013.17,
+      "nota_fiscal": "11954/02"
     },
     {
       "id": "tx01037",
@@ -10405,7 +11442,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BPM INDUSTRIA E COMERCIO - 0000541",
-      "value": 720.8
+      "value": 720.8,
+      "nota_fiscal": "12009/02"
     },
     {
       "id": "tx01038",
@@ -10415,7 +11453,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "RALCOMP COMP. ELETRONICOS EIRELI ME - 0000474",
-      "value": 487.5
+      "value": 487.5,
+      "nota_fiscal": "12027/01"
     },
     {
       "id": "tx01039",
@@ -10425,7 +11464,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "GGP INDUSTRIA E COMERCIO - 0000204",
-      "value": 516.0
+      "value": 516.0,
+      "nota_fiscal": "12028/01"
     },
     {
       "id": "tx01040",
@@ -10435,7 +11475,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
-      "value": 299.0
+      "value": 299.0,
+      "nota_fiscal": "12041/01"
     },
     {
       "id": "tx01041",
@@ -10445,7 +11486,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "S.T.E.E. TECNOLOGIA ELETROELETRONICA LT - 0000062",
-      "value": 593.0
+      "value": 593.0,
+      "nota_fiscal": "12042/01"
     },
     {
       "id": "tx01042",
@@ -10455,7 +11497,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "EDERSON VARANDA BORGES LTDA - 0000785",
-      "value": 556.49
+      "value": 556.49,
+      "nota_fiscal": "12043/01"
     },
     {
       "id": "tx01043",
@@ -10465,7 +11508,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO - 0000660",
-      "value": 2210.0
+      "value": 2210.0,
+      "nota_fiscal": "12044/01"
     },
     {
       "id": "tx01044",
@@ -10475,7 +11519,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO - 0000660",
-      "value": 861.54
+      "value": 861.54,
+      "nota_fiscal": "12046/01"
     },
     {
       "id": "tx01045",
@@ -10485,7 +11530,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "VINICIUS (cvf)",
-      "value": 35.0
+      "value": 35.0,
+      "nota_fiscal": "12197"
     },
     {
       "id": "tx01046",
@@ -10495,7 +11541,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "MDS",
-      "value": 278.0
+      "value": 278.0,
+      "nota_fiscal": "DEVOLUÇÃO"
     },
     {
       "id": "tx01047",
@@ -10505,7 +11552,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 19.91
+      "value": 19.91,
+      "nota_fiscal": null
     },
     {
       "id": "tx01048",
@@ -10515,7 +11563,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "CREDERE LEDCOMP",
-      "value": 1912.5
+      "value": 1912.5,
+      "nota_fiscal": null
     },
     {
       "id": "tx01049",
@@ -10525,7 +11574,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "LECOMP COMERCIAL DE COMPONENTE",
-      "value": 305.75
+      "value": 305.75,
+      "nota_fiscal": null
     },
     {
       "id": "tx01050",
@@ -10535,7 +11585,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL COMERCIO ATACADISTA DE C",
-      "value": 689.67
+      "value": 689.67,
+      "nota_fiscal": null
     },
     {
       "id": "tx01051",
@@ -10545,7 +11596,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MEGADEF COMPONENTES ELETRONICO",
-      "value": 333.62
+      "value": 333.62,
+      "nota_fiscal": null
     },
     {
       "id": "tx01052",
@@ -10555,7 +11607,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MRD COMPONENTES ELETRONICOS LT",
-      "value": 348.0
+      "value": 348.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01053",
@@ -10565,7 +11618,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY MAX ELETRONICA LTDA",
-      "value": 226.12
+      "value": 226.12,
+      "nota_fiscal": null
     },
     {
       "id": "tx01054",
@@ -10574,8 +11628,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "1333",
-      "value": 1414.1
+      "counterparty": "DLT SUPRIMENTOS LTDA (0000389)",
+      "value": 1414.1,
+      "nota_fiscal": "1333"
     },
     {
       "id": "tx01055",
@@ -10584,8 +11639,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "17748",
-      "value": 701.65
+      "counterparty": "TRICONECT COMERCIAL ELETR. LTDA (0000321)",
+      "value": 701.65,
+      "nota_fiscal": "17748"
     },
     {
       "id": "tx01056",
@@ -10594,8 +11650,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "200968",
-      "value": 60.0
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 60.0,
+      "nota_fiscal": "200968"
     },
     {
       "id": "tx01057",
@@ -10604,8 +11661,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "200973",
-      "value": 75.07
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 75.07,
+      "nota_fiscal": "200973"
     },
     {
       "id": "tx01058",
@@ -10614,8 +11672,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "201110",
-      "value": 784.3
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 784.3,
+      "nota_fiscal": "201110"
     },
     {
       "id": "tx01059",
@@ -10624,8 +11683,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "23875",
-      "value": 477.6
+      "counterparty": "ZENER COMPONENTES ELETRONICOS LTDA - ME (0000317)",
+      "value": 477.6,
+      "nota_fiscal": "23875"
     },
     {
       "id": "tx01060",
@@ -10634,8 +11694,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "260200",
-      "value": 698.96
+      "counterparty": "ACP COMERCIO ATACADISTA DE COMPONENTES E (0000249)",
+      "value": 698.96,
+      "nota_fiscal": "260200"
     },
     {
       "id": "tx01061",
@@ -10644,8 +11705,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "260225",
-      "value": 957.82
+      "counterparty": "ACP COMERCIO ATACADISTA DE COMPONENTES E (0000249)",
+      "value": 957.82,
+      "nota_fiscal": "260225"
     },
     {
       "id": "tx01062",
@@ -10654,8 +11716,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "296",
-      "value": 596.7
+      "counterparty": "JA ELETRONICA IMPORTACAO E EXPORTACAO LT (0000423)",
+      "value": 596.7,
+      "nota_fiscal": "296"
     },
     {
       "id": "tx01063",
@@ -10664,8 +11727,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "305500",
-      "value": 384.53
+      "counterparty": "PROESI COMPONENTES ELETRONICOS LTDA (0000424)",
+      "value": 384.53,
+      "nota_fiscal": "305500"
     },
     {
       "id": "tx01064",
@@ -10674,8 +11738,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "67970",
-      "value": 1340.9
+      "counterparty": "TRICOMP COMERCIAL ELETR. LTDA (0000278)",
+      "value": 1340.9,
+      "nota_fiscal": "67970"
     },
     {
       "id": "tx01065",
@@ -10684,8 +11749,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "75973",
-      "value": 1726.0
+      "counterparty": "IDALL COM. ATAC. DE COMP. ELETR. LTDA (0000011)",
+      "value": 1726.0,
+      "nota_fiscal": "75973"
     },
     {
       "id": "tx01066",
@@ -10694,8 +11760,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "7955",
-      "value": 385.0
+      "counterparty": "DICEL COMERCIO DE COMPONENTES ELETRONICO (0000298)",
+      "value": 385.0,
+      "nota_fiscal": "7955"
     },
     {
       "id": "tx01067",
@@ -10705,7 +11772,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ANTONIO HOLTZ (0001180)",
-      "value": 26.99
+      "value": 26.99,
+      "nota_fiscal": "12180"
     },
     {
       "id": "tx01068",
@@ -10715,7 +11783,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "KAIQUE SILVEIRA SAMPAIO (0001182)",
-      "value": 14.99
+      "value": 14.99,
+      "nota_fiscal": "12181"
     },
     {
       "id": "tx01069",
@@ -10725,7 +11794,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "CARLA NAISA DE OLIVEIRA NEGRAO (0001183)",
-      "value": 25.98
+      "value": 25.98,
+      "nota_fiscal": "12182"
     },
     {
       "id": "tx01070",
@@ -10735,7 +11805,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "RENATO MENDES MOURAO (0001184)",
-      "value": 21.99
+      "value": 21.99,
+      "nota_fiscal": "12183"
     },
     {
       "id": "tx01071",
@@ -10745,7 +11816,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "UPSAI SISTEMAS DE ENERGIA LTD (0000485)",
-      "value": 531.5
+      "value": 531.5,
+      "nota_fiscal": "12184"
     },
     {
       "id": "tx01072",
@@ -10755,7 +11827,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E (0000081)",
-      "value": 1343.34
+      "value": 1343.34,
+      "nota_fiscal": "12186"
     },
     {
       "id": "tx01073",
@@ -10765,7 +11838,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "S.T.E.E. TECNOLOGIA ELETROELETRONICA LT (0000062)",
-      "value": 674.0
+      "value": 674.0,
+      "nota_fiscal": "12187"
     },
     {
       "id": "tx01074",
@@ -10775,7 +11849,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ELETROFELIX INDUSTRIA E COMERCIO LTDA (0000477)",
-      "value": 156.9
+      "value": 156.9,
+      "nota_fiscal": "12188"
     },
     {
       "id": "tx01075",
@@ -10785,7 +11860,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "SABRINA SANTIAGO DE MORAES (0001166)",
-      "value": 556.0
+      "value": 556.0,
+      "nota_fiscal": "12189"
     },
     {
       "id": "tx01076",
@@ -10795,7 +11871,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "EDERSON VARANDA BORGES LTDA (0000785)",
-      "value": 4949.5
+      "value": 4949.5,
+      "nota_fiscal": "12191"
     },
     {
       "id": "tx01077",
@@ -10805,7 +11882,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "TAIKON INDUSTRIA E COM DE APARELHOS ELET (0001061)",
-      "value": 3110.8
+      "value": 3110.8,
+      "nota_fiscal": "12192"
     },
     {
       "id": "tx01078",
@@ -10815,7 +11893,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "J.M. MAQUINAS AUTOMOTIVAS EIRELI (0000387)",
-      "value": 369.9
+      "value": 369.9,
+      "nota_fiscal": "12193"
     },
     {
       "id": "tx01079",
@@ -10825,7 +11904,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "NUTRIEX INDUSTRIA DE NUTRACEUTICOS LTDA (0000988)",
-      "value": 2243.5
+      "value": 2243.5,
+      "nota_fiscal": "12194"
     },
     {
       "id": "tx01080",
@@ -10835,7 +11915,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "EVOLUTEC INDUSTRIA E COMERCIO DE ELETROA (0000229)",
-      "value": 1630.89
+      "value": 1630.89,
+      "nota_fiscal": "12195"
     },
     {
       "id": "tx01081",
@@ -10845,7 +11926,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "RYON MÁQUINAS",
-      "value": 1865.0
+      "value": 1865.0,
+      "nota_fiscal": "12051"
     },
     {
       "id": "tx01082",
@@ -10855,7 +11937,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "TAICON",
-      "value": 12005.0
+      "value": 12005.0,
+      "nota_fiscal": "12208"
     },
     {
       "id": "tx01083",
@@ -10865,7 +11948,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "LIFE",
-      "value": 2566.68
+      "value": 2566.68,
+      "nota_fiscal": "11831"
     },
     {
       "id": "tx01084",
@@ -10875,7 +11959,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SSAT",
-      "value": 1801.67
+      "value": 1801.67,
+      "nota_fiscal": "11956"
     },
     {
       "id": "tx01085",
@@ -10885,7 +11970,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BIQUAD",
-      "value": 1429.3
+      "value": 1429.3,
+      "nota_fiscal": "12037"
     },
     {
       "id": "tx01086",
@@ -10895,7 +11981,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "RUSSER",
-      "value": 438.5
+      "value": 438.5,
+      "nota_fiscal": "12049"
     },
     {
       "id": "tx01087",
@@ -10905,7 +11992,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "COMP TOTAL",
-      "value": 90.53
+      "value": 90.53,
+      "nota_fiscal": null
     },
     {
       "id": "tx01088",
@@ -10915,7 +12003,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL COM",
-      "value": 682.47
+      "value": 682.47,
+      "nota_fiscal": null
     },
     {
       "id": "tx01089",
@@ -10925,7 +12014,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "LECOMP COM",
-      "value": 316.87
+      "value": 316.87,
+      "nota_fiscal": null
     },
     {
       "id": "tx01090",
@@ -10935,7 +12025,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY MAX",
-      "value": 570.0
+      "value": 570.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01091",
@@ -10945,7 +12036,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY MAX",
-      "value": 660.8
+      "value": 660.8,
+      "nota_fiscal": null
     },
     {
       "id": "tx01092",
@@ -10955,7 +12047,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "LECOMP COM",
-      "value": 425.0
+      "value": 425.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01093",
@@ -10965,7 +12058,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "LECOMP COM",
-      "value": 450.0
+      "value": 450.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01094",
@@ -10975,7 +12069,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ORANGE E BLACK",
-      "value": 890.0
+      "value": 890.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01095",
@@ -10985,7 +12080,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY MAX",
-      "value": 60.0
+      "value": 60.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01096",
@@ -10995,7 +12091,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY MAX",
-      "value": 75.07
+      "value": 75.07,
+      "nota_fiscal": null
     },
     {
       "id": "tx01097",
@@ -11005,7 +12102,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "SÓCIOS",
       "counterparty": "MARIA",
-      "value": 6280.0
+      "value": 6280.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01098",
@@ -11015,7 +12113,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "IMPORTAÇÃO",
       "counterparty": "MARIA",
-      "value": 10000.0
+      "value": 10000.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01099",
@@ -11025,7 +12124,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "MARIA / ADRIELE",
-      "value": 720.0
+      "value": 720.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01100",
@@ -11035,7 +12135,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "TRANSPORTES",
       "counterparty": "WANDO",
-      "value": 670.0
+      "value": 670.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01101",
@@ -11045,7 +12146,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "TRANSPORTES",
       "counterparty": "WILSOM",
-      "value": 100.0
+      "value": 100.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01102",
@@ -11055,7 +12157,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MDS",
-      "value": 278.0
+      "value": 278.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01103",
@@ -11065,7 +12168,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 9.05
+      "value": 9.05,
+      "nota_fiscal": null
     },
     {
       "id": "tx01104",
@@ -11074,8 +12178,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "1575",
-      "value": 2990.0
+      "counterparty": "MPC DISTRIBUIDORA DE ELETRO-ELETRONICOS (0000160)",
+      "value": 2990.0,
+      "nota_fiscal": "1575"
     },
     {
       "id": "tx01105",
@@ -11084,8 +12189,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "201220",
-      "value": 1769.17
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 1769.17,
+      "nota_fiscal": "201220"
     },
     {
       "id": "tx01106",
@@ -11094,8 +12200,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "2672",
-      "value": 743.85
+      "counterparty": "CX COMERCIAL EIRELI EPP (0000329)",
+      "value": 743.85,
+      "nota_fiscal": "2672"
     },
     {
       "id": "tx01107",
@@ -11104,8 +12211,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "3807",
-      "value": 1300.0
+      "counterparty": "GLOBALCHIP TECNOLOGIA ELETRaNICA LTDA (0000117)",
+      "value": 1300.0,
+      "nota_fiscal": "3807"
     },
     {
       "id": "tx01108",
@@ -11114,8 +12222,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "85363",
-      "value": 90.53
+      "counterparty": "COMP TOTAL COM. E IMP. DE COMP. ELETRON. (0000267)",
+      "value": 90.53,
+      "nota_fiscal": "85363"
     },
     {
       "id": "tx01109",
@@ -11125,7 +12234,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "PRODUTOS ELETRONICOS FRATA LTDA (0000223)",
-      "value": 150.0
+      "value": 150.0,
+      "nota_fiscal": "12196"
     },
     {
       "id": "tx01110",
@@ -11135,7 +12245,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "CVF MEDICAL MANUTENCAO EM EQUIPAMENTOS C (0001186)",
-      "value": 35.0
+      "value": 35.0,
+      "nota_fiscal": "12197"
     },
     {
       "id": "tx01111",
@@ -11145,7 +12256,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "PREMIX INDUSTRIA ELETROMECANIA LTDA (0000047)",
-      "value": 41.0
+      "value": 41.0,
+      "nota_fiscal": "12198"
     },
     {
       "id": "tx01112",
@@ -11155,7 +12267,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "JOSE CARLOS DA SILVA (0001189)",
-      "value": 39.99
+      "value": 39.99,
+      "nota_fiscal": "12200"
     },
     {
       "id": "tx01113",
@@ -11165,7 +12278,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "OSVALDO GOMES DE SOUSA NETO (0001187)",
-      "value": 29.99
+      "value": 29.99,
+      "nota_fiscal": "12201"
     },
     {
       "id": "tx01114",
@@ -11175,7 +12289,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ESDRAS DO NASCIMENTO ANJOS (0001192)",
-      "value": 129.99
+      "value": 129.99,
+      "nota_fiscal": "12203"
     },
     {
       "id": "tx01115",
@@ -11185,7 +12300,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "SIDNEI DOS SANTOS (0001193)",
-      "value": 49.98
+      "value": 49.98,
+      "nota_fiscal": "12204"
     },
     {
       "id": "tx01116",
@@ -11195,7 +12311,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "LEO MACIEL DO AMPAR (0001191)",
-      "value": 19.98
+      "value": 19.98,
+      "nota_fiscal": "12205"
     },
     {
       "id": "tx01117",
@@ -11205,7 +12322,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ANDERSON LUIZ SILVA DE SOUZA (0001190)",
-      "value": 9.99
+      "value": 9.99,
+      "nota_fiscal": "12206"
     },
     {
       "id": "tx01118",
@@ -11215,7 +12333,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ALIGERA EQUIPAMENTOS DIGITAIS LTDA (0000188)",
-      "value": 174.0
+      "value": 174.0,
+      "nota_fiscal": "12207"
     },
     {
       "id": "tx01119",
@@ -11225,7 +12344,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "TAIKON INDUSTRIA E COM DE APARELHOS ELET (0001061)",
-      "value": 12005.0
+      "value": 12005.0,
+      "nota_fiscal": "12208"
     },
     {
       "id": "tx01120",
@@ -11235,7 +12355,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "CJS DOS SANTOS GONDOLAS (0000637)",
-      "value": 14.6
+      "value": 14.6,
+      "nota_fiscal": "12209"
     },
     {
       "id": "tx01121",
@@ -11245,7 +12366,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ARIELTEK INDUSTRIA E COMERCIO LTDA (0000314)",
-      "value": 102.0
+      "value": 102.0,
+      "nota_fiscal": "12210"
     },
     {
       "id": "tx01122",
@@ -11255,7 +12377,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FOCUS TECNOLOGIA E SOLUCOES LTDA (0000742)",
-      "value": 41.65
+      "value": 41.65,
+      "nota_fiscal": "12211"
     },
     {
       "id": "tx01123",
@@ -11265,7 +12388,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FOCUS TECNOLOGIA E SOLUCOES LTDA (0000742)",
-      "value": 222.0
+      "value": 222.0,
+      "nota_fiscal": "12212"
     },
     {
       "id": "tx01124",
@@ -11275,7 +12399,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FOCUS TECNOLOGIA E SOLUCOES LTDA (0000742)",
-      "value": 57.15
+      "value": 57.15,
+      "nota_fiscal": "12213"
     },
     {
       "id": "tx01125",
@@ -11285,7 +12410,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "MARCELO DIOGO DA SILVA HAYDEN 0419442197 (0001194)",
-      "value": 1890.0
+      "value": 1890.0,
+      "nota_fiscal": "12214"
     },
     {
       "id": "tx01126",
@@ -11295,7 +12421,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "SEGURO DE EMPRÉSTIMO",
       "counterparty": "SEGURO",
-      "value": 109.79
+      "value": 109.79,
+      "nota_fiscal": null
     },
     {
       "id": "tx01127",
@@ -11305,7 +12432,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "EMPRÉSTIMO FGI",
       "counterparty": "CAPITAL DE GIRO",
-      "value": 2724.27
+      "value": 2724.27,
+      "nota_fiscal": null
     },
     {
       "id": "tx01128",
@@ -11315,7 +12443,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "NEXXO",
-      "value": 673.0
+      "value": 673.0,
+      "nota_fiscal": "12053"
     },
     {
       "id": "tx01129",
@@ -11325,7 +12454,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "LG NOVA",
-      "value": 276.0
+      "value": 276.0,
+      "nota_fiscal": "12059"
     },
     {
       "id": "tx01130",
@@ -11335,7 +12465,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "MARCELO",
-      "value": 1890.0
+      "value": 1890.0,
+      "nota_fiscal": "12214"
     },
     {
       "id": "tx01131",
@@ -11345,7 +12476,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CJ DOS SANTOS",
-      "value": 14.6
+      "value": 14.6,
+      "nota_fiscal": "12202"
     },
     {
       "id": "tx01132",
@@ -11355,7 +12487,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DICEL",
-      "value": 250.0
+      "value": 250.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01133",
@@ -11365,7 +12498,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ALLNETS",
-      "value": 32.0
+      "value": 32.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01134",
@@ -11375,7 +12509,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "TAXA PIX",
-      "value": 6.76
+      "value": 6.76,
+      "nota_fiscal": null
     },
     {
       "id": "tx01135",
@@ -11385,7 +12520,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 3.62
+      "value": 3.62,
+      "nota_fiscal": null
     },
     {
       "id": "tx01136",
@@ -11395,7 +12531,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRYNIT CREDERE",
-      "value": 600.0
+      "value": 600.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01137",
@@ -11405,7 +12542,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRICONECT COM",
-      "value": 420.0
+      "value": 420.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01138",
@@ -11414,8 +12552,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "75991",
-      "value": 1243.68
+      "counterparty": "IDALL COM. ATAC. DE COMP. ELETR. LTDA (0000011)",
+      "value": 1243.68,
+      "nota_fiscal": "75991"
     },
     {
       "id": "tx01139",
@@ -11425,7 +12564,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "PROVOLT TECNOLOGIA ELETRONICA LTDA (0000886)",
-      "value": 2888.0
+      "value": 2888.0,
+      "nota_fiscal": "12215"
     },
     {
       "id": "tx01140",
@@ -11435,7 +12575,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "EDER SILVA DE OLIVEIRA (0001197)",
-      "value": 21.99
+      "value": 21.99,
+      "nota_fiscal": "12216"
     },
     {
       "id": "tx01141",
@@ -11445,7 +12586,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "HELIVANDER DE FREITAS LIMA (0001196)",
-      "value": 19.99
+      "value": 19.99,
+      "nota_fiscal": "12217"
     },
     {
       "id": "tx01142",
@@ -11455,7 +12597,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "SIDNEI DOS SANTOS (0001193)",
-      "value": 74.97
+      "value": 74.97,
+      "nota_fiscal": "12218"
     },
     {
       "id": "tx01143",
@@ -11465,7 +12608,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "SIMPLES CONNECT INDUSTRIA E COMERCIO LTA (0000308)",
-      "value": 2353.0
+      "value": 2353.0,
+      "nota_fiscal": "12219"
     },
     {
       "id": "tx01144",
@@ -11475,7 +12619,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "S.T.E.E. TECNOLOGIA ELETROELETRONICA LT (0000062)",
-      "value": 1075.6
+      "value": 1075.6,
+      "nota_fiscal": "12220"
     },
     {
       "id": "tx01145",
@@ -11485,7 +12630,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH",
-      "value": 546.4
+      "value": 546.4,
+      "nota_fiscal": "12030"
     },
     {
       "id": "tx01146",
@@ -11495,7 +12641,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ELETROFELIX",
-      "value": 296.51
+      "value": 296.51,
+      "nota_fiscal": "12045"
     },
     {
       "id": "tx01147",
@@ -11505,7 +12652,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "EVOLUTEC",
-      "value": 252.0
+      "value": 252.0,
+      "nota_fiscal": "12056"
     },
     {
       "id": "tx01148",
@@ -11515,7 +12663,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CONDUVOX",
-      "value": 261.9
+      "value": 261.9,
+      "nota_fiscal": "12057"
     },
     {
       "id": "tx01149",
@@ -11525,7 +12674,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 7.24
+      "value": 7.24,
+      "nota_fiscal": null
     },
     {
       "id": "tx01150",
@@ -11535,7 +12685,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP C A COMP",
-      "value": 375.23
+      "value": 375.23,
+      "nota_fiscal": null
     },
     {
       "id": "tx01151",
@@ -11544,8 +12695,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "148774",
-      "value": 659.39
+      "counterparty": "MEGADEF COMPONENTES ELETRONICOS LTDA (0000039)",
+      "value": 659.39,
+      "nota_fiscal": "148774"
     },
     {
       "id": "tx01152",
@@ -11554,8 +12706,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "260358",
-      "value": 2020.92
+      "counterparty": "ACP COMERCIO ATACADISTA DE COMPONENTES E (0000249)",
+      "value": 2020.92,
+      "nota_fiscal": "260358"
     },
     {
       "id": "tx01153",
@@ -11564,8 +12717,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "32764",
-      "value": 312.0
+      "counterparty": "ALLNETSYS COMERCIO IMPORTACAO E SERVICOS (0000036)",
+      "value": 312.0,
+      "nota_fiscal": "32764"
     },
     {
       "id": "tx01154",
@@ -11575,7 +12729,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "MEGAPIX COMPONENTES ELETRONICOS EIRELLI (0000325)",
-      "value": 450.0
+      "value": 450.0,
+      "nota_fiscal": "12221"
     },
     {
       "id": "tx01155",
@@ -11585,7 +12740,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "R & M COMPONENTES COMERCIAL ELETRONICA L (0000826)",
-      "value": 1360.0
+      "value": 1360.0,
+      "nota_fiscal": "12222"
     },
     {
       "id": "tx01156",
@@ -11595,7 +12751,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "LUIZ FERNANDO PAITER (0001202)",
-      "value": 139.99
+      "value": 139.99,
+      "nota_fiscal": "12223"
     },
     {
       "id": "tx01157",
@@ -11605,7 +12762,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "GUSTAVO CORREA SILVANO (0001198)",
-      "value": 25.8
+      "value": 25.8,
+      "nota_fiscal": "12225"
     },
     {
       "id": "tx01158",
@@ -11615,7 +12773,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "R & M COMPONENTES COMERCIAL ELETRONICA L (0000826)",
-      "value": 680.0
+      "value": 680.0,
+      "nota_fiscal": "12226"
     },
     {
       "id": "tx01159",
@@ -11625,7 +12784,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "MS TECNOPON EQUIPAMENTOS ESPECIAIS LTDA (0000373)",
-      "value": 3053.0
+      "value": 3053.0,
+      "nota_fiscal": "12227"
     },
     {
       "id": "tx01160",
@@ -11635,7 +12795,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "CITTA ELETRONICA IND. E COM. LTDA ME (0000532)",
-      "value": 206.0
+      "value": 206.0,
+      "nota_fiscal": "12228"
     },
     {
       "id": "tx01161",
@@ -11645,7 +12806,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ELETROFELIX INDUSTRIA E COMERCIO LTDA (0000477)",
-      "value": 155.5
+      "value": 155.5,
+      "nota_fiscal": "12229"
     },
     {
       "id": "tx01162",
@@ -11655,7 +12817,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "R. BAIAO INDUSTRIA E COMERCIO LTDA (0000060)",
-      "value": 7285.8
+      "value": 7285.8,
+      "nota_fiscal": "12231"
     },
     {
       "id": "tx01163",
@@ -11665,7 +12828,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FERNANDA KARINA DA COSTA (0001199)",
-      "value": 29.98
+      "value": 29.98,
+      "nota_fiscal": "12233"
     },
     {
       "id": "tx01164",
@@ -11675,7 +12839,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "CRISTOFOLI EQUIP. DE BIOSSEGURANÇA LTDA (0000146)",
-      "value": 325.0
+      "value": 325.0,
+      "nota_fiscal": "12234"
     },
     {
       "id": "tx01165",
@@ -11685,7 +12850,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CITTA",
-      "value": 142.9
+      "value": 142.9,
+      "nota_fiscal": "12160"
     },
     {
       "id": "tx01166",
@@ -11695,7 +12861,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH",
-      "value": 416.48
+      "value": 416.48,
+      "nota_fiscal": "12064"
     },
     {
       "id": "tx01167",
@@ -11705,7 +12872,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "J.M MAQUINA",
-      "value": 203.0
+      "value": 203.0,
+      "nota_fiscal": "12069"
     },
     {
       "id": "tx01168",
@@ -11715,7 +12883,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "INELTEC",
-      "value": 1733.0
+      "value": 1733.0,
+      "nota_fiscal": "12060"
     },
     {
       "id": "tx01169",
@@ -11725,7 +12894,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "LECOMP",
-      "value": 83.0
+      "value": 83.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01170",
@@ -11735,7 +12905,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 5.43
+      "value": 5.43,
+      "nota_fiscal": null
     },
     {
       "id": "tx01171",
@@ -11745,7 +12916,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MEGADEF",
-      "value": 124.91
+      "value": 124.91,
+      "nota_fiscal": null
     },
     {
       "id": "tx01172",
@@ -11755,7 +12927,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "MANUTENÇÃO",
       "counterparty": "GILBERTO",
-      "value": 650.0
+      "value": 650.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01173",
@@ -11765,7 +12938,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "GASTOS FIXOS",
       "counterparty": "IUVEN FIDC MULTIS",
-      "value": 1270.0
+      "value": 1270.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01174",
@@ -11775,7 +12949,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "TRANSPORTES",
       "counterparty": "EMPRESA  CORREIOS",
-      "value": 1802.8
+      "value": 1802.8,
+      "nota_fiscal": null
     },
     {
       "id": "tx01175",
@@ -11785,7 +12960,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DALEC SECURECOM",
-      "value": 261.17
+      "value": 261.17,
+      "nota_fiscal": null
     },
     {
       "id": "tx01176",
@@ -11795,7 +12971,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRICOMP COM",
-      "value": 842.7
+      "value": 842.7,
+      "nota_fiscal": null
     },
     {
       "id": "tx01177",
@@ -11805,7 +12982,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "CX COM",
-      "value": 398.88
+      "value": 398.88,
+      "nota_fiscal": null
     },
     {
       "id": "tx01178",
@@ -11815,7 +12993,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRICOMP COM",
-      "value": 201.4
+      "value": 201.4,
+      "nota_fiscal": null
     },
     {
       "id": "tx01179",
@@ -11825,7 +13004,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "CIKA ELETR",
-      "value": 402.68
+      "value": 402.68,
+      "nota_fiscal": null
     },
     {
       "id": "tx01180",
@@ -11835,7 +13015,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ZENER COMP",
-      "value": 390.3
+      "value": 390.3,
+      "nota_fiscal": null
     },
     {
       "id": "tx01181",
@@ -11844,8 +13025,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "8900",
-      "value": 500.0
+      "counterparty": "TRYNIT LED COMPONENTES ELETRONICOS EIREL (0000259)",
+      "value": 500.0,
+      "nota_fiscal": "8900"
     },
     {
       "id": "tx01182",
@@ -11855,7 +13037,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "NIATRON IND. E COM. DE EQUIP. ELETRO. (0000143)",
-      "value": 2220.0
+      "value": 2220.0,
+      "nota_fiscal": "12235"
     },
     {
       "id": "tx01183",
@@ -11865,7 +13048,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "WASHINGTON LUIZ DA CRUZ (0001205)",
-      "value": 22.99
+      "value": 22.99,
+      "nota_fiscal": "12236"
     },
     {
       "id": "tx01184",
@@ -11875,7 +13059,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FELIPE CARLSON ELOY DE ANDRADE (0001204)",
-      "value": 39.99
+      "value": 39.99,
+      "nota_fiscal": "12237"
     },
     {
       "id": "tx01185",
@@ -11885,7 +13070,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "RUFINA M (0001203)",
-      "value": 21.99
+      "value": 21.99,
+      "nota_fiscal": "12238"
     },
     {
       "id": "tx01186",
@@ -11895,7 +13081,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ELESSANDRO DA CUNHA PEREIRA (0001206)",
-      "value": 34.99
+      "value": 34.99,
+      "nota_fiscal": "12239"
     },
     {
       "id": "tx01187",
@@ -11905,7 +13092,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "DIOGO ROSA SILVEIRA (0001207)",
-      "value": 19.99
+      "value": 19.99,
+      "nota_fiscal": "12240"
     },
     {
       "id": "tx01188",
@@ -11915,7 +13103,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "REGINALDO DA SILVA LOPE (0001208)",
-      "value": 29.97
+      "value": 29.97,
+      "nota_fiscal": "12241"
     },
     {
       "id": "tx01189",
@@ -11925,7 +13114,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "MS TECNOPON EQUIPAMENTOS ESPECIAIS LTDA (0000373)",
-      "value": 438.9
+      "value": 438.9,
+      "nota_fiscal": "12242"
     },
     {
       "id": "tx01190",
@@ -11935,7 +13125,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "MULTICRAFT ELECTRONICS DO BRASIL LTDA (0001209)",
-      "value": 285.0
+      "value": 285.0,
+      "nota_fiscal": "12243"
     },
     {
       "id": "tx01191",
@@ -11945,7 +13136,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "VBN INDUSTRIA E COMERCIO DE PAINEIS ELET (0000987)",
-      "value": 305.0
+      "value": 305.0,
+      "nota_fiscal": "12244"
     },
     {
       "id": "tx01192",
@@ -11955,7 +13147,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "NEXXO EQUIPAMENTOS ELETRONICOS LTDA (0000225)",
-      "value": 156.0
+      "value": 156.0,
+      "nota_fiscal": "12245"
     },
     {
       "id": "tx01193",
@@ -11965,7 +13158,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ACBAL RUCAS ANDRADE ACHY (0001200)",
-      "value": 34.98
+      "value": 34.98,
+      "nota_fiscal": "12246"
     },
     {
       "id": "tx01194",
@@ -11975,7 +13169,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "WGV SISTEMAS NACIONAIS ELETRO ELETRONICS (0000220)",
-      "value": 545.0
+      "value": 545.0,
+      "nota_fiscal": "12247"
     },
     {
       "id": "tx01195",
@@ -11985,7 +13180,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E (0000081)",
-      "value": 1286.25
+      "value": 1286.25,
+      "nota_fiscal": "12248"
     },
     {
       "id": "tx01196",
@@ -11995,7 +13191,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "EVOLUTEC INDUSTRIA E COMERCIO DE ELETROA (0000229)",
-      "value": 45.0
+      "value": 45.0,
+      "nota_fiscal": "12249"
     },
     {
       "id": "tx01197",
@@ -12005,7 +13202,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO (0000660)",
-      "value": 1081.0
+      "value": 1081.0,
+      "nota_fiscal": "12250"
     },
     {
       "id": "tx01198",
@@ -12015,7 +13213,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "TRANSFIX",
-      "value": 480.0
+      "value": 480.0,
+      "nota_fiscal": "12006"
     },
     {
       "id": "tx01199",
@@ -12025,7 +13224,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "WGV",
-      "value": 545.0
+      "value": 545.0,
+      "nota_fiscal": "12247"
     },
     {
       "id": "tx01200",
@@ -12035,7 +13235,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "EDERSON VARANDA BORGES LTDA - 0000785",
-      "value": 556.49
+      "value": 556.49,
+      "nota_fiscal": "12043/02"
     },
     {
       "id": "tx01201",
@@ -12045,7 +13246,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO - 0000660",
-      "value": 2210.0
+      "value": 2210.0,
+      "nota_fiscal": "12044/02"
     },
     {
       "id": "tx01202",
@@ -12055,7 +13257,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO - 0000660",
-      "value": 861.53
+      "value": 861.53,
+      "nota_fiscal": "12046/02"
     },
     {
       "id": "tx01203",
@@ -12065,7 +13268,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BALMARC SOLUCOES EIRELI - 0000011",
-      "value": 191.0
+      "value": 191.0,
+      "nota_fiscal": "12067/01"
     },
     {
       "id": "tx01204",
@@ -12075,7 +13279,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FIBERWAN IND. DE EQUIP. ELETTR. LTDA-EPP - 0000411",
-      "value": 383.0
+      "value": 383.0,
+      "nota_fiscal": "12068/01"
     },
     {
       "id": "tx01205",
@@ -12085,7 +13290,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 9.05
+      "value": 9.05,
+      "nota_fiscal": null
     },
     {
       "id": "tx01206",
@@ -12095,7 +13301,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "MOVIMENTO",
       "counterparty": "MAX IMPORT",
-      "value": 7000.0
+      "value": 7000.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01207",
@@ -12105,7 +13312,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "E2E IND COM",
-      "value": 668.33
+      "value": 668.33,
+      "nota_fiscal": null
     },
     {
       "id": "tx01208",
@@ -12115,7 +13323,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRICOMP COM",
-      "value": 38.16
+      "value": 38.16,
+      "nota_fiscal": null
     },
     {
       "id": "tx01209",
@@ -12125,7 +13334,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "MATHEUS ROCHA",
-      "value": 2440.68
+      "value": 2440.68,
+      "nota_fiscal": null
     },
     {
       "id": "tx01210",
@@ -12135,7 +13345,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "TAMIRES ROCHA",
-      "value": 1554.24
+      "value": 1554.24,
+      "nota_fiscal": null
     },
     {
       "id": "tx01211",
@@ -12145,7 +13356,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "MATHEUS SILVA",
-      "value": 1049.52
+      "value": 1049.52,
+      "nota_fiscal": null
     },
     {
       "id": "tx01212",
@@ -12155,7 +13367,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "ALINE ROCHA",
-      "value": 1500.0
+      "value": 1500.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01213",
@@ -12165,7 +13378,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY MAX",
-      "value": 86.0
+      "value": 86.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01214",
@@ -12174,8 +13388,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "130477",
-      "value": 383.4
+      "counterparty": "WKS TECHNOLOGY DO BRASIL LTDA (0000320)",
+      "value": 383.4,
+      "nota_fiscal": "130477"
     },
     {
       "id": "tx01215",
@@ -12184,8 +13399,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "130525",
-      "value": 145.27
+      "counterparty": "WKS TECHNOLOGY DO BRASIL LTDA (0000320)",
+      "value": 145.27,
+      "nota_fiscal": "130525"
     },
     {
       "id": "tx01216",
@@ -12194,8 +13410,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "148823",
-      "value": 124.91
+      "counterparty": "MEGADEF COMPONENTES ELETRONICOS LTDA (0000039)",
+      "value": 124.91,
+      "nota_fiscal": "148823"
     },
     {
       "id": "tx01217",
@@ -12204,8 +13421,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "17072",
-      "value": 755.05
+      "counterparty": "FILCRILL COMPS ELETRS IMP E EXP EIRELLI (0000048)",
+      "value": 755.05,
+      "nota_fiscal": "17072"
     },
     {
       "id": "tx01218",
@@ -12214,8 +13432,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "201349",
-      "value": 86.0
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 86.0,
+      "nota_fiscal": "201349"
     },
     {
       "id": "tx01219",
@@ -12224,8 +13443,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "201622",
-      "value": 802.46
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 802.46,
+      "nota_fiscal": "201622"
     },
     {
       "id": "tx01220",
@@ -12234,8 +13454,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "22118",
-      "value": 449.58
+      "counterparty": "ASIA BRASIL COM. DE COMPS.ELETRONICOS LT (0000385)",
+      "value": 449.58,
+      "nota_fiscal": "22118"
     },
     {
       "id": "tx01221",
@@ -12244,8 +13465,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "23924",
-      "value": 260.0
+      "counterparty": "ZENER COMPONENTES ELETRONICOS LTDA - ME (0000317)",
+      "value": 260.0,
+      "nota_fiscal": "23924"
     },
     {
       "id": "tx01222",
@@ -12254,8 +13476,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "260484",
-      "value": 15093.14
+      "counterparty": "ACP COMERCIO ATACADISTA DE COMPONENTES E (0000249)",
+      "value": 15093.14,
+      "nota_fiscal": "260484"
     },
     {
       "id": "tx01223",
@@ -12264,8 +13487,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "2887",
-      "value": 385.84
+      "counterparty": "MPX COMPONENTES ELETRONICOS LTDA (0000303)",
+      "value": 385.84,
+      "nota_fiscal": "2887"
     },
     {
       "id": "tx01224",
@@ -12274,8 +13498,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "3114",
-      "value": 21.0
+      "counterparty": "ORANGE E BLACK DISTRIBUIDORA LTDA (0000198)",
+      "value": 21.0,
+      "nota_fiscal": "3114"
     },
     {
       "id": "tx01225",
@@ -12284,8 +13509,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "32767",
-      "value": 32.0
+      "counterparty": "ALLNETSYS COMERCIO IMPORTACAO E SERVICOS (0000036)",
+      "value": 32.0,
+      "nota_fiscal": "32767"
     },
     {
       "id": "tx01226",
@@ -12294,8 +13520,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "373",
-      "value": 1229.1
+      "counterparty": "FCP IMPORTACAO E COMERCIO LTDA (0000398)",
+      "value": 1229.1,
+      "nota_fiscal": "373"
     },
     {
       "id": "tx01227",
@@ -12304,8 +13531,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "76032",
-      "value": 720.0
+      "counterparty": "IDALL COM. ATAC. DE COMP. ELETR. LTDA (0000011)",
+      "value": 720.0,
+      "nota_fiscal": "76032"
     },
     {
       "id": "tx01228",
@@ -12314,8 +13542,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "76052",
-      "value": 1303.63
+      "counterparty": "IDALL COM. ATAC. DE COMP. ELETR. LTDA (0000011)",
+      "value": 1303.63,
+      "nota_fiscal": "76052"
     },
     {
       "id": "tx01229",
@@ -12324,8 +13553,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "85442",
-      "value": 308.86
+      "counterparty": "COMP TOTAL COM. E IMP. DE COMP. ELETRON. (0000267)",
+      "value": 308.86,
+      "nota_fiscal": "85442"
     },
     {
       "id": "tx01230",
@@ -12334,8 +13564,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "87751",
-      "value": 105.79
+      "counterparty": "MEGAPIX COMP. ELETRONICOS LTDA-EPP (0000275)",
+      "value": 105.79,
+      "nota_fiscal": "87751"
     },
     {
       "id": "tx01231",
@@ -12345,7 +13576,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "SEBASTIAO CESAR GRASSI ELETRONICOS - M.. (0000279)",
-      "value": 1350.32
+      "value": 1350.32,
+      "nota_fiscal": "12251"
     },
     {
       "id": "tx01232",
@@ -12355,7 +13587,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ZENER COMPONENTES ELETRONICOS LTDA - ME (0000142)",
-      "value": 114.0
+      "value": 114.0,
+      "nota_fiscal": "12252"
     },
     {
       "id": "tx01233",
@@ -12365,7 +13598,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ROBERTO APARECIDO DA SILVA PEDRO (0001217)",
-      "value": 19.99
+      "value": 19.99,
+      "nota_fiscal": "12253"
     },
     {
       "id": "tx01234",
@@ -12375,7 +13609,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "TOMAS DALLA VALLE (0001221)",
-      "value": 29.99
+      "value": 29.99,
+      "nota_fiscal": "12254"
     },
     {
       "id": "tx01235",
@@ -12385,7 +13620,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "LEONARDO SOUZA SILVA (0001216)",
-      "value": 49.99
+      "value": 49.99,
+      "nota_fiscal": "12255"
     },
     {
       "id": "tx01236",
@@ -12395,7 +13631,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "TAULIO FILIPE SOARES DA SILVA (0001219)",
-      "value": 34.99
+      "value": 34.99,
+      "nota_fiscal": "12256"
     },
     {
       "id": "tx01237",
@@ -12405,7 +13642,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "CICERO ROGERIO FERREIRA (0001215)",
-      "value": 179.99
+      "value": 179.99,
+      "nota_fiscal": "12257"
     },
     {
       "id": "tx01238",
@@ -12415,7 +13653,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "CINTIA NUNES LEITE (0001214)",
-      "value": 22.99
+      "value": 22.99,
+      "nota_fiscal": "12258"
     },
     {
       "id": "tx01239",
@@ -12425,7 +13664,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FATIMA APARECIDA SOARES DOS SANTOS (0001210)",
-      "value": 14.99
+      "value": 14.99,
+      "nota_fiscal": "12259"
     },
     {
       "id": "tx01240",
@@ -12435,7 +13675,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "M M MARTINS COMERCIAL LTDA (0001211)",
-      "value": 19.99
+      "value": 19.99,
+      "nota_fiscal": "12260"
     },
     {
       "id": "tx01241",
@@ -12445,7 +13686,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "VALERIA AJAJ KEZAM PEREIRA (0001212)",
-      "value": 34.53
+      "value": 34.53,
+      "nota_fiscal": "12261"
     },
     {
       "id": "tx01242",
@@ -12455,7 +13697,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "DENTSCLER IND. DE APAR. ODONTO. EIRELLI (0000390)",
-      "value": 2710.0
+      "value": 2710.0,
+      "nota_fiscal": "12262"
     },
     {
       "id": "tx01243",
@@ -12465,7 +13708,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "TRANSFIX",
-      "value": 5610.67
+      "value": 5610.67,
+      "nota_fiscal": "795"
     },
     {
       "id": "tx01244",
@@ -12475,7 +13719,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "MAX LED",
-      "value": 7000.0
+      "value": 7000.0,
+      "nota_fiscal": "MOVIMENTO"
     },
     {
       "id": "tx01245",
@@ -12485,7 +13730,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ALLPRINT",
-      "value": 2581.66
+      "value": 2581.66,
+      "nota_fiscal": "796"
     },
     {
       "id": "tx01246",
@@ -12495,7 +13741,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "PRICILA",
-      "value": 1282.8
+      "value": 1282.8,
+      "nota_fiscal": null
     },
     {
       "id": "tx01247",
@@ -12505,7 +13752,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "FRANCISCO",
-      "value": 1516.0
+      "value": 1516.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01248",
@@ -12515,7 +13763,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MPC",
-      "value": 1121.25
+      "value": 1121.25,
+      "nota_fiscal": null
     },
     {
       "id": "tx01249",
@@ -12525,7 +13774,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 1.81
+      "value": 1.81,
+      "nota_fiscal": null
     },
     {
       "id": "tx01250",
@@ -12535,7 +13785,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ZENER",
-      "value": 114.0
+      "value": 114.0,
+      "nota_fiscal": "12252"
     },
     {
       "id": "tx01251",
@@ -12545,7 +13796,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "NEW TEC CHARLES",
-      "value": 200.0
+      "value": 200.0,
+      "nota_fiscal": "SNF"
     },
     {
       "id": "tx01252",
@@ -12555,7 +13807,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "R. BAIAO INDUSTRIA E COMERCIO LTDA - 0000060",
-      "value": 5385.97
+      "value": 5385.97,
+      "nota_fiscal": "11918/02"
     },
     {
       "id": "tx01253",
@@ -12565,7 +13818,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO - 0000660",
-      "value": 1210.47
+      "value": 1210.47,
+      "nota_fiscal": "11992/02"
     },
     {
       "id": "tx01254",
@@ -12575,7 +13829,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FOCUS TECNOLOGIA E SOLUCOES LTDA - 0000742",
-      "value": 667.4
+      "value": 667.4,
+      "nota_fiscal": "11993/02"
     },
     {
       "id": "tx01255",
@@ -12585,7 +13840,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CITHEC CIENCIAS E TECNOLOGYA EIRELI - 0000027",
-      "value": 742.33
+      "value": 742.33,
+      "nota_fiscal": "11994/02"
     },
     {
       "id": "tx01256",
@@ -12595,7 +13851,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "R E M COMPONENTES COMERCIAL ELETRONICA L - 0000826",
-      "value": 816.0
+      "value": 816.0,
+      "nota_fiscal": "12073/01"
     },
     {
       "id": "tx01257",
@@ -12605,7 +13862,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "T.G.L. ELETRO ELETRONICO LTDA - ME - 0000073",
-      "value": 320.0
+      "value": 320.0,
+      "nota_fiscal": "12076/01"
     },
     {
       "id": "tx01258",
@@ -12615,7 +13873,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 10.86
+      "value": 10.86,
+      "nota_fiscal": null
     },
     {
       "id": "tx01259",
@@ -12625,7 +13884,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "TRANSPORTES",
       "counterparty": "DHL",
-      "value": 5145.5
+      "value": 5145.5,
+      "nota_fiscal": null
     },
     {
       "id": "tx01260",
@@ -12635,7 +13895,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ADX TELECOM",
-      "value": 535.0
+      "value": 535.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01261",
@@ -12645,7 +13906,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "MANUTENÇÃO",
       "counterparty": "SERVIÇO SR. ALEXANDRE",
-      "value": 80.0
+      "value": 80.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01262",
@@ -12655,7 +13917,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP C A COMP",
-      "value": 1322.4
+      "value": 1322.4,
+      "nota_fiscal": null
     },
     {
       "id": "tx01263",
@@ -12665,7 +13928,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP C A COMP ELETRONICOS LTDA",
-      "value": 537.07
+      "value": 537.07,
+      "nota_fiscal": null
     },
     {
       "id": "tx01264",
@@ -12675,7 +13939,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL COMERCIO ATACADISTA DE C",
-      "value": 660.73
+      "value": 660.73,
+      "nota_fiscal": null
     },
     {
       "id": "tx01265",
@@ -12685,7 +13950,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "LECOMP COMERCIAL DE COMPONENTE",
-      "value": 299.3
+      "value": 299.3,
+      "nota_fiscal": null
     },
     {
       "id": "tx01266",
@@ -12695,7 +13961,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ALLSEMI TECNOLOGIA E EIRELI",
-      "value": 1265.0
+      "value": 1265.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01267",
@@ -12705,7 +13972,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "CX COMERCIAL EIRELI",
-      "value": 342.0
+      "value": 342.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01268",
@@ -12715,7 +13983,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "VETRONIC COM ELETRONICA LTDA",
-      "value": 774.38
+      "value": 774.38,
+      "nota_fiscal": null
     },
     {
       "id": "tx01269",
@@ -12725,7 +13994,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP C A COMP ELETRONICOS LTDA",
-      "value": 842.82
+      "value": 842.82,
+      "nota_fiscal": null
     },
     {
       "id": "tx01270",
@@ -12735,7 +14005,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "SQUIB TECNOLOGIA E I E LTDA",
-      "value": 521.05
+      "value": 521.05,
+      "nota_fiscal": null
     },
     {
       "id": "tx01271",
@@ -12745,7 +14016,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRYNIT CREDERE",
-      "value": 1725.0
+      "value": 1725.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01272",
@@ -12755,7 +14027,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRYNIT CREDERE",
-      "value": 250.0
+      "value": 250.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01273",
@@ -12765,7 +14038,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ORANGE BLACK DISTRIBUIDORA L",
-      "value": 360.0
+      "value": 360.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01274",
@@ -12775,7 +14049,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY MAX ELETRONICA LTDA",
-      "value": 179.01
+      "value": 179.01,
+      "nota_fiscal": null
     },
     {
       "id": "tx01275",
@@ -12785,7 +14060,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ALVARO TAKANOBU UWADA (0001222)",
-      "value": 14.99
+      "value": 14.99,
+      "nota_fiscal": "12263"
     },
     {
       "id": "tx01276",
@@ -12795,7 +14071,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "EVALDO LUIS MARSON & CIA LTDA (0001224)",
-      "value": 21.99
+      "value": 21.99,
+      "nota_fiscal": "12264"
     },
     {
       "id": "tx01277",
@@ -12805,7 +14082,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "VINTEK IND., COMERCIO E SERVICOS LTDA (0000894)",
-      "value": 4643.0
+      "value": 4643.0,
+      "nota_fiscal": "12265"
     },
     {
       "id": "tx01278",
@@ -12815,7 +14093,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ARIELTEK INDUSTRIA E COMERCIO LTDA (0000314)",
-      "value": 267.5
+      "value": 267.5,
+      "nota_fiscal": "12266"
     },
     {
       "id": "tx01279",
@@ -12825,7 +14104,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "BALMARC SOLUCOES EIRELI (0000011)",
-      "value": 584.0
+      "value": 584.0,
+      "nota_fiscal": "12267"
     },
     {
       "id": "tx01280",
@@ -12835,7 +14115,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "SAMUEL ELETROTECNICA (0000041)",
-      "value": 505.75
+      "value": 505.75,
+      "nota_fiscal": "12268"
     },
     {
       "id": "tx01281",
@@ -12845,7 +14126,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "PRODUTOS ELETRONICOS FRATA LTDA (0000223)",
-      "value": 70.0
+      "value": 70.0,
+      "nota_fiscal": "12269"
     },
     {
       "id": "tx01282",
@@ -12855,7 +14137,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "FCP IMPORTACAO",
-      "value": 983.28
+      "value": 983.28,
+      "nota_fiscal": null
     },
     {
       "id": "tx01283",
@@ -12865,7 +14148,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL COMERCIO ATACADISTA DE C",
-      "value": 1661.55
+      "value": 1661.55,
+      "nota_fiscal": null
     },
     {
       "id": "tx01284",
@@ -12873,9 +14157,10 @@ const MAXLED_DATA = {
       "division": "iluminacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "PLANO DE SAÚDE",
+      "category": "GASTOS FIXOS",
       "counterparty": "PORTO SEGURO SEGURO SAUDE S",
-      "value": 2620.16
+      "value": 2620.16,
+      "nota_fiscal": null
     },
     {
       "id": "tx01285",
@@ -12885,7 +14170,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "SINDICATO DOS COMERCIARIOS DE",
-      "value": 65.37
+      "value": 65.37,
+      "nota_fiscal": null
     },
     {
       "id": "tx01286",
@@ -12895,7 +14181,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "SEGURO SÓCIO CARRO",
       "counterparty": "SUHAY",
-      "value": 931.74
+      "value": 931.74,
+      "nota_fiscal": null
     },
     {
       "id": "tx01287",
@@ -12905,7 +14192,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "GASTOS FIXOS",
       "counterparty": "CLARO NET",
-      "value": 176.47
+      "value": 176.47,
+      "nota_fiscal": null
     },
     {
       "id": "tx01288",
@@ -12915,7 +14203,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "LECOMP",
-      "value": 54.0
+      "value": 54.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01289",
@@ -12924,8 +14213,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "148875",
-      "value": 262.83
+      "counterparty": "MEGADEF COMPONENTES ELETRONICOS LTDA (0000039)",
+      "value": 262.83,
+      "nota_fiscal": "148875"
     },
     {
       "id": "tx01290",
@@ -12934,8 +14224,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "201837",
-      "value": 773.78
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 773.78,
+      "nota_fiscal": "201837"
     },
     {
       "id": "tx01291",
@@ -12944,8 +14235,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "201848",
-      "value": 385.73
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 385.73,
+      "nota_fiscal": "201848"
     },
     {
       "id": "tx01292",
@@ -12954,8 +14246,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "23658",
-      "value": 628.32
+      "counterparty": "VETRONIC COMERCIO ELETRONICA LTDA (0000038)",
+      "value": 628.32,
+      "nota_fiscal": "23658"
     },
     {
       "id": "tx01293",
@@ -12964,8 +14257,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "260606",
-      "value": 1914.91
+      "counterparty": "ACP COMERCIO ATACADISTA DE COMPONENTES E (0000249)",
+      "value": 1914.91,
+      "nota_fiscal": "260606"
     },
     {
       "id": "tx01294",
@@ -12974,8 +14268,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "2698",
-      "value": 270.0
+      "counterparty": "CX COMERCIAL EIRELI EPP (0000329)",
+      "value": 270.0,
+      "nota_fiscal": "2698"
     },
     {
       "id": "tx01295",
@@ -12984,8 +14279,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "3592",
-      "value": 106.0
+      "counterparty": "S-ohm Comercial Ltda. (0000183)",
+      "value": 106.0,
+      "nota_fiscal": "3592"
     },
     {
       "id": "tx01296",
@@ -12995,7 +14291,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "AC/DC (0000218)",
-      "value": 1594.0
+      "value": 1594.0,
+      "nota_fiscal": "12270"
     },
     {
       "id": "tx01297",
@@ -13005,7 +14302,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "CARLOS MARTINS (0001227)",
-      "value": 14.99
+      "value": 14.99,
+      "nota_fiscal": "12271"
     },
     {
       "id": "tx01298",
@@ -13015,7 +14313,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "MARCIO HIROSHI TSUNO (0001229)",
-      "value": 14.99
+      "value": 14.99,
+      "nota_fiscal": "12272"
     },
     {
       "id": "tx01299",
@@ -13025,7 +14324,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "LUCIANO ANDRE PINNO (0001226)",
-      "value": 33.98
+      "value": 33.98,
+      "nota_fiscal": "12273"
     },
     {
       "id": "tx01300",
@@ -13035,7 +14335,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "PATRICIA MARA SILVA DEBIQUE (0001225)",
-      "value": 21.98
+      "value": 21.98,
+      "nota_fiscal": "12274"
     },
     {
       "id": "tx01301",
@@ -13045,7 +14346,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL",
-      "value": 1266.67
+      "value": 1266.67,
+      "nota_fiscal": null
     },
     {
       "id": "tx01302",
@@ -13055,7 +14357,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "LS",
-      "value": 655.0
+      "value": 655.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01303",
@@ -13065,7 +14368,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "MATHEUS DA MATA (LUCIANO)",
-      "value": 240.5
+      "value": 240.5,
+      "nota_fiscal": "12288"
     },
     {
       "id": "tx01304",
@@ -13075,7 +14379,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FZW INNOVATION LTDA - 0000848",
-      "value": 1059.26
+      "value": 1059.26,
+      "nota_fiscal": "11868/02"
     },
     {
       "id": "tx01305",
@@ -13085,7 +14390,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
-      "value": 306.15
+      "value": 306.15,
+      "nota_fiscal": "11894/03"
     },
     {
       "id": "tx01306",
@@ -13095,7 +14401,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
-      "value": 546.4
+      "value": 546.4,
+      "nota_fiscal": "12030/03"
     },
     {
       "id": "tx01307",
@@ -13105,7 +14412,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO - 0000660",
-      "value": 1815.8
+      "value": 1815.8,
+      "nota_fiscal": "12096/01"
     },
     {
       "id": "tx01308",
@@ -13115,7 +14423,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "AWA EQUIPAMENTOS E SISTEMA - 0000433",
-      "value": 403.28
+      "value": 403.28,
+      "nota_fiscal": "12097/01"
     },
     {
       "id": "tx01309",
@@ -13125,7 +14434,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SOLSUSTENTAVEL PROD. ELETRO ELETRONICOS - 0000125",
-      "value": 373.0
+      "value": 373.0,
+      "nota_fiscal": "12098/01"
     },
     {
       "id": "tx01310",
@@ -13135,7 +14445,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "RALCOMP COMP. ELETRONICOS EIRELI ME - 0000474",
-      "value": 550.0
+      "value": 550.0,
+      "nota_fiscal": "12101/01"
     },
     {
       "id": "tx01311",
@@ -13145,7 +14456,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "J.M. MAQUINAS AUTOMOTIVAS EIRELI - 0000387",
-      "value": 662.15
+      "value": 662.15,
+      "nota_fiscal": "12110/01"
     },
     {
       "id": "tx01312",
@@ -13155,7 +14467,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "LECOMP",
-      "value": 50.0
+      "value": 50.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01313",
@@ -13165,7 +14478,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "COMP TOTAL C I C ELETRONICOS",
-      "value": 739.08
+      "value": 739.08,
+      "nota_fiscal": null
     },
     {
       "id": "tx01314",
@@ -13175,7 +14489,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 14.48
+      "value": 14.48,
+      "nota_fiscal": null
     },
     {
       "id": "tx01315",
@@ -13184,8 +14499,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "116188",
-      "value": 54.0
+      "counterparty": "LECOMP Com. de Comp. Eletronicos LTDA (0000312)",
+      "value": 54.0,
+      "nota_fiscal": "116188"
     },
     {
       "id": "tx01316",
@@ -13194,8 +14510,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "1344",
-      "value": 565.0
+      "counterparty": "ADX TELECOM COMERCIO &AMP;AMP; SERVICOS (0000428)",
+      "value": 565.0,
+      "nota_fiscal": "1344"
     },
     {
       "id": "tx01317",
@@ -13204,8 +14521,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "201869",
-      "value": 174.66
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 174.66,
+      "nota_fiscal": "201869"
     },
     {
       "id": "tx01318",
@@ -13214,8 +14532,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "23680",
-      "value": 437.62
+      "counterparty": "VETRONIC COMERCIO ELETRONICA LTDA (0000038)",
+      "value": 437.62,
+      "nota_fiscal": "23680"
     },
     {
       "id": "tx01319",
@@ -13224,8 +14543,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "260675",
-      "value": 1147.6
+      "counterparty": "ACP COMERCIO ATACADISTA DE COMPONENTES E (0000249)",
+      "value": 1147.6,
+      "nota_fiscal": "260675"
     },
     {
       "id": "tx01320",
@@ -13234,8 +14554,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "2705",
-      "value": 325.0
+      "counterparty": "CX COMERCIAL EIRELI EPP (0000329)",
+      "value": 325.0,
+      "nota_fiscal": "2705"
     },
     {
       "id": "tx01321",
@@ -13244,8 +14565,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "2712",
-      "value": 283.5
+      "counterparty": "CX COMERCIAL EIRELI EPP (0000329)",
+      "value": 283.5,
+      "nota_fiscal": "2712"
     },
     {
       "id": "tx01322",
@@ -13254,8 +14576,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "3139",
-      "value": 270.0
+      "counterparty": "ORANGE E BLACK DISTRIBUIDORA LTDA (0000198)",
+      "value": 270.0,
+      "nota_fiscal": "3139"
     },
     {
       "id": "tx01323",
@@ -13264,8 +14587,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "3148",
-      "value": 445.0
+      "counterparty": "ORANGE E BLACK DISTRIBUIDORA LTDA (0000198)",
+      "value": 445.0,
+      "nota_fiscal": "3148"
     },
     {
       "id": "tx01324",
@@ -13274,8 +14598,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "32865",
-      "value": 187.5
+      "counterparty": "ALLNETSYS COMERCIO IMPORTACAO E SERVICOS (0000036)",
+      "value": 187.5,
+      "nota_fiscal": "32865"
     },
     {
       "id": "tx01325",
@@ -13284,8 +14609,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "85522",
-      "value": 665.63
+      "counterparty": "COMP TOTAL COM. E IMP. DE COMP. ELETRON. (0000267)",
+      "value": 665.63,
+      "nota_fiscal": "85522"
     },
     {
       "id": "tx01326",
@@ -13295,7 +14621,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "IMPROEL - INDUSTRIA E PROJ. ELETRO-ELET (0000118)",
-      "value": 923.0
+      "value": 923.0,
+      "nota_fiscal": "12275"
     },
     {
       "id": "tx01327",
@@ -13305,7 +14632,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "RAFAEL PERTILE CARNEIRO (0001238)",
-      "value": 34.99
+      "value": 34.99,
+      "nota_fiscal": "12276"
     },
     {
       "id": "tx01328",
@@ -13315,7 +14643,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "JOSE FRANCINALDO DA SILVA SOUZA (0001235)",
-      "value": 16.99
+      "value": 16.99,
+      "nota_fiscal": "12277"
     },
     {
       "id": "tx01329",
@@ -13325,7 +14654,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "DGL SOLUÇÕES EM ELETRONICA LTDA (0000564)",
-      "value": 59.98
+      "value": 59.98,
+      "nota_fiscal": "12278"
     },
     {
       "id": "tx01330",
@@ -13335,7 +14665,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FRANCISCO SHIMBA OTAKE (0001232)",
-      "value": 21.99
+      "value": 21.99,
+      "nota_fiscal": "12279"
     },
     {
       "id": "tx01331",
@@ -13345,7 +14676,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ELOI BANDEIRA JUNIOR (0001234)",
-      "value": 21.99
+      "value": 21.99,
+      "nota_fiscal": "12280"
     },
     {
       "id": "tx01332",
@@ -13355,7 +14687,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "CARLOS ROBERTO GALBI (0001236)",
-      "value": 19.99
+      "value": 19.99,
+      "nota_fiscal": "12281"
     },
     {
       "id": "tx01333",
@@ -13365,7 +14698,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "VICTOR BRUNO DIAS DE MELO (0001230)",
-      "value": 19.99
+      "value": 19.99,
+      "nota_fiscal": "12282"
     },
     {
       "id": "tx01334",
@@ -13375,7 +14709,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "R. BAIAO INDUSTRIA E COMERCIO LTDA (0000060)",
-      "value": 425.0
+      "value": 425.0,
+      "nota_fiscal": "12283"
     },
     {
       "id": "tx01335",
@@ -13385,7 +14720,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "E DE OLIVEIRA BARBOSA ELETRONICA (0000898)",
-      "value": 680.0
+      "value": 680.0,
+      "nota_fiscal": "12284"
     },
     {
       "id": "tx01336",
@@ -13395,7 +14731,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ALIGERA EQUIPAMENTOS DIGITAIS LTDA (0000188)",
-      "value": 677.5
+      "value": 677.5,
+      "nota_fiscal": "12285"
     },
     {
       "id": "tx01337",
@@ -13405,7 +14742,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "R. BAIAO INDUSTRIA E COMERCIO LTDA (0000060)",
-      "value": 260.0
+      "value": 260.0,
+      "nota_fiscal": "12286"
     },
     {
       "id": "tx01338",
@@ -13415,7 +14753,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "C R D MONTAGEM (0000200)",
-      "value": 1059.66
+      "value": 1059.66,
+      "nota_fiscal": "12287"
     },
     {
       "id": "tx01339",
@@ -13425,7 +14764,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "MATHEUS DA MATA DAIBERT DO VAL (0000599)",
-      "value": 240.5
+      "value": 240.5,
+      "nota_fiscal": "12288"
     },
     {
       "id": "tx01340",
@@ -13435,7 +14775,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "BRASMEDICAL IND. E COM. DE PRODUTOS PAR (0000017)",
-      "value": 5323.3
+      "value": 5323.3,
+      "nota_fiscal": "12289"
     },
     {
       "id": "tx01341",
@@ -13445,7 +14786,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMEN",
-      "value": 1316.45
+      "value": 1316.45,
+      "nota_fiscal": "798/01"
     },
     {
       "id": "tx01342",
@@ -13455,7 +14797,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMEN",
-      "value": 1751.38
+      "value": 1751.38,
+      "nota_fiscal": "778/03"
     },
     {
       "id": "tx01343",
@@ -13465,7 +14808,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 3.62
+      "value": 3.62,
+      "nota_fiscal": null
     },
     {
       "id": "tx01344",
@@ -13475,7 +14819,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "R. BAIAO INDUSTRIA E COMERCIO LTDA (0000060)",
-      "value": 539.0
+      "value": 539.0,
+      "nota_fiscal": "804"
     },
     {
       "id": "tx01345",
@@ -13485,7 +14830,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "INELTEC TECNOLOGIAS LTDA - 0000193",
-      "value": 1733.0
+      "value": 1733.0,
+      "nota_fiscal": "12060/02"
     },
     {
       "id": "tx01346",
@@ -13495,7 +14841,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
-      "value": 416.49
+      "value": 416.49,
+      "nota_fiscal": "12064/02"
     },
     {
       "id": "tx01347",
@@ -13505,7 +14852,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SPECTO PAINEIS ELETRONICO LTDA - 0000071",
-      "value": 1023.0
+      "value": 1023.0,
+      "nota_fiscal": "12103/01"
     },
     {
       "id": "tx01348",
@@ -13515,7 +14863,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SEBASTIAO CESAR GRASSI ELETRONICOS - M.. - 0000279",
-      "value": 675.16
+      "value": 675.16,
+      "nota_fiscal": "12251/01"
     },
     {
       "id": "tx01349",
@@ -13525,7 +14874,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FZW INNOVATION LTDA - 0000848",
-      "value": 1955.52
+      "value": 1955.52,
+      "nota_fiscal": "11811/03"
     },
     {
       "id": "tx01350",
@@ -13535,7 +14885,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FZW INNOVATION LTDA - 0000848",
-      "value": 1720.12
+      "value": 1720.12,
+      "nota_fiscal": "11938/01"
     },
     {
       "id": "tx01351",
@@ -13545,7 +14896,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "NEW TEC CHARLES",
-      "value": 221.0
+      "value": 221.0,
+      "nota_fiscal": "SNF"
     },
     {
       "id": "tx01352",
@@ -13555,7 +14907,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "JAIROTEC",
-      "value": 420.0
+      "value": 420.0,
+      "nota_fiscal": "SNF"
     },
     {
       "id": "tx01353",
@@ -13565,7 +14918,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY MAX ELETRONICA LTDA",
-      "value": 517.9
+      "value": 517.9,
+      "nota_fiscal": null
     },
     {
       "id": "tx01354",
@@ -13575,7 +14929,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ORANGE E BLACK DISTRIBUIDORA L",
-      "value": 235.0
+      "value": 235.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01355",
@@ -13585,7 +14940,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP C A COMP ELETRONICOS LTDA",
-      "value": 531.16
+      "value": 531.16,
+      "nota_fiscal": null
     },
     {
       "id": "tx01356",
@@ -13595,7 +14951,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MEGADEF COMPONENTES ELETRONICO",
-      "value": 1015.68
+      "value": 1015.68,
+      "nota_fiscal": null
     },
     {
       "id": "tx01357",
@@ -13605,7 +14962,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MKB SENSORES LTDA",
-      "value": 2953.94
+      "value": 2953.94,
+      "nota_fiscal": null
     },
     {
       "id": "tx01358",
@@ -13615,7 +14973,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MKB SENSORES LTDA",
-      "value": 4372.15
+      "value": 4372.15,
+      "nota_fiscal": null
     },
     {
       "id": "tx01359",
@@ -13625,7 +14984,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 10.86
+      "value": 10.86,
+      "nota_fiscal": null
     },
     {
       "id": "tx01360",
@@ -13634,8 +14994,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "116129",
-      "value": 83.0
+      "counterparty": "LECOMP Com. de Comp. Eletronicos LTDA (0000312)",
+      "value": 83.0,
+      "nota_fiscal": "116129"
     },
     {
       "id": "tx01361",
@@ -13644,8 +15005,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "260780",
-      "value": 1490.82
+      "counterparty": "ACP COMERCIO ATACADISTA DE COMPONENTES E (0000249)",
+      "value": 1490.82,
+      "nota_fiscal": "260780"
     },
     {
       "id": "tx01362",
@@ -13654,8 +15016,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "3115",
-      "value": 705.0
+      "counterparty": "ORANGE E BLACK DISTRIBUIDORA LTDA (0000198)",
+      "value": 705.0,
+      "nota_fiscal": "3115"
     },
     {
       "id": "tx01363",
@@ -13664,8 +15027,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "3321",
-      "value": 799.68
+      "counterparty": "HEKTRON COMERCIO DE COMPONENTES ELETRONI (0000387)",
+      "value": 799.68,
+      "nota_fiscal": "3321"
     },
     {
       "id": "tx01364",
@@ -13674,8 +15038,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "76124",
-      "value": 577.5
+      "counterparty": "IDALL COM. ATAC. DE COMP. ELETR. LTDA (0000011)",
+      "value": 577.5,
+      "nota_fiscal": "76124"
     },
     {
       "id": "tx01365",
@@ -13685,7 +15050,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "TRANSFIX ASSISTENCIA TECN. E VENDAS EQUI (0000199)",
-      "value": 240.0
+      "value": 240.0,
+      "nota_fiscal": "12290"
     },
     {
       "id": "tx01366",
@@ -13695,7 +15061,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "DGL SOLUÇÕES EM ELETRONICA LTDA (0000564)",
-      "value": 29.99
+      "value": 29.99,
+      "nota_fiscal": "12291"
     },
     {
       "id": "tx01367",
@@ -13705,7 +15072,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "JOSE LUIZ MORENO JUNIOR (0001243)",
-      "value": 44.99
+      "value": 44.99,
+      "nota_fiscal": "12292"
     },
     {
       "id": "tx01368",
@@ -13715,7 +15083,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "THIAGO HENRIQUE MATSUI CUSTODIO (0001241)",
-      "value": 25.99
+      "value": 25.99,
+      "nota_fiscal": "12293"
     },
     {
       "id": "tx01369",
@@ -13725,7 +15094,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "NIVALDO DE JESUS DA SILVA (0001242)",
-      "value": 19.99
+      "value": 19.99,
+      "nota_fiscal": "12294"
     },
     {
       "id": "tx01370",
@@ -13735,7 +15105,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "LUAN DE OLIVEIRA GALLEGO (0001239)",
-      "value": 34.99
+      "value": 34.99,
+      "nota_fiscal": "12295"
     },
     {
       "id": "tx01371",
@@ -13745,7 +15116,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "CILMARIA BARBOSA DA SILVA (0001245)",
-      "value": 29.99
+      "value": 29.99,
+      "nota_fiscal": "12296"
     },
     {
       "id": "tx01372",
@@ -13755,7 +15127,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "RENILSON DELARMELINA PEREIRA (0001246)",
-      "value": 10.99
+      "value": 10.99,
+      "nota_fiscal": "12297"
     },
     {
       "id": "tx01373",
@@ -13765,7 +15138,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ANTONIO CARLOS DOS SANTOS (0001231)",
-      "value": 139.99
+      "value": 139.99,
+      "nota_fiscal": "12298"
     },
     {
       "id": "tx01374",
@@ -13775,7 +15149,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ROYALCOMP COMPONENTES ELETR. LTDA (0000570)",
-      "value": 2976.0
+      "value": 2976.0,
+      "nota_fiscal": "12299"
     },
     {
       "id": "tx01375",
@@ -13785,7 +15160,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ARIELTEK INDUSTRIA E COMERCIO LTDA (0000314)",
-      "value": 628.24
+      "value": 628.24,
+      "nota_fiscal": "12300"
     },
     {
       "id": "tx01376",
@@ -13795,7 +15171,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "SEBASTIAO CESAR GRASSI ELETRONICOS - M.. (0000279)",
-      "value": 1389.5
+      "value": 1389.5,
+      "nota_fiscal": "12301"
     },
     {
       "id": "tx01377",
@@ -13805,7 +15182,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "CONDUVOX TELEMATICA LTDA (0000031)",
-      "value": 397.3
+      "value": 397.3,
+      "nota_fiscal": "12302"
     },
     {
       "id": "tx01378",
@@ -13815,7 +15193,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ELETROFELIX INDUSTRIA E COMERCIO LTDA (0000477)",
-      "value": 115.4
+      "value": 115.4,
+      "nota_fiscal": "12303"
     },
     {
       "id": "tx01379",
@@ -13825,7 +15204,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ELETROFELIX INDUSTRIA E COMERCIO LTDA (0000477)",
-      "value": 48.38
+      "value": 48.38,
+      "nota_fiscal": "12304"
     },
     {
       "id": "tx01380",
@@ -13835,7 +15215,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ALLPRINT LATINA",
-      "value": 4105.0
+      "value": 4105.0,
+      "nota_fiscal": "770/04"
     },
     {
       "id": "tx01381",
@@ -13845,7 +15226,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "J. M. MAQUINAS",
-      "value": 2081.25
+      "value": 2081.25,
+      "nota_fiscal": "799/01"
     },
     {
       "id": "tx01382",
@@ -13855,7 +15237,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 3.62
+      "value": 3.62,
+      "nota_fiscal": null
     },
     {
       "id": "tx01383",
@@ -13865,7 +15248,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "NEXXO EQUIPAMENTOS ELETRONICOS LTDA - 0000225",
-      "value": 564.25
+      "value": 564.25,
+      "nota_fiscal": "12022/02"
     },
     {
       "id": "tx01384",
@@ -13875,7 +15259,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "EDERSON VARANDA BORGES LTDA - 0000785",
-      "value": 556.49
+      "value": 556.49,
+      "nota_fiscal": "12043/03"
     },
     {
       "id": "tx01385",
@@ -13885,7 +15270,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO - 0000660",
-      "value": 2210.0
+      "value": 2210.0,
+      "nota_fiscal": "12044/03"
     },
     {
       "id": "tx01386",
@@ -13895,7 +15281,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO - 0000660",
-      "value": 861.53
+      "value": 861.53,
+      "nota_fiscal": "12046/03"
     },
     {
       "id": "tx01387",
@@ -13905,7 +15292,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FIBERWAN IND. DE EQUIP. ELETTR. LTDA-EPP - 0000411",
-      "value": 383.0
+      "value": 383.0,
+      "nota_fiscal": "12068/02"
     },
     {
       "id": "tx01388",
@@ -13915,7 +15303,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "DENTSCLER IND. DE APAR. ODONTO. EIRELLI - 0000390",
-      "value": 893.25
+      "value": 893.25,
+      "nota_fiscal": "12091/01"
     },
     {
       "id": "tx01389",
@@ -13925,7 +15314,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BRASMEDICAL IND. E COM. DE PRODUTOS PAR - 0000017",
-      "value": 978.87
+      "value": 978.87,
+      "nota_fiscal": "12092/01"
     },
     {
       "id": "tx01390",
@@ -13935,7 +15325,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "DF AUTOMACAO INDUSTRIA E COMERCIO LTDA - 0000434",
-      "value": 484.3
+      "value": 484.3,
+      "nota_fiscal": "12102/01"
     },
     {
       "id": "tx01391",
@@ -13945,7 +15336,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "MS TECNOPON EQUIPAMENTOS ESPECIAIS LTDA - 0000373",
-      "value": 1235.1
+      "value": 1235.1,
+      "nota_fiscal": "12100/01"
     },
     {
       "id": "tx01392",
@@ -13955,7 +15347,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "DIGISYSTEM IND. DE SIST. ELETRO. LTDA - 0000040",
-      "value": 759.28
+      "value": 759.28,
+      "nota_fiscal": "12106/01"
     },
     {
       "id": "tx01393",
@@ -13965,7 +15358,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SISTRANS SISTEMA DE SIN. DE TRANSITO LTA - 0000067",
-      "value": 199.0
+      "value": 199.0,
+      "nota_fiscal": "12107/01"
     },
     {
       "id": "tx01394",
@@ -13975,7 +15369,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "DIGISYSTEM IND. DE SIST. ELETRO. LTDA - 0000040",
-      "value": 180.0
+      "value": 180.0,
+      "nota_fiscal": "12109/01"
     },
     {
       "id": "tx01395",
@@ -13985,7 +15380,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SEBASTIAO CESAR GRASSI ELETRONICOS - M.. - 0000279",
-      "value": 675.16
+      "value": 675.16,
+      "nota_fiscal": "12251/02"
     },
     {
       "id": "tx01396",
@@ -13995,7 +15391,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "TRANSFIX",
-      "value": 992.67
+      "value": 992.67,
+      "nota_fiscal": "11935"
     },
     {
       "id": "tx01397",
@@ -14005,7 +15402,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ELCOMP COMERCIO C E LTDA EPP",
-      "value": 767.23
+      "value": 767.23,
+      "nota_fiscal": null
     },
     {
       "id": "tx01398",
@@ -14015,7 +15413,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRICOMP COMERCIAL E LTDA",
-      "value": 960.62
+      "value": 960.62,
+      "nota_fiscal": null
     },
     {
       "id": "tx01399",
@@ -14025,7 +15424,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRICONECT COMERCIAL ELETRONICA",
-      "value": 365.7
+      "value": 365.7,
+      "nota_fiscal": null
     },
     {
       "id": "tx01400",
@@ -14035,7 +15435,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MULT COMERCIAL LT",
-      "value": 375.0
+      "value": 375.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01401",
@@ -14045,7 +15446,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "COMP TOTAL C I C ELETRONICOS",
-      "value": 378.29
+      "value": 378.29,
+      "nota_fiscal": null
     },
     {
       "id": "tx01402",
@@ -14055,7 +15457,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP C A COMP ELETRONICOS LTDA",
-      "value": 439.95
+      "value": 439.95,
+      "nota_fiscal": null
     },
     {
       "id": "tx01403",
@@ -14065,7 +15468,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP C A COMP ELETRONICOS LTDA",
-      "value": 486.25
+      "value": 486.25,
+      "nota_fiscal": null
     },
     {
       "id": "tx01404",
@@ -14075,7 +15479,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP C A COMP ELETRONICOS LTDA",
-      "value": 457.49
+      "value": 457.49,
+      "nota_fiscal": null
     },
     {
       "id": "tx01405",
@@ -14085,7 +15490,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 23.53
+      "value": 23.53,
+      "nota_fiscal": null
     },
     {
       "id": "tx01406",
@@ -14095,7 +15501,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "MANUTENÇÃO",
       "counterparty": "SULFITE",
-      "value": 455.0
+      "value": 455.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01407",
@@ -14105,7 +15512,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRICOMP",
-      "value": 47.7
+      "value": 47.7,
+      "nota_fiscal": null
     },
     {
       "id": "tx01408",
@@ -14115,7 +15523,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "LECOMP",
-      "value": 21.3
+      "value": 21.3,
+      "nota_fiscal": null
     },
     {
       "id": "tx01409",
@@ -14124,8 +15533,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "116241",
-      "value": 50.0
+      "counterparty": "LECOMP Com. de Comp. Eletronicos LTDA (0000312)",
+      "value": 50.0,
+      "nota_fiscal": "116241"
     },
     {
       "id": "tx01410",
@@ -14134,8 +15544,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "202068",
-      "value": 135.0
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 135.0,
+      "nota_fiscal": "202068"
     },
     {
       "id": "tx01411",
@@ -14144,8 +15555,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "202087",
-      "value": 95.67
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 95.67,
+      "nota_fiscal": "202087"
     },
     {
       "id": "tx01412",
@@ -14154,8 +15566,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "85543",
-      "value": 215.13
+      "counterparty": "COMP TOTAL COM. E IMP. DE COMP. ELETRON. (0000267)",
+      "value": 215.13,
+      "nota_fiscal": "85543"
     },
     {
       "id": "tx01413",
@@ -14165,7 +15578,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "EVOLUTEC INDUSTRIA E COMERCIO DE ELETROA (0000229)",
-      "value": 942.25
+      "value": 942.25,
+      "nota_fiscal": "12305"
     },
     {
       "id": "tx01414",
@@ -14175,7 +15589,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "UPSAI SISTEMAS DE ENERGIA LTD (0000485)",
-      "value": 385.04
+      "value": 385.04,
+      "nota_fiscal": "12306"
     },
     {
       "id": "tx01415",
@@ -14185,7 +15600,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "CARLOS ROBERTO RODRIGUES SANCHES (0001247)",
-      "value": 9.99
+      "value": 9.99,
+      "nota_fiscal": "12307"
     },
     {
       "id": "tx01416",
@@ -14195,7 +15611,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ANTONIO EDFESON MARQUES RAMOS (0001249)",
-      "value": 19.99
+      "value": 19.99,
+      "nota_fiscal": "12308"
     },
     {
       "id": "tx01417",
@@ -14205,7 +15622,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "TENISON NAKANO (0000682)",
-      "value": 24.99
+      "value": 24.99,
+      "nota_fiscal": "12309"
     },
     {
       "id": "tx01418",
@@ -14215,7 +15633,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "LUCAS BOARIM PALUDO (0001248)",
-      "value": 29.98
+      "value": 29.98,
+      "nota_fiscal": "12311"
     },
     {
       "id": "tx01419",
@@ -14225,7 +15644,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "EDSON SCHROEDER (0001251)",
-      "value": 12.99
+      "value": 12.99,
+      "nota_fiscal": "12312"
     },
     {
       "id": "tx01420",
@@ -14235,7 +15655,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "SIMPLES CONNECT INDUSTRIA E COMERCIO LTA (0000308)",
-      "value": 952.0
+      "value": 952.0,
+      "nota_fiscal": "12313"
     },
     {
       "id": "tx01421",
@@ -14245,7 +15666,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "BPM INDUSTRIA E COMERCIO (0000541)",
-      "value": 1670.0
+      "value": 1670.0,
+      "nota_fiscal": "12314"
     },
     {
       "id": "tx01422",
@@ -14255,7 +15677,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "CARINE G RODRIGUES (0000764)",
-      "value": 1348.5
+      "value": 1348.5,
+      "nota_fiscal": "12315"
     },
     {
       "id": "tx01423",
@@ -14265,7 +15688,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "J.M. MAQUINAS AUTOMOTIVAS EIRELI (0000387)",
-      "value": 1879.29
+      "value": 1879.29,
+      "nota_fiscal": "12316"
     },
     {
       "id": "tx01424",
@@ -14275,7 +15699,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "CHAVE DIGITAL TECNOLOGIA ELETRONICA LTDA (0000022)",
-      "value": 399.2
+      "value": 399.2,
+      "nota_fiscal": "12317"
     },
     {
       "id": "tx01425",
@@ -14285,7 +15710,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "TRANSFIX ASSISTENCIA TECN. E VENDAS EQUI (0000199)",
-      "value": 750.0
+      "value": 750.0,
+      "nota_fiscal": "12318"
     },
     {
       "id": "tx01426",
@@ -14295,7 +15721,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "TRANSFIX",
-      "value": 608.33
+      "value": 608.33,
+      "nota_fiscal": "784"
     },
     {
       "id": "tx01427",
@@ -14305,7 +15732,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "EMPRÉSTIMO PRONAMP",
       "counterparty": "CAPITAL DE GIRO 14/48",
-      "value": 3621.21
+      "value": 3621.21,
+      "nota_fiscal": null
     },
     {
       "id": "tx01428",
@@ -14315,7 +15743,8 @@ const MAXLED_DATA = {
       "flow": "compra",
       "category": null,
       "counterparty": "SIMENTOR",
-      "value": 15208.0
+      "value": 15208.0,
+      "nota_fiscal": "18"
     },
     {
       "id": "tx01429",
@@ -14325,7 +15754,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "TRANSFIX ASSISTENCIA TECN. E VENDAS EQUI (0000199)",
-      "value": 2230.0
+      "value": 2230.0,
+      "nota_fiscal": "805"
     },
     {
       "id": "tx01430",
@@ -14335,7 +15765,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ALLPRINT LATINA AUTOMACAO DE MAQUINAS EA (0000291)",
-      "value": 3445.0
+      "value": 3445.0,
+      "nota_fiscal": "806"
     },
     {
       "id": "tx01431",
@@ -14345,7 +15776,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "DENTSCLER IND. DE APAR. ODONTO. EIRELLI - 0000390",
-      "value": 509.75
+      "value": 509.75,
+      "nota_fiscal": "11949/03"
     },
     {
       "id": "tx01432",
@@ -14355,7 +15787,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "PRODUTOS ELETRONICOS FRATA LTDA - 0000223",
-      "value": 4517.0
+      "value": 4517.0,
+      "nota_fiscal": "11951/03"
     },
     {
       "id": "tx01433",
@@ -14365,7 +15798,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "DIGISYSTEM IND. DE SIST. ELETRO. LTDA - 0000040",
-      "value": 1013.17
+      "value": 1013.17,
+      "nota_fiscal": "11954/03"
     },
     {
       "id": "tx01434",
@@ -14375,7 +15809,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SSAT SINALIZACAO E ADESIVOS EIRELI EPP - 0000072",
-      "value": 1801.67
+      "value": 1801.67,
+      "nota_fiscal": "11956/03"
     },
     {
       "id": "tx01435",
@@ -14385,7 +15820,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
-      "value": 1444.07
+      "value": 1444.07,
+      "nota_fiscal": "11967/02"
     },
     {
       "id": "tx01436",
@@ -14395,7 +15831,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "RALCOMP COMP. ELETRONICOS EIRELI ME - 0000474",
-      "value": 487.5
+      "value": 487.5,
+      "nota_fiscal": "12027/02"
     },
     {
       "id": "tx01437",
@@ -14405,7 +15842,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "GGP INDUSTRIA E COMERCIO - 0000204",
-      "value": 516.0
+      "value": 516.0,
+      "nota_fiscal": "12028/02"
     },
     {
       "id": "tx01438",
@@ -14415,7 +15853,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BIQUAD TECNOLOGIA LTDA - 0000013",
-      "value": 1429.3
+      "value": 1429.3,
+      "nota_fiscal": "12037/02"
     },
     {
       "id": "tx01439",
@@ -14425,7 +15864,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "MAX LED",
-      "value": 7000.0
+      "value": 7000.0,
+      "nota_fiscal": "MOVIMENTO"
     },
     {
       "id": "tx01440",
@@ -14435,7 +15875,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "INVESTIMENTO",
       "counterparty": "CAPITALIZAÇÃO",
-      "value": 218.6
+      "value": 218.6,
+      "nota_fiscal": null
     },
     {
       "id": "tx01441",
@@ -14445,7 +15886,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "EMPRÉSTIMO CAPITAL DE GIRO BRADESCO",
       "counterparty": "CAPITAL DE GIRO",
-      "value": 6303.62
+      "value": 6303.62,
+      "nota_fiscal": null
     },
     {
       "id": "tx01442",
@@ -14455,7 +15897,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY MAX",
-      "value": 135.0
+      "value": 135.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01443",
@@ -14465,7 +15908,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY MAX",
-      "value": 95.67
+      "value": 95.67,
+      "nota_fiscal": null
     },
     {
       "id": "tx01444",
@@ -14475,7 +15919,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 14.48
+      "value": 14.48,
+      "nota_fiscal": null
     },
     {
       "id": "tx01445",
@@ -14485,7 +15930,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP C A COMP ELETRONICOS LTDA",
-      "value": 576.92
+      "value": 576.92,
+      "nota_fiscal": null
     },
     {
       "id": "tx01446",
@@ -14495,7 +15941,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL COMERCIO ATACADISTA DE C",
-      "value": 689.67
+      "value": 689.67,
+      "nota_fiscal": null
     },
     {
       "id": "tx01447",
@@ -14505,7 +15952,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL COMERCIO ATACADISTA DE C",
-      "value": 682.47
+      "value": 682.47,
+      "nota_fiscal": null
     },
     {
       "id": "tx01448",
@@ -14515,7 +15963,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL COMERCIO ATACADISTA DE C",
-      "value": 576.75
+      "value": 576.75,
+      "nota_fiscal": null
     },
     {
       "id": "tx01449",
@@ -14525,7 +15974,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "GASTOS FIXOS",
       "counterparty": "HANSER CONTABIL S S LTDA",
-      "value": 612.0
+      "value": 612.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01450",
@@ -14535,7 +15985,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DLT SUPRIMENTOS",
-      "value": 855.0
+      "value": 855.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01451",
@@ -14545,7 +15996,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY MAX ELETRONICA LTDA",
-      "value": 537.27
+      "value": 537.27,
+      "nota_fiscal": null
     },
     {
       "id": "tx01452",
@@ -14555,7 +16007,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRYNIT CREDERE",
-      "value": 1912.5
+      "value": 1912.5,
+      "nota_fiscal": null
     },
     {
       "id": "tx01453",
@@ -14565,7 +16018,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "MOVIMENTO",
       "counterparty": "MAX LED BRADESCO",
-      "value": 7000.0
+      "value": 7000.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01454",
@@ -14574,8 +16028,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "116265",
-      "value": 21.3
+      "counterparty": "LECOMP Com. de Comp. Eletronicos LTDA (0000312)",
+      "value": 21.3,
+      "nota_fiscal": "116265"
     },
     {
       "id": "tx01455",
@@ -14584,8 +16039,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "18031",
-      "value": 154.55
+      "counterparty": "TRICONECT COMERCIAL ELETR. LTDA (0000321)",
+      "value": 154.55,
+      "nota_fiscal": "18031"
     },
     {
       "id": "tx01456",
@@ -14594,8 +16050,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "23997",
-      "value": 424.0
+      "counterparty": "ZENER COMPONENTES ELETRONICOS LTDA - ME (0000317)",
+      "value": 424.0,
+      "nota_fiscal": "23997"
     },
     {
       "id": "tx01457",
@@ -14604,8 +16061,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "260842",
-      "value": 1585.49
+      "counterparty": "ACP COMERCIO ATACADISTA DE COMPONENTES E (0000249)",
+      "value": 1585.49,
+      "nota_fiscal": "260842"
     },
     {
       "id": "tx01458",
@@ -14614,8 +16072,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "2720",
-      "value": 342.0
+      "counterparty": "CX COMERCIAL EIRELI EPP (0000329)",
+      "value": 342.0,
+      "nota_fiscal": "2720"
     },
     {
       "id": "tx01459",
@@ -14624,8 +16083,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "32830",
-      "value": 3232.96
+      "counterparty": "MICROELECTRON SISTS. ELETRS. IND. E COM. (0000319)",
+      "value": 3232.96,
+      "nota_fiscal": "32830"
     },
     {
       "id": "tx01460",
@@ -14634,8 +16094,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "3631",
-      "value": 139.7
+      "counterparty": "S-ohm Comercial Ltda. (0000183)",
+      "value": 139.7,
+      "nota_fiscal": "3631"
     },
     {
       "id": "tx01461",
@@ -14644,8 +16105,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "68138",
-      "value": 47.7
+      "counterparty": "TRICOMP COMERCIAL ELETR. LTDA (0000278)",
+      "value": 47.7,
+      "nota_fiscal": "68138"
     },
     {
       "id": "tx01462",
@@ -14655,7 +16117,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "POWERFLEET BRASIL LTDA (0000692)",
-      "value": 7700.0
+      "value": 7700.0,
+      "nota_fiscal": "12319"
     },
     {
       "id": "tx01463",
@@ -14665,7 +16128,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "E DE OLIVEIRA BARBOSA ELETRONICA (0000898)",
-      "value": 1033.7
+      "value": 1033.7,
+      "nota_fiscal": "12320"
     },
     {
       "id": "tx01464",
@@ -14675,7 +16139,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "WALMAR DE PAULA (0001258)",
-      "value": 74.95
+      "value": 74.95,
+      "nota_fiscal": "12321"
     },
     {
       "id": "tx01465",
@@ -14685,7 +16150,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "VICTOR LUIZ (0001253)",
-      "value": 14.99
+      "value": 14.99,
+      "nota_fiscal": "12322"
     },
     {
       "id": "tx01466",
@@ -14695,7 +16161,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ANDRE KEIGO YOSHIKAWA (0001264)",
-      "value": 19.98
+      "value": 19.98,
+      "nota_fiscal": "12323"
     },
     {
       "id": "tx01467",
@@ -14705,7 +16172,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "JOSE MARIO DA SILVA JUNIOR (0001256)",
-      "value": 114.99
+      "value": 114.99,
+      "nota_fiscal": "12324"
     },
     {
       "id": "tx01468",
@@ -14715,7 +16183,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ASSOCIACAO PORTO MARINA GUARATUBA (0001260)",
-      "value": 259.98
+      "value": 259.98,
+      "nota_fiscal": "12325"
     },
     {
       "id": "tx01469",
@@ -14725,7 +16194,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "RICARDO VIANA PEREIRA (0001255)",
-      "value": 19.98
+      "value": 19.98,
+      "nota_fiscal": "12327"
     },
     {
       "id": "tx01470",
@@ -14735,7 +16205,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "GILBERTO MARCOS DE CASTRO (0001257)",
-      "value": 9.99
+      "value": 9.99,
+      "nota_fiscal": "12328"
     },
     {
       "id": "tx01471",
@@ -14745,7 +16216,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "MARIA PAULA FERNANDES FRANCO MARTIS (0001261)",
-      "value": 24.99
+      "value": 24.99,
+      "nota_fiscal": "12329"
     },
     {
       "id": "tx01472",
@@ -14755,7 +16227,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ZILOCCHI ELETRONICA LTDA - EPP (0000130)",
-      "value": 1747.45
+      "value": 1747.45,
+      "nota_fiscal": "12330"
     },
     {
       "id": "tx01473",
@@ -14765,7 +16238,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "MARTEC MED INDUSTRIA E COMERCIO DE EQUIP (0000788)",
-      "value": 1325.0
+      "value": 1325.0,
+      "nota_fiscal": "12331"
     },
     {
       "id": "tx01474",
@@ -14775,7 +16249,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "SEBASTIAO CESAR GRASSI ELETRONICOS - M.. (0000279)",
-      "value": 1865.5
+      "value": 1865.5,
+      "nota_fiscal": "12332"
     },
     {
       "id": "tx01475",
@@ -14785,7 +16260,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "TEC INSIDE COM. E PROJ. DE EQUIP. ELETR (0000333)",
-      "value": 1584.9
+      "value": 1584.9,
+      "nota_fiscal": "12333"
     },
     {
       "id": "tx01476",
@@ -14795,7 +16271,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "INELTEC TECNOLOGIAS LTDA (0000193)",
-      "value": 5323.8
+      "value": 5323.8,
+      "nota_fiscal": "12334"
     },
     {
       "id": "tx01477",
@@ -14805,7 +16282,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "HANSER",
-      "value": 612.0
+      "value": 612.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01478",
@@ -14815,7 +16293,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "INVESTIMENTO",
       "counterparty": "CELULAR",
-      "value": 3800.0
+      "value": 3800.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01479",
@@ -14825,7 +16304,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "RUSSER",
-      "value": 89.0
+      "value": 89.0,
+      "nota_fiscal": "12104"
     },
     {
       "id": "tx01480",
@@ -14835,7 +16315,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "NEW TEC CHARLES",
-      "value": 168.0
+      "value": 168.0,
+      "nota_fiscal": "SNF"
     },
     {
       "id": "tx01481",
@@ -14845,7 +16326,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "TAICON",
-      "value": 1988.0
+      "value": 1988.0,
+      "nota_fiscal": "12347"
     },
     {
       "id": "tx01482",
@@ -14855,7 +16337,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "NIATRON IND. E COM. DE EQUIP. ELETRO. - 0000143",
-      "value": 1227.7
+      "value": 1227.7,
+      "nota_fiscal": "12087/01"
     },
     {
       "id": "tx01483",
@@ -14865,7 +16348,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SOLSUSTENTAVEL PROD. ELETRO ELETRONICOS - 0000125",
-      "value": 373.0
+      "value": 373.0,
+      "nota_fiscal": "12098/02"
     },
     {
       "id": "tx01484",
@@ -14875,7 +16359,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "J.M. MAQUINAS AUTOMOTIVAS EIRELI - 0000387",
-      "value": 662.15
+      "value": 662.15,
+      "nota_fiscal": "12110/02"
     },
     {
       "id": "tx01485",
@@ -14885,7 +16370,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ARIELTEK INDUSTRIA E COMERCIO LTDA - 0000314",
-      "value": 827.0
+      "value": 827.0,
+      "nota_fiscal": "12133/01"
     },
     {
       "id": "tx01486",
@@ -14895,7 +16381,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MEGAPIX COMPONENTES ELETRONICO",
-      "value": 105.79
+      "value": 105.79,
+      "nota_fiscal": null
     },
     {
       "id": "tx01487",
@@ -14905,7 +16392,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "INGRID",
-      "value": 116.6
+      "value": 116.6,
+      "nota_fiscal": null
     },
     {
       "id": "tx01488",
@@ -14915,7 +16403,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "MONALISA",
-      "value": 116.6
+      "value": 116.6,
+      "nota_fiscal": null
     },
     {
       "id": "tx01489",
@@ -14925,7 +16414,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "TRANSPORTES",
       "counterparty": "WANDO",
-      "value": 910.0
+      "value": 910.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01490",
@@ -14935,7 +16425,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "ALINE(COMISSÃO TAIKON E MOV)",
-      "value": 1200.0
+      "value": 1200.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01491",
@@ -14945,7 +16436,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 7.24
+      "value": 7.24,
+      "nota_fiscal": null
     },
     {
       "id": "tx01492",
@@ -14954,8 +16446,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "1454",
-      "value": 170.0
+      "counterparty": "DLT SUPRIMENTOS LTDA (0000389)",
+      "value": 170.0,
+      "nota_fiscal": "1454"
     },
     {
       "id": "tx01493",
@@ -14964,8 +16457,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "202414",
-      "value": 845.04
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 845.04,
+      "nota_fiscal": "202414"
     },
     {
       "id": "tx01494",
@@ -14974,8 +16468,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "4224",
-      "value": 424.9
+      "counterparty": "MDS COMPONENTES ELETRONICOS LTDA (0000297)",
+      "value": 424.9,
+      "nota_fiscal": "4224"
     },
     {
       "id": "tx01495",
@@ -14984,8 +16479,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "76167",
-      "value": 598.0
+      "counterparty": "IDALL COM. ATAC. DE COMP. ELETR. LTDA (0000011)",
+      "value": 598.0,
+      "nota_fiscal": "76167"
     },
     {
       "id": "tx01496",
@@ -14994,8 +16490,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "85558",
-      "value": 464.02
+      "counterparty": "COMP TOTAL COM. E IMP. DE COMP. ELETRON. (0000267)",
+      "value": 464.02,
+      "nota_fiscal": "85558"
     },
     {
       "id": "tx01497",
@@ -15004,8 +16501,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "85574",
-      "value": 789.17
+      "counterparty": "COMP TOTAL COM. E IMP. DE COMP. ELETRON. (0000267)",
+      "value": 789.17,
+      "nota_fiscal": "85574"
     },
     {
       "id": "tx01498",
@@ -15015,7 +16513,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "JOAO CARLOS IZIDORIO (0001270)",
-      "value": 9.99
+      "value": 9.99,
+      "nota_fiscal": "12335"
     },
     {
       "id": "tx01499",
@@ -15025,7 +16524,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "VALDIR RODRIGUES FERREIRA (0001269)",
-      "value": 24.99
+      "value": 24.99,
+      "nota_fiscal": "12336"
     },
     {
       "id": "tx01500",
@@ -15035,7 +16535,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "SISPONTO SISTEMAS INTELIGENTES LTDA (0000066)",
-      "value": 343.0
+      "value": 343.0,
+      "nota_fiscal": "12337"
     },
     {
       "id": "tx01501",
@@ -15045,7 +16546,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMEN",
-      "value": 1286.47
+      "value": 1286.47,
+      "nota_fiscal": "798"
     },
     {
       "id": "tx01502",
@@ -15055,7 +16557,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "LS",
-      "value": 655.0
+      "value": 655.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01503",
@@ -15065,7 +16568,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 1.81
+      "value": 1.81,
+      "nota_fiscal": null
     },
     {
       "id": "tx01504",
@@ -15075,7 +16579,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "TELECHESKI E TELECHESKI LTDA ME (0000074)",
-      "value": 18601.0
+      "value": 18601.0,
+      "nota_fiscal": "807"
     },
     {
       "id": "tx01505",
@@ -15085,7 +16590,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "E DE OLIVEIRA BARBOSA ELETRONICA - 0000898",
-      "value": 510.5
+      "value": 510.5,
+      "nota_fiscal": "12118"
     },
     {
       "id": "tx01506",
@@ -15095,7 +16601,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "INLINE",
-      "value": 349.7
+      "value": 349.7,
+      "nota_fiscal": "12340"
     },
     {
       "id": "tx01507",
@@ -15105,7 +16612,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FZW INNOVATION LTDA - 0000848",
-      "value": 1597.96
+      "value": 1597.96,
+      "nota_fiscal": "11938/02"
     },
     {
       "id": "tx01508",
@@ -15115,7 +16623,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
-      "value": 546.4
+      "value": 546.4,
+      "nota_fiscal": "12030/04"
     },
     {
       "id": "tx01509",
@@ -15125,7 +16634,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO - 0000660",
-      "value": 1815.8
+      "value": 1815.8,
+      "nota_fiscal": "12096/02"
     },
     {
       "id": "tx01510",
@@ -15135,7 +16645,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FZW INNOVATION LTDA - 0000848",
-      "value": 1405.34
+      "value": 1405.34,
+      "nota_fiscal": "12099/01"
     },
     {
       "id": "tx01511",
@@ -15145,7 +16656,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CRISTOFOLI EQUIP. DE BIOSSEGURANCA LTDA - 0000146",
-      "value": 100.0
+      "value": 100.0,
+      "nota_fiscal": "12112/01"
     },
     {
       "id": "tx01512",
@@ -15155,7 +16667,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
-      "value": 625.85
+      "value": 625.85,
+      "nota_fiscal": "12119/01"
     },
     {
       "id": "tx01513",
@@ -15165,7 +16678,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "RASATRONIC ELETRONICA INDUSTRIAL LTDA - 0000057",
-      "value": 544.7
+      "value": 544.7,
+      "nota_fiscal": "12120/01"
     },
     {
       "id": "tx01514",
@@ -15175,7 +16689,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SEBASTIAO CESAR GRASSI ELETRONICOS - M.. - 0000279",
-      "value": 694.75
+      "value": 694.75,
+      "nota_fiscal": "12301/01"
     },
     {
       "id": "tx01515",
@@ -15185,7 +16700,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "IMPORTAÇÃO",
       "counterparty": "IMPORT",
-      "value": 20000.0
+      "value": 20000.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01516",
@@ -15195,7 +16711,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "VETRONIC COM ELETRONICA LTDA",
-      "value": 749.09
+      "value": 749.09,
+      "nota_fiscal": null
     },
     {
       "id": "tx01517",
@@ -15205,7 +16722,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "S OHM COMERCIAL LTDA",
-      "value": 264.0
+      "value": 264.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01518",
@@ -15215,7 +16733,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "CREDERE CONSULTORIA E FOMENTO",
-      "value": 317.0
+      "value": 317.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01519",
@@ -15225,7 +16744,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "CLA.",
-      "value": 60.0
+      "value": 60.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01520",
@@ -15235,7 +16755,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 23.62
+      "value": 23.62,
+      "nota_fiscal": null
     },
     {
       "id": "tx01521",
@@ -15244,8 +16765,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "88921",
-      "value": 683.6
+      "counterparty": "MEGAPIX COMP. ELETRONICOS LTDA-EPP (0000275)",
+      "value": 683.6,
+      "nota_fiscal": "88921"
     },
     {
       "id": "tx01522",
@@ -15255,7 +16777,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "JOAO RODRIGO FILIPE SILVA (0001272)",
-      "value": 9.99
+      "value": 9.99,
+      "nota_fiscal": "12338"
     },
     {
       "id": "tx01523",
@@ -15265,7 +16788,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "GESINI INDUSTRIA E COMERCIO LTDA (0001271)",
-      "value": 67.96
+      "value": 67.96,
+      "nota_fiscal": "12339"
     },
     {
       "id": "tx01524",
@@ -15275,7 +16799,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "INLINE GERENC. EM PROJETOS LTDA (0000441)",
-      "value": 349.7
+      "value": 349.7,
+      "nota_fiscal": "12340"
     },
     {
       "id": "tx01525",
@@ -15285,7 +16810,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "HTR EQUIPAMENTOS ELETRONICOS LTDA (0000268)",
-      "value": 2390.52
+      "value": 2390.52,
+      "nota_fiscal": "12341"
     },
     {
       "id": "tx01526",
@@ -15295,7 +16821,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "BIQUAD TECNOLOGIA LTDA (0000013)",
-      "value": 420.0
+      "value": 420.0,
+      "nota_fiscal": "12342"
     },
     {
       "id": "tx01527",
@@ -15305,7 +16832,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "NEXXO EQUIPAMENTOS ELETRONICOS LTDA (0000225)",
-      "value": 842.0
+      "value": 842.0,
+      "nota_fiscal": "12343"
     },
     {
       "id": "tx01528",
@@ -15315,7 +16843,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "MDI PROD E SISTEMAS LTDA (0000101)",
-      "value": 738.15
+      "value": 738.15,
+      "nota_fiscal": "12344"
     },
     {
       "id": "tx01529",
@@ -15325,7 +16854,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "TRANSFIX ASSISTENCIA TECN. E VENDAS EQUI (0000199)",
-      "value": 260.0
+      "value": 260.0,
+      "nota_fiscal": "12345"
     },
     {
       "id": "tx01530",
@@ -15335,7 +16865,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMEN",
-      "value": 709.5
+      "value": 709.5,
+      "nota_fiscal": "800"
     },
     {
       "id": "tx01531",
@@ -15345,7 +16876,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "INVESTIMENTO",
       "counterparty": "MANU INTELIGENCIA ART",
-      "value": 112.82
+      "value": 112.82,
+      "nota_fiscal": null
     },
     {
       "id": "tx01532",
@@ -15355,7 +16887,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 1.81
+      "value": 1.81,
+      "nota_fiscal": null
     },
     {
       "id": "tx01533",
@@ -15365,7 +16898,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "TRANSFIX ASSISTENCIA TECN. E VENDAS EQUI (0000199)",
-      "value": 294.0
+      "value": 294.0,
+      "nota_fiscal": "808"
     },
     {
       "id": "tx01534",
@@ -15375,7 +16909,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "INELTEC TECNOLOGIAS LTDA - 0000193",
-      "value": 1733.0
+      "value": 1733.0,
+      "nota_fiscal": "12060/03"
     },
     {
       "id": "tx01535",
@@ -15385,7 +16920,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
-      "value": 416.49
+      "value": 416.49,
+      "nota_fiscal": "12064/03"
     },
     {
       "id": "tx01536",
@@ -15395,7 +16931,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "GRANDE TECH COM, IMPORT, E EXPORT, DE CA - 0000506",
-      "value": 288.0
+      "value": 288.0,
+      "nota_fiscal": "12132/01"
     },
     {
       "id": "tx01537",
@@ -15405,7 +16942,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ROYALCOMP COMPONENTES ELETR. LTDA - 0000570",
-      "value": 706.0
+      "value": 706.0,
+      "nota_fiscal": "12143/01"
     },
     {
       "id": "tx01538",
@@ -15415,7 +16953,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "EXPOENTE",
-      "value": 840.5
+      "value": 840.5,
+      "nota_fiscal": "12050"
     },
     {
       "id": "tx01539",
@@ -15425,7 +16964,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "NEW TEC CHARLES",
-      "value": 60.0
+      "value": 60.0,
+      "nota_fiscal": "SNF 53"
     },
     {
       "id": "tx01540",
@@ -15435,7 +16975,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "DF AUTOMACAO INDUSTRIA E COMERCIO LTDA - 0000434",
-      "value": 121.9
+      "value": 121.9,
+      "nota_fiscal": "12351"
     },
     {
       "id": "tx01541",
@@ -15445,7 +16986,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ELETRICA",
-      "value": 120.7
+      "value": 120.7,
+      "nota_fiscal": "12352"
     },
     {
       "id": "tx01542",
@@ -15455,7 +16997,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "FILCRILL COMPONENTES ELETRONIC",
-      "value": 546.35
+      "value": 546.35,
+      "nota_fiscal": null
     },
     {
       "id": "tx01543",
@@ -15465,7 +17008,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 7.24
+      "value": 7.24,
+      "nota_fiscal": null
     },
     {
       "id": "tx01544",
@@ -15475,7 +17019,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": null,
       "counterparty": "JOSÉ WILLARES",
-      "value": 40.0
+      "value": 40.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01545",
@@ -15484,8 +17029,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "17094",
-      "value": 951.78
+      "counterparty": "FILCRILL COMPS ELETRS IMP E EXP EIRELLI (0000048)",
+      "value": 951.78,
+      "nota_fiscal": "17094"
     },
     {
       "id": "tx01546",
@@ -15494,8 +17040,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "23721",
-      "value": 499.8
+      "counterparty": "VETRONIC COMERCIO ELETRONICA LTDA (0000038)",
+      "value": 499.8,
+      "nota_fiscal": "23721"
     },
     {
       "id": "tx01547",
@@ -15504,8 +17051,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "261018",
-      "value": 436.24
+      "counterparty": "ACP COMERCIO ATACADISTA DE COMPONENTES E (0000249)",
+      "value": 436.24,
+      "nota_fiscal": "261018"
     },
     {
       "id": "tx01548",
@@ -15514,8 +17062,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "76212",
-      "value": 609.6
+      "counterparty": "IDALL COM. ATAC. DE COMP. ELETR. LTDA (0000011)",
+      "value": 609.6,
+      "nota_fiscal": "76212"
     },
     {
       "id": "tx01549",
@@ -15525,7 +17074,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ALL BATTERY C T DE AZEVEDO LTDA (0001273)",
-      "value": 16.99
+      "value": 16.99,
+      "nota_fiscal": "12346"
     },
     {
       "id": "tx01550",
@@ -15535,7 +17085,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "TAIKON INDUSTRIA E COM DE APARELHOS ELET (0001061)",
-      "value": 1988.0
+      "value": 1988.0,
+      "nota_fiscal": "12347"
     },
     {
       "id": "tx01551",
@@ -15545,7 +17096,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "SSAT SINALIZACAO E ADESIVOS EIRELI EPP (0000072)",
-      "value": 3615.0
+      "value": 3615.0,
+      "nota_fiscal": "12348"
     },
     {
       "id": "tx01552",
@@ -15555,7 +17107,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ANTONIO SPADIM (0001274)",
-      "value": 39.99
+      "value": 39.99,
+      "nota_fiscal": "12349"
     },
     {
       "id": "tx01553",
@@ -15565,7 +17118,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ZENER COMPONENTES ELETRONICOS LTDA - ME (0000142)",
-      "value": 877.5
+      "value": 877.5,
+      "nota_fiscal": "12350"
     },
     {
       "id": "tx01554",
@@ -15575,7 +17129,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "DF AUTOMACAO INDUSTRIA E COMERCIO LTDA (0000434)",
-      "value": 121.9
+      "value": 121.9,
+      "nota_fiscal": "12351"
     },
     {
       "id": "tx01555",
@@ -15585,7 +17140,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "TRANSFIX",
-      "value": 899.67
+      "value": 899.67,
+      "nota_fiscal": "803 + 792"
     },
     {
       "id": "tx01556",
@@ -15595,7 +17151,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "SIMPLES CONNECT INDUSTRIA E COMERCIO LTA (0000308)",
-      "value": 11160.0
+      "value": 11160.0,
+      "nota_fiscal": "809"
     },
     {
       "id": "tx01557",
@@ -15605,7 +17162,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FZW INNOVATION LTDA - 0000848",
-      "value": 2408.25
+      "value": 2408.25,
+      "nota_fiscal": "12357"
     },
     {
       "id": "tx01558",
@@ -15615,7 +17173,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FOCUS TECNOLOGIA E SOLUCOES LTDA - 0000742",
-      "value": 667.4
+      "value": 667.4,
+      "nota_fiscal": "11993/03"
     },
     {
       "id": "tx01559",
@@ -15625,7 +17184,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FIBERWAN IND. DE EQUIP. ELETTR. LTDA-EPP - 0000411",
-      "value": 383.0
+      "value": 383.0,
+      "nota_fiscal": "12068/03"
     },
     {
       "id": "tx01560",
@@ -15635,7 +17195,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "DIGISYSTEM IND. DE SIST. ELETRO. LTDA - 0000040",
-      "value": 759.28
+      "value": 759.28,
+      "nota_fiscal": "12106/02"
     },
     {
       "id": "tx01561",
@@ -15645,7 +17206,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CARINE G RODRIGUES - 0000764",
-      "value": 2217.2
+      "value": 2217.2,
+      "nota_fiscal": "12134/01"
     },
     {
       "id": "tx01562",
@@ -15655,7 +17217,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
-      "value": 592.5
+      "value": 592.5,
+      "nota_fiscal": "12135/01"
     },
     {
       "id": "tx01563",
@@ -15665,7 +17228,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
-      "value": 1095.1
+      "value": 1095.1,
+      "nota_fiscal": "12136/01"
     },
     {
       "id": "tx01564",
@@ -15675,7 +17239,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FOCUS TECNOLOGIA E SOLUCOES LTDA - 0000742",
-      "value": 1034.5
+      "value": 1034.5,
+      "nota_fiscal": "12142/01"
     },
     {
       "id": "tx01565",
@@ -15685,7 +17250,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRICOMP COMERCIAL E LTDA",
-      "value": 328.6
+      "value": 328.6,
+      "nota_fiscal": null
     },
     {
       "id": "tx01566",
@@ -15695,7 +17261,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ZENER COMPONENTES ELETRONIC LT",
-      "value": 575.0
+      "value": 575.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01567",
@@ -15705,7 +17272,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "IMPOSTOS",
       "counterparty": "DAS IMP",
-      "value": 13588.94
+      "value": 13588.94,
+      "nota_fiscal": null
     },
     {
       "id": "tx01568",
@@ -15715,7 +17283,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "IMPOSTOS",
       "counterparty": "DARF",
-      "value": 1046.45
+      "value": 1046.45,
+      "nota_fiscal": null
     },
     {
       "id": "tx01569",
@@ -15725,7 +17294,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "IMPOSTOS",
       "counterparty": "FGTS",
-      "value": 554.25
+      "value": 554.25,
+      "nota_fiscal": null
     },
     {
       "id": "tx01570",
@@ -15735,7 +17305,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "VALE MATHEUS SOUZA",
-      "value": 720.0
+      "value": 720.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01571",
@@ -15745,7 +17316,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "VALE THAMIRES",
-      "value": 855.2
+      "value": 855.2,
+      "nota_fiscal": null
     },
     {
       "id": "tx01572",
@@ -15755,7 +17327,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "INVESTIMENTO",
       "counterparty": "PREVIDENCIA",
-      "value": 473.47
+      "value": 473.47,
+      "nota_fiscal": null
     },
     {
       "id": "tx01573",
@@ -15765,7 +17338,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "INVESTIMENTO",
       "counterparty": "PREVIDENCIA",
-      "value": 496.24
+      "value": 496.24,
+      "nota_fiscal": null
     },
     {
       "id": "tx01574",
@@ -15775,7 +17349,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 12.67
+      "value": 12.67,
+      "nota_fiscal": null
     },
     {
       "id": "tx01575",
@@ -15784,8 +17359,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "116366",
-      "value": 684.0
+      "counterparty": "LECOMP Com. de Comp. Eletronicos LTDA (0000312)",
+      "value": 684.0,
+      "nota_fiscal": "116366"
     },
     {
       "id": "tx01576",
@@ -15794,8 +17370,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "149061",
-      "value": 1178.21
+      "counterparty": "MEGADEF COMPONENTES ELETRONICOS LTDA (0000039)",
+      "value": 1178.21,
+      "nota_fiscal": "149061"
     },
     {
       "id": "tx01577",
@@ -15804,8 +17381,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "17107",
-      "value": 507.0
+      "counterparty": "FILCRILL COMPS ELETRS IMP E EXP EIRELLI (0000048)",
+      "value": 507.0,
+      "nota_fiscal": "17107"
     },
     {
       "id": "tx01578",
@@ -15814,8 +17392,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "202694",
-      "value": 271.48
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 271.48,
+      "nota_fiscal": "202694"
     },
     {
       "id": "tx01579",
@@ -15824,8 +17403,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "202695",
-      "value": 2650.07
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 2650.07,
+      "nota_fiscal": "202695"
     },
     {
       "id": "tx01580",
@@ -15834,8 +17414,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "68211",
-      "value": 259.7
+      "counterparty": "TRICOMP COMERCIAL ELETR. LTDA (0000278)",
+      "value": 259.7,
+      "nota_fiscal": "68211"
     },
     {
       "id": "tx01581",
@@ -15844,8 +17425,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "76237",
-      "value": 270.0
+      "counterparty": "IDALL COM. ATAC. DE COMP. ELETR. LTDA (0000011)",
+      "value": 270.0,
+      "nota_fiscal": "76237"
     },
     {
       "id": "tx01582",
@@ -15854,8 +17436,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "815",
-      "value": 419.68
+      "counterparty": "AIB COMERCIAL IMPORTACAO E EXPORTAÇÃO (0000395)",
+      "value": 419.68,
+      "nota_fiscal": "815"
     },
     {
       "id": "tx01583",
@@ -15864,8 +17447,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "85633",
-      "value": 263.06
+      "counterparty": "COMP TOTAL COM. E IMP. DE COMP. ELETRON. (0000267)",
+      "value": 263.06,
+      "nota_fiscal": "85633"
     },
     {
       "id": "tx01584",
@@ -15875,7 +17459,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "SAMUEL ELETROTECNICA (0000041)",
-      "value": 120.7
+      "value": 120.7,
+      "nota_fiscal": "12352"
     },
     {
       "id": "tx01585",
@@ -15885,7 +17470,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ELETROFELIX INDUSTRIA E COMERCIO LTDA (0000477)",
-      "value": 2246.0
+      "value": 2246.0,
+      "nota_fiscal": "12353"
     },
     {
       "id": "tx01586",
@@ -15895,7 +17481,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "EDUARDO DE FIGUEIREDO GOMES (0001275)",
-      "value": 19.99
+      "value": 19.99,
+      "nota_fiscal": "12354"
     },
     {
       "id": "tx01587",
@@ -15905,7 +17492,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ACHEI COMPONENTES ELETRONICOS (0000503)",
-      "value": 832.0
+      "value": 832.0,
+      "nota_fiscal": "12355"
     },
     {
       "id": "tx01588",
@@ -15915,7 +17503,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ELISEU R (0001276)",
-      "value": 16.95
+      "value": 16.95,
+      "nota_fiscal": "12356"
     },
     {
       "id": "tx01589",
@@ -15925,7 +17514,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FZW INNOVATION LTDA (0000848)",
-      "value": 2408.25
+      "value": 2408.25,
+      "nota_fiscal": "12357"
     },
     {
       "id": "tx01590",
@@ -15935,7 +17525,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO (0000660)",
-      "value": 5585.5
+      "value": 5585.5,
+      "nota_fiscal": "12358"
     },
     {
       "id": "tx01591",
@@ -15945,7 +17536,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ALLPRINT LATINA AUTOMACAO DE MAQUINAS EA (0000291)",
-      "value": 1161.0
+      "value": 1161.0,
+      "nota_fiscal": "12359"
     },
     {
       "id": "tx01592",
@@ -15955,7 +17547,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E (0000081)",
-      "value": 211.76
+      "value": 211.76,
+      "nota_fiscal": "12360"
     },
     {
       "id": "tx01593",
@@ -15965,7 +17558,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E (0000081)",
-      "value": 5.1
+      "value": 5.1,
+      "nota_fiscal": "12361"
     },
     {
       "id": "tx01594",
@@ -15975,7 +17569,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E (0000081)",
-      "value": 247.6
+      "value": 247.6,
+      "nota_fiscal": "12362"
     },
     {
       "id": "tx01595",
@@ -15985,7 +17580,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E (0000081)",
-      "value": 953.0
+      "value": 953.0,
+      "nota_fiscal": "12363"
     },
     {
       "id": "tx01596",
@@ -15995,7 +17591,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "IMPOSTOS",
       "counterparty": "DAS",
-      "value": 2439.37
+      "value": 2439.37,
+      "nota_fiscal": null
     },
     {
       "id": "tx01597",
@@ -16005,7 +17602,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "VALE FRANCISCO",
-      "value": 855.2
+      "value": 855.2,
+      "nota_fiscal": null
     },
     {
       "id": "tx01598",
@@ -16015,7 +17613,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "CARTÃO DE CRÉDITO",
       "counterparty": "SÓCIOS CARTÕES",
-      "value": 2669.3
+      "value": 2669.3,
+      "nota_fiscal": null
     },
     {
       "id": "tx01599",
@@ -16025,7 +17624,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "COMLINK",
-      "value": 48.0
+      "value": 48.0,
+      "nota_fiscal": "10512"
     },
     {
       "id": "tx01600",
@@ -16035,7 +17635,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CJS",
-      "value": 129.5
+      "value": 129.5,
+      "nota_fiscal": "12368"
     },
     {
       "id": "tx01601",
@@ -16045,7 +17646,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO - 0000660",
-      "value": 1210.47
+      "value": 1210.47,
+      "nota_fiscal": "11992/03"
     },
     {
       "id": "tx01602",
@@ -16055,7 +17657,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CITHEC CIENCIAS E TECNOLOGYA EIRELI - 0000027",
-      "value": 742.33
+      "value": 742.33,
+      "nota_fiscal": "11994/03"
     },
     {
       "id": "tx01603",
@@ -16065,7 +17668,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "EDERSON VARANDA BORGES LTDA - 0000785",
-      "value": 573.13
+      "value": 573.13,
+      "nota_fiscal": "12043/04"
     },
     {
       "id": "tx01604",
@@ -16075,7 +17679,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "LP INDUSTRIA TECNOLOGICA LTDA - 0000495",
-      "value": 653.42
+      "value": 653.42,
+      "nota_fiscal": "12089/01"
     },
     {
       "id": "tx01605",
@@ -16085,7 +17690,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ZENER COMPONENTES ELETRONICOS LTDA - ME - 0000142",
-      "value": 510.0
+      "value": 510.0,
+      "nota_fiscal": "12144/01"
     },
     {
       "id": "tx01606",
@@ -16095,7 +17701,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ACHEI COMPONENTES ELETRONICOS - 0000503",
-      "value": 208.0
+      "value": 208.0,
+      "nota_fiscal": "12151/01"
     },
     {
       "id": "tx01607",
@@ -16105,7 +17712,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO - 0000660",
-      "value": 166.0
+      "value": 166.0,
+      "nota_fiscal": "12152/01"
     },
     {
       "id": "tx01608",
@@ -16115,7 +17723,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SPECTO PAINEIS ELETRONICO LTDA - 0000071",
-      "value": 629.0
+      "value": 629.0,
+      "nota_fiscal": "12157/01"
     },
     {
       "id": "tx01609",
@@ -16125,7 +17734,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "E DE OLIVEIRA BARBOSA ELETRONICA - 0000898",
-      "value": 308.04
+      "value": 308.04,
+      "nota_fiscal": "12149/01"
     },
     {
       "id": "tx01610",
@@ -16135,7 +17745,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "E DE OLIVEIRA BARBOSA ELETRONICA - 0000898",
-      "value": 215.0
+      "value": 215.0,
+      "nota_fiscal": "12148/01"
     },
     {
       "id": "tx01611",
@@ -16145,7 +17756,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SEBASTIAO CESAR GRASSI ELETRONICOS - M.. - 0000279",
-      "value": 932.75
+      "value": 932.75,
+      "nota_fiscal": "12332/01"
     },
     {
       "id": "tx01612",
@@ -16155,7 +17767,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 19.91
+      "value": 19.91,
+      "nota_fiscal": null
     },
     {
       "id": "tx01613",
@@ -16165,7 +17778,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP",
-      "value": 500.48
+      "value": 500.48,
+      "nota_fiscal": null
     },
     {
       "id": "tx01614",
@@ -16175,7 +17789,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP",
-      "value": 1322.79
+      "value": 1322.79,
+      "nota_fiscal": null
     },
     {
       "id": "tx01615",
@@ -16185,7 +17800,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MKB SENSORES LTDA",
-      "value": 3137.75
+      "value": 3137.75,
+      "nota_fiscal": null
     },
     {
       "id": "tx01616",
@@ -16195,7 +17811,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MKB SENSORES LTDA",
-      "value": 873.59
+      "value": 873.59,
+      "nota_fiscal": null
     },
     {
       "id": "tx01617",
@@ -16205,7 +17822,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MEGADEF",
-      "value": 262.83
+      "value": 262.83,
+      "nota_fiscal": null
     },
     {
       "id": "tx01618",
@@ -16215,7 +17833,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY",
-      "value": 174.66
+      "value": 174.66,
+      "nota_fiscal": null
     },
     {
       "id": "tx01619",
@@ -16225,7 +17844,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "VETRONIC COM ELETRONICA LTDA",
-      "value": 774.37
+      "value": 774.37,
+      "nota_fiscal": null
     },
     {
       "id": "tx01620",
@@ -16235,7 +17855,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "PROESI",
-      "value": 384.53
+      "value": 384.53,
+      "nota_fiscal": null
     },
     {
       "id": "tx01621",
@@ -16245,7 +17866,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "LEDCOMP",
-      "value": 1725.0
+      "value": 1725.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01622",
@@ -16255,7 +17877,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "EMPRÉSTIMO CAPITAL DE GIRO ITAÚ",
       "counterparty": "CAPITAL DE GIRO",
-      "value": 2537.21
+      "value": 2537.21,
+      "nota_fiscal": null
     },
     {
       "id": "tx01623",
@@ -16264,8 +17887,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "18210",
-      "value": 142.5
+      "counterparty": "TRICONECT COMERCIAL ELETR. LTDA (0000321)",
+      "value": 142.5,
+      "nota_fiscal": "18210"
     },
     {
       "id": "tx01624",
@@ -16274,8 +17898,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "2752",
-      "value": 800.0
+      "counterparty": "CX COMERCIAL EIRELI EPP (0000329)",
+      "value": 800.0,
+      "nota_fiscal": "2752"
     },
     {
       "id": "tx01625",
@@ -16284,8 +17909,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "2997",
-      "value": 385.0
+      "counterparty": "MARKCEL COMPONENTES ELETRONICOS LTDA (0000245)",
+      "value": 385.0,
+      "nota_fiscal": "2997"
     },
     {
       "id": "tx01626",
@@ -16294,8 +17920,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "3244",
-      "value": 186.0
+      "counterparty": "ORANGE E BLACK DISTRIBUIDORA LTDA (0000198)",
+      "value": 186.0,
+      "nota_fiscal": "3244"
     },
     {
       "id": "tx01627",
@@ -16304,8 +17931,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "33000",
-      "value": 150.0
+      "counterparty": "ALLNETSYS COMERCIO IMPORTACAO E SERVICOS (0000036)",
+      "value": 150.0,
+      "nota_fiscal": "33000"
     },
     {
       "id": "tx01628",
@@ -16314,8 +17942,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "3671",
-      "value": 30.0
+      "counterparty": "S-ohm Comercial Ltda. (0000183)",
+      "value": 30.0,
+      "nota_fiscal": "3671"
     },
     {
       "id": "tx01629",
@@ -16324,8 +17953,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "45717",
-      "value": 1116.29
+      "counterparty": "ALLSEMI TECNOLOGIA ELETRONICA LTDA (0000299)",
+      "value": 1116.29,
+      "nota_fiscal": "45717"
     },
     {
       "id": "tx01630",
@@ -16334,8 +17964,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "5427",
-      "value": 348.0
+      "counterparty": "FERA COMPONENTES ELETRONICOS LTDA (0000431)",
+      "value": 348.0,
+      "nota_fiscal": "5427"
     },
     {
       "id": "tx01631",
@@ -16344,8 +17975,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "73124",
-      "value": 1708.05
+      "counterparty": "JOMACLER IND. E COM. DE CONDUT. ELETRICO (0000102)",
+      "value": 1708.05,
+      "nota_fiscal": "73124"
     },
     {
       "id": "tx01632",
@@ -16354,8 +17986,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "7673",
-      "value": 1100.0
+      "counterparty": "UNIVERSE LIGHTING IMPORTACAO EXPORTA€CO (0000305)",
+      "value": 1100.0,
+      "nota_fiscal": "7673"
     },
     {
       "id": "tx01633",
@@ -16365,7 +17998,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "UBALDINO NUNES ARAGAO (0001278)",
-      "value": 29.99
+      "value": 29.99,
+      "nota_fiscal": "12364"
     },
     {
       "id": "tx01634",
@@ -16375,7 +18009,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "EDSON BATISTA (0001279)",
-      "value": 21.99
+      "value": 21.99,
+      "nota_fiscal": "12365"
     },
     {
       "id": "tx01635",
@@ -16385,7 +18020,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "CLG GUINDASTES SERVICO DE TESTES E ANALI (0001280)",
-      "value": 49.98
+      "value": 49.98,
+      "nota_fiscal": "12366"
     },
     {
       "id": "tx01636",
@@ -16395,7 +18031,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ELETROFELIX INDUSTRIA E COMERCIO LTDA (0000477)",
-      "value": 484.0
+      "value": 484.0,
+      "nota_fiscal": "12367"
     },
     {
       "id": "tx01637",
@@ -16405,7 +18042,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "CJS DOS SANTOS GONDOLAS (0000637)",
-      "value": 93.5
+      "value": 93.5,
+      "nota_fiscal": "12368"
     },
     {
       "id": "tx01638",
@@ -16415,7 +18053,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ALLPRINT LATINA",
-      "value": 2581.67
+      "value": 2581.67,
+      "nota_fiscal": "796"
     },
     {
       "id": "tx01639",
@@ -16425,7 +18064,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMEN",
-      "value": 543.0
+      "value": 543.0,
+      "nota_fiscal": "801"
     },
     {
       "id": "tx01640",
@@ -16435,7 +18075,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "CARTÃO DE CRÉDITO",
       "counterparty": "SÓCIOS CARTÕES",
-      "value": 2500.0
+      "value": 2500.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01641",
@@ -16445,7 +18086,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 3.62
+      "value": 3.62,
+      "nota_fiscal": null
     },
     {
       "id": "tx01642",
@@ -16455,7 +18097,8 @@ const MAXLED_DATA = {
       "flow": "compra",
       "category": null,
       "counterparty": "LS",
-      "value": 2620.0
+      "value": 2620.0,
+      "nota_fiscal": "152"
     },
     {
       "id": "tx01643",
@@ -16465,7 +18108,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ELETROFELIX",
-      "value": 155.5
+      "value": 155.5,
+      "nota_fiscal": "12229"
     },
     {
       "id": "tx01644",
@@ -16475,7 +18119,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "GABRIEL",
-      "value": 296.0
+      "value": 296.0,
+      "nota_fiscal": "M12063"
     },
     {
       "id": "tx01645",
@@ -16485,7 +18130,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FZW INNOVATION LTDA - 0000848",
-      "value": 3300.0
+      "value": 3300.0,
+      "nota_fiscal": "12396 /12395 /12394"
     },
     {
       "id": "tx01646",
@@ -16495,7 +18141,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "TAICON-logus",
-      "value": 3411.0
+      "value": 3411.0,
+      "nota_fiscal": "12408"
     },
     {
       "id": "tx01647",
@@ -16505,7 +18152,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "TFCOMP",
-      "value": 483.0
+      "value": 483.0,
+      "nota_fiscal": "12384"
     },
     {
       "id": "tx01648",
@@ -16515,7 +18163,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CJS DOS SANTOS GONDOLAS - 0000637",
-      "value": 1037.34
+      "value": 1037.34,
+      "nota_fiscal": "12111/01"
     },
     {
       "id": "tx01649",
@@ -16525,7 +18174,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CJS DOS SANTOS GONDOLAS - 0000637",
-      "value": 1014.67
+      "value": 1014.67,
+      "nota_fiscal": "12111/02"
     },
     {
       "id": "tx01650",
@@ -16535,7 +18185,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CJS DOS SANTOS GONDOLAS - 0000637",
-      "value": 982.07
+      "value": 982.07,
+      "nota_fiscal": "12111/03"
     },
     {
       "id": "tx01651",
@@ -16545,7 +18196,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ELETROFELIX INDUSTRIA E COMERCIO LTDA - 0000477",
-      "value": 156.9
+      "value": 156.9,
+      "nota_fiscal": "12188/01"
     },
     {
       "id": "tx01652",
@@ -16555,7 +18207,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP",
-      "value": 843.06
+      "value": 843.06,
+      "nota_fiscal": null
     },
     {
       "id": "tx01653",
@@ -16565,7 +18218,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "FCP IMPORTACAO",
-      "value": 983.28
+      "value": 983.28,
+      "nota_fiscal": null
     },
     {
       "id": "tx01654",
@@ -16575,7 +18229,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "S-OHM",
-      "value": 106.0
+      "value": 106.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01655",
@@ -16585,7 +18240,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ALLSEMI TECNOLOGIA E EIRELI",
-      "value": 1265.01
+      "value": 1265.01,
+      "nota_fiscal": null
     },
     {
       "id": "tx01656",
@@ -16595,7 +18251,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 7.24
+      "value": 7.24,
+      "nota_fiscal": null
     },
     {
       "id": "tx01657",
@@ -16604,8 +18261,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "108988",
-      "value": 13.5
+      "counterparty": "RUSSER BRASIL EIRELI (C) (0000403)",
+      "value": 13.5,
+      "nota_fiscal": "108988"
     },
     {
       "id": "tx01658",
@@ -16614,8 +18272,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "29036",
-      "value": 180.0
+      "counterparty": "DIGISYSTEM IND. DE SIST. ELETRO. LTDA (C (0000040)",
+      "value": 180.0,
+      "nota_fiscal": "29036"
     },
     {
       "id": "tx01659",
@@ -16624,8 +18283,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "64269",
-      "value": 356.0
+      "counterparty": "UPSAI SISTEMAS DE ENERGIA LTD (C) (0000485)",
+      "value": 356.0,
+      "nota_fiscal": "64269"
     },
     {
       "id": "tx01660",
@@ -16634,8 +18294,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "68252",
-      "value": 280.9
+      "counterparty": "TRICOMP COMERCIAL ELETR. LTDA (0000278)",
+      "value": 280.9,
+      "nota_fiscal": "68252"
     },
     {
       "id": "tx01661",
@@ -16645,7 +18306,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "WKS TECHNOLOGY DO BRASIL (0000208)",
-      "value": 600.0
+      "value": 600.0,
+      "nota_fiscal": "12369"
     },
     {
       "id": "tx01662",
@@ -16655,7 +18317,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "T.G.L. ELETRO ELETRONICO LTDA - ME (0000073)",
-      "value": 97.0
+      "value": 97.0,
+      "nota_fiscal": "12370"
     },
     {
       "id": "tx01663",
@@ -16665,7 +18328,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ADRIANO APARECIDO DE OLIVEIRA CORRE (0001281)",
-      "value": 34.99
+      "value": 34.99,
+      "nota_fiscal": "12371"
     },
     {
       "id": "tx01664",
@@ -16675,7 +18339,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "NAYRA TALYTA MELO COELHO (0001285)",
-      "value": 19.99
+      "value": 19.99,
+      "nota_fiscal": "12373"
     },
     {
       "id": "tx01665",
@@ -16685,7 +18350,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "RENTELCK ELETRONICA INDUSTRIAL LTDA (0001282)",
-      "value": 29.98
+      "value": 29.98,
+      "nota_fiscal": "12374"
     },
     {
       "id": "tx01666",
@@ -16695,7 +18361,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FABIO SENA DA CRUZ (0001283)",
-      "value": 49.98
+      "value": 49.98,
+      "nota_fiscal": "12375"
     },
     {
       "id": "tx01667",
@@ -16705,7 +18372,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMEN",
-      "value": 1286.47
+      "value": 1286.47,
+      "nota_fiscal": "798"
     },
     {
       "id": "tx01668",
@@ -16715,7 +18383,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SIMPLES CONECT",
-      "value": 1452.0
+      "value": 1452.0,
+      "nota_fiscal": "802"
     },
     {
       "id": "tx01669",
@@ -16725,7 +18394,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 3.62
+      "value": 3.62,
+      "nota_fiscal": null
     },
     {
       "id": "tx01670",
@@ -16735,7 +18405,8 @@ const MAXLED_DATA = {
       "flow": "compra",
       "category": null,
       "counterparty": "IDALL",
-      "value": 7600.0
+      "value": 7600.0,
+      "nota_fiscal": "76238"
     },
     {
       "id": "tx01671",
@@ -16745,7 +18416,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "T.G.L. ELETRO ELETRONICO LTDA - ME (0000073)",
-      "value": 234.0
+      "value": 234.0,
+      "nota_fiscal": "810"
     },
     {
       "id": "tx01672",
@@ -16755,7 +18427,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO - 0000660",
-      "value": 1815.8
+      "value": 1815.8,
+      "nota_fiscal": "12096/03"
     },
     {
       "id": "tx01673",
@@ -16765,7 +18438,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SOLSUSTENTAVEL PROD. ELETRO ELETRONICOS - 0000125",
-      "value": 373.0
+      "value": 373.0,
+      "nota_fiscal": "12098/03"
     },
     {
       "id": "tx01674",
@@ -16775,7 +18449,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "POWERFLEET BRASIL LTDA - 0000692",
-      "value": 7700.0
+      "value": 7700.0,
+      "nota_fiscal": "12146/01"
     },
     {
       "id": "tx01675",
@@ -16785,7 +18460,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "PRODUTOS ELETRONICOS FRATA LTDA - 0000223",
-      "value": 2430.0
+      "value": 2430.0,
+      "nota_fiscal": "12150/01"
     },
     {
       "id": "tx01676",
@@ -16795,7 +18471,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SSAT SINALIZACAO E ADESIVOS EIRELI EPP - 0000072",
-      "value": 300.0
+      "value": 300.0,
+      "nota_fiscal": "12164/01"
     },
     {
       "id": "tx01677",
@@ -16805,7 +18482,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "UPSAI SISTEMAS DE ENERGIA LTD - 0000485",
-      "value": 555.5
+      "value": 555.5,
+      "nota_fiscal": "12165/01"
     },
     {
       "id": "tx01678",
@@ -16815,7 +18493,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "J.M. MAQUINAS AUTOMOTIVAS EIRELI - 0000387",
-      "value": 369.9
+      "value": 369.9,
+      "nota_fiscal": "12193/01"
     },
     {
       "id": "tx01679",
@@ -16825,7 +18504,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "E DE OLIVEIRA BARBOSA ELETRONICA - 0000898",
-      "value": 510.5
+      "value": 510.5,
+      "nota_fiscal": "12118"
     },
     {
       "id": "tx01680",
@@ -16835,7 +18515,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MDS",
-      "value": 268.5
+      "value": 268.5,
+      "nota_fiscal": null
     },
     {
       "id": "tx01681",
@@ -16845,7 +18526,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 12.67
+      "value": 12.67,
+      "nota_fiscal": null
     },
     {
       "id": "tx01682",
@@ -16855,7 +18537,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MEGADEF",
-      "value": 651.03
+      "value": 651.03,
+      "nota_fiscal": null
     },
     {
       "id": "tx01683",
@@ -16865,7 +18548,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ORANGE",
-      "value": 297.0
+      "value": 297.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01684",
@@ -16875,7 +18559,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "S-OHM",
-      "value": 500.0
+      "value": 500.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01685",
@@ -16885,7 +18570,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MDS",
-      "value": 324.0
+      "value": 324.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01686",
@@ -16895,7 +18581,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL COMERCIO ATACADISTA DE C",
-      "value": 1661.55
+      "value": 1661.55,
+      "nota_fiscal": null
     },
     {
       "id": "tx01687",
@@ -16905,7 +18592,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL COMERCIO ATACADISTA DE C",
-      "value": 720.0
+      "value": 720.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01688",
@@ -16915,7 +18603,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "GASTOS FIXOS",
       "counterparty": "SERASA",
-      "value": 644.19
+      "value": 644.19,
+      "nota_fiscal": null
     },
     {
       "id": "tx01689",
@@ -16925,7 +18614,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MKB SENSORES LTDA",
-      "value": 2946.7
+      "value": 2946.7,
+      "nota_fiscal": null
     },
     {
       "id": "tx01690",
@@ -16935,7 +18625,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY MAX",
-      "value": 123.54
+      "value": 123.54,
+      "nota_fiscal": null
     },
     {
       "id": "tx01691",
@@ -16944,8 +18635,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "202799",
-      "value": 123.54
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 123.54,
+      "nota_fiscal": "202799"
     },
     {
       "id": "tx01692",
@@ -16954,8 +18646,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "261335",
-      "value": 3677.31
+      "counterparty": "ACP COMERCIO ATACADISTA DE COMPONENTES E (0000249)",
+      "value": 3677.31,
+      "nota_fiscal": "261335"
     },
     {
       "id": "tx01693",
@@ -16964,8 +18657,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "2774",
-      "value": 377.05
+      "counterparty": "CX COMERCIAL EIRELI EPP (0000329)",
+      "value": 377.05,
+      "nota_fiscal": "2774"
     },
     {
       "id": "tx01694",
@@ -16974,8 +18668,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "36495",
-      "value": 3068.92
+      "counterparty": "ELCOMP COMERCIO COMPONENTES ELETR. LTDA (0000246)",
+      "value": 3068.92,
+      "nota_fiscal": "36495"
     },
     {
       "id": "tx01695",
@@ -16984,8 +18679,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "74505",
-      "value": 1935.0
+      "counterparty": "GEO-ELETRON SEMICONDUTORES LTDA (0000432)",
+      "value": 1935.0,
+      "nota_fiscal": "74505"
     },
     {
       "id": "tx01696",
@@ -16994,8 +18690,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "8960",
-      "value": 150.0
+      "counterparty": "TRYNIT LED COMPONENTES ELETRONICOS EIREL (0000259)",
+      "value": 150.0,
+      "nota_fiscal": "8960"
     },
     {
       "id": "tx01697",
@@ -17005,7 +18702,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "LUIZ PEREIRA BALMANT (0001287)",
-      "value": 13.0
+      "value": 13.0,
+      "nota_fiscal": "12376"
     },
     {
       "id": "tx01698",
@@ -17015,7 +18713,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "DARCI SCHAEFER (0001286)",
-      "value": 33.98
+      "value": 33.98,
+      "nota_fiscal": "12377"
     },
     {
       "id": "tx01699",
@@ -17025,7 +18724,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO (0000660)",
-      "value": 830.0
+      "value": 830.0,
+      "nota_fiscal": "12378"
     },
     {
       "id": "tx01700",
@@ -17035,7 +18735,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "JHR-COMERCIO  DE COMP. ELETRONICOS LTDA (0000131)",
-      "value": 648.0
+      "value": 648.0,
+      "nota_fiscal": "12379"
     },
     {
       "id": "tx01701",
@@ -17045,7 +18746,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "E DE OLIVEIRA BARBOSA ELETRONICA (0000898)",
-      "value": 524.0
+      "value": 524.0,
+      "nota_fiscal": "12380"
     },
     {
       "id": "tx01702",
@@ -17055,7 +18757,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "SSAT SINALIZACAO E ADESIVOS EIRELI EPP (0000072)",
-      "value": 540.0
+      "value": 540.0,
+      "nota_fiscal": "12381"
     },
     {
       "id": "tx01703",
@@ -17065,7 +18768,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "EVOLUTEC INDUSTRIA E COMERCIO DE ELETROA (0000229)",
-      "value": 188.35
+      "value": 188.35,
+      "nota_fiscal": "12382"
     },
     {
       "id": "tx01704",
@@ -17075,7 +18779,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "SIGMA TRANSFORMADORES (0000063)",
-      "value": 1273.85
+      "value": 1273.85,
+      "nota_fiscal": "12383"
     },
     {
       "id": "tx01705",
@@ -17085,7 +18790,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "TFCOMP COMERCIO ELETRO ELETRONICOS E INF (0000849)",
-      "value": 483.0
+      "value": 483.0,
+      "nota_fiscal": "12384"
     },
     {
       "id": "tx01706",
@@ -17095,7 +18801,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMEN",
-      "value": 709.5
+      "value": 709.5,
+      "nota_fiscal": "800"
     },
     {
       "id": "tx01707",
@@ -17105,7 +18812,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL",
-      "value": 1266.67
+      "value": 1266.67,
+      "nota_fiscal": null
     },
     {
       "id": "tx01708",
@@ -17115,7 +18823,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "GASTOS FIXOS",
       "counterparty": "CARTÃO DESPESAS DIA DIA",
-      "value": 7571.95
+      "value": 7571.95,
+      "nota_fiscal": null
     },
     {
       "id": "tx01709",
@@ -17125,7 +18834,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "GASTOS FIXOS",
       "counterparty": "CERTIFICADO HANSER",
-      "value": 209.9
+      "value": 209.9,
+      "nota_fiscal": null
     },
     {
       "id": "tx01710",
@@ -17135,7 +18845,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 1.81
+      "value": 1.81,
+      "nota_fiscal": null
     },
     {
       "id": "tx01711",
@@ -17145,7 +18856,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ELETROFELIX INDUSTRIA E COMERCIO LTDA (0000477)",
-      "value": 379.0
+      "value": 379.0,
+      "nota_fiscal": "811"
     },
     {
       "id": "tx01712",
@@ -17155,7 +18867,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "TRANSFIX",
-      "value": 1057.5
+      "value": 1057.5,
+      "nota_fiscal": "12158"
     },
     {
       "id": "tx01713",
@@ -17165,7 +18878,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BRASMEDICAL IND. E COM. DE PRODUTOS PAR - 0000017",
-      "value": 1896.21
+      "value": 1896.21,
+      "nota_fiscal": "11991/01"
     },
     {
       "id": "tx01714",
@@ -17175,7 +18889,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BRASMEDICAL IND. E COM. DE PRODUTOS PAR - 0000017",
-      "value": 1813.26
+      "value": 1813.26,
+      "nota_fiscal": "11991/02"
     },
     {
       "id": "tx01715",
@@ -17185,7 +18900,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BRASMEDICAL IND. E COM. DE PRODUTOS PAR - 0000017",
-      "value": 1730.31
+      "value": 1730.31,
+      "nota_fiscal": "11991/03"
     },
     {
       "id": "tx01716",
@@ -17195,7 +18911,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "INELTEC TECNOLOGIAS LTDA - 0000193",
-      "value": 1733.0
+      "value": 1733.0,
+      "nota_fiscal": "12060/04"
     },
     {
       "id": "tx01717",
@@ -17205,7 +18922,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BRASMEDICAL IND. E COM. DE PRODUTOS PAR - 0000017",
-      "value": 997.77
+      "value": 997.77,
+      "nota_fiscal": "12092/02"
     },
     {
       "id": "tx01718",
@@ -17215,7 +18933,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
-      "value": 202.0
+      "value": 202.0,
+      "nota_fiscal": "12167/01"
     },
     {
       "id": "tx01719",
@@ -17225,7 +18944,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
-      "value": 650.0
+      "value": 650.0,
+      "nota_fiscal": "12174/01"
     },
     {
       "id": "tx01720",
@@ -17235,7 +18955,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "M. POWER IND.E COM. DE ELETR. LTDA - 0000216",
-      "value": 306.0
+      "value": 306.0,
+      "nota_fiscal": "12175/01"
     },
     {
       "id": "tx01721",
@@ -17245,7 +18966,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BPM INDUSTRIA E COMERCIO - 0000541",
-      "value": 748.0
+      "value": 748.0,
+      "nota_fiscal": "12178/01"
     },
     {
       "id": "tx01722",
@@ -17255,7 +18977,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ALLPRINT LATINA AUTOMACAO DE MAQUINAS EA - 0000291",
-      "value": 1188.0
+      "value": 1188.0,
+      "nota_fiscal": "12179/01"
     },
     {
       "id": "tx01723",
@@ -17265,7 +18988,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 18.1
+      "value": 18.1,
+      "nota_fiscal": null
     },
     {
       "id": "tx01724",
@@ -17275,7 +18999,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "FILCRILL COMPONENTES ELETRONIC",
-      "value": 546.36
+      "value": 546.36,
+      "nota_fiscal": null
     },
     {
       "id": "tx01725",
@@ -17285,7 +19010,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ASIA",
-      "value": 449.58
+      "value": 449.58,
+      "nota_fiscal": null
     },
     {
       "id": "tx01726",
@@ -17295,7 +19021,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ZENER COMPONENTES ELETRONIC LT",
-      "value": 477.6
+      "value": 477.6,
+      "nota_fiscal": null
     },
     {
       "id": "tx01727",
@@ -17305,7 +19032,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP",
-      "value": 573.73
+      "value": 573.73,
+      "nota_fiscal": null
     },
     {
       "id": "tx01728",
@@ -17315,7 +19043,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "CX",
-      "value": 743.85
+      "value": 743.85,
+      "nota_fiscal": null
     },
     {
       "id": "tx01729",
@@ -17325,7 +19054,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "JÁ EL",
-      "value": 596.7
+      "value": 596.7,
+      "nota_fiscal": null
     },
     {
       "id": "tx01730",
@@ -17335,7 +19065,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ORANGE",
-      "value": 21.0
+      "value": 21.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01731",
@@ -17345,7 +19076,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DICEL",
-      "value": 385.0
+      "value": 385.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01732",
@@ -17355,7 +19087,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "IMPOSTOS",
       "counterparty": "SINDICATO DOS COMERCIARIOS DE",
-      "value": 432.26
+      "value": 432.26,
+      "nota_fiscal": null
     },
     {
       "id": "tx01733",
@@ -17364,8 +19097,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "149180",
-      "value": 1511.24
+      "counterparty": "MEGADEF COMPONENTES ELETRONICOS LTDA (0000039)",
+      "value": 1511.24,
+      "nota_fiscal": "149180"
     },
     {
       "id": "tx01734",
@@ -17374,8 +19108,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "153494",
-      "value": 4906.13
+      "counterparty": "REIMOLD INDUSTRIA E COMRCIO DE MATERIAI (0000172)",
+      "value": 4906.13,
+      "nota_fiscal": "153494"
     },
     {
       "id": "tx01735",
@@ -17384,8 +19119,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "261431",
-      "value": 3084.47
+      "counterparty": "ACP COMERCIO ATACADISTA DE COMPONENTES E (0000249)",
+      "value": 3084.47,
+      "nota_fiscal": "261431"
     },
     {
       "id": "tx01736",
@@ -17394,8 +19130,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "269462",
-      "value": 345.06
+      "counterparty": "MULT COMERCIAL LTDA (0000311)",
+      "value": 345.06,
+      "nota_fiscal": "269462"
     },
     {
       "id": "tx01737",
@@ -17404,8 +19141,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "2778",
-      "value": 415.53
+      "counterparty": "CX COMERCIAL EIRELI EPP (0000329)",
+      "value": 415.53,
+      "nota_fiscal": "2778"
     },
     {
       "id": "tx01738",
@@ -17414,8 +19152,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "3256",
-      "value": 540.0
+      "counterparty": "ORANGE E BLACK DISTRIBUIDORA LTDA (0000198)",
+      "value": 540.0,
+      "nota_fiscal": "3256"
     },
     {
       "id": "tx01739",
@@ -17424,8 +19163,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "33056",
-      "value": 187.5
+      "counterparty": "ALLNETSYS COMERCIO IMPORTACAO E SERVICOS (0000036)",
+      "value": 187.5,
+      "nota_fiscal": "33056"
     },
     {
       "id": "tx01740",
@@ -17434,8 +19174,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "4267",
-      "value": 1024.5
+      "counterparty": "MDS COMPONENTES ELETRONICOS LTDA (0000297)",
+      "value": 1024.5,
+      "nota_fiscal": "4267"
     },
     {
       "id": "tx01741",
@@ -17444,8 +19185,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "76312",
-      "value": 2337.8
+      "counterparty": "IDALL COM. ATAC. DE COMP. ELETR. LTDA (0000011)",
+      "value": 2337.8,
+      "nota_fiscal": "76312"
     },
     {
       "id": "tx01742",
@@ -17454,8 +19196,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "85733",
-      "value": 143.78
+      "counterparty": "COMP TOTAL COM. E IMP. DE COMP. ELETRON. (0000267)",
+      "value": 143.78,
+      "nota_fiscal": "85733"
     },
     {
       "id": "tx01743",
@@ -17465,7 +19208,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "BPM INDUSTRIA E COMERCIO (0000541)",
-      "value": 9215.98
+      "value": 9215.98,
+      "nota_fiscal": "12385"
     },
     {
       "id": "tx01744",
@@ -17475,7 +19219,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ZILOCCHI ELETRONICA LTDA - EPP (0000130)",
-      "value": 647.4
+      "value": 647.4,
+      "nota_fiscal": "12386"
     },
     {
       "id": "tx01745",
@@ -17485,7 +19230,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "VIEWMED IND. A E COM. DE PROD. MEDICOSA (0000343)",
-      "value": 1147.0
+      "value": 1147.0,
+      "nota_fiscal": "12387"
     },
     {
       "id": "tx01746",
@@ -17495,7 +19241,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "TEC INSIDE COM. E PROJ. DE EQUIP. ELETR (0000333)",
-      "value": 1584.6
+      "value": 1584.6,
+      "nota_fiscal": "12388"
     },
     {
       "id": "tx01747",
@@ -17505,7 +19252,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "PREMIX INDUSTRIA ELETROMECANIA LTDA (0000047)",
-      "value": 121.5
+      "value": 121.5,
+      "nota_fiscal": "12389"
     },
     {
       "id": "tx01748",
@@ -17515,7 +19263,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DRN",
-      "value": 210.0
+      "value": 210.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01749",
@@ -17525,7 +19274,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "HTR -HORTRON",
-      "value": 1253.34
+      "value": 1253.34,
+      "nota_fiscal": "12177"
     },
     {
       "id": "tx01750",
@@ -17535,7 +19285,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "PRODUTOS ELETRONICOS FRATA LTDA - 0000223",
-      "value": 70.0
+      "value": 70.0,
+      "nota_fiscal": "12269"
     },
     {
       "id": "tx01751",
@@ -17545,7 +19296,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "EDUARDO YROSHIMA",
-      "value": 49.86
+      "value": 49.86,
+      "nota_fiscal": "12393"
     },
     {
       "id": "tx01752",
@@ -17555,7 +19307,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "PREMIX",
-      "value": 121.5
+      "value": 121.5,
+      "nota_fiscal": "12389"
     },
     {
       "id": "tx01753",
@@ -17565,7 +19318,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CARINE G RODRIGUES - 0000764",
-      "value": 2217.2
+      "value": 2217.2,
+      "nota_fiscal": "12134/02"
     },
     {
       "id": "tx01754",
@@ -17575,7 +19329,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
-      "value": 1095.11
+      "value": 1095.11,
+      "nota_fiscal": "12136/02"
     },
     {
       "id": "tx01755",
@@ -17585,7 +19340,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO - 0000660",
-      "value": 4545.76
+      "value": 4545.76,
+      "nota_fiscal": "12166/01"
     },
     {
       "id": "tx01756",
@@ -17595,7 +19351,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "UPSAI SISTEMAS DE ENERGIA LTD - 0000485",
-      "value": 531.5
+      "value": 531.5,
+      "nota_fiscal": "12184/01"
     },
     {
       "id": "tx01757",
@@ -17605,7 +19362,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
-      "value": 447.78
+      "value": 447.78,
+      "nota_fiscal": "12186/01"
     },
     {
       "id": "tx01758",
@@ -17615,7 +19373,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "S.T.E.E. TECNOLOGIA ELETROELETRONICA LT - 0000062",
-      "value": 674.0
+      "value": 674.0,
+      "nota_fiscal": "12187/01"
     },
     {
       "id": "tx01759",
@@ -17625,7 +19384,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "EDERSON VARANDA BORGES LTDA - 0000785",
-      "value": 1649.84
+      "value": 1649.84,
+      "nota_fiscal": "12191/01"
     },
     {
       "id": "tx01760",
@@ -17635,7 +19395,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "LECOMP",
-      "value": 70.0
+      "value": 70.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01761",
@@ -17645,7 +19406,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "CX",
-      "value": 159.17
+      "value": 159.17,
+      "nota_fiscal": null
     },
     {
       "id": "tx01762",
@@ -17655,7 +19417,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "GASTOS FIXOS",
       "counterparty": "ALUGUEL PRÉDIO",
-      "value": 4200.0
+      "value": 4200.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01763",
@@ -17665,7 +19428,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL COMERCIO ATACADISTA DE C",
-      "value": 772.73
+      "value": 772.73,
+      "nota_fiscal": null
     },
     {
       "id": "tx01764",
@@ -17675,7 +19439,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY",
-      "value": 497.1
+      "value": 497.1,
+      "nota_fiscal": null
     },
     {
       "id": "tx01765",
@@ -17685,7 +19450,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY",
-      "value": 399.55
+      "value": 399.55,
+      "nota_fiscal": null
     },
     {
       "id": "tx01766",
@@ -17695,7 +19461,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRICOMP",
-      "value": 708.4
+      "value": 708.4,
+      "nota_fiscal": null
     },
     {
       "id": "tx01767",
@@ -17705,7 +19472,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRICONECT",
-      "value": 374.15
+      "value": 374.15,
+      "nota_fiscal": null
     },
     {
       "id": "tx01768",
@@ -17715,7 +19483,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP",
-      "value": 531.16
+      "value": 531.16,
+      "nota_fiscal": null
     },
     {
       "id": "tx01769",
@@ -17725,7 +19494,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MEGADEF",
-      "value": 898.83
+      "value": 898.83,
+      "nota_fiscal": null
     },
     {
       "id": "tx01770",
@@ -17735,7 +19505,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 12.67
+      "value": 12.67,
+      "nota_fiscal": null
     },
     {
       "id": "tx01771",
@@ -17744,8 +19515,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "140852",
-      "value": 1372.02
+      "counterparty": "SOFT METAIS LTDA (0000433)",
+      "value": 1372.02,
+      "nota_fiscal": "140852"
     },
     {
       "id": "tx01772",
@@ -17754,8 +19526,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "17496",
-      "value": 351.0
+      "counterparty": "TIGGERCOMP COMERCIO DE COMPONENTES EIREL (0000434)",
+      "value": 351.0,
+      "nota_fiscal": "17496"
     },
     {
       "id": "tx01773",
@@ -17764,8 +19537,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "18323",
-      "value": 1744.6
+      "counterparty": "TRICONECT COMERCIAL ELETR. LTDA (0000321)",
+      "value": 1744.6,
+      "nota_fiscal": "18323"
     },
     {
       "id": "tx01774",
@@ -17774,8 +19548,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "203039",
-      "value": 2840.66
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 2840.66,
+      "nota_fiscal": "203039"
     },
     {
       "id": "tx01775",
@@ -17784,8 +19559,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "53822",
-      "value": 9668.99
+      "counterparty": "MKB ELETRONICA LTDA (0000088)",
+      "value": 9668.99,
+      "nota_fiscal": "53822"
     },
     {
       "id": "tx01776",
@@ -17794,8 +19570,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "53823",
-      "value": 456.91
+      "counterparty": "MKB ELETRONICA LTDA (0000088)",
+      "value": 456.91,
+      "nota_fiscal": "53823"
     },
     {
       "id": "tx01777",
@@ -17804,8 +19581,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "68306",
-      "value": 1176.6
+      "counterparty": "TRICOMP COMERCIAL ELETR. LTDA (0000278)",
+      "value": 1176.6,
+      "nota_fiscal": "68306"
     },
     {
       "id": "tx01778",
@@ -17814,8 +19592,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "68333",
-      "value": 778.04
+      "counterparty": "TRICOMP COMERCIAL ELETR. LTDA (0000278)",
+      "value": 778.04,
+      "nota_fiscal": "68333"
     },
     {
       "id": "tx01779",
@@ -17824,8 +19603,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "76292",
-      "value": 2574.0
+      "counterparty": "IDALL COM. ATAC. DE COMP. ELETR. LTDA (0000011)",
+      "value": 2574.0,
+      "nota_fiscal": "76292"
     },
     {
       "id": "tx01780",
@@ -17834,8 +19614,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "85774",
-      "value": 490.0
+      "counterparty": "COMP TOTAL COM. E IMP. DE COMP. ELETRON. (0000267)",
+      "value": 490.0,
+      "nota_fiscal": "85774"
     },
     {
       "id": "tx01781",
@@ -17844,8 +19625,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "89318",
-      "value": 193.2
+      "counterparty": "MEGAPIX COMP. ELETRONICOS LTDA-EPP (0000275)",
+      "value": 193.2,
+      "nota_fiscal": "89318"
     },
     {
       "id": "tx01782",
@@ -17854,8 +19636,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "895",
-      "value": 360.0
+      "counterparty": "MRD COMPONENTES ELETRONICOS LTDA. (0000388)",
+      "value": 360.0,
+      "nota_fiscal": "895"
     },
     {
       "id": "tx01783",
@@ -17865,7 +19648,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "VINTEK IND., COMERCIO E SERVICOS LTDA (0000894)",
-      "value": 18931.09
+      "value": 18931.09,
+      "nota_fiscal": "12390"
     },
     {
       "id": "tx01784",
@@ -17875,7 +19659,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "DIEGO PALHARES (0001293)",
-      "value": 21.99
+      "value": 21.99,
+      "nota_fiscal": "12391"
     },
     {
       "id": "tx01785",
@@ -17885,7 +19670,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "VITOR MAURICIO DOS SANTOS LYRA DE (0001294)",
-      "value": 9.99
+      "value": 9.99,
+      "nota_fiscal": "12392"
     },
     {
       "id": "tx01786",
@@ -17895,7 +19681,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "GISELE FABIANA NOVAKOSKI 22591430837 (0001291)",
-      "value": 49.86
+      "value": 49.86,
+      "nota_fiscal": "12393"
     },
     {
       "id": "tx01787",
@@ -17905,7 +19692,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FZW INNOVATION LTDA (0000848)",
-      "value": 940.2
+      "value": 940.2,
+      "nota_fiscal": "12394"
     },
     {
       "id": "tx01788",
@@ -17915,7 +19703,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FZW INNOVATION LTDA (0000848)",
-      "value": 2142.21
+      "value": 2142.21,
+      "nota_fiscal": "12395"
     },
     {
       "id": "tx01789",
@@ -17925,7 +19714,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FZW INNOVATION LTDA (0000848)",
-      "value": 225.0
+      "value": 225.0,
+      "nota_fiscal": "12396"
     },
     {
       "id": "tx01790",
@@ -17935,7 +19725,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ROYALCOMP COMPONENTES ELETR. LTDA (0000570)",
-      "value": 1091.5
+      "value": 1091.5,
+      "nota_fiscal": "12397"
     },
     {
       "id": "tx01791",
@@ -17945,7 +19736,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "DIGISYSTEM IND. DE SIST. ELETRO. LTDA (0000040)",
-      "value": 2915.5
+      "value": 2915.5,
+      "nota_fiscal": "12398"
     },
     {
       "id": "tx01792",
@@ -17955,7 +19747,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "SIMPLES CONNECT INDUSTRIA E COMERCIO LTA (0000308)",
-      "value": 375.0
+      "value": 375.0,
+      "nota_fiscal": "12399"
     },
     {
       "id": "tx01793",
@@ -17965,7 +19758,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "MERCANTIL UNIAO COMERCIO DE MATERIAIS PA (0001292)",
-      "value": 69.97
+      "value": 69.97,
+      "nota_fiscal": "12400"
     },
     {
       "id": "tx01794",
@@ -17975,7 +19769,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "R. BAIAO INDUSTRIA E COMERCIO LTDA (0000060)",
-      "value": 2571.7
+      "value": 2571.7,
+      "nota_fiscal": "12401"
     },
     {
       "id": "tx01795",
@@ -17985,7 +19780,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "NEWTESC TECNOLOGIA E COMERCIO LTDA (0000106)",
-      "value": 3193.0
+      "value": 3193.0,
+      "nota_fiscal": "12402"
     },
     {
       "id": "tx01796",
@@ -17995,7 +19791,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "DIGISYSTEM IND. DE SIST. ELETRO. LTDA (0000040)",
-      "value": 69.0
+      "value": 69.0,
+      "nota_fiscal": "812"
     },
     {
       "id": "tx01797",
@@ -18005,7 +19802,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "DENTSCLER IND. DE APAR. ODONTO. EIRELLI - 0000390",
-      "value": 893.25
+      "value": 893.25,
+      "nota_fiscal": "12091/02"
     },
     {
       "id": "tx01798",
@@ -18015,7 +19813,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FZW INNOVATION LTDA - 0000848",
-      "value": 1355.89
+      "value": 1355.89,
+      "nota_fiscal": "12099/02"
     },
     {
       "id": "tx01799",
@@ -18025,7 +19824,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "MS TECNOPON EQUIPAMENTOS ESPECIAIS LTDA - 0000373",
-      "value": 1235.1
+      "value": 1235.1,
+      "nota_fiscal": "12100/02"
     },
     {
       "id": "tx01800",
@@ -18035,7 +19835,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "RUSSER BRASIL EIRELI - 0000403",
-      "value": 462.0
+      "value": 462.0,
+      "nota_fiscal": "12176/01"
     },
     {
       "id": "tx01801",
@@ -18045,7 +19846,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "DENTSCLER IND. DE APAR. ODONTO. EIRELLI - 0000390",
-      "value": 509.7
+      "value": 509.7,
+      "nota_fiscal": "11949/04"
     },
     {
       "id": "tx01802",
@@ -18055,7 +19857,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "R. BAIAO INDUSTRIA E COMERCIO LTDA - 0000060",
-      "value": 4279.44
+      "value": 4279.44,
+      "nota_fiscal": "12031/02"
     },
     {
       "id": "tx01803",
@@ -18065,7 +19868,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "EVOLUTEC INDUSTRIA E COMERCIO DE ELETROA - 0000229",
-      "value": 543.6
+      "value": 543.6,
+      "nota_fiscal": "12195/01"
     },
     {
       "id": "tx01804",
@@ -18075,7 +19879,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BIQUAD TECNOLOGIA LTDA - 0000013",
-      "value": 1429.3
+      "value": 1429.3,
+      "nota_fiscal": "12037/03"
     },
     {
       "id": "tx01805",
@@ -18085,7 +19890,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ZENER COMPONENTES ELETRONICOS LTDA - ME - 0000142",
-      "value": 510.0
+      "value": 510.0,
+      "nota_fiscal": "12144/02"
     },
     {
       "id": "tx01806",
@@ -18095,7 +19901,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "PRODUTOS ELETRONICOS FRATA LTDA - 0000223",
-      "value": 150.0
+      "value": 150.0,
+      "nota_fiscal": "12196/01"
     },
     {
       "id": "tx01807",
@@ -18105,7 +19912,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "TRANSPORTES",
       "counterparty": "WILSON",
-      "value": 240.0
+      "value": 240.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01808",
@@ -18115,7 +19923,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 18.1
+      "value": 18.1,
+      "nota_fiscal": null
     },
     {
       "id": "tx01809",
@@ -18125,7 +19934,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "LUCK _",
-      "value": 327.5
+      "value": 327.5,
+      "nota_fiscal": null
     },
     {
       "id": "tx01810",
@@ -18135,7 +19945,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DLT SUPRIMENTOS",
-      "value": 707.05
+      "value": 707.05,
+      "nota_fiscal": null
     },
     {
       "id": "tx01811",
@@ -18145,7 +19956,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DLT SUPRIMENTOS",
-      "value": 855.0
+      "value": 855.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01812",
@@ -18155,7 +19967,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP",
-      "value": 698.96
+      "value": 698.96,
+      "nota_fiscal": null
     },
     {
       "id": "tx01813",
@@ -18165,7 +19978,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP",
-      "value": 576.92
+      "value": 576.92,
+      "nota_fiscal": null
     },
     {
       "id": "tx01814",
@@ -18175,7 +19989,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP",
-      "value": 478.91
+      "value": 478.91,
+      "nota_fiscal": null
     },
     {
       "id": "tx01815",
@@ -18185,7 +20000,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL COMERCIO ATACADISTA DE C",
-      "value": 689.67
+      "value": 689.67,
+      "nota_fiscal": null
     },
     {
       "id": "tx01816",
@@ -18195,7 +20011,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL COMERCIO ATACADISTA DE C",
-      "value": 575.33
+      "value": 575.33,
+      "nota_fiscal": null
     },
     {
       "id": "tx01817",
@@ -18205,7 +20022,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MKB SENSORES LTDA",
-      "value": 730.0
+      "value": 730.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01818",
@@ -18215,7 +20033,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY MAX",
-      "value": 533.5
+      "value": 533.5,
+      "nota_fiscal": null
     },
     {
       "id": "tx01819",
@@ -18225,7 +20044,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "S-OHM",
-      "value": 139.7
+      "value": 139.7,
+      "nota_fiscal": null
     },
     {
       "id": "tx01820",
@@ -18235,7 +20055,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "GLOBALCHIP",
-      "value": 650.0
+      "value": 650.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01821",
@@ -18245,7 +20066,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "LEDCOMP",
-      "value": 1912.5
+      "value": 1912.5,
+      "nota_fiscal": null
     },
     {
       "id": "tx01822",
@@ -18254,8 +20076,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "103739",
-      "value": 823.18
+      "counterparty": "CROMAX ELETRONICA LTDA (0000296)",
+      "value": 823.18,
+      "nota_fiscal": "103739"
     },
     {
       "id": "tx01823",
@@ -18264,8 +20087,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "121701",
-      "value": 5296.0
+      "counterparty": "E2E INDUSTRIA E COMERCIO DE COMPONENTES (0000306)",
+      "value": 5296.0,
+      "nota_fiscal": "121701"
     },
     {
       "id": "tx01824",
@@ -18274,8 +20098,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "76334",
-      "value": 2713.3
+      "counterparty": "IDALL COM. ATAC. DE COMP. ELETR. LTDA (0000011)",
+      "value": 2713.3,
+      "nota_fiscal": "76334"
     },
     {
       "id": "tx01825",
@@ -18285,7 +20110,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E (0000081)",
-      "value": 22183.92
+      "value": 22183.92,
+      "nota_fiscal": "12404"
     },
     {
       "id": "tx01826",
@@ -18295,7 +20121,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "J.M. MAQUINAS AUTOMOTIVAS EIRELI (0000387)",
-      "value": 4419.9
+      "value": 4419.9,
+      "nota_fiscal": "12405"
     },
     {
       "id": "tx01827",
@@ -18305,7 +20132,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ADRIANO SILVEIRA KRAUTHEIN (0001295)",
-      "value": 19.98
+      "value": 19.98,
+      "nota_fiscal": "12406"
     },
     {
       "id": "tx01828",
@@ -18315,7 +20143,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "BINDING ENERGY COMERCIO E SERVICOS EIREL (0000489)",
-      "value": 1472.0
+      "value": 1472.0,
+      "nota_fiscal": "12407"
     },
     {
       "id": "tx01829",
@@ -18325,7 +20154,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "TAIKON INDUSTRIA E COM DE APARELHOS ELET (0001061)",
-      "value": 3411.0
+      "value": 3411.0,
+      "nota_fiscal": "12408"
     },
     {
       "id": "tx01830",
@@ -18335,7 +20165,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "R.BAIÃO",
-      "value": 462.0
+      "value": 462.0,
+      "nota_fiscal": "793"
     },
     {
       "id": "tx01831",
@@ -18345,7 +20176,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 1.81
+      "value": 1.81,
+      "nota_fiscal": null
     },
     {
       "id": "tx01832",
@@ -18355,7 +20187,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "J.M. MAQUINAS AUTOMOTIVAS EIRELI (0000387)",
-      "value": 4162.5
+      "value": 4162.5,
+      "nota_fiscal": "813"
     },
     {
       "id": "tx01833",
@@ -18365,7 +20198,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E (0000081)",
-      "value": 5678.5
+      "value": 5678.5,
+      "nota_fiscal": "814"
     },
     {
       "id": "tx01834",
@@ -18375,7 +20209,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "MCM",
-      "value": 440.4
+      "value": 440.4,
+      "nota_fiscal": "12413"
     },
     {
       "id": "tx01835",
@@ -18385,7 +20220,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "LUCIANA - JAIROTEC",
-      "value": 656.0
+      "value": 656.0,
+      "nota_fiscal": "SNF"
     },
     {
       "id": "tx01836",
@@ -18395,7 +20231,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "MDI",
-      "value": 540.0
+      "value": 540.0,
+      "nota_fiscal": "12058"
     },
     {
       "id": "tx01837",
@@ -18405,7 +20242,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "S.T.E.E. TECNOLOGIA ELETROELETRONICA LT - 0000062",
-      "value": 358.54
+      "value": 358.54,
+      "nota_fiscal": "12220"
     },
     {
       "id": "tx01838",
@@ -18415,7 +20253,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FOCUS TECNOLOGIA E SOLUCOES LTDA - 0000742",
-      "value": 429.05
+      "value": 429.05,
+      "nota_fiscal": "12212 + 12211 + 12213"
     },
     {
       "id": "tx01839",
@@ -18425,7 +20264,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ALIGERA",
-      "value": 174.0
+      "value": 174.0,
+      "nota_fiscal": "12207"
     },
     {
       "id": "tx01840",
@@ -18435,7 +20275,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "PSV MATERIAIS ELETRICOS",
-      "value": 986.1
+      "value": 986.1,
+      "nota_fiscal": "12417"
     },
     {
       "id": "tx01841",
@@ -18445,7 +20286,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MEGADEF",
-      "value": 659.39
+      "value": 659.39,
+      "nota_fiscal": null
     },
     {
       "id": "tx01842",
@@ -18455,7 +20297,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ALLNETS",
-      "value": 312.0
+      "value": 312.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01843",
@@ -18465,7 +20308,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRYNIT CREDERE",
-      "value": 500.0
+      "value": 500.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01844",
@@ -18475,7 +20319,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MPX",
-      "value": 385.84
+      "value": 385.84,
+      "nota_fiscal": null
     },
     {
       "id": "tx01845",
@@ -18485,7 +20330,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "FILCRILL COMPONENTES ELETRONIC",
-      "value": 755.05
+      "value": 755.05,
+      "nota_fiscal": null
     },
     {
       "id": "tx01846",
@@ -18495,7 +20341,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "WKS",
-      "value": 383.4
+      "value": 383.4,
+      "nota_fiscal": null
     },
     {
       "id": "tx01847",
@@ -18505,7 +20352,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ZENER COMPONENTES ELETRONIC LT",
-      "value": 260.0
+      "value": 260.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01848",
@@ -18515,7 +20363,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 7.24
+      "value": 7.24,
+      "nota_fiscal": null
     },
     {
       "id": "tx01849",
@@ -18524,8 +20373,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "116497",
-      "value": 70.0
+      "counterparty": "LECOMP Com. de Comp. Eletronicos LTDA (0000312)",
+      "value": 70.0,
+      "nota_fiscal": "116497"
     },
     {
       "id": "tx01850",
@@ -18534,8 +20384,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "1543",
-      "value": 910.0
+      "counterparty": "DLT SUPRIMENTOS LTDA (0000389)",
+      "value": 910.0,
+      "nota_fiscal": "1543"
     },
     {
       "id": "tx01851",
@@ -18544,8 +20395,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "261513",
-      "value": 1102.22
+      "counterparty": "ACP COMERCIO ATACADISTA DE COMPONENTES E (0000249)",
+      "value": 1102.22,
+      "nota_fiscal": "261513"
     },
     {
       "id": "tx01852",
@@ -18554,8 +20406,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "2791",
-      "value": 159.17
+      "counterparty": "CX COMERCIAL EIRELI EPP (0000329)",
+      "value": 159.17,
+      "nota_fiscal": "2791"
     },
     {
       "id": "tx01853",
@@ -18564,8 +20417,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "2794",
-      "value": 463.05
+      "counterparty": "CX COMERCIAL EIRELI EPP (0000329)",
+      "value": 463.05,
+      "nota_fiscal": "2794"
     },
     {
       "id": "tx01854",
@@ -18574,8 +20428,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "3000",
-      "value": 770.0
+      "counterparty": "MARKCEL COMPONENTES ELETRONICOS LTDA (0000245)",
+      "value": 770.0,
+      "nota_fiscal": "3000"
     },
     {
       "id": "tx01855",
@@ -18584,8 +20439,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "3837",
-      "value": 540.0
+      "counterparty": "SSAT SINALIZACAO E ADESIVOS EIRELI EPP ( (0000072)",
+      "value": 540.0,
+      "nota_fiscal": "3837"
     },
     {
       "id": "tx01856",
@@ -18594,8 +20450,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "4113",
-      "value": 1600.0
+      "counterparty": "LEDCOMP COMERCIO DE COMPONENTES ELETRONI (0000313)",
+      "value": 1600.0,
+      "nota_fiscal": "4113"
     },
     {
       "id": "tx01857",
@@ -18604,8 +20461,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "85793",
-      "value": 218.33
+      "counterparty": "COMP TOTAL COM. E IMP. DE COMP. ELETRON. (0000267)",
+      "value": 218.33,
+      "nota_fiscal": "85793"
     },
     {
       "id": "tx01858",
@@ -18615,7 +20473,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ANTONIO ROHRBACHER JUNIOR (0001297)",
-      "value": 54.99
+      "value": 54.99,
+      "nota_fiscal": "12409"
     },
     {
       "id": "tx01859",
@@ -18625,7 +20484,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "CARLOS JORGE DE PAULO (0001298)",
-      "value": 13.0
+      "value": 13.0,
+      "nota_fiscal": "12410"
     },
     {
       "id": "tx01860",
@@ -18635,7 +20495,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "COMLINK EQUIPAMENTOS ELETRONICOS LTDA (0000028)",
-      "value": 254.7
+      "value": 254.7,
+      "nota_fiscal": "12411"
     },
     {
       "id": "tx01861",
@@ -18645,7 +20506,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "CARINE G RODRIGUES (0000764)",
-      "value": 2755.8
+      "value": 2755.8,
+      "nota_fiscal": "12412"
     },
     {
       "id": "tx01862",
@@ -18655,7 +20517,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "MCM TECNOLOGIA INDUSTRIAL (0000460)",
-      "value": 440.4
+      "value": 440.4,
+      "nota_fiscal": "12413"
     },
     {
       "id": "tx01863",
@@ -18665,7 +20528,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "RYON MAQUINAS LTDA (0000662)",
-      "value": 3922.9
+      "value": 3922.9,
+      "nota_fiscal": "12414"
     },
     {
       "id": "tx01864",
@@ -18675,7 +20539,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMEN",
-      "value": 1286.47
+      "value": 1286.47,
+      "nota_fiscal": "798"
     },
     {
       "id": "tx01865",
@@ -18685,7 +20550,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SIMPLES CONECT",
-      "value": 1452.0
+      "value": 1452.0,
+      "nota_fiscal": "802"
     },
     {
       "id": "tx01866",
@@ -18695,7 +20561,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 3.62
+      "value": 3.62,
+      "nota_fiscal": null
     },
     {
       "id": "tx01867",
@@ -18705,7 +20572,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "TAIKON",
-      "value": 3750.0
+      "value": 3750.0,
+      "nota_fiscal": "12431"
     },
     {
       "id": "tx01868",
@@ -18715,7 +20583,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SUPRIDATA",
-      "value": 129.6
+      "value": 129.6,
+      "nota_fiscal": "12416"
     },
     {
       "id": "tx01869",
@@ -18725,7 +20594,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "NEW TEC",
-      "value": 245.0
+      "value": 245.0,
+      "nota_fiscal": "SNF PED 54"
     },
     {
       "id": "tx01870",
@@ -18735,7 +20605,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "UPSAI SISTEMAS DE ENERGIA LTD - 0000485",
-      "value": 555.5
+      "value": 555.5,
+      "nota_fiscal": "12165/02"
     },
     {
       "id": "tx01871",
@@ -18745,7 +20616,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "MEGAPIX COMPONENTES ELETRONICOS EIRELLI - 0000325",
-      "value": 450.0
+      "value": 450.0,
+      "nota_fiscal": "12221/01"
     },
     {
       "id": "tx01872",
@@ -18755,7 +20627,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "R & M COMPONENTES COMERCIAL ELETRONICA L - 0000826",
-      "value": 680.0
+      "value": 680.0,
+      "nota_fiscal": "12222/01"
     },
     {
       "id": "tx01873",
@@ -18765,7 +20638,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "R & M COMPONENTES COMERCIAL ELETRONICA L - 0000826",
-      "value": 680.0
+      "value": 680.0,
+      "nota_fiscal": "12226/01"
     },
     {
       "id": "tx01874",
@@ -18775,7 +20649,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "MS TECNOPON EQUIPAMENTOS ESPECIAIS LTDA - 0000373",
-      "value": 763.25
+      "value": 763.25,
+      "nota_fiscal": "12227/01"
     },
     {
       "id": "tx01875",
@@ -18785,7 +20660,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CITTA ELETRONICA IND. E COM. LTDA ME - 0000532",
-      "value": 206.0
+      "value": 206.0,
+      "nota_fiscal": "12228/01"
     },
     {
       "id": "tx01876",
@@ -18795,7 +20671,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CRISTOFOLI EQUIP. DE BIOSSEGURANCA LTDA - 0000146",
-      "value": 325.0
+      "value": 325.0,
+      "nota_fiscal": "12234/01"
     },
     {
       "id": "tx01877",
@@ -18805,7 +20682,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MKB",
-      "value": 3137.75
+      "value": 3137.75,
+      "nota_fiscal": null
     },
     {
       "id": "tx01878",
@@ -18815,7 +20693,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MEGADEF",
-      "value": 605.13
+      "value": 605.13,
+      "nota_fiscal": null
     },
     {
       "id": "tx01879",
@@ -18825,7 +20704,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MPC",
-      "value": 1495.0
+      "value": 1495.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01880",
@@ -18835,7 +20715,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL",
-      "value": 1243.68
+      "value": 1243.68,
+      "nota_fiscal": null
     },
     {
       "id": "tx01881",
@@ -18845,7 +20726,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRICONECT",
-      "value": 154.55
+      "value": 154.55,
+      "nota_fiscal": null
     },
     {
       "id": "tx01882",
@@ -18855,7 +20737,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DRN",
-      "value": 1100.0
+      "value": 1100.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01883",
@@ -18865,7 +20748,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETO",
-      "value": 12.67
+      "value": 12.67,
+      "nota_fiscal": null
     },
     {
       "id": "tx01884",
@@ -18875,7 +20759,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "SUPRIDATA NO-BREAKS (0000499)",
-      "value": 129.6
+      "value": 129.6,
+      "nota_fiscal": "12416"
     },
     {
       "id": "tx01885",
@@ -18885,7 +20770,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "PSV MATERIAIS ELETRICOS AUTOMACAO E ROBO (0001299)",
-      "value": 986.1
+      "value": 986.1,
+      "nota_fiscal": "12417"
     },
     {
       "id": "tx01886",
@@ -18895,7 +20781,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "TIPTRONIC INDUSTRIA DE TECNOLOGIA ELETRO (0001289)",
-      "value": 363.8
+      "value": 363.8,
+      "nota_fiscal": "12418"
     },
     {
       "id": "tx01887",
@@ -18905,7 +20792,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "GENERALTECH SISTEMAS INDUSTRIAIS LTDA (0001301)",
-      "value": 10.99
+      "value": 10.99,
+      "nota_fiscal": "12419"
     },
     {
       "id": "tx01888",
@@ -18915,7 +20803,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ANDERSON DONIZETE DE SOUZA (0001300)",
-      "value": 9.99
+      "value": 9.99,
+      "nota_fiscal": "12420"
     },
     {
       "id": "tx01889",
@@ -18925,7 +20814,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "BRASIL IMPLANTES COMERCIO, IMPORTACAO E (0001302)",
-      "value": 26.99
+      "value": 26.99,
+      "nota_fiscal": "12421"
     },
     {
       "id": "tx01890",
@@ -18935,7 +20825,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E (0000081)",
-      "value": 1021.65
+      "value": 1021.65,
+      "nota_fiscal": "12422"
     },
     {
       "id": "tx01891",
@@ -18945,7 +20836,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "RALCOMP COMP. ELETRONICOS EIRELI ME (0000474)",
-      "value": 650.0
+      "value": 650.0,
+      "nota_fiscal": "12423"
     },
     {
       "id": "tx01892",
@@ -18955,7 +20847,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "NEWTESC TECNOLOGIA E COMERCIO LTDA (0000106)",
-      "value": 6575.0
+      "value": 6575.0,
+      "nota_fiscal": "12424"
     },
     {
       "id": "tx01893",
@@ -18965,7 +20858,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "TRANSFIX",
-      "value": 5610.66
+      "value": 5610.66,
+      "nota_fiscal": "795"
     },
     {
       "id": "tx01894",
@@ -18975,7 +20869,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "TRANSPORTES",
       "counterparty": "WANDO",
-      "value": 1380.0
+      "value": 1380.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01895",
@@ -18985,7 +20880,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "EVOLUTEC",
-      "value": 45.0
+      "value": 45.0,
+      "nota_fiscal": "12249"
     },
     {
       "id": "tx01896",
@@ -18995,7 +20891,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "VALNEI",
-      "value": 933.98
+      "value": 933.98,
+      "nota_fiscal": "12446"
     },
     {
       "id": "tx01897",
@@ -19005,7 +20902,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CP DOS SANTOS",
-      "value": 7000.0
+      "value": 7000.0,
+      "nota_fiscal": "48"
     },
     {
       "id": "tx01898",
@@ -19015,7 +20913,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
-      "value": 650.48
+      "value": 650.48,
+      "nota_fiscal": "12174/02"
     },
     {
       "id": "tx01899",
@@ -19025,7 +20924,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "HTR EQUIPAMENTOS ELETRONICOS LTDA - 0000268",
-      "value": 1253.33
+      "value": 1253.33,
+      "nota_fiscal": "12177/02"
     },
     {
       "id": "tx01900",
@@ -19035,7 +20935,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BPM INDUSTRIA E COMERCIO - 0000541",
-      "value": 748.5
+      "value": 748.5,
+      "nota_fiscal": "12178/02"
     },
     {
       "id": "tx01901",
@@ -19045,7 +20946,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "PROVOLT TECNOLOGIA ELETRONICA LTDA - 0000886",
-      "value": 1444.0
+      "value": 1444.0,
+      "nota_fiscal": "12215/01"
     },
     {
       "id": "tx01902",
@@ -19055,7 +20957,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SIMPLES CONNECT INDUSTRIA E COMERCIO LTA - 0000308",
-      "value": 2353.0
+      "value": 2353.0,
+      "nota_fiscal": "12219/01"
     },
     {
       "id": "tx01903",
@@ -19065,7 +20968,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "MS TECNOPON EQUIPAMENTOS ESPECIAIS LTDA - 0000373",
-      "value": 438.9
+      "value": 438.9,
+      "nota_fiscal": "12242/01"
     },
     {
       "id": "tx01904",
@@ -19075,7 +20979,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "VBN INDUSTRIA E COMERCIO DE PAINEIS ELET - 0000987",
-      "value": 305.0
+      "value": 305.0,
+      "nota_fiscal": "12244/01"
     },
     {
       "id": "tx01905",
@@ -19085,7 +20990,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "NEXXO EQUIPAMENTOS ELETRONICOS LTDA - 0000225",
-      "value": 156.0
+      "value": 156.0,
+      "nota_fiscal": "12245/01"
     },
     {
       "id": "tx01906",
@@ -19095,7 +21001,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
-      "value": 428.75
+      "value": 428.75,
+      "nota_fiscal": "12248/01"
     },
     {
       "id": "tx01907",
@@ -19105,7 +21012,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO - 0000660",
-      "value": 540.5
+      "value": 540.5,
+      "nota_fiscal": "12250/01"
     },
     {
       "id": "tx01908",
@@ -19115,7 +21023,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "IMPROEL - INDUSTRIA E PROJ. ELETRO-ELET - 0000118",
-      "value": 923.0
+      "value": 923.0,
+      "nota_fiscal": "12275/01"
     },
     {
       "id": "tx01909",
@@ -19125,7 +21034,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY MAX",
-      "value": 894.33
+      "value": 894.33,
+      "nota_fiscal": null
     },
     {
       "id": "tx01910",
@@ -19135,7 +21045,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP",
-      "value": 673.57
+      "value": 673.57,
+      "nota_fiscal": null
     },
     {
       "id": "tx01911",
@@ -19145,7 +21056,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "FCP",
-      "value": 614.55
+      "value": 614.55,
+      "nota_fiscal": null
     },
     {
       "id": "tx01912",
@@ -19155,7 +21067,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "WKS",
-      "value": 145.27
+      "value": 145.27,
+      "nota_fiscal": null
     },
     {
       "id": "tx01913",
@@ -19165,7 +21078,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ORANGE",
-      "value": 705.0
+      "value": 705.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01914",
@@ -19175,7 +21089,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MRE",
-      "value": 1710.0
+      "value": 1710.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01915",
@@ -19185,7 +21100,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "LECOMP",
-      "value": 97.5
+      "value": 97.5,
+      "nota_fiscal": null
     },
     {
       "id": "tx01916",
@@ -19195,7 +21111,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "SÓCIOS",
       "counterparty": "ALEX",
-      "value": 1000.0
+      "value": 1000.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01917",
@@ -19205,7 +21122,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETO",
-      "value": 28.94
+      "value": 28.94,
+      "nota_fiscal": null
     },
     {
       "id": "tx01918",
@@ -19215,7 +21133,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "TAXA DE BANCO PIX",
-      "value": 23.29
+      "value": 23.29,
+      "nota_fiscal": null
     },
     {
       "id": "tx01919",
@@ -19224,8 +21143,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "23811",
-      "value": 693.6
+      "counterparty": "VETRONIC COMERCIO ELETRONICA LTDA (0000038)",
+      "value": 693.6,
+      "nota_fiscal": "23811"
     },
     {
       "id": "tx01920",
@@ -19235,7 +21155,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "RAFAEL OLIVEIRA DA MOTA (0001303)",
-      "value": 74.95
+      "value": 74.95,
+      "nota_fiscal": "12425"
     },
     {
       "id": "tx01921",
@@ -19245,7 +21166,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E (0000081)",
-      "value": 628.5
+      "value": 628.5,
+      "nota_fiscal": "12426"
     },
     {
       "id": "tx01922",
@@ -19255,7 +21177,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "BPM INDUSTRIA E COMERCIO (0000541)",
-      "value": 933.4
+      "value": 933.4,
+      "nota_fiscal": "12427"
     },
     {
       "id": "tx01923",
@@ -19265,7 +21188,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "MARTEC MED INDUSTRIA E COMERCIO DE EQUIP (0000788)",
-      "value": 2088.5
+      "value": 2088.5,
+      "nota_fiscal": "12428"
     },
     {
       "id": "tx01924",
@@ -19275,7 +21199,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ELETRONICA SIMAO EIRELI EPP. (0000576)",
-      "value": 937.25
+      "value": 937.25,
+      "nota_fiscal": "12429"
     },
     {
       "id": "tx01925",
@@ -19285,7 +21210,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "SSAT SINALIZACAO E ADESIVOS EIRELI EPP (0000072)",
-      "value": 1043.2
+      "value": 1043.2,
+      "nota_fiscal": "12430"
     },
     {
       "id": "tx01926",
@@ -19295,7 +21221,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "SEGURO DE EMPRÉSTIMO",
       "counterparty": "SEGURO",
-      "value": 109.79
+      "value": 109.79,
+      "nota_fiscal": null
     },
     {
       "id": "tx01927",
@@ -19305,7 +21232,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "EMPRÉSTIMO FGI",
       "counterparty": "CAPITAL DE GIRO",
-      "value": 3019.29
+      "value": 3019.29,
+      "nota_fiscal": null
     },
     {
       "id": "tx01928",
@@ -19315,7 +21243,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "EDUARDO",
-      "value": 1000.0
+      "value": 1000.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01929",
@@ -19325,7 +21254,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "JOSÉ MARIA",
-      "value": 520.13
+      "value": 520.13,
+      "nota_fiscal": null
     },
     {
       "id": "tx01930",
@@ -19335,7 +21265,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "IMPOSTOS",
       "counterparty": "DHL",
-      "value": 3724.03
+      "value": 3724.03,
+      "nota_fiscal": null
     },
     {
       "id": "tx01931",
@@ -19345,7 +21276,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "R. BAIAO INDUSTRIA E COMERCIO LTDA - 0000060",
-      "value": 5385.97
+      "value": 5385.97,
+      "nota_fiscal": "11918/03"
     },
     {
       "id": "tx01932",
@@ -19355,7 +21287,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CARINE G RODRIGUES - 0000764",
-      "value": 2217.2
+      "value": 2217.2,
+      "nota_fiscal": "12134/03"
     },
     {
       "id": "tx01933",
@@ -19365,7 +21298,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
-      "value": 1095.11
+      "value": 1095.11,
+      "nota_fiscal": "12136/03"
     },
     {
       "id": "tx01934",
@@ -19375,7 +21309,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FOCUS TECNOLOGIA E SOLUCOES LTDA - 0000742",
-      "value": 1034.5
+      "value": 1034.5,
+      "nota_fiscal": "12142/02"
     },
     {
       "id": "tx01935",
@@ -19385,7 +21320,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
-      "value": 447.78
+      "value": 447.78,
+      "nota_fiscal": "12186/02"
     },
     {
       "id": "tx01936",
@@ -19395,7 +21331,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "EDERSON VARANDA BORGES LTDA - 0000785",
-      "value": 1649.83
+      "value": 1649.83,
+      "nota_fiscal": "12191/02"
     },
     {
       "id": "tx01937",
@@ -19405,7 +21342,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "R & M COMPONENTES COMERCIAL ELETRONICA L - 0000826",
-      "value": 680.0
+      "value": 680.0,
+      "nota_fiscal": "12222/02"
     },
     {
       "id": "tx01938",
@@ -19415,7 +21353,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "R. BAIAO INDUSTRIA E COMERCIO LTDA - 0000060",
-      "value": 2428.6
+      "value": 2428.6,
+      "nota_fiscal": "12231/01"
     },
     {
       "id": "tx01939",
@@ -19425,7 +21364,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "NIATRON IND. E COM. DE EQUIP. ELETRO. - 0000143",
-      "value": 573.42
+      "value": 573.42,
+      "nota_fiscal": "12235/01"
     },
     {
       "id": "tx01940",
@@ -19435,7 +21375,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "MULTICRAFT ELECTRONICS DO BRASIL LTDA - 0001209",
-      "value": 285.0
+      "value": 285.0,
+      "nota_fiscal": "12243/01"
     },
     {
       "id": "tx01941",
@@ -19445,7 +21386,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "DENTSCLER IND. DE APAR. ODONTO. EIRELLI - 0000390",
-      "value": 677.5
+      "value": 677.5,
+      "nota_fiscal": "12262/01"
     },
     {
       "id": "tx01942",
@@ -19455,7 +21397,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "VINTEK IND., COMERCIO E SERVICOS LTDA - 0000894",
-      "value": 1547.66
+      "value": 1547.66,
+      "nota_fiscal": "12265/01"
     },
     {
       "id": "tx01943",
@@ -19465,7 +21408,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ARIELTEK INDUSTRIA E COMERCIO LTDA - 0000314",
-      "value": 267.5
+      "value": 267.5,
+      "nota_fiscal": "12266/01"
     },
     {
       "id": "tx01944",
@@ -19475,7 +21419,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BALMARC SOLUCOES EIRELI - 0000011",
-      "value": 584.0
+      "value": 584.0,
+      "nota_fiscal": "12267/01"
     },
     {
       "id": "tx01945",
@@ -19485,7 +21430,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "GENKI MARCELO",
-      "value": 2886.0
+      "value": 2886.0,
+      "nota_fiscal": "12449"
     },
     {
       "id": "tx01946",
@@ -19495,7 +21441,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETO",
-      "value": 25.34
+      "value": 25.34,
+      "nota_fiscal": null
     },
     {
       "id": "tx01947",
@@ -19505,7 +21452,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "FRANCISCO",
-      "value": 1700.0
+      "value": 1700.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01948",
@@ -19515,7 +21463,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRICONECT COM",
-      "value": 327.5
+      "value": 327.5,
+      "nota_fiscal": null
     },
     {
       "id": "tx01949",
@@ -19525,7 +21474,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRICOMP COM",
-      "value": 632.5
+      "value": 632.5,
+      "nota_fiscal": null
     },
     {
       "id": "tx01950",
@@ -19535,7 +21485,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "CX COMERCIAL",
-      "value": 270.0
+      "value": 270.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01951",
@@ -19545,7 +21496,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "COMP TOTAL",
-      "value": 308.86
+      "value": 308.86,
+      "nota_fiscal": null
     },
     {
       "id": "tx01952",
@@ -19555,7 +21507,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP C A COMP",
-      "value": 3773.29
+      "value": 3773.29,
+      "nota_fiscal": null
     },
     {
       "id": "tx01953",
@@ -19565,7 +21518,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP C A COMP",
-      "value": 500.47
+      "value": 500.47,
+      "nota_fiscal": null
     },
     {
       "id": "tx01954",
@@ -19575,7 +21529,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ELCOMP COM",
-      "value": 920.67
+      "value": 920.67,
+      "nota_fiscal": null
     },
     {
       "id": "tx01955",
@@ -19585,7 +21540,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY MAX",
-      "value": 802.46
+      "value": 802.46,
+      "nota_fiscal": null
     },
     {
       "id": "tx01956",
@@ -19595,7 +21551,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY MAX",
-      "value": 387.28
+      "value": 387.28,
+      "nota_fiscal": null
     },
     {
       "id": "tx01957",
@@ -19605,7 +21562,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "CX COMERCIA",
-      "value": 325.0
+      "value": 325.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01958",
@@ -19615,7 +21573,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ORANGE E BLACK",
-      "value": 270.0
+      "value": 270.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01959",
@@ -19625,7 +21584,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "CX COMERCIAL",
-      "value": 283.5
+      "value": 283.5,
+      "nota_fiscal": null
     },
     {
       "id": "tx01960",
@@ -19635,7 +21595,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DLT SUPRIMENTOS",
-      "value": 170.0
+      "value": 170.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01961",
@@ -19645,7 +21606,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "VETRONIC COM",
-      "value": 628.32
+      "value": 628.32,
+      "nota_fiscal": null
     },
     {
       "id": "tx01962",
@@ -19655,7 +21617,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL COMERCIO",
-      "value": 720.0
+      "value": 720.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01963",
@@ -19665,7 +21628,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "LECOMP COMERCIAL",
-      "value": 342.0
+      "value": 342.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01964",
@@ -19675,7 +21639,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL COMERCIO",
-      "value": 1303.63
+      "value": 1303.63,
+      "nota_fiscal": null
     },
     {
       "id": "tx01965",
@@ -19685,7 +21650,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "GLOBAL CREDERE",
-      "value": 650.0
+      "value": 650.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01966",
@@ -19695,7 +21661,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY MAX",
-      "value": 385.73
+      "value": 385.73,
+      "nota_fiscal": null
     },
     {
       "id": "tx01967",
@@ -19705,7 +21672,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "GASTOS FIXOS",
       "counterparty": "EMPRESA  CORREIOS",
-      "value": 1801.14
+      "value": 1801.14,
+      "nota_fiscal": null
     },
     {
       "id": "tx01968",
@@ -19715,7 +21683,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "GASTOS FIXOS",
       "counterparty": "IUVEN - PROSPERCLOUD",
-      "value": 290.97
+      "value": 290.97,
+      "nota_fiscal": null
     },
     {
       "id": "tx01969",
@@ -19725,7 +21694,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "GASTOS FIXOS",
       "counterparty": "IUVEN - PROSPERCLOUD",
-      "value": 571.5
+      "value": 571.5,
+      "nota_fiscal": null
     },
     {
       "id": "tx01970",
@@ -19735,7 +21705,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "Pluxxe -Bonus funcionários",
-      "value": 790.0
+      "value": 790.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01971",
@@ -19744,8 +21715,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "15917",
-      "value": 1710.0
+      "counterparty": "MRE FERRAMENTAS COMERCIAL LTDA (0000089)",
+      "value": 1710.0,
+      "nota_fiscal": "15917"
     },
     {
       "id": "tx01972",
@@ -19754,8 +21726,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "203811",
-      "value": 904.09
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 904.09,
+      "nota_fiscal": "203811"
     },
     {
       "id": "tx01973",
@@ -19764,8 +21737,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "33161",
-      "value": 197.5
+      "counterparty": "ALLNETSYS COMERCIO IMPORTACAO E SERVICOS (0000036)",
+      "value": 197.5,
+      "nota_fiscal": "33161"
     },
     {
       "id": "tx01974",
@@ -19774,8 +21748,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "3419",
-      "value": 344.5
+      "counterparty": "MPX COMPONENTES ELETRONICOS LTDA (0000303)",
+      "value": 344.5,
+      "nota_fiscal": "3419"
     },
     {
       "id": "tx01975",
@@ -19784,8 +21759,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "4294",
-      "value": 328.0
+      "counterparty": "MDS COMPONENTES ELETRONICOS LTDA (0000297)",
+      "value": 328.0,
+      "nota_fiscal": "4294"
     },
     {
       "id": "tx01976",
@@ -19794,8 +21770,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "76396",
-      "value": 470.0
+      "counterparty": "IDALL COM. ATAC. DE COMP. ELETR. LTDA (0000011)",
+      "value": 470.0,
+      "nota_fiscal": "76396"
     },
     {
       "id": "tx01977",
@@ -19804,8 +21781,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "85849",
-      "value": 143.78
+      "counterparty": "COMP TOTAL COM. E IMP. DE COMP. ELETRON. (0000267)",
+      "value": 143.78,
+      "nota_fiscal": "85849"
     },
     {
       "id": "tx01978",
@@ -19814,8 +21792,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "89587",
-      "value": 298.87
+      "counterparty": "MEGAPIX COMP. ELETRONICOS LTDA-EPP (0000275)",
+      "value": 298.87,
+      "nota_fiscal": "89587"
     },
     {
       "id": "tx01979",
@@ -19825,7 +21804,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "TAIKON INDUSTRIA E COM DE APARELHOS ELET (0001061)",
-      "value": 3750.0
+      "value": 3750.0,
+      "nota_fiscal": "12431"
     },
     {
       "id": "tx01980",
@@ -19835,7 +21815,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "VITORIA INDUSTRIA ELETRONICA LTDA (0001305)",
-      "value": 1515.2
+      "value": 1515.2,
+      "nota_fiscal": "12432"
     },
     {
       "id": "tx01981",
@@ -19845,7 +21826,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "LEANDRO GOMES FERRAZ (0001309)",
-      "value": 24.99
+      "value": 24.99,
+      "nota_fiscal": "12433"
     },
     {
       "id": "tx01982",
@@ -19855,7 +21837,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "RENAN GABRIEL CORREA DE LI (0001307)",
-      "value": 16.99
+      "value": 16.99,
+      "nota_fiscal": "12434"
     },
     {
       "id": "tx01983",
@@ -19865,7 +21848,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ARIELTEK INDUSTRIA E COMERCIO LTDA (0000314)",
-      "value": 216.0
+      "value": 216.0,
+      "nota_fiscal": "12435"
     },
     {
       "id": "tx01984",
@@ -19875,7 +21859,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "EVOLUTEC INDUSTRIA E COMERCIO DE ELETROA (0000229)",
-      "value": 253.5
+      "value": 253.5,
+      "nota_fiscal": "12436"
     },
     {
       "id": "tx01985",
@@ -19885,7 +21870,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ALLPRINT",
-      "value": 2581.67
+      "value": 2581.67,
+      "nota_fiscal": "796"
     },
     {
       "id": "tx01986",
@@ -19895,7 +21881,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 1.81
+      "value": 1.81,
+      "nota_fiscal": null
     },
     {
       "id": "tx01987",
@@ -19905,7 +21892,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "S.T.E.E. TECNOLOGIA ELETROELETRONICA LT - 0000062",
-      "value": 358.53
+      "value": 358.53,
+      "nota_fiscal": "12220/02"
     },
     {
       "id": "tx01988",
@@ -19915,7 +21903,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "AC/DC - 0000218",
-      "value": 797.0
+      "value": 797.0,
+      "nota_fiscal": "12270/01"
     },
     {
       "id": "tx01989",
@@ -19925,7 +21914,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "J.M. MAQUINAS AUTOMOTIVAS EIRELI - 0000387",
-      "value": 1879.29
+      "value": 1879.29,
+      "nota_fiscal": "12316/01"
     },
     {
       "id": "tx01990",
@@ -19935,7 +21925,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "TRANSFIX ASSISTENCIA TECN. E VENDAS EQUI - 0000199",
-      "value": 750.0
+      "value": 750.0,
+      "nota_fiscal": "12318/01"
     },
     {
       "id": "tx01991",
@@ -19945,7 +21936,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "MOVIMENTO",
-      "value": 7000.0
+      "value": 7000.0,
+      "nota_fiscal": "MOVIMENTO"
     },
     {
       "id": "tx01992",
@@ -19955,7 +21947,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETO",
-      "value": 7.24
+      "value": 7.24,
+      "nota_fiscal": null
     },
     {
       "id": "tx01993",
@@ -19965,7 +21958,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "MOVIMENTO",
       "counterparty": "MOVIMENTO",
-      "value": 7000.0
+      "value": 7000.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01994",
@@ -19975,7 +21969,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "COMEDES",
-      "value": 1200.0
+      "value": 1200.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01995",
@@ -19985,7 +21980,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "MATHEUS ROCHA",
-      "value": 2419.48
+      "value": 2419.48,
+      "nota_fiscal": null
     },
     {
       "id": "tx01996",
@@ -19995,7 +21991,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "MATHEUS SOUSA",
-      "value": 1028.32
+      "value": 1028.32,
+      "nota_fiscal": null
     },
     {
       "id": "tx01997",
@@ -20005,7 +22002,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "TAMIRES",
-      "value": 1749.25
+      "value": 1749.25,
+      "nota_fiscal": null
     },
     {
       "id": "tx01998",
@@ -20015,7 +22013,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "ALINE",
-      "value": 1900.0
+      "value": 1900.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx01999",
@@ -20025,7 +22024,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "S-OHM COMERCIAL LTDA",
-      "value": 30.0
+      "value": 30.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02000",
@@ -20035,7 +22035,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ORANGE E BLACK DISTRIBUIDORA L",
-      "value": 445.0
+      "value": 445.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02001",
@@ -20045,7 +22046,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "LEDCOMP-CREDERE",
-      "value": 1725.0
+      "value": 1725.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02002",
@@ -20054,8 +22056,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "261720",
-      "value": 787.98
+      "counterparty": "ACP COMERCIO ATACADISTA DE COMPONENTES E (0000249)",
+      "value": 787.98,
+      "nota_fiscal": "261720"
     },
     {
       "id": "tx02003",
@@ -20065,7 +22068,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "SEMI-DIGITAL LTDA (0000450)",
-      "value": 272.5
+      "value": 272.5,
+      "nota_fiscal": "12437"
     },
     {
       "id": "tx02004",
@@ -20075,7 +22079,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FABIO CRISTIAN LOBATO FREITAS (0001312)",
-      "value": 26.99
+      "value": 26.99,
+      "nota_fiscal": "12438"
     },
     {
       "id": "tx02005",
@@ -20085,7 +22090,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "WANDERSON SANTOS FEITOSA (0001311)",
-      "value": 13.0
+      "value": 13.0,
+      "nota_fiscal": "12439"
     },
     {
       "id": "tx02006",
@@ -20095,7 +22101,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "JAIRO PEREIRA BARBOSA COELHO (0001313)",
-      "value": 19.99
+      "value": 19.99,
+      "nota_fiscal": "12440"
     },
     {
       "id": "tx02007",
@@ -20105,7 +22112,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "CARLOS RODRIGUES DA COSTA (0001308)",
-      "value": 44.99
+      "value": 44.99,
+      "nota_fiscal": "12441"
     },
     {
       "id": "tx02008",
@@ -20115,7 +22123,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "AWA EQUIPAMENTOS E SISTEMA (0000433)",
-      "value": 215.0
+      "value": 215.0,
+      "nota_fiscal": "12443"
     },
     {
       "id": "tx02009",
@@ -20125,7 +22134,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "AWA EQUIPAMENTOS E SISTEMA (0000433)",
-      "value": 179.2
+      "value": 179.2,
+      "nota_fiscal": "12444"
     },
     {
       "id": "tx02010",
@@ -20135,7 +22145,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "SOLSUSTENTAVEL PROD. ELETRO ELETRONICOS (0000125)",
-      "value": 1547.0
+      "value": 1547.0,
+      "nota_fiscal": "12445"
     },
     {
       "id": "tx02011",
@@ -20145,7 +22156,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "VALNEI VIEIRA DA SILVA 00391345630 (0000070)",
-      "value": 977.98
+      "value": 977.98,
+      "nota_fiscal": "12446"
     },
     {
       "id": "tx02012",
@@ -20155,7 +22167,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FOCUS TECNOLOGIA E SOLUCOES LTDA (0000742)",
-      "value": 1639.25
+      "value": 1639.25,
+      "nota_fiscal": "12448"
     },
     {
       "id": "tx02013",
@@ -20165,7 +22178,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "MARCELO DIOGO DA SILVA HAYDEN 0419442197 (0001194)",
-      "value": 2886.0
+      "value": 2886.0,
+      "nota_fiscal": "12449"
     },
     {
       "id": "tx02014",
@@ -20175,7 +22189,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "TRANSFIX ASSISTENCIA TECN. E VENDAS EQUI (0000199)",
-      "value": 1040.0
+      "value": 1040.0,
+      "nota_fiscal": "12450"
     },
     {
       "id": "tx02015",
@@ -20185,7 +22200,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "TRANSFIX ASSISTENCIA TECN. E VENDAS EQUI (0000199)",
-      "value": 1500.0
+      "value": 1500.0,
+      "nota_fiscal": "12451"
     },
     {
       "id": "tx02016",
@@ -20195,7 +22211,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SIMPLES CONECT",
-      "value": 1452.0
+      "value": 1452.0,
+      "nota_fiscal": "802"
     },
     {
       "id": "tx02017",
@@ -20205,7 +22222,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "INGRID",
-      "value": 1782.34
+      "value": 1782.34,
+      "nota_fiscal": null
     },
     {
       "id": "tx02018",
@@ -20215,7 +22233,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "FRAN MONALISA",
-      "value": 1851.25
+      "value": 1851.25,
+      "nota_fiscal": null
     },
     {
       "id": "tx02019",
@@ -20225,7 +22244,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 1.81
+      "value": 1.81,
+      "nota_fiscal": null
     },
     {
       "id": "tx02020",
@@ -20235,7 +22255,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "TRANSFIX ASSISTENCIA TECN. E VENDAS EQUI (0000199)",
-      "value": 30074.5
+      "value": 30074.5,
+      "nota_fiscal": "815"
     },
     {
       "id": "tx02021",
@@ -20245,7 +22266,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ELETROFELIX",
-      "value": 115.4
+      "value": 115.4,
+      "nota_fiscal": "12303"
     },
     {
       "id": "tx02022",
@@ -20255,7 +22277,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ELETROFELIX",
-      "value": 48.38
+      "value": 48.38,
+      "nota_fiscal": "12304"
     },
     {
       "id": "tx02023",
@@ -20265,7 +22288,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "MS TECNOPON EQUIPAMENTOS ESPECIAIS LTDA - 0000373",
-      "value": 763.25
+      "value": 763.25,
+      "nota_fiscal": "12227/02"
     },
     {
       "id": "tx02024",
@@ -20275,7 +22299,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SAMUEL ELETROTECNICA - 0000041",
-      "value": 519.2
+      "value": 519.2,
+      "nota_fiscal": "12268/01"
     },
     {
       "id": "tx02025",
@@ -20285,7 +22310,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "R. BAIAO INDUSTRIA E COMERCIO LTDA - 0000060",
-      "value": 425.0
+      "value": 425.0,
+      "nota_fiscal": "12283/01"
     },
     {
       "id": "tx02026",
@@ -20295,7 +22321,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ALIGERA EQUIPAMENTOS DIGITAIS LTDA - 0000188",
-      "value": 677.5
+      "value": 677.5,
+      "nota_fiscal": "12285/01"
     },
     {
       "id": "tx02027",
@@ -20305,7 +22332,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "R. BAIAO INDUSTRIA E COMERCIO LTDA - 0000060",
-      "value": 260.0
+      "value": 260.0,
+      "nota_fiscal": "12286/01"
     },
     {
       "id": "tx02028",
@@ -20315,7 +22343,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ERTY E DE OLIVEIRA",
-      "value": 680.0
+      "value": 680.0,
+      "nota_fiscal": "12284"
     },
     {
       "id": "tx02029",
@@ -20325,7 +22354,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETO",
-      "value": 10.86
+      "value": 10.86,
+      "nota_fiscal": null
     },
     {
       "id": "tx02030",
@@ -20335,7 +22365,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "LECOMP",
-      "value": 65.0
+      "value": 65.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02031",
@@ -20345,7 +22376,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL COMERCIO",
-      "value": 270.0
+      "value": 270.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02032",
@@ -20355,7 +22387,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "VETRONIC COM",
-      "value": 437.62
+      "value": 437.62,
+      "nota_fiscal": null
     },
     {
       "id": "tx02033",
@@ -20365,7 +22398,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ALLNETSYS COM",
-      "value": 187.5
+      "value": 187.5,
+      "nota_fiscal": null
     },
     {
       "id": "tx02034",
@@ -20375,7 +22409,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP C A COMP",
-      "value": 638.24
+      "value": 638.24,
+      "nota_fiscal": null
     },
     {
       "id": "tx02035",
@@ -20385,7 +22420,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "HEKTRON COM",
-      "value": 399.84
+      "value": 399.84,
+      "nota_fiscal": null
     },
     {
       "id": "tx02036",
@@ -20395,7 +22431,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MKB SENSORES LTDA",
-      "value": 2274.77
+      "value": 2274.77,
+      "nota_fiscal": null
     },
     {
       "id": "tx02037",
@@ -20405,7 +22442,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "CX COMERCIAL EIRELI",
-      "value": 342.0
+      "value": 342.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02038",
@@ -20415,7 +22453,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "PRODUPARK EQUIP. ELETRO. E IMP. LTDA (0000056)",
-      "value": 3515.33
+      "value": 3515.33,
+      "nota_fiscal": "12452"
     },
     {
       "id": "tx02039",
@@ -20425,7 +22464,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "PRODUPARK EQUIP. ELETRO. E IMP. LTDA (0000056)",
-      "value": 4758.0
+      "value": 4758.0,
+      "nota_fiscal": "12453"
     },
     {
       "id": "tx02040",
@@ -20435,7 +22475,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E (0000081)",
-      "value": 755.2
+      "value": 755.2,
+      "nota_fiscal": "12454"
     },
     {
       "id": "tx02041",
@@ -20445,7 +22486,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "GAMA COMERCIO E SERVICOS DE INSTRUMENTOS (0001314)",
-      "value": 89.98
+      "value": 89.98,
+      "nota_fiscal": "12455"
     },
     {
       "id": "tx02042",
@@ -20455,7 +22497,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "R. BAIAO INDUSTRIA E COMERCIO LTDA (0000060)",
-      "value": 11729.36
+      "value": 11729.36,
+      "nota_fiscal": "12457"
     },
     {
       "id": "tx02043",
@@ -20465,7 +22508,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "CHAVE DIGITAL TECNOLOGIA ELETRONICA LTDA (0000022)",
-      "value": 728.0
+      "value": 728.0,
+      "nota_fiscal": "12458"
     },
     {
       "id": "tx02044",
@@ -20475,7 +22519,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ELETROFELIX INDUSTRIA E COMERCIO LTDA (0000477)",
-      "value": 651.0
+      "value": 651.0,
+      "nota_fiscal": "12459"
     },
     {
       "id": "tx02045",
@@ -20485,7 +22530,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "E DE OLIVEIRA BARBOSA ELETRONICA (0000898)",
-      "value": 1290.4
+      "value": 1290.4,
+      "nota_fiscal": "12460"
     },
     {
       "id": "tx02046",
@@ -20495,7 +22541,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "R.BAIÃO",
-      "value": 539.0
+      "value": 539.0,
+      "nota_fiscal": "804"
     },
     {
       "id": "tx02047",
@@ -20505,7 +22552,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 1.81
+      "value": 1.81,
+      "nota_fiscal": null
     },
     {
       "id": "tx02048",
@@ -20515,7 +22563,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "R. BAIAO INDUSTRIA E COMERCIO LTDA (0000060)",
-      "value": 949.0
+      "value": 949.0,
+      "nota_fiscal": "816"
     },
     {
       "id": "tx02049",
@@ -20525,7 +22574,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CHAVE DIGITAL TECNOLOGIA ELETRONICA LTDA - 0000022",
-      "value": 399.2
+      "value": 399.2,
+      "nota_fiscal": "12317/01"
     },
     {
       "id": "tx02050",
@@ -20535,7 +22585,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "PRODUTOS ELETRONICOS FRATA LTDA - 0000223",
-      "value": 2430.0
+      "value": 2430.0,
+      "nota_fiscal": "12150/02"
     },
     {
       "id": "tx02051",
@@ -20545,7 +22596,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "HTR EQUIPAMENTOS ELETRONICOS LTDA - 0000268",
-      "value": 1253.33
+      "value": 1253.33,
+      "nota_fiscal": "12177/03"
     },
     {
       "id": "tx02052",
@@ -20555,7 +22607,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "NIATRON IND. E COM. DE EQUIP. ELETRO. - 0000143",
-      "value": 555.0
+      "value": 555.0,
+      "nota_fiscal": "12235/02"
     },
     {
       "id": "tx02053",
@@ -20565,7 +22618,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
-      "value": 428.75
+      "value": 428.75,
+      "nota_fiscal": "12248/02"
     },
     {
       "id": "tx02054",
@@ -20575,7 +22629,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO - 0000660",
-      "value": 540.5
+      "value": 540.5,
+      "nota_fiscal": "12250/02"
     },
     {
       "id": "tx02055",
@@ -20585,7 +22640,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ARIELTEK INDUSTRIA E COMERCIO LTDA - 0000314",
-      "value": 628.24
+      "value": 628.24,
+      "nota_fiscal": "12300/01"
     },
     {
       "id": "tx02056",
@@ -20595,7 +22651,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CONDUVOX TELEMATICA LTDA - 0000031",
-      "value": 397.3
+      "value": 397.3,
+      "nota_fiscal": "12302/01"
     },
     {
       "id": "tx02057",
@@ -20605,7 +22662,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETO",
-      "value": 12.67
+      "value": 12.67,
+      "nota_fiscal": null
     },
     {
       "id": "tx02058",
@@ -20615,7 +22673,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP C A COMP",
-      "value": 573.8
+      "value": 573.8,
+      "nota_fiscal": null
     },
     {
       "id": "tx02059",
@@ -20625,7 +22684,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "CROMAX ELET",
-      "value": 823.18
+      "value": 823.18,
+      "nota_fiscal": null
     },
     {
       "id": "tx02060",
@@ -20635,7 +22695,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ZENNER",
-      "value": 424.0
+      "value": 424.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02061",
@@ -20645,7 +22706,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "COMP TOTAL",
-      "value": 215.13
+      "value": 215.13,
+      "nota_fiscal": null
     },
     {
       "id": "tx02062",
@@ -20655,7 +22717,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRYNIT CREDERE",
-      "value": 150.0
+      "value": 150.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02063",
@@ -20665,7 +22728,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "FCP IMPORTACAO",
-      "value": 614.55
+      "value": 614.55,
+      "nota_fiscal": null
     },
     {
       "id": "tx02064",
@@ -20674,8 +22738,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "116582",
-      "value": 97.5
+      "counterparty": "LECOMP Com. de Comp. Eletronicos LTDA (0000312)",
+      "value": 97.5,
+      "nota_fiscal": "116582"
     },
     {
       "id": "tx02065",
@@ -20684,8 +22749,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "116638",
-      "value": 65.0
+      "counterparty": "LECOMP Com. de Comp. Eletronicos LTDA (0000312)",
+      "value": 65.0,
+      "nota_fiscal": "116638"
     },
     {
       "id": "tx02066",
@@ -20694,8 +22760,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "18526",
-      "value": 1323.94
+      "counterparty": "TRICONECT COMERCIAL ELETR. LTDA (0000321)",
+      "value": 1323.94,
+      "nota_fiscal": "18526"
     },
     {
       "id": "tx02067",
@@ -20704,8 +22771,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "203928",
-      "value": 1114.41
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 1114.41,
+      "nota_fiscal": "203928"
     },
     {
       "id": "tx02068",
@@ -20714,8 +22782,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "204149",
-      "value": 166.0
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 166.0,
+      "nota_fiscal": "204149"
     },
     {
       "id": "tx02069",
@@ -20724,8 +22793,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "261839",
-      "value": 2050.49
+      "counterparty": "ACP COMERCIO ATACADISTA DE COMPONENTES E (0000249)",
+      "value": 2050.49,
+      "nota_fiscal": "261839"
     },
     {
       "id": "tx02070",
@@ -20734,8 +22804,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "2812",
-      "value": 386.6
+      "counterparty": "CX COMERCIAL EIRELI EPP (0000329)",
+      "value": 386.6,
+      "nota_fiscal": "2812"
     },
     {
       "id": "tx02071",
@@ -20744,8 +22815,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "2818",
-      "value": 461.7
+      "counterparty": "CX COMERCIAL EIRELI EPP (0000329)",
+      "value": 461.7,
+      "nota_fiscal": "2818"
     },
     {
       "id": "tx02072",
@@ -20754,8 +22826,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "33212",
-      "value": 187.5
+      "counterparty": "ALLNETSYS COMERCIO IMPORTACAO E SERVICOS (0000036)",
+      "value": 187.5,
+      "nota_fiscal": "33212"
     },
     {
       "id": "tx02073",
@@ -20764,8 +22837,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "3775",
-      "value": 127.0
+      "counterparty": "S-ohm Comercial Ltda. (0000183)",
+      "value": 127.0,
+      "nota_fiscal": "3775"
     },
     {
       "id": "tx02074",
@@ -20774,8 +22848,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "68424",
-      "value": 390.08
+      "counterparty": "TRICOMP COMERCIAL ELETR. LTDA (0000278)",
+      "value": 390.08,
+      "nota_fiscal": "68424"
     },
     {
       "id": "tx02075",
@@ -20784,8 +22859,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "68444",
-      "value": 584.27
+      "counterparty": "TRICOMP COMERCIAL ELETR. LTDA (0000278)",
+      "value": 584.27,
+      "nota_fiscal": "68444"
     },
     {
       "id": "tx02076",
@@ -20794,8 +22870,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "76465",
-      "value": 456.5
+      "counterparty": "IDALL COM. ATAC. DE COMP. ELETR. LTDA (0000011)",
+      "value": 456.5,
+      "nota_fiscal": "76465"
     },
     {
       "id": "tx02077",
@@ -20804,8 +22881,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "85940",
-      "value": 521.0
+      "counterparty": "COMP TOTAL COM. E IMP. DE COMP. ELETRON. (0000267)",
+      "value": 521.0,
+      "nota_fiscal": "85940"
     },
     {
       "id": "tx02078",
@@ -20815,7 +22893,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FIBERWAN IND. DE EQUIP. ELETTR. LTDA-EPP (0000411)",
-      "value": 1058.0
+      "value": 1058.0,
+      "nota_fiscal": "12461"
     },
     {
       "id": "tx02079",
@@ -20825,7 +22904,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E (0000081)",
-      "value": 285.4
+      "value": 285.4,
+      "nota_fiscal": "12462"
     },
     {
       "id": "tx02080",
@@ -20835,7 +22915,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "JAIRO",
-      "value": 200.42
+      "value": 200.42,
+      "nota_fiscal": "SNF PED 8"
     },
     {
       "id": "tx02081",
@@ -20845,7 +22926,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "NEW TEC",
-      "value": 97.0
+      "value": 97.0,
+      "nota_fiscal": "SNF PED 56"
     },
     {
       "id": "tx02082",
@@ -20855,7 +22937,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "LOGUS",
-      "value": 1090.0
+      "value": 1090.0,
+      "nota_fiscal": "12491"
     },
     {
       "id": "tx02083",
@@ -20865,7 +22948,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "TRANSFIX ASSISTENCIA TECN. E VENDAS EQUI - 0000199",
-      "value": 240.0
+      "value": 240.0,
+      "nota_fiscal": "12290"
     },
     {
       "id": "tx02084",
@@ -20875,7 +22959,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
-      "value": 447.78
+      "value": 447.78,
+      "nota_fiscal": "12186/03"
     },
     {
       "id": "tx02085",
@@ -20885,7 +22970,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "EDERSON VARANDA BORGES LTDA - 0000785",
-      "value": 1649.83
+      "value": 1649.83,
+      "nota_fiscal": "12191/03"
     },
     {
       "id": "tx02086",
@@ -20895,7 +22981,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ROYALCOMP COMPONENTES ELETR. LTDA - 0000570",
-      "value": 1488.0
+      "value": 1488.0,
+      "nota_fiscal": "12299/01"
     },
     {
       "id": "tx02087",
@@ -20905,7 +22992,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "UPSAI SISTEMAS DE ENERGIA LTD - 0000485",
-      "value": 385.04
+      "value": 385.04,
+      "nota_fiscal": "12306/01"
     },
     {
       "id": "tx02088",
@@ -20915,7 +23003,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SIMPLES CONNECT INDUSTRIA E COMERCIO LTA - 0000308",
-      "value": 952.0
+      "value": 952.0,
+      "nota_fiscal": "12313/01"
     },
     {
       "id": "tx02089",
@@ -20925,7 +23014,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BPM INDUSTRIA E COMERCIO - 0000541",
-      "value": 835.0
+      "value": 835.0,
+      "nota_fiscal": "12314/01"
     },
     {
       "id": "tx02090",
@@ -20935,7 +23025,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CARINE G RODRIGUES - 0000764",
-      "value": 674.25
+      "value": 674.25,
+      "nota_fiscal": "12315/01"
     },
     {
       "id": "tx02091",
@@ -20945,7 +23036,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CENTRAL",
-      "value": 67.5
+      "value": 67.5,
+      "nota_fiscal": null
     },
     {
       "id": "tx02092",
@@ -20955,7 +23047,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "GASTOS FIXOS",
       "counterparty": "CLARO",
-      "value": 175.9
+      "value": 175.9,
+      "nota_fiscal": null
     },
     {
       "id": "tx02093",
@@ -20965,7 +23058,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "SEGURO SÓCIO CARRO",
       "counterparty": "SUHAY",
-      "value": 931.74
+      "value": 931.74,
+      "nota_fiscal": null
     },
     {
       "id": "tx02094",
@@ -20975,7 +23069,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "SINDICATO DO COM",
-      "value": 65.37
+      "value": 65.37,
+      "nota_fiscal": null
     },
     {
       "id": "tx02095",
@@ -20985,7 +23080,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRICONECT COM",
-      "value": 142.5
+      "value": 142.5,
+      "nota_fiscal": null
     },
     {
       "id": "tx02096",
@@ -20995,7 +23091,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY MAX",
-      "value": 384.75
+      "value": 384.75,
+      "nota_fiscal": null
     },
     {
       "id": "tx02097",
@@ -21003,9 +23100,10 @@ const MAXLED_DATA = {
       "division": "iluminacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "PLANO DE SAÚDE",
+      "category": "FORNECEDORES",
       "counterparty": "PORTO SEGURO",
-      "value": 2620.16
+      "value": 2620.16,
+      "nota_fiscal": null
     },
     {
       "id": "tx02098",
@@ -21015,7 +23113,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ALLNETSYS COM",
-      "value": 150.0
+      "value": 150.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02099",
@@ -21025,7 +23124,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP C A COMP",
-      "value": 573.72
+      "value": 573.72,
+      "nota_fiscal": null
     },
     {
       "id": "tx02100",
@@ -21035,7 +23135,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "COMP TOTAL",
-      "value": 665.63
+      "value": 665.63,
+      "nota_fiscal": null
     },
     {
       "id": "tx02101",
@@ -21045,7 +23146,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MICROELECTRON",
-      "value": 1920.46
+      "value": 1920.46,
+      "nota_fiscal": null
     },
     {
       "id": "tx02102",
@@ -21055,7 +23157,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL COMERCIO",
-      "value": 577.5
+      "value": 577.5,
+      "nota_fiscal": null
     },
     {
       "id": "tx02103",
@@ -21065,7 +23168,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "SÓCIOS",
       "counterparty": "MARIA",
-      "value": 8000.0
+      "value": 8000.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02104",
@@ -21075,7 +23179,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETO",
-      "value": 12.67
+      "value": 12.67,
+      "nota_fiscal": null
     },
     {
       "id": "tx02105",
@@ -21084,8 +23189,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "261969",
-      "value": 833.02
+      "counterparty": "ACP COMERCIO ATACADISTA DE COMPONENTES E (0000249)",
+      "value": 833.02,
+      "nota_fiscal": "261969"
     },
     {
       "id": "tx02106",
@@ -21094,8 +23200,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "53867",
-      "value": 8862.8
+      "counterparty": "MKB ELETRONICA LTDA (0000088)",
+      "value": 8862.8,
+      "nota_fiscal": "53867"
     },
     {
       "id": "tx02107",
@@ -21105,7 +23212,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "JOELSON ALVES FERREIRA (0001310)",
-      "value": 1400.0
+      "value": 1400.0,
+      "nota_fiscal": "12463"
     },
     {
       "id": "tx02108",
@@ -21115,7 +23223,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "INFOLITE TECNOLOGIA EM INFORMACAO (0000540)",
-      "value": 1343.35
+      "value": 1343.35,
+      "nota_fiscal": "12464"
     },
     {
       "id": "tx02109",
@@ -21125,7 +23234,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO (0000660)",
-      "value": 4655.0
+      "value": 4655.0,
+      "nota_fiscal": "12465"
     },
     {
       "id": "tx02110",
@@ -21135,7 +23245,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "R. BAIAO INDUSTRIA E COMERCIO LTDA (0000060)",
-      "value": 408.0
+      "value": 408.0,
+      "nota_fiscal": "12466"
     },
     {
       "id": "tx02111",
@@ -21145,7 +23256,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ANA LUCIA ALEXANDRE ALVINO (0001315)",
-      "value": 13.0
+      "value": 13.0,
+      "nota_fiscal": "12467"
     },
     {
       "id": "tx02112",
@@ -21155,7 +23267,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "HIGHZ VALE INDUSTRIA ELETRONICA LTDA (0000526)",
-      "value": 928.5
+      "value": 928.5,
+      "nota_fiscal": "12468"
     },
     {
       "id": "tx02113",
@@ -21165,7 +23278,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "EXPOENTE TECNOLOGIA ELETRONICA LTDA (0000079)",
-      "value": 210.0
+      "value": 210.0,
+      "nota_fiscal": "12469"
     },
     {
       "id": "tx02114",
@@ -21175,7 +23289,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E (0000081)",
-      "value": 237.0
+      "value": 237.0,
+      "nota_fiscal": "12470"
     },
     {
       "id": "tx02115",
@@ -21185,7 +23300,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "TRANSFIX",
-      "value": 1115.0
+      "value": 1115.0,
+      "nota_fiscal": "805"
     },
     {
       "id": "tx02116",
@@ -21195,7 +23311,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL",
-      "value": 1292.42
+      "value": 1292.42,
+      "nota_fiscal": null
     },
     {
       "id": "tx02117",
@@ -21205,7 +23322,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "E DE OLIVEIRA - EMERSON",
-      "value": 516.85
+      "value": 516.85,
+      "nota_fiscal": "12320"
     },
     {
       "id": "tx02118",
@@ -21215,7 +23333,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "MS TECNOPON EQUIPAMENTOS ESPECIAIS LTDA - 0000373",
-      "value": 1235.1
+      "value": 1235.1,
+      "nota_fiscal": "12100"
     },
     {
       "id": "tx02119",
@@ -21225,7 +23344,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "DENTSCLER IND. DE APAR. ODONTO. EIRELLI - 0000390",
-      "value": 893.25
+      "value": 893.25,
+      "nota_fiscal": "12091/03"
     },
     {
       "id": "tx02120",
@@ -21235,7 +23355,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "C R D MONTAGEM - 0000200",
-      "value": 545.67
+      "value": 545.67,
+      "nota_fiscal": "12287/01"
     },
     {
       "id": "tx02121",
@@ -21245,7 +23366,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FZW INNOVATION LTDA - 0000848",
-      "value": 1355.89
+      "value": 1355.89,
+      "nota_fiscal": "12099/03"
     },
     {
       "id": "tx02122",
@@ -21255,7 +23377,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "RUSSER BRASIL EIRELI - 0000403",
-      "value": 475.5
+      "value": 475.5,
+      "nota_fiscal": "12176/02"
     },
     {
       "id": "tx02123",
@@ -21265,7 +23388,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "EVOLUTEC INDUSTRIA E COMERCIO DE ELETROA - 0000229",
-      "value": 471.12
+      "value": 471.12,
+      "nota_fiscal": "12305/01"
     },
     {
       "id": "tx02124",
@@ -21275,7 +23399,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "EVOLUTEC INDUSTRIA E COMERCIO DE ELETROA - 0000229",
-      "value": 543.63
+      "value": 543.63,
+      "nota_fiscal": "12195/02"
     },
     {
       "id": "tx02125",
@@ -21285,7 +23410,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "VINTEK IND., COMERCIO E SERVICOS LTDA - 0000894",
-      "value": 1547.67
+      "value": 1547.67,
+      "nota_fiscal": "12265/02"
     },
     {
       "id": "tx02126",
@@ -21295,7 +23421,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "MARTEC MED INDUSTRIA E COMERCIO DE EQUIP - 0000788",
-      "value": 441.66
+      "value": 441.66,
+      "nota_fiscal": "12331/01"
     },
     {
       "id": "tx02127",
@@ -21305,7 +23432,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "MDI PROD E SISTEMAS LTDA - 0000101",
-      "value": 738.15
+      "value": 738.15,
+      "nota_fiscal": "12344/01"
     },
     {
       "id": "tx02128",
@@ -21315,7 +23443,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ARIELTECK",
-      "value": 102.0
+      "value": 102.0,
+      "nota_fiscal": "12210"
     },
     {
       "id": "tx02129",
@@ -21325,7 +23454,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "IMPOSTOS",
       "counterparty": "VCP DESPACHANTE",
-      "value": 25246.44
+      "value": 25246.44,
+      "nota_fiscal": null
     },
     {
       "id": "tx02130",
@@ -21335,7 +23465,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MKB",
-      "value": 3137.75
+      "value": 3137.75,
+      "nota_fiscal": null
     },
     {
       "id": "tx02131",
@@ -21345,7 +23476,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP",
-      "value": 531.32
+      "value": 531.32,
+      "nota_fiscal": null
     },
     {
       "id": "tx02132",
@@ -21355,7 +23487,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP",
-      "value": 496.89
+      "value": 496.89,
+      "nota_fiscal": null
     },
     {
       "id": "tx02133",
@@ -21365,7 +23498,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP",
-      "value": 528.44
+      "value": 528.44,
+      "nota_fiscal": null
     },
     {
       "id": "tx02134",
@@ -21375,7 +23509,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP",
-      "value": 577.09
+      "value": 577.09,
+      "nota_fiscal": null
     },
     {
       "id": "tx02135",
@@ -21385,7 +23520,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP",
-      "value": 478.91
+      "value": 478.91,
+      "nota_fiscal": null
     },
     {
       "id": "tx02136",
@@ -21395,7 +23531,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL",
-      "value": 575.33
+      "value": 575.33,
+      "nota_fiscal": null
     },
     {
       "id": "tx02137",
@@ -21405,7 +23542,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DLT SUPRIMENTOS",
-      "value": 707.05
+      "value": 707.05,
+      "nota_fiscal": null
     },
     {
       "id": "tx02138",
@@ -21415,7 +23553,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "COMP TOTAL",
-      "value": 464.02
+      "value": 464.02,
+      "nota_fiscal": null
     },
     {
       "id": "tx02139",
@@ -21425,7 +23564,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL",
-      "value": 772.73
+      "value": 772.73,
+      "nota_fiscal": null
     },
     {
       "id": "tx02140",
@@ -21435,7 +23575,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY MAX",
-      "value": 422.52
+      "value": 422.52,
+      "nota_fiscal": null
     },
     {
       "id": "tx02141",
@@ -21445,7 +23586,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MDS",
-      "value": 424.9
+      "value": 424.9,
+      "nota_fiscal": null
     },
     {
       "id": "tx02142",
@@ -21455,7 +23597,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ORANGE",
-      "value": 186.0
+      "value": 186.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02143",
@@ -21465,7 +23608,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "FILCRILL",
-      "value": 951.78
+      "value": 951.78,
+      "nota_fiscal": null
     },
     {
       "id": "tx02144",
@@ -21475,7 +23619,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETO",
-      "value": 18.1
+      "value": 18.1,
+      "nota_fiscal": null
     },
     {
       "id": "tx02145",
@@ -21484,8 +23629,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "24238",
-      "value": 482.07
+      "counterparty": "ZENER COMPONENTES ELETRONICOS LTDA - ME (0000317)",
+      "value": 482.07,
+      "nota_fiscal": "24238"
     },
     {
       "id": "tx02146",
@@ -21494,8 +23640,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "262028",
-      "value": 1404.11
+      "counterparty": "ACP COMERCIO ATACADISTA DE COMPONENTES E (0000249)",
+      "value": 1404.11,
+      "nota_fiscal": "262028"
     },
     {
       "id": "tx02147",
@@ -21504,8 +23651,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "2823",
-      "value": 1305.0
+      "counterparty": "CX COMERCIAL EIRELI EPP (0000329)",
+      "value": 1305.0,
+      "nota_fiscal": "2823"
     },
     {
       "id": "tx02148",
@@ -21514,8 +23662,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "33283",
-      "value": 1841.0
+      "counterparty": "ALLNETSYS COMERCIO IMPORTACAO E SERVICOS (0000036)",
+      "value": 1841.0,
+      "nota_fiscal": "33283"
     },
     {
       "id": "tx02149",
@@ -21524,8 +23673,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "499085",
-      "value": 6057.13
+      "counterparty": "PRODUTOS ELETRONICOS METALTEX LTDA (0000063)",
+      "value": 6057.13,
+      "nota_fiscal": "499085"
     },
     {
       "id": "tx02150",
@@ -21534,8 +23684,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "85969",
-      "value": 556.91
+      "counterparty": "COMP TOTAL COM. E IMP. DE COMP. ELETRON. (0000267)",
+      "value": 556.91,
+      "nota_fiscal": "85969"
     },
     {
       "id": "tx02151",
@@ -21545,7 +23696,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO (0000660)",
-      "value": 10500.0
+      "value": 10500.0,
+      "nota_fiscal": "12477"
     },
     {
       "id": "tx02152",
@@ -21555,7 +23707,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ANTONIO VICENTE DOS SANTOS (0001320)",
-      "value": 187.99
+      "value": 187.99,
+      "nota_fiscal": "12478"
     },
     {
       "id": "tx02153",
@@ -21565,7 +23718,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ANDRE VAZ NETO (0001319)",
-      "value": 14.99
+      "value": 14.99,
+      "nota_fiscal": "12479"
     },
     {
       "id": "tx02154",
@@ -21575,7 +23729,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ARTHUR MOURA DE SOUZA DE ARRUDA (0001321)",
-      "value": 20.96
+      "value": 20.96,
+      "nota_fiscal": "12480"
     },
     {
       "id": "tx02155",
@@ -21585,7 +23740,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FOCUS TECNOLOGIA E SOLUCOES LTDA (0000742)",
-      "value": 939.9
+      "value": 939.9,
+      "nota_fiscal": "12482"
     },
     {
       "id": "tx02156",
@@ -21595,7 +23751,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ALLPRINT",
-      "value": 1722.5
+      "value": 1722.5,
+      "nota_fiscal": "806"
     },
     {
       "id": "tx02157",
@@ -21605,7 +23762,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "EMPRÉSTIMO FGI",
       "counterparty": "CAPITAL DE GIRO",
-      "value": 3660.84
+      "value": 3660.84,
+      "nota_fiscal": null
     },
     {
       "id": "tx02158",
@@ -21615,7 +23773,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 1.81
+      "value": 1.81,
+      "nota_fiscal": null
     },
     {
       "id": "tx02159",
@@ -21625,7 +23784,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "TRANSFIX ASSISTENCIA TECN. E VENDAS EQUI - 0000199",
-      "value": 260.0
+      "value": 260.0,
+      "nota_fiscal": "12345"
     },
     {
       "id": "tx02160",
@@ -21635,7 +23795,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "EXPOENTE",
-      "value": 210.0
+      "value": 210.0,
+      "nota_fiscal": "12469"
     },
     {
       "id": "tx02161",
@@ -21645,7 +23806,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "NEW TEC",
-      "value": 165.0
+      "value": 165.0,
+      "nota_fiscal": "M10"
     },
     {
       "id": "tx02162",
@@ -21655,7 +23817,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "S.T.E.E. TECNOLOGIA ELETROELETRONICA LT - 0000062",
-      "value": 358.53
+      "value": 358.53,
+      "nota_fiscal": "12220/03"
     },
     {
       "id": "tx02163",
@@ -21665,7 +23828,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "AC/DC - 0000218",
-      "value": 797.0
+      "value": 797.0,
+      "nota_fiscal": "12270/02"
     },
     {
       "id": "tx02164",
@@ -21675,7 +23839,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SISPONTO SISTEMAS INTELIGENTES LTDA - 0000066",
-      "value": 343.0
+      "value": 343.0,
+      "nota_fiscal": "12337/01"
     },
     {
       "id": "tx02165",
@@ -21685,7 +23850,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CONSÓRCIO",
-      "value": 90.88
+      "value": 90.88,
+      "nota_fiscal": "INVESTIMENTO"
     },
     {
       "id": "tx02166",
@@ -21695,7 +23861,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "VETRONIC",
-      "value": 499.8
+      "value": 499.8,
+      "nota_fiscal": null
     },
     {
       "id": "tx02167",
@@ -21705,7 +23872,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETO",
-      "value": 5.43
+      "value": 5.43,
+      "nota_fiscal": null
     },
     {
       "id": "tx02168",
@@ -21715,7 +23883,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TELKO",
-      "value": 151.7
+      "value": 151.7,
+      "nota_fiscal": null
     },
     {
       "id": "tx02169",
@@ -21725,7 +23894,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "EMPRÉSTIMO CAPITAL DE GIRO BRADESCO",
       "counterparty": "CAPITAL DE GIRO",
-      "value": 6372.54
+      "value": 6372.54,
+      "nota_fiscal": null
     },
     {
       "id": "tx02170",
@@ -21734,8 +23904,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "262072",
-      "value": 632.73
+      "counterparty": "ACP COMERCIO ATACADISTA DE COMPONENTES E (0000249)",
+      "value": 632.73,
+      "nota_fiscal": "262072"
     },
     {
       "id": "tx02171",
@@ -21744,8 +23915,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "73323",
-      "value": 1708.05
+      "counterparty": "JOMACLER IND. E COM. DE CONDUT. ELETRICO (0000102)",
+      "value": 1708.05,
+      "nota_fiscal": "73323"
     },
     {
       "id": "tx02172",
@@ -21754,8 +23926,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "73324",
-      "value": 2562.08
+      "counterparty": "JOMACLER IND. E COM. DE CONDUT. ELETRICO (0000102)",
+      "value": 2562.08,
+      "nota_fiscal": "73324"
     },
     {
       "id": "tx02173",
@@ -21765,7 +23938,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "DERIEL DIEGO DA SILVA (0001323)",
-      "value": 29.98
+      "value": 29.98,
+      "nota_fiscal": "12483"
     },
     {
       "id": "tx02174",
@@ -21775,7 +23949,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "CRISTOFOLI EQUIP. DE BIOSSEGURANÇA LTDA (0000146)",
-      "value": 390.0
+      "value": 390.0,
+      "nota_fiscal": "12484"
     },
     {
       "id": "tx02175",
@@ -21785,7 +23960,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "RUSSER BRASIL EIRELI (0000403)",
-      "value": 270.0
+      "value": 270.0,
+      "nota_fiscal": "12485"
     },
     {
       "id": "tx02176",
@@ -21795,7 +23971,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "IMPROEL - INDUSTRIA E PROJ. ELETRO-ELET (0000118)",
-      "value": 296.5
+      "value": 296.5,
+      "nota_fiscal": "12486"
     },
     {
       "id": "tx02177",
@@ -21805,7 +23982,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "RASATRONIC ELETRÔNICA INDUSTRIAL LTDA (0000057)",
-      "value": 324.2
+      "value": 324.2,
+      "nota_fiscal": "12487"
     },
     {
       "id": "tx02178",
@@ -21815,7 +23993,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "VINTEK IND., COMERCIO E SERVICOS LTDA (0000894)",
-      "value": 4662.0
+      "value": 4662.0,
+      "nota_fiscal": "12488"
     },
     {
       "id": "tx02179",
@@ -21825,7 +24004,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "TRANSFIX",
-      "value": 294.0
+      "value": 294.0,
+      "nota_fiscal": "808"
     },
     {
       "id": "tx02180",
@@ -21835,7 +24015,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SIMPLES CONECT",
-      "value": 1452.0
+      "value": 1452.0,
+      "nota_fiscal": "802"
     },
     {
       "id": "tx02181",
@@ -21845,7 +24026,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 1.81
+      "value": 1.81,
+      "nota_fiscal": null
     },
     {
       "id": "tx02182",
@@ -21855,7 +24037,8 @@ const MAXLED_DATA = {
       "flow": "compra",
       "category": null,
       "counterparty": "DI DE IMPORTAÇÃO",
-      "value": 9190.94
+      "value": 9190.94,
+      "nota_fiscal": "817"
     },
     {
       "id": "tx02183",
@@ -21865,7 +24048,8 @@ const MAXLED_DATA = {
       "flow": "compra",
       "category": null,
       "counterparty": "DI DE IMPORTAÇÃO",
-      "value": 1972.76
+      "value": 1972.76,
+      "nota_fiscal": "818"
     },
     {
       "id": "tx02184",
@@ -21875,7 +24059,8 @@ const MAXLED_DATA = {
       "flow": "compra",
       "category": null,
       "counterparty": "DI DE IMPORTAÇÃO",
-      "value": 2721.66
+      "value": 2721.66,
+      "nota_fiscal": "819"
     },
     {
       "id": "tx02185",
@@ -21885,7 +24070,8 @@ const MAXLED_DATA = {
       "flow": "compra",
       "category": null,
       "counterparty": "DI DE IMPORTAÇÃO",
-      "value": 6545.1
+      "value": 6545.1,
+      "nota_fiscal": "820"
     },
     {
       "id": "tx02186",
@@ -21895,7 +24081,8 @@ const MAXLED_DATA = {
       "flow": "compra",
       "category": null,
       "counterparty": "DI DE IMPORTAÇÃO",
-      "value": 4716.08
+      "value": 4716.08,
+      "nota_fiscal": "821"
     },
     {
       "id": "tx02187",
@@ -21905,7 +24092,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
-      "value": 1444.07
+      "value": 1444.07,
+      "nota_fiscal": "11967"
     },
     {
       "id": "tx02188",
@@ -21915,7 +24103,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "MS TECNOPON EQUIPAMENTOS ESPECIAIS LTDA - 0000373",
-      "value": 763.25
+      "value": 763.25,
+      "nota_fiscal": "12227"
     },
     {
       "id": "tx02189",
@@ -21925,7 +24114,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "POWERFLEET",
-      "value": 7700.0
+      "value": 7700.0,
+      "nota_fiscal": "12319"
     },
     {
       "id": "tx02190",
@@ -21935,7 +24125,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ZILOCCHI",
-      "value": 582.49
+      "value": 582.49,
+      "nota_fiscal": "12319"
     },
     {
       "id": "tx02191",
@@ -21945,7 +24136,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "INELTEC",
-      "value": 1774.6
+      "value": 1774.6,
+      "nota_fiscal": "12334"
     },
     {
       "id": "tx02192",
@@ -21955,7 +24147,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP",
-      "value": 436.24
+      "value": 436.24,
+      "nota_fiscal": null
     },
     {
       "id": "tx02193",
@@ -21965,7 +24158,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ALLNETSYS COM",
-      "value": 187.5
+      "value": 187.5,
+      "nota_fiscal": null
     },
     {
       "id": "tx02194",
@@ -21975,7 +24169,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "HEKTRON COM",
-      "value": 399.84
+      "value": 399.84,
+      "nota_fiscal": null
     },
     {
       "id": "tx02195",
@@ -21985,7 +24180,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL",
-      "value": 598.0
+      "value": 598.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02196",
@@ -21995,7 +24191,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "COMP TOTAL",
-      "value": 789.17
+      "value": 789.17,
+      "nota_fiscal": null
     },
     {
       "id": "tx02197",
@@ -22005,7 +24202,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "COMP TOTAL",
-      "value": 263.06
+      "value": 263.06,
+      "nota_fiscal": null
     },
     {
       "id": "tx02198",
@@ -22015,7 +24213,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "COMP TOTAL",
-      "value": 143.78
+      "value": 143.78,
+      "nota_fiscal": null
     },
     {
       "id": "tx02199",
@@ -22025,7 +24224,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "GASTOS FIXOS",
       "counterparty": "HANSER",
-      "value": 612.0
+      "value": 612.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02200",
@@ -22035,7 +24235,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETO",
-      "value": 9.05
+      "value": 9.05,
+      "nota_fiscal": null
     },
     {
       "id": "tx02201",
@@ -22045,7 +24246,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "TAXA MÊS",
-      "value": 218.6
+      "value": 218.6,
+      "nota_fiscal": null
     },
     {
       "id": "tx02202",
@@ -22054,8 +24256,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "204293",
-      "value": 664.56
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 664.56,
+      "nota_fiscal": "204293"
     },
     {
       "id": "tx02203",
@@ -22064,8 +24267,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "204447",
-      "value": 577.41
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 577.41,
+      "nota_fiscal": "204447"
     },
     {
       "id": "tx02204",
@@ -22074,8 +24278,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "262153",
-      "value": 358.4
+      "counterparty": "ACP COMERCIO ATACADISTA DE COMPONENTES E (0000249)",
+      "value": 358.4,
+      "nota_fiscal": "262153"
     },
     {
       "id": "tx02205",
@@ -22084,8 +24289,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "2837",
-      "value": 1462.5
+      "counterparty": "CX COMERCIAL EIRELI EPP (0000329)",
+      "value": 1462.5,
+      "nota_fiscal": "2837"
     },
     {
       "id": "tx02206",
@@ -22094,8 +24300,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "71306",
-      "value": 151.7
+      "counterparty": "TELKO ELETRONICA LTDA (0000067)",
+      "value": 151.7,
+      "nota_fiscal": "71306"
     },
     {
       "id": "tx02207",
@@ -22104,8 +24311,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "76516",
-      "value": 2795.2
+      "counterparty": "IDALL COM. ATAC. DE COMP. ELETR. LTDA (0000011)",
+      "value": 2795.2,
+      "nota_fiscal": "76516"
     },
     {
       "id": "tx02208",
@@ -22115,7 +24323,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ALIGERA EQUIPAMENTOS DIGITAIS LTDA (0000188)",
-      "value": 360.0
+      "value": 360.0,
+      "nota_fiscal": "12489"
     },
     {
       "id": "tx02209",
@@ -22125,7 +24334,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "SSAT SINALIZACAO E ADESIVOS EIRELI EPP (0000072)",
-      "value": 255.4
+      "value": 255.4,
+      "nota_fiscal": "12490"
     },
     {
       "id": "tx02210",
@@ -22135,7 +24345,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "TAIKON INDUSTRIA E COM DE APARELHOS ELET (0001061)",
-      "value": 1090.0
+      "value": 1090.0,
+      "nota_fiscal": "12491"
     },
     {
       "id": "tx02211",
@@ -22145,7 +24356,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "SEBASTIAO CESAR GRASSI ELETRONICOS - M.. (0000279)",
-      "value": 1795.72
+      "value": 1795.72,
+      "nota_fiscal": "12492"
     },
     {
       "id": "tx02212",
@@ -22155,7 +24367,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO (0000660)",
-      "value": 1655.3
+      "value": 1655.3,
+      "nota_fiscal": "12493"
     },
     {
       "id": "tx02213",
@@ -22165,7 +24378,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO (0000660)",
-      "value": 2200.0
+      "value": 2200.0,
+      "nota_fiscal": "12494"
     },
     {
       "id": "tx02214",
@@ -22175,7 +24389,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "CITTA ELETRONICA IND. E COM. LTDA ME (0000532)",
-      "value": 145.67
+      "value": 145.67,
+      "nota_fiscal": "12495"
     },
     {
       "id": "tx02215",
@@ -22185,7 +24400,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ELETROFELIX INDUSTRIA E COMERCIO LTDA (0000477)",
-      "value": 660.0
+      "value": 660.0,
+      "nota_fiscal": "12496"
     },
     {
       "id": "tx02216",
@@ -22195,7 +24411,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "RUBEM LEITE BARRETTO JUNIOR (0001325)",
-      "value": 24.99
+      "value": 24.99,
+      "nota_fiscal": "12497"
     },
     {
       "id": "tx02217",
@@ -22205,7 +24422,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "DERIEL DIEGO DA SILVA (0001323)",
-      "value": 29.98
+      "value": 29.98,
+      "nota_fiscal": "12498"
     },
     {
       "id": "tx02218",
@@ -22215,7 +24433,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "AVTRON COMPONENTES ELETRONICOS LTDA (0000472)",
-      "value": 496.0
+      "value": 496.0,
+      "nota_fiscal": "12499"
     },
     {
       "id": "tx02219",
@@ -22225,7 +24444,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ACHEI COMPONENTES ELETRONICOS (0000503)",
-      "value": 260.0
+      "value": 260.0,
+      "nota_fiscal": "12500"
     },
     {
       "id": "tx02220",
@@ -22235,7 +24455,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "TAIKOM IMPORT",
-      "value": 5460.0
+      "value": 5460.0,
+      "nota_fiscal": "IMPORTAÇÃO"
     },
     {
       "id": "tx02221",
@@ -22245,7 +24466,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "GASTOS FIXOS",
       "counterparty": "HANSER CONTABIL",
-      "value": 612.0
+      "value": 612.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02222",
@@ -22255,7 +24477,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "TRANSPORTES",
       "counterparty": "WANDO",
-      "value": 1060.0
+      "value": 1060.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02223",
@@ -22265,7 +24488,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "NEW TEC",
-      "value": 180.0
+      "value": 180.0,
+      "nota_fiscal": "SNF 1"
     },
     {
       "id": "tx02224",
@@ -22275,7 +24499,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "GRANDTECH",
-      "value": 144.0
+      "value": 144.0,
+      "nota_fiscal": "12508"
     },
     {
       "id": "tx02225",
@@ -22285,7 +24510,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "TRANSCICAP",
-      "value": 595.1
+      "value": 595.1,
+      "nota_fiscal": "11997"
     },
     {
       "id": "tx02226",
@@ -22295,7 +24521,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "TRANSCICAP",
-      "value": 553.4
+      "value": 553.4,
+      "nota_fiscal": "11997"
     },
     {
       "id": "tx02227",
@@ -22305,7 +24532,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
-      "value": 428.75
+      "value": 428.75,
+      "nota_fiscal": "12248"
     },
     {
       "id": "tx02228",
@@ -22315,7 +24543,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ZENER",
-      "value": 438.75
+      "value": 438.75,
+      "nota_fiscal": "12350"
     },
     {
       "id": "tx02229",
@@ -22325,7 +24554,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MEGADEF",
-      "value": 596.66
+      "value": 596.66,
+      "nota_fiscal": null
     },
     {
       "id": "tx02230",
@@ -22335,7 +24565,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MCP",
-      "value": 1495.0
+      "value": 1495.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02231",
@@ -22345,7 +24576,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY",
-      "value": 874.84
+      "value": 874.84,
+      "nota_fiscal": null
     },
     {
       "id": "tx02232",
@@ -22355,7 +24587,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY",
-      "value": 271.48
+      "value": 271.48,
+      "nota_fiscal": null
     },
     {
       "id": "tx02233",
@@ -22365,7 +24598,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "CX",
-      "value": 800.0
+      "value": 800.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02234",
@@ -22375,7 +24609,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ELCOMP COM",
-      "value": 920.68
+      "value": 920.68,
+      "nota_fiscal": null
     },
     {
       "id": "tx02235",
@@ -22385,7 +24620,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "FERA",
-      "value": 348.0
+      "value": 348.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02236",
@@ -22395,7 +24631,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRICOMP COM",
-      "value": 259.7
+      "value": 259.7,
+      "nota_fiscal": null
     },
     {
       "id": "tx02237",
@@ -22405,7 +24642,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "UNIVERSE",
-      "value": 1100.0
+      "value": 1100.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02238",
@@ -22415,7 +24653,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "AIB",
-      "value": 419.68
+      "value": 419.68,
+      "nota_fiscal": null
     },
     {
       "id": "tx02239",
@@ -22425,7 +24664,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "COMP TOTAL",
-      "value": 143.78
+      "value": 143.78,
+      "nota_fiscal": null
     },
     {
       "id": "tx02240",
@@ -22435,7 +24675,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MEGAPIX",
-      "value": 193.2
+      "value": 193.2,
+      "nota_fiscal": null
     },
     {
       "id": "tx02241",
@@ -22445,7 +24686,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DRN",
-      "value": 168.0
+      "value": 168.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02242",
@@ -22455,7 +24697,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETO",
-      "value": 7.24
+      "value": 7.24,
+      "nota_fiscal": null
     },
     {
       "id": "tx02243",
@@ -22465,7 +24708,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP",
-      "value": 673.57
+      "value": 673.57,
+      "nota_fiscal": null
     },
     {
       "id": "tx02244",
@@ -22475,7 +24719,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MICROELECTRON",
-      "value": 1312.5
+      "value": 1312.5,
+      "nota_fiscal": null
     },
     {
       "id": "tx02245",
@@ -22485,7 +24730,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MEGAPIX",
-      "value": 609.6
+      "value": 609.6,
+      "nota_fiscal": null
     },
     {
       "id": "tx02246",
@@ -22495,7 +24741,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL",
-      "value": 683.6
+      "value": 683.6,
+      "nota_fiscal": null
     },
     {
       "id": "tx02247",
@@ -22505,7 +24752,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "FILCRILL",
-      "value": 507.0
+      "value": 507.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02248",
@@ -22515,7 +24763,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MARKCEL",
-      "value": 385.0
+      "value": 385.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02249",
@@ -22525,7 +24774,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "JOMACLER",
-      "value": 1708.05
+      "value": 1708.05,
+      "nota_fiscal": null
     },
     {
       "id": "tx02250",
@@ -22534,8 +24784,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "1157",
-      "value": 522.0
+      "counterparty": "MRD COMPONENTES ELETRONICOS LTDA. (0000388)",
+      "value": 522.0,
+      "nota_fiscal": "1157"
     },
     {
       "id": "tx02251",
@@ -22544,8 +24795,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "1646",
-      "value": 708.0
+      "counterparty": "DLT SUPRIMENTOS LTDA (0000389)",
+      "value": 708.0,
+      "nota_fiscal": "1646"
     },
     {
       "id": "tx02252",
@@ -22554,8 +24806,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "18686",
-      "value": 953.5
+      "counterparty": "TRICONECT COMERCIAL ELETR. LTDA (0000321)",
+      "value": 953.5,
+      "nota_fiscal": "18686"
     },
     {
       "id": "tx02253",
@@ -22564,8 +24817,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "204452",
-      "value": 309.75
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 309.75,
+      "nota_fiscal": "204452"
     },
     {
       "id": "tx02254",
@@ -22574,8 +24828,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "204609",
-      "value": 522.0
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 522.0,
+      "nota_fiscal": "204609"
     },
     {
       "id": "tx02255",
@@ -22584,8 +24839,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "3425",
-      "value": 191.0
+      "counterparty": "ORANGE E BLACK DISTRIBUIDORA LTDA (0000198)",
+      "value": 191.0,
+      "nota_fiscal": "3425"
     },
     {
       "id": "tx02256",
@@ -22594,8 +24850,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "76486",
-      "value": 640.5
+      "counterparty": "IDALL COM. ATAC. DE COMP. ELETR. LTDA (0000011)",
+      "value": 640.5,
+      "nota_fiscal": "76486"
     },
     {
       "id": "tx02257",
@@ -22604,8 +24861,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "9014",
-      "value": 205.0
+      "counterparty": "TRYNIT LED COMPONENTES ELETRONICOS EIREL (0000259)",
+      "value": 205.0,
+      "nota_fiscal": "9014"
     },
     {
       "id": "tx02258",
@@ -22615,7 +24873,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "NEWTESC TECNOLOGIA E COMERCIO LTDA (0000106)",
-      "value": 7458.0
+      "value": 7458.0,
+      "nota_fiscal": "12501"
     },
     {
       "id": "tx02259",
@@ -22625,7 +24884,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "VALEXCELL (0000166)",
-      "value": 528.2
+      "value": 528.2,
+      "nota_fiscal": "12502"
     },
     {
       "id": "tx02260",
@@ -22635,7 +24895,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ALIGERA EQUIPAMENTOS DIGITAIS LTDA (0000188)",
-      "value": 1417.5
+      "value": 1417.5,
+      "nota_fiscal": "12503"
     },
     {
       "id": "tx02261",
@@ -22645,7 +24906,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ELVIS REGINALDO DE HOLANDA SANTOS (0001328)",
-      "value": 44.99
+      "value": 44.99,
+      "nota_fiscal": "12504"
     },
     {
       "id": "tx02262",
@@ -22655,7 +24917,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "DR FAROL OSASCO SERVICOS AUTOMOTIVOS LTD (0001329)",
-      "value": 13.0
+      "value": 13.0,
+      "nota_fiscal": "12505"
     },
     {
       "id": "tx02263",
@@ -22665,7 +24928,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "S.T.E.E. TECNOLOGIA ELETROELETRONICA LT (0000062)",
-      "value": 2532.8
+      "value": 2532.8,
+      "nota_fiscal": "12506"
     },
     {
       "id": "tx02264",
@@ -22675,7 +24939,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ELETROFELIX INDUSTRIA E COMERCIO LTDA (0000477)",
-      "value": 1583.7
+      "value": 1583.7,
+      "nota_fiscal": "12507"
     },
     {
       "id": "tx02265",
@@ -22685,7 +24950,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "TELESHESK",
-      "value": 6200.34
+      "value": 6200.34,
+      "nota_fiscal": "807"
     },
     {
       "id": "tx02266",
@@ -22695,7 +24961,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 1.81
+      "value": 1.81,
+      "nota_fiscal": null
     },
     {
       "id": "tx02267",
@@ -22705,7 +24972,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "MERCADO LIVRE",
-      "value": 3200.0
+      "value": 3200.0,
+      "nota_fiscal": "MOVIMENTO"
     },
     {
       "id": "tx02268",
@@ -22715,7 +24983,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "MATHEUS DA MATA",
-      "value": 375.0
+      "value": 375.0,
+      "nota_fiscal": "12512"
     },
     {
       "id": "tx02269",
@@ -22725,7 +24994,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "NUTRIEX",
-      "value": 2243.5
+      "value": 2243.5,
+      "nota_fiscal": "12194"
     },
     {
       "id": "tx02270",
@@ -22735,7 +25005,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "NIATRON IND. E COM. DE EQUIP. ELETRO. - 0000143",
-      "value": 567.93
+      "value": 567.93,
+      "nota_fiscal": "12235/03"
     },
     {
       "id": "tx02271",
@@ -22745,7 +25016,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BPM INDUSTRIA E COMERCIO - 0000541",
-      "value": 835.0
+      "value": 835.0,
+      "nota_fiscal": "12314/02"
     },
     {
       "id": "tx02272",
@@ -22755,7 +25027,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CARINE G RODRIGUES - 0000764",
-      "value": 674.25
+      "value": 674.25,
+      "nota_fiscal": "12315/02"
     },
     {
       "id": "tx02273",
@@ -22765,7 +25038,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "HTR EQUIPAMENTOS ELETRONICOS LTDA - 0000268",
-      "value": 1195.26
+      "value": 1195.26,
+      "nota_fiscal": "12341/01"
     },
     {
       "id": "tx02274",
@@ -22775,7 +25049,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "NEXXO EQUIPAMENTOS ELETRONICOS LTDA - 0000225",
-      "value": 842.0
+      "value": 842.0,
+      "nota_fiscal": "12343/01"
     },
     {
       "id": "tx02275",
@@ -22785,7 +25060,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ACHEI COMPONENTES ELETRONICOS - 0000503",
-      "value": 832.0
+      "value": 832.0,
+      "nota_fiscal": "12355/01"
     },
     {
       "id": "tx02276",
@@ -22795,7 +25071,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
-      "value": 953.0
+      "value": 953.0,
+      "nota_fiscal": "12363/01"
     },
     {
       "id": "tx02277",
@@ -22805,7 +25082,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ELETROFELIX INDUSTRIA E COMERCIO LTDA - 0000477",
-      "value": 496.88
+      "value": 496.88,
+      "nota_fiscal": "12367/01"
     },
     {
       "id": "tx02278",
@@ -22815,7 +25093,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETO",
-      "value": 14.48
+      "value": 14.48,
+      "nota_fiscal": null
     },
     {
       "id": "tx02279",
@@ -22824,8 +25103,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "1654",
-      "value": 177.0
+      "counterparty": "DLT SUPRIMENTOS LTDA (0000389)",
+      "value": 177.0,
+      "nota_fiscal": "1654"
     },
     {
       "id": "tx02280",
@@ -22834,8 +25114,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "262202",
-      "value": 5669.02
+      "counterparty": "ACP COMERCIO ATACADISTA DE COMPONENTES E (0000249)",
+      "value": 5669.02,
+      "nota_fiscal": "262202"
     },
     {
       "id": "tx02281",
@@ -22844,8 +25125,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "4340",
-      "value": 275.0
+      "counterparty": "MDS COMPONENTES ELETRONICOS LTDA (0000297)",
+      "value": 275.0,
+      "nota_fiscal": "4340"
     },
     {
       "id": "tx02282",
@@ -22854,8 +25136,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "76538",
-      "value": 363.0
+      "counterparty": "IDALL COM. ATAC. DE COMP. ELETR. LTDA (0000011)",
+      "value": 363.0,
+      "nota_fiscal": "76538"
     },
     {
       "id": "tx02283",
@@ -22865,7 +25148,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "GRANDE TECH COM, IMPORT, E EXPORT, DE CA (0000506)",
-      "value": 144.0
+      "value": 144.0,
+      "nota_fiscal": "12508"
     },
     {
       "id": "tx02284",
@@ -22875,7 +25159,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "TIPTRONIC INDUSTRIA DE TECNOLOGIA ELETRO (0001289)",
-      "value": 370.0
+      "value": 370.0,
+      "nota_fiscal": "12509"
     },
     {
       "id": "tx02285",
@@ -22885,7 +25170,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "CLIP INDUSTRIA IMPORTACAO E EXPORTACAO L (0001330)",
-      "value": 725.0
+      "value": 725.0,
+      "nota_fiscal": "12510"
     },
     {
       "id": "tx02286",
@@ -22895,7 +25181,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "PEDRO HENRIQUE DA MATA (0001332)",
-      "value": 375.0
+      "value": 375.0,
+      "nota_fiscal": "12512"
     },
     {
       "id": "tx02287",
@@ -22905,7 +25192,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "J.M. MAQUINAS AUTOMOTIVAS EIRELI (0000387)",
-      "value": 1017.0
+      "value": 1017.0,
+      "nota_fiscal": "12513"
     },
     {
       "id": "tx02288",
@@ -22915,7 +25203,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "HIGHZ VALE INDUSTRIA ELETRONICA LTDA (0000526)",
-      "value": 586.0
+      "value": 586.0,
+      "nota_fiscal": "12514"
     },
     {
       "id": "tx02289",
@@ -22925,7 +25214,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "TRANSFIX",
-      "value": 324.67
+      "value": 324.67,
+      "nota_fiscal": "792"
     },
     {
       "id": "tx02290",
@@ -22935,7 +25225,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "DENTSCLER IND. DE APAR. ODONTO. EIRELLI - 0000390",
-      "value": 677.5
+      "value": 677.5,
+      "nota_fiscal": "12262/02"
     },
     {
       "id": "tx02291",
@@ -22945,7 +25236,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "VINTEK IND., COMERCIO E SERVICOS LTDA - 0000894",
-      "value": 1547.67
+      "value": 1547.67,
+      "nota_fiscal": "12265/03"
     },
     {
       "id": "tx02292",
@@ -22955,7 +25247,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "MARTEC MED INDUSTRIA E COMERCIO DE EQUIP - 0000788",
-      "value": 441.67
+      "value": 441.67,
+      "nota_fiscal": "12331/02"
     },
     {
       "id": "tx02293",
@@ -22965,7 +25258,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SSAT SINALIZACAO E ADESIVOS EIRELI EPP - 0000072",
-      "value": 1205.0
+      "value": 1205.0,
+      "nota_fiscal": "12348/01"
     },
     {
       "id": "tx02294",
@@ -22975,7 +25269,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO - 0000660",
-      "value": 1861.84
+      "value": 1861.84,
+      "nota_fiscal": "12358/01"
     },
     {
       "id": "tx02295",
@@ -22985,7 +25280,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ALLPRINT LATINA AUTOMACAO DE MAQUINAS EA - 0000291",
-      "value": 1161.0
+      "value": 1161.0,
+      "nota_fiscal": "12359/01"
     },
     {
       "id": "tx02296",
@@ -22995,7 +25291,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "E de oliveira EMERSON",
-      "value": 516.85
+      "value": 516.85,
+      "nota_fiscal": "12320"
     },
     {
       "id": "tx02297",
@@ -23005,7 +25302,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETO",
-      "value": 20.0
+      "value": 20.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02298",
@@ -23015,7 +25313,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "IMPOSTOS",
       "counterparty": "DAS",
-      "value": 20749.05
+      "value": 20749.05,
+      "nota_fiscal": null
     },
     {
       "id": "tx02299",
@@ -23025,7 +25324,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "TAMIRES VALE",
-      "value": 855.2
+      "value": 855.2,
+      "nota_fiscal": null
     },
     {
       "id": "tx02300",
@@ -23035,7 +25335,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "MATHEUS VALE",
-      "value": 720.0
+      "value": 720.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02301",
@@ -23045,7 +25346,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "FGTS",
-      "value": 573.26
+      "value": 573.26,
+      "nota_fiscal": null
     },
     {
       "id": "tx02302",
@@ -23055,7 +25357,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "IMPOSTOS",
       "counterparty": "DARF",
-      "value": 1067.84
+      "value": 1067.84,
+      "nota_fiscal": null
     },
     {
       "id": "tx02303",
@@ -23065,7 +25368,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY MAX",
-      "value": 386.5
+      "value": 386.5,
+      "nota_fiscal": null
     },
     {
       "id": "tx02304",
@@ -23075,7 +25379,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY MAX",
-      "value": 1356.82
+      "value": 1356.82,
+      "nota_fiscal": null
     },
     {
       "id": "tx02305",
@@ -23085,7 +25390,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRICOMP COM",
-      "value": 280.9
+      "value": 280.9,
+      "nota_fiscal": null
     },
     {
       "id": "tx02306",
@@ -23095,7 +25401,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "COMP TOTAL",
-      "value": 218.33
+      "value": 218.33,
+      "nota_fiscal": null
     },
     {
       "id": "tx02307",
@@ -23105,7 +25412,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP",
-      "value": 3773.29
+      "value": 3773.29,
+      "nota_fiscal": null
     },
     {
       "id": "tx02308",
@@ -23115,7 +25423,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "LECOMP",
-      "value": 342.0
+      "value": 342.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02309",
@@ -23125,7 +25434,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "INVESTIMENTO",
       "counterparty": "PREVIDENCIA",
-      "value": 473.47
+      "value": 473.47,
+      "nota_fiscal": null
     },
     {
       "id": "tx02310",
@@ -23135,7 +25445,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "INVESTIMENTO",
       "counterparty": "PREVIDENCIA",
-      "value": 496.24
+      "value": 496.24,
+      "nota_fiscal": null
     },
     {
       "id": "tx02311",
@@ -23144,8 +25455,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "204782",
-      "value": 455.85
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 455.85,
+      "nota_fiscal": "204782"
     },
     {
       "id": "tx02312",
@@ -23154,8 +25466,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "270226",
-      "value": 520.0
+      "counterparty": "MULT COMERCIAL LTDA (0000311)",
+      "value": 520.0,
+      "nota_fiscal": "270226"
     },
     {
       "id": "tx02313",
@@ -23164,8 +25477,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "86021",
-      "value": 341.18
+      "counterparty": "COMP TOTAL COM. E IMP. DE COMP. ELETRON. (0000267)",
+      "value": 341.18,
+      "nota_fiscal": "86021"
     },
     {
       "id": "tx02314",
@@ -23175,7 +25489,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "E DE OLIVEIRA BARBOSA ELETRONICA (0000898)",
-      "value": 1080.02
+      "value": 1080.02,
+      "nota_fiscal": "12515"
     },
     {
       "id": "tx02315",
@@ -23185,7 +25500,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SIMPLES CONECT",
-      "value": 3720.0
+      "value": 3720.0,
+      "nota_fiscal": "809"
     },
     {
       "id": "tx02316",
@@ -23195,7 +25511,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "LS",
-      "value": 1310.0
+      "value": 1310.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02317",
@@ -23205,7 +25522,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL",
-      "value": 1900.0
+      "value": 1900.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02318",
@@ -23215,7 +25533,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "IMPOSTOS",
       "counterparty": "DAS",
-      "value": 2985.97
+      "value": 2985.97,
+      "nota_fiscal": null
     },
     {
       "id": "tx02319",
@@ -23225,7 +25544,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "INGRID",
-      "value": 855.2
+      "value": 855.2,
+      "nota_fiscal": null
     },
     {
       "id": "tx02320",
@@ -23235,7 +25555,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "MONALISA",
-      "value": 855.2
+      "value": 855.2,
+      "nota_fiscal": null
     },
     {
       "id": "tx02321",
@@ -23245,7 +25566,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "GASTOS FIXOS",
       "counterparty": "MANU IA",
-      "value": 112.82
+      "value": 112.82,
+      "nota_fiscal": null
     },
     {
       "id": "tx02322",
@@ -23255,7 +25577,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "CARTÃO DE CRÉDITO",
       "counterparty": "CARTÃO",
-      "value": 4835.71
+      "value": 4835.71,
+      "nota_fiscal": null
     },
     {
       "id": "tx02323",
@@ -23265,7 +25588,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "SÓCIOS",
       "counterparty": "VANIA",
-      "value": 850.0
+      "value": 850.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02324",
@@ -23275,7 +25599,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 1.81
+      "value": 1.81,
+      "nota_fiscal": null
     },
     {
       "id": "tx02325",
@@ -23285,7 +25610,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "EVOLUTEC",
-      "value": 188.35
+      "value": 188.35,
+      "nota_fiscal": "12382"
     },
     {
       "id": "tx02326",
@@ -23295,7 +25621,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "MS TECNOPON EQUIPAMENTOS ESPECIAIS LTDA - 0000373",
-      "value": 763.25
+      "value": 763.25,
+      "nota_fiscal": "12227/04"
     },
     {
       "id": "tx02327",
@@ -23305,7 +25632,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ELETROFELIX INDUSTRIA E COMERCIO LTDA - 0000477",
-      "value": 780.92
+      "value": 780.92,
+      "nota_fiscal": "12353/01"
     },
     {
       "id": "tx02328",
@@ -23315,7 +25643,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "WKS TECHNOLOGY DO BRASIL - 0000208",
-      "value": 600.0
+      "value": 600.0,
+      "nota_fiscal": "12369/01"
     },
     {
       "id": "tx02329",
@@ -23325,7 +25654,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO - 0000660",
-      "value": 830.0
+      "value": 830.0,
+      "nota_fiscal": "12378/01"
     },
     {
       "id": "tx02330",
@@ -23335,7 +25665,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "JHR-COMERCIO DE COMP. ELETRONICOS LTDA - 0000131",
-      "value": 648.0
+      "value": 648.0,
+      "nota_fiscal": "12379/01"
     },
     {
       "id": "tx02331",
@@ -23345,7 +25676,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "E DE OLIVEIRA BARBOSA ELETRONICA - 0000898",
-      "value": 524.0
+      "value": 524.0,
+      "nota_fiscal": "12380/01"
     },
     {
       "id": "tx02332",
@@ -23355,7 +25687,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SIGMA TRANSFORMADORES - 0000063",
-      "value": 1273.85
+      "value": 1273.85,
+      "nota_fiscal": "12383/01"
     },
     {
       "id": "tx02333",
@@ -23365,7 +25698,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "CX",
-      "value": 415.53
+      "value": 415.53,
+      "nota_fiscal": null
     },
     {
       "id": "tx02334",
@@ -23375,7 +25709,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ORANGE",
-      "value": 540.0
+      "value": 540.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02335",
@@ -23385,7 +25720,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "LEDCOMP-CREDERE",
-      "value": 1725.0
+      "value": 1725.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02336",
@@ -23395,7 +25731,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MKB",
-      "value": 2274.77
+      "value": 2274.77,
+      "nota_fiscal": null
     },
     {
       "id": "tx02337",
@@ -23405,7 +25742,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ELCOMP COM",
-      "value": 613.78
+      "value": 613.78,
+      "nota_fiscal": null
     },
     {
       "id": "tx02338",
@@ -23415,7 +25753,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "GEO",
-      "value": 967.5
+      "value": 967.5,
+      "nota_fiscal": null
     },
     {
       "id": "tx02339",
@@ -23425,7 +25764,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "CX",
-      "value": 377.05
+      "value": 377.05,
+      "nota_fiscal": null
     },
     {
       "id": "tx02340",
@@ -23435,7 +25775,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "REIMOLD",
-      "value": 2914.99
+      "value": 2914.99,
+      "nota_fiscal": null
     },
     {
       "id": "tx02341",
@@ -23445,7 +25786,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MDS",
-      "value": 512.25
+      "value": 512.25,
+      "nota_fiscal": null
     },
     {
       "id": "tx02342",
@@ -23455,7 +25797,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MKB",
-      "value": 3800.77
+      "value": 3800.77,
+      "nota_fiscal": null
     },
     {
       "id": "tx02343",
@@ -23465,7 +25808,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MKB",
-      "value": 456.91
+      "value": 456.91,
+      "nota_fiscal": null
     },
     {
       "id": "tx02344",
@@ -23475,7 +25819,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL",
-      "value": 470.0
+      "value": 470.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02345",
@@ -23485,7 +25830,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ALLNETSYS COM",
-      "value": 197.5
+      "value": 197.5,
+      "nota_fiscal": null
     },
     {
       "id": "tx02346",
@@ -23495,7 +25841,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETO",
-      "value": 12.67
+      "value": 12.67,
+      "nota_fiscal": null
     },
     {
       "id": "tx02347",
@@ -23505,7 +25852,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "CARTÃO DE CRÉDITO",
       "counterparty": "CARTÃO",
-      "value": 3508.61
+      "value": 3508.61,
+      "nota_fiscal": null
     },
     {
       "id": "tx02348",
@@ -23514,8 +25862,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "262436",
-      "value": 12179.77
+      "counterparty": "ACP COMERCIO ATACADISTA DE COMPONENTES E (0000249)",
+      "value": 12179.77,
+      "nota_fiscal": "262436"
     },
     {
       "id": "tx02349",
@@ -23525,7 +25874,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "GERALDO ROCHA RIBEIRO (0001334)",
-      "value": 14.99
+      "value": 14.99,
+      "nota_fiscal": "12516"
     },
     {
       "id": "tx02350",
@@ -23535,7 +25885,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "HUDSON FERNANDES BARBOSA (0001335)",
-      "value": 59.98
+      "value": 59.98,
+      "nota_fiscal": "12517"
     },
     {
       "id": "tx02351",
@@ -23545,7 +25896,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "VICENTE JOAO OLIVERIO JUNIOR LTDA (0001336)",
-      "value": 34.99
+      "value": 34.99,
+      "nota_fiscal": "12518"
     },
     {
       "id": "tx02352",
@@ -23555,7 +25907,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "HUMBERTO BECK (0001339)",
-      "value": 29.98
+      "value": 29.98,
+      "nota_fiscal": "12519"
     },
     {
       "id": "tx02353",
@@ -23565,7 +25918,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "BIQUAD TECNOLOGIA LTDA (0000013)",
-      "value": 354.5
+      "value": 354.5,
+      "nota_fiscal": "12520"
     },
     {
       "id": "tx02354",
@@ -23575,7 +25929,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "TGL",
-      "value": 234.0
+      "value": 234.0,
+      "nota_fiscal": "810"
     },
     {
       "id": "tx02355",
@@ -23585,7 +25940,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 1.81
+      "value": 1.81,
+      "nota_fiscal": null
     },
     {
       "id": "tx02356",
@@ -23595,7 +25951,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ACHEI COMPONENTES ELETRONICOS (0000503)",
-      "value": 100.0
+      "value": 100.0,
+      "nota_fiscal": "822"
     },
     {
       "id": "tx02357",
@@ -23605,7 +25962,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "VBN INDUSTRIA E COMERCIO DE PAINEIS ELET (0000987)",
-      "value": 37057.32
+      "value": 37057.32,
+      "nota_fiscal": "823"
     },
     {
       "id": "tx02358",
@@ -23615,7 +25973,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SEBASTIAO CESAR GRASSI ELETRONICOS - M.. - 0000279",
-      "value": 694.75
+      "value": 694.75,
+      "nota_fiscal": "12301/02"
     },
     {
       "id": "tx02359",
@@ -23625,7 +25984,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SEBASTIAO CESAR GRASSI ELETRONICOS - M.. - 0000279",
-      "value": 932.75
+      "value": 932.75,
+      "nota_fiscal": "12332/02"
     },
     {
       "id": "tx02360",
@@ -23635,7 +25995,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ZENER COMPONENTES ELETRONICOS LTDA - ME - 0000142",
-      "value": 438.75
+      "value": 438.75,
+      "nota_fiscal": "12350/02"
     },
     {
       "id": "tx02361",
@@ -23645,7 +26006,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BPM INDUSTRIA E COMERCIO - 0000541",
-      "value": 1843.18
+      "value": 1843.18,
+      "nota_fiscal": "12385/01"
     },
     {
       "id": "tx02362",
@@ -23655,7 +26017,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ZILOCCHI ELETRONICA LTDA - EPP - 0000130",
-      "value": 647.4
+      "value": 647.4,
+      "nota_fiscal": "12386/01"
     },
     {
       "id": "tx02363",
@@ -23665,7 +26028,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ANDRE",
-      "value": 80.0
+      "value": 80.0,
+      "nota_fiscal": "12525"
     },
     {
       "id": "tx02364",
@@ -23675,7 +26039,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "NEW TEC",
-      "value": 337.5
+      "value": 337.5,
+      "nota_fiscal": "6-SNF"
     },
     {
       "id": "tx02365",
@@ -23685,7 +26050,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETO",
-      "value": 9.05
+      "value": 9.05,
+      "nota_fiscal": null
     },
     {
       "id": "tx02366",
@@ -23695,7 +26061,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "EMPRÉSTIMO CAPITAL DE GIRO ITAÚ",
       "counterparty": "CAPITAL DE GIRO",
-      "value": 2566.28
+      "value": 2566.28,
+      "nota_fiscal": null
     },
     {
       "id": "tx02367",
@@ -23705,7 +26072,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MEGADEF",
-      "value": 581.55
+      "value": 581.55,
+      "nota_fiscal": null
     },
     {
       "id": "tx02368",
@@ -23715,7 +26083,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TIGGERCOMP",
-      "value": 351.0
+      "value": 351.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02369",
@@ -23725,7 +26094,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRICONECT",
-      "value": 647.93
+      "value": 647.93,
+      "nota_fiscal": null
     },
     {
       "id": "tx02370",
@@ -23735,7 +26105,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY",
-      "value": 166.0
+      "value": 166.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02371",
@@ -23745,7 +26116,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP",
-      "value": 638.24
+      "value": 638.24,
+      "nota_fiscal": null
     },
     {
       "id": "tx02372",
@@ -23755,7 +26127,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MULT",
-      "value": 345.06
+      "value": 345.06,
+      "nota_fiscal": null
     },
     {
       "id": "tx02373",
@@ -23765,7 +26138,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MPX",
-      "value": 344.5
+      "value": 344.5,
+      "nota_fiscal": null
     },
     {
       "id": "tx02374",
@@ -23775,7 +26149,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "S.OHM",
-      "value": 127.0
+      "value": 127.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02375",
@@ -23785,7 +26160,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ALLSEMI",
-      "value": 1116.29
+      "value": 1116.29,
+      "nota_fiscal": null
     },
     {
       "id": "tx02376",
@@ -23795,7 +26171,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRICOMP COM",
-      "value": 621.6
+      "value": 621.6,
+      "nota_fiscal": null
     },
     {
       "id": "tx02377",
@@ -23805,7 +26182,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MEGAPIX",
-      "value": 298.87
+      "value": 298.87,
+      "nota_fiscal": null
     },
     {
       "id": "tx02378",
@@ -23814,8 +26192,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "18776",
-      "value": 212.0
+      "counterparty": "TRICONECT COMERCIAL ELETR. LTDA (0000321)",
+      "value": 212.0,
+      "nota_fiscal": "18776"
     },
     {
       "id": "tx02379",
@@ -23824,8 +26203,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "4352",
-      "value": 500.0
+      "counterparty": "MDS COMPONENTES ELETRONICOS LTDA (0000297)",
+      "value": 500.0,
+      "nota_fiscal": "4352"
     },
     {
       "id": "tx02380",
@@ -23835,7 +26215,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "TRIAL ELETRONICA INDUSTRIAL (0000309)",
-      "value": 443.0
+      "value": 443.0,
+      "nota_fiscal": "12521"
     },
     {
       "id": "tx02381",
@@ -23845,7 +26226,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "AGENOR ZAMPIER (0001337)",
-      "value": 94.89
+      "value": 94.89,
+      "nota_fiscal": "12522"
     },
     {
       "id": "tx02382",
@@ -23855,7 +26237,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "CHAVE DIGITAL TECNOLOGIA ELETRONICA LTDA (0000022)",
-      "value": 742.0
+      "value": 742.0,
+      "nota_fiscal": "12523"
     },
     {
       "id": "tx02383",
@@ -23865,7 +26248,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ACCURACY EQUIPAMENTOS DE AUTOMACAO INDUS (0001340)",
-      "value": 164.91
+      "value": 164.91,
+      "nota_fiscal": "12524"
     },
     {
       "id": "tx02384",
@@ -23875,7 +26259,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "CUSTOM AMPS HAND BUILD (0000392)",
-      "value": 80.0
+      "value": 80.0,
+      "nota_fiscal": "12525"
     },
     {
       "id": "tx02385",
@@ -23885,7 +26270,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "CITTA ELETRONICA IND. E COM. LTDA ME (0000532)",
-      "value": 95.0
+      "value": 95.0,
+      "nota_fiscal": "12526"
     },
     {
       "id": "tx02386",
@@ -23895,7 +26281,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "VCP DEVOL",
-      "value": 1479.8
+      "value": 1479.8,
+      "nota_fiscal": "DEVOLUÇÃO"
     },
     {
       "id": "tx02387",
@@ -23905,7 +26292,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "SÓCIOS",
       "counterparty": "ALEX",
-      "value": 1500.0
+      "value": 1500.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02388",
@@ -23915,7 +26303,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BIQUAD",
-      "value": 420.0
+      "value": 420.0,
+      "nota_fiscal": "12342"
     },
     {
       "id": "tx02389",
@@ -23925,7 +26314,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "NEW TEC",
-      "value": 160.0
+      "value": 160.0,
+      "nota_fiscal": "7-SNF"
     },
     {
       "id": "tx02390",
@@ -23935,7 +26325,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "MAX IMPORT",
-      "value": 31000.0
+      "value": 31000.0,
+      "nota_fiscal": "MOVIMENTO"
     },
     {
       "id": "tx02391",
@@ -23945,7 +26336,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "PRODUTOS ELETRONICOS FRATA LTDA - 0000223",
-      "value": 2430.0
+      "value": 2430.0,
+      "nota_fiscal": "12150/03"
     },
     {
       "id": "tx02392",
@@ -23955,7 +26347,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ROYALCOMP COMPONENTES ELETR. LTDA - 0000570",
-      "value": 545.75
+      "value": 545.75,
+      "nota_fiscal": "12397/01"
     },
     {
       "id": "tx02393",
@@ -23965,7 +26358,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "DIGISYSTEM IND. DE SIST. ELETRO. LTDA - 0000040",
-      "value": 971.84
+      "value": 971.84,
+      "nota_fiscal": "12398/01"
     },
     {
       "id": "tx02394",
@@ -23975,7 +26369,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SIMPLES CONNECT INDUSTRIA E COMERCIO LTA - 0000308",
-      "value": 375.0
+      "value": 375.0,
+      "nota_fiscal": "12399/01"
     },
     {
       "id": "tx02395",
@@ -23985,7 +26380,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "E2E",
-      "value": 1324.0
+      "value": 1324.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02396",
@@ -23995,7 +26391,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY",
-      "value": 1436.16
+      "value": 1436.16,
+      "nota_fiscal": null
     },
     {
       "id": "tx02397",
@@ -24005,7 +26402,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP",
-      "value": 1225.65
+      "value": 1225.65,
+      "nota_fiscal": null
     },
     {
       "id": "tx02398",
@@ -24015,7 +26413,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP",
-      "value": 573.8
+      "value": 573.8,
+      "nota_fiscal": null
     },
     {
       "id": "tx02399",
@@ -24025,7 +26424,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRICOMP COM",
-      "value": 778.04
+      "value": 778.04,
+      "nota_fiscal": null
     },
     {
       "id": "tx02400",
@@ -24035,7 +26435,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL",
-      "value": 858.0
+      "value": 858.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02401",
@@ -24045,7 +26446,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETO",
-      "value": 7.24
+      "value": 7.24,
+      "nota_fiscal": null
     },
     {
       "id": "tx02402",
@@ -24054,8 +26456,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "1328",
-      "value": 400.0
+      "counterparty": "MRD COMPONENTES ELETRONICOS LTDA. (0000388)",
+      "value": 400.0,
+      "nota_fiscal": "1328"
     },
     {
       "id": "tx02403",
@@ -24064,8 +26467,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "17180",
-      "value": 784.07
+      "counterparty": "FILCRILL COMPS ELETRS IMP E EXP EIRELLI (0000048)",
+      "value": 784.07,
+      "nota_fiscal": "17180"
     },
     {
       "id": "tx02404",
@@ -24074,8 +26478,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "18783",
-      "value": 757.9
+      "counterparty": "TRICONECT COMERCIAL ELETR. LTDA (0000321)",
+      "value": 757.9,
+      "nota_fiscal": "18783"
     },
     {
       "id": "tx02405",
@@ -24084,8 +26489,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "262543",
-      "value": 1462.47
+      "counterparty": "ACP COMERCIO ATACADISTA DE COMPONENTES E (0000249)",
+      "value": 1462.47,
+      "nota_fiscal": "262543"
     },
     {
       "id": "tx02406",
@@ -24094,8 +26500,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "262620",
-      "value": 396.92
+      "counterparty": "ACP COMERCIO ATACADISTA DE COMPONENTES E (0000249)",
+      "value": 396.92,
+      "nota_fiscal": "262620"
     },
     {
       "id": "tx02407",
@@ -24104,8 +26511,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "76603",
-      "value": 725.8
+      "counterparty": "IDALL COM. ATAC. DE COMP. ELETR. LTDA (0000011)",
+      "value": 725.8,
+      "nota_fiscal": "76603"
     },
     {
       "id": "tx02408",
@@ -24114,8 +26522,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "76624",
-      "value": 618.2
+      "counterparty": "IDALL COM. ATAC. DE COMP. ELETR. LTDA (0000011)",
+      "value": 618.2,
+      "nota_fiscal": "76624"
     },
     {
       "id": "tx02409",
@@ -24124,8 +26533,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "9033",
-      "value": 549.0
+      "counterparty": "TRYNIT LED COMPONENTES ELETRONICOS EIREL (0000259)",
+      "value": 549.0,
+      "nota_fiscal": "9033"
     },
     {
       "id": "tx02410",
@@ -24134,8 +26544,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "90420",
-      "value": 450.0
+      "counterparty": "MEGAPIX COMP. ELETRONICOS LTDA-EPP (0000275)",
+      "value": 450.0,
+      "nota_fiscal": "90420"
     },
     {
       "id": "tx02411",
@@ -24145,7 +26556,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "BPM INDUSTRIA E COMERCIO (0000541)",
-      "value": 3379.68
+      "value": 3379.68,
+      "nota_fiscal": "12527"
     },
     {
       "id": "tx02412",
@@ -24155,7 +26567,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "MARCIO HIROSHI TSUNO PECAS ACESSORIOS E (0001341)",
-      "value": 39.98
+      "value": 39.98,
+      "nota_fiscal": "12528"
     },
     {
       "id": "tx02413",
@@ -24165,7 +26578,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO (0000660)",
-      "value": 584.0
+      "value": 584.0,
+      "nota_fiscal": "12529"
     },
     {
       "id": "tx02414",
@@ -24175,7 +26589,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FIBERWAN IND. DE EQUIP. ELETTR. LTDA-EPP (0000411)",
-      "value": 295.6
+      "value": 295.6,
+      "nota_fiscal": "12530"
     },
     {
       "id": "tx02415",
@@ -24185,7 +26600,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "HTR EQUIPAMENTOS ELETRONICOS LTDA (0000268)",
-      "value": 1114.0
+      "value": 1114.0,
+      "nota_fiscal": "12531"
     },
     {
       "id": "tx02416",
@@ -24195,7 +26611,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "NEXXO EQUIPAMENTOS ELETRONICOS LTDA (0000225)",
-      "value": 1249.0
+      "value": 1249.0,
+      "nota_fiscal": "12532"
     },
     {
       "id": "tx02417",
@@ -24205,7 +26622,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "HCM MALTA INDUSTRIA DE BRINQUEDOS (0000181)",
-      "value": 1607.0
+      "value": 1607.0,
+      "nota_fiscal": "12533"
     },
     {
       "id": "tx02418",
@@ -24215,7 +26633,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "J.M. MAQUINAS AUTOMOTIVAS EIRELI (0000387)",
-      "value": 190.0
+      "value": 190.0,
+      "nota_fiscal": "12534"
     },
     {
       "id": "tx02419",
@@ -24225,7 +26644,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "VBN",
-      "value": 12352.44
+      "value": 12352.44,
+      "nota_fiscal": "823"
     },
     {
       "id": "tx02420",
@@ -24235,7 +26655,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL",
-      "value": 1266.67
+      "value": 1266.67,
+      "nota_fiscal": null
     },
     {
       "id": "tx02421",
@@ -24245,7 +26666,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "MOVIMENTO",
       "counterparty": "MAX ILUMINAÇÃO",
-      "value": 31000.0
+      "value": 31000.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02422",
@@ -24255,7 +26677,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "DENTSCLER IND. DE APAR. ODONTO. EIRELLI - 0000390",
-      "value": 893.25
+      "value": 893.25,
+      "nota_fiscal": "12091/04"
     },
     {
       "id": "tx02423",
@@ -24265,7 +26688,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO - 0000660",
-      "value": 4545.77
+      "value": 4545.77,
+      "nota_fiscal": "12166/02"
     },
     {
       "id": "tx02424",
@@ -24275,7 +26699,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "C R D MONTAGEM - 0000200",
-      "value": 529.83
+      "value": 529.83,
+      "nota_fiscal": "12287/02"
     },
     {
       "id": "tx02425",
@@ -24285,7 +26710,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ROYALCOMP COMPONENTES ELETR. LTDA - 0000570",
-      "value": 1488.0
+      "value": 1488.0,
+      "nota_fiscal": "12299/02"
     },
     {
       "id": "tx02426",
@@ -24295,7 +26721,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "MARTEC MED INDUSTRIA E COMERCIO DE EQUIP - 0000788",
-      "value": 441.67
+      "value": 441.67,
+      "nota_fiscal": "12331/03"
     },
     {
       "id": "tx02427",
@@ -24305,7 +26732,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "VIEWMED IND. A E COM. DE PROD. MEDICOSA - 0000343",
-      "value": 573.5
+      "value": 573.5,
+      "nota_fiscal": "12387/01"
     },
     {
       "id": "tx02428",
@@ -24315,7 +26743,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "VINTEK IND., COMERCIO E SERVICOS LTDA - 0000894",
-      "value": 4732.78
+      "value": 4732.78,
+      "nota_fiscal": "12390/01"
     },
     {
       "id": "tx02429",
@@ -24325,7 +26754,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "R. BAIAO INDUSTRIA E COMERCIO LTDA - 0000060",
-      "value": 2571.7
+      "value": 2571.7,
+      "nota_fiscal": "12401/01"
     },
     {
       "id": "tx02430",
@@ -24335,7 +26765,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "NEWTESC TECNOLOGIA E COMERCIO LTDA - 0000106",
-      "value": 1596.5
+      "value": 1596.5,
+      "nota_fiscal": "12402/01"
     },
     {
       "id": "tx02431",
@@ -24345,7 +26776,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "GASTOS FIXOS",
       "counterparty": "SERASA",
-      "value": 545.15
+      "value": 545.15,
+      "nota_fiscal": null
     },
     {
       "id": "tx02432",
@@ -24355,7 +26787,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP",
-      "value": 1028.05
+      "value": 1028.05,
+      "nota_fiscal": null
     },
     {
       "id": "tx02433",
@@ -24365,7 +26798,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP",
-      "value": 496.89
+      "value": 496.89,
+      "nota_fiscal": null
     },
     {
       "id": "tx02434",
@@ -24375,7 +26809,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP",
-      "value": 528.44
+      "value": 528.44,
+      "nota_fiscal": null
     },
     {
       "id": "tx02435",
@@ -24385,7 +26820,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL",
-      "value": 779.27
+      "value": 779.27,
+      "nota_fiscal": null
     },
     {
       "id": "tx02436",
@@ -24395,7 +26831,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL",
-      "value": 772.73
+      "value": 772.73,
+      "nota_fiscal": null
     },
     {
       "id": "tx02437",
@@ -24405,7 +26842,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL",
-      "value": 904.43
+      "value": 904.43,
+      "nota_fiscal": null
     },
     {
       "id": "tx02438",
@@ -24415,7 +26853,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MRD",
-      "value": 360.0
+      "value": 360.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02439",
@@ -24425,7 +26864,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "COMP TOTAL",
-      "value": 490.0
+      "value": 490.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02440",
@@ -24435,7 +26875,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY MAX",
-      "value": 422.52
+      "value": 422.52,
+      "nota_fiscal": null
     },
     {
       "id": "tx02441",
@@ -24445,7 +26886,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "SOFT",
-      "value": 1372.02
+      "value": 1372.02,
+      "nota_fiscal": null
     },
     {
       "id": "tx02442",
@@ -24455,7 +26897,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "CX",
-      "value": 463.05
+      "value": 463.05,
+      "nota_fiscal": null
     },
     {
       "id": "tx02443",
@@ -24465,7 +26908,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MARKCEL",
-      "value": 770.0
+      "value": 770.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02444",
@@ -24475,7 +26919,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "GASTOS FIXOS",
       "counterparty": "ALUGUEL",
-      "value": 4200.0
+      "value": 4200.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02445",
@@ -24485,7 +26930,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "MANUTENÇÃO",
       "counterparty": "GILBERTO",
-      "value": 150.0
+      "value": 150.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02446",
@@ -24495,7 +26941,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "LECOMP",
-      "value": 10.5
+      "value": 10.5,
+      "nota_fiscal": null
     },
     {
       "id": "tx02447",
@@ -24505,7 +26952,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "MATHEUS DA MATA",
-      "value": 50.0
+      "value": 50.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02448",
@@ -24515,7 +26963,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "TAMIRES",
-      "value": 50.0
+      "value": 50.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02449",
@@ -24525,7 +26974,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETO",
-      "value": 16.29
+      "value": 16.29,
+      "nota_fiscal": null
     },
     {
       "id": "tx02450",
@@ -24535,7 +26985,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "EDMILSON DA COSTA NUNES (0001343)",
-      "value": 26.99
+      "value": 26.99,
+      "nota_fiscal": "12535"
     },
     {
       "id": "tx02451",
@@ -24545,7 +26996,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "VICENTE JOAO OLIVERIO JUNIOR LTDA (0001336)",
-      "value": 34.99
+      "value": 34.99,
+      "nota_fiscal": "12536"
     },
     {
       "id": "tx02452",
@@ -24555,7 +27007,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ADB SERVICOS INDUSTRIAIS LTDA (0001345)",
-      "value": 477.72
+      "value": 477.72,
+      "nota_fiscal": "12537"
     },
     {
       "id": "tx02453",
@@ -24565,7 +27018,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E (0000081)",
-      "value": 502.0
+      "value": 502.0,
+      "nota_fiscal": "12538"
     },
     {
       "id": "tx02454",
@@ -24575,7 +27029,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E (0000081)",
-      "value": 316.43
+      "value": 316.43,
+      "nota_fiscal": "12539"
     },
     {
       "id": "tx02455",
@@ -24585,7 +27040,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E (0000081)",
-      "value": 3593.52
+      "value": 3593.52,
+      "nota_fiscal": "12540"
     },
     {
       "id": "tx02456",
@@ -24595,7 +27051,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "TRANSFIX",
-      "value": 1115.0
+      "value": 1115.0,
+      "nota_fiscal": "805"
     },
     {
       "id": "tx02457",
@@ -24605,7 +27062,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ALLPRINT",
-      "value": 1722.5
+      "value": 1722.5,
+      "nota_fiscal": "806"
     },
     {
       "id": "tx02458",
@@ -24615,7 +27073,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH",
-      "value": 1419.61
+      "value": 1419.61,
+      "nota_fiscal": "814"
     },
     {
       "id": "tx02459",
@@ -24625,7 +27084,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "CARTÃO DE CRÉDITO",
       "counterparty": "CARTÃO",
-      "value": 9979.28
+      "value": 9979.28,
+      "nota_fiscal": null
     },
     {
       "id": "tx02460",
@@ -24635,7 +27095,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "CARTÃO DE CRÉDITO",
       "counterparty": "CARTÃO",
-      "value": 3500.0
+      "value": 3500.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02461",
@@ -24645,7 +27106,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 3.62
+      "value": 3.62,
+      "nota_fiscal": null
     },
     {
       "id": "tx02462",
@@ -24655,7 +27117,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "R. BAIAO INDUSTRIA E COMERCIO LTDA - 0000060",
-      "value": 4279.44
+      "value": 4279.44,
+      "nota_fiscal": "12031/03"
     },
     {
       "id": "tx02463",
@@ -24665,7 +27128,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "EVOLUTEC INDUSTRIA E COMERCIO DE ELETROA - 0000229",
-      "value": 543.63
+      "value": 543.63,
+      "nota_fiscal": "12195/03"
     },
     {
       "id": "tx02464",
@@ -24675,7 +27139,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "NIATRON IND. E COM. DE EQUIP. ELETRO. - 0000143",
-      "value": 575.25
+      "value": 575.25,
+      "nota_fiscal": "12235/04"
     },
     {
       "id": "tx02465",
@@ -24685,7 +27150,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "COMLINK EQUIPAMENTOS ELETRONICOS LTDA - 0000028",
-      "value": 254.7
+      "value": 254.7,
+      "nota_fiscal": "12411/01"
     },
     {
       "id": "tx02466",
@@ -24695,7 +27161,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CARINE G RODRIGUES - 0000764",
-      "value": 1377.9
+      "value": 1377.9,
+      "nota_fiscal": "12412/01"
     },
     {
       "id": "tx02467",
@@ -24705,7 +27172,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "MS ELETRONICA",
-      "value": 160.0
+      "value": 160.0,
+      "nota_fiscal": "12544"
     },
     {
       "id": "tx02468",
@@ -24715,7 +27183,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETO",
-      "value": 9.05
+      "value": 9.05,
+      "nota_fiscal": null
     },
     {
       "id": "tx02469",
@@ -24725,7 +27194,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DLT SUPRIMENTOS",
-      "value": 910.0
+      "value": 910.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02470",
@@ -24735,7 +27205,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ALLNETSYS COM",
-      "value": 187.5
+      "value": 187.5,
+      "nota_fiscal": null
     },
     {
       "id": "tx02471",
@@ -24745,7 +27216,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "LEDCOMP-CREDERE",
-      "value": 800.0
+      "value": 800.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02472",
@@ -24755,7 +27227,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL",
-      "value": 575.33
+      "value": 575.33,
+      "nota_fiscal": null
     },
     {
       "id": "tx02473",
@@ -24765,7 +27238,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "MOVIMENTO",
       "counterparty": "MAX IMPORT",
-      "value": 5500.0
+      "value": 5500.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02474",
@@ -24774,8 +27248,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "116898",
-      "value": 10.5
+      "counterparty": "LECOMP Com. de Comp. Eletronicos LTDA (0000312)",
+      "value": 10.5,
+      "nota_fiscal": "116898"
     },
     {
       "id": "tx02475",
@@ -24784,8 +27259,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "1439",
-      "value": 371.46
+      "counterparty": "PROELETRONICA COMPS ELETS IMPO E EXPO LT (0000273)",
+      "value": 371.46,
+      "nota_fiscal": "1439"
     },
     {
       "id": "tx02476",
@@ -24794,8 +27270,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "205173",
-      "value": 734.4
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 734.4,
+      "nota_fiscal": "205173"
     },
     {
       "id": "tx02477",
@@ -24804,8 +27281,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "262685",
-      "value": 671.95
+      "counterparty": "ACP COMERCIO ATACADISTA DE COMPONENTES E (0000249)",
+      "value": 671.95,
+      "nota_fiscal": "262685"
     },
     {
       "id": "tx02478",
@@ -24814,8 +27292,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "30894",
-      "value": 216.0
+      "counterparty": "DIGICOMP ELETRONICA EIRELI (0000279)",
+      "value": 216.0,
+      "nota_fiscal": "30894"
     },
     {
       "id": "tx02479",
@@ -24824,8 +27303,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "53911",
-      "value": 1087.37
+      "counterparty": "MKB ELETRONICA LTDA (0000088)",
+      "value": 1087.37,
+      "nota_fiscal": "53911"
     },
     {
       "id": "tx02480",
@@ -24834,8 +27314,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "86140",
-      "value": 499.7
+      "counterparty": "COMP TOTAL COM. E IMP. DE COMP. ELETRON. (0000267)",
+      "value": 499.7,
+      "nota_fiscal": "86140"
     },
     {
       "id": "tx02481",
@@ -24845,7 +27326,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "SEBASTIAO CESAR GRASSI ELETRONICOS - M.. (0000279)",
-      "value": 1703.6
+      "value": 1703.6,
+      "nota_fiscal": "12541"
     },
     {
       "id": "tx02482",
@@ -24855,7 +27337,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "VIEWMED IND. A E COM. DE PROD. MEDICOSA (0000343)",
-      "value": 393.2
+      "value": 393.2,
+      "nota_fiscal": "12542"
     },
     {
       "id": "tx02483",
@@ -24865,7 +27348,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "MS ELETRONICA INDUSTRIA E COMERCIO LTDA (0000528)",
-      "value": 160.0
+      "value": 160.0,
+      "nota_fiscal": "12544"
     },
     {
       "id": "tx02484",
@@ -24875,7 +27359,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ELETROFELIX INDUSTRIA E COMERCIO LTDA (0000477)",
-      "value": 294.25
+      "value": 294.25,
+      "nota_fiscal": "12546"
     },
     {
       "id": "tx02485",
@@ -24885,7 +27370,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ELIO ULLIAM CALDAS (0001346)",
-      "value": 22.99
+      "value": 22.99,
+      "nota_fiscal": "12547"
     },
     {
       "id": "tx02486",
@@ -24895,7 +27381,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "JOSE PEREIRA SANTOS 34821198568 (0000120)",
-      "value": 306.0
+      "value": 306.0,
+      "nota_fiscal": "12549"
     },
     {
       "id": "tx02487",
@@ -24905,7 +27392,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ROYALCOMP COMPONENTES ELETR. LTDA (0000570)",
-      "value": 1152.0
+      "value": 1152.0,
+      "nota_fiscal": "12550"
     },
     {
       "id": "tx02488",
@@ -24915,7 +27403,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ALLPRINT LATINA AUTOMACAO DE MAQUINAS EA (0000291)",
-      "value": 336.0
+      "value": 336.0,
+      "nota_fiscal": "12551"
     },
     {
       "id": "tx02489",
@@ -24925,7 +27414,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ALLPRINT LATINA AUTOMACAO DE MAQUINAS EA (0000291)",
-      "value": 9.21
+      "value": 9.21,
+      "nota_fiscal": "12552"
     },
     {
       "id": "tx02490",
@@ -24935,7 +27425,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "SIMPLES CONNECT INDUSTRIA E COMERCIO LTA (0000308)",
-      "value": 1140.0
+      "value": 1140.0,
+      "nota_fiscal": "12553"
     },
     {
       "id": "tx02491",
@@ -24945,7 +27436,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E (0000081)",
-      "value": 2186.4
+      "value": 2186.4,
+      "nota_fiscal": "12554"
     },
     {
       "id": "tx02492",
@@ -24955,7 +27447,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "NEWTESC TECNOLOGIA E COMERCIO LTDA (0000106)",
-      "value": 280.0
+      "value": 280.0,
+      "nota_fiscal": "12555"
     },
     {
       "id": "tx02493",
@@ -24965,7 +27458,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "PROVOLT TECNOLOGIA ELETRONICA LTDA (0000886)",
-      "value": 1554.5
+      "value": 1554.5,
+      "nota_fiscal": "12556"
     },
     {
       "id": "tx02494",
@@ -24975,7 +27469,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "VBN",
-      "value": 12352.44
+      "value": 12352.44,
+      "nota_fiscal": "823/02"
     },
     {
       "id": "tx02495",
@@ -24985,7 +27480,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "TRANSFIX",
-      "value": 6014.9
+      "value": 6014.9,
+      "nota_fiscal": "815/03"
     },
     {
       "id": "tx02496",
@@ -24995,7 +27491,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "TELESHESK",
-      "value": 6200.33
+      "value": 6200.33,
+      "nota_fiscal": "807"
     },
     {
       "id": "tx02497",
@@ -25005,7 +27502,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "TRANSFIX",
-      "value": 6014.9
+      "value": 6014.9,
+      "nota_fiscal": "815/04"
     },
     {
       "id": "tx02498",
@@ -25015,7 +27513,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "VBN",
-      "value": 12352.44
+      "value": 12352.44,
+      "nota_fiscal": "823/2"
     },
     {
       "id": "tx02499",
@@ -25025,7 +27524,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "TRANSFIX",
-      "value": 3364.09
+      "value": 3364.09,
+      "nota_fiscal": "815/05"
     },
     {
       "id": "tx02500",
@@ -25035,7 +27535,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "MAX LED ILUM",
-      "value": 5500.0
+      "value": 5500.0,
+      "nota_fiscal": "MOVIMENTAÇÃO"
     },
     {
       "id": "tx02501",
@@ -25045,7 +27546,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ELETROFELIX",
-      "value": 390.33
+      "value": 390.33,
+      "nota_fiscal": "811"
     },
     {
       "id": "tx02502",
@@ -25055,7 +27557,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "R.BAIÃO",
-      "value": 462.0
+      "value": 462.0,
+      "nota_fiscal": "793"
     },
     {
       "id": "tx02503",
@@ -25065,7 +27568,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "IMPORTAÇÃO",
       "counterparty": "IMPORTAÇÃO",
-      "value": 25000.0
+      "value": 25000.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02504",
@@ -25075,7 +27579,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 3.62
+      "value": 3.62,
+      "nota_fiscal": null
     },
     {
       "id": "tx02505",
@@ -25085,7 +27590,8 @@ const MAXLED_DATA = {
       "flow": "compra",
       "category": null,
       "counterparty": "IDALL",
-      "value": 18615.5
+      "value": 18615.5,
+      "nota_fiscal": "76645"
     },
     {
       "id": "tx02506",
@@ -25095,7 +27601,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "JOSE PEREIRA SANTOS 34821198568 (0000120)",
-      "value": 85.0
+      "value": 85.0,
+      "nota_fiscal": "824"
     },
     {
       "id": "tx02507",
@@ -25105,7 +27612,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "SIMPLES CONNECT INDUSTRIA E COMERCIO LTA (0000308)",
-      "value": 26825.0
+      "value": 26825.0,
+      "nota_fiscal": "825"
     },
     {
       "id": "tx02508",
@@ -25115,7 +27623,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E (0000081)",
-      "value": 330.0
+      "value": 330.0,
+      "nota_fiscal": "826"
     },
     {
       "id": "tx02509",
@@ -25125,7 +27634,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
-      "value": 1021.65
+      "value": 1021.65,
+      "nota_fiscal": "12422"
     },
     {
       "id": "tx02510",
@@ -25135,7 +27645,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BINDING",
-      "value": 736.0
+      "value": 736.0,
+      "nota_fiscal": "12407"
     },
     {
       "id": "tx02511",
@@ -25145,7 +27656,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "J.M. MAQUINAS AUTOMOTIVAS EIRELI - 0000387",
-      "value": 4419.9
+      "value": 4419.9,
+      "nota_fiscal": "12405"
     },
     {
       "id": "tx02512",
@@ -25155,7 +27667,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ROYALCOMP COMPONENTES ELETR. LTDA - 0000570",
-      "value": 545.75
+      "value": 545.75,
+      "nota_fiscal": "12397"
     },
     {
       "id": "tx02513",
@@ -25165,7 +27678,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "RALCOMP",
-      "value": 650.0
+      "value": 650.0,
+      "nota_fiscal": "12423"
     },
     {
       "id": "tx02514",
@@ -25175,7 +27689,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRICONECT",
-      "value": 23.85
+      "value": 23.85,
+      "nota_fiscal": null
     },
     {
       "id": "tx02515",
@@ -25185,7 +27700,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "METALTEX",
-      "value": 3418.37
+      "value": 3418.37,
+      "nota_fiscal": null
     },
     {
       "id": "tx02516",
@@ -25195,7 +27711,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP",
-      "value": 551.11
+      "value": 551.11,
+      "nota_fiscal": null
     },
     {
       "id": "tx02517",
@@ -25205,7 +27722,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL",
-      "value": 456.5
+      "value": 456.5,
+      "nota_fiscal": null
     },
     {
       "id": "tx02518",
@@ -25215,7 +27733,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETO",
-      "value": 7.24
+      "value": 7.24,
+      "nota_fiscal": null
     },
     {
       "id": "tx02519",
@@ -25224,8 +27743,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "131244",
-      "value": 111.0
+      "counterparty": "WKS TECHNOLOGY DO BRASIL LTDA (0000320)",
+      "value": 111.0,
+      "nota_fiscal": "131244"
     },
     {
       "id": "tx02520",
@@ -25234,8 +27754,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "18880",
-      "value": 23.85
+      "counterparty": "TRICONECT COMERCIAL ELETR. LTDA (0000321)",
+      "value": 23.85,
+      "nota_fiscal": "18880"
     },
     {
       "id": "tx02521",
@@ -25244,8 +27765,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "205459",
-      "value": 164.17
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 164.17,
+      "nota_fiscal": "205459"
     },
     {
       "id": "tx02522",
@@ -25254,8 +27776,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "24345",
-      "value": 290.0
+      "counterparty": "ZENER COMPONENTES ELETRONICOS LTDA - ME (0000317)",
+      "value": 290.0,
+      "nota_fiscal": "24345"
     },
     {
       "id": "tx02523",
@@ -25264,8 +27787,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "2885",
-      "value": 342.0
+      "counterparty": "CX COMERCIAL EIRELI EPP (0000329)",
+      "value": 342.0,
+      "nota_fiscal": "2885"
     },
     {
       "id": "tx02524",
@@ -25274,8 +27798,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "5561",
-      "value": 899.0
+      "counterparty": "FERA COMPONENTES ELETRONICOS LTDA (0000431)",
+      "value": 899.0,
+      "nota_fiscal": "5561"
     },
     {
       "id": "tx02525",
@@ -25284,8 +27809,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "68650",
-      "value": 479.6
+      "counterparty": "TRICOMP COMERCIAL ELETR. LTDA (0000278)",
+      "value": 479.6,
+      "nota_fiscal": "68650"
     },
     {
       "id": "tx02526",
@@ -25294,8 +27820,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "9049",
-      "value": 307.0
+      "counterparty": "TRYNIT LED COMPONENTES ELETRONICOS EIREL (0000259)",
+      "value": 307.0,
+      "nota_fiscal": "9049"
     },
     {
       "id": "tx02527",
@@ -25304,8 +27831,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "72685",
-      "value": 1999.4
+      "counterparty": "IMPLASTEC",
+      "value": 1999.4,
+      "nota_fiscal": "72685"
     },
     {
       "id": "tx02528",
@@ -25315,7 +27843,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "EVOLUTEC INDUSTRIA E COMERCIO DE ELETROA (0000229)",
-      "value": 943.6
+      "value": 943.6,
+      "nota_fiscal": "12557"
     },
     {
       "id": "tx02529",
@@ -25325,7 +27854,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E (0000081)",
-      "value": 1032.8
+      "value": 1032.8,
+      "nota_fiscal": "12558"
     },
     {
       "id": "tx02530",
@@ -25335,7 +27865,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "SOLSUSTENTAVEL PROD. ELETRO ELETRONICOS (0000125)",
-      "value": 797.0
+      "value": 797.0,
+      "nota_fiscal": "12559"
     },
     {
       "id": "tx02531",
@@ -25345,7 +27876,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "J.M MAQUINAS",
-      "value": 4162.5
+      "value": 4162.5,
+      "nota_fiscal": "813"
     },
     {
       "id": "tx02532",
@@ -25355,7 +27887,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 1.81
+      "value": 1.81,
+      "nota_fiscal": null
     },
     {
       "id": "tx02533",
@@ -25365,7 +27898,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "NEW-TEC",
-      "value": 225.0
+      "value": 225.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02534",
@@ -25375,7 +27909,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "J.M. MAQUINAS AUT",
-      "value": 190.0
+      "value": 190.0,
+      "nota_fiscal": "12534/01"
     },
     {
       "id": "tx02535",
@@ -25385,7 +27920,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH EQUIP",
-      "value": 628.5
+      "value": 628.5,
+      "nota_fiscal": "12426/01"
     },
     {
       "id": "tx02536",
@@ -25395,7 +27931,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "RYON MAQUINAS LTDA -",
-      "value": 1307.64
+      "value": 1307.64,
+      "nota_fiscal": "12414/01"
     },
     {
       "id": "tx02537",
@@ -25405,7 +27942,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BPM INDUSTRIA",
-      "value": 466.7
+      "value": 466.7,
+      "nota_fiscal": "12427/01"
     },
     {
       "id": "tx02538",
@@ -25415,7 +27953,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SSAT SINALIZACAO",
-      "value": 347.74
+      "value": 347.74,
+      "nota_fiscal": "12430/01"
     },
     {
       "id": "tx02539",
@@ -25425,7 +27964,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH EQUIP",
-      "value": 5545.98
+      "value": 5545.98,
+      "nota_fiscal": "12404/01"
     },
     {
       "id": "tx02540",
@@ -25435,7 +27975,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BPM INDUSTRIA",
-      "value": 1843.2
+      "value": 1843.2,
+      "nota_fiscal": "12385/02"
     },
     {
       "id": "tx02541",
@@ -25445,7 +27986,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "INELTEC TECNOLOGIAS",
-      "value": 1774.6
+      "value": 1774.6,
+      "nota_fiscal": "12334/02"
     },
     {
       "id": "tx02542",
@@ -25455,7 +27997,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ZILOCCHI ELETRONICA",
-      "value": 582.48
+      "value": 582.48,
+      "nota_fiscal": "12330/02"
     },
     {
       "id": "tx02543",
@@ -25465,7 +28008,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BRASMEDICAL IND.",
-      "value": 1927.12
+      "value": 1927.12,
+      "nota_fiscal": "12289/01"
     },
     {
       "id": "tx02544",
@@ -25475,7 +28019,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETO",
-      "value": 18.1
+      "value": 18.1,
+      "nota_fiscal": null
     },
     {
       "id": "tx02545",
@@ -25485,7 +28030,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRICONECT",
-      "value": 548.33
+      "value": 548.33,
+      "nota_fiscal": null
     },
     {
       "id": "tx02546",
@@ -25495,7 +28041,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRICOMP COM",
-      "value": 555.0
+      "value": 555.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02547",
@@ -25505,7 +28052,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MEGADEF",
-      "value": 1511.24
+      "value": 1511.24,
+      "nota_fiscal": null
     },
     {
       "id": "tx02548",
@@ -25515,7 +28063,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "VETRONIC",
-      "value": 693.6
+      "value": 693.6,
+      "nota_fiscal": null
     },
     {
       "id": "tx02549",
@@ -25525,7 +28074,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MDS",
-      "value": 328.0
+      "value": 328.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02550",
@@ -25535,7 +28085,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "SÓCIOS",
       "counterparty": "CARTÃO MARIA",
-      "value": 5270.37
+      "value": 5270.37,
+      "nota_fiscal": null
     },
     {
       "id": "tx02551",
@@ -25545,7 +28096,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETO",
-      "value": 1.6
+      "value": 1.6,
+      "nota_fiscal": null
     },
     {
       "id": "tx02552",
@@ -25554,8 +28106,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "205522",
-      "value": 1112.28
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 1112.28,
+      "nota_fiscal": "205522"
     },
     {
       "id": "tx02553",
@@ -25564,8 +28117,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "25257",
-      "value": 1924.38
+      "counterparty": "DV TECNOLOGIA ELETROELETRONICA LTDA (0000025)",
+      "value": 1924.38,
+      "nota_fiscal": "25257"
     },
     {
       "id": "tx02554",
@@ -25574,8 +28128,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "262847",
-      "value": 1005.54
+      "counterparty": "ACP COMERCIO ATACADISTA DE COMPONENTES E (0000249)",
+      "value": 1005.54,
+      "nota_fiscal": "262847"
     },
     {
       "id": "tx02555",
@@ -25584,8 +28139,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "68743",
-      "value": 243.8
+      "counterparty": "TRICOMP COMERCIAL ELETR. LTDA (0000278)",
+      "value": 243.8,
+      "nota_fiscal": "68743"
     },
     {
       "id": "tx02556",
@@ -25594,8 +28150,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "76696",
-      "value": 1032.5
+      "counterparty": "IDALL COM. ATAC. DE COMP. ELETR. LTDA (0000011)",
+      "value": 1032.5,
+      "nota_fiscal": "76696"
     },
     {
       "id": "tx02557",
@@ -25604,8 +28161,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "909",
-      "value": 288.0
+      "counterparty": "CIRCUITRONIX ELETRO ELETRONICA LTDA (0000442)",
+      "value": 288.0,
+      "nota_fiscal": "909"
     },
     {
       "id": "tx02558",
@@ -25615,7 +28173,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "CURTIS ELETRONICA INDUSTRIA E COMERCIO A (0000295)",
-      "value": 655.5
+      "value": 655.5,
+      "nota_fiscal": "12560"
     },
     {
       "id": "tx02559",
@@ -25625,7 +28184,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "J.M. MAQUINAS AUTOMOTIVAS EIRELI (0000387)",
-      "value": 2911.3
+      "value": 2911.3,
+      "nota_fiscal": "12561"
     },
     {
       "id": "tx02560",
@@ -25635,7 +28195,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FZW INNOVATION LTDA (0000848)",
-      "value": 4699.87
+      "value": 4699.87,
+      "nota_fiscal": "12563"
     },
     {
       "id": "tx02561",
@@ -25645,7 +28206,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "MARTEC MED INDUSTRIA E COMERCIO DE EQUIP (0000788)",
-      "value": 1390.5
+      "value": 1390.5,
+      "nota_fiscal": "12564"
     },
     {
       "id": "tx02562",
@@ -25655,7 +28217,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E (0000081)",
-      "value": 95.0
+      "value": 95.0,
+      "nota_fiscal": "12566"
     },
     {
       "id": "tx02563",
@@ -25665,7 +28228,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO (0000660)",
-      "value": 2831.32
+      "value": 2831.32,
+      "nota_fiscal": "12567"
     },
     {
       "id": "tx02564",
@@ -25675,7 +28239,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "TRANSPORTES IMPORTAÇÃO",
       "counterparty": "DHL",
-      "value": 801.6
+      "value": 801.6,
+      "nota_fiscal": null
     },
     {
       "id": "tx02565",
@@ -25685,7 +28250,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "TRANSPORTES",
       "counterparty": "MOTOBOU",
-      "value": 1100.0
+      "value": 1100.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02566",
@@ -25695,7 +28261,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "TRANSPORTES",
       "counterparty": "GILBERTO",
-      "value": 100.0
+      "value": 100.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02567",
@@ -25705,7 +28272,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "CONSUMO",
       "counterparty": "COXINHA PA MENINAS",
-      "value": 47.71
+      "value": 47.71,
+      "nota_fiscal": null
     },
     {
       "id": "tx02568",
@@ -25715,7 +28283,8 @@ const MAXLED_DATA = {
       "flow": "compra",
       "category": null,
       "counterparty": "LS IMP",
-      "value": 3668.0
+      "value": 3668.0,
+      "nota_fiscal": "165"
     },
     {
       "id": "tx02569",
@@ -25725,7 +28294,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "J.M. MAQUINAS AUTOMOTIVAS EIRELI (0000387)",
-      "value": 5838.7
+      "value": 5838.7,
+      "nota_fiscal": "827"
     },
     {
       "id": "tx02570",
@@ -25735,7 +28305,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "TIPTRONIC INDUSTRIA DE TECNOLOGIA ELETRO - 0001289",
-      "value": 733.8
+      "value": 733.8,
+      "nota_fiscal": "12509/01"
     },
     {
       "id": "tx02571",
@@ -25745,7 +28316,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "EVOLUTEC INDUSTRIA E COMERCIO DE ELETROA - 0000229",
-      "value": 253.5
+      "value": 253.5,
+      "nota_fiscal": "12436/01"
     },
     {
       "id": "tx02572",
@@ -25755,7 +28327,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ELETRONICA SIMAO EIRELI EPP. - 0000576",
-      "value": 484.19
+      "value": 484.19,
+      "nota_fiscal": "12429/01"
     },
     {
       "id": "tx02573",
@@ -25765,7 +28338,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "MARTEC MED INDUSTRIA E COMERCIO DE EQUIP - 0000788",
-      "value": 1044.25
+      "value": 1044.25,
+      "nota_fiscal": "12428/01"
     },
     {
       "id": "tx02574",
@@ -25775,7 +28349,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "NEWTESC TECNOLOGIA E COMERCIO LTDA - 0000106",
-      "value": 1643.75
+      "value": 1643.75,
+      "nota_fiscal": "12424/01"
     },
     {
       "id": "tx02575",
@@ -25785,7 +28360,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "VITORIA INDUSTRIA ELETRONICA LTDA - 0001305",
-      "value": 1515.2
+      "value": 1515.2,
+      "nota_fiscal": "12432/01"
     },
     {
       "id": "tx02576",
@@ -25795,7 +28371,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "DIGISYSTEM IND. DE SIST. ELETRO. LTDA - 0000040",
-      "value": 971.83
+      "value": 971.83,
+      "nota_fiscal": "12398/02"
     },
     {
       "id": "tx02577",
@@ -25805,7 +28382,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO - 0000660",
-      "value": 1861.83
+      "value": 1861.83,
+      "nota_fiscal": "12358/02"
     },
     {
       "id": "tx02578",
@@ -25815,7 +28393,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SSAT SINALIZACAO E ADESIVOS EIRELI EPP - 0000072",
-      "value": 1205.0
+      "value": 1205.0,
+      "nota_fiscal": "12348/02"
     },
     {
       "id": "tx02579",
@@ -25825,7 +28404,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "HTR EQUIPAMENTOS ELETRONICOS LTDA - 0000268",
-      "value": 1195.26
+      "value": 1195.26,
+      "nota_fiscal": "12341/02"
     },
     {
       "id": "tx02580",
@@ -25835,7 +28415,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "PROVOLT",
-      "value": 1444.0
+      "value": 1444.0,
+      "nota_fiscal": "12215"
     },
     {
       "id": "tx02581",
@@ -25845,7 +28426,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "R. BAIÃO",
-      "value": 2428.6
+      "value": 2428.6,
+      "nota_fiscal": "12231"
     },
     {
       "id": "tx02582",
@@ -25855,7 +28437,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "LECOMP",
-      "value": 200.0
+      "value": 200.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02583",
@@ -25865,7 +28448,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP",
-      "value": 787.98
+      "value": 787.98,
+      "nota_fiscal": null
     },
     {
       "id": "tx02584",
@@ -25875,7 +28459,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP",
-      "value": 673.78
+      "value": 673.78,
+      "nota_fiscal": null
     },
     {
       "id": "tx02585",
@@ -25885,7 +28470,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP",
-      "value": 3773.29
+      "value": 3773.29,
+      "nota_fiscal": null
     },
     {
       "id": "tx02586",
@@ -25895,7 +28481,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRICONECT",
-      "value": 699.44
+      "value": 699.44,
+      "nota_fiscal": null
     },
     {
       "id": "tx02587",
@@ -25905,7 +28492,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRICOMP",
-      "value": 390.08
+      "value": 390.08,
+      "nota_fiscal": null
     },
     {
       "id": "tx02588",
@@ -25915,7 +28503,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY",
-      "value": 455.15
+      "value": 455.15,
+      "nota_fiscal": null
     },
     {
       "id": "tx02589",
@@ -25925,7 +28514,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "CX",
-      "value": 53.6
+      "value": 53.6,
+      "nota_fiscal": null
     },
     {
       "id": "tx02590",
@@ -25935,7 +28525,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "INSUMOS",
       "counterparty": "CASTROPIL",
-      "value": 229.47
+      "value": 229.47,
+      "nota_fiscal": null
     },
     {
       "id": "tx02591",
@@ -25945,7 +28536,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 21.72
+      "value": 21.72,
+      "nota_fiscal": null
     },
     {
       "id": "tx02592",
@@ -25954,8 +28546,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "116987",
-      "value": 200.0
+      "counterparty": "LECOMP Com. de Comp. Eletronicos LTDA (0000312)",
+      "value": 200.0,
+      "nota_fiscal": "116987"
     },
     {
       "id": "tx02593",
@@ -25964,8 +28557,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "72685",
-      "value": 1999.4
+      "counterparty": "IMPLASTEC PLASTICOS TECNICOS E LUBRIFICA (0000308)",
+      "value": 1999.4,
+      "nota_fiscal": "72685"
     },
     {
       "id": "tx02594",
@@ -25975,7 +28569,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "SIMPLES CONNECT INDUSTRIA E COMERCIO LTA (0000308)",
-      "value": 2638.0
+      "value": 2638.0,
+      "nota_fiscal": "12568"
     },
     {
       "id": "tx02595",
@@ -25985,7 +28580,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO (0000660)",
-      "value": 316.0
+      "value": 316.0,
+      "nota_fiscal": "12569"
     },
     {
       "id": "tx02596",
@@ -25995,7 +28591,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ELETROFELIX INDUSTRIA E COMERCIO LTDA (0000477)",
-      "value": 705.0
+      "value": 705.0,
+      "nota_fiscal": "12570"
     },
     {
       "id": "tx02597",
@@ -26005,7 +28602,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SIMPLES CONECT",
-      "value": 3720.0
+      "value": 3720.0,
+      "nota_fiscal": "809"
     },
     {
       "id": "tx02598",
@@ -26015,7 +28613,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH",
-      "value": 1419.63
+      "value": 1419.63,
+      "nota_fiscal": "814"
     },
     {
       "id": "tx02599",
@@ -26025,7 +28624,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "TRANSFIX",
-      "value": 5610.67
+      "value": 5610.67,
+      "nota_fiscal": "795"
     },
     {
       "id": "tx02600",
@@ -26035,7 +28635,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL",
-      "value": 1900.0
+      "value": 1900.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02601",
@@ -26045,7 +28646,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "LS",
-      "value": 1310.0
+      "value": 1310.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02602",
@@ -26053,9 +28655,10 @@ const MAXLED_DATA = {
       "division": "importacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "EMPRÉSTIMO FGI",
+      "category": "EMPRÉSTIMO",
       "counterparty": "CAPITAL DE GIRO",
-      "value": 3117.76
+      "value": 3117.76,
+      "nota_fiscal": null
     },
     {
       "id": "tx02603",
@@ -26063,9 +28666,10 @@ const MAXLED_DATA = {
       "division": "importacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "SEGURO DE EMPRÉSTIMO",
+      "category": "EMPRÉSTIMO",
       "counterparty": "SEGURO",
-      "value": 109.79
+      "value": 109.79,
+      "nota_fiscal": null
     },
     {
       "id": "tx02604",
@@ -26075,7 +28679,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 3.62
+      "value": 3.62,
+      "nota_fiscal": null
     },
     {
       "id": "tx02605",
@@ -26085,7 +28690,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "SÓCIOS",
       "counterparty": "ALEX",
-      "value": 1000.0
+      "value": 1000.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02606",
@@ -26095,7 +28701,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ARIELTEK",
-      "value": 216.0
+      "value": 216.0,
+      "nota_fiscal": "12435"
     },
     {
       "id": "tx02607",
@@ -26105,7 +28712,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FZW",
-      "value": 4699.97
+      "value": 4699.97,
+      "nota_fiscal": "12563"
     },
     {
       "id": "tx02608",
@@ -26115,7 +28723,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "DENTSCLER IND. DE APAR. ODONTO. EIRELLI - 0000390",
-      "value": 677.5
+      "value": 677.5,
+      "nota_fiscal": "12262/03"
     },
     {
       "id": "tx02609",
@@ -26125,7 +28734,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SOLSUSTENTAVEL PROD. ELETRO ELETRONICOS - 0000125",
-      "value": 515.66
+      "value": 515.66,
+      "nota_fiscal": "12445/01"
     },
     {
       "id": "tx02610",
@@ -26135,7 +28745,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CHAVE DIGITAL TECNOLOGIA ELETRONICA LTDA - 0000022",
-      "value": 728.0
+      "value": 728.0,
+      "nota_fiscal": "12458/01"
     },
     {
       "id": "tx02611",
@@ -26145,7 +28756,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CARINE G RODRIGUES - 0000764",
-      "value": 1377.9
+      "value": 1377.9,
+      "nota_fiscal": "12412/02"
     },
     {
       "id": "tx02612",
@@ -26155,7 +28767,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SEMI-DIGITAL LTDA - 0000450",
-      "value": 272.5
+      "value": 272.5,
+      "nota_fiscal": "12437/01"
     },
     {
       "id": "tx02613",
@@ -26165,7 +28778,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "AWA EQUIPAMENTOS E SISTEMA - 0000433",
-      "value": 215.0
+      "value": 215.0,
+      "nota_fiscal": "12443/01"
     },
     {
       "id": "tx02614",
@@ -26175,7 +28789,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "AWA EQUIPAMENTOS E SISTEMA - 0000433",
-      "value": 179.2
+      "value": 179.2,
+      "nota_fiscal": "12444/01"
     },
     {
       "id": "tx02615",
@@ -26185,7 +28800,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SEBASTIAO CESAR GRASSI ELETRONICOS - M.. - 0000279",
-      "value": 598.58
+      "value": 598.58,
+      "nota_fiscal": "12492/01"
     },
     {
       "id": "tx02616",
@@ -26195,7 +28811,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SEBASTIAO CESAR GRASSI ELETRONICOS - M.. - 0000279",
-      "value": 598.57
+      "value": 598.57,
+      "nota_fiscal": "12492/02"
     },
     {
       "id": "tx02617",
@@ -26205,7 +28822,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SEBASTIAO CESAR GRASSI ELETRONICOS - M.. - 0000279",
-      "value": 851.8
+      "value": 851.8,
+      "nota_fiscal": "12541/01"
     },
     {
       "id": "tx02618",
@@ -26215,7 +28833,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 30.59
+      "value": 30.59,
+      "nota_fiscal": null
     },
     {
       "id": "tx02619",
@@ -26225,7 +28844,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "IOF",
-      "value": 101.39
+      "value": 101.39,
+      "nota_fiscal": null
     },
     {
       "id": "tx02620",
@@ -26235,7 +28855,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY MAX ELETRONICA LTDA",
-      "value": 1293.25
+      "value": 1293.25,
+      "nota_fiscal": null
     },
     {
       "id": "tx02621",
@@ -26245,7 +28866,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "CX COMERCIAL EIRELI",
-      "value": 461.7
+      "value": 461.7,
+      "nota_fiscal": null
     },
     {
       "id": "tx02622",
@@ -26255,7 +28877,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL COMERCIO ATACADISTA DE C",
-      "value": 363.0
+      "value": 363.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02623",
@@ -26265,7 +28888,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "TRANSPORTES",
       "counterparty": "EMPRESA BRASILEIRA DE CORREIOS",
-      "value": 2946.68
+      "value": 2946.68,
+      "nota_fiscal": null
     },
     {
       "id": "tx02624",
@@ -26275,7 +28899,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "GASTOS FIXOS",
       "counterparty": "PROSPERCLOUD - SISTEMA",
-      "value": 290.93
+      "value": 290.93,
+      "nota_fiscal": null
     },
     {
       "id": "tx02625",
@@ -26285,7 +28910,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "GASTOS FIXOS",
       "counterparty": "PROSPERCLOUD  SISTEMA",
-      "value": 571.54
+      "value": 571.54,
+      "nota_fiscal": null
     },
     {
       "id": "tx02626",
@@ -26295,7 +28921,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "LS",
-      "value": 190.0
+      "value": 190.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02627",
@@ -26304,8 +28931,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "159",
-      "value": 190.0
+      "counterparty": "LS COMPONENTES ELETRONICOS LTDA (0000197)",
+      "value": 190.0,
+      "nota_fiscal": "159"
     },
     {
       "id": "tx02628",
@@ -26314,8 +28942,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "17202",
-      "value": 535.54
+      "counterparty": "FILCRILL COMPS ELETRS IMP E EXP EIRELLI (0000048)",
+      "value": 535.54,
+      "nota_fiscal": "17202"
     },
     {
       "id": "tx02629",
@@ -26324,8 +28953,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "2516",
-      "value": 1950.0
+      "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO (0000660)",
+      "value": 1950.0,
+      "nota_fiscal": "2516"
     },
     {
       "id": "tx02630",
@@ -26334,8 +28964,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "76719",
-      "value": 660.0
+      "counterparty": "IDALL COM. ATAC. DE COMP. ELETR. LTDA (0000011)",
+      "value": 660.0,
+      "nota_fiscal": "76719"
     },
     {
       "id": "tx02631",
@@ -26345,7 +28976,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FIBERWAN IND. DE EQUIP. ELETTR. LTDA-EPP (0000411)",
-      "value": 338.0
+      "value": 338.0,
+      "nota_fiscal": "12571"
     },
     {
       "id": "tx02632",
@@ -26355,7 +28987,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "IOF NEGATIVO",
-      "value": 107.13
+      "value": 107.13,
+      "nota_fiscal": null
     },
     {
       "id": "tx02633",
@@ -26365,7 +28998,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ELETRONICA SIMAO EIRELI EPP. - 0000576",
-      "value": 468.63
+      "value": 468.63,
+      "nota_fiscal": "12429/02"
     },
     {
       "id": "tx02634",
@@ -26375,7 +29009,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
-      "value": 755.2
+      "value": 755.2,
+      "nota_fiscal": "12454/01"
     },
     {
       "id": "tx02635",
@@ -26385,7 +29020,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "E DE OLIVEIRA BARBOSA ELETRONICA - 0000898",
-      "value": 430.14
+      "value": 430.14,
+      "nota_fiscal": "12460/01"
     },
     {
       "id": "tx02636",
@@ -26395,7 +29031,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "VALEXCELL",
-      "value": 98.5
+      "value": 98.5,
+      "nota_fiscal": "12580"
     },
     {
       "id": "tx02637",
@@ -26405,7 +29042,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 5.43
+      "value": 5.43,
+      "nota_fiscal": null
     },
     {
       "id": "tx02638",
@@ -26415,7 +29053,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MKB ELETRONICA LTDA",
-      "value": 2934.11
+      "value": 2934.11,
+      "nota_fiscal": null
     },
     {
       "id": "tx02639",
@@ -26425,7 +29064,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "REIMOLD INDUSTRIA E COMERCIO D",
-      "value": 1991.14
+      "value": 1991.14,
+      "nota_fiscal": null
     },
     {
       "id": "tx02640",
@@ -26435,7 +29075,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MDS",
-      "value": 512.25
+      "value": 512.25,
+      "nota_fiscal": null
     },
     {
       "id": "tx02641",
@@ -26445,7 +29086,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "GEO ELETRON S LTDA",
-      "value": 967.5
+      "value": 967.5,
+      "nota_fiscal": null
     },
     {
       "id": "tx02642",
@@ -26455,7 +29097,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "PROD ELETRONICOS METALTEX LTDA",
-      "value": 2638.76
+      "value": 2638.76,
+      "nota_fiscal": null
     },
     {
       "id": "tx02643",
@@ -26465,7 +29108,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRICOMP COMERCIAL E LTDA",
-      "value": 584.27
+      "value": 584.27,
+      "nota_fiscal": null
     },
     {
       "id": "tx02644",
@@ -26475,7 +29119,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "CX COMERCIAL EIRELI",
-      "value": 1305.0
+      "value": 1305.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02645",
@@ -26485,7 +29130,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ORANGE E BLACK DISTRIBUIDORA L",
-      "value": 191.0
+      "value": 191.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02646",
@@ -26495,7 +29141,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "R. BAIAO INDUSTRIA E COMERCIO LTDA (0000060)",
-      "value": 11650.6
+      "value": 11650.6,
+      "nota_fiscal": "12572"
     },
     {
       "id": "tx02647",
@@ -26505,7 +29152,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "GG INDUSTRIA DE EQUIPAMENTOS MEDICOS LA (0000592)",
-      "value": 1378.0
+      "value": 1378.0,
+      "nota_fiscal": "12573"
     },
     {
       "id": "tx02648",
@@ -26515,7 +29163,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "VIEWMED IND. A E COM. DE PROD. MEDICOSA (0000343)",
-      "value": 750.0
+      "value": 750.0,
+      "nota_fiscal": "12574"
     },
     {
       "id": "tx02649",
@@ -26525,7 +29174,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "NIATRON IND. E COM. DE EQUIP. ELETRO. (0000143)",
-      "value": 818.2
+      "value": 818.2,
+      "nota_fiscal": "12576"
     },
     {
       "id": "tx02650",
@@ -26535,7 +29185,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "WGV SISTEMAS NACIONAIS ELETRO ELETRONICS (0000220)",
-      "value": 570.06
+      "value": 570.06,
+      "nota_fiscal": "12577"
     },
     {
       "id": "tx02651",
@@ -26545,7 +29196,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "VALEXCELL INDUSTRIA E COMERCIO ELETRO (0000166)",
-      "value": 98.5
+      "value": 98.5,
+      "nota_fiscal": "12580"
     },
     {
       "id": "tx02652",
@@ -26555,7 +29207,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "DENILSON APARECIDO BATISTA (0001352)",
-      "value": 19.99
+      "value": 19.99,
+      "nota_fiscal": "12581"
     },
     {
       "id": "tx02653",
@@ -26565,7 +29218,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "RYON MAQUINAS LTDA (0000662)",
-      "value": 3954.0
+      "value": 3954.0,
+      "nota_fiscal": "12582"
     },
     {
       "id": "tx02654",
@@ -26575,7 +29229,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "R. BAIÃO",
-      "value": 949.0
+      "value": 949.0,
+      "nota_fiscal": "816"
     },
     {
       "id": "tx02655",
@@ -26585,7 +29240,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 1.81
+      "value": 1.81,
+      "nota_fiscal": null
     },
     {
       "id": "tx02656",
@@ -26595,7 +29251,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "R. BAIAO INDUSTRIA E COMERCIO LTDA (0000060)",
-      "value": 1549.0
+      "value": 1549.0,
+      "nota_fiscal": "829"
     },
     {
       "id": "tx02657",
@@ -26605,7 +29262,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "RYON MAQUINAS LTDA (0000662)",
-      "value": 2700.0
+      "value": 2700.0,
+      "nota_fiscal": "830"
     },
     {
       "id": "tx02658",
@@ -26615,7 +29273,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CENTRAL= MLG",
-      "value": 46.8
+      "value": 46.8,
+      "nota_fiscal": "831"
     },
     {
       "id": "tx02659",
@@ -26625,7 +29284,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "TRANSFIX",
-      "value": 1540.0
+      "value": 1540.0,
+      "nota_fiscal": "12450 / 12451"
     },
     {
       "id": "tx02660",
@@ -26635,7 +29295,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "NEW-TEC",
-      "value": 230.0
+      "value": 230.0,
+      "nota_fiscal": "12654 / 12565"
     },
     {
       "id": "tx02661",
@@ -26645,7 +29306,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "TELEXTRONICA",
-      "value": 66.7
+      "value": 66.7,
+      "nota_fiscal": "12566"
     },
     {
       "id": "tx02662",
@@ -26655,7 +29317,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ACHEI",
-      "value": 255.0
+      "value": 255.0,
+      "nota_fiscal": "12584 E 822"
     },
     {
       "id": "tx02663",
@@ -26665,7 +29328,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
-      "value": 285.4
+      "value": 285.4,
+      "nota_fiscal": "12462/01"
     },
     {
       "id": "tx02664",
@@ -26675,7 +29339,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FIBERWAN IND. DE EQUIP. ELETTR. LTDA-EPP - 0000411",
-      "value": 1058.0
+      "value": 1058.0,
+      "nota_fiscal": "12461/01"
     },
     {
       "id": "tx02665",
@@ -26685,7 +29350,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BPM INDUSTRIA E COMERCIO - 0000541",
-      "value": 466.7
+      "value": 466.7,
+      "nota_fiscal": "12427/02"
     },
     {
       "id": "tx02666",
@@ -26695,7 +29361,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SSAT SINALIZACAO E ADESIVOS EIRELI EPP - 0000072",
-      "value": 347.73
+      "value": 347.73,
+      "nota_fiscal": "12430/02"
     },
     {
       "id": "tx02667",
@@ -26705,7 +29372,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BPM INDUSTRIA E COMERCIO - 0000541",
-      "value": 1843.2
+      "value": 1843.2,
+      "nota_fiscal": "12385/03"
     },
     {
       "id": "tx02668",
@@ -26715,7 +29383,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BRASMEDICAL IND. E COM. DE PRODUTOS PAR - 0000017",
-      "value": 1880.23
+      "value": 1880.23,
+      "nota_fiscal": "12289/02"
     },
     {
       "id": "tx02669",
@@ -26725,7 +29394,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ELETROFELIX INDUSTRIA E COMERC",
-      "value": 665.74
+      "value": 665.74,
+      "nota_fiscal": "12459"
     },
     {
       "id": "tx02670",
@@ -26735,7 +29405,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ELCOMP COMERCIO C E LTDA EPP",
-      "value": 613.78
+      "value": 613.78,
+      "nota_fiscal": null
     },
     {
       "id": "tx02671",
@@ -26745,7 +29416,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRICONECT COMERCIAL ELETRONICA",
-      "value": 548.34
+      "value": 548.34,
+      "nota_fiscal": null
     },
     {
       "id": "tx02672",
@@ -26755,7 +29427,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY MAX ELETRONICA LTDA",
-      "value": 566.66
+      "value": 566.66,
+      "nota_fiscal": null
     },
     {
       "id": "tx02673",
@@ -26765,7 +29438,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP C A COMP ELETRONICOS LTDA",
-      "value": 683.43
+      "value": 683.43,
+      "nota_fiscal": null
     },
     {
       "id": "tx02674",
@@ -26775,7 +29449,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP C A COMP ELETRONICOS LTDA",
-      "value": 833.02
+      "value": 833.02,
+      "nota_fiscal": null
     },
     {
       "id": "tx02675",
@@ -26785,7 +29460,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ZENER COMPONENTES ELETRONIC LT",
-      "value": 482.07
+      "value": 482.07,
+      "nota_fiscal": null
     },
     {
       "id": "tx02676",
@@ -26795,7 +29471,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MKB ELETRONICA LTDA",
-      "value": 3483.88
+      "value": 3483.88,
+      "nota_fiscal": null
     },
     {
       "id": "tx02677",
@@ -26805,7 +29482,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "ALINE",
-      "value": 2000.0
+      "value": 2000.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02678",
@@ -26815,7 +29493,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "TAMIRES",
-      "value": 1550.69
+      "value": 1550.69,
+      "nota_fiscal": null
     },
     {
       "id": "tx02679",
@@ -26825,7 +29504,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "MATHEUS S",
-      "value": 1028.32
+      "value": 1028.32,
+      "nota_fiscal": null
     },
     {
       "id": "tx02680",
@@ -26835,7 +29515,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "MATHEUS ROCHA",
-      "value": 2418.48
+      "value": 2418.48,
+      "nota_fiscal": null
     },
     {
       "id": "tx02681",
@@ -26845,7 +29526,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 12.67
+      "value": 12.67,
+      "nota_fiscal": null
     },
     {
       "id": "tx02682",
@@ -26854,8 +29536,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "149784",
-      "value": 342.41
+      "counterparty": "MEGADEF COMPONENTES ELETRONICOS LTDA (0000039)",
+      "value": 342.41,
+      "nota_fiscal": "149784"
     },
     {
       "id": "tx02683",
@@ -26864,8 +29547,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "24014",
-      "value": 3009.0
+      "counterparty": "VETRONIC COMERCIO ELETRONICA LTDA (0000038)",
+      "value": 3009.0,
+      "nota_fiscal": "24014"
     },
     {
       "id": "tx02684",
@@ -26874,8 +29558,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "263062",
-      "value": 442.85
+      "counterparty": "ACP COMERCIO ATACADISTA DE COMPONENTES E (0000249)",
+      "value": 442.85,
+      "nota_fiscal": "263062"
     },
     {
       "id": "tx02685",
@@ -26884,8 +29569,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "3581",
-      "value": 198.0
+      "counterparty": "ORANGE E BLACK DISTRIBUIDORA LTDA (0000198)",
+      "value": 198.0,
+      "nota_fiscal": "3581"
     },
     {
       "id": "tx02686",
@@ -26894,8 +29580,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "44955",
-      "value": 676.0
+      "counterparty": "A TREE 2012 LUMINARIAS EIRELI (0000248)",
+      "value": 676.0,
+      "nota_fiscal": "44955"
     },
     {
       "id": "tx02687",
@@ -26904,8 +29591,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "76734",
-      "value": 836.0
+      "counterparty": "IDALL COM. ATAC. DE COMP. ELETR. LTDA (0000011)",
+      "value": 836.0,
+      "nota_fiscal": "76734"
     },
     {
       "id": "tx02688",
@@ -26915,7 +29603,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "SSAT SINALIZACAO E ADESIVOS EIRELI EPP (0000072)",
-      "value": 700.0
+      "value": 700.0,
+      "nota_fiscal": "12583"
     },
     {
       "id": "tx02689",
@@ -26925,7 +29614,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ACHEI COMPONENTES ELETRONICOS (0000503)",
-      "value": 180.0
+      "value": 180.0,
+      "nota_fiscal": "12584"
     },
     {
       "id": "tx02690",
@@ -26935,7 +29625,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "GIOVANNA NASCIMENTO GIMENEZ MORA (0001353)",
-      "value": 24.99
+      "value": 24.99,
+      "nota_fiscal": "12585"
     },
     {
       "id": "tx02691",
@@ -26945,7 +29636,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "MS TECNOPON EQUIPAMENTOS ESPECIAIS LTDA (0000373)",
-      "value": 7196.5
+      "value": 7196.5,
+      "nota_fiscal": "12586"
     },
     {
       "id": "tx02692",
@@ -26955,7 +29647,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "MARTEC MED INDUSTRIA E COMERCIO DE EQUIP (0000788)",
-      "value": 326.0
+      "value": 326.0,
+      "nota_fiscal": "12587"
     },
     {
       "id": "tx02693",
@@ -26965,7 +29658,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ELETROFELIX INDUSTRIA E COMERCIO LTDA (0000477)",
-      "value": 301.27
+      "value": 301.27,
+      "nota_fiscal": "12590"
     },
     {
       "id": "tx02694",
@@ -26975,7 +29669,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "TRANSFIX",
-      "value": 6014.9
+      "value": 6014.9,
+      "nota_fiscal": "815"
     },
     {
       "id": "tx02695",
@@ -26985,7 +29680,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "INGRID",
-      "value": 1494.8
+      "value": 1494.8,
+      "nota_fiscal": null
     },
     {
       "id": "tx02696",
@@ -26995,7 +29691,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "MONALISA",
-      "value": 1494.8
+      "value": 1494.8,
+      "nota_fiscal": null
     },
     {
       "id": "tx02697",
@@ -27005,7 +29702,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "ZÉ MARIA",
-      "value": 2502.96
+      "value": 2502.96,
+      "nota_fiscal": null
     },
     {
       "id": "tx02698",
@@ -27015,7 +29713,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "EDUARDO",
-      "value": 1000.0
+      "value": 1000.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02699",
@@ -27025,7 +29724,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 1.81
+      "value": 1.81,
+      "nota_fiscal": null
     },
     {
       "id": "tx02700",
@@ -27035,7 +29735,8 @@ const MAXLED_DATA = {
       "flow": "compra",
       "category": null,
       "counterparty": "SIMENTOR / MAX LED (0000445)",
-      "value": 22706.09
+      "value": 22706.09,
+      "nota_fiscal": "I10"
     },
     {
       "id": "tx02701",
@@ -27045,7 +29746,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "CENTRAL ELETRONICA (0000215)",
-      "value": 114.3
+      "value": 114.3,
+      "nota_fiscal": "831"
     },
     {
       "id": "tx02702",
@@ -27055,7 +29757,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "JCL ELETRONICA INDUSTRIAL EIRELE -ME (0001288)",
-      "value": 2505.6
+      "value": 2505.6,
+      "nota_fiscal": "832"
     },
     {
       "id": "tx02703",
@@ -27065,7 +29768,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ELETROFELIX INDUSTRIA E COMERCIO LTDA - 0000477",
-      "value": 775.99
+      "value": 775.99,
+      "nota_fiscal": "12353/02"
     },
     {
       "id": "tx02704",
@@ -27075,7 +29779,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "DIGISYSTEM IND. DE SIST. ELETRO. LTDA - 0000040",
-      "value": 860.83
+      "value": 860.83,
+      "nota_fiscal": "12398/03"
     },
     {
       "id": "tx02705",
@@ -27085,7 +29790,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FOCUS TECNOLOGIA E SOLUCOES LTDA - 0000742",
-      "value": 559.13
+      "value": 559.13,
+      "nota_fiscal": "12448/01"
     },
     {
       "id": "tx02706",
@@ -27095,7 +29801,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "R. BAIAO INDUSTRIA E COMERCIO LTDA - 0000060",
-      "value": 3909.78
+      "value": 3909.78,
+      "nota_fiscal": "12457/01"
     },
     {
       "id": "tx02707",
@@ -27105,7 +29812,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "INFOLITE TECNOLOGIA EM INFORMACAO - 0000540",
-      "value": 671.67
+      "value": 671.67,
+      "nota_fiscal": "12464/01"
     },
     {
       "id": "tx02708",
@@ -27115,7 +29823,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "R. BAIAO INDUSTRIA E COMERCIO LTDA - 0000060",
-      "value": 408.0
+      "value": 408.0,
+      "nota_fiscal": "12466/01"
     },
     {
       "id": "tx02709",
@@ -27125,7 +29834,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
-      "value": 237.0
+      "value": 237.0,
+      "nota_fiscal": "12470/01"
     },
     {
       "id": "tx02710",
@@ -27135,7 +29845,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 12.67
+      "value": 12.67,
+      "nota_fiscal": null
     },
     {
       "id": "tx02711",
@@ -27145,7 +29856,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "OHMEGA",
-      "value": 104.0
+      "value": 104.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02712",
@@ -27155,7 +29867,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP C A COMP ELETRONICOS LTDA",
-      "value": 638.43
+      "value": 638.43,
+      "nota_fiscal": null
     },
     {
       "id": "tx02713",
@@ -27165,7 +29878,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "TRANSPORTES",
       "counterparty": "GILBERTO",
-      "value": 530.0
+      "value": 530.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02714",
@@ -27175,7 +29889,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "SÓCIOS",
       "counterparty": "MARIA",
-      "value": 8500.0
+      "value": 8500.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02715",
@@ -27185,7 +29900,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "MOVIMENTO",
       "counterparty": "MERCADO LIVRE",
-      "value": 666.36
+      "value": 666.36,
+      "nota_fiscal": null
     },
     {
       "id": "tx02716",
@@ -27194,8 +29910,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "117019",
-      "value": 250.0
+      "counterparty": "LECOMP Com. de Comp. Eletronicos LTDA (0000312)",
+      "value": 250.0,
+      "nota_fiscal": "117019"
     },
     {
       "id": "tx02717",
@@ -27204,8 +29921,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "154400",
-      "value": 1740.09
+      "counterparty": "REIMOLD INDUSTRIA E COMRCIO DE MATERIAI (0000172)",
+      "value": 1740.09,
+      "nota_fiscal": "154400"
     },
     {
       "id": "tx02718",
@@ -27214,8 +29932,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "205790",
-      "value": 720.0
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 720.0,
+      "nota_fiscal": "205790"
     },
     {
       "id": "tx02719",
@@ -27224,8 +29943,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "205803",
-      "value": 277.8
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 277.8,
+      "nota_fiscal": "205803"
     },
     {
       "id": "tx02720",
@@ -27234,8 +29954,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "262971",
-      "value": 987.42
+      "counterparty": "ACP COMERCIO ATACADISTA DE COMPONENTES E (0000249)",
+      "value": 987.42,
+      "nota_fiscal": "262971"
     },
     {
       "id": "tx02721",
@@ -27244,8 +29965,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "4393",
-      "value": 364.0
+      "counterparty": "MDS COMPONENTES ELETRONICOS LTDA (0000297)",
+      "value": 364.0,
+      "nota_fiscal": "4393"
     },
     {
       "id": "tx02722",
@@ -27254,8 +29976,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "921",
-      "value": 236.25
+      "counterparty": "CIRCUITRONIX ELETRO ELETRONICA LTDA (0000442)",
+      "value": 236.25,
+      "nota_fiscal": "921"
     },
     {
       "id": "tx02723",
@@ -27265,7 +29988,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO (0000660)",
-      "value": 1013.0
+      "value": 1013.0,
+      "nota_fiscal": "12591"
     },
     {
       "id": "tx02724",
@@ -27275,7 +29999,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "MDI PROD E SISTEMAS LTDA (0000101)",
-      "value": 1167.7
+      "value": 1167.7,
+      "nota_fiscal": "12592"
     },
     {
       "id": "tx02725",
@@ -27285,7 +30010,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "CR ENERGIA E INFORMATICA LTDA (0001356)",
-      "value": 908.0
+      "value": 908.0,
+      "nota_fiscal": "12593"
     },
     {
       "id": "tx02726",
@@ -27295,7 +30021,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E (0000081)",
-      "value": 540.7
+      "value": 540.7,
+      "nota_fiscal": "12595"
     },
     {
       "id": "tx02727",
@@ -27305,7 +30032,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "TAIKON",
-      "value": 5460.0
+      "value": 5460.0,
+      "nota_fiscal": "825"
     },
     {
       "id": "tx02728",
@@ -27315,7 +30043,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "LEO",
-      "value": 1300.0
+      "value": 1300.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02729",
@@ -27325,7 +30054,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "CR ENERGIA E INFORMATICA LTDA (0001356)",
-      "value": 600.0
+      "value": 600.0,
+      "nota_fiscal": "833"
     },
     {
       "id": "tx02730",
@@ -27335,7 +30065,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "TAP ELETRO SISTEMAS LTDA. (0000202)",
-      "value": 2380.0
+      "value": 2380.0,
+      "nota_fiscal": "834"
     },
     {
       "id": "tx02731",
@@ -27345,7 +30076,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BRASMEDICAL IND. E COM. DE PRODUTOS PAR - 0000017",
-      "value": 1774.43
+      "value": 1774.43,
+      "nota_fiscal": "12289/03"
     },
     {
       "id": "tx02732",
@@ -27355,7 +30087,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "VIEWMED IND. A E COM. DE PROD. MEDICOSA - 0000343",
-      "value": 573.5
+      "value": 573.5,
+      "nota_fiscal": "12387/02"
     },
     {
       "id": "tx02733",
@@ -27365,7 +30098,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "VINTEK IND., COMERCIO E SERVICOS LTDA - 0000894",
-      "value": 4732.77
+      "value": 4732.77,
+      "nota_fiscal": "12390/02"
     },
     {
       "id": "tx02734",
@@ -27375,7 +30109,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "NEWTESC TECNOLOGIA E COMERCIO LTDA - 0000106",
-      "value": 1596.5
+      "value": 1596.5,
+      "nota_fiscal": "12402/02"
     },
     {
       "id": "tx02735",
@@ -27385,7 +30120,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO - 0000660",
-      "value": 1163.75
+      "value": 1163.75,
+      "nota_fiscal": "12465/01"
     },
     {
       "id": "tx02736",
@@ -27395,7 +30131,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "IMPROEL - INDUSTRIA E PROJ. ELETRO-ELET - 0000118",
-      "value": 296.5
+      "value": 296.5,
+      "nota_fiscal": "12486/01"
     },
     {
       "id": "tx02737",
@@ -27405,7 +30142,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "PREMIX",
-      "value": 267.15
+      "value": 267.15,
+      "nota_fiscal": "12598"
     },
     {
       "id": "tx02738",
@@ -27413,9 +30151,10 @@ const MAXLED_DATA = {
       "division": "iluminacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "PLANO DE SAÚDE",
+      "category": "SEGURO SAÚDE",
       "counterparty": "PORTO SEGURO",
-      "value": 2620.16
+      "value": 2620.16,
+      "nota_fiscal": null
     },
     {
       "id": "tx02739",
@@ -27425,7 +30164,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "JOMACLER IND",
-      "value": 1708.05
+      "value": 1708.05,
+      "nota_fiscal": null
     },
     {
       "id": "tx02740",
@@ -27435,7 +30175,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "CX COM",
-      "value": 1462.5
+      "value": 1462.5,
+      "nota_fiscal": null
     },
     {
       "id": "tx02741",
@@ -27445,7 +30186,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY MAX",
-      "value": 1404.5
+      "value": 1404.5,
+      "nota_fiscal": null
     },
     {
       "id": "tx02742",
@@ -27455,7 +30197,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "E2E IND COM",
-      "value": 1324.0
+      "value": 1324.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02743",
@@ -27465,7 +30208,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP C A COMP",
-      "value": 1225.65
+      "value": 1225.65,
+      "nota_fiscal": null
     },
     {
       "id": "tx02744",
@@ -27475,7 +30219,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP C A COMP",
-      "value": 1028.05
+      "value": 1028.05,
+      "nota_fiscal": null
     },
     {
       "id": "tx02745",
@@ -27485,7 +30230,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ALLNETSYS COM",
-      "value": 920.5
+      "value": 920.5,
+      "nota_fiscal": null
     },
     {
       "id": "tx02746",
@@ -27495,7 +30241,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL COM",
-      "value": 904.43
+      "value": 904.43,
+      "nota_fiscal": null
     },
     {
       "id": "tx02747",
@@ -27505,7 +30252,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL COM",
-      "value": 858.0
+      "value": 858.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02748",
@@ -27515,7 +30263,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL COM",
-      "value": 779.27
+      "value": 779.27,
+      "nota_fiscal": null
     },
     {
       "id": "tx02749",
@@ -27525,7 +30274,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL COM",
-      "value": 640.5
+      "value": 640.5,
+      "nota_fiscal": null
     },
     {
       "id": "tx02750",
@@ -27535,7 +30285,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRICONECT COM",
-      "value": 624.5
+      "value": 624.5,
+      "nota_fiscal": null
     },
     {
       "id": "tx02751",
@@ -27545,7 +30296,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS (VR)",
       "counterparty": "PLUXEE BENEF",
-      "value": 560.0
+      "value": 560.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02752",
@@ -27555,7 +30307,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "COMP TOTAL",
-      "value": 556.91
+      "value": 556.91,
+      "nota_fiscal": null
     },
     {
       "id": "tx02753",
@@ -27565,7 +30318,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "COMP TOTAL",
-      "value": 521.0
+      "value": 521.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02754",
@@ -27575,7 +30329,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP C A COMP",
-      "value": 497.04
+      "value": 497.04,
+      "nota_fiscal": null
     },
     {
       "id": "tx02755",
@@ -27585,7 +30340,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP C A COMP",
-      "value": 467.99
+      "value": 467.99,
+      "nota_fiscal": null
     },
     {
       "id": "tx02756",
@@ -27595,7 +30351,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "INSUMOS",
       "counterparty": "DISTRIBUIDORA Castropil",
-      "value": 229.47
+      "value": 229.47,
+      "nota_fiscal": null
     },
     {
       "id": "tx02757",
@@ -27605,7 +30362,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "COMP TOTAL COM",
-      "value": 85.73
+      "value": 85.73,
+      "nota_fiscal": null
     },
     {
       "id": "tx02758",
@@ -27615,7 +30373,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "SINDICATO DOS COM",
-      "value": 65.37
+      "value": 65.37,
+      "nota_fiscal": null
     },
     {
       "id": "tx02759",
@@ -27625,7 +30384,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "BING COMERCIO",
-      "value": 49.0
+      "value": 49.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02760",
@@ -27635,7 +30395,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "GASTOS FIXOS",
       "counterparty": "CLARO",
-      "value": 175.9
+      "value": 175.9,
+      "nota_fiscal": null
     },
     {
       "id": "tx02761",
@@ -27645,7 +30406,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 10.86
+      "value": 10.86,
+      "nota_fiscal": null
     },
     {
       "id": "tx02762",
@@ -27654,8 +30416,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "25280",
-      "value": 1893.01
+      "counterparty": "DV TECNOLOGIA ELETROELETRONICA LTDA (0000025)",
+      "value": 1893.01,
+      "nota_fiscal": "25280"
     },
     {
       "id": "tx02763",
@@ -27664,8 +30427,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "90996",
-      "value": 208.0
+      "counterparty": "MEGAPIX COMP. ELETRONICOS LTDA-EPP (0000275)",
+      "value": 208.0,
+      "nota_fiscal": "90996"
     },
     {
       "id": "tx02764",
@@ -27675,7 +30439,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "RQS SERVICOS DE MANUTENCAO INDUSTRIAL LT (0001357)",
-      "value": 13.99
+      "value": 13.99,
+      "nota_fiscal": "12596"
     },
     {
       "id": "tx02765",
@@ -27685,7 +30450,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ZENER COMPONENTES ELETRONICOS LTDA - ME (0000142)",
-      "value": 173.75
+      "value": 173.75,
+      "nota_fiscal": "12597"
     },
     {
       "id": "tx02766",
@@ -27695,7 +30461,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "PREMIX INDUSTRIA ELETROMECANIA LTDA (0000047)",
-      "value": 267.15
+      "value": 267.15,
+      "nota_fiscal": "12598"
     },
     {
       "id": "tx02767",
@@ -27705,7 +30472,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "PRIMUS IMPORT COMERCIO DE IMPORTADOS (0000048)",
-      "value": 2047.12
+      "value": 2047.12,
+      "nota_fiscal": "12599"
     },
     {
       "id": "tx02768",
@@ -27715,7 +30483,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E (0000081)",
-      "value": 428.5
+      "value": 428.5,
+      "nota_fiscal": "12600"
     },
     {
       "id": "tx02769",
@@ -27725,7 +30494,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "SEC POWER PAINEIS ELETRICOS LTDA (0001355)",
-      "value": 306.0
+      "value": 306.0,
+      "nota_fiscal": "12602"
     },
     {
       "id": "tx02770",
@@ -27735,7 +30505,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH",
-      "value": 1419.63
+      "value": 1419.63,
+      "nota_fiscal": "814"
     },
     {
       "id": "tx02771",
@@ -27745,7 +30516,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 1.81
+      "value": 1.81,
+      "nota_fiscal": null
     },
     {
       "id": "tx02772",
@@ -27755,7 +30527,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ROYALCOMP COMPONENTES ELETR. LTDA (0000570)",
-      "value": 1975.0
+      "value": 1975.0,
+      "nota_fiscal": "835"
     },
     {
       "id": "tx02773",
@@ -27765,7 +30538,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ALLPRINT LATINA AUTOMACAO DE MAQUINAS EA (0000291)",
-      "value": 1175.0
+      "value": 1175.0,
+      "nota_fiscal": "836"
     },
     {
       "id": "tx02774",
@@ -27775,7 +30549,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "DIGISYSTEM IND. DE SIST. ELETRO. LTDA (0000040)",
-      "value": 69.0
+      "value": 69.0,
+      "nota_fiscal": "837"
     },
     {
       "id": "tx02775",
@@ -27785,7 +30560,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "GISLANE",
-      "value": 624.6
+      "value": 624.6,
+      "nota_fiscal": "SNF"
     },
     {
       "id": "tx02776",
@@ -27795,7 +30571,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "MAX IMPORT",
-      "value": 4855.0
+      "value": 4855.0,
+      "nota_fiscal": "MOVIMENTO"
     },
     {
       "id": "tx02777",
@@ -27805,7 +30582,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CLIP INDUSTRIA IMP",
-      "value": 725.0
+      "value": 725.0,
+      "nota_fiscal": "12510/01"
     },
     {
       "id": "tx02778",
@@ -27815,7 +30593,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CRISTOFOLI EQUIP.",
-      "value": 390.0
+      "value": 390.0,
+      "nota_fiscal": "12484/01"
     },
     {
       "id": "tx02779",
@@ -27825,7 +30604,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "JOELSON ALVES",
-      "value": 1437.24
+      "value": 1437.24,
+      "nota_fiscal": "12463/01"
     },
     {
       "id": "tx02780",
@@ -27835,7 +30615,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SOLSUSTENTAVEL PROD.",
-      "value": 515.67
+      "value": 515.67,
+      "nota_fiscal": "12445/02"
     },
     {
       "id": "tx02781",
@@ -27845,7 +30626,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "EVOLUTEC INDUSTRIA",
-      "value": 471.13
+      "value": 471.13,
+      "nota_fiscal": "12305/02"
     },
     {
       "id": "tx02782",
@@ -27855,7 +30637,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "RASATRONIC ELETRONICA INDUSTRIAL LTDA - 0000057",
-      "value": 324.2
+      "value": 324.2,
+      "nota_fiscal": "12487/01"
     },
     {
       "id": "tx02783",
@@ -27865,7 +30648,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "VINTEK IND., COMERCIO E SERVICOS LTDA - 0000894",
-      "value": 1165.5
+      "value": 1165.5,
+      "nota_fiscal": "12488/01"
     },
     {
       "id": "tx02784",
@@ -27875,7 +30659,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "RUSSER BRASIL EIRELI - 0000403",
-      "value": 270.0
+      "value": 270.0,
+      "nota_fiscal": "12485/01"
     },
     {
       "id": "tx02785",
@@ -27885,7 +30670,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BIQUAD TECNOLOGIA",
-      "value": 354.5
+      "value": 354.5,
+      "nota_fiscal": "12520"
     },
     {
       "id": "tx02786",
@@ -27895,7 +30681,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 16.29
+      "value": 16.29,
+      "nota_fiscal": null
     },
     {
       "id": "tx02787",
@@ -27905,7 +30692,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY MAX",
-      "value": 664.56
+      "value": 664.56,
+      "nota_fiscal": null
     },
     {
       "id": "tx02788",
@@ -27915,7 +30703,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY MAX",
-      "value": 577.41
+      "value": 577.41,
+      "nota_fiscal": null
     },
     {
       "id": "tx02789",
@@ -27925,7 +30714,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY MAX",
-      "value": 309.75
+      "value": 309.75,
+      "nota_fiscal": null
     },
     {
       "id": "tx02790",
@@ -27935,7 +30725,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP",
-      "value": 358.4
+      "value": 358.4,
+      "nota_fiscal": null
     },
     {
       "id": "tx02791",
@@ -27945,7 +30736,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP",
-      "value": 528.61
+      "value": 528.61,
+      "nota_fiscal": null
     },
     {
       "id": "tx02792",
@@ -27954,8 +30746,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "19050",
-      "value": 204.0
+      "counterparty": "ETHERIC LIGHT COMERCIO DE MATERIAIS ELET (0000300)",
+      "value": 204.0,
+      "nota_fiscal": "19050"
     },
     {
       "id": "tx02793",
@@ -27964,8 +30757,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "205938",
-      "value": 249.21
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 249.21,
+      "nota_fiscal": "205938"
     },
     {
       "id": "tx02794",
@@ -27974,8 +30768,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "206154",
-      "value": 657.7
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 657.7,
+      "nota_fiscal": "206154"
     },
     {
       "id": "tx02795",
@@ -27984,8 +30779,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "206275",
-      "value": 387.39
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 387.39,
+      "nota_fiscal": "206275"
     },
     {
       "id": "tx02796",
@@ -27994,8 +30790,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "2099",
-      "value": 1091.99
+      "counterparty": "FAST COMP COMERCIAL ELETRONICA LTDA. (0000215)",
+      "value": 1091.99,
+      "nota_fiscal": "2099"
     },
     {
       "id": "tx02797",
@@ -28004,8 +30801,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "24415",
-      "value": 290.0
+      "counterparty": "ZENER COMPONENTES ELETRONICOS LTDA - ME (0000317)",
+      "value": 290.0,
+      "nota_fiscal": "24415"
     },
     {
       "id": "tx02798",
@@ -28014,8 +30812,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "270949",
-      "value": 520.0
+      "counterparty": "MULT COMERCIAL LTDA (0000311)",
+      "value": 520.0,
+      "nota_fiscal": "270949"
     },
     {
       "id": "tx02799",
@@ -28024,8 +30823,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "4417",
-      "value": 1115.0
+      "counterparty": "MDS COMPONENTES ELETRONICOS LTDA (0000297)",
+      "value": 1115.0,
+      "nota_fiscal": "4417"
     },
     {
       "id": "tx02800",
@@ -28034,8 +30834,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "5753",
-      "value": 1143.7
+      "counterparty": "DELTA SUPRIMENTOS DE INFORMATICA (0000161)",
+      "value": 1143.7,
+      "nota_fiscal": "5753"
     },
     {
       "id": "tx02801",
@@ -28044,8 +30845,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "68880",
-      "value": 328.6
+      "counterparty": "TRICOMP COMERCIAL ELETR. LTDA (0000278)",
+      "value": 328.6,
+      "nota_fiscal": "68880"
     },
     {
       "id": "tx02802",
@@ -28054,8 +30856,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "76756",
-      "value": 258.0
+      "counterparty": "IDALL COM. ATAC. DE COMP. ELETR. LTDA (0000011)",
+      "value": 258.0,
+      "nota_fiscal": "76756"
     },
     {
       "id": "tx02803",
@@ -28064,8 +30867,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "86367",
-      "value": 85.73
+      "counterparty": "COMP TOTAL COM. E IMP. DE COMP. ELETRON. (0000267)",
+      "value": 85.73,
+      "nota_fiscal": "86367"
     },
     {
       "id": "tx02804",
@@ -28074,8 +30878,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "91103",
-      "value": 320.0
+      "counterparty": "MEGAPIX COMP. ELETRONICOS LTDA-EPP (0000275)",
+      "value": 320.0,
+      "nota_fiscal": "91103"
     },
     {
       "id": "tx02805",
@@ -28085,7 +30890,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "R. BAIAO INDUSTRIA E COMERCIO LTDA (0000060)",
-      "value": 638.62
+      "value": 638.62,
+      "nota_fiscal": "12603"
     },
     {
       "id": "tx02806",
@@ -28095,7 +30901,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ELETROFELIX INDUSTRIA E COMERCIO LTDA (0000477)",
-      "value": 261.0
+      "value": 261.0,
+      "nota_fiscal": "12604"
     },
     {
       "id": "tx02807",
@@ -28105,7 +30912,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ALLPRINT LATINA AUTOMACAO DE MAQUINAS EA (0000291)",
-      "value": 478.0
+      "value": 478.0,
+      "nota_fiscal": "12605"
     },
     {
       "id": "tx02808",
@@ -28115,7 +30923,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "J.M. MAQUINAS AUTOMOTIVAS EIRELI (0000387)",
-      "value": 1279.0
+      "value": 1279.0,
+      "nota_fiscal": "12606"
     },
     {
       "id": "tx02809",
@@ -28125,7 +30934,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "PRODUTOS ELETRONICOS FRATA LTDA (0000223)",
-      "value": 610.0
+      "value": 610.0,
+      "nota_fiscal": "12607"
     },
     {
       "id": "tx02810",
@@ -28135,7 +30945,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "WGV SISTEMAS NACIONAIS ELETRO ELETRONICS (0000220)",
-      "value": 170.0
+      "value": 170.0,
+      "nota_fiscal": "12608"
     },
     {
       "id": "tx02811",
@@ -28145,7 +30956,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E (0000081)",
-      "value": 166.0
+      "value": 166.0,
+      "nota_fiscal": "12609"
     },
     {
       "id": "tx02812",
@@ -28155,7 +30967,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ARIELTEK INDUSTRIA E COMERCIO LTDA (0000314)",
-      "value": 2784.4
+      "value": 2784.4,
+      "nota_fiscal": "12610"
     },
     {
       "id": "tx02813",
@@ -28165,7 +30978,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "DIGISYSTEM IND. DE SIST. ELETRO. LTDA (0000040)",
-      "value": 4659.0
+      "value": 4659.0,
+      "nota_fiscal": "12611"
     },
     {
       "id": "tx02814",
@@ -28175,7 +30989,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "SIMPLES CONNECT INDUSTRIA E COMERCIO LTA (0000308)",
-      "value": 3600.0
+      "value": 3600.0,
+      "nota_fiscal": "12612"
     },
     {
       "id": "tx02815",
@@ -28185,7 +31000,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "MOVIMENTO",
       "counterparty": "MAX ILUMINAÇÃO",
-      "value": 4855.0
+      "value": 4855.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02816",
@@ -28195,7 +31011,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "CONSUMO",
       "counterparty": "ADRIANA BOLO",
-      "value": 180.0
+      "value": 180.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02817",
@@ -28205,7 +31022,8 @@ const MAXLED_DATA = {
       "flow": "compra",
       "category": null,
       "counterparty": "IDALL COM. ATAC. DE COMP. ELETR. LTDA (0000011)",
-      "value": 10064.0
+      "value": 10064.0,
+      "nota_fiscal": "76757"
     },
     {
       "id": "tx02818",
@@ -28215,7 +31033,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "SIMPLES CONNECT INDUSTRIA E COMERCIO LTA (0000308)",
-      "value": 14633.6
+      "value": 14633.6,
+      "nota_fiscal": "838"
     },
     {
       "id": "tx02819",
@@ -28225,7 +31044,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SSAT SINALIZACAO E ADESIVOS EIRELI EPP - 0000072",
-      "value": 255.4
+      "value": 255.4,
+      "nota_fiscal": "12490/01"
     },
     {
       "id": "tx02820",
@@ -28235,7 +31055,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "PRODUPARK EQUIP. ELETRO. E IMP. LTDA - 0000056",
-      "value": 1214.55
+      "value": 1214.55,
+      "nota_fiscal": "12452/01"
     },
     {
       "id": "tx02821",
@@ -28245,7 +31066,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "PRODUPARK EQUIP. ELETRO. E IMP. LTDA - 0000056",
-      "value": 1643.87
+      "value": 1643.87,
+      "nota_fiscal": "12453/01"
     },
     {
       "id": "tx02822",
@@ -28255,7 +31077,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "E DE OLIVEIRA BARBOSA ELETRONICA - 0000898",
-      "value": 430.13
+      "value": 430.13,
+      "nota_fiscal": "12460/02"
     },
     {
       "id": "tx02823",
@@ -28265,7 +31088,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO - 0000660",
-      "value": 3500.0
+      "value": 3500.0,
+      "nota_fiscal": "12477/01"
     },
     {
       "id": "tx02824",
@@ -28275,7 +31099,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ALIGERA EQUIPAMENTOS DIGITAIS LTDA - 0000188",
-      "value": 360.0
+      "value": 360.0,
+      "nota_fiscal": "12489/01"
     },
     {
       "id": "tx02825",
@@ -28285,7 +31110,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SEBASTIAO CESAR GRASSI ELETRONICOS - M.. - 0000279",
-      "value": 598.57
+      "value": 598.57,
+      "nota_fiscal": "12492/03"
     },
     {
       "id": "tx02826",
@@ -28295,7 +31121,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO - 0000660",
-      "value": 551.76
+      "value": 551.76,
+      "nota_fiscal": "12493/01"
     },
     {
       "id": "tx02827",
@@ -28305,7 +31132,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO - 0000660",
-      "value": 733.34
+      "value": 733.34,
+      "nota_fiscal": "12494/01"
     },
     {
       "id": "tx02828",
@@ -28315,7 +31143,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CITTA ELETRONICA IND. E COM. LTDA ME - 0000532",
-      "value": 145.67
+      "value": 145.67,
+      "nota_fiscal": "12495/01"
     },
     {
       "id": "tx02829",
@@ -28325,7 +31154,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ACHEI COMPONENTES ELETRONICOS - 0000503",
-      "value": 260.0
+      "value": 260.0,
+      "nota_fiscal": "12500/01"
     },
     {
       "id": "tx02830",
@@ -28335,7 +31165,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 19.91
+      "value": 19.91,
+      "nota_fiscal": null
     },
     {
       "id": "tx02831",
@@ -28345,7 +31176,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "WKS",
-      "value": 111.0
+      "value": 111.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02832",
@@ -28355,7 +31187,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "LEDCOMP",
-      "value": 800.0
+      "value": 800.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02833",
@@ -28365,7 +31198,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP",
-      "value": 632.73
+      "value": 632.73,
+      "nota_fiscal": null
     },
     {
       "id": "tx02834",
@@ -28375,7 +31209,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "JOMACLER IND",
-      "value": 1371.08
+      "value": 1371.08,
+      "nota_fiscal": null
     },
     {
       "id": "tx02835",
@@ -28385,7 +31220,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRICONECT",
-      "value": 476.75
+      "value": 476.75,
+      "nota_fiscal": null
     },
     {
       "id": "tx02836",
@@ -28395,7 +31231,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DLT",
-      "value": 708.0
+      "value": 708.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02837",
@@ -28405,7 +31242,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRYNIT",
-      "value": 205.0
+      "value": 205.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02838",
@@ -28415,7 +31253,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY",
-      "value": 522.0
+      "value": 522.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02839",
@@ -28425,7 +31264,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MRD",
-      "value": 522.0
+      "value": 522.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02840",
@@ -28435,7 +31275,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRICONECT",
-      "value": 212.0
+      "value": 212.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02841",
@@ -28445,7 +31286,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL",
-      "value": 725.8
+      "value": 725.8,
+      "nota_fiscal": null
     },
     {
       "id": "tx02842",
@@ -28455,7 +31297,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY MAX",
-      "value": 164.17
+      "value": 164.17,
+      "nota_fiscal": null
     },
     {
       "id": "tx02843",
@@ -28464,8 +31307,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "14985",
-      "value": 49.0
+      "counterparty": "BING COMERCIO DE COMPONENTES ELETRONICOS (0000177)",
+      "value": 49.0,
+      "nota_fiscal": "14985"
     },
     {
       "id": "tx02844",
@@ -28474,8 +31318,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "17219",
-      "value": 1652.68
+      "counterparty": "FILCRILL COMPS ELETRS IMP E EXP EIRELLI (0000048)",
+      "value": 1652.68,
+      "nota_fiscal": "17219"
     },
     {
       "id": "tx02845",
@@ -28484,8 +31329,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "22444",
-      "value": 888.01
+      "counterparty": "ORIELEC  COM. IMP. COMP. ELETRONICOS LTD (0000257)",
+      "value": 888.01,
+      "nota_fiscal": "22444"
     },
     {
       "id": "tx02846",
@@ -28494,8 +31340,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "263221",
-      "value": 1096.1
+      "counterparty": "ACP COMERCIO ATACADISTA DE COMPONENTES E (0000249)",
+      "value": 1096.1,
+      "nota_fiscal": "263221"
     },
     {
       "id": "tx02847",
@@ -28504,8 +31351,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "3957",
-      "value": 104.0
+      "counterparty": "S-ohm Comercial Ltda. (0000183)",
+      "value": 104.0,
+      "nota_fiscal": "3957"
     },
     {
       "id": "tx02848",
@@ -28514,8 +31362,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "4428",
-      "value": 823.5
+      "counterparty": "MDS COMPONENTES ELETRONICOS LTDA (0000297)",
+      "value": 823.5,
+      "nota_fiscal": "4428"
     },
     {
       "id": "tx02849",
@@ -28524,8 +31373,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "68902",
-      "value": 797.6
+      "counterparty": "TRICOMP COMERCIAL ELETR. LTDA (0000278)",
+      "value": 797.6,
+      "nota_fiscal": "68902"
     },
     {
       "id": "tx02850",
@@ -28534,8 +31384,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "76780",
-      "value": 339.64
+      "counterparty": "IDALL COM. ATAC. DE COMP. ELETR. LTDA (0000011)",
+      "value": 339.64,
+      "nota_fiscal": "76780"
     },
     {
       "id": "tx02851",
@@ -28544,8 +31395,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "76795",
-      "value": 1998.2
+      "counterparty": "IDALL COM. ATAC. DE COMP. ELETR. LTDA (0000011)",
+      "value": 1998.2,
+      "nota_fiscal": "76795"
     },
     {
       "id": "tx02852",
@@ -28554,8 +31406,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "86397",
-      "value": 1060.74
+      "counterparty": "COMP TOTAL COM. E IMP. DE COMP. ELETRON. (0000267)",
+      "value": 1060.74,
+      "nota_fiscal": "86397"
     },
     {
       "id": "tx02853",
@@ -28565,7 +31418,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "NATAN CARVALHO CARVALHO (0001359)",
-      "value": 26.99
+      "value": 26.99,
+      "nota_fiscal": "12613"
     },
     {
       "id": "tx02854",
@@ -28575,7 +31429,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "IGOR MARINHO CAVALCANTE (0001358)",
-      "value": 23.98
+      "value": 23.98,
+      "nota_fiscal": "12615"
     },
     {
       "id": "tx02855",
@@ -28585,7 +31440,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E (0000081)",
-      "value": 2548.7
+      "value": 2548.7,
+      "nota_fiscal": "12616"
     },
     {
       "id": "tx02856",
@@ -28595,7 +31451,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "NEWTESC TECNOLOGIA E COMERCIO LTDA (0000106)",
-      "value": 979.5
+      "value": 979.5,
+      "nota_fiscal": "12618"
     },
     {
       "id": "tx02857",
@@ -28605,7 +31462,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "E DE OLIVEIRA BARBOSA ELETRONICA (0000898)",
-      "value": 1869.75
+      "value": 1869.75,
+      "nota_fiscal": "12619"
     },
     {
       "id": "tx02858",
@@ -28615,7 +31473,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "NIATRON IND. E COM. DE EQUIP. ELETRO. (0000143)",
-      "value": 207.0
+      "value": 207.0,
+      "nota_fiscal": "12620"
     },
     {
       "id": "tx02859",
@@ -28623,9 +31482,10 @@ const MAXLED_DATA = {
       "division": "importacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "EMPRÉSTIMO PRONAMP",
+      "category": "EMPRÉSTIMO",
       "counterparty": "PARCELA GIRO",
-      "value": 3700.52
+      "value": 3700.52,
+      "nota_fiscal": null
     },
     {
       "id": "tx02860",
@@ -28635,7 +31495,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "IMPORTAÇÃO",
       "counterparty": "MARIA ROCHA",
-      "value": 3200.0
+      "value": 3200.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02861",
@@ -28645,7 +31506,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "WGV",
-      "value": 740.06
+      "value": 740.06,
+      "nota_fiscal": "12577 12608"
     },
     {
       "id": "tx02862",
@@ -28655,7 +31517,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "TRANSFIX",
-      "value": 500.0
+      "value": 500.0,
+      "nota_fiscal": "12451"
     },
     {
       "id": "tx02863",
@@ -28665,7 +31528,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BPM INDUSTRIA E COMERCIO - 0000541",
-      "value": 1843.2
+      "value": 1843.2,
+      "nota_fiscal": "12385/04"
     },
     {
       "id": "tx02864",
@@ -28675,7 +31539,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BINDING ENERGY COMERCIO E SERVICOS EIREL - 0000489",
-      "value": 736.0
+      "value": 736.0,
+      "nota_fiscal": "12407/02"
     },
     {
       "id": "tx02865",
@@ -28685,7 +31550,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SSAT SINALIZACAO E ADESIVOS EIRELI EPP - 0000072",
-      "value": 347.73
+      "value": 347.73,
+      "nota_fiscal": "12430/03"
     },
     {
       "id": "tx02866",
@@ -28695,7 +31561,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "VALEXCELL - 0000166",
-      "value": 528.2
+      "value": 528.2,
+      "nota_fiscal": "12502/01"
     },
     {
       "id": "tx02867",
@@ -28705,7 +31572,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ALIGERA EQUIPAMENTOS DIGITAIS LTDA - 0000188",
-      "value": 708.75
+      "value": 708.75,
+      "nota_fiscal": "12503/01"
     },
     {
       "id": "tx02868",
@@ -28715,7 +31583,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "S.T.E.E. TECNOLOGIA ELETROELETRONICA LT - 0000062",
-      "value": 844.26
+      "value": 844.26,
+      "nota_fiscal": "12506/01"
     },
     {
       "id": "tx02869",
@@ -28725,7 +31594,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "J.M. MAQUINAS AUTOMOTIVAS EIRELI - 0000387",
-      "value": 1017.0
+      "value": 1017.0,
+      "nota_fiscal": "12513/01"
     },
     {
       "id": "tx02870",
@@ -28735,7 +31605,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
-      "value": 95.0
+      "value": 95.0,
+      "nota_fiscal": "12566/01"
     },
     {
       "id": "tx02871",
@@ -28745,7 +31616,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "EMPRÉSTIMO CAPITAL DE GIRO BRADESCO",
       "counterparty": "CAPITAL DE GIRO",
-      "value": 6441.56
+      "value": 6441.56,
+      "nota_fiscal": null
     },
     {
       "id": "tx02872",
@@ -28755,7 +31627,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "TAXA MENSAL",
-      "value": 183.6
+      "value": 183.6,
+      "nota_fiscal": null
     },
     {
       "id": "tx02873",
@@ -28765,7 +31638,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MRE",
-      "value": 342.0
+      "value": 342.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02874",
@@ -28775,7 +31649,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 16.29
+      "value": 16.29,
+      "nota_fiscal": null
     },
     {
       "id": "tx02875",
@@ -28785,7 +31660,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP",
-      "value": 551.11
+      "value": 551.11,
+      "nota_fiscal": null
     },
     {
       "id": "tx02876",
@@ -28795,7 +31671,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "COMP TOTAL",
-      "value": 341.18
+      "value": 341.18,
+      "nota_fiscal": null
     },
     {
       "id": "tx02877",
@@ -28805,7 +31682,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DLT",
-      "value": 177.0
+      "value": 177.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02878",
@@ -28815,7 +31693,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL",
-      "value": 931.73
+      "value": 931.73,
+      "nota_fiscal": null
     },
     {
       "id": "tx02879",
@@ -28825,7 +31704,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MDS",
-      "value": 275.0
+      "value": 275.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02880",
@@ -28834,8 +31714,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "12055",
-      "value": 53.98
+      "counterparty": "ERICA FEITOSA DOS ANJOS, 378 (C) (0001114)",
+      "value": 53.98,
+      "nota_fiscal": "12055"
     },
     {
       "id": "tx02881",
@@ -28844,8 +31725,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "12535",
-      "value": 26.99
+      "counterparty": "EDMILSON DA COSTA NUNES (C) (0001343)",
+      "value": 26.99,
+      "nota_fiscal": "12535"
     },
     {
       "id": "tx02882",
@@ -28854,8 +31736,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "1750",
-      "value": 1784.82
+      "counterparty": "MKB ELETRONICA E SENSORES LTDA (0000171)",
+      "value": 1784.82,
+      "nota_fiscal": "1750"
     },
     {
       "id": "tx02883",
@@ -28864,8 +31747,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "965",
-      "value": 567.0
+      "counterparty": "CIRCUITRONIX ELETRO ELETRONICA LTDA (0000442)",
+      "value": 567.0,
+      "nota_fiscal": "965"
     },
     {
       "id": "tx02884",
@@ -28875,7 +31759,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ROSELI SANTINA CERQUEIRA DE CAMARGO (0001360)",
-      "value": 22.99
+      "value": 22.99,
+      "nota_fiscal": "12621"
     },
     {
       "id": "tx02885",
@@ -28885,7 +31770,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "VINTEK IND., COMERCIO E SERVICOS LTDA (0000894)",
-      "value": 12132.27
+      "value": 12132.27,
+      "nota_fiscal": "12622"
     },
     {
       "id": "tx02886",
@@ -28895,7 +31781,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FAST COMP COMERCIAL ELETRONICA LTDA (0000569)",
-      "value": 2250.0
+      "value": 2250.0,
+      "nota_fiscal": "12623"
     },
     {
       "id": "tx02887",
@@ -28905,7 +31792,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "TAIKON",
-      "value": 8639.5
+      "value": 8639.5,
+      "nota_fiscal": "12636"
     },
     {
       "id": "tx02888",
@@ -28915,7 +31803,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "DIGISYSTEM",
-      "value": 69.0
+      "value": 69.0,
+      "nota_fiscal": "837"
     },
     {
       "id": "tx02889",
@@ -28925,7 +31814,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "TRANSFIX",
-      "value": 6014.9
+      "value": 6014.9,
+      "nota_fiscal": "815"
     },
     {
       "id": "tx02890",
@@ -28935,7 +31825,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 1.81
+      "value": 1.81,
+      "nota_fiscal": null
     },
     {
       "id": "tx02891",
@@ -28945,7 +31836,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "VINTEK IND., COMERCIO E SERVICOS LTDA (0000894)",
-      "value": 672.0
+      "value": 672.0,
+      "nota_fiscal": "839"
     },
     {
       "id": "tx02892",
@@ -28955,7 +31847,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ZILOCCHI ELETRONICA LTDA - EPP - 0000130",
-      "value": 582.48
+      "value": 582.48,
+      "nota_fiscal": "12330/03"
     },
     {
       "id": "tx02893",
@@ -28965,7 +31858,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "INELTEC TECNOLOGIAS LTDA - 0000193",
-      "value": 1774.6
+      "value": 1774.6,
+      "nota_fiscal": "12334/03"
     },
     {
       "id": "tx02894",
@@ -28975,7 +31869,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "RYON MAQUINAS LTDA - 0000662",
-      "value": 1307.63
+      "value": 1307.63,
+      "nota_fiscal": "12414/02"
     },
     {
       "id": "tx02895",
@@ -28985,7 +31880,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "INFOLITE TECNOLOGIA EM INFORMACAO - 0000540",
-      "value": 671.68
+      "value": 671.68,
+      "nota_fiscal": "12464/02"
     },
     {
       "id": "tx02896",
@@ -28995,7 +31891,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "HIGHZ VALE INDUSTRIA ELETRONICA LTDA - 0000526",
-      "value": 586.0
+      "value": 586.0,
+      "nota_fiscal": "12514/01"
     },
     {
       "id": "tx02897",
@@ -29005,7 +31902,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "AVTRON COMPONENTES ELETRONICOS LTDA - 0000472",
-      "value": 509.2
+      "value": 509.2,
+      "nota_fiscal": "12499/01"
     },
     {
       "id": "tx02898",
@@ -29015,7 +31913,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
-      "value": 5545.98
+      "value": 5545.98,
+      "nota_fiscal": "12404/02"
     },
     {
       "id": "tx02899",
@@ -29025,7 +31924,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "CONSORCIO",
-      "value": 218.6
+      "value": 218.6,
+      "nota_fiscal": null
     },
     {
       "id": "tx02900",
@@ -29035,7 +31935,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP",
-      "value": 1889.48
+      "value": 1889.48,
+      "nota_fiscal": null
     },
     {
       "id": "tx02901",
@@ -29045,7 +31946,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY",
-      "value": 455.85
+      "value": 455.85,
+      "nota_fiscal": null
     },
     {
       "id": "tx02902",
@@ -29055,7 +31957,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MULT",
-      "value": 520.0
+      "value": 520.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02903",
@@ -29065,7 +31968,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "HANSER",
-      "value": 612.0
+      "value": 612.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02904",
@@ -29075,7 +31979,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 12.67
+      "value": 12.67,
+      "nota_fiscal": null
     },
     {
       "id": "tx02905",
@@ -29084,8 +31989,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "16266",
-      "value": 342.0
+      "counterparty": "MRE FERRAMENTAS COMERCIAL LTDA (0000089)",
+      "value": 342.0,
+      "nota_fiscal": "16266"
     },
     {
       "id": "tx02906",
@@ -29094,8 +32000,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "19108",
-      "value": 1496.72
+      "counterparty": "TRICONECT COMERCIAL ELETR. LTDA (0000321)",
+      "value": 1496.72,
+      "nota_fiscal": "19108"
     },
     {
       "id": "tx02907",
@@ -29104,8 +32011,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "76818",
-      "value": 1333.0
+      "counterparty": "IDALL COM. ATAC. DE COMP. ELETR. LTDA (0000011)",
+      "value": 1333.0,
+      "nota_fiscal": "76818"
     },
     {
       "id": "tx02908",
@@ -29115,7 +32023,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "BINDING ENERGY COMERCIO E SERVICOS EIREL (0000489)",
-      "value": 771.0
+      "value": 771.0,
+      "nota_fiscal": "12624"
     },
     {
       "id": "tx02909",
@@ -29125,7 +32034,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FOCUS TECNOLOGIA E SOLUCOES LTDA (0000742)",
-      "value": 975.5
+      "value": 975.5,
+      "nota_fiscal": "12625"
     },
     {
       "id": "tx02910",
@@ -29135,7 +32045,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "DATAPOOL ELETRONICA LTDA - EPP (0000038)",
-      "value": 129.5
+      "value": 129.5,
+      "nota_fiscal": "12626"
     },
     {
       "id": "tx02911",
@@ -29145,7 +32056,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "BRASMEDICAL IND. E COM. DE PRODUTOS PAR (0000017)",
-      "value": 6244.5
+      "value": 6244.5,
+      "nota_fiscal": "12627"
     },
     {
       "id": "tx02912",
@@ -29153,9 +32065,10 @@ const MAXLED_DATA = {
       "division": "importacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "GASTOS FIXOS",
+      "category": "GASTOS FICOS",
       "counterparty": "HANSER CONTABIL",
-      "value": 612.0
+      "value": 612.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02913",
@@ -29165,7 +32078,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ROYAL",
-      "value": 77.2
+      "value": 77.2,
+      "nota_fiscal": "12645"
     },
     {
       "id": "tx02914",
@@ -29175,7 +32089,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "E DE OLIVEIRA BARBOSA ELETRONICA - 0000898",
-      "value": 1080.02
+      "value": 1080.02,
+      "nota_fiscal": "12515/01"
     },
     {
       "id": "tx02915",
@@ -29185,7 +32100,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "NEWTESC TECNOLOGIA E COMERCIO LTDA - 0000106",
-      "value": 3729.0
+      "value": 3729.0,
+      "nota_fiscal": "12501/01"
     },
     {
       "id": "tx02916",
@@ -29195,7 +32111,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "MARTEC MED INDUSTRIA E COMERCIO DE EQUIP - 0000788",
-      "value": 1044.25
+      "value": 1044.25,
+      "nota_fiscal": "12428/02"
     },
     {
       "id": "tx02917",
@@ -29205,7 +32122,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "NEWTESC TECNOLOGIA E COMERCIO LTDA - 0000106",
-      "value": 1643.75
+      "value": 1643.75,
+      "nota_fiscal": "12424/02"
     },
     {
       "id": "tx02918",
@@ -29215,7 +32133,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ELETROFELIX INDUSTRIA E COMERCIO LTDA - 0000477",
-      "value": 815.51
+      "value": 815.51,
+      "nota_fiscal": "12507/01"
     },
     {
       "id": "tx02919",
@@ -29225,7 +32144,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ELETROFELIX INDUSTRIA E COMERCIO LTDA - 0000477",
-      "value": 679.74
+      "value": 679.74,
+      "nota_fiscal": "12496/01"
     },
     {
       "id": "tx02920",
@@ -29235,7 +32155,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ELETROFELIX INDUSTRIA E COMERCIO LTDA - 0000477",
-      "value": 771.05
+      "value": 771.05,
+      "nota_fiscal": "12353/03"
     },
     {
       "id": "tx02921",
@@ -29245,7 +32166,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SSAT SINALIZACAO E ADESIVOS EIRELI EPP - 0000072",
-      "value": 1205.0
+      "value": 1205.0,
+      "nota_fiscal": "12348/03"
     },
     {
       "id": "tx02922",
@@ -29255,7 +32177,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 14.48
+      "value": 14.48,
+      "nota_fiscal": null
     },
     {
       "id": "tx02923",
@@ -29265,7 +32188,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "COMP TOTAL",
-      "value": 85.73
+      "value": 85.73,
+      "nota_fiscal": null
     },
     {
       "id": "tx02924",
@@ -29275,7 +32199,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY MAX",
-      "value": 448.94
+      "value": 448.94,
+      "nota_fiscal": null
     },
     {
       "id": "tx02925",
@@ -29285,7 +32210,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "INSUMOS",
       "counterparty": "CASTROPIL",
-      "value": 229.47
+      "value": 229.47,
+      "nota_fiscal": null
     },
     {
       "id": "tx02926",
@@ -29295,7 +32221,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "LIMACOM",
-      "value": 125.0
+      "value": 125.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02927",
@@ -29304,8 +32231,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "1605",
-      "value": 1300.05
+      "counterparty": "DISTER DISTRIBUIDORA ELETRICA LTDA (0000446)",
+      "value": 1300.05,
+      "nota_fiscal": "1605"
     },
     {
       "id": "tx02928",
@@ -29314,8 +32242,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "24484",
-      "value": 436.0
+      "counterparty": "ZENER COMPONENTES ELETRONICOS LTDA - ME (0000317)",
+      "value": 436.0,
+      "nota_fiscal": "24484"
     },
     {
       "id": "tx02929",
@@ -29324,8 +32253,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "263393",
-      "value": 633.98
+      "counterparty": "ACP COMERCIO ATACADISTA DE COMPONENTES E (0000249)",
+      "value": 633.98,
+      "nota_fiscal": "263393"
     },
     {
       "id": "tx02930",
@@ -29334,8 +32264,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "263415",
-      "value": 439.59
+      "counterparty": "ACP COMERCIO ATACADISTA DE COMPONENTES E (0000249)",
+      "value": 439.59,
+      "nota_fiscal": "263415"
     },
     {
       "id": "tx02931",
@@ -29344,8 +32275,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "33663",
-      "value": 320.0
+      "counterparty": "ALLNETSYS COMERCIO IMPORTACAO E SERVICOS (0000036)",
+      "value": 320.0,
+      "nota_fiscal": "33663"
     },
     {
       "id": "tx02932",
@@ -29354,8 +32286,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "33765",
-      "value": 1003.74
+      "counterparty": "SQUIB TECNOLOGIA ELETR. IMPOT. E EX. LTD (0000283)",
+      "value": 1003.74,
+      "nota_fiscal": "33765"
     },
     {
       "id": "tx02933",
@@ -29364,8 +32297,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "86427",
-      "value": 1226.0
+      "counterparty": "COMP TOTAL COM. E IMP. DE COMP. ELETRON. (0000267)",
+      "value": 1226.0,
+      "nota_fiscal": "86427"
     },
     {
       "id": "tx02934",
@@ -29374,8 +32308,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "86444",
-      "value": 852.0
+      "counterparty": "COMP TOTAL COM. E IMP. DE COMP. ELETRON. (0000267)",
+      "value": 852.0,
+      "nota_fiscal": "86444"
     },
     {
       "id": "tx02935",
@@ -29385,7 +32320,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ARSTA (0000095)",
-      "value": 417.0
+      "value": 417.0,
+      "nota_fiscal": "12628"
     },
     {
       "id": "tx02936",
@@ -29395,7 +32331,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "SISTRANS SISTEMA DE SIN. DE TRANSITO LTA (0000067)",
-      "value": 2135.82
+      "value": 2135.82,
+      "nota_fiscal": "12629"
     },
     {
       "id": "tx02937",
@@ -29405,7 +32342,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "RASATRONIC ELETRONICA INDUSTRIAL LTDA (0000057)",
-      "value": 452.46
+      "value": 452.46,
+      "nota_fiscal": "12630"
     },
     {
       "id": "tx02938",
@@ -29415,7 +32353,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "VITORIA INDUSTRIA ELETRONICA LTDA (0001305)",
-      "value": 2520.0
+      "value": 2520.0,
+      "nota_fiscal": "12631"
     },
     {
       "id": "tx02939",
@@ -29425,7 +32364,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "TELESHESK",
-      "value": 6200.33
+      "value": 6200.33,
+      "nota_fiscal": "807"
     },
     {
       "id": "tx02940",
@@ -29435,7 +32375,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SIMPLES CONECT",
-      "value": 3720.0
+      "value": 3720.0,
+      "nota_fiscal": "809"
     },
     {
       "id": "tx02941",
@@ -29445,7 +32386,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH",
-      "value": 1419.63
+      "value": 1419.63,
+      "nota_fiscal": "814"
     },
     {
       "id": "tx02942",
@@ -29455,7 +32397,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "SERVIÇOS",
       "counterparty": "ADRIELE COMISSÃO",
-      "value": 1500.0
+      "value": 1500.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02943",
@@ -29465,7 +32408,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "TRANSPORTES",
       "counterparty": "WANDO",
-      "value": 1190.0
+      "value": 1190.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02944",
@@ -29475,7 +32419,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL",
-      "value": 1900.0
+      "value": 1900.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02945",
@@ -29483,9 +32428,10 @@ const MAXLED_DATA = {
       "division": "importacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "MANUTENÇÃO",
+      "category": "SERVIÇOS",
       "counterparty": "GILBERTO",
-      "value": 1900.0
+      "value": 1900.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02946",
@@ -29495,7 +32441,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 5.43
+      "value": 5.43,
+      "nota_fiscal": null
     },
     {
       "id": "tx02947",
@@ -29505,7 +32452,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "GISLANE",
-      "value": 624.6
+      "value": 624.6,
+      "nota_fiscal": "SNF"
     },
     {
       "id": "tx02948",
@@ -29515,7 +32463,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO - 0000660",
-      "value": 1861.83
+      "value": 1861.83,
+      "nota_fiscal": "12358/03"
     },
     {
       "id": "tx02949",
@@ -29525,7 +32474,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SOLSUSTENTAVEL PROD. ELETRO ELETRONICOS - 0000125",
-      "value": 515.67
+      "value": 515.67,
+      "nota_fiscal": "12445/03"
     },
     {
       "id": "tx02950",
@@ -29535,7 +32485,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CHAVE DIGITAL TECNOLOGIA ELETRONICA LTDA - 0000022",
-      "value": 371.0
+      "value": 371.0,
+      "nota_fiscal": "12523/01"
     },
     {
       "id": "tx02951",
@@ -29545,7 +32496,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "DATAPOOL",
-      "value": 129.5
+      "value": 129.5,
+      "nota_fiscal": "12626"
     },
     {
       "id": "tx02952",
@@ -29555,7 +32507,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FZW",
-      "value": 2021.0
+      "value": 2021.0,
+      "nota_fiscal": "12643"
     },
     {
       "id": "tx02953",
@@ -29565,7 +32518,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "NEW TEC",
-      "value": 488.0
+      "value": 488.0,
+      "nota_fiscal": "12569"
     },
     {
       "id": "tx02954",
@@ -29575,7 +32529,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 5.43
+      "value": 5.43,
+      "nota_fiscal": null
     },
     {
       "id": "tx02955",
@@ -29585,7 +32540,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ETHERIC LIGTH",
-      "value": 453.0
+      "value": 453.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02956",
@@ -29595,7 +32551,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP",
-      "value": 3773.27
+      "value": 3773.27,
+      "nota_fiscal": null
     },
     {
       "id": "tx02957",
@@ -29604,8 +32561,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "141933",
-      "value": 1372.01
+      "counterparty": "SOFT METAIS LTDA (0000433)",
+      "value": 1372.01,
+      "nota_fiscal": "141933"
     },
     {
       "id": "tx02958",
@@ -29614,8 +32572,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "206678",
-      "value": 714.0
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 714.0,
+      "nota_fiscal": "206678"
     },
     {
       "id": "tx02959",
@@ -29624,8 +32583,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "206792",
-      "value": 2990.31
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 2990.31,
+      "nota_fiscal": "206792"
     },
     {
       "id": "tx02960",
@@ -29634,8 +32594,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "51299",
-      "value": 1693.31
+      "counterparty": "TOTALITY COMERCIO TECNICO EM SEMICONDUTO (0000316)",
+      "value": 1693.31,
+      "nota_fiscal": "51299"
     },
     {
       "id": "tx02961",
@@ -29644,8 +32605,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "86458",
-      "value": 85.73
+      "counterparty": "COMP TOTAL COM. E IMP. DE COMP. ELETRON. (0000267)",
+      "value": 85.73,
+      "nota_fiscal": "86458"
     },
     {
       "id": "tx02962",
@@ -29655,7 +32617,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "BALMARC SOLUCOES EIRELI (0000011)",
-      "value": 118.5
+      "value": 118.5,
+      "nota_fiscal": "12632"
     },
     {
       "id": "tx02963",
@@ -29665,7 +32628,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "EDWIN MAURICIO LOBOSCHI (0001364)",
-      "value": 29.99
+      "value": 29.99,
+      "nota_fiscal": "12633"
     },
     {
       "id": "tx02964",
@@ -29675,7 +32639,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "WEVERSON FERNANDO BRAGANCA CARDOSO (0001362)",
-      "value": 54.99
+      "value": 54.99,
+      "nota_fiscal": "12634"
     },
     {
       "id": "tx02965",
@@ -29685,7 +32650,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "LUIZ CLAUDIO MARTINES (0001365)",
-      "value": 14.99
+      "value": 14.99,
+      "nota_fiscal": "12635"
     },
     {
       "id": "tx02966",
@@ -29695,7 +32661,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "TAIKON INDUSTRIA E COM DE APARELHOS ELET (0001061)",
-      "value": 8639.5
+      "value": 8639.5,
+      "nota_fiscal": "12636"
     },
     {
       "id": "tx02967",
@@ -29705,7 +32672,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ELETROFELIX INDUSTRIA E COMERCIO LTDA (0000477)",
-      "value": 1633.0
+      "value": 1633.0,
+      "nota_fiscal": "12637"
     },
     {
       "id": "tx02968",
@@ -29715,7 +32683,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "J.M. MAQUINAS AUTOMOTIVAS EIRELI (0000387)",
-      "value": 1569.3
+      "value": 1569.3,
+      "nota_fiscal": "12638"
     },
     {
       "id": "tx02969",
@@ -29725,7 +32694,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "T.G.L. ELETRO ELETRONICO LTDA - ME (0000073)",
-      "value": 475.05
+      "value": 475.05,
+      "nota_fiscal": "12639"
     },
     {
       "id": "tx02970",
@@ -29735,7 +32705,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "J.M. MAQUINAS AUTOMOTIVAS EIRELI (0000387)",
-      "value": 2497.5
+      "value": 2497.5,
+      "nota_fiscal": "840"
     },
     {
       "id": "tx02971",
@@ -29745,7 +32716,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "DENTSCLER IND. DE APAR. ODONTO. EIRELLI - 0000390",
-      "value": 677.5
+      "value": 677.5,
+      "nota_fiscal": "12262/04"
     },
     {
       "id": "tx02972",
@@ -29755,7 +32727,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO - 0000660",
-      "value": 551.77
+      "value": 551.77,
+      "nota_fiscal": "12493/02"
     },
     {
       "id": "tx02973",
@@ -29765,7 +32738,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO - 0000660",
-      "value": 733.33
+      "value": 733.33,
+      "nota_fiscal": "12494/02"
     },
     {
       "id": "tx02974",
@@ -29775,7 +32749,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "E DE OLIVEIRA BARBOSA ELETRONICA - 0000898",
-      "value": 430.13
+      "value": 430.13,
+      "nota_fiscal": "12460"
     },
     {
       "id": "tx02975",
@@ -29785,7 +32760,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MKB ELETRONICA LTDA",
-      "value": 2934.11
+      "value": 2934.11,
+      "nota_fiscal": null
     },
     {
       "id": "tx02976",
@@ -29795,7 +32771,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRICONECT",
-      "value": 476.75
+      "value": 476.75,
+      "nota_fiscal": null
     },
     {
       "id": "tx02977",
@@ -29805,7 +32782,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "TAMIRES VALE",
-      "value": 855.8
+      "value": 855.8,
+      "nota_fiscal": null
     },
     {
       "id": "tx02978",
@@ -29815,7 +32793,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "MATHEUS VALE",
-      "value": 720.0
+      "value": 720.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx02979",
@@ -29825,7 +32804,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "IMPOSTOS",
       "counterparty": "DAS",
-      "value": 13161.14
+      "value": 13161.14,
+      "nota_fiscal": null
     },
     {
       "id": "tx02980",
@@ -29835,7 +32815,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "IMPOSTOS",
       "counterparty": "DARF",
-      "value": 1048.2
+      "value": 1048.2,
+      "nota_fiscal": null
     },
     {
       "id": "tx02981",
@@ -29845,7 +32826,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "IMPOSTOS",
       "counterparty": "FGTS",
-      "value": 555.8
+      "value": 555.8,
+      "nota_fiscal": null
     },
     {
       "id": "tx02982",
@@ -29855,7 +32837,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "SEGURO DE VIDA SÓCIO",
       "counterparty": "PREVIDENCIA",
-      "value": 496.24
+      "value": 496.24,
+      "nota_fiscal": null
     },
     {
       "id": "tx02983",
@@ -29865,7 +32848,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "SEGURO DE VIDA SÓCIO",
       "counterparty": "PREVIDENCIA",
-      "value": 473.47
+      "value": 473.47,
+      "nota_fiscal": null
     },
     {
       "id": "tx02984",
@@ -29875,7 +32859,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 7.24
+      "value": 7.24,
+      "nota_fiscal": null
     },
     {
       "id": "tx02985",
@@ -29884,8 +32869,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "4452",
-      "value": 1478.0
+      "counterparty": "MDS COMPONENTES ELETRONICOS LTDA (0000297)",
+      "value": 1478.0,
+      "nota_fiscal": "4452"
     },
     {
       "id": "tx02986",
@@ -29894,8 +32880,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "69003",
-      "value": 572.4
+      "counterparty": "TRICOMP COMERCIAL ELETR. LTDA (0000278)",
+      "value": 572.4,
+      "nota_fiscal": "69003"
     },
     {
       "id": "tx02987",
@@ -29904,8 +32891,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "77",
-      "value": 2599.0
+      "counterparty": "INOVE TECNOLOGIA E DIVERSOS LTDA (0000448)",
+      "value": 2599.0,
+      "nota_fiscal": "77"
     },
     {
       "id": "tx02988",
@@ -29914,8 +32902,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "859",
-      "value": 603.25
+      "counterparty": "AIB COMERCIAL IMPORTACAO E EXPORTACAO (0000395)",
+      "value": 603.25,
+      "nota_fiscal": "859"
     },
     {
       "id": "tx02989",
@@ -29924,8 +32913,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "91537",
-      "value": 855.77
+      "counterparty": "MEGAPIX COMP. ELETRONICOS LTDA-EPP (0000275)",
+      "value": 855.77,
+      "nota_fiscal": "91537"
     },
     {
       "id": "tx02990",
@@ -29934,8 +32924,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "975",
-      "value": 315.0
+      "counterparty": "CIRCUITRONIX ELETRO ELETRONICA LTDA (0000442)",
+      "value": 315.0,
+      "nota_fiscal": "975"
     },
     {
       "id": "tx02991",
@@ -29945,7 +32936,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "DGL SOLUCOES EM ELETRONICA LTDA (0000564)",
-      "value": 79.98
+      "value": 79.98,
+      "nota_fiscal": "12640"
     },
     {
       "id": "tx02992",
@@ -29955,7 +32947,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "DGL SOLUCOES EM ELETRONICA LTDA (0000564)",
-      "value": 85.98
+      "value": 85.98,
+      "nota_fiscal": "12641"
     },
     {
       "id": "tx02993",
@@ -29965,7 +32958,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "JRC COMERCIO E SERVICOS ELETRO ELETRONIC (0001366)",
-      "value": 26.99
+      "value": 26.99,
+      "nota_fiscal": "12642"
     },
     {
       "id": "tx02994",
@@ -29975,7 +32969,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FZW INNOVATION LTDA (0000848)",
-      "value": 2021.0
+      "value": 2021.0,
+      "nota_fiscal": "12643"
     },
     {
       "id": "tx02995",
@@ -29985,7 +32980,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E (0000081)",
-      "value": 282.0
+      "value": 282.0,
+      "nota_fiscal": "12644"
     },
     {
       "id": "tx02996",
@@ -29995,7 +32991,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ROYALCOMP COMPONENTES ELETR. LTDA (0000570)",
-      "value": 77.2
+      "value": 77.2,
+      "nota_fiscal": "12645"
     },
     {
       "id": "tx02997",
@@ -30005,7 +33002,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "EVOLUTEC INDUSTRIA E COMERCIO DE ELETROA (0000229)",
-      "value": 1861.2
+      "value": 1861.2,
+      "nota_fiscal": "12646"
     },
     {
       "id": "tx02998",
@@ -30015,7 +33013,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "M MARTINS",
-      "value": 1500.0
+      "value": 1500.0,
+      "nota_fiscal": "823"
     },
     {
       "id": "tx02999",
@@ -30025,7 +33024,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "IMPOSTOS",
       "counterparty": "DAS",
-      "value": 6709.23
+      "value": 6709.23,
+      "nota_fiscal": null
     },
     {
       "id": "tx03000",
@@ -30033,9 +33033,10 @@ const MAXLED_DATA = {
       "division": "importacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "TRANSPORTES IMPORTAÇÃO",
+      "category": null,
       "counterparty": "DHL",
-      "value": 331.9
+      "value": 331.9,
+      "nota_fiscal": null
     },
     {
       "id": "tx03001",
@@ -30045,7 +33046,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "MONALISA",
-      "value": 855.0
+      "value": 855.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx03002",
@@ -30055,7 +33057,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FUNCIONÁRIOS",
       "counterparty": "INGRID",
-      "value": 855.0
+      "value": 855.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx03003",
@@ -30065,7 +33068,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "SÓCIOS",
       "counterparty": "MARIA ROCHA",
-      "value": 7000.0
+      "value": 7000.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx03004",
@@ -30075,7 +33079,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ALLPRINT LATINA AUTOMACAO DE MAQUINAS EA (0000291)",
-      "value": 2305.0
+      "value": 2305.0,
+      "nota_fiscal": "842"
     },
     {
       "id": "tx03005",
@@ -30085,7 +33090,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "TAIKON INDUSTRIA E COM DE APARELHOS ELET (0001061)",
-      "value": 10920.0
+      "value": 10920.0,
+      "nota_fiscal": "843"
     },
     {
       "id": "tx03006",
@@ -30095,7 +33101,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CITTA ELETRONICA IND. E COM. LTDA ME - 0000532",
-      "value": 95.0
+      "value": 95.0,
+      "nota_fiscal": "12526"
     },
     {
       "id": "tx03007",
@@ -30105,7 +33112,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CHAVE DIGITAL TECNOLOGIA ELETRONICA LTDA - 0000022",
-      "value": 371.0
+      "value": 371.0,
+      "nota_fiscal": "12523"
     },
     {
       "id": "tx03008",
@@ -30115,7 +33123,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "TRIAL",
-      "value": 443.0
+      "value": 443.0,
+      "nota_fiscal": "12521"
     },
     {
       "id": "tx03009",
@@ -30125,7 +33134,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "S.T.E.E. TECNOLOGIA ELETROELETRONICA LT - 0000062",
-      "value": 844.27
+      "value": 844.27,
+      "nota_fiscal": "12506"
     },
     {
       "id": "tx03010",
@@ -30135,7 +33145,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ALIGERA EQUIPAMENTOS DIGITAIS LTDA - 0000188",
-      "value": 708.75
+      "value": 708.75,
+      "nota_fiscal": "12503"
     },
     {
       "id": "tx03011",
@@ -30145,7 +33156,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BPM INDUSTRIA E COMERCIO - 0000541",
-      "value": 1843.2
+      "value": 1843.2,
+      "nota_fiscal": "12385"
     },
     {
       "id": "tx03012",
@@ -30155,7 +33167,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 10.86
+      "value": 10.86,
+      "nota_fiscal": null
     },
     {
       "id": "tx03013",
@@ -30165,7 +33178,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MKB ELETRONICA LTDA",
-      "value": 2689.46
+      "value": 2689.46,
+      "nota_fiscal": null
     },
     {
       "id": "tx03014",
@@ -30175,7 +33189,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRICONECT",
-      "value": 757.9
+      "value": 757.9,
+      "nota_fiscal": null
     },
     {
       "id": "tx03015",
@@ -30185,7 +33200,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MDS",
-      "value": 500.0
+      "value": 500.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx03016",
@@ -30195,7 +33211,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRYNIT-CREDERE",
-      "value": 549.0
+      "value": 549.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx03017",
@@ -30205,7 +33222,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "FILLCRIL",
-      "value": 784.07
+      "value": 784.07,
+      "nota_fiscal": null
     },
     {
       "id": "tx03018",
@@ -30214,8 +33232,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "206915",
-      "value": 434.21
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 434.21,
+      "nota_fiscal": "206915"
     },
     {
       "id": "tx03019",
@@ -30224,8 +33243,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "263508",
-      "value": 2788.61
+      "counterparty": "ACP COMERCIO ATACADISTA DE COMPONENTES E (0000249)",
+      "value": 2788.61,
+      "nota_fiscal": "263508"
     },
     {
       "id": "tx03020",
@@ -30234,8 +33254,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "4016",
-      "value": 35.0
+      "counterparty": "S-ohm Comercial Ltda. (0000183)",
+      "value": 35.0,
+      "nota_fiscal": "4016"
     },
     {
       "id": "tx03021",
@@ -30244,8 +33265,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "5963",
-      "value": 665.97
+      "counterparty": "DALEC INDUSTRIA E COMERCIO DE COMPONENTE (0000056)",
+      "value": 665.97,
+      "nota_fiscal": "5963"
     },
     {
       "id": "tx03022",
@@ -30254,8 +33276,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "76884",
-      "value": 1080.0
+      "counterparty": "IDALL COM. ATAC. DE COMP. ELETR. LTDA (0000011)",
+      "value": 1080.0,
+      "nota_fiscal": "76884"
     },
     {
       "id": "tx03023",
@@ -30264,8 +33287,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "8058",
-      "value": 125.0
+      "counterparty": "DICEL COMERCIO DE COMPONENTES ELETRONICO (0000298)",
+      "value": 125.0,
+      "nota_fiscal": "8058"
     },
     {
       "id": "tx03024",
@@ -30275,7 +33299,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ZILOCCHI ELETRONICA LTDA - EPP (0000130)",
-      "value": 2069.3
+      "value": 2069.3,
+      "nota_fiscal": "12647"
     },
     {
       "id": "tx03025",
@@ -30285,7 +33310,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FOCUS TECNOLOGIA E SOLUCOES LTDA (0000742)",
-      "value": 806.52
+      "value": 806.52,
+      "nota_fiscal": "12648"
     },
     {
       "id": "tx03026",
@@ -30295,7 +33321,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "TRANSFIX ASSISTENCIA TECN. E VENDAS EQUI (0000199)",
-      "value": 1152.5
+      "value": 1152.5,
+      "nota_fiscal": "12649"
     },
     {
       "id": "tx03027",
@@ -30305,7 +33332,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "HERBERT LUIZ PESSOA (0001367)",
-      "value": 87.72
+      "value": 87.72,
+      "nota_fiscal": "12650"
     },
     {
       "id": "tx03028",
@@ -30315,7 +33343,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "BPM INDUSTRIA E COMERCIO (0000541)",
-      "value": 8940.0
+      "value": 8940.0,
+      "nota_fiscal": "12651"
     },
     {
       "id": "tx03029",
@@ -30325,7 +33354,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ELETROFELIX INDUSTRIA E COMERCIO LTDA (0000477)",
-      "value": 316.9
+      "value": 316.9,
+      "nota_fiscal": "12652"
     },
     {
       "id": "tx03030",
@@ -30335,7 +33365,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "TRANSFIX ASSISTENCIA TECN. E VENDAS EQUI (0000199)",
-      "value": 27052.0
+      "value": 27052.0,
+      "nota_fiscal": "844"
     },
     {
       "id": "tx03031",
@@ -30345,7 +33376,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "BPM INDUSTRIA E COMERCIO (0000541)",
-      "value": 60.0
+      "value": 60.0,
+      "nota_fiscal": "845"
     },
     {
       "id": "tx03032",
@@ -30355,7 +33387,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "NEW TEC",
-      "value": 160.0
+      "value": 160.0,
+      "nota_fiscal": "12570"
     },
     {
       "id": "tx03033",
@@ -30365,7 +33398,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "AVTRON COMPONENTES ELETRONICOS LTDA - 0000472",
-      "value": 56.0
+      "value": 56.0,
+      "nota_fiscal": "12653"
     },
     {
       "id": "tx03034",
@@ -30375,7 +33409,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "PROMAX",
-      "value": 70.0
+      "value": 70.0,
+      "nota_fiscal": "12681"
     },
     {
       "id": "tx03035",
@@ -30385,7 +33420,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "HCM",
-      "value": 803.5
+      "value": 803.5,
+      "nota_fiscal": "12533"
     },
     {
       "id": "tx03036",
@@ -30395,7 +33431,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "NEXXO",
-      "value": 416.34
+      "value": 416.34,
+      "nota_fiscal": "12532"
     },
     {
       "id": "tx03037",
@@ -30405,7 +33442,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "HTR EQUIPAMENTOS ELETRONICOS LTDA - 0000268",
-      "value": 557.0
+      "value": 557.0,
+      "nota_fiscal": "12531"
     },
     {
       "id": "tx03038",
@@ -30415,7 +33453,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FIBERWAN IND. DE EQUIP. ELETTR. LTDA-EPP - 0000411",
-      "value": 295.6
+      "value": 295.6,
+      "nota_fiscal": "12530"
     },
     {
       "id": "tx03039",
@@ -30425,7 +33464,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO - 0000660",
-      "value": 584.0
+      "value": 584.0,
+      "nota_fiscal": "12529"
     },
     {
       "id": "tx03040",
@@ -30435,7 +33475,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BPM INDUSTRIA E COMERCIO - 0000541",
-      "value": 844.92
+      "value": 844.92,
+      "nota_fiscal": "12527"
     },
     {
       "id": "tx03041",
@@ -30445,7 +33486,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 10.86
+      "value": 10.86,
+      "nota_fiscal": null
     },
     {
       "id": "tx03042",
@@ -30455,7 +33497,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ELCOMP COMERCIO C E LTDA EPP",
-      "value": 613.78
+      "value": 613.78,
+      "nota_fiscal": null
     },
     {
       "id": "tx03043",
@@ -30465,7 +33508,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY",
-      "value": 547.75
+      "value": 547.75,
+      "nota_fiscal": null
     },
     {
       "id": "tx03044",
@@ -30475,7 +33519,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP",
-      "value": 683.43
+      "value": 683.43,
+      "nota_fiscal": null
     },
     {
       "id": "tx03045",
@@ -30485,7 +33530,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP",
-      "value": 3044.94
+      "value": 3044.94,
+      "nota_fiscal": null
     },
     {
       "id": "tx03046",
@@ -30495,7 +33541,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP",
-      "value": 396.92
+      "value": 396.92,
+      "nota_fiscal": null
     },
     {
       "id": "tx03047",
@@ -30505,7 +33552,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MEGAPIX",
-      "value": 450.0
+      "value": 450.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx03048",
@@ -30515,7 +33563,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DIGICOMP",
-      "value": 216.0
+      "value": 216.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx03049",
@@ -30525,7 +33574,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY MAX",
-      "value": 374.4
+      "value": 374.4,
+      "nota_fiscal": null
     },
     {
       "id": "tx03050",
@@ -30535,7 +33585,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "PROELETRONICA",
-      "value": 371.46
+      "value": 371.46,
+      "nota_fiscal": null
     },
     {
       "id": "tx03051",
@@ -30545,7 +33596,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRICOMP",
-      "value": 479.6
+      "value": 479.6,
+      "nota_fiscal": null
     },
     {
       "id": "tx03052",
@@ -30555,7 +33607,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MEGAPIX",
-      "value": 208.0
+      "value": 208.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx03053",
@@ -30565,7 +33618,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ETHERIC LIGTH",
-      "value": 78.0
+      "value": 78.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx03054",
@@ -30574,8 +33628,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "19100",
-      "value": 453.0
+      "counterparty": "ETHERIC LIGHT COMERCIO DE MATERIAIS ELET (0000300)",
+      "value": 453.0,
+      "nota_fiscal": "19100"
     },
     {
       "id": "tx03055",
@@ -30584,8 +33639,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "263633",
-      "value": 392.43
+      "counterparty": "ACP COMERCIO ATACADISTA DE COMPONENTES E (0000249)",
+      "value": 392.43,
+      "nota_fiscal": "263633"
     },
     {
       "id": "tx03056",
@@ -30594,8 +33650,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "263662",
-      "value": 843.81
+      "counterparty": "ACP COMERCIO ATACADISTA DE COMPONENTES E (0000249)",
+      "value": 843.81,
+      "nota_fiscal": "263662"
     },
     {
       "id": "tx03057",
@@ -30604,8 +33661,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "8376",
-      "value": 300.0
+      "counterparty": "DMAX COMPONENTES ELETRONICOS LTDA (0000451)",
+      "value": 300.0,
+      "nota_fiscal": "8376"
     },
     {
       "id": "tx03058",
@@ -30615,7 +33673,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "AVTRON COMPONENTES ELETRONICOS LTDA (0000472)",
-      "value": 56.0
+      "value": 56.0,
+      "nota_fiscal": "12653"
     },
     {
       "id": "tx03059",
@@ -30625,7 +33684,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E (0000081)",
-      "value": 2476.0
+      "value": 2476.0,
+      "nota_fiscal": "12654"
     },
     {
       "id": "tx03060",
@@ -30635,7 +33695,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E (0000081)",
-      "value": 246.0
+      "value": 246.0,
+      "nota_fiscal": "12655"
     },
     {
       "id": "tx03061",
@@ -30645,7 +33706,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "PROSPER-CARMON CONTROLES ELETRONICOS LTD (0001324)",
-      "value": 1161.7
+      "value": 1161.7,
+      "nota_fiscal": "12656"
     },
     {
       "id": "tx03062",
@@ -30655,7 +33717,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "VIEWMED IND. A E COM. DE PROD. MEDICOSA (0000343)",
-      "value": 852.5
+      "value": 852.5,
+      "nota_fiscal": "12657"
     },
     {
       "id": "tx03063",
@@ -30665,7 +33728,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "PRODUPARK EQUIP. ELETRO. E IMP. LTDA - 0000056",
-      "value": 1171.78
+      "value": 1171.78,
+      "nota_fiscal": "12452"
     },
     {
       "id": "tx03064",
@@ -30675,7 +33739,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "PREMIX",
-      "value": 214.8
+      "value": 214.8,
+      "nota_fiscal": "12664"
     },
     {
       "id": "tx03065",
@@ -30685,7 +33750,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "TAIKON",
-      "value": 1418.0
+      "value": 1418.0,
+      "nota_fiscal": "12694"
     },
     {
       "id": "tx03066",
@@ -30695,7 +33761,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "TRANSCICAP",
-      "value": 170.0
+      "value": 170.0,
+      "nota_fiscal": "12686"
     },
     {
       "id": "tx03067",
@@ -30705,7 +33772,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
-      "value": 316.43
+      "value": 316.43,
+      "nota_fiscal": "12539/01"
     },
     {
       "id": "tx03068",
@@ -30715,7 +33783,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
-      "value": 502.0
+      "value": 502.0,
+      "nota_fiscal": "12538/01"
     },
     {
       "id": "tx03069",
@@ -30725,7 +33794,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "VINTEK IND., COMERCIO E SERVICOS LTDA - 0000894",
-      "value": 1211.91
+      "value": 1211.91,
+      "nota_fiscal": "12488/02"
     },
     {
       "id": "tx03070",
@@ -30735,7 +33805,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO - 0000660",
-      "value": 1163.75
+      "value": 1163.75,
+      "nota_fiscal": "12465/02"
     },
     {
       "id": "tx03071",
@@ -30745,7 +33816,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "WKS",
-      "value": 6.07
+      "value": 6.07,
+      "nota_fiscal": null
     },
     {
       "id": "tx03072",
@@ -30755,7 +33827,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "EMPRÉSTIMO CAPITAL DE GIRO ITAÚ",
       "counterparty": "CAPITAL DE GIRO",
-      "value": 2595.32
+      "value": 2595.32,
+      "nota_fiscal": null
     },
     {
       "id": "tx03073",
@@ -30765,7 +33838,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP",
-      "value": 487.44
+      "value": 487.44,
+      "nota_fiscal": null
     },
     {
       "id": "tx03074",
@@ -30775,7 +33849,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MRD",
-      "value": 400.0
+      "value": 400.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx03075",
@@ -30785,7 +33860,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP",
-      "value": 1226.01
+      "value": 1226.01,
+      "nota_fiscal": null
     },
     {
       "id": "tx03076",
@@ -30795,7 +33871,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL",
-      "value": 858.0
+      "value": 858.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx03077",
@@ -30805,7 +33882,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL",
-      "value": 618.2
+      "value": 618.2,
+      "nota_fiscal": null
     },
     {
       "id": "tx03078",
@@ -30815,7 +33893,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "E2E IND COM",
-      "value": 1324.0
+      "value": 1324.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx03079",
@@ -30825,7 +33904,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP",
-      "value": 671.95
+      "value": 671.95,
+      "nota_fiscal": null
     },
     {
       "id": "tx03080",
@@ -30835,7 +33915,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ZENER COMPONENTES ELETRONIC LT",
-      "value": 290.0
+      "value": 290.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx03081",
@@ -30845,7 +33926,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP",
-      "value": 1028.37
+      "value": 1028.37,
+      "nota_fiscal": null
     },
     {
       "id": "tx03082",
@@ -30855,7 +33937,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ACP",
-      "value": 467.99
+      "value": 467.99,
+      "nota_fiscal": null
     },
     {
       "id": "tx03083",
@@ -30865,7 +33948,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "CX COM",
-      "value": 342.0
+      "value": 342.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx03084",
@@ -30875,7 +33959,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ALLNETSYS COM",
-      "value": 920.5
+      "value": 920.5,
+      "nota_fiscal": null
     },
     {
       "id": "tx03085",
@@ -30885,7 +33970,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MKB ELETRONICA LTDA",
-      "value": 1087.37
+      "value": 1087.37,
+      "nota_fiscal": null
     },
     {
       "id": "tx03086",
@@ -30895,7 +33981,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL",
-      "value": 779.27
+      "value": 779.27,
+      "nota_fiscal": null
     },
     {
       "id": "tx03087",
@@ -30905,7 +33992,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "GASTOS FIXOS",
       "counterparty": "SERASA",
-      "value": 670.22
+      "value": 670.22,
+      "nota_fiscal": null
     },
     {
       "id": "tx03088",
@@ -30915,7 +34003,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 9.05
+      "value": 9.05,
+      "nota_fiscal": null
     },
     {
       "id": "tx03089",
@@ -30924,8 +34013,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "1007",
-      "value": 548.1
+      "counterparty": "CIRCUITRONIX ELETRO ELETRONICA LTDA (0000442)",
+      "value": 548.1,
+      "nota_fiscal": "1007"
     },
     {
       "id": "tx03090",
@@ -30934,8 +34024,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "19326",
-      "value": 79.5
+      "counterparty": "TRICONECT COMERCIAL ELETR. LTDA (0000321)",
+      "value": 79.5,
+      "nota_fiscal": "19326"
     },
     {
       "id": "tx03091",
@@ -30944,8 +34035,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "207116",
-      "value": 100.0
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 100.0,
+      "nota_fiscal": "207116"
     },
     {
       "id": "tx03092",
@@ -30954,8 +34046,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "207157",
-      "value": 135.5
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 135.5,
+      "nota_fiscal": "207157"
     },
     {
       "id": "tx03093",
@@ -30964,8 +34057,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "24533",
-      "value": 489.0
+      "counterparty": "ZENER COMPONENTES ELETRONICOS LTDA - ME (0000317)",
+      "value": 489.0,
+      "nota_fiscal": "24533"
     },
     {
       "id": "tx03094",
@@ -30974,8 +34068,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "69100",
-      "value": 93.28
+      "counterparty": "TRICOMP COMERCIAL ELETR. LTDA (0000278)",
+      "value": 93.28,
+      "nota_fiscal": "69100"
     },
     {
       "id": "tx03095",
@@ -30984,8 +34079,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "76918",
-      "value": 619.9
+      "counterparty": "IDALL COM. ATAC. DE COMP. ELETR. LTDA (0000011)",
+      "value": 619.9,
+      "nota_fiscal": "76918"
     },
     {
       "id": "tx03096",
@@ -30994,8 +34090,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "91779",
-      "value": 208.0
+      "counterparty": "MEGAPIX COMP. ELETRONICOS LTDA-EPP (0000275)",
+      "value": 208.0,
+      "nota_fiscal": "91779"
     },
     {
       "id": "tx03097",
@@ -31005,7 +34102,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "JOSÉ ALVES DE OLIVEIRA (0001369)",
-      "value": 16.99
+      "value": 16.99,
+      "nota_fiscal": "12661"
     },
     {
       "id": "tx03098",
@@ -31015,7 +34113,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "CLEYTON RAMOS NOGUEIRA (0001370)",
-      "value": 24.99
+      "value": 24.99,
+      "nota_fiscal": "12662"
     },
     {
       "id": "tx03099",
@@ -31025,7 +34124,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "DENTSCLER IND. DE APAR. ODONTO. EIRELLI (0000390)",
-      "value": 1531.0
+      "value": 1531.0,
+      "nota_fiscal": "12663"
     },
     {
       "id": "tx03100",
@@ -31035,7 +34135,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SIMPLES CONECT",
-      "value": 12888.63
+      "value": 12888.63,
+      "nota_fiscal": "825"
     },
     {
       "id": "tx03101",
@@ -31043,9 +34144,10 @@ const MAXLED_DATA = {
       "division": "importacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "CARTÃO DE CRÉDITO",
+      "category": "GASTOS FICOS",
       "counterparty": "CARTÃO DE CRÉDITO",
-      "value": 9323.04
+      "value": 9323.04,
+      "nota_fiscal": null
     },
     {
       "id": "tx03102",
@@ -31053,9 +34155,10 @@ const MAXLED_DATA = {
       "division": "importacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "CARTÃO DE CRÉDITO",
+      "category": "SÓCIOS",
       "counterparty": "CARTÃO DE CRÉDITO",
-      "value": 3548.24
+      "value": 3548.24,
+      "nota_fiscal": null
     },
     {
       "id": "tx03103",
@@ -31065,7 +34168,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "DENTSCLER IND. DE APAR. ODONTO. EIRELLI (0000390)",
-      "value": 274.5
+      "value": 274.5,
+      "nota_fiscal": "850"
     },
     {
       "id": "tx03104",
@@ -31075,7 +34179,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E (0000081)",
-      "value": 1302.5
+      "value": 1302.5,
+      "nota_fiscal": "851"
     },
     {
       "id": "tx03105",
@@ -31085,7 +34190,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "INLINE",
-      "value": 438.0
+      "value": 438.0,
+      "nota_fiscal": "12692"
     },
     {
       "id": "tx03106",
@@ -31095,7 +34201,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "Energy",
-      "value": 165.15
+      "value": 165.15,
+      "nota_fiscal": "12677"
     },
     {
       "id": "tx03107",
@@ -31105,7 +34212,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "NEWTESC TECNOLOGIA E COMERCIO LTDA - 0000106",
-      "value": 280.0
+      "value": 280.0,
+      "nota_fiscal": "12555/01"
     },
     {
       "id": "tx03108",
@@ -31115,7 +34223,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ALLPRINT LATINA AUTOMACAO DE MAQUINAS EA - 0000291",
-      "value": 336.0
+      "value": 336.0,
+      "nota_fiscal": "12551/01"
     },
     {
       "id": "tx03109",
@@ -31125,7 +34234,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "VINTEK IND., COMERCIO E SERVICOS LTDA - 0000894",
-      "value": 1165.5
+      "value": 1165.5,
+      "nota_fiscal": "12488/03"
     },
     {
       "id": "tx03110",
@@ -31135,7 +34245,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ELETROFELIX INDUSTRIA E COMERCIO LTDA - 0000477",
-      "value": 301.1
+      "value": 301.1,
+      "nota_fiscal": "12546/01"
     },
     {
       "id": "tx03111",
@@ -31145,7 +34256,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ELETROFELIX INDUSTRIA E COMERCIO LTDA - 0000477",
-      "value": 810.29
+      "value": 810.29,
+      "nota_fiscal": "12507/02"
     },
     {
       "id": "tx03112",
@@ -31155,7 +34267,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "VINTEK IND., COMERCIO E SERVICOS LTDA - 0000894",
-      "value": 4732.77
+      "value": 4732.77,
+      "nota_fiscal": "12390/03"
     },
     {
       "id": "tx03113",
@@ -31165,7 +34278,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO - 0000660",
-      "value": 4545.77
+      "value": 4545.77,
+      "nota_fiscal": "12166/03"
     },
     {
       "id": "tx03114",
@@ -31175,7 +34289,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "LECOMP",
-      "value": 250.0
+      "value": 250.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx03115",
@@ -31185,7 +34300,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "MEGADEF",
-      "value": 342.41
+      "value": 342.41,
+      "nota_fiscal": null
     },
     {
       "id": "tx03116",
@@ -31195,7 +34311,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "FERA COMP",
-      "value": 899.0
+      "value": 899.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx03117",
@@ -31205,7 +34322,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL",
-      "value": 904.43
+      "value": 904.43,
+      "nota_fiscal": null
     },
     {
       "id": "tx03118",
@@ -31215,7 +34333,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 12.67
+      "value": 12.67,
+      "nota_fiscal": null
     },
     {
       "id": "tx03119",
@@ -31224,8 +34343,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "131594",
-      "value": 6.07
+      "counterparty": "WKS TECHNOLOGY DO BRASIL LTDA (0000320)",
+      "value": 6.07,
+      "nota_fiscal": "131594"
     },
     {
       "id": "tx03120",
@@ -31234,8 +34354,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "207253",
-      "value": 100.0
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 100.0,
+      "nota_fiscal": "207253"
     },
     {
       "id": "tx03121",
@@ -31244,8 +34365,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "3754",
-      "value": 490.0
+      "counterparty": "ORANGE E BLACK DISTRIBUIDORA LTDA (0000198)",
+      "value": 490.0,
+      "nota_fiscal": "3754"
     },
     {
       "id": "tx03122",
@@ -31254,8 +34376,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "76931",
-      "value": 654.0
+      "counterparty": "IDALL COM. ATAC. DE COMP. ELETR. LTDA (0000011)",
+      "value": 654.0,
+      "nota_fiscal": "76931"
     },
     {
       "id": "tx03123",
@@ -31265,7 +34388,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "PREMIX INDUSTRIA ELETROMECANIA LTDA (0000047)",
-      "value": 214.8
+      "value": 214.8,
+      "nota_fiscal": "12664"
     },
     {
       "id": "tx03124",
@@ -31275,7 +34399,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "THIAGO UDO RIBEIRO HENGSTMANN (0001374)",
-      "value": 21.99
+      "value": 21.99,
+      "nota_fiscal": "12666"
     },
     {
       "id": "tx03125",
@@ -31285,7 +34410,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH",
-      "value": 330.0
+      "value": 330.0,
+      "nota_fiscal": "826"
     },
     {
       "id": "tx03126",
@@ -31295,7 +34421,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 1.81
+      "value": 1.81,
+      "nota_fiscal": null
     },
     {
       "id": "tx03127",
@@ -31305,7 +34432,8 @@ const MAXLED_DATA = {
       "flow": "compra",
       "category": null,
       "counterparty": "LS COMPONENTES ELETRONICOS LTDA (0000197)",
-      "value": 1572.0
+      "value": 1572.0,
+      "nota_fiscal": "172"
     },
     {
       "id": "tx03128",
@@ -31315,7 +34443,8 @@ const MAXLED_DATA = {
       "flow": "compra",
       "category": null,
       "counterparty": "FCP IMPORTACAO E COMERCIO LTDA (0000398)",
-      "value": 764.49
+      "value": 764.49,
+      "nota_fiscal": "449"
     },
     {
       "id": "tx03129",
@@ -31325,7 +34454,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SOLSUSTENTAVEL PROD. ELETRO ELETRONICOS - 0000125",
-      "value": 797.0
+      "value": 797.0,
+      "nota_fiscal": "12559/01"
     },
     {
       "id": "tx03130",
@@ -31335,7 +34465,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
-      "value": 1032.8
+      "value": 1032.8,
+      "nota_fiscal": "12558/01"
     },
     {
       "id": "tx03131",
@@ -31345,7 +34476,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "EVOLUTEC INDUSTRIA E COMERCIO DE ELETROA - 0000229",
-      "value": 943.6
+      "value": 943.6,
+      "nota_fiscal": "12557/01"
     },
     {
       "id": "tx03132",
@@ -31355,7 +34487,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "ROYALCOMP COMPONENTES ELETR. LTDA - 0000570",
-      "value": 384.0
+      "value": 384.0,
+      "nota_fiscal": "12550/01"
     },
     {
       "id": "tx03133",
@@ -31365,7 +34498,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
-      "value": 1197.84
+      "value": 1197.84,
+      "nota_fiscal": "12540/01"
     },
     {
       "id": "tx03134",
@@ -31375,7 +34509,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO - 0000660",
-      "value": 733.33
+      "value": 733.33,
+      "nota_fiscal": "12494/03"
     },
     {
       "id": "tx03135",
@@ -31385,7 +34520,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO - 0000660",
-      "value": 551.77
+      "value": 551.77,
+      "nota_fiscal": "12493/03"
     },
     {
       "id": "tx03136",
@@ -31395,7 +34531,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 12.67
+      "value": 12.67,
+      "nota_fiscal": null
     },
     {
       "id": "tx03137",
@@ -31405,7 +34542,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRICOMP",
-      "value": 243.8
+      "value": 243.8,
+      "nota_fiscal": null
     },
     {
       "id": "tx03138",
@@ -31415,7 +34553,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IMPLASTEC",
-      "value": 1999.4
+      "value": 1999.4,
+      "nota_fiscal": null
     },
     {
       "id": "tx03139",
@@ -31425,7 +34564,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "COMP TOTAL",
-      "value": 499.7
+      "value": 499.7,
+      "nota_fiscal": null
     },
     {
       "id": "tx03140",
@@ -31435,7 +34575,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "TRYNIT",
-      "value": 307.0
+      "value": 307.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx03141",
@@ -31445,7 +34586,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "CIRCUITRONIX",
-      "value": 288.0
+      "value": 288.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx03142",
@@ -31455,7 +34597,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "GASTOS FIXOS",
       "counterparty": "ALUGUEL",
-      "value": 4200.0
+      "value": 4200.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx03143",
@@ -31464,8 +34607,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "19116",
-      "value": 78.0
+      "counterparty": "ETHERIC LIGHT COMERCIO DE MATERIAIS ELET (0000300)",
+      "value": 78.0,
+      "nota_fiscal": "19116"
     },
     {
       "id": "tx03144",
@@ -31474,8 +34618,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "33773",
-      "value": 120.0
+      "counterparty": "ALLNETSYS COMERCIO IMPORTACAO E SERVICOS (0000036)",
+      "value": 120.0,
+      "nota_fiscal": "33773"
     },
     {
       "id": "tx03145",
@@ -31484,8 +34629,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "33821",
-      "value": 135.0
+      "counterparty": "ALLNETSYS COMERCIO IMPORTACAO E SERVICOS (0000036)",
+      "value": 135.0,
+      "nota_fiscal": "33821"
     },
     {
       "id": "tx03146",
@@ -31495,7 +34641,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ENERGYSPOT LTDA (0001371)",
-      "value": 165.15
+      "value": 165.15,
+      "nota_fiscal": "12667"
     },
     {
       "id": "tx03147",
@@ -31505,7 +34652,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ALLNETSYS COMERCIO IMPORTACAO E SERVICOS (0000036)",
-      "value": 120.0
+      "value": 120.0,
+      "nota_fiscal": "12668"
     },
     {
       "id": "tx03148",
@@ -31515,7 +34663,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ALIGERA EQUIPAMENTOS DIGITAIS LTDA (0000188)",
-      "value": 1600.0
+      "value": 1600.0,
+      "nota_fiscal": "12671"
     },
     {
       "id": "tx03149",
@@ -31525,7 +34674,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E (0000081)",
-      "value": 277.8
+      "value": 277.8,
+      "nota_fiscal": "12674"
     },
     {
       "id": "tx03150",
@@ -31535,7 +34685,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FOCUS TECNOLOGIA E SOLUCOES LTDA (0000742)",
-      "value": 3790.1
+      "value": 3790.1,
+      "nota_fiscal": "12675"
     },
     {
       "id": "tx03151",
@@ -31545,7 +34696,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "UNYLYNER SERVICE COMERCIO E SERVICOS EII (0000261)",
-      "value": 450.0
+      "value": 450.0,
+      "nota_fiscal": "852"
     },
     {
       "id": "tx03152",
@@ -31555,7 +34707,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ALLPRINT LATINA AUTOMACAO DE MAQUINAS EA (0000291)",
-      "value": 6825.0
+      "value": 6825.0,
+      "nota_fiscal": "853"
     },
     {
       "id": "tx03153",
@@ -31565,7 +34718,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "TRANSFIX ASSISTENCIA TECN. E VENDAS EQUI (0000199)",
-      "value": 974.0
+      "value": 974.0,
+      "nota_fiscal": "854"
     },
     {
       "id": "tx03154",
@@ -31575,7 +34729,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "GABRIEL",
-      "value": 352.5
+      "value": 352.5,
+      "nota_fiscal": "M12063"
     },
     {
       "id": "tx03155",
@@ -31585,7 +34740,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO - 0000660",
-      "value": 943.78
+      "value": 943.78,
+      "nota_fiscal": "12567/01"
     },
     {
       "id": "tx03156",
@@ -31595,7 +34751,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "CURTIS ELETRONICA INDUSTRIA E COMERCIO A - 0000295",
-      "value": 655.5
+      "value": 655.5,
+      "nota_fiscal": "12560/01"
     },
     {
       "id": "tx03157",
@@ -31605,7 +34762,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "PROVOLT TECNOLOGIA ELETRONICA LTDA - 0000886",
-      "value": 1554.5
+      "value": 1554.5,
+      "nota_fiscal": "12556/01"
     },
     {
       "id": "tx03158",
@@ -31615,7 +34773,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
-      "value": 728.8
+      "value": 728.8,
+      "nota_fiscal": "12554/01"
     },
     {
       "id": "tx03159",
@@ -31625,7 +34784,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SIMPLES CONNECT INDUSTRIA E COMERCIO LTA - 0000308",
-      "value": 570.0
+      "value": 570.0,
+      "nota_fiscal": "12553/01"
     },
     {
       "id": "tx03160",
@@ -31635,7 +34795,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "VIEWMED IND. A E COM. DE PROD. MEDICOSA - 0000343",
-      "value": 393.2
+      "value": 393.2,
+      "nota_fiscal": "12542/01"
     },
     {
       "id": "tx03161",
@@ -31645,7 +34806,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "S.T.E.E. TECNOLOGIA ELETROELETRONICA LT - 0000062",
-      "value": 844.27
+      "value": 844.27,
+      "nota_fiscal": "12506/03"
     },
     {
       "id": "tx03162",
@@ -31655,7 +34817,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BALMARC SOLUCOES EIRELI",
-      "value": 118.5
+      "value": 118.5,
+      "nota_fiscal": "12632"
     },
     {
       "id": "tx03163",
@@ -31665,7 +34828,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 14.48
+      "value": 14.48,
+      "nota_fiscal": null
     },
     {
       "id": "tx03164",
@@ -31675,7 +34839,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DV TECNOLOGIA",
-      "value": 641.46
+      "value": 641.46,
+      "nota_fiscal": null
     },
     {
       "id": "tx03165",
@@ -31685,7 +34850,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "S-OHM",
-      "value": 35.0
+      "value": 35.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx03166",
@@ -31695,7 +34861,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "JOMACLER IND",
-      "value": 1191.0
+      "value": 1191.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx03167",
@@ -31705,7 +34872,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL",
-      "value": 258.0
+      "value": 258.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx03168",
@@ -31714,8 +34882,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "207444",
-      "value": 300.0
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 300.0,
+      "nota_fiscal": "207444"
     },
     {
       "id": "tx03169",
@@ -31724,8 +34893,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "33849",
-      "value": 140.0
+      "counterparty": "ALLNETSYS COMERCIO IMPORTACAO E SERVICOS (0000036)",
+      "value": 140.0,
+      "nota_fiscal": "33849"
     },
     {
       "id": "tx03170",
@@ -31734,8 +34904,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "4026",
-      "value": 75.0
+      "counterparty": "S-ohm Comercial Ltda. (0000183)",
+      "value": 75.0,
+      "nota_fiscal": "4026"
     },
     {
       "id": "tx03171",
@@ -31744,8 +34915,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "4483",
-      "value": 916.0
+      "counterparty": "MDS COMPONENTES ELETRONICOS LTDA (0000297)",
+      "value": 916.0,
+      "nota_fiscal": "4483"
     },
     {
       "id": "tx03172",
@@ -31754,8 +34926,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "504361",
-      "value": 710.85
+      "counterparty": "PRODUTOS ELETRONICOS METALTEX LTDA (0000063)",
+      "value": 710.85,
+      "nota_fiscal": "504361"
     },
     {
       "id": "tx03173",
@@ -31764,8 +34937,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "9110",
-      "value": 212.0
+      "counterparty": "TRYNIT LED COMPONENTES ELETRONICOS EIREL (0000259)",
+      "value": 212.0,
+      "nota_fiscal": "9110"
     },
     {
       "id": "tx03174",
@@ -31775,7 +34949,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "BPM INDUSTRIA E COMERCIO (0000541)",
-      "value": 1800.8
+      "value": 1800.8,
+      "nota_fiscal": "12676"
     },
     {
       "id": "tx03175",
@@ -31785,7 +34960,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ROSANA SALVATERRA CURSI (0001376)",
-      "value": 24.99
+      "value": 24.99,
+      "nota_fiscal": "12677"
     },
     {
       "id": "tx03176",
@@ -31795,7 +34971,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "MERCANTIL UNIAO COMERCIO DE MATERIAIS PA (0001378)",
-      "value": 69.97
+      "value": 69.97,
+      "nota_fiscal": "12678"
     },
     {
       "id": "tx03177",
@@ -31805,7 +34982,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "ATUAL EQUIPAMENTOS DE SOLDAS LTDA (0001377)",
-      "value": 34.99
+      "value": 34.99,
+      "nota_fiscal": "12679"
     },
     {
       "id": "tx03178",
@@ -31815,7 +34993,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "E DE OLIVEIRA BARBOSA ELETRONICA (0000898)",
-      "value": 718.0
+      "value": 718.0,
+      "nota_fiscal": "12680"
     },
     {
       "id": "tx03179",
@@ -31825,7 +35004,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "PROMAX PRODUTOS MAXIMOS S A INDUSTRIA E (0001368)",
-      "value": 70.0
+      "value": 70.0,
+      "nota_fiscal": "12681"
     },
     {
       "id": "tx03180",
@@ -31835,7 +35015,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "MARTEC MED INDUSTRIA E COMERCIO DE EQUIP (0000788)",
-      "value": 2217.0
+      "value": 2217.0,
+      "nota_fiscal": "12682"
     },
     {
       "id": "tx03181",
@@ -31845,7 +35026,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "INFOLITE TECNOLOGIA EM INFORMACAO (0000540)",
-      "value": 909.5
+      "value": 909.5,
+      "nota_fiscal": "12683"
     },
     {
       "id": "tx03182",
@@ -31855,7 +35037,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E (0000081)",
-      "value": 66.5
+      "value": 66.5,
+      "nota_fiscal": "12685"
     },
     {
       "id": "tx03183",
@@ -31865,7 +35048,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "TRANSCICAP COM. DE COMP. ELETR. LTDA (0000661)",
-      "value": 170.0
+      "value": 170.0,
+      "nota_fiscal": "12686"
     },
     {
       "id": "tx03184",
@@ -31875,7 +35059,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "Max(bruno)",
-      "value": 1220.0
+      "value": 1220.0,
+      "nota_fiscal": "I11"
     },
     {
       "id": "tx03185",
@@ -31885,7 +35070,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "SIMPLES CONECT",
-      "value": 13412.5
+      "value": 13412.5,
+      "nota_fiscal": "825"
     },
     {
       "id": "tx03186",
@@ -31895,7 +35081,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL",
-      "value": 3723.1
+      "value": 3723.1,
+      "nota_fiscal": null
     },
     {
       "id": "tx03187",
@@ -31905,7 +35092,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "LS",
-      "value": 1834.0
+      "value": 1834.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx03188",
@@ -31913,9 +35101,10 @@ const MAXLED_DATA = {
       "division": "importacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "TRANSPORTES IMPORTAÇÃO",
+      "category": "TRANSPORTES",
       "counterparty": "DHL",
-      "value": 551.49
+      "value": 551.49,
+      "nota_fiscal": null
     },
     {
       "id": "tx03189",
@@ -31925,7 +35114,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 1.81
+      "value": 1.81,
+      "nota_fiscal": null
     },
     {
       "id": "tx03190",
@@ -31935,7 +35125,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "CARINE G RODRIGUES (0000764)",
-      "value": 868.9
+      "value": 868.9,
+      "nota_fiscal": "855"
     },
     {
       "id": "tx03191",
@@ -31945,7 +35136,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "GISLANE",
-      "value": 624.6
+      "value": 624.6,
+      "nota_fiscal": "SNF"
     },
     {
       "id": "tx03192",
@@ -31955,7 +35147,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "PSV",
-      "value": 127.5
+      "value": 127.5,
+      "nota_fiscal": "12690"
     },
     {
       "id": "tx03193",
@@ -31965,7 +35158,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "NEXXO",
-      "value": 416.33
+      "value": 416.33,
+      "nota_fiscal": "12532"
     },
     {
       "id": "tx03194",
@@ -31975,7 +35169,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "HTR EQUIPAMENTOS ELETRONICOS LTDA - 0000268",
-      "value": 557.0
+      "value": 557.0,
+      "nota_fiscal": "12531"
     },
     {
       "id": "tx03195",
@@ -31985,7 +35180,8 @@ const MAXLED_DATA = {
       "flow": "entrada",
       "category": null,
       "counterparty": "BPM INDUSTRIA E COMERCIO - 0000541",
-      "value": 844.92
+      "value": 844.92,
+      "nota_fiscal": "12527"
     },
     {
       "id": "tx03196",
@@ -31995,7 +35191,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "ALLNETSYS COM",
-      "value": 25.0
+      "value": 25.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx03197",
@@ -32005,7 +35202,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "BANCO",
       "counterparty": "BOLETOS",
-      "value": 5.43
+      "value": 5.43,
+      "nota_fiscal": null
     },
     {
       "id": "tx03198",
@@ -32015,7 +35213,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "DISPLAY",
-      "value": 566.28
+      "value": 566.28,
+      "nota_fiscal": null
     },
     {
       "id": "tx03199",
@@ -32025,7 +35224,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "FORNECEDORES",
       "counterparty": "IDALL",
-      "value": 931.73
+      "value": 931.73,
+      "nota_fiscal": null
     },
     {
       "id": "tx03200",
@@ -32034,8 +35234,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "155017",
-      "value": 1248.96
+      "counterparty": "REIMOLD INDUSTRIA E COMRCIO DE MATERIAI (0000172)",
+      "value": 1248.96,
+      "nota_fiscal": "155017"
     },
     {
       "id": "tx03201",
@@ -32044,8 +35245,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "207586",
-      "value": 29.78
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 29.78,
+      "nota_fiscal": "207586"
     },
     {
       "id": "tx03202",
@@ -32054,8 +35256,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "207628",
-      "value": 819.75
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 819.75,
+      "nota_fiscal": "207628"
     },
     {
       "id": "tx03203",
@@ -32064,8 +35267,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "263995",
-      "value": 1172.71
+      "counterparty": "ACP COMERCIO ATACADISTA DE COMPONENTES E (0000249)",
+      "value": 1172.71,
+      "nota_fiscal": "263995"
     },
     {
       "id": "tx03204",
@@ -32074,8 +35278,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "264036",
-      "value": 718.74
+      "counterparty": "ACP COMERCIO ATACADISTA DE COMPONENTES E (0000249)",
+      "value": 718.74,
+      "nota_fiscal": "264036"
     },
     {
       "id": "tx03205",
@@ -32084,8 +35289,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "271638",
-      "value": 367.98
+      "counterparty": "MULT COMERCIAL LTDA (0000311)",
+      "value": 367.98,
+      "nota_fiscal": "271638"
     },
     {
       "id": "tx03206",
@@ -32094,8 +35300,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "33863",
-      "value": 120.0
+      "counterparty": "ALLNETSYS COMERCIO IMPORTACAO E SERVICOS (0000036)",
+      "value": 120.0,
+      "nota_fiscal": "33863"
     },
     {
       "id": "tx03207",
@@ -32104,8 +35311,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "3801",
-      "value": 190.0
+      "counterparty": "ORANGE E BLACK DISTRIBUIDORA LTDA (0000198)",
+      "value": 190.0,
+      "nota_fiscal": "3801"
     },
     {
       "id": "tx03208",
@@ -32114,8 +35322,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "69180",
-      "value": 400.68
+      "counterparty": "TRICOMP COMERCIAL ELETR. LTDA (0000278)",
+      "value": 400.68,
+      "nota_fiscal": "69180"
     },
     {
       "id": "tx03209",
@@ -32124,8 +35333,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "74888",
-      "value": 458.8
+      "counterparty": "GEO-ELETRON SEMICONDUTORES LTDA (0000432)",
+      "value": 458.8,
+      "nota_fiscal": "74888"
     },
     {
       "id": "tx03210",
@@ -32134,8 +35344,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "86618",
-      "value": 384.56
+      "counterparty": "COMP TOTAL COM. E IMP. DE COMP. ELETRON. (0000267)",
+      "value": 384.56,
+      "nota_fiscal": "86618"
     },
     {
       "id": "tx03211",
@@ -32144,8 +35355,9 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "compra",
       "category": null,
-      "counterparty": "9128",
-      "value": 240.62
+      "counterparty": "TRYNIT LED COMPONENTES ELETRONICOS EIREL (0000259)",
+      "value": 240.62,
+      "nota_fiscal": "9128"
     },
     {
       "id": "tx03212",
@@ -32155,7 +35367,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "LEONILDO GUALDI (0001380)",
-      "value": 35.97
+      "value": 35.97,
+      "nota_fiscal": "12688"
     },
     {
       "id": "tx03213",
@@ -32165,7 +35378,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "EDUARDO APARECIDO DA SILVA (0001379)",
-      "value": 34.99
+      "value": 34.99,
+      "nota_fiscal": "12689"
     },
     {
       "id": "tx03214",
@@ -32175,7 +35389,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "PSV MATERIAIS ELETRICOS AUTOMACAO E ROBO (0001299)",
-      "value": 76.5
+      "value": 76.5,
+      "nota_fiscal": "12690"
     },
     {
       "id": "tx03215",
@@ -32185,7 +35400,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "BRASMEDICAL IND. E COM. DE PRODUTOS PAR (0000017)",
-      "value": 1723.0
+      "value": 1723.0,
+      "nota_fiscal": "12691"
     },
     {
       "id": "tx03216",
@@ -32195,7 +35411,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "INLINE GERENC. EM PROJETOS LTDA (0000441)",
-      "value": 438.0
+      "value": 438.0,
+      "nota_fiscal": "12692"
     },
     {
       "id": "tx03217",
@@ -32205,7 +35422,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "BPM INDUSTRIA E COMERCIO (0000541)",
-      "value": 738.44
+      "value": 738.44,
+      "nota_fiscal": "12693"
     },
     {
       "id": "tx03218",
@@ -32215,7 +35433,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "TAIKON INDUSTRIA E COM DE APARELHOS ELET (0001061)",
-      "value": 1418.0
+      "value": 1418.0,
+      "nota_fiscal": "12694"
     },
     {
       "id": "tx03219",
@@ -32225,7 +35444,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "SPECTO PAINEIS ELETRONICO LTDA (0000071)",
-      "value": 2569.1
+      "value": 2569.1,
+      "nota_fiscal": "12695"
     },
     {
       "id": "tx03220",
@@ -32235,7 +35455,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "SSAT SINALIZACAO E ADESIVOS EIRELI EPP (0000072)",
-      "value": 2779.6
+      "value": 2779.6,
+      "nota_fiscal": "12696"
     },
     {
       "id": "tx03221",
@@ -32245,7 +35466,8 @@ const MAXLED_DATA = {
       "flow": "saida",
       "category": "TRANSPORTES",
       "counterparty": "WANDO",
-      "value": 1520.0
+      "value": 1520.0,
+      "nota_fiscal": null
     },
     {
       "id": "tx03222",
@@ -32255,7 +35477,8 @@ const MAXLED_DATA = {
       "flow": "compra",
       "category": null,
       "counterparty": "ACP COMERCIO ATACADISTA DE COMPONENTES E (0000249)",
-      "value": 5991.6
+      "value": 5991.6,
+      "nota_fiscal": "264029"
     },
     {
       "id": "tx03223",
@@ -32265,7 +35488,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "PRODUTOS ELETRONICOS FRATA LTDA (0000223)",
-      "value": 8780.0
+      "value": 8780.0,
+      "nota_fiscal": "856"
     },
     {
       "id": "tx03224",
@@ -32275,7 +35499,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "SSAT SINALIZACAO E ADESIVOS EIRELI EPP (0000072)",
-      "value": 8100.0
+      "value": 8100.0,
+      "nota_fiscal": "858"
     },
     {
       "id": "tx03225",
@@ -32285,7 +35510,8 @@ const MAXLED_DATA = {
       "flow": "venda",
       "category": null,
       "counterparty": "MARTINS MARTINS SERVICOS ASSOCIADOS LTDA (0001381)",
-      "value": 1500.0
+      "value": 1500.0,
+      "nota_fiscal": "859"
     }
   ],
   "cashflow": [
@@ -32943,7 +36169,7 @@ const MAXLED_DATA = {
           "valor": 2500.0
         },
         {
-          "categoria": "PLANO DE SAÚDE",
+          "categoria": "SEGURO SAÚDE",
           "grupo": "Pessoal",
           "valor": 2261.32
         },
@@ -33130,7 +36356,7 @@ const MAXLED_DATA = {
           "valor": 2920.88
         },
         {
-          "categoria": "PLANO DE SAÚDE",
+          "categoria": "SEGURO SAÚDE",
           "grupo": "Pessoal",
           "valor": 2261.32
         },
@@ -33213,7 +36439,7 @@ const MAXLED_DATA = {
         {
           "categoria": "FUNCIONÁRIOS",
           "grupo": "Pessoal",
-          "valor": 9645.09
+          "valor": 12265.25
         },
         {
           "categoria": "GASTOS FIXOS",
@@ -33239,11 +36465,6 @@ const MAXLED_DATA = {
           "categoria": "MOVIMENTO",
           "grupo": "Financeiro/Bancário",
           "valor": 4000.0
-        },
-        {
-          "categoria": "PLANO DE SAÚDE",
-          "grupo": "Pessoal",
-          "valor": 2620.16
         },
         {
           "categoria": "CONTABILIDADE",
@@ -33363,14 +36584,14 @@ const MAXLED_DATA = {
       "lucro_bruto": 70025.09,
       "despesas": [
         {
+          "categoria": "FUNCIONÁRIOS",
+          "grupo": "Pessoal",
+          "valor": 17547.33
+        },
+        {
           "categoria": "SÓCIOS",
           "grupo": "Pessoal",
           "valor": 16983.06
-        },
-        {
-          "categoria": "FUNCIONÁRIOS",
-          "grupo": "Pessoal",
-          "valor": 14927.17
         },
         {
           "categoria": "CARTÃO DE CRÉDITO",
@@ -33401,11 +36622,6 @@ const MAXLED_DATA = {
           "categoria": "MOVIMENTO",
           "grupo": "Financeiro/Bancário",
           "valor": 4000.0
-        },
-        {
-          "categoria": "PLANO DE SAÚDE",
-          "grupo": "Pessoal",
-          "valor": 2620.16
         },
         {
           "categoria": "CONTABILIDADE",
@@ -33484,14 +36700,14 @@ const MAXLED_DATA = {
           "valor": 10338.21
         },
         {
+          "categoria": "GASTOS FIXOS",
+          "grupo": "Administrativo",
+          "valor": 9522.82
+        },
+        {
           "categoria": "TRANSPORTES",
           "grupo": "Logística/Importação",
           "valor": 8868.3
-        },
-        {
-          "categoria": "GASTOS FIXOS",
-          "grupo": "Administrativo",
-          "valor": 6902.66
         },
         {
           "categoria": "EMPRÉSTIMO CAPITAL DE GIRO BRADESCO",
@@ -33502,11 +36718,6 @@ const MAXLED_DATA = {
           "categoria": "SÓCIOS",
           "grupo": "Pessoal",
           "valor": 6280.0
-        },
-        {
-          "categoria": "PLANO DE SAÚDE",
-          "grupo": "Pessoal",
-          "valor": 2620.16
         },
         {
           "categoria": "EMPRÉSTIMO CAPITAL DE GIRO ITAÚ",
@@ -33618,7 +36829,7 @@ const MAXLED_DATA = {
         {
           "categoria": "GASTOS FIXOS",
           "grupo": "Administrativo",
-          "valor": 14684.51
+          "valor": 17304.67
         },
         {
           "categoria": "MOVIMENTO",
@@ -33666,11 +36877,6 @@ const MAXLED_DATA = {
           "valor": 2724.27
         },
         {
-          "categoria": "PLANO DE SAÚDE",
-          "grupo": "Pessoal",
-          "valor": 2620.16
-        },
-        {
           "categoria": "EMPRÉSTIMO CAPITAL DE GIRO ITAÚ",
           "grupo": "Dívida/Empréstimos",
           "valor": 2537.21
@@ -33713,8 +36919,8 @@ const MAXLED_DATA = {
       "receita_bruta": 214380.68,
       "impostos": 47063.33,
       "receita_liquida": 167317.35,
-      "custo_mercadorias": 118816.2,
-      "lucro_bruto": 48501.15,
+      "custo_mercadorias": 121436.36,
+      "lucro_bruto": 45880.99,
       "despesas": [
         {
           "categoria": "SÓCIOS",
@@ -33747,11 +36953,6 @@ const MAXLED_DATA = {
           "valor": 3508.61
         },
         {
-          "categoria": "PLANO DE SAÚDE",
-          "grupo": "Pessoal",
-          "valor": 2620.16
-        },
-        {
           "categoria": "EMPRÉSTIMO CAPITAL DE GIRO ITAÚ",
           "grupo": "Dívida/Empréstimos",
           "valor": 2566.28
@@ -33777,9 +36978,9 @@ const MAXLED_DATA = {
           "valor": 150.0
         }
       ],
-      "despesas_total": 65694.77,
+      "despesas_total": 63074.61,
       "resultado_operacional": -17193.62,
-      "margem_bruta": 0.2899,
+      "margem_bruta": 0.2742,
       "margem_liquida": -0.0802
     },
     {
@@ -33865,8 +37066,8 @@ const MAXLED_DATA = {
       "receita_bruta": 319989.8,
       "impostos": 53773.33,
       "receita_liquida": 266216.47,
-      "custo_mercadorias": 124585.29,
-      "lucro_bruto": 141631.18,
+      "custo_mercadorias": 127205.45,
+      "lucro_bruto": 139011.02,
       "despesas": [
         {
           "categoria": "MOVIMENTO",
@@ -33914,11 +37115,6 @@ const MAXLED_DATA = {
           "valor": 3640.0
         },
         {
-          "categoria": "PLANO DE SAÚDE",
-          "grupo": "Pessoal",
-          "valor": 2620.16
-        },
-        {
           "categoria": "EMPRÉSTIMO CAPITAL DE GIRO ITAÚ",
           "grupo": "Dívida/Empréstimos",
           "valor": 2566.28
@@ -33959,9 +37155,9 @@ const MAXLED_DATA = {
           "valor": 47.71
         }
       ],
-      "despesas_total": 161251.46,
+      "despesas_total": 158631.3,
       "resultado_operacional": -19620.28,
-      "margem_bruta": 0.532,
+      "margem_bruta": 0.5222,
       "margem_liquida": -0.0613
     },
     {
@@ -34000,7 +37196,7 @@ const MAXLED_DATA = {
           "valor": 3476.68
         },
         {
-          "categoria": "PLANO DE SAÚDE",
+          "categoria": "SEGURO SAÚDE",
           "grupo": "Pessoal",
           "valor": 2620.16
         },
@@ -34051,9 +37247,14 @@ const MAXLED_DATA = {
       "lucro_bruto": 62631.99,
       "despesas": [
         {
-          "categoria": "CARTÃO DE CRÉDITO",
-          "grupo": "Financeiro/Bancário",
-          "valor": 12871.28
+          "categoria": "SÓCIOS",
+          "grupo": "Pessoal",
+          "valor": 11548.24
+        },
+        {
+          "categoria": "GASTOS FICOS",
+          "grupo": "Outras",
+          "valor": 9935.04
         },
         {
           "categoria": "FUNCIONÁRIOS",
@@ -34061,9 +37262,9 @@ const MAXLED_DATA = {
           "valor": 9502.56
         },
         {
-          "categoria": "SÓCIOS",
-          "grupo": "Pessoal",
-          "valor": 8000.0
+          "categoria": "EMPRÉSTIMO",
+          "grupo": "Dívida/Empréstimos",
+          "valor": 6928.07
         },
         {
           "categoria": "MOVIMENTO",
@@ -34071,9 +37272,14 @@ const MAXLED_DATA = {
           "valor": 4855.0
         },
         {
-          "categoria": "EMPRÉSTIMO PRONAMP",
-          "grupo": "Dívida/Empréstimos",
-          "valor": 3700.52
+          "categoria": "SERVIÇOS",
+          "grupo": "Outras",
+          "valor": 3400.0
+        },
+        {
+          "categoria": "TRANSPORTES",
+          "grupo": "Logística/Importação",
+          "valor": 3261.49
         },
         {
           "categoria": "IMPORTAÇÃO",
@@ -34081,34 +37287,9 @@ const MAXLED_DATA = {
           "valor": 3200.0
         },
         {
-          "categoria": "EMPRÉSTIMO FGI",
-          "grupo": "Dívida/Empréstimos",
-          "valor": 3117.76
-        },
-        {
-          "categoria": "TRANSPORTES",
-          "grupo": "Logística/Importação",
-          "valor": 2710.0
-        },
-        {
-          "categoria": "MANUTENÇÃO",
-          "grupo": "Administrativo",
-          "valor": 1900.0
-        },
-        {
-          "categoria": "SERVIÇOS",
+          "categoria": null,
           "grupo": "Outras",
-          "valor": 1500.0
-        },
-        {
-          "categoria": "TRANSPORTES IMPORTAÇÃO",
-          "grupo": "Logística/Importação",
-          "valor": 883.39
-        },
-        {
-          "categoria": "GASTOS FIXOS",
-          "grupo": "Administrativo",
-          "valor": 612.0
+          "valor": 331.9
         },
         {
           "categoria": "CONSUMO",
@@ -34119,11 +37300,6 @@ const MAXLED_DATA = {
           "categoria": "BANCO",
           "grupo": "Financeiro/Bancário",
           "valor": 127.04
-        },
-        {
-          "categoria": "SEGURO DE EMPRÉSTIMO",
-          "grupo": "Dívida/Empréstimos",
-          "valor": 109.79
         }
       ],
       "despesas_total": 53269.34,
@@ -34142,24 +37318,29 @@ const MAXLED_DATA = {
       "lucro_bruto": 102473.0,
       "despesas": [
         {
+          "categoria": "SÓCIOS",
+          "grupo": "Pessoal",
+          "valor": 20048.24
+        },
+        {
           "categoria": "FUNCIONÁRIOS",
           "grupo": "Pessoal",
           "valor": 18141.22
         },
         {
-          "categoria": "SÓCIOS",
-          "grupo": "Pessoal",
-          "valor": 16500.0
+          "categoria": "GASTOS FICOS",
+          "grupo": "Outras",
+          "valor": 9935.04
         },
         {
-          "categoria": "CARTÃO DE CRÉDITO",
-          "grupo": "Financeiro/Bancário",
-          "valor": 12871.28
+          "categoria": "EMPRÉSTIMO",
+          "grupo": "Dívida/Empréstimos",
+          "valor": 6928.07
         },
         {
-          "categoria": "GASTOS FIXOS",
-          "grupo": "Administrativo",
-          "valor": 6520.59
+          "categoria": "TRANSPORTES",
+          "grupo": "Logística/Importação",
+          "valor": 6738.17
         },
         {
           "categoria": "EMPRÉSTIMO CAPITAL DE GIRO BRADESCO",
@@ -34167,9 +37348,9 @@ const MAXLED_DATA = {
           "valor": 6441.56
         },
         {
-          "categoria": "TRANSPORTES",
-          "grupo": "Logística/Importação",
-          "valor": 6186.68
+          "categoria": "GASTOS FIXOS",
+          "grupo": "Administrativo",
+          "valor": 5908.59
         },
         {
           "categoria": "MOVIMENTO",
@@ -34177,9 +37358,9 @@ const MAXLED_DATA = {
           "valor": 5521.36
         },
         {
-          "categoria": "EMPRÉSTIMO PRONAMP",
-          "grupo": "Dívida/Empréstimos",
-          "valor": 3700.52
+          "categoria": "SERVIÇOS",
+          "grupo": "Outras",
+          "valor": 3400.0
         },
         {
           "categoria": "IMPORTAÇÃO",
@@ -34187,12 +37368,7 @@ const MAXLED_DATA = {
           "valor": 3200.0
         },
         {
-          "categoria": "EMPRÉSTIMO FGI",
-          "grupo": "Dívida/Empréstimos",
-          "valor": 3117.76
-        },
-        {
-          "categoria": "PLANO DE SAÚDE",
+          "categoria": "SEGURO SAÚDE",
           "grupo": "Pessoal",
           "valor": 2620.16
         },
@@ -34200,16 +37376,6 @@ const MAXLED_DATA = {
           "categoria": "EMPRÉSTIMO CAPITAL DE GIRO ITAÚ",
           "grupo": "Dívida/Empréstimos",
           "valor": 2595.32
-        },
-        {
-          "categoria": "MANUTENÇÃO",
-          "grupo": "Administrativo",
-          "valor": 1900.0
-        },
-        {
-          "categoria": "SERVIÇOS",
-          "grupo": "Outras",
-          "valor": 1500.0
         },
         {
           "categoria": "SEGURO DE VIDA SÓCIO",
@@ -34222,11 +37388,6 @@ const MAXLED_DATA = {
           "valor": 892.9
         },
         {
-          "categoria": "TRANSPORTES IMPORTAÇÃO",
-          "grupo": "Logística/Importação",
-          "valor": 883.39
-        },
-        {
           "categoria": "INSUMOS",
           "grupo": "Outras",
           "valor": 688.41
@@ -34237,14 +37398,14 @@ const MAXLED_DATA = {
           "valor": 560.0
         },
         {
+          "categoria": null,
+          "grupo": "Outras",
+          "valor": 331.9
+        },
+        {
           "categoria": "CONSUMO",
           "grupo": "Administrativo",
           "valor": 180.0
-        },
-        {
-          "categoria": "SEGURO DE EMPRÉSTIMO",
-          "grupo": "Dívida/Empréstimos",
-          "valor": 109.79
         }
       ],
       "despesas_total": 95100.65,
@@ -34258,11 +37419,11 @@ const MAXLED_DATA = {
       "division": "iluminacao",
       "categoria": "FUNCIONÁRIOS",
       "grupo": "Pessoal",
-      "valor": 48236.13,
-      "pct_receita": 0.0595,
+      "valor": 50856.29,
+      "pct_receita": 0.0627,
       "meses": {
         "2026-01": 6513.29,
-        "2026-02": 9645.09,
+        "2026-02": 12265.25,
         "2026-03": 10338.21,
         "2026-04": 13100.88,
         "2026-05": 8638.66
@@ -34284,6 +37445,20 @@ const MAXLED_DATA = {
     },
     {
       "division": "iluminacao",
+      "categoria": "GASTOS FIXOS",
+      "grupo": "Administrativo",
+      "valor": 37995.77,
+      "pct_receita": 0.0469,
+      "meses": {
+        "2026-01": 6624.43,
+        "2026-02": 7743.27,
+        "2026-03": 9522.82,
+        "2026-04": 8196.66,
+        "2026-05": 5908.59
+      }
+    },
+    {
+      "division": "iluminacao",
       "categoria": "SÓCIOS",
       "grupo": "Pessoal",
       "valor": 36550.37,
@@ -34294,20 +37469,6 @@ const MAXLED_DATA = {
         "2026-03": 6280.0,
         "2026-04": 14270.37,
         "2026-05": 8500.0
-      }
-    },
-    {
-      "division": "iluminacao",
-      "categoria": "GASTOS FIXOS",
-      "grupo": "Administrativo",
-      "valor": 35375.61,
-      "pct_receita": 0.0436,
-      "meses": {
-        "2026-01": 6624.43,
-        "2026-02": 7743.27,
-        "2026-03": 6902.66,
-        "2026-04": 8196.66,
-        "2026-05": 5908.59
       }
     },
     {
@@ -34349,20 +37510,6 @@ const MAXLED_DATA = {
     },
     {
       "division": "iluminacao",
-      "categoria": "PLANO DE SAÚDE",
-      "grupo": "Pessoal",
-      "valor": 12741.96,
-      "pct_receita": 0.0157,
-      "meses": {
-        "2026-01": 2261.32,
-        "2026-02": 2620.16,
-        "2026-03": 2620.16,
-        "2026-04": 2620.16,
-        "2026-05": 2620.16
-      }
-    },
-    {
-      "division": "iluminacao",
       "categoria": "EMPRÉSTIMO CAPITAL DE GIRO ITAÚ",
       "grupo": "Dívida/Empréstimos",
       "valor": 7698.81,
@@ -34371,6 +37518,17 @@ const MAXLED_DATA = {
         "2026-03": 2537.21,
         "2026-04": 2566.28,
         "2026-05": 2595.32
+      }
+    },
+    {
+      "division": "iluminacao",
+      "categoria": "SEGURO SAÚDE",
+      "grupo": "Pessoal",
+      "valor": 4881.48,
+      "pct_receita": 0.006,
+      "meses": {
+        "2026-01": 2261.32,
+        "2026-05": 2620.16
       }
     },
     {
@@ -34543,26 +37701,13 @@ const MAXLED_DATA = {
       "division": "importacao",
       "categoria": "SÓCIOS",
       "grupo": "Pessoal",
-      "valor": 53502.24,
-      "pct_receita": 0.1941,
+      "valor": 57050.48,
+      "pct_receita": 0.207,
       "meses": {
         "2026-01": 31169.18,
         "2026-02": 11983.06,
         "2026-04": 2350.0,
-        "2026-05": 8000.0
-      }
-    },
-    {
-      "division": "importacao",
-      "categoria": "CARTÃO DE CRÉDITO",
-      "grupo": "Financeiro/Bancário",
-      "valor": 46601.6,
-      "pct_receita": 0.1691,
-      "meses": {
-        "2026-02": 10246.03,
-        "2026-03": 5169.3,
-        "2026-04": 18314.99,
-        "2026-05": 12871.28
+        "2026-05": 11548.24
       }
     },
     {
@@ -34574,6 +37719,18 @@ const MAXLED_DATA = {
       "meses": {
         "2026-04": 31000.0,
         "2026-05": 4855.0
+      }
+    },
+    {
+      "division": "importacao",
+      "categoria": "CARTÃO DE CRÉDITO",
+      "grupo": "Financeiro/Bancário",
+      "valor": 33730.32,
+      "pct_receita": 0.1224,
+      "meses": {
+        "2026-02": 10246.03,
+        "2026-03": 5169.3,
+        "2026-04": 18314.99
       }
     },
     {
@@ -34594,65 +37751,69 @@ const MAXLED_DATA = {
       "division": "importacao",
       "categoria": "EMPRÉSTIMO FGI",
       "grupo": "Dívida/Empréstimos",
-      "valor": 22047.79,
-      "pct_receita": 0.08,
+      "valor": 18930.03,
+      "pct_receita": 0.0687,
       "meses": {
         "2026-01": 2920.88,
         "2026-02": 6604.75,
         "2026-03": 2724.27,
-        "2026-04": 6680.13,
-        "2026-05": 3117.76
+        "2026-04": 6680.13
       }
     },
     {
       "division": "importacao",
-      "categoria": "EMPRÉSTIMO PRONAMP",
-      "grupo": "Dívida/Empréstimos",
-      "valor": 10862.02,
-      "pct_receita": 0.0394,
+      "categoria": "GASTOS FICOS",
+      "grupo": "Outras",
+      "valor": 9935.04,
+      "pct_receita": 0.036,
       "meses": {
-        "2026-01": 3540.29,
-        "2026-03": 3621.21,
-        "2026-05": 3700.52
+        "2026-05": 9935.04
       }
     },
     {
       "division": "importacao",
       "categoria": "GASTOS FIXOS",
       "grupo": "Administrativo",
-      "valor": 10303.67,
-      "pct_receita": 0.0374,
+      "valor": 9691.67,
+      "pct_receita": 0.0352,
       "meses": {
         "2026-01": 573.0,
         "2026-02": 612.0,
         "2026-03": 7781.85,
-        "2026-04": 724.82,
-        "2026-05": 612.0
+        "2026-04": 724.82
       }
     },
     {
       "division": "importacao",
       "categoria": "TRANSPORTES",
       "grupo": "Logística/Importação",
-      "valor": 7170.0,
-      "pct_receita": 0.026,
+      "valor": 7721.49,
+      "pct_receita": 0.028,
       "meses": {
         "2026-02": 820.0,
         "2026-04": 3640.0,
-        "2026-05": 2710.0
+        "2026-05": 3261.49
       }
     },
     {
       "division": "importacao",
-      "categoria": "TRANSPORTES IMPORTAÇÃO",
-      "grupo": "Logística/Importação",
-      "valor": 4945.26,
-      "pct_receita": 0.0179,
+      "categoria": "EMPRÉSTIMO PRONAMP",
+      "grupo": "Dívida/Empréstimos",
+      "valor": 7161.5,
+      "pct_receita": 0.026,
       "meses": {
-        "2026-01": 2011.61,
-        "2026-02": 1248.66,
-        "2026-04": 801.6,
-        "2026-05": 883.39
+        "2026-01": 3540.29,
+        "2026-03": 3621.21
+      }
+    },
+    {
+      "division": "importacao",
+      "categoria": "EMPRÉSTIMO",
+      "grupo": "Dívida/Empréstimos",
+      "valor": 6928.07,
+      "pct_receita": 0.0251,
+      "meses": {
+        "2026-05": 6928.07
       }
     },
     {
@@ -34669,23 +37830,24 @@ const MAXLED_DATA = {
     },
     {
       "division": "importacao",
-      "categoria": "MANUTENÇÃO",
-      "grupo": "Administrativo",
-      "valor": 2150.0,
-      "pct_receita": 0.0078,
+      "categoria": "TRANSPORTES IMPORTAÇÃO",
+      "grupo": "Logística/Importação",
+      "valor": 4061.87,
+      "pct_receita": 0.0147,
       "meses": {
-        "2026-02": 250.0,
-        "2026-05": 1900.0
+        "2026-01": 2011.61,
+        "2026-02": 1248.66,
+        "2026-04": 801.6
       }
     },
     {
       "division": "importacao",
       "categoria": "SERVIÇOS",
       "grupo": "Outras",
-      "valor": 1500.0,
-      "pct_receita": 0.0054,
+      "valor": 3400.0,
+      "pct_receita": 0.0123,
       "meses": {
-        "2026-05": 1500.0
+        "2026-05": 3400.0
       }
     },
     {
@@ -34712,14 +37874,23 @@ const MAXLED_DATA = {
       "division": "importacao",
       "categoria": "SEGURO DE EMPRÉSTIMO",
       "grupo": "Dívida/Empréstimos",
-      "valor": 548.95,
-      "pct_receita": 0.002,
+      "valor": 439.16,
+      "pct_receita": 0.0016,
       "meses": {
         "2026-01": 109.79,
         "2026-02": 109.79,
         "2026-03": 109.79,
-        "2026-04": 109.79,
-        "2026-05": 109.79
+        "2026-04": 109.79
+      }
+    },
+    {
+      "division": "importacao",
+      "categoria": null,
+      "grupo": "Outras",
+      "valor": 331.9,
+      "pct_receita": 0.0012,
+      "meses": {
+        "2026-05": 331.9
       }
     },
     {
@@ -34732,6 +37903,16 @@ const MAXLED_DATA = {
         "2026-01": 95.0,
         "2026-04": 47.71,
         "2026-05": 180.0
+      }
+    },
+    {
+      "division": "importacao",
+      "categoria": "MANUTENÇÃO",
+      "grupo": "Administrativo",
+      "valor": 250.0,
+      "pct_receita": 0.0009,
+      "meses": {
+        "2026-02": 250.0
       }
     },
     {
@@ -34752,14 +37933,14 @@ const MAXLED_DATA = {
       "division": "consolidado",
       "categoria": "SÓCIOS",
       "grupo": "Pessoal",
-      "valor": 90052.61,
-      "pct_receita": 0.0829,
+      "valor": 93600.85,
+      "pct_receita": 0.0862,
       "meses": {
         "2026-01": 33669.18,
         "2026-02": 16983.06,
         "2026-03": 6280.0,
         "2026-04": 16620.37,
-        "2026-05": 16500.0
+        "2026-05": 20048.24
       }
     },
     {
@@ -34773,6 +37954,20 @@ const MAXLED_DATA = {
         "2026-01": 30459.73,
         "2026-04": 25000.0,
         "2026-05": 3200.0
+      }
+    },
+    {
+      "division": "consolidado",
+      "categoria": "FUNCIONÁRIOS",
+      "grupo": "Pessoal",
+      "valor": 77159.05,
+      "pct_receita": 0.071,
+      "meses": {
+        "2026-01": 7513.29,
+        "2026-02": 17547.33,
+        "2026-03": 13992.21,
+        "2026-04": 19965.0,
+        "2026-05": 18141.22
       }
     },
     {
@@ -34791,43 +37986,28 @@ const MAXLED_DATA = {
     },
     {
       "division": "consolidado",
-      "categoria": "FUNCIONÁRIOS",
-      "grupo": "Pessoal",
-      "valor": 74538.89,
-      "pct_receita": 0.0686,
+      "categoria": "GASTOS FIXOS",
+      "grupo": "Administrativo",
+      "valor": 47687.44,
+      "pct_receita": 0.0439,
       "meses": {
-        "2026-01": 7513.29,
-        "2026-02": 14927.17,
-        "2026-03": 13992.21,
-        "2026-04": 19965.0,
-        "2026-05": 18141.22
+        "2026-01": 7197.43,
+        "2026-02": 8355.27,
+        "2026-03": 17304.67,
+        "2026-04": 8921.48,
+        "2026-05": 5908.59
       }
     },
     {
       "division": "consolidado",
       "categoria": "CARTÃO DE CRÉDITO",
       "grupo": "Financeiro/Bancário",
-      "valor": 50110.21,
-      "pct_receita": 0.0461,
+      "valor": 37238.93,
+      "pct_receita": 0.0343,
       "meses": {
         "2026-04": 21823.6,
         "2026-02": 10246.03,
-        "2026-03": 5169.3,
-        "2026-05": 12871.28
-      }
-    },
-    {
-      "division": "consolidado",
-      "categoria": "GASTOS FIXOS",
-      "grupo": "Administrativo",
-      "valor": 45679.28,
-      "pct_receita": 0.042,
-      "meses": {
-        "2026-01": 7197.43,
-        "2026-02": 8355.27,
-        "2026-03": 14684.51,
-        "2026-04": 8921.48,
-        "2026-05": 6520.59
+        "2026-03": 5169.3
       }
     },
     {
@@ -34848,13 +38028,13 @@ const MAXLED_DATA = {
       "division": "consolidado",
       "categoria": "TRANSPORTES",
       "grupo": "Logística/Importação",
-      "valor": 29509.08,
-      "pct_receita": 0.0272,
+      "valor": 30060.57,
+      "pct_receita": 0.0277,
       "meses": {
         "2026-01": 3298.84,
         "2026-02": 7515.26,
         "2026-03": 8868.3,
-        "2026-05": 6186.68,
+        "2026-05": 6738.17,
         "2026-04": 3640.0
       }
     },
@@ -34862,40 +38042,23 @@ const MAXLED_DATA = {
       "division": "consolidado",
       "categoria": "EMPRÉSTIMO FGI",
       "grupo": "Dívida/Empréstimos",
-      "valor": 22047.79,
-      "pct_receita": 0.0203,
+      "valor": 18930.03,
+      "pct_receita": 0.0174,
       "meses": {
         "2026-01": 2920.88,
         "2026-02": 6604.75,
         "2026-03": 2724.27,
-        "2026-04": 6680.13,
-        "2026-05": 3117.76
+        "2026-04": 6680.13
       }
     },
     {
       "division": "consolidado",
-      "categoria": "PLANO DE SAÚDE",
-      "grupo": "Pessoal",
-      "valor": 12741.96,
-      "pct_receita": 0.0117,
+      "categoria": "GASTOS FICOS",
+      "grupo": "Outras",
+      "valor": 9935.04,
+      "pct_receita": 0.0091,
       "meses": {
-        "2026-01": 2261.32,
-        "2026-02": 2620.16,
-        "2026-03": 2620.16,
-        "2026-04": 2620.16,
-        "2026-05": 2620.16
-      }
-    },
-    {
-      "division": "consolidado",
-      "categoria": "EMPRÉSTIMO PRONAMP",
-      "grupo": "Dívida/Empréstimos",
-      "valor": 10862.02,
-      "pct_receita": 0.01,
-      "meses": {
-        "2026-01": 3540.29,
-        "2026-03": 3621.21,
-        "2026-05": 3700.52
+        "2026-05": 9935.04
       }
     },
     {
@@ -34925,29 +38088,56 @@ const MAXLED_DATA = {
     },
     {
       "division": "consolidado",
-      "categoria": "TRANSPORTES IMPORTAÇÃO",
-      "grupo": "Logística/Importação",
-      "valor": 4945.26,
-      "pct_receita": 0.0046,
+      "categoria": "EMPRÉSTIMO PRONAMP",
+      "grupo": "Dívida/Empréstimos",
+      "valor": 7161.5,
+      "pct_receita": 0.0066,
       "meses": {
-        "2026-01": 2011.61,
-        "2026-02": 1248.66,
-        "2026-04": 801.6,
-        "2026-05": 883.39
+        "2026-01": 3540.29,
+        "2026-03": 3621.21
       }
     },
     {
       "division": "consolidado",
-      "categoria": "MANUTENÇÃO",
-      "grupo": "Administrativo",
-      "valor": 3735.0,
-      "pct_receita": 0.0034,
+      "categoria": "EMPRÉSTIMO",
+      "grupo": "Dívida/Empréstimos",
+      "valor": 6928.07,
+      "pct_receita": 0.0064,
       "meses": {
-        "2026-01": 250.0,
-        "2026-03": 1185.0,
-        "2026-04": 150.0,
-        "2026-02": 250.0,
-        "2026-05": 1900.0
+        "2026-05": 6928.07
+      }
+    },
+    {
+      "division": "consolidado",
+      "categoria": "SEGURO SAÚDE",
+      "grupo": "Pessoal",
+      "valor": 4881.48,
+      "pct_receita": 0.0045,
+      "meses": {
+        "2026-01": 2261.32,
+        "2026-05": 2620.16
+      }
+    },
+    {
+      "division": "consolidado",
+      "categoria": "TRANSPORTES IMPORTAÇÃO",
+      "grupo": "Logística/Importação",
+      "valor": 4061.87,
+      "pct_receita": 0.0037,
+      "meses": {
+        "2026-01": 2011.61,
+        "2026-02": 1248.66,
+        "2026-04": 801.6
+      }
+    },
+    {
+      "division": "consolidado",
+      "categoria": "SERVIÇOS",
+      "grupo": "Outras",
+      "valor": 3400.0,
+      "pct_receita": 0.0031,
+      "meses": {
+        "2026-05": 3400.0
       }
     },
     {
@@ -35022,6 +38212,19 @@ const MAXLED_DATA = {
     },
     {
       "division": "consolidado",
+      "categoria": "MANUTENÇÃO",
+      "grupo": "Administrativo",
+      "valor": 1835.0,
+      "pct_receita": 0.0017,
+      "meses": {
+        "2026-01": 250.0,
+        "2026-03": 1185.0,
+        "2026-04": 150.0,
+        "2026-02": 250.0
+      }
+    },
+    {
+      "division": "consolidado",
       "categoria": "FUNCIONÁRIOS (VR)",
       "grupo": "Pessoal",
       "valor": 1560.0,
@@ -35029,16 +38232,6 @@ const MAXLED_DATA = {
       "meses": {
         "2026-01": 1000.0,
         "2026-05": 560.0
-      }
-    },
-    {
-      "division": "consolidado",
-      "categoria": "SERVIÇOS",
-      "grupo": "Outras",
-      "valor": 1500.0,
-      "pct_receita": 0.0014,
-      "meses": {
-        "2026-05": 1500.0
       }
     },
     {
@@ -35075,14 +38268,13 @@ const MAXLED_DATA = {
       "division": "consolidado",
       "categoria": "SEGURO DE EMPRÉSTIMO",
       "grupo": "Dívida/Empréstimos",
-      "valor": 548.95,
-      "pct_receita": 0.0005,
+      "valor": 439.16,
+      "pct_receita": 0.0004,
       "meses": {
         "2026-01": 109.79,
         "2026-02": 109.79,
         "2026-03": 109.79,
-        "2026-04": 109.79,
-        "2026-05": 109.79
+        "2026-04": 109.79
       }
     },
     {
@@ -35097,22 +38289,23 @@ const MAXLED_DATA = {
     },
     {
       "division": "consolidado",
+      "categoria": null,
+      "grupo": "Outras",
+      "valor": 371.9,
+      "pct_receita": 0.0003,
+      "meses": {
+        "2026-03": 40.0,
+        "2026-05": 331.9
+      }
+    },
+    {
+      "division": "consolidado",
       "categoria": "PUBLICIDADE",
       "grupo": "Marketing & Vendas",
       "valor": 147.0,
       "pct_receita": 0.0001,
       "meses": {
         "2026-01": 147.0
-      }
-    },
-    {
-      "division": "consolidado",
-      "categoria": null,
-      "grupo": "Outras",
-      "valor": 40.0,
-      "pct_receita": 0.0,
-      "meses": {
-        "2026-03": 40.0
       }
     }
   ],
