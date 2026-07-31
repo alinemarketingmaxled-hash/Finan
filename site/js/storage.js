@@ -49,6 +49,17 @@
       const list = this.listLancamentos().filter((r) => r.id !== id);
       write(KEYS.lancamentos, list);
     },
+    addLancamentosBulk(entries, origin) {
+      const list = this.listLancamentos();
+      const now = new Date().toISOString();
+      const rows = entries.map((entry) => Object.assign({ id: uid(), manual: true, origin: origin || "import", createdAt: now }, entry));
+      write(KEYS.lancamentos, list.concat(rows));
+      return rows;
+    },
+    removeByOrigin(origin) {
+      const list = this.listLancamentos().filter((r) => r.origin !== origin);
+      write(KEYS.lancamentos, list);
+    },
 
     // ---- metas ----
     listMetas() { return read(KEYS.metas, []); },

@@ -7,7 +7,7 @@
 
     UI.filterBar(container, {
       showMonth: true, showBasis: true,
-      extra: [searchBox(() => refresh()), addBtn()],
+      extra: [searchBox(() => refresh()), importBtn(), addBtn()],
     });
 
     const flowOptions = st.basis === "financeiro"
@@ -61,7 +61,7 @@
         { key: "category", label: "Categoria", wrap: true, render: (r) => r.category ? Fmt.titleCase(r.category) : "—" },
         { key: "counterparty", label: "Contraparte / Cliente", wrap: true },
         { key: "value", label: "Valor", align: "right", render: (r) => Fmt.money(r.value) },
-        { key: "origem", label: "Origem", render: (r) => r.manual ? UI.badge("Manual", "warning") : UI.badge("Excel", "muted") },
+        { key: "origem", label: "Origem", render: (r) => origemBadge(r) },
         { key: "actions", label: "", render: (r) => r.manual ? removeBtn(r, () => selfRefresh()) : "" },
       ],
       rows: pageRows,
@@ -100,6 +100,11 @@
     const [label, kind] = map[flow] || [flow, "muted"];
     return UI.badge(label, kind);
   }
+  function origemBadge(r) {
+    if (!r.manual) return UI.badge("Excel (base)", "muted");
+    if (r.origin === "import") return UI.badge("Importado", "good");
+    return UI.badge("Manual", "warning");
+  }
 
   function searchBox(onChange) {
     const wrap = UI.h("div", { class: "search-box" }, [Icon("search", { size: 15 })]);
@@ -118,6 +123,77 @@
     const btn = UI.h("button", { class: "btn btn-accent btn-sm" }, [Icon("plus", { size: 14 }), "Novo lançamento"]);
     btn.addEventListener("click", () => openLancamentoModal());
     return btn;
+  }
+
+  function importBtn() {
+    const btn = UI.h("button", { class: "btn btn-sm" }, [Icon("upload", { size: 14 }), "Importar Excel"]);
+    btn.addEventListener("click", () => openImportModal());
+    return btn;
+  }
+
+  function openImportModal() {
+    const fileInput = UI.h("input", { type: "file", accept: ".xlsx,.xlsm" });
+    const summaryBox = UI.h("div", { style: "font-size:12.5px;color:var(--text-secondary);line-height:1.6;min-height:20px;" }, [
+      "Selecione o arquivo .xlsx atualizado (o mesmo formato/abas da planilha da Max Led). Vou ler tudo e adicionar só o que ainda não está aqui — nada é duplicado.",
+    ]);
+    const cancelBtn = UI.h("button", { class: "btn" }, ["Cancelar"]);
+    const confirmBtn = UI.h("button", { class: "btn btn-accent" }, ["Confirmar importação"]);
+    confirmBtn.disabled = true;
+    confirmBtn.style.opacity = ".5";
+
+    let parsed = null;
+    const m = UI.modal({
+      title: "Importar planilha Excel",
+      body: [
+        UI.field("Arquivo", fileInput),
+        summaryBox,
+      ],
+      footer: [cancelBtn, confirmBtn],
+    });
+    cancelBtn.addEventListener("click", () => m.close());
+
+    fileInput.addEventListener("change", async () => {
+      const file = fileInput.files[0];
+      if (!file) return;
+      UI.clear(summaryBox);
+      summaryBox.appendChild(document.createTextNode("Lendo arquivo…"));
+      confirmBtn.disabled = true;
+      confirmBtn.style.opacity = ".5";
+      try {
+        const buf = await file.arrayBuffer();
+        const { rows, found, missingSheets } = ExcelImport.parseWorkbook(buf);
+        if (!found.length) {
+          UI.clear(summaryBox);
+          summaryBox.appendChild(UI.h("span", { style: "color:var(--critical-text);" }, [
+            "Não reconheci nenhuma aba conhecida nesse arquivo. Confirme que é a planilha da Max Led (mesma estrutura de sempre).",
+          ]));
+          return;
+        }
+        const { toAdd, duplicates } = ExcelImport.dedupe(rows);
+        parsed = toAdd;
+        const s = ExcelImport.summarize(toAdd);
+        UI.clear(summaryBox);
+        const lines = [
+          `${found.length} aba(s) reconhecida(s) · ${Fmt.num(rows.length)} lançamento(s) lidos no arquivo.`,
+          `${Fmt.num(toAdd.length)} são novos e serão importados · ${Fmt.num(duplicates.length)} já existiam e foram ignorados.`,
+        ];
+        if (s.total) lines.push(`Novos: ${Fmt.monthLabel(s.minDate.slice(0, 7))} até ${Fmt.monthLabel(s.maxDate.slice(0, 7))} · Iluminação: ${s.byDivision.iluminacao || 0} · Importação: ${s.byDivision.importacao || 0}.`);
+        if (missingSheets.length) lines.push(`Abas não encontradas (ok se não usa): ${missingSheets.join(", ")}.`);
+        lines.forEach((l) => summaryBox.appendChild(UI.h("div", {}, [l])));
+        if (toAdd.length > 0) { confirmBtn.disabled = false; confirmBtn.style.opacity = "1"; }
+      } catch (e) {
+        UI.clear(summaryBox);
+        summaryBox.appendChild(UI.h("span", { style: "color:var(--critical-text);" }, ["Não consegui ler esse arquivo. Confirme que é um .xlsx válido."]));
+      }
+    });
+
+    confirmBtn.addEventListener("click", () => {
+      if (!parsed || !parsed.length) return;
+      Storage.addLancamentosBulk(parsed, "import");
+      UI.toast(`${Fmt.num(parsed.length)} lançamento(s) importado(s).`);
+      m.close();
+      AppState.set({});
+    });
   }
 
   function openLancamentoModal() {

@@ -9,7 +9,7 @@
     return {
       id: m.id, date: m.date, division: m.division, basis: m.basis || "financeiro",
       flow: m.flow, category: m.category || null, counterparty: m.counterparty || null,
-      value: Number(m.value) || 0, manual: true, note: m.note || "",
+      value: Number(m.value) || 0, manual: true, origin: m.origin || null, note: m.note || "",
     };
   }
 
@@ -48,24 +48,68 @@
   }
 
   // ---------------------------------------------------------------------
-  // Cashflow (financeiro): dynamic for detailed months (base+manual), static
-  // (pré-agregado) para 2025 e previsão Jun–Set/2026.
+  // Cashflow (financeiro): realizado = 2025 pré-agregado + meses detalhados
+  // (base+manual/importado). Previsão = regressão linear própria sobre a
+  // tendência dos últimos meses reais, recalculada a cada vez — sempre
+  // acompanha o dado mais recente (inclusive o que for importado depois).
   // ---------------------------------------------------------------------
-  function cashflowSeries(division) {
+  function nextMonthKey(monthKey) {
+    let [y, m] = monthKey.split("-").map(Number);
+    m += 1; if (m > 12) { m = 1; y += 1; }
+    return `${y}-${String(m).padStart(2, "0")}`;
+  }
+
+  function linearRegression(values) {
+    const n = values.length;
+    if (n === 0) return { slope: 0, intercept: 0 };
+    if (n === 1) return { slope: 0, intercept: values[0] };
+    let sumX = 0, sumY = 0, sumXY = 0, sumXX = 0;
+    values.forEach((y, x) => { sumX += x; sumY += y; sumXY += x * y; sumXX += x * x; });
+    const denom = n * sumXX - sumX * sumX;
+    if (denom === 0) return { slope: 0, intercept: sumY / n };
+    const slope = (n * sumXY - sumX * sumY) / denom;
+    const intercept = (sumY - slope * sumX) / n;
+    return { slope, intercept };
+  }
+
+  function forecastNext(values, monthsAhead, trailing) {
+    const window = values.slice(-trailing);
+    const { slope, intercept } = linearRegression(window);
+    const out = [];
+    for (let k = 1; k <= monthsAhead; k++) {
+      const x = window.length - 1 + k;
+      out.push(Math.max(0, round2(slope * x + intercept)));
+    }
+    return out;
+  }
+
+  function cashflowSeries(division, forecastMonths) {
+    forecastMonths = forecastMonths === undefined ? 4 : forecastMonths;
     const dMonths = new Set(detailedMonths());
     const out = new Map();
-    MAXLED_DATA.cashflow.filter((r) => r.division === division).forEach((r) => {
-      if (!dMonths.has(r.month)) out.set(r.month, { entradas: r.entradas, saidas: r.saidas, tipo: r.tipo });
+    MAXLED_DATA.cashflow.filter((r) => r.division === division && r.tipo === "realizado").forEach((r) => {
+      if (!dMonths.has(r.month)) out.set(r.month, { entradas: r.entradas, saidas: r.saidas });
     });
     filterTx({ division, basis: "financeiro" }).forEach((t) => {
       const m = t.date.slice(0, 7);
-      if (!out.has(m)) out.set(m, { entradas: 0, saidas: 0, tipo: "realizado" });
+      if (!out.has(m)) out.set(m, { entradas: 0, saidas: 0 });
       const rec = out.get(m);
       if (t.flow === "entrada") rec.entradas += t.value; else if (t.flow === "saida") rec.saidas += t.value;
     });
-    return Array.from(out.entries())
-      .map(([month, v]) => ({ month, entradas: round2(v.entradas), saidas: round2(v.saidas), resultado: round2(v.entradas - v.saidas), tipo: v.tipo }))
+    const rows = Array.from(out.entries())
+      .map(([month, v]) => ({ month, entradas: round2(v.entradas), saidas: round2(v.saidas), resultado: round2(v.entradas - v.saidas), tipo: "realizado" }))
       .sort((a, b) => a.month.localeCompare(b.month));
+
+    if (rows.length && forecastMonths > 0) {
+      const fEntradas = forecastNext(rows.map((r) => r.entradas), forecastMonths, 6);
+      const fSaidas = forecastNext(rows.map((r) => r.saidas), forecastMonths, 6);
+      let month = rows[rows.length - 1].month;
+      for (let k = 0; k < forecastMonths; k++) {
+        month = nextMonthKey(month);
+        rows.push({ month, entradas: fEntradas[k], saidas: fSaidas[k], resultado: round2(fEntradas[k] - fSaidas[k]), tipo: "previsao" });
+      }
+    }
+    return rows;
   }
 
   // ---------------------------------------------------------------------
