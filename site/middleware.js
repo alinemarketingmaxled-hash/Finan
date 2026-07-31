@@ -10,7 +10,8 @@ export const config = {
 };
 
 const COOKIE_NAME = "maxled_session";
-const LOGIN_PATH = "/login.html";
+const LOGIN_PAGE = "/login.html";
+const LOGIN_ACTION = "/login"; // caminho virtual (sem arquivo estático correspondente)
 
 async function sha256Hex(text) {
   const data = new TextEncoder().encode(text);
@@ -48,16 +49,17 @@ export default async function middleware(request) {
   const url = new URL(request.url);
 
   if (url.pathname === "/logout") {
-    const res = new Response(null, { status: 303, headers: { Location: LOGIN_PATH } });
+    const res = new Response(null, { status: 303, headers: { Location: LOGIN_PAGE } });
     res.headers.append("Set-Cookie", `${COOKIE_NAME}=; Path=/; HttpOnly; Secure; SameSite=Lax; Max-Age=0`);
     return res;
   }
 
-  if (url.pathname === LOGIN_PATH) {
-    if (request.method === "POST") {
-      const form = await request.formData();
-      const user = String(form.get("user") || "");
-      const pass = String(form.get("pass") || "");
+  if (url.pathname === LOGIN_ACTION && request.method === "POST") {
+    try {
+      const bodyText = await request.text();
+      const form = new URLSearchParams(bodyText);
+      const user = form.get("user") || "";
+      const pass = form.get("pass") || "";
       if (timingSafeEqual(user, expectedUser) && timingSafeEqual(pass, expectedPassword)) {
         const res = new Response(null, { status: 303, headers: { Location: "/" } });
         res.headers.append(
@@ -66,9 +68,14 @@ export default async function middleware(request) {
         );
         return res;
       }
-      return new Response(null, { status: 303, headers: { Location: `${LOGIN_PATH}?error=1` } });
+    } catch (e) {
+      // corpo malformado -> trata como credenciais inválidas abaixo
     }
-    return next(); // GET /login.html: serve a página estática normalmente
+    return new Response(null, { status: 303, headers: { Location: `${LOGIN_PAGE}?error=1` } });
+  }
+
+  if (url.pathname === LOGIN_PAGE) {
+    return next(); // serve a página estática de login normalmente (GET)
   }
 
   const cookies = parseCookies(request.headers.get("cookie"));
@@ -76,6 +83,6 @@ export default async function middleware(request) {
     return next();
   }
 
-  const loginUrl = new URL(LOGIN_PATH, request.url);
+  const loginUrl = new URL(LOGIN_PAGE, request.url);
   return new Response(null, { status: 303, headers: { Location: loginUrl.toString() } });
 }
