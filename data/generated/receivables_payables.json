@@ -1,0 +1,72 @@
+[
+  {
+    "month": "2026-05",
+    "division": "iluminacao",
+    "a_receber": 160141.83,
+    "a_pagar": 154894.47,
+    "saldo": 5247.36
+  },
+  {
+    "month": "2026-05",
+    "division": "importacao",
+    "a_receber": 68690.63,
+    "a_pagar": 18896.66,
+    "saldo": 49793.97
+  },
+  {
+    "month": "2026-06",
+    "division": "iluminacao",
+    "a_receber": 103947.86000000002,
+    "a_pagar": 105849.64,
+    "saldo": -1901.78
+  },
+  {
+    "month": "2026-06",
+    "division": "importacao",
+    "a_receber": 70252.61,
+    "a_pagar": 25391.83,
+    "saldo": 44860.78
+  },
+  {
+    "month": "2026-07",
+    "division": "iluminacao",
+    "a_receber": 25437.6,
+    "a_pagar": 55832.64,
+    "saldo": -30395.04
+  },
+  {
+    "month": "2026-07",
+    "division": "importacao",
+    "a_receber": 7431.23,
+    "a_pagar": 21657.829999999998,
+    "saldo": -14226.6
+  },
+  {
+    "month": "2026-08",
+    "division": "iluminacao",
+    "a_receber": 3883.53,
+    "a_pagar": 51118.63,
+    "saldo": -47235.1
+  },
+  {
+    "month": "2026-08",
+    "division": "importacao",
+    "a_receber": 516.33,
+    "a_pagar": 11438.66,
+    "saldo": -10922.33
+  },
+  {
+    "month": "2026-09",
+    "division": "iluminacao",
+    "a_receber": 0,
+    "a_pagar": 51118.63,
+    "saldo": -51118.63
+  },
+  {
+    "month": "2026-09",
+    "division": "importacao",
+    "a_receber": 0,
+    "a_pagar": 11438.66,
+    "saldo": -11438.66
+  }
+]

@@ -1,0 +1,107 @@
+[
+  {
+    "month": "2026-01",
+    "division": "consolidado",
+    "vendas": 193707.94,
+    "compras": 93950.6,
+    "resultado": 99757.34
+  },
+  {
+    "month": "2026-01",
+    "division": "iluminacao",
+    "vendas": 168419.4,
+    "compras": 82491.34,
+    "resultado": 85928.06
+  },
+  {
+    "month": "2026-01",
+    "division": "importacao",
+    "vendas": 25288.54,
+    "compras": 11459.26,
+    "resultado": 13829.28
+  },
+  {
+    "month": "2026-02",
+    "division": "consolidado",
+    "vendas": 166265.37,
+    "compras": 114751.54,
+    "resultado": 51513.83
+  },
+  {
+    "month": "2026-02",
+    "division": "iluminacao",
+    "vendas": 125116.23,
+    "compras": 81609.82,
+    "resultado": 43506.41
+  },
+  {
+    "month": "2026-02",
+    "division": "importacao",
+    "vendas": 41149.14,
+    "compras": 33141.72,
+    "resultado": 8007.42
+  },
+  {
+    "month": "2026-03",
+    "division": "consolidado",
+    "vendas": 262517.16,
+    "compras": 158530.84,
+    "resultado": 103986.32
+  },
+  {
+    "month": "2026-03",
+    "division": "iluminacao",
+    "vendas": 215725.16,
+    "compras": 133102.84,
+    "resultado": 82622.32
+  },
+  {
+    "month": "2026-03",
+    "division": "importacao",
+    "vendas": 46792.0,
+    "compras": 25428.0,
+    "resultado": 21364.0
+  },
+  {
+    "month": "2026-04",
+    "division": "consolidado",
+    "vendas": 251838.52,
+    "compras": 138197.85,
+    "resultado": 113640.67
+  },
+  {
+    "month": "2026-04",
+    "division": "iluminacao",
+    "vendas": 150579.0,
+    "compras": 90767.81,
+    "resultado": 59811.19
+  },
+  {
+    "month": "2026-04",
+    "division": "importacao",
+    "vendas": 101259.52,
+    "compras": 47430.04,
+    "resultado": 53829.48
+  },
+  {
+    "month": "2026-05",
+    "division": "consolidado",
+    "vendas": 246259.88,
+    "compras": 118850.2,
+    "resultado": 127409.68
+  },
+  {
+    "month": "2026-05",
+    "division": "iluminacao",
+    "vendas": 145976.98,
+    "compras": 77752.02,
+    "resultado": 68224.96
+  },
+  {
+    "month": "2026-05",
+    "division": "importacao",
+    "vendas": 100282.9,
+    "compras": 41098.18,
+    "resultado": 59184.72
+  }
+]

@@ -1,0 +1,506 @@
+[
+  {
+    "month": "2025-01",
+    "division": "consolidado",
+    "entradas": 178852.4,
+    "saidas": 194936.14,
+    "resultado": -16083.74,
+    "tipo": "realizado"
+  },
+  {
+    "month": "2025-01",
+    "division": "iluminacao",
+    "entradas": 159260.53,
+    "saidas": 175562.16,
+    "resultado": -16301.630000000005,
+    "tipo": "realizado"
+  },
+  {
+    "month": "2025-01",
+    "division": "importacao",
+    "entradas": 19591.87,
+    "saidas": 19373.98,
+    "resultado": 217.88999999999942,
+    "tipo": "realizado"
+  },
+  {
+    "month": "2025-02",
+    "division": "consolidado",
+    "entradas": 263463.81,
+    "saidas": 237438.03,
+    "resultado": 26025.78,
+    "tipo": "realizado"
+  },
+  {
+    "month": "2025-02",
+    "division": "iluminacao",
+    "entradas": 205465.7,
+    "saidas": 187413.04,
+    "resultado": 18052.660000000003,
+    "tipo": "realizado"
+  },
+  {
+    "month": "2025-02",
+    "division": "importacao",
+    "entradas": 57998.11,
+    "saidas": 50024.99,
+    "resultado": 7973.120000000003,
+    "tipo": "realizado"
+  },
+  {
+    "month": "2025-03",
+    "division": "consolidado",
+    "entradas": 269184.65,
+    "saidas": 286911.49,
+    "resultado": -17726.84,
+    "tipo": "realizado"
+  },
+  {
+    "month": "2025-03",
+    "division": "iluminacao",
+    "entradas": 212696.97,
+    "saidas": 235789.98,
+    "resultado": -23093.01000000001,
+    "tipo": "realizado"
+  },
+  {
+    "month": "2025-03",
+    "division": "importacao",
+    "entradas": 56487.68,
+    "saidas": 51121.51,
+    "resultado": 5366.169999999998,
+    "tipo": "realizado"
+  },
+  {
+    "month": "2025-04",
+    "division": "consolidado",
+    "entradas": 287664.75,
+    "saidas": 286158.99,
+    "resultado": 1505.76,
+    "tipo": "realizado"
+  },
+  {
+    "month": "2025-04",
+    "division": "iluminacao",
+    "entradas": 225882.05,
+    "saidas": 204028.74,
+    "resultado": 21853.309999999998,
+    "tipo": "realizado"
+  },
+  {
+    "month": "2025-04",
+    "division": "importacao",
+    "entradas": 61782.7,
+    "saidas": 82130.25,
+    "resultado": -20347.550000000003,
+    "tipo": "realizado"
+  },
+  {
+    "month": "2025-05",
+    "division": "consolidado",
+    "entradas": 291184.18,
+    "saidas": 254171.23,
+    "resultado": 37012.95,
+    "tipo": "realizado"
+  },
+  {
+    "month": "2025-05",
+    "division": "iluminacao",
+    "entradas": 252020.4,
+    "saidas": 225748.62,
+    "resultado": 26271.78,
+    "tipo": "realizado"
+  },
+  {
+    "month": "2025-05",
+    "division": "importacao",
+    "entradas": 39163.78,
+    "saidas": 28422.61,
+    "resultado": 10741.169999999998,
+    "tipo": "realizado"
+  },
+  {
+    "month": "2025-06",
+    "division": "consolidado",
+    "entradas": 176965.13,
+    "saidas": 231904.48,
+    "resultado": -54939.35,
+    "tipo": "realizado"
+  },
+  {
+    "month": "2025-06",
+    "division": "iluminacao",
+    "entradas": 159826.26,
+    "saidas": 201481.58,
+    "resultado": -41655.31999999998,
+    "tipo": "realizado"
+  },
+  {
+    "month": "2025-06",
+    "division": "importacao",
+    "entradas": 17138.87,
+    "saidas": 30422.9,
+    "resultado": -13284.030000000002,
+    "tipo": "realizado"
+  },
+  {
+    "month": "2025-07",
+    "division": "consolidado",
+    "entradas": 273854.26,
+    "saidas": 280092.19,
+    "resultado": -6237.93,
+    "tipo": "realizado"
+  },
+  {
+    "month": "2025-07",
+    "division": "iluminacao",
+    "entradas": 205248.67,
+    "saidas": 214354.38,
+    "resultado": -9105.709999999992,
+    "tipo": "realizado"
+  },
+  {
+    "month": "2025-07",
+    "division": "importacao",
+    "entradas": 68605.59,
+    "saidas": 65737.81,
+    "resultado": 2867.779999999999,
+    "tipo": "realizado"
+  },
+  {
+    "month": "2025-08",
+    "division": "consolidado",
+    "entradas": 267965.26,
+    "saidas": 276673.9,
+    "resultado": -8708.64,
+    "tipo": "realizado"
+  },
+  {
+    "month": "2025-08",
+    "division": "iluminacao",
+    "entradas": 183735.51,
+    "saidas": 191802.78,
+    "resultado": -8067.2699999999895,
+    "tipo": "realizado"
+  },
+  {
+    "month": "2025-08",
+    "division": "importacao",
+    "entradas": 84229.75,
+    "saidas": 84871.12,
+    "resultado": -641.3699999999953,
+    "tipo": "realizado"
+  },
+  {
+    "month": "2025-09",
+    "division": "consolidado",
+    "entradas": 329082.75,
+    "saidas": 321969.12,
+    "resultado": 7113.63,
+    "tipo": "realizado"
+  },
+  {
+    "month": "2025-09",
+    "division": "iluminacao",
+    "entradas": 202938.1,
+    "saidas": 204295.82,
+    "resultado": -1357.7200000000012,
+    "tipo": "realizado"
+  },
+  {
+    "month": "2025-09",
+    "division": "importacao",
+    "entradas": 126144.65,
+    "saidas": 117673.3,
+    "resultado": 8471.349999999991,
+    "tipo": "realizado"
+  },
+  {
+    "month": "2025-10",
+    "division": "consolidado",
+    "entradas": 240017.04,
+    "saidas": 237779.23,
+    "resultado": 2237.81,
+    "tipo": "realizado"
+  },
+  {
+    "month": "2025-10",
+    "division": "iluminacao",
+    "entradas": 178379.29,
+    "saidas": 167394.79,
+    "resultado": 10984.5,
+    "tipo": "realizado"
+  },
+  {
+    "month": "2025-10",
+    "division": "importacao",
+    "entradas": 61637.75,
+    "saidas": 70384.44,
+    "resultado": -8746.690000000002,
+    "tipo": "realizado"
+  },
+  {
+    "month": "2025-11",
+    "division": "consolidado",
+    "entradas": 242434.72,
+    "saidas": 240876.24,
+    "resultado": 1558.48,
+    "tipo": "realizado"
+  },
+  {
+    "month": "2025-11",
+    "division": "iluminacao",
+    "entradas": 184310.95,
+    "saidas": 183155.39,
+    "resultado": 1155.5599999999977,
+    "tipo": "realizado"
+  },
+  {
+    "month": "2025-11",
+    "division": "importacao",
+    "entradas": 58123.77,
+    "saidas": 57720.85,
+    "resultado": 402.91999999999825,
+    "tipo": "realizado"
+  },
+  {
+    "month": "2025-12",
+    "division": "consolidado",
+    "entradas": 349038.01,
+    "saidas": 258682.45,
+    "resultado": 90355.56,
+    "tipo": "realizado"
+  },
+  {
+    "month": "2025-12",
+    "division": "iluminacao",
+    "entradas": 198779.59,
+    "saidas": 179590.32,
+    "resultado": 19189.26999999999,
+    "tipo": "realizado"
+  },
+  {
+    "month": "2025-12",
+    "division": "importacao",
+    "entradas": 150258.42,
+    "saidas": 79092.13,
+    "resultado": 71166.29000000001,
+    "tipo": "realizado"
+  },
+  {
+    "month": "2026-01",
+    "division": "consolidado",
+    "entradas": 147484.08,
+    "saidas": 194257.91,
+    "resultado": -46773.83,
+    "tipo": "realizado"
+  },
+  {
+    "month": "2026-01",
+    "division": "iluminacao",
+    "entradas": 132275.4,
+    "saidas": 116350.31,
+    "resultado": 15925.09,
+    "tipo": "realizado"
+  },
+  {
+    "month": "2026-01",
+    "division": "importacao",
+    "entradas": 15208.68,
+    "saidas": 77907.6,
+    "resultado": -62698.92,
+    "tipo": "realizado"
+  },
+  {
+    "month": "2026-02",
+    "division": "consolidado",
+    "entradas": 163770.63,
+    "saidas": 178174.64,
+    "resultado": -14404.01,
+    "tipo": "realizado"
+  },
+  {
+    "month": "2026-02",
+    "division": "iluminacao",
+    "entradas": 126679.25,
+    "saidas": 133410.26,
+    "resultado": -6731.01,
+    "tipo": "realizado"
+  },
+  {
+    "month": "2026-02",
+    "division": "importacao",
+    "entradas": 37091.38,
+    "saidas": 44764.38,
+    "resultado": -7673.0,
+    "tipo": "realizado"
+  },
+  {
+    "month": "2026-03",
+    "division": "consolidado",
+    "entradas": 221147.61,
+    "saidas": 228194.43,
+    "resultado": -7046.82,
+    "tipo": "realizado"
+  },
+  {
+    "month": "2026-03",
+    "division": "iluminacao",
+    "entradas": 183424.12,
+    "saidas": 192968.08,
+    "resultado": -9543.96,
+    "tipo": "realizado"
+  },
+  {
+    "month": "2026-03",
+    "division": "importacao",
+    "entradas": 37723.49,
+    "saidas": 35226.35,
+    "resultado": 2497.14,
+    "tipo": "realizado"
+  },
+  {
+    "month": "2026-04",
+    "division": "consolidado",
+    "entradas": 319989.8,
+    "saidas": 339610.08,
+    "resultado": -19620.28,
+    "tipo": "realizado"
+  },
+  {
+    "month": "2026-04",
+    "division": "iluminacao",
+    "entradas": 214380.68,
+    "saidas": 231574.3,
+    "resultado": -17193.62,
+    "tipo": "realizado"
+  },
+  {
+    "month": "2026-04",
+    "division": "importacao",
+    "entradas": 105609.12,
+    "saidas": 108035.78,
+    "resultado": -2426.66,
+    "tipo": "realizado"
+  },
+  {
+    "month": "2026-05",
+    "division": "consolidado",
+    "entradas": 234006.5,
+    "saidas": 226634.15,
+    "resultado": 7372.35,
+    "tipo": "realizado"
+  },
+  {
+    "month": "2026-05",
+    "division": "iluminacao",
+    "entradas": 153998.18,
+    "saidas": 155988.48,
+    "resultado": -1990.3,
+    "tipo": "realizado"
+  },
+  {
+    "month": "2026-05",
+    "division": "importacao",
+    "entradas": 80008.32,
+    "saidas": 70645.67,
+    "resultado": 9362.65,
+    "tipo": "realizado"
+  },
+  {
+    "month": "2026-06",
+    "division": "consolidado",
+    "entradas": 437741.28,
+    "saidas": 382401.92,
+    "resultado": 55339.36,
+    "tipo": "previsao"
+  },
+  {
+    "month": "2026-06",
+    "division": "iluminacao",
+    "entradas": 302449.43,
+    "saidas": 293406.06,
+    "resultado": 9043.38,
+    "tipo": "previsao"
+  },
+  {
+    "month": "2026-06",
+    "division": "importacao",
+    "entradas": 135291.85,
+    "saidas": 88995.86,
+    "resultado": 46295.99,
+    "tipo": "previsao"
+  },
+  {
+    "month": "2026-07",
+    "division": "consolidado",
+    "entradas": 299344.07,
+    "saidas": 177831.74,
+    "resultado": 121512.33,
+    "tipo": "previsao"
+  },
+  {
+    "month": "2026-07",
+    "division": "iluminacao",
+    "entradas": 229714.06,
+    "saidas": 134474.89,
+    "resultado": 95239.16,
+    "tipo": "previsao"
+  },
+  {
+    "month": "2026-07",
+    "division": "importacao",
+    "entradas": 69630.01,
+    "saidas": 43356.85,
+    "resultado": 26273.15,
+    "tipo": "previsao"
+  },
+  {
+    "month": "2026-08",
+    "division": "consolidado",
+    "entradas": 272213.92,
+    "saidas": 202031.43,
+    "resultado": 70182.49,
+    "tipo": "previsao"
+  },
+  {
+    "month": "2026-08",
+    "division": "iluminacao",
+    "entradas": 209498.81,
+    "saidas": 149595.29,
+    "resultado": 59903.52,
+    "tipo": "previsao"
+  },
+  {
+    "month": "2026-08",
+    "division": "importacao",
+    "entradas": 62715.11,
+    "saidas": 52436.14,
+    "resultado": 10278.97,
+    "tipo": "previsao"
+  },
+  {
+    "month": "2026-09",
+    "division": "consolidado",
+    "entradas": 268008.23,
+    "saidas": 207273.65,
+    "resultado": 60734.58,
+    "tipo": "previsao"
+  },
+  {
+    "month": "2026-09",
+    "division": "iluminacao",
+    "entradas": 205809.45,
+    "saidas": 156219.85,
+    "resultado": 49589.6,
+    "tipo": "previsao"
+  },
+  {
+    "month": "2026-09",
+    "division": "importacao",
+    "entradas": 62198.78,
+    "saidas": 51053.8,
+    "resultado": 11144.98,
+    "tipo": "previsao"
+  }
+]

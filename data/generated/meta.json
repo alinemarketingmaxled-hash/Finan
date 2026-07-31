@@ -1,0 +1,26 @@
+{
+  "generated_at": "2026-07-31T18:43:59.292409Z",
+  "company": "Max Led",
+  "divisions": [
+    "iluminacao",
+    "importacao"
+  ],
+  "division_labels": {
+    "iluminacao": "Max Led Iluminação",
+    "importacao": "Max Led Importação",
+    "consolidado": "Max Led Consolidado"
+  },
+  "detailed_range": {
+    "start": "2026-01",
+    "end": "2026-05"
+  },
+  "history_range": {
+    "start": "2025-01",
+    "end": "2026-05"
+  },
+  "forecast_range": {
+    "start": "2026-06",
+    "end": "2026-09"
+  },
+  "currency": "BRL"
+}
