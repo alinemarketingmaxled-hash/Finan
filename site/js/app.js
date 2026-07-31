@@ -79,6 +79,8 @@
       });
     });
     const footer = UI.h("div", { class: "sidebar-footer" }, []);
+    const logoutBtn = UI.h("a", { href: "/logout", class: "collapse-btn" }, [Icon("x", { size: 16 }), UI.h("span", { class: "nav-label" }, ["Sair"])]);
+    footer.appendChild(logoutBtn);
     const collapseBtn = UI.h("button", { class: "collapse-btn" }, [Icon("chevronLeft", { size: 16 }), UI.h("span", { class: "nav-label" }, ["Recolher menu"])]);
     collapseBtn.addEventListener("click", () => {
       shellEl.classList.toggle("is-collapsed");
