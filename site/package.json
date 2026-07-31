@@ -1,6 +1,7 @@
 {
   "name": "maxled-financeiro",
   "private": true,
+  "type": "module",
   "description": "Painel financeiro Max Led — site estático; a única dependência é para o middleware de autenticação no Vercel.",
   "dependencies": {
     "@vercel/functions": "^1.6.0"
