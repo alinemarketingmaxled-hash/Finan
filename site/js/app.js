@@ -3,6 +3,7 @@
   const NAV = [
     { group: "Principal", items: [
       { id: "overview", label: "Visão Geral", icon: "home" },
+      { id: "fluxocaixa", label: "Fluxo de Caixa", icon: "trendingUp" },
       { id: "lancamentos", label: "Lançamentos", icon: "list" },
       { id: "divisoes", label: "Divisões", icon: "layers" },
     ] },
@@ -27,6 +28,7 @@
   ];
   const TITLES = {
     overview: ["Visão Geral", "Resumo consolidado da Max Led"],
+    fluxocaixa: ["Fluxo de Caixa", "Entradas, saídas e saldo acumulado ao longo do tempo"],
     lancamentos: ["Lançamentos", "Todas as entradas e saídas, financeiro e nota fiscal"],
     divisoes: ["Divisões", "Max Led Iluminação vs Max Led Importação"],
     dre: ["DRE", "Demonstrativo de resultado do exercício"],
