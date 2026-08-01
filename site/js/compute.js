@@ -445,19 +445,19 @@
       }
     });
 
-    // Pipeline de vendas
+    // Previsões (entradas/saídas futuras cadastradas manualmente)
     const pipe = pipelineSummary("consolidado");
     if (!pipe.items.length) {
       out.push({
         level: "info", icon: "users",
-        title: "Pipeline de vendas ainda não é usado",
-        body: `Cadastre oportunidades em aberto (empresa, mês previsto, valor, status) na página Pipeline pra acompanhar previsão de vendas além do histórico — ajuda a antecipar receita futura em vez de só projetar por média.`,
+        title: "Previsões ainda não é usado",
+        body: `Cadastre um pedido, compra ou parcelamento futuro na página Previsões (valor, nº de parcelas, mês de início) pra ver antecipadamente o que vai entrar e sair de caixa — além do histórico e da projeção por média.`,
       });
-    } else if (pipe.totalAberto > 0) {
+    } else if (pipe.saldo !== 0 || pipe.totalEntrada > 0 || pipe.totalSaida > 0) {
       out.push({
-        level: "info", icon: "users",
-        title: `Pipeline em aberto: ${Fmt.money(pipe.totalAberto, { compact: true })} em ${pipe.aberto.length} oportunidade(s)`,
-        body: `Se convertidas, essas oportunidades somam ${Fmt.money(pipe.totalAberto)} em receita potencial ainda não contabilizada nas projeções.${pipe.taxaConversao !== null ? ` Taxa de conversão histórica: ${Fmt.pct(pipe.taxaConversao)} (${pipe.ganho.length} ganha(s) de ${pipe.ganho.length + pipe.perdido.length} decidida(s)).` : ""}`,
+        level: pipe.saldo >= 0 ? "info" : "warning", icon: "users",
+        title: `Previsões cadastradas: ${Fmt.money(pipe.totalEntrada, { compact: true })} a entrar, ${Fmt.money(pipe.totalSaida, { compact: true })} a sair`,
+        body: `Saldo previsto entre essas entradas e saídas ainda não realizadas: ${Fmt.money(pipe.saldo)}. Nenhum desses valores conta no DRE ou no fluxo de caixa realizado até você registrar o lançamento de verdade.`,
       });
     }
 
@@ -570,28 +570,55 @@
   }
 
   // ---------------------------------------------------------------------
-  // Pipeline de vendas (oportunidades cadastradas manualmente — a planilha
-  // original tem a aba mas não tinha nenhum lançamento).
+  // Previsões: entrada ou saída futura cadastrada manualmente, dividida em
+  // parcelas (ex: pedido de R$5.000 em 3x) -- a planilha original tinha uma
+  // aba "Piperline" pra isso mas nunca foi preenchida. Puramente
+  // planejamento: não conta no DRE/fluxo de caixa realizado.
   // ---------------------------------------------------------------------
+  function pipelineInstallments(item) {
+    const n = Math.max(1, parseInt(item.parcelas, 10) || 1);
+    const total = Number(item.valor_total) || 0;
+    const base = Math.floor((total / n) * 100) / 100;
+    const out = [];
+    let mes = item.mes_inicio;
+    let acumulado = 0;
+    for (let i = 0; i < n; i++) {
+      const valor = i === n - 1 ? round2(total - acumulado) : base;
+      out.push({ mes, valor });
+      acumulado += valor;
+      mes = nextMonthKey(mes);
+    }
+    return out;
+  }
+
   function pipelineSummary(division) {
     const all = Storage.listPipeline();
     const items = (!division || division === "consolidado") ? all : all.filter((p) => p.divisao === division);
-    const aberto = items.filter((p) => p.status === "aberto");
-    const ganho = items.filter((p) => p.status === "ganho");
-    const perdido = items.filter((p) => p.status === "perdido");
-    const sum = (list) => round2(list.reduce((s, p) => s + (Number(p.valor_previsto) || 0), 0));
-    const decididas = ganho.length + perdido.length;
-    return {
-      items, aberto, ganho, perdido,
-      totalAberto: sum(aberto), totalGanho: sum(ganho), totalPerdido: sum(perdido),
-      taxaConversao: decididas ? ganho.length / decididas : null,
-    };
+    const active = items.filter((p) => p.status !== "cancelado" && p.mes_inicio);
+
+    const byMonth = new Map();
+    active.forEach((p) => {
+      pipelineInstallments(p).forEach(({ mes, valor }) => {
+        if (!byMonth.has(mes)) byMonth.set(mes, { entrada: 0, saida: 0 });
+        const rec = byMonth.get(mes);
+        if (p.tipo === "saida") rec.saida += valor; else rec.entrada += valor;
+      });
+    });
+    const monthly = Array.from(byMonth.keys()).sort().map((mes) => {
+      const v = byMonth.get(mes);
+      return { mes, entrada: round2(v.entrada), saida: round2(v.saida), saldo: round2(v.entrada - v.saida) };
+    });
+
+    const totalEntrada = round2(active.filter((p) => p.tipo !== "saida").reduce((s, p) => s + (Number(p.valor_total) || 0), 0));
+    const totalSaida = round2(active.filter((p) => p.tipo === "saida").reduce((s, p) => s + (Number(p.valor_total) || 0), 0));
+
+    return { items, monthly, totalEntrada, totalSaida, saldo: round2(totalEntrada - totalSaida) };
   }
 
   global.Compute = {
     DIVISIONS, round2,
     allTransactions, detailedMonths, filterTx, previousMonth, clienteCategoria, uncategorized,
     cashflowSeries, dailyCashflow, dreForPeriod, expenseCategoriesAgg, topCounterparties,
-    loans, loansTotals, receivablesPayables, healthScore, insights, actionPlan, budgetStatus, pipelineSummary,
+    loans, loansTotals, receivablesPayables, healthScore, insights, actionPlan, budgetStatus, pipelineSummary, pipelineInstallments,
   };
 })(window);

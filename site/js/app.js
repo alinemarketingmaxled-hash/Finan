@@ -21,7 +21,7 @@
     { group: "Planejamento", items: [
       { id: "metas", label: "Metas", icon: "target" },
       { id: "orcamento", label: "Orçamento", icon: "wallet" },
-      { id: "pipeline", label: "Pipeline", icon: "users" },
+      { id: "pipeline", label: "Previsões", icon: "users" },
     ] },
     { group: "Sistema", items: [
       { id: "backup", label: "Backup & Exportação", icon: "download" },
@@ -42,7 +42,7 @@
     contas: ["A Receber / A Pagar", "Calendário de recebimentos e pagamentos"],
     metas: ["Metas", "Objetivos financeiros da empresa"],
     orcamento: ["Orçamento", "Limite mensal por categoria vs realizado"],
-    pipeline: ["Pipeline", "Oportunidades de venda em aberto, ganhas e perdidas"],
+    pipeline: ["Previsões", "Entradas e saídas futuras que você já sabe que vão acontecer, mesmo parceladas"],
     backup: ["Backup & Exportação", "Exportar, importar e imprimir seus dados"],
     config: ["Configurações", "Tema, empresa e preferências"],
   };
