@@ -315,14 +315,17 @@
     const notaInput = UI.h("input", { class: "input", placeholder: "Ex: 11853 (opcional)" });
     const clienteCatInput = UI.h("input", { class: "input", list: "clienteCategoriaList", placeholder: "Ex: Atacado, Distribuidor… (opcional)" });
     const clienteCatList = UI.h("datalist", { id: "clienteCategoriaList" }, clientCategoryOptions());
-    const catField = UI.field("Categoria (despesa)", catSel);
+    const catField = UI.field("Categoria", catSel);
     const notaField = UI.field("Nota fiscal", notaInput);
     const clienteCatField = UI.field("Categoria do cliente", UI.h("div", {}, [clienteCatInput, clienteCatList]));
 
-    function syncFieldVisibility() {
+    function isExpenseLike() {
       const isFin = basisSel.value === "financeiro";
+      return (isFin && flowSel.value === "saida") || (!isFin && flowSel.value === "compra");
+    }
+    function syncFieldVisibility() {
       const isClientSide = flowSel.value === "entrada" || flowSel.value === "venda";
-      catField.style.display = isFin && flowSel.value === "saida" ? "" : "none";
+      catField.style.display = isExpenseLike() ? "" : "none";
       clienteCatField.style.display = isClientSide ? "" : "none";
     }
     function syncFlowOptions(keepValue) {
@@ -389,7 +392,7 @@
       }
       const patch = {
         date: dateInput.value, division: divSel.value, basis: basisSel.value, flow: flowSel.value,
-        category: (basisSel.value === "financeiro" && flowSel.value === "saida") ? catSel.value : null,
+        category: isExpenseLike() ? catSel.value : null,
         counterparty, value, note: noteInput.value.trim(),
         nota_fiscal: notaInput.value.trim() || null,
       };
