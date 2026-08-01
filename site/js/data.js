@@ -1,7 +1,7 @@
 // AUTO-GERADO por scripts/extract_xlsx.py -- não editar à mão.
 const MAXLED_DATA = {
   "meta": {
-    "generated_at": "2026-07-31T22:51:26.017453Z",
+    "generated_at": "2026-08-01T15:35:47.556170Z",
     "company": "Max Led",
     "divisions": [
       "iluminacao",
@@ -14,11 +14,11 @@ const MAXLED_DATA = {
     },
     "detailed_range": {
       "start": "2026-01",
-      "end": "2026-05"
+      "end": "2026-06"
     },
     "history_range": {
       "start": "2025-01",
-      "end": "2026-05"
+      "end": "2026-06"
     },
     "forecast_range": {
       "start": "2026-06",
@@ -275,7 +275,7 @@ const MAXLED_DATA = {
       "division": "importacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "SEGURO DE EMPRÉSTIMO",
+      "category": "SEGURO SAÚDE",
       "counterparty": "SEGURO DE EMPRÉSTIMO",
       "value": 109.79,
       "nota_fiscal": null
@@ -286,7 +286,7 @@ const MAXLED_DATA = {
       "division": "importacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "EMPRÉSTIMO FGI",
+      "category": "EMPRÉSTIMO",
       "counterparty": "CAPITAL DE GIRO",
       "value": 2920.88,
       "nota_fiscal": null
@@ -297,7 +297,7 @@ const MAXLED_DATA = {
       "division": "importacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "TRANSPORTES IMPORTAÇÃO",
+      "category": "IMPORTAÇÃO",
       "counterparty": "FEDEX",
       "value": 2011.61,
       "nota_fiscal": null
@@ -1925,7 +1925,7 @@ const MAXLED_DATA = {
       "division": "iluminacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "SEGURO SAÚDE",
+      "category": "FUNCIONÁRIOS",
       "counterparty": "PORTO SEGURO   SEGURO SAUDE S",
       "value": 2261.32,
       "nota_fiscal": null
@@ -2178,7 +2178,7 @@ const MAXLED_DATA = {
       "division": "importacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "MATERIAL DE ESCRITÓRIO",
+      "category": "BRINDES",
       "counterparty": "MATERIAL DE ESCRITÓRIO",
       "value": 1242.0,
       "nota_fiscal": null
@@ -2519,7 +2519,7 @@ const MAXLED_DATA = {
       "division": "importacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "EMPRÉSTIMO PRONAMP",
+      "category": "EMPRÉSTIMO",
       "counterparty": "CAPITAL DE GIRO 12/48",
       "value": 3540.29,
       "nota_fiscal": null
@@ -2651,7 +2651,7 @@ const MAXLED_DATA = {
       "division": "iluminacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "EMPRÉSTIMO CAPITAL DE GIRO BRADESCO",
+      "category": "EMPRÉSTIMO",
       "counterparty": "CAPITAL DE GIRO",
       "value": 6175.89,
       "nota_fiscal": null
@@ -3685,7 +3685,7 @@ const MAXLED_DATA = {
       "division": "iluminacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "SEGURO DE VIDA SÓCIO",
+      "category": "INVESTIMENTO",
       "counterparty": "PREVIDENCIA",
       "value": 496.24,
       "nota_fiscal": null
@@ -3696,7 +3696,7 @@ const MAXLED_DATA = {
       "division": "iluminacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "SEGURO DE VIDA SÓCIO",
+      "category": "INVESTIMENTO",
       "counterparty": "PREVIDENCIA",
       "value": 473.47,
       "nota_fiscal": null
@@ -4103,7 +4103,7 @@ const MAXLED_DATA = {
       "division": "iluminacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "MARKETING",
+      "category": "OUTRAS DESPESAS",
       "counterparty": "MARCELO SITE",
       "value": 1207.0,
       "nota_fiscal": null
@@ -4752,7 +4752,7 @@ const MAXLED_DATA = {
       "division": "iluminacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "MARKETING",
+      "category": "INVESTIMENTO",
       "counterparty": "FADAMAR",
       "value": 800.0,
       "nota_fiscal": null
@@ -5137,7 +5137,7 @@ const MAXLED_DATA = {
       "division": "iluminacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "FUNCIONÁRIOS (VR)",
+      "category": "FUNCIONÁRIOS",
       "counterparty": "PLUXXE VR E VA",
       "value": 1000.0,
       "nota_fiscal": null
@@ -5841,7 +5841,7 @@ const MAXLED_DATA = {
       "division": "importacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "SEGURO DE EMPRÉSTIMO",
+      "category": "SEGURO SAÚDE",
       "counterparty": "SEGURO DE EMPRÉSTIMO",
       "value": 109.79,
       "nota_fiscal": null
@@ -5852,7 +5852,7 @@ const MAXLED_DATA = {
       "division": "importacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "EMPRÉSTIMO FGI",
+      "category": "EMPRÉSTIMO",
       "counterparty": "CAPITAL DE GIRO",
       "value": 3019.29,
       "nota_fiscal": null
@@ -6677,7 +6677,7 @@ const MAXLED_DATA = {
       "division": "iluminacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "SEGURO SÓCIO CARRO",
+      "category": "SEGURO SAÚDE",
       "counterparty": "SUHAY SEGURO",
       "value": 931.72,
       "nota_fiscal": null
@@ -8481,7 +8481,7 @@ const MAXLED_DATA = {
       "division": "iluminacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "FUNCIONÁRIOS",
+      "category": "EMPRÉSTIMO",
       "counterparty": "WILSON",
       "value": 1600.0,
       "nota_fiscal": null
@@ -8602,7 +8602,7 @@ const MAXLED_DATA = {
       "division": "importacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "EMPRÉSTIMO FGI",
+      "category": "EMPRÉSTIMO",
       "counterparty": "CAPITAL DE GIRO",
       "value": 3585.46,
       "nota_fiscal": null
@@ -8987,7 +8987,7 @@ const MAXLED_DATA = {
       "division": "iluminacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "EMPRÉSTIMO CAPITAL DE GIRO BRADESCO",
+      "category": "EMPRÉSTIMO",
       "counterparty": "CAPITAL DE GIRO",
       "value": 6241.39,
       "nota_fiscal": null
@@ -10186,7 +10186,7 @@ const MAXLED_DATA = {
       "division": "iluminacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "SEGURO DE VIDA SÓCIO",
+      "category": "INVESTIMENTO",
       "counterparty": "PREVIDENCIA",
       "value": 473.47,
       "nota_fiscal": null
@@ -10197,7 +10197,7 @@ const MAXLED_DATA = {
       "division": "iluminacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "SEGURO DE VIDA SÓCIO",
+      "category": "INVESTIMENTO",
       "counterparty": "PREVIDENCIA",
       "value": 496.24,
       "nota_fiscal": null
@@ -10956,7 +10956,7 @@ const MAXLED_DATA = {
       "division": "importacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "CARTÃO DE CRÉDITO",
+      "category": "CONSUMO",
       "counterparty": "CARTÃO DE CRÉDITO",
       "value": 10246.03,
       "nota_fiscal": null
@@ -11385,7 +11385,7 @@ const MAXLED_DATA = {
       "division": "importacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "TRANSPORTES IMPORTAÇÃO",
+      "category": "TRANSPORTES",
       "counterparty": "DHL",
       "value": 1248.66,
       "nota_fiscal": null
@@ -11550,7 +11550,7 @@ const MAXLED_DATA = {
       "division": "iluminacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "BANCO",
+      "category": null,
       "counterparty": "BOLETOS",
       "value": 19.91,
       "nota_fiscal": null
@@ -12419,7 +12419,7 @@ const MAXLED_DATA = {
       "division": "importacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "SEGURO DE EMPRÉSTIMO",
+      "category": "EMPRÉSTIMO",
       "counterparty": "SEGURO",
       "value": 109.79,
       "nota_fiscal": null
@@ -12430,7 +12430,7 @@ const MAXLED_DATA = {
       "division": "importacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "EMPRÉSTIMO FGI",
+      "category": "EMPRÉSTIMO",
       "counterparty": "CAPITAL DE GIRO",
       "value": 2724.27,
       "nota_fiscal": null
@@ -14179,7 +14179,7 @@ const MAXLED_DATA = {
       "division": "iluminacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "SEGURO SÓCIO CARRO",
+      "category": "SEGURO SAÚDE",
       "counterparty": "SUHAY",
       "value": 931.74,
       "nota_fiscal": null
@@ -15730,7 +15730,7 @@ const MAXLED_DATA = {
       "division": "importacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "EMPRÉSTIMO PRONAMP",
+      "category": "EMPRÉSTIMO",
       "counterparty": "CAPITAL DE GIRO 14/48",
       "value": 3621.21,
       "nota_fiscal": null
@@ -15884,7 +15884,7 @@ const MAXLED_DATA = {
       "division": "iluminacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "EMPRÉSTIMO CAPITAL DE GIRO BRADESCO",
+      "category": "EMPRÉSTIMO",
       "counterparty": "CAPITAL DE GIRO",
       "value": 6303.62,
       "nota_fiscal": null
@@ -17611,7 +17611,7 @@ const MAXLED_DATA = {
       "division": "importacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "CARTÃO DE CRÉDITO",
+      "category": "SÓCIOS",
       "counterparty": "SÓCIOS CARTÕES",
       "value": 2669.3,
       "nota_fiscal": null
@@ -17875,7 +17875,7 @@ const MAXLED_DATA = {
       "division": "iluminacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "EMPRÉSTIMO CAPITAL DE GIRO ITAÚ",
+      "category": "EMPRÉSTIMO",
       "counterparty": "CAPITAL DE GIRO",
       "value": 2537.21,
       "nota_fiscal": null
@@ -18073,7 +18073,7 @@ const MAXLED_DATA = {
       "division": "importacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "CARTÃO DE CRÉDITO",
+      "category": "SÓCIOS",
       "counterparty": "SÓCIOS CARTÕES",
       "value": 2500.0,
       "nota_fiscal": null
@@ -21219,7 +21219,7 @@ const MAXLED_DATA = {
       "division": "importacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "SEGURO DE EMPRÉSTIMO",
+      "category": "EMPRÉSTIMO",
       "counterparty": "SEGURO",
       "value": 109.79,
       "nota_fiscal": null
@@ -21230,7 +21230,7 @@ const MAXLED_DATA = {
       "division": "importacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "EMPRÉSTIMO FGI",
+      "category": "EMPRÉSTIMO",
       "counterparty": "CAPITAL DE GIRO",
       "value": 3019.29,
       "nota_fiscal": null
@@ -23056,7 +23056,7 @@ const MAXLED_DATA = {
       "division": "iluminacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "SEGURO SÓCIO CARRO",
+      "category": "SEGURO SAÚDE",
       "counterparty": "SUHAY",
       "value": 931.74,
       "nota_fiscal": null
@@ -23760,7 +23760,7 @@ const MAXLED_DATA = {
       "division": "importacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "EMPRÉSTIMO FGI",
+      "category": "EMPRÉSTIMO",
       "counterparty": "CAPITAL DE GIRO",
       "value": 3660.84,
       "nota_fiscal": null
@@ -23892,7 +23892,7 @@ const MAXLED_DATA = {
       "division": "iluminacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "EMPRÉSTIMO CAPITAL DE GIRO BRADESCO",
+      "category": "EMPRÉSTIMO",
       "counterparty": "CAPITAL DE GIRO",
       "value": 6372.54,
       "nota_fiscal": null
@@ -25575,7 +25575,7 @@ const MAXLED_DATA = {
       "division": "importacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "CARTÃO DE CRÉDITO",
+      "category": "SÓCIOS",
       "counterparty": "CARTÃO",
       "value": 4835.71,
       "nota_fiscal": null
@@ -25850,7 +25850,7 @@ const MAXLED_DATA = {
       "division": "iluminacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "CARTÃO DE CRÉDITO",
+      "category": "SÓCIOS",
       "counterparty": "CARTÃO",
       "value": 3508.61,
       "nota_fiscal": null
@@ -26059,7 +26059,7 @@ const MAXLED_DATA = {
       "division": "iluminacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "EMPRÉSTIMO CAPITAL DE GIRO ITAÚ",
+      "category": "EMPRÉSTIMO",
       "counterparty": "CAPITAL DE GIRO",
       "value": 2566.28,
       "nota_fiscal": null
@@ -27082,7 +27082,7 @@ const MAXLED_DATA = {
       "division": "importacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "CARTÃO DE CRÉDITO",
+      "category": "TRANSPORTES",
       "counterparty": "CARTÃO",
       "value": 9979.28,
       "nota_fiscal": null
@@ -27093,7 +27093,7 @@ const MAXLED_DATA = {
       "division": "importacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "CARTÃO DE CRÉDITO",
+      "category": "SÓCIOS",
       "counterparty": "CARTÃO",
       "value": 3500.0,
       "nota_fiscal": null
@@ -28237,7 +28237,7 @@ const MAXLED_DATA = {
       "division": "importacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "TRANSPORTES IMPORTAÇÃO",
+      "category": "TRANSPORTES",
       "counterparty": "DHL",
       "value": 801.6,
       "nota_fiscal": null
@@ -28270,7 +28270,7 @@ const MAXLED_DATA = {
       "division": "importacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "CONSUMO",
+      "category": "INSUMOS",
       "counterparty": "COXINHA PA MENINAS",
       "value": 47.71,
       "nota_fiscal": null
@@ -28700,23 +28700,12 @@ const MAXLED_DATA = {
       "basis": "financeiro",
       "flow": "entrada",
       "category": null,
-      "counterparty": "ARIELTEK",
-      "value": 216.0,
-      "nota_fiscal": "12435"
-    },
-    {
-      "id": "tx02607",
-      "date": "2026-05-05",
-      "division": "iluminacao",
-      "basis": "financeiro",
-      "flow": "entrada",
-      "category": null,
       "counterparty": "FZW",
       "value": 4699.97,
       "nota_fiscal": "12563"
     },
     {
-      "id": "tx02608",
+      "id": "tx02607",
       "date": "2026-05-05",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -28727,7 +28716,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12262/03"
     },
     {
-      "id": "tx02609",
+      "id": "tx02608",
       "date": "2026-05-05",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -28738,7 +28727,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12445/01"
     },
     {
-      "id": "tx02610",
+      "id": "tx02609",
       "date": "2026-05-05",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -28749,7 +28738,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12458/01"
     },
     {
-      "id": "tx02611",
+      "id": "tx02610",
       "date": "2026-05-05",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -28760,7 +28749,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12412/02"
     },
     {
-      "id": "tx02612",
+      "id": "tx02611",
       "date": "2026-05-05",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -28771,7 +28760,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12437/01"
     },
     {
-      "id": "tx02613",
+      "id": "tx02612",
       "date": "2026-05-05",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -28782,7 +28771,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12443/01"
     },
     {
-      "id": "tx02614",
+      "id": "tx02613",
       "date": "2026-05-05",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -28793,7 +28782,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12444/01"
     },
     {
-      "id": "tx02615",
+      "id": "tx02614",
       "date": "2026-05-05",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -28804,7 +28793,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12492/01"
     },
     {
-      "id": "tx02616",
+      "id": "tx02615",
       "date": "2026-05-05",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -28815,7 +28804,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12492/02"
     },
     {
-      "id": "tx02617",
+      "id": "tx02616",
       "date": "2026-05-05",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -28824,6 +28813,17 @@ const MAXLED_DATA = {
       "counterparty": "SEBASTIAO CESAR GRASSI ELETRONICOS - M.. - 0000279",
       "value": 851.8,
       "nota_fiscal": "12541/01"
+    },
+    {
+      "id": "tx02617",
+      "date": "2026-05-05",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "ARIELTEK",
+      "value": 216.0,
+      "nota_fiscal": "12435"
     },
     {
       "id": "tx02618",
@@ -30294,7 +30294,7 @@ const MAXLED_DATA = {
       "division": "iluminacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "FUNCIONÁRIOS (VR)",
+      "category": "FUNCIONÁRIOS",
       "counterparty": "PLUXEE BENEF",
       "value": 560.0,
       "nota_fiscal": null
@@ -30559,34 +30559,12 @@ const MAXLED_DATA = {
       "basis": "financeiro",
       "flow": "entrada",
       "category": null,
-      "counterparty": "GISLANE",
-      "value": 624.6,
-      "nota_fiscal": "SNF"
-    },
-    {
-      "id": "tx02776",
-      "date": "2026-05-12",
-      "division": "iluminacao",
-      "basis": "financeiro",
-      "flow": "entrada",
-      "category": null,
-      "counterparty": "MAX IMPORT",
-      "value": 4855.0,
-      "nota_fiscal": "MOVIMENTO"
-    },
-    {
-      "id": "tx02777",
-      "date": "2026-05-12",
-      "division": "iluminacao",
-      "basis": "financeiro",
-      "flow": "entrada",
-      "category": null,
       "counterparty": "CLIP INDUSTRIA IMP",
       "value": 725.0,
       "nota_fiscal": "12510/01"
     },
     {
-      "id": "tx02778",
+      "id": "tx02776",
       "date": "2026-05-12",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -30597,7 +30575,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12484/01"
     },
     {
-      "id": "tx02779",
+      "id": "tx02777",
       "date": "2026-05-12",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -30608,7 +30586,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12463/01"
     },
     {
-      "id": "tx02780",
+      "id": "tx02778",
       "date": "2026-05-12",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -30619,7 +30597,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12445/02"
     },
     {
-      "id": "tx02781",
+      "id": "tx02779",
       "date": "2026-05-12",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -30630,7 +30608,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12305/02"
     },
     {
-      "id": "tx02782",
+      "id": "tx02780",
       "date": "2026-05-12",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -30641,7 +30619,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12487/01"
     },
     {
-      "id": "tx02783",
+      "id": "tx02781",
       "date": "2026-05-12",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -30652,7 +30630,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12488/01"
     },
     {
-      "id": "tx02784",
+      "id": "tx02782",
       "date": "2026-05-12",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -30663,7 +30641,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12485/01"
     },
     {
-      "id": "tx02785",
+      "id": "tx02783",
       "date": "2026-05-12",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -30672,6 +30650,28 @@ const MAXLED_DATA = {
       "counterparty": "BIQUAD TECNOLOGIA",
       "value": 354.5,
       "nota_fiscal": "12520"
+    },
+    {
+      "id": "tx02784",
+      "date": "2026-05-12",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "GISLANE",
+      "value": 624.6,
+      "nota_fiscal": "SNF"
+    },
+    {
+      "id": "tx02785",
+      "date": "2026-05-12",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "MAX IMPORT",
+      "value": 4855.0,
+      "nota_fiscal": "MOVIMENTO"
     },
     {
       "id": "tx02786",
@@ -31505,23 +31505,12 @@ const MAXLED_DATA = {
       "basis": "financeiro",
       "flow": "entrada",
       "category": null,
-      "counterparty": "WGV",
-      "value": 740.06,
-      "nota_fiscal": "12577 12608"
-    },
-    {
-      "id": "tx02862",
-      "date": "2026-05-14",
-      "division": "iluminacao",
-      "basis": "financeiro",
-      "flow": "entrada",
-      "category": null,
       "counterparty": "TRANSFIX",
       "value": 500.0,
       "nota_fiscal": "12451"
     },
     {
-      "id": "tx02863",
+      "id": "tx02862",
       "date": "2026-05-14",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -31532,7 +31521,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12385/04"
     },
     {
-      "id": "tx02864",
+      "id": "tx02863",
       "date": "2026-05-14",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -31543,7 +31532,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12407/02"
     },
     {
-      "id": "tx02865",
+      "id": "tx02864",
       "date": "2026-05-14",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -31554,7 +31543,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12430/03"
     },
     {
-      "id": "tx02866",
+      "id": "tx02865",
       "date": "2026-05-14",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -31565,7 +31554,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12502/01"
     },
     {
-      "id": "tx02867",
+      "id": "tx02866",
       "date": "2026-05-14",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -31576,7 +31565,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12503/01"
     },
     {
-      "id": "tx02868",
+      "id": "tx02867",
       "date": "2026-05-14",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -31587,7 +31576,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12506/01"
     },
     {
-      "id": "tx02869",
+      "id": "tx02868",
       "date": "2026-05-14",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -31598,7 +31587,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12513/01"
     },
     {
-      "id": "tx02870",
+      "id": "tx02869",
       "date": "2026-05-14",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -31609,12 +31598,23 @@ const MAXLED_DATA = {
       "nota_fiscal": "12566/01"
     },
     {
+      "id": "tx02870",
+      "date": "2026-05-14",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "WGV",
+      "value": 740.06,
+      "nota_fiscal": "12577 12608"
+    },
+    {
       "id": "tx02871",
       "date": "2026-05-14",
       "division": "iluminacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "EMPRÉSTIMO CAPITAL DE GIRO BRADESCO",
+      "category": "EMPRÉSTIMO",
       "counterparty": "CAPITAL DE GIRO",
       "value": 6441.56,
       "nota_fiscal": null
@@ -32065,7 +32065,7 @@ const MAXLED_DATA = {
       "division": "importacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "GASTOS FICOS",
+      "category": "GASTOS FIXOS",
       "counterparty": "HANSER CONTABIL",
       "value": 612.0,
       "nota_fiscal": null
@@ -32451,23 +32451,12 @@ const MAXLED_DATA = {
       "basis": "financeiro",
       "flow": "entrada",
       "category": null,
-      "counterparty": "GISLANE",
-      "value": 624.6,
-      "nota_fiscal": "SNF"
-    },
-    {
-      "id": "tx02948",
-      "date": "2026-05-19",
-      "division": "iluminacao",
-      "basis": "financeiro",
-      "flow": "entrada",
-      "category": null,
       "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO - 0000660",
       "value": 1861.83,
       "nota_fiscal": "12358/03"
     },
     {
-      "id": "tx02949",
+      "id": "tx02948",
       "date": "2026-05-19",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -32478,7 +32467,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12445/03"
     },
     {
-      "id": "tx02950",
+      "id": "tx02949",
       "date": "2026-05-19",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -32489,7 +32478,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12523/01"
     },
     {
-      "id": "tx02951",
+      "id": "tx02950",
       "date": "2026-05-19",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -32500,7 +32489,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12626"
     },
     {
-      "id": "tx02952",
+      "id": "tx02951",
       "date": "2026-05-19",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -32511,7 +32500,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12643"
     },
     {
-      "id": "tx02953",
+      "id": "tx02952",
       "date": "2026-05-19",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -32520,6 +32509,17 @@ const MAXLED_DATA = {
       "counterparty": "NEW TEC",
       "value": 488.0,
       "nota_fiscal": "12569"
+    },
+    {
+      "id": "tx02953",
+      "date": "2026-05-19",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "GISLANE",
+      "value": 624.6,
+      "nota_fiscal": "SNF"
     },
     {
       "id": "tx02954",
@@ -32835,7 +32835,7 @@ const MAXLED_DATA = {
       "division": "iluminacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "SEGURO DE VIDA SÓCIO",
+      "category": "SEGURO SAÚDE",
       "counterparty": "PREVIDENCIA",
       "value": 496.24,
       "nota_fiscal": null
@@ -32846,7 +32846,7 @@ const MAXLED_DATA = {
       "division": "iluminacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "SEGURO DE VIDA SÓCIO",
+      "category": "SEGURO SAÚDE",
       "counterparty": "PREVIDENCIA",
       "value": 473.47,
       "nota_fiscal": null
@@ -33078,12 +33078,23 @@ const MAXLED_DATA = {
       "basis": "nfe",
       "flow": "venda",
       "category": null,
+      "counterparty": "MARTINS COMERCIO E SERVICOS ASSOCIADOS L (0001115)",
+      "value": 1500.0,
+      "nota_fiscal": "841"
+    },
+    {
+      "id": "tx03005",
+      "date": "2026-05-20",
+      "division": "importacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
       "counterparty": "ALLPRINT LATINA AUTOMACAO DE MAQUINAS EA (0000291)",
       "value": 2305.0,
       "nota_fiscal": "842"
     },
     {
-      "id": "tx03005",
+      "id": "tx03006",
       "date": "2026-05-20",
       "division": "importacao",
       "basis": "nfe",
@@ -33094,7 +33105,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "843"
     },
     {
-      "id": "tx03006",
+      "id": "tx03007",
       "date": "2026-05-21",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33105,7 +33116,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12526"
     },
     {
-      "id": "tx03007",
+      "id": "tx03008",
       "date": "2026-05-21",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33116,7 +33127,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12523"
     },
     {
-      "id": "tx03008",
+      "id": "tx03009",
       "date": "2026-05-21",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33127,7 +33138,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12521"
     },
     {
-      "id": "tx03009",
+      "id": "tx03010",
       "date": "2026-05-21",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33138,7 +33149,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12506"
     },
     {
-      "id": "tx03010",
+      "id": "tx03011",
       "date": "2026-05-21",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33149,7 +33160,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12503"
     },
     {
-      "id": "tx03011",
+      "id": "tx03012",
       "date": "2026-05-21",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33160,7 +33171,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12385"
     },
     {
-      "id": "tx03012",
+      "id": "tx03013",
       "date": "2026-05-21",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33171,7 +33182,7 @@ const MAXLED_DATA = {
       "nota_fiscal": null
     },
     {
-      "id": "tx03013",
+      "id": "tx03014",
       "date": "2026-05-21",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33182,7 +33193,7 @@ const MAXLED_DATA = {
       "nota_fiscal": null
     },
     {
-      "id": "tx03014",
+      "id": "tx03015",
       "date": "2026-05-21",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33193,7 +33204,7 @@ const MAXLED_DATA = {
       "nota_fiscal": null
     },
     {
-      "id": "tx03015",
+      "id": "tx03016",
       "date": "2026-05-21",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33204,7 +33215,7 @@ const MAXLED_DATA = {
       "nota_fiscal": null
     },
     {
-      "id": "tx03016",
+      "id": "tx03017",
       "date": "2026-05-21",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33215,7 +33226,7 @@ const MAXLED_DATA = {
       "nota_fiscal": null
     },
     {
-      "id": "tx03017",
+      "id": "tx03018",
       "date": "2026-05-21",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33226,7 +33237,7 @@ const MAXLED_DATA = {
       "nota_fiscal": null
     },
     {
-      "id": "tx03018",
+      "id": "tx03019",
       "date": "2026-05-21",
       "division": "iluminacao",
       "basis": "nfe",
@@ -33237,7 +33248,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "206915"
     },
     {
-      "id": "tx03019",
+      "id": "tx03020",
       "date": "2026-05-21",
       "division": "iluminacao",
       "basis": "nfe",
@@ -33248,7 +33259,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "263508"
     },
     {
-      "id": "tx03020",
+      "id": "tx03021",
       "date": "2026-05-21",
       "division": "iluminacao",
       "basis": "nfe",
@@ -33259,7 +33270,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "4016"
     },
     {
-      "id": "tx03021",
+      "id": "tx03022",
       "date": "2026-05-21",
       "division": "iluminacao",
       "basis": "nfe",
@@ -33270,7 +33281,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "5963"
     },
     {
-      "id": "tx03022",
+      "id": "tx03023",
       "date": "2026-05-21",
       "division": "iluminacao",
       "basis": "nfe",
@@ -33281,7 +33292,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "76884"
     },
     {
-      "id": "tx03023",
+      "id": "tx03024",
       "date": "2026-05-21",
       "division": "iluminacao",
       "basis": "nfe",
@@ -33292,7 +33303,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "8058"
     },
     {
-      "id": "tx03024",
+      "id": "tx03025",
       "date": "2026-05-21",
       "division": "iluminacao",
       "basis": "nfe",
@@ -33303,7 +33314,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12647"
     },
     {
-      "id": "tx03025",
+      "id": "tx03026",
       "date": "2026-05-21",
       "division": "iluminacao",
       "basis": "nfe",
@@ -33314,7 +33325,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12648"
     },
     {
-      "id": "tx03026",
+      "id": "tx03027",
       "date": "2026-05-21",
       "division": "iluminacao",
       "basis": "nfe",
@@ -33325,7 +33336,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12649"
     },
     {
-      "id": "tx03027",
+      "id": "tx03028",
       "date": "2026-05-21",
       "division": "iluminacao",
       "basis": "nfe",
@@ -33336,7 +33347,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12650"
     },
     {
-      "id": "tx03028",
+      "id": "tx03029",
       "date": "2026-05-21",
       "division": "iluminacao",
       "basis": "nfe",
@@ -33347,7 +33358,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12651"
     },
     {
-      "id": "tx03029",
+      "id": "tx03030",
       "date": "2026-05-21",
       "division": "iluminacao",
       "basis": "nfe",
@@ -33358,7 +33369,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12652"
     },
     {
-      "id": "tx03030",
+      "id": "tx03031",
       "date": "2026-05-21",
       "division": "importacao",
       "basis": "nfe",
@@ -33369,7 +33380,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "844"
     },
     {
-      "id": "tx03031",
+      "id": "tx03032",
       "date": "2026-05-21",
       "division": "importacao",
       "basis": "nfe",
@@ -33380,7 +33391,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "845"
     },
     {
-      "id": "tx03032",
+      "id": "tx03033",
       "date": "2026-05-22",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33391,7 +33402,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12570"
     },
     {
-      "id": "tx03033",
+      "id": "tx03034",
       "date": "2026-05-22",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33402,7 +33413,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12653"
     },
     {
-      "id": "tx03034",
+      "id": "tx03035",
       "date": "2026-05-22",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33413,7 +33424,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12681"
     },
     {
-      "id": "tx03035",
+      "id": "tx03036",
       "date": "2026-05-22",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33424,7 +33435,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12533"
     },
     {
-      "id": "tx03036",
+      "id": "tx03037",
       "date": "2026-05-22",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33435,7 +33446,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12532"
     },
     {
-      "id": "tx03037",
+      "id": "tx03038",
       "date": "2026-05-22",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33446,7 +33457,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12531"
     },
     {
-      "id": "tx03038",
+      "id": "tx03039",
       "date": "2026-05-22",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33457,7 +33468,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12530"
     },
     {
-      "id": "tx03039",
+      "id": "tx03040",
       "date": "2026-05-22",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33468,7 +33479,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12529"
     },
     {
-      "id": "tx03040",
+      "id": "tx03041",
       "date": "2026-05-22",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33479,7 +33490,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12527"
     },
     {
-      "id": "tx03041",
+      "id": "tx03042",
       "date": "2026-05-22",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33490,7 +33501,7 @@ const MAXLED_DATA = {
       "nota_fiscal": null
     },
     {
-      "id": "tx03042",
+      "id": "tx03043",
       "date": "2026-05-22",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33501,7 +33512,7 @@ const MAXLED_DATA = {
       "nota_fiscal": null
     },
     {
-      "id": "tx03043",
+      "id": "tx03044",
       "date": "2026-05-22",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33512,7 +33523,7 @@ const MAXLED_DATA = {
       "nota_fiscal": null
     },
     {
-      "id": "tx03044",
+      "id": "tx03045",
       "date": "2026-05-22",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33523,7 +33534,7 @@ const MAXLED_DATA = {
       "nota_fiscal": null
     },
     {
-      "id": "tx03045",
+      "id": "tx03046",
       "date": "2026-05-22",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33534,7 +33545,7 @@ const MAXLED_DATA = {
       "nota_fiscal": null
     },
     {
-      "id": "tx03046",
+      "id": "tx03047",
       "date": "2026-05-22",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33545,7 +33556,7 @@ const MAXLED_DATA = {
       "nota_fiscal": null
     },
     {
-      "id": "tx03047",
+      "id": "tx03048",
       "date": "2026-05-22",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33556,7 +33567,7 @@ const MAXLED_DATA = {
       "nota_fiscal": null
     },
     {
-      "id": "tx03048",
+      "id": "tx03049",
       "date": "2026-05-22",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33567,7 +33578,7 @@ const MAXLED_DATA = {
       "nota_fiscal": null
     },
     {
-      "id": "tx03049",
+      "id": "tx03050",
       "date": "2026-05-22",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33578,7 +33589,7 @@ const MAXLED_DATA = {
       "nota_fiscal": null
     },
     {
-      "id": "tx03050",
+      "id": "tx03051",
       "date": "2026-05-22",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33589,7 +33600,7 @@ const MAXLED_DATA = {
       "nota_fiscal": null
     },
     {
-      "id": "tx03051",
+      "id": "tx03052",
       "date": "2026-05-22",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33600,7 +33611,7 @@ const MAXLED_DATA = {
       "nota_fiscal": null
     },
     {
-      "id": "tx03052",
+      "id": "tx03053",
       "date": "2026-05-22",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33611,7 +33622,7 @@ const MAXLED_DATA = {
       "nota_fiscal": null
     },
     {
-      "id": "tx03053",
+      "id": "tx03054",
       "date": "2026-05-22",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33622,7 +33633,7 @@ const MAXLED_DATA = {
       "nota_fiscal": null
     },
     {
-      "id": "tx03054",
+      "id": "tx03055",
       "date": "2026-05-22",
       "division": "iluminacao",
       "basis": "nfe",
@@ -33633,7 +33644,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "19100"
     },
     {
-      "id": "tx03055",
+      "id": "tx03056",
       "date": "2026-05-22",
       "division": "iluminacao",
       "basis": "nfe",
@@ -33644,7 +33655,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "263633"
     },
     {
-      "id": "tx03056",
+      "id": "tx03057",
       "date": "2026-05-22",
       "division": "iluminacao",
       "basis": "nfe",
@@ -33655,7 +33666,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "263662"
     },
     {
-      "id": "tx03057",
+      "id": "tx03058",
       "date": "2026-05-22",
       "division": "iluminacao",
       "basis": "nfe",
@@ -33666,7 +33677,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "8376"
     },
     {
-      "id": "tx03058",
+      "id": "tx03059",
       "date": "2026-05-22",
       "division": "iluminacao",
       "basis": "nfe",
@@ -33677,7 +33688,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12653"
     },
     {
-      "id": "tx03059",
+      "id": "tx03060",
       "date": "2026-05-22",
       "division": "iluminacao",
       "basis": "nfe",
@@ -33688,7 +33699,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12654"
     },
     {
-      "id": "tx03060",
+      "id": "tx03061",
       "date": "2026-05-22",
       "division": "iluminacao",
       "basis": "nfe",
@@ -33699,7 +33710,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12655"
     },
     {
-      "id": "tx03061",
+      "id": "tx03062",
       "date": "2026-05-22",
       "division": "iluminacao",
       "basis": "nfe",
@@ -33710,7 +33721,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12656"
     },
     {
-      "id": "tx03062",
+      "id": "tx03063",
       "date": "2026-05-22",
       "division": "iluminacao",
       "basis": "nfe",
@@ -33721,7 +33732,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12657"
     },
     {
-      "id": "tx03063",
+      "id": "tx03064",
       "date": "2026-05-25",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33732,7 +33743,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12452"
     },
     {
-      "id": "tx03064",
+      "id": "tx03065",
       "date": "2026-05-25",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33743,7 +33754,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12664"
     },
     {
-      "id": "tx03065",
+      "id": "tx03066",
       "date": "2026-05-25",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33754,7 +33765,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12694"
     },
     {
-      "id": "tx03066",
+      "id": "tx03067",
       "date": "2026-05-25",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33765,7 +33776,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12686"
     },
     {
-      "id": "tx03067",
+      "id": "tx03068",
       "date": "2026-05-25",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33776,7 +33787,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12539/01"
     },
     {
-      "id": "tx03068",
+      "id": "tx03069",
       "date": "2026-05-25",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33787,7 +33798,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12538/01"
     },
     {
-      "id": "tx03069",
+      "id": "tx03070",
       "date": "2026-05-25",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33798,7 +33809,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12488/02"
     },
     {
-      "id": "tx03070",
+      "id": "tx03071",
       "date": "2026-05-25",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33809,7 +33820,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12465/02"
     },
     {
-      "id": "tx03071",
+      "id": "tx03072",
       "date": "2026-05-25",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33820,18 +33831,18 @@ const MAXLED_DATA = {
       "nota_fiscal": null
     },
     {
-      "id": "tx03072",
+      "id": "tx03073",
       "date": "2026-05-25",
       "division": "iluminacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "EMPRÉSTIMO CAPITAL DE GIRO ITAÚ",
+      "category": "EMPRÉSTIMO",
       "counterparty": "CAPITAL DE GIRO",
       "value": 2595.32,
       "nota_fiscal": null
     },
     {
-      "id": "tx03073",
+      "id": "tx03074",
       "date": "2026-05-25",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33842,7 +33853,7 @@ const MAXLED_DATA = {
       "nota_fiscal": null
     },
     {
-      "id": "tx03074",
+      "id": "tx03075",
       "date": "2026-05-25",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33853,7 +33864,7 @@ const MAXLED_DATA = {
       "nota_fiscal": null
     },
     {
-      "id": "tx03075",
+      "id": "tx03076",
       "date": "2026-05-25",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33864,7 +33875,7 @@ const MAXLED_DATA = {
       "nota_fiscal": null
     },
     {
-      "id": "tx03076",
+      "id": "tx03077",
       "date": "2026-05-25",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33875,7 +33886,7 @@ const MAXLED_DATA = {
       "nota_fiscal": null
     },
     {
-      "id": "tx03077",
+      "id": "tx03078",
       "date": "2026-05-25",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33886,7 +33897,7 @@ const MAXLED_DATA = {
       "nota_fiscal": null
     },
     {
-      "id": "tx03078",
+      "id": "tx03079",
       "date": "2026-05-25",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33897,7 +33908,7 @@ const MAXLED_DATA = {
       "nota_fiscal": null
     },
     {
-      "id": "tx03079",
+      "id": "tx03080",
       "date": "2026-05-25",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33908,7 +33919,7 @@ const MAXLED_DATA = {
       "nota_fiscal": null
     },
     {
-      "id": "tx03080",
+      "id": "tx03081",
       "date": "2026-05-25",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33919,7 +33930,7 @@ const MAXLED_DATA = {
       "nota_fiscal": null
     },
     {
-      "id": "tx03081",
+      "id": "tx03082",
       "date": "2026-05-25",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33930,7 +33941,7 @@ const MAXLED_DATA = {
       "nota_fiscal": null
     },
     {
-      "id": "tx03082",
+      "id": "tx03083",
       "date": "2026-05-25",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33941,7 +33952,7 @@ const MAXLED_DATA = {
       "nota_fiscal": null
     },
     {
-      "id": "tx03083",
+      "id": "tx03084",
       "date": "2026-05-25",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33952,7 +33963,7 @@ const MAXLED_DATA = {
       "nota_fiscal": null
     },
     {
-      "id": "tx03084",
+      "id": "tx03085",
       "date": "2026-05-25",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33963,7 +33974,7 @@ const MAXLED_DATA = {
       "nota_fiscal": null
     },
     {
-      "id": "tx03085",
+      "id": "tx03086",
       "date": "2026-05-25",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33974,7 +33985,7 @@ const MAXLED_DATA = {
       "nota_fiscal": null
     },
     {
-      "id": "tx03086",
+      "id": "tx03087",
       "date": "2026-05-25",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33985,7 +33996,7 @@ const MAXLED_DATA = {
       "nota_fiscal": null
     },
     {
-      "id": "tx03087",
+      "id": "tx03088",
       "date": "2026-05-25",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -33996,7 +34007,7 @@ const MAXLED_DATA = {
       "nota_fiscal": null
     },
     {
-      "id": "tx03088",
+      "id": "tx03089",
       "date": "2026-05-25",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -34007,7 +34018,7 @@ const MAXLED_DATA = {
       "nota_fiscal": null
     },
     {
-      "id": "tx03089",
+      "id": "tx03090",
       "date": "2026-05-25",
       "division": "iluminacao",
       "basis": "nfe",
@@ -34018,7 +34029,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "1007"
     },
     {
-      "id": "tx03090",
+      "id": "tx03091",
       "date": "2026-05-25",
       "division": "iluminacao",
       "basis": "nfe",
@@ -34029,7 +34040,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "19326"
     },
     {
-      "id": "tx03091",
+      "id": "tx03092",
       "date": "2026-05-25",
       "division": "iluminacao",
       "basis": "nfe",
@@ -34040,7 +34051,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "207116"
     },
     {
-      "id": "tx03092",
+      "id": "tx03093",
       "date": "2026-05-25",
       "division": "iluminacao",
       "basis": "nfe",
@@ -34051,7 +34062,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "207157"
     },
     {
-      "id": "tx03093",
+      "id": "tx03094",
       "date": "2026-05-25",
       "division": "iluminacao",
       "basis": "nfe",
@@ -34062,7 +34073,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "24533"
     },
     {
-      "id": "tx03094",
+      "id": "tx03095",
       "date": "2026-05-25",
       "division": "iluminacao",
       "basis": "nfe",
@@ -34073,7 +34084,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "69100"
     },
     {
-      "id": "tx03095",
+      "id": "tx03096",
       "date": "2026-05-25",
       "division": "iluminacao",
       "basis": "nfe",
@@ -34084,7 +34095,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "76918"
     },
     {
-      "id": "tx03096",
+      "id": "tx03097",
       "date": "2026-05-25",
       "division": "iluminacao",
       "basis": "nfe",
@@ -34095,7 +34106,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "91779"
     },
     {
-      "id": "tx03097",
+      "id": "tx03098",
       "date": "2026-05-25",
       "division": "iluminacao",
       "basis": "nfe",
@@ -34106,7 +34117,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12661"
     },
     {
-      "id": "tx03098",
+      "id": "tx03099",
       "date": "2026-05-25",
       "division": "iluminacao",
       "basis": "nfe",
@@ -34117,7 +34128,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12662"
     },
     {
-      "id": "tx03099",
+      "id": "tx03100",
       "date": "2026-05-25",
       "division": "iluminacao",
       "basis": "nfe",
@@ -34128,7 +34139,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12663"
     },
     {
-      "id": "tx03100",
+      "id": "tx03101",
       "date": "2026-05-25",
       "division": "importacao",
       "basis": "financeiro",
@@ -34139,18 +34150,18 @@ const MAXLED_DATA = {
       "nota_fiscal": "825"
     },
     {
-      "id": "tx03101",
+      "id": "tx03102",
       "date": "2026-05-25",
       "division": "importacao",
       "basis": "financeiro",
       "flow": "saida",
-      "category": "GASTOS FICOS",
+      "category": "GASTOS FIXOS",
       "counterparty": "CARTÃO DE CRÉDITO",
       "value": 9323.04,
       "nota_fiscal": null
     },
     {
-      "id": "tx03102",
+      "id": "tx03103",
       "date": "2026-05-25",
       "division": "importacao",
       "basis": "financeiro",
@@ -34161,7 +34172,7 @@ const MAXLED_DATA = {
       "nota_fiscal": null
     },
     {
-      "id": "tx03103",
+      "id": "tx03104",
       "date": "2026-05-25",
       "division": "importacao",
       "basis": "nfe",
@@ -34172,7 +34183,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "850"
     },
     {
-      "id": "tx03104",
+      "id": "tx03105",
       "date": "2026-05-25",
       "division": "importacao",
       "basis": "nfe",
@@ -34183,7 +34194,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "851"
     },
     {
-      "id": "tx03105",
+      "id": "tx03106",
       "date": "2026-05-26",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -34194,7 +34205,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12692"
     },
     {
-      "id": "tx03106",
+      "id": "tx03107",
       "date": "2026-05-26",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -34205,7 +34216,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12677"
     },
     {
-      "id": "tx03107",
+      "id": "tx03108",
       "date": "2026-05-26",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -34216,7 +34227,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12555/01"
     },
     {
-      "id": "tx03108",
+      "id": "tx03109",
       "date": "2026-05-26",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -34227,7 +34238,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12551/01"
     },
     {
-      "id": "tx03109",
+      "id": "tx03110",
       "date": "2026-05-26",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -34238,7 +34249,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12488/03"
     },
     {
-      "id": "tx03110",
+      "id": "tx03111",
       "date": "2026-05-26",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -34249,7 +34260,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12546/01"
     },
     {
-      "id": "tx03111",
+      "id": "tx03112",
       "date": "2026-05-26",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -34260,7 +34271,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12507/02"
     },
     {
-      "id": "tx03112",
+      "id": "tx03113",
       "date": "2026-05-26",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -34271,7 +34282,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12390/03"
     },
     {
-      "id": "tx03113",
+      "id": "tx03114",
       "date": "2026-05-26",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -34282,7 +34293,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12166/03"
     },
     {
-      "id": "tx03114",
+      "id": "tx03115",
       "date": "2026-05-26",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -34293,7 +34304,7 @@ const MAXLED_DATA = {
       "nota_fiscal": null
     },
     {
-      "id": "tx03115",
+      "id": "tx03116",
       "date": "2026-05-26",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -34304,7 +34315,7 @@ const MAXLED_DATA = {
       "nota_fiscal": null
     },
     {
-      "id": "tx03116",
+      "id": "tx03117",
       "date": "2026-05-26",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -34315,7 +34326,7 @@ const MAXLED_DATA = {
       "nota_fiscal": null
     },
     {
-      "id": "tx03117",
+      "id": "tx03118",
       "date": "2026-05-26",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -34326,7 +34337,7 @@ const MAXLED_DATA = {
       "nota_fiscal": null
     },
     {
-      "id": "tx03118",
+      "id": "tx03119",
       "date": "2026-05-26",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -34337,7 +34348,7 @@ const MAXLED_DATA = {
       "nota_fiscal": null
     },
     {
-      "id": "tx03119",
+      "id": "tx03120",
       "date": "2026-05-26",
       "division": "iluminacao",
       "basis": "nfe",
@@ -34348,7 +34359,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "131594"
     },
     {
-      "id": "tx03120",
+      "id": "tx03121",
       "date": "2026-05-26",
       "division": "iluminacao",
       "basis": "nfe",
@@ -34359,7 +34370,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "207253"
     },
     {
-      "id": "tx03121",
+      "id": "tx03122",
       "date": "2026-05-26",
       "division": "iluminacao",
       "basis": "nfe",
@@ -34370,7 +34381,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "3754"
     },
     {
-      "id": "tx03122",
+      "id": "tx03123",
       "date": "2026-05-26",
       "division": "iluminacao",
       "basis": "nfe",
@@ -34381,7 +34392,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "76931"
     },
     {
-      "id": "tx03123",
+      "id": "tx03124",
       "date": "2026-05-26",
       "division": "iluminacao",
       "basis": "nfe",
@@ -34392,7 +34403,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12664"
     },
     {
-      "id": "tx03124",
+      "id": "tx03125",
       "date": "2026-05-26",
       "division": "iluminacao",
       "basis": "nfe",
@@ -34403,7 +34414,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12666"
     },
     {
-      "id": "tx03125",
+      "id": "tx03126",
       "date": "2026-05-26",
       "division": "importacao",
       "basis": "financeiro",
@@ -34414,7 +34425,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "826"
     },
     {
-      "id": "tx03126",
+      "id": "tx03127",
       "date": "2026-05-26",
       "division": "importacao",
       "basis": "financeiro",
@@ -34425,7 +34436,7 @@ const MAXLED_DATA = {
       "nota_fiscal": null
     },
     {
-      "id": "tx03127",
+      "id": "tx03128",
       "date": "2026-05-26",
       "division": "importacao",
       "basis": "nfe",
@@ -34436,7 +34447,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "172"
     },
     {
-      "id": "tx03128",
+      "id": "tx03129",
       "date": "2026-05-26",
       "division": "importacao",
       "basis": "nfe",
@@ -34447,7 +34458,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "449"
     },
     {
-      "id": "tx03129",
+      "id": "tx03130",
       "date": "2026-05-27",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -34458,7 +34469,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12559/01"
     },
     {
-      "id": "tx03130",
+      "id": "tx03131",
       "date": "2026-05-27",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -34469,7 +34480,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12558/01"
     },
     {
-      "id": "tx03131",
+      "id": "tx03132",
       "date": "2026-05-27",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -34480,7 +34491,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12557/01"
     },
     {
-      "id": "tx03132",
+      "id": "tx03133",
       "date": "2026-05-27",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -34491,7 +34502,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12550/01"
     },
     {
-      "id": "tx03133",
+      "id": "tx03134",
       "date": "2026-05-27",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -34502,7 +34513,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12540/01"
     },
     {
-      "id": "tx03134",
+      "id": "tx03135",
       "date": "2026-05-27",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -34513,7 +34524,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12494/03"
     },
     {
-      "id": "tx03135",
+      "id": "tx03136",
       "date": "2026-05-27",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -34524,7 +34535,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12493/03"
     },
     {
-      "id": "tx03136",
+      "id": "tx03137",
       "date": "2026-05-27",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -34535,7 +34546,7 @@ const MAXLED_DATA = {
       "nota_fiscal": null
     },
     {
-      "id": "tx03137",
+      "id": "tx03138",
       "date": "2026-05-27",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -34546,7 +34557,7 @@ const MAXLED_DATA = {
       "nota_fiscal": null
     },
     {
-      "id": "tx03138",
+      "id": "tx03139",
       "date": "2026-05-27",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -34557,7 +34568,7 @@ const MAXLED_DATA = {
       "nota_fiscal": null
     },
     {
-      "id": "tx03139",
+      "id": "tx03140",
       "date": "2026-05-27",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -34568,7 +34579,7 @@ const MAXLED_DATA = {
       "nota_fiscal": null
     },
     {
-      "id": "tx03140",
+      "id": "tx03141",
       "date": "2026-05-27",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -34579,7 +34590,7 @@ const MAXLED_DATA = {
       "nota_fiscal": null
     },
     {
-      "id": "tx03141",
+      "id": "tx03142",
       "date": "2026-05-27",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -34590,7 +34601,7 @@ const MAXLED_DATA = {
       "nota_fiscal": null
     },
     {
-      "id": "tx03142",
+      "id": "tx03143",
       "date": "2026-05-27",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -34601,7 +34612,7 @@ const MAXLED_DATA = {
       "nota_fiscal": null
     },
     {
-      "id": "tx03143",
+      "id": "tx03144",
       "date": "2026-05-27",
       "division": "iluminacao",
       "basis": "nfe",
@@ -34612,7 +34623,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "19116"
     },
     {
-      "id": "tx03144",
+      "id": "tx03145",
       "date": "2026-05-27",
       "division": "iluminacao",
       "basis": "nfe",
@@ -34623,7 +34634,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "33773"
     },
     {
-      "id": "tx03145",
+      "id": "tx03146",
       "date": "2026-05-27",
       "division": "iluminacao",
       "basis": "nfe",
@@ -34634,7 +34645,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "33821"
     },
     {
-      "id": "tx03146",
+      "id": "tx03147",
       "date": "2026-05-27",
       "division": "iluminacao",
       "basis": "nfe",
@@ -34643,17 +34654,6 @@ const MAXLED_DATA = {
       "counterparty": "ENERGYSPOT LTDA (0001371)",
       "value": 165.15,
       "nota_fiscal": "12667"
-    },
-    {
-      "id": "tx03147",
-      "date": "2026-05-27",
-      "division": "iluminacao",
-      "basis": "nfe",
-      "flow": "venda",
-      "category": null,
-      "counterparty": "ALLNETSYS COMERCIO IMPORTACAO E SERVICOS (0000036)",
-      "value": 120.0,
-      "nota_fiscal": "12668"
     },
     {
       "id": "tx03148",
@@ -35135,23 +35135,12 @@ const MAXLED_DATA = {
       "basis": "financeiro",
       "flow": "entrada",
       "category": null,
-      "counterparty": "GISLANE",
-      "value": 624.6,
-      "nota_fiscal": "SNF"
-    },
-    {
-      "id": "tx03192",
-      "date": "2026-05-29",
-      "division": "iluminacao",
-      "basis": "financeiro",
-      "flow": "entrada",
-      "category": null,
       "counterparty": "PSV",
       "value": 127.5,
       "nota_fiscal": "12690"
     },
     {
-      "id": "tx03193",
+      "id": "tx03192",
       "date": "2026-05-29",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -35162,7 +35151,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12532"
     },
     {
-      "id": "tx03194",
+      "id": "tx03193",
       "date": "2026-05-29",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -35173,7 +35162,7 @@ const MAXLED_DATA = {
       "nota_fiscal": "12531"
     },
     {
-      "id": "tx03195",
+      "id": "tx03194",
       "date": "2026-05-29",
       "division": "iluminacao",
       "basis": "financeiro",
@@ -35182,6 +35171,17 @@ const MAXLED_DATA = {
       "counterparty": "BPM INDUSTRIA E COMERCIO - 0000541",
       "value": 844.92,
       "nota_fiscal": "12527"
+    },
+    {
+      "id": "tx03195",
+      "date": "2026-05-29",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "GISLANE",
+      "value": 624.6,
+      "nota_fiscal": "SNF"
     },
     {
       "id": "tx03196",
@@ -35512,6 +35512,7376 @@ const MAXLED_DATA = {
       "counterparty": "MARTINS MARTINS SERVICOS ASSOCIADOS LTDA (0001381)",
       "value": 1500.0,
       "nota_fiscal": "859"
+    },
+    {
+      "id": "tx03226",
+      "date": "2026-06-01",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "NEW TEC",
+      "value": 321.45,
+      "nota_fiscal": "12573"
+    },
+    {
+      "id": "tx03227",
+      "date": "2026-06-01",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "TRANSFIX",
+      "value": 500.0,
+      "nota_fiscal": "12451"
+    },
+    {
+      "id": "tx03228",
+      "date": "2026-06-01",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "MARTEC MED INDUSTRIA E COMERCIO DE EQUIP - 0000788",
+      "value": 695.25,
+      "nota_fiscal": "12564/01"
+    },
+    {
+      "id": "tx03229",
+      "date": "2026-06-01",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "J.M. MAQUINAS AUTOMOTIVAS EIRELI - 0000387",
+      "value": 2911.3,
+      "nota_fiscal": "12561/01"
+    },
+    {
+      "id": "tx03230",
+      "date": "2026-06-01",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO - 0000660",
+      "value": 316.0,
+      "nota_fiscal": "12569/01"
+    },
+    {
+      "id": "tx03231",
+      "date": "2026-06-01",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
+      "value": 5545.98,
+      "nota_fiscal": "12404/03"
+    },
+    {
+      "id": "tx03232",
+      "date": "2026-06-01",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "NEWTESC TECNOLOGIA E COMERCIO LTDA - 0000106",
+      "value": 3729.0,
+      "nota_fiscal": "12501/02"
+    },
+    {
+      "id": "tx03233",
+      "date": "2026-06-01",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "NEWTESC TECNOLOGIA E COMERCIO LTDA - 0000106",
+      "value": 1643.75,
+      "nota_fiscal": "12424/03"
+    },
+    {
+      "id": "tx03234",
+      "date": "2026-06-01",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "SEBASTIAO CESAR GRASSI ELETRONICOS - M.. - 0000279",
+      "value": 851.8,
+      "nota_fiscal": "12541/02"
+    },
+    {
+      "id": "tx03235",
+      "date": "2026-06-01",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "IDALL COMERCIO ATACADISTA DE C",
+      "value": 1032.5,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03236",
+      "date": "2026-06-01",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "ACP",
+      "value": 1889.48,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03237",
+      "date": "2026-06-01",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "ACP",
+      "value": 502.77,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03238",
+      "date": "2026-06-01",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "ALLNETS",
+      "value": 135.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03239",
+      "date": "2026-06-01",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "IDALL COMERCIO ATACADISTA DE C",
+      "value": 339.64,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03240",
+      "date": "2026-06-01",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "BANCO",
+      "counterparty": "BOLETOS",
+      "value": 14.48,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03241",
+      "date": "2026-06-01",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "ALLNETSYS COMERCIO IMPORTACAO E SERVICOS (0000036)",
+      "value": 25.0,
+      "nota_fiscal": "33893"
+    },
+    {
+      "id": "tx03242",
+      "date": "2026-06-01",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "TITRONIX COMPONENTES ELETRONICOS LTDA (0000453)",
+      "value": 880.0,
+      "nota_fiscal": "759"
+    },
+    {
+      "id": "tx03243",
+      "date": "2026-06-01",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "IDALL COM. ATAC. DE COMP. ELETR. LTDA (0000011)",
+      "value": 1592.8,
+      "nota_fiscal": "76992"
+    },
+    {
+      "id": "tx03244",
+      "date": "2026-06-01",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "MEGAPIX COMP. ELETRONICOS LTDA-EPP (0000275)",
+      "value": 974.79,
+      "nota_fiscal": "92186"
+    },
+    {
+      "id": "tx03245",
+      "date": "2026-06-01",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "ITALO FRANKLIN DO NASCIMENTO ASSIS (0001382)",
+      "value": 107.96,
+      "nota_fiscal": "12697"
+    },
+    {
+      "id": "tx03246",
+      "date": "2026-06-01",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "ALLPRINT LATINA AUTOMACAO DE MAQUINAS EA (0000291)",
+      "value": 103.0,
+      "nota_fiscal": "12698"
+    },
+    {
+      "id": "tx03247",
+      "date": "2026-06-01",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "CITHEC CIENCIAS E TECNOLOGYA EIRELI (0000027)",
+      "value": 4584.62,
+      "nota_fiscal": "12699"
+    },
+    {
+      "id": "tx03248",
+      "date": "2026-06-01",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "ONLAB ASSISTENCIA TECNICA (0000549)",
+      "value": 827.0,
+      "nota_fiscal": "12700"
+    },
+    {
+      "id": "tx03249",
+      "date": "2026-06-01",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "BALMARC SOLUCOES EIRELI (0000011)",
+      "value": 85.0,
+      "nota_fiscal": "12701"
+    },
+    {
+      "id": "tx03250",
+      "date": "2026-06-01",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "J.M MAQUINAS",
+      "value": 5838.7,
+      "nota_fiscal": "827"
+    },
+    {
+      "id": "tx03251",
+      "date": "2026-06-01",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "IDALL",
+      "value": 1900.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03252",
+      "date": "2026-06-01",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "BANCO",
+      "counterparty": "BOLETO",
+      "value": 3.62,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03253",
+      "date": "2026-06-01",
+      "division": "importacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "ALLPRINT LATINA AUTOMACAO DE MAQUINAS EA (0000291)",
+      "value": 1200.0,
+      "nota_fiscal": "860"
+    },
+    {
+      "id": "tx03254",
+      "date": "2026-06-02",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "GISLANE",
+      "value": 624.6,
+      "nota_fiscal": "SNF"
+    },
+    {
+      "id": "tx03255",
+      "date": "2026-06-02",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "RYON MAQUINAS LTDA - 0000662",
+      "value": 1307.63,
+      "nota_fiscal": "12414/03"
+    },
+    {
+      "id": "tx03256",
+      "date": "2026-06-02",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "NEW TEC",
+      "value": 175.0,
+      "nota_fiscal": "59 snf"
+    },
+    {
+      "id": "tx03257",
+      "date": "2026-06-02",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "R. BAIAO INDUSTRIA E COMERCIO LTDA - 0000060",
+      "value": 2428.6,
+      "nota_fiscal": "12231/03"
+    },
+    {
+      "id": "tx03258",
+      "date": "2026-06-02",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "FIBERWAN IND. DE EQUIP. ELETTR. LTDA-EPP - 0000411",
+      "value": 338.0,
+      "nota_fiscal": "12571/01"
+    },
+    {
+      "id": "tx03259",
+      "date": "2026-06-02",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "TEC INSIDE COM. E PROJ. DE EQUIP. ELETR - 0000333",
+      "value": 1878.09,
+      "nota_fiscal": "12333/01"
+    },
+    {
+      "id": "tx03260",
+      "date": "2026-06-02",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "TEC INSIDE COM. E PROJ. DE EQUIP. ELETR - 0000333",
+      "value": 912.54,
+      "nota_fiscal": "12388/01"
+    },
+    {
+      "id": "tx03261",
+      "date": "2026-06-02",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "TEC INSIDE COM. E PROJ. DE EQUIP. ELETR - 0000333",
+      "value": 894.27,
+      "nota_fiscal": "12388/02"
+    },
+    {
+      "id": "tx03262",
+      "date": "2026-06-02",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "BANCO",
+      "counterparty": "BOLETOS",
+      "value": 9.05,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03263",
+      "date": "2026-06-02",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "FILCRILL",
+      "value": 535.54,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03264",
+      "date": "2026-06-02",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA",
+      "value": 360.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03265",
+      "date": "2026-06-02",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA",
+      "value": 277.8,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03266",
+      "date": "2026-06-02",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "CIRCUITRONIX",
+      "value": 236.25,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03267",
+      "date": "2026-06-02",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "BANCO",
+      "counterparty": "MDS",
+      "value": 364.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03268",
+      "date": "2026-06-02",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "MEGAPIX",
+      "value": 320.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03269",
+      "date": "2026-06-02",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "IMPORTAÇÃO",
+      "counterparty": "IMPORTAÇÃO",
+      "value": 7886.18,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03270",
+      "date": "2026-06-02",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "SECCON INDUSTRIA E COMERCIO LTDA (0000049)",
+      "value": 2144.84,
+      "nota_fiscal": "110265"
+    },
+    {
+      "id": "tx03271",
+      "date": "2026-06-02",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "TRICONECT COMERCIAL ELETR. LTDA (0000321)",
+      "value": 820.44,
+      "nota_fiscal": "19468"
+    },
+    {
+      "id": "tx03272",
+      "date": "2026-06-02",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "ALLNETSYS COMERCIO IMPORTACAO E SERVICOS (0000036)",
+      "value": 215.0,
+      "nota_fiscal": "33935"
+    },
+    {
+      "id": "tx03273",
+      "date": "2026-06-02",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "MPX COMPONENTES ELETRONICOS LTDA (0000303)",
+      "value": 397.5,
+      "nota_fiscal": "4436"
+    },
+    {
+      "id": "tx03274",
+      "date": "2026-06-02",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "GEO-ELETRON SEMICONDUTORES LTDA (0000432)",
+      "value": 623.6,
+      "nota_fiscal": "74921"
+    },
+    {
+      "id": "tx03275",
+      "date": "2026-06-02",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "CRISTOFOLI EQUIP. DE BIOSSEGURANCA LTDA (0000146)",
+      "value": 715.0,
+      "nota_fiscal": "12702"
+    },
+    {
+      "id": "tx03276",
+      "date": "2026-06-02",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "CRISTOFOLI EQUIP. DE BIOSSEGURANCA LTDA (0000146)",
+      "value": 390.0,
+      "nota_fiscal": "12703"
+    },
+    {
+      "id": "tx03277",
+      "date": "2026-06-02",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "NEWTESC TECNOLOGIA E COMERCIO LTDA (0000106)",
+      "value": 2958.0,
+      "nota_fiscal": "12704"
+    },
+    {
+      "id": "tx03278",
+      "date": "2026-06-02",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "LUIZ HENRIQUE GOMES DE OLIVEIRA (0001383)",
+      "value": 26.99,
+      "nota_fiscal": "12705"
+    },
+    {
+      "id": "tx03279",
+      "date": "2026-06-02",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "MARCELO VILACHAN BALEIRON (0001385)",
+      "value": 69.98,
+      "nota_fiscal": "12706"
+    },
+    {
+      "id": "tx03280",
+      "date": "2026-06-02",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "R. BAIAO INDUSTRIA E COMERCIO LTDA (0000060)",
+      "value": 10620.98,
+      "nota_fiscal": "12707"
+    },
+    {
+      "id": "tx03281",
+      "date": "2026-06-02",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "E DE OLIVEIRA BARBOSA ELETRONICA (0000898)",
+      "value": 447.0,
+      "nota_fiscal": "12708"
+    },
+    {
+      "id": "tx03282",
+      "date": "2026-06-02",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "FIBERWAN IND. DE EQUIP. ELETTR. LTDA-EPP (0000411)",
+      "value": 368.0,
+      "nota_fiscal": "12709"
+    },
+    {
+      "id": "tx03283",
+      "date": "2026-06-02",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "VITORIA INDUSTRIA ELETRONICA LTDA (0001305)",
+      "value": 1150.0,
+      "nota_fiscal": "12710"
+    },
+    {
+      "id": "tx03284",
+      "date": "2026-06-02",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "FOCUS TECNOLOGIA E SOLUCOES LTDA (0000742)",
+      "value": 1366.4,
+      "nota_fiscal": "12711"
+    },
+    {
+      "id": "tx03285",
+      "date": "2026-06-02",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "UNYLUNER",
+      "value": 450.0,
+      "nota_fiscal": "852"
+    },
+    {
+      "id": "tx03286",
+      "date": "2026-06-02",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "EMPRÉSTIMO",
+      "counterparty": "GIRO 6/48",
+      "value": 2822.54,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03287",
+      "date": "2026-06-02",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "EMPRÉSTIMO",
+      "counterparty": "SEGURO",
+      "value": 109.79,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03288",
+      "date": "2026-06-02",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "SÓCIOS",
+      "counterparty": "ALEX",
+      "value": 5000.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03289",
+      "date": "2026-06-02",
+      "division": "importacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "R. BAIAO INDUSTRIA E COMERCIO LTDA (0000060)",
+      "value": 777.9,
+      "nota_fiscal": "861"
+    },
+    {
+      "id": "tx03290",
+      "date": "2026-06-03",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "NEW TEC",
+      "value": 361.8,
+      "nota_fiscal": "12575"
+    },
+    {
+      "id": "tx03291",
+      "date": "2026-06-03",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "ELETROFELIX INDUSTRIA E COMERCIO LTDA - 0000477",
+      "value": 301.27,
+      "nota_fiscal": "12590/01"
+    },
+    {
+      "id": "tx03292",
+      "date": "2026-06-03",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "SIMPLES CONNECT INDUSTRIA E COMERCIO LTA - 0000308",
+      "value": 1319.0,
+      "nota_fiscal": "12568/01"
+    },
+    {
+      "id": "tx03293",
+      "date": "2026-06-03",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "VINTEK IND., COMERCIO E SERVICOS LTDA - 0000894",
+      "value": 1192.66,
+      "nota_fiscal": "12488/04"
+    },
+    {
+      "id": "tx03294",
+      "date": "2026-06-03",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "ORANGE",
+      "value": 198.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03295",
+      "date": "2026-06-03",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA",
+      "value": 249.21,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03296",
+      "date": "2026-06-03",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "BANCO",
+      "counterparty": "BOLETOS",
+      "value": 5.43,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03297",
+      "date": "2026-06-03",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FUNCIONÁRIOS",
+      "counterparty": "PLUXXE",
+      "value": 610.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03298",
+      "date": "2026-06-03",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FUNCIONÁRIOS",
+      "counterparty": "ALINE",
+      "value": 1800.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03299",
+      "date": "2026-06-03",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FUNCIONÁRIOS",
+      "counterparty": "TAMIRES",
+      "value": 1497.26,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03300",
+      "date": "2026-06-03",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FUNCIONÁRIOS",
+      "counterparty": "MATHEUS ROCHA",
+      "value": 2419.48,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03301",
+      "date": "2026-06-03",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FUNCIONÁRIOS",
+      "counterparty": "MATHEUS SOUZA",
+      "value": 1017.72,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03302",
+      "date": "2026-06-03",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "VETRONIC COMERCIO ELETRONICA LTDA (0000038)",
+      "value": 314.16,
+      "nota_fiscal": "24161"
+    },
+    {
+      "id": "tx03303",
+      "date": "2026-06-03",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "DIGICOMP ELETRONICA EIRELI (0000279)",
+      "value": 509.57,
+      "nota_fiscal": "30937"
+    },
+    {
+      "id": "tx03304",
+      "date": "2026-06-03",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "TRICOMP COMERCIAL ELETR. LTDA (0000278)",
+      "value": 134.2,
+      "nota_fiscal": "69239"
+    },
+    {
+      "id": "tx03305",
+      "date": "2026-06-03",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E (0000081)",
+      "value": 69.0,
+      "nota_fiscal": "12712"
+    },
+    {
+      "id": "tx03306",
+      "date": "2026-06-03",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "LORENA PESSANHA AZEREDO DE SOUZA (0001386)",
+      "value": 55.97,
+      "nota_fiscal": "12714"
+    },
+    {
+      "id": "tx03307",
+      "date": "2026-06-03",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "BRASMEDICAL IND. E COM. DE PRODUTOS PAR (0000017)",
+      "value": 1513.35,
+      "nota_fiscal": "12715"
+    },
+    {
+      "id": "tx03308",
+      "date": "2026-06-03",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "SALVIO EVILAZIO PEREIRA DE ARRUDA (0001387)",
+      "value": 34.99,
+      "nota_fiscal": "12716"
+    },
+    {
+      "id": "tx03309",
+      "date": "2026-06-03",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E (0000081)",
+      "value": 4982.7,
+      "nota_fiscal": "12717"
+    },
+    {
+      "id": "tx03310",
+      "date": "2026-06-03",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FUNCIONÁRIOS",
+      "counterparty": "INGRID",
+      "value": 1484.4,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03311",
+      "date": "2026-06-03",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FUNCIONÁRIOS",
+      "counterparty": "MONALISA",
+      "value": 1484.4,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03312",
+      "date": "2026-06-03",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FUNCIONÁRIOS",
+      "counterparty": "JOSÉ MARIA",
+      "value": 552.72,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03313",
+      "date": "2026-06-04",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "BANCO",
+      "counterparty": "BOLETOS",
+      "value": 28.96,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03314",
+      "date": "2026-06-04",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "MKB",
+      "value": 2689.46,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03315",
+      "date": "2026-06-04",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "DV TEC",
+      "value": 641.46,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03316",
+      "date": "2026-06-04",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "IDALL COMERCIO ATACADISTA DE C",
+      "value": 660.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03317",
+      "date": "2026-06-04",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "REIMOLD",
+      "value": 1740.09,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03318",
+      "date": "2026-06-04",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "ZENNER",
+      "value": 290.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03319",
+      "date": "2026-06-04",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "ALLNETS",
+      "value": 120.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03320",
+      "date": "2026-06-05",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "PRODUPARK EQUIP. ELETRO. E IMP. LTDA - 0000056",
+      "value": 1171.78,
+      "nota_fiscal": "12452/03"
+    },
+    {
+      "id": "tx03321",
+      "date": "2026-06-05",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "PRODUPARK EQUIP. ELETRO. E IMP. LTDA - 0000056",
+      "value": 1586.0,
+      "nota_fiscal": "12453/02"
+    },
+    {
+      "id": "tx03322",
+      "date": "2026-06-05",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "RYON MAQUINAS LTDA - 0000662",
+      "value": 1318.0,
+      "nota_fiscal": "12582/01"
+    },
+    {
+      "id": "tx03323",
+      "date": "2026-06-05",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "VIEWMED IND. A E COM. DE PROD. MEDICOSA - 0000343",
+      "value": 375.0,
+      "nota_fiscal": "12574/01"
+    },
+    {
+      "id": "tx03324",
+      "date": "2026-06-05",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO - 0000660",
+      "value": 943.77,
+      "nota_fiscal": "12567/02"
+    },
+    {
+      "id": "tx03325",
+      "date": "2026-06-05",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "CR ENERGIA E INFORMATICA LTDA - 0001356",
+      "value": 908.0,
+      "nota_fiscal": "12593/01"
+    },
+    {
+      "id": "tx03326",
+      "date": "2026-06-05",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "R. BAIAO INDUSTRIA E COMERCIO LTDA - 0000060",
+      "value": 3883.54,
+      "nota_fiscal": "12572/01"
+    },
+    {
+      "id": "tx03327",
+      "date": "2026-06-05",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "MDI PROD E SISTEMAS LTDA - 0000101",
+      "value": 131.85,
+      "nota_fiscal": "12592/01"
+    },
+    {
+      "id": "tx03328",
+      "date": "2026-06-05",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "NIATRON IND. E COM. DE EQUIP. ELETRO. - 0000143",
+      "value": 839.96,
+      "nota_fiscal": "12576/01"
+    },
+    {
+      "id": "tx03329",
+      "date": "2026-06-05",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "BPM INDUSTRIA E COMERCIO - 0000541",
+      "value": 844.92,
+      "nota_fiscal": "12527/03"
+    },
+    {
+      "id": "tx03330",
+      "date": "2026-06-05",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "SSAT SINALIZACAO E ADESIVOS EIRELI EPP - 0000072",
+      "value": 700.0,
+      "nota_fiscal": "12583/01"
+    },
+    {
+      "id": "tx03331",
+      "date": "2026-06-05",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "GG INDUSTRIA DE EQUIPAMENTOS MEDICOS LA - 0000592",
+      "value": 689.0,
+      "nota_fiscal": "12573/01"
+    },
+    {
+      "id": "tx03332",
+      "date": "2026-06-05",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO - 0000660",
+      "value": 1013.0,
+      "nota_fiscal": "12591/01"
+    },
+    {
+      "id": "tx03333",
+      "date": "2026-06-05",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "NEXXO EQUIPAMENTOS ELETRONICOS LTDA - 0000225",
+      "value": 416.33,
+      "nota_fiscal": "12532/03"
+    },
+    {
+      "id": "tx03334",
+      "date": "2026-06-05",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
+      "value": 540.7,
+      "nota_fiscal": "12595/01"
+    },
+    {
+      "id": "tx03335",
+      "date": "2026-06-05",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "MARTEC MED INDUSTRIA E COMERCIO DE EQUIP - 0000788",
+      "value": 326.0,
+      "nota_fiscal": "12587/01"
+    },
+    {
+      "id": "tx03336",
+      "date": "2026-06-05",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA",
+      "value": 360.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03337",
+      "date": "2026-06-05",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "TRANSPORTES",
+      "counterparty": "EMPRESA BRASILEIRA DE CORREIOS",
+      "value": 2278.66,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03338",
+      "date": "2026-06-05",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "GASTOS FIXOS",
+      "counterparty": "PROSPERCLOUD - SISTEMA",
+      "value": 961.49,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03339",
+      "date": "2026-06-05",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "ACP",
+      "value": 493.71,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03340",
+      "date": "2026-06-05",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "DV TEC",
+      "value": 631.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03341",
+      "date": "2026-06-05",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "IDALL COMERCIO ATACADISTA DE C",
+      "value": 836.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03342",
+      "date": "2026-06-05",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "RYON MAQUINA",
+      "value": 900.0,
+      "nota_fiscal": "830/01"
+    },
+    {
+      "id": "tx03343",
+      "date": "2026-06-05",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "CR ENERGIA",
+      "value": 600.0,
+      "nota_fiscal": "833/01"
+    },
+    {
+      "id": "tx03344",
+      "date": "2026-06-05",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "JCL ELETRONICA",
+      "value": 2505.6,
+      "nota_fiscal": "832/01"
+    },
+    {
+      "id": "tx03345",
+      "date": "2026-06-05",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "R. BAIAO INDUSTRIA",
+      "value": 516.34,
+      "nota_fiscal": "829/01"
+    },
+    {
+      "id": "tx03346",
+      "date": "2026-06-05",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "BANCO",
+      "counterparty": "BOLETO",
+      "value": 7.24,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03347",
+      "date": "2026-06-08",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "JAIRO",
+      "value": 892.5,
+      "nota_fiscal": "12578"
+    },
+    {
+      "id": "tx03348",
+      "date": "2026-06-08",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "BALMARC",
+      "value": 85.0,
+      "nota_fiscal": "12701"
+    },
+    {
+      "id": "tx03349",
+      "date": "2026-06-08",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "MS TECNOPON EQUIPAMENTOS ESPECIAIS LTDA - 0000373",
+      "value": 2398.84,
+      "nota_fiscal": "12586/01"
+    },
+    {
+      "id": "tx03350",
+      "date": "2026-06-08",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "PRIMUS IMPORT COMERCIO DE IMPORTADOS - 0000048",
+      "value": 682.38,
+      "nota_fiscal": "12599/01"
+    },
+    {
+      "id": "tx03351",
+      "date": "2026-06-08",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "J.M. MAQUINAS AUTOMOTIVAS EIRELI - 0000387",
+      "value": 1279.0,
+      "nota_fiscal": "12606/01"
+    },
+    {
+      "id": "tx03352",
+      "date": "2026-06-08",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "HCM MALTA INDUSTRIA DE BRINQUEDOS - 0000181",
+      "value": 803.5,
+      "nota_fiscal": "12533/02"
+    },
+    {
+      "id": "tx03353",
+      "date": "2026-06-08",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "SEC POWER PAINEIS ELETRICOS LTDA - 0001355",
+      "value": 306.0,
+      "nota_fiscal": "12602/01"
+    },
+    {
+      "id": "tx03354",
+      "date": "2026-06-08",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "ZENER COMPONENTES ELETRONICOS LTDA - ME - 0000142",
+      "value": 173.75,
+      "nota_fiscal": "12597/01"
+    },
+    {
+      "id": "tx03355",
+      "date": "2026-06-08",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "ELETROFELIX INDUSTRIA E COMERCIO LTDA - 0000477",
+      "value": 730.75,
+      "nota_fiscal": "12570/01"
+    },
+    {
+      "id": "tx03356",
+      "date": "2026-06-08",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "JOSE PEREIRA SANTOS 34821198568 - 0000120",
+      "value": 325.25,
+      "nota_fiscal": "12549/01"
+    },
+    {
+      "id": "tx03357",
+      "date": "2026-06-08",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "FOCUS TECNOLOGIA E SOLUCOES LTDA - 0000742",
+      "value": 1039.29,
+      "nota_fiscal": "12482/01"
+    },
+    {
+      "id": "tx03358",
+      "date": "2026-06-08",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "R. BAIAO INDUSTRIA E COMERCIO LTDA - 0000060",
+      "value": 3909.79,
+      "nota_fiscal": "12457/02"
+    },
+    {
+      "id": "tx03359",
+      "date": "2026-06-08",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "FOCUS TECNOLOGIA E SOLUCOES LTDA - 0000742",
+      "value": 587.94,
+      "nota_fiscal": "12448/02"
+    },
+    {
+      "id": "tx03360",
+      "date": "2026-06-08",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "DELTAS SUPRIMENTOS",
+      "value": 1143.7,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03361",
+      "date": "2026-06-08",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "E2E IND COMERCIO COMPONENTES",
+      "value": 1324.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03362",
+      "date": "2026-06-08",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA",
+      "value": 387.39,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03363",
+      "date": "2026-06-08",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "MDS COMPONENTES ELETRONICOS LT",
+      "value": 557.5,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03364",
+      "date": "2026-06-08",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "A TREE 2012 LUMINARIAS UNIPESS",
+      "value": 676.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03365",
+      "date": "2026-06-08",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "ACP C A COMP ELETRONICOS LTDA",
+      "value": 442.85,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03366",
+      "date": "2026-06-08",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "ELCOMP COMERCIO C E LTDA EPP",
+      "value": 613.78,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03367",
+      "date": "2026-06-08",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA",
+      "value": 657.7,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03368",
+      "date": "2026-06-08",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "ACP C A COMP ELETRONICOS LTDA",
+      "value": 487.44,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03369",
+      "date": "2026-06-08",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "FASTCOMP COMERCIAL ELETRONICA",
+      "value": 546.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03370",
+      "date": "2026-06-08",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "ACP C A COMP ELETRONICOS LTDA",
+      "value": 3044.94,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03371",
+      "date": "2026-06-08",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "ACP C A COMP ELETRONICOS LTDA",
+      "value": 683.63,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03372",
+      "date": "2026-06-08",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "VETRONIC COM ELETRONICA LTDA",
+      "value": 1003.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03373",
+      "date": "2026-06-08",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "BANCO",
+      "counterparty": "BOLETOS",
+      "value": 19.91,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03374",
+      "date": "2026-06-08",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "GUSTAVO FABRICIO GOMES DA SILVA (C) (0001373)",
+      "value": 29.99,
+      "nota_fiscal": "12672"
+    },
+    {
+      "id": "tx03375",
+      "date": "2026-06-08",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "VETRONIC COMERCIO ELETRONICA LTDA (0000038)",
+      "value": 3137.35,
+      "nota_fiscal": "24196"
+    },
+    {
+      "id": "tx03376",
+      "date": "2026-06-08",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "ACP COMERCIO ATACADISTA DE COMPONENTES E (0000249)",
+      "value": 1219.33,
+      "nota_fiscal": "264330"
+    },
+    {
+      "id": "tx03377",
+      "date": "2026-06-08",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E (0000081)",
+      "value": 4233.95,
+      "nota_fiscal": "12718"
+    },
+    {
+      "id": "tx03378",
+      "date": "2026-06-08",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E (0000081)",
+      "value": 933.76,
+      "nota_fiscal": "12719"
+    },
+    {
+      "id": "tx03379",
+      "date": "2026-06-08",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "ALLPRINT LATIN",
+      "value": 1175.0,
+      "nota_fiscal": "836/01"
+    },
+    {
+      "id": "tx03380",
+      "date": "2026-06-08",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "TAP ELETRO",
+      "value": 2380.0,
+      "nota_fiscal": "834/01"
+    },
+    {
+      "id": "tx03381",
+      "date": "2026-06-08",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "JOSE PEREIRA SANTOS",
+      "value": 90.34,
+      "nota_fiscal": "824/01"
+    },
+    {
+      "id": "tx03382",
+      "date": "2026-06-08",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "IDALL",
+      "value": 2516.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03383",
+      "date": "2026-06-08",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "BANCO",
+      "counterparty": "BOLETO",
+      "value": 5.43,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03384",
+      "date": "2026-06-09",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "NEW TEC",
+      "value": 256.0,
+      "nota_fiscal": "12577"
+    },
+    {
+      "id": "tx03385",
+      "date": "2026-06-09",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "BRJ",
+      "value": 1121.2,
+      "nota_fiscal": "snf 12585"
+    },
+    {
+      "id": "tx03386",
+      "date": "2026-06-09",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "VALNEI",
+      "value": 618.5,
+      "nota_fiscal": "12748"
+    },
+    {
+      "id": "tx03387",
+      "date": "2026-06-09",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "LUCIANO da Mata",
+      "value": 580.8,
+      "nota_fiscal": "12732"
+    },
+    {
+      "id": "tx03388",
+      "date": "2026-06-09",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "ARIELTEK INDUSTRIA E COMERCIO LTDA - 0000314",
+      "value": 928.14,
+      "nota_fiscal": "12610/01"
+    },
+    {
+      "id": "tx03389",
+      "date": "2026-06-09",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "PRODUTOS ELETRONICOS FRATA LTDA - 0000223",
+      "value": 610.0,
+      "nota_fiscal": "12607/01"
+    },
+    {
+      "id": "tx03390",
+      "date": "2026-06-09",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "ALLPRINT LATINA AUTOMACAO DE MAQUINAS EA - 0000291",
+      "value": 478.0,
+      "nota_fiscal": "12605/01"
+    },
+    {
+      "id": "tx03391",
+      "date": "2026-06-09",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
+      "value": 438.48,
+      "nota_fiscal": "12600/01"
+    },
+    {
+      "id": "tx03392",
+      "date": "2026-06-09",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO - 0000660",
+      "value": 1163.75,
+      "nota_fiscal": "12465/03"
+    },
+    {
+      "id": "tx03393",
+      "date": "2026-06-09",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "BANCO",
+      "counterparty": "BOLETOS",
+      "value": 9.05,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03394",
+      "date": "2026-06-09",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "ORIELEC",
+      "value": 888.01,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03395",
+      "date": "2026-06-09",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "LECOMP",
+      "value": 59.4,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03396",
+      "date": "2026-06-09",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "ACP C A COMP ELETRONICOS LTDA",
+      "value": 468.13,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03397",
+      "date": "2026-06-09",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "MULT COMERCIAL LT",
+      "value": 520.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03398",
+      "date": "2026-06-09",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "TRICOMP COMERCIAL E LTDA",
+      "value": 328.6,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03399",
+      "date": "2026-06-09",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "FILCRILL COMPONENTES ELETRONIC",
+      "value": 826.34,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03400",
+      "date": "2026-06-09",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "MDS COMPONENTES ELETRONICOS LT",
+      "value": 411.75,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03401",
+      "date": "2026-06-09",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "S-OHM COMERCIAL LTDA",
+      "value": 75.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03402",
+      "date": "2026-06-09",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "LECOMP Com. de Comp. Eletronicos LTDA (0000312)",
+      "value": 59.4,
+      "nota_fiscal": "117554"
+    },
+    {
+      "id": "tx03403",
+      "date": "2026-06-09",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "TRICONECT COMERCIAL ELETR. LTDA (0000321)",
+      "value": 220.0,
+      "nota_fiscal": "19597"
+    },
+    {
+      "id": "tx03404",
+      "date": "2026-06-09",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "MKB ELETRONICA LTDA (0000088)",
+      "value": 2347.83,
+      "nota_fiscal": "54040"
+    },
+    {
+      "id": "tx03405",
+      "date": "2026-06-09",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E (0000081)",
+      "value": 1645.0,
+      "nota_fiscal": "12720"
+    },
+    {
+      "id": "tx03406",
+      "date": "2026-06-09",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "ELETROFELIX INDUSTRIA E COMERCIO LTDA (0000477)",
+      "value": 530.5,
+      "nota_fiscal": "12722"
+    },
+    {
+      "id": "tx03407",
+      "date": "2026-06-09",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "VITORIA INDUSTRIA ELETRONICA LTDA (0001305)",
+      "value": 1774.0,
+      "nota_fiscal": "12723"
+    },
+    {
+      "id": "tx03408",
+      "date": "2026-06-09",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "RUMO HENPTEC",
+      "value": 5741.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03409",
+      "date": "2026-06-10",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "NEW TEC",
+      "value": 160.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03410",
+      "date": "2026-06-10",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "FZW",
+      "value": 740.8,
+      "nota_fiscal": "12749"
+    },
+    {
+      "id": "tx03411",
+      "date": "2026-06-10",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "VINTEK IND., COMERCIO E SERVICOS LTDA - 0000894",
+      "value": 4732.77,
+      "nota_fiscal": "12390"
+    },
+    {
+      "id": "tx03412",
+      "date": "2026-06-10",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
+      "value": 2548.7,
+      "nota_fiscal": "12616"
+    },
+    {
+      "id": "tx03413",
+      "date": "2026-06-10",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "NEWTESC TECNOLOGIA E COMERCIO LTDA - 0000106",
+      "value": 979.5,
+      "nota_fiscal": "12618"
+    },
+    {
+      "id": "tx03414",
+      "date": "2026-06-10",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "BANCO",
+      "counterparty": "BOLETOS",
+      "value": 5.43,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03415",
+      "date": "2026-06-10",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "COMP TOTAL C I C ELETRONICOS",
+      "value": 562.74,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03416",
+      "date": "2026-06-10",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "ETHERIC LIGHT LIDER",
+      "value": 204.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03417",
+      "date": "2026-06-10",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "TRICOMP COMERCIAL E LTDA",
+      "value": 797.6,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03418",
+      "date": "2026-06-10",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "DMAX ELETRONICA",
+      "value": 300.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03419",
+      "date": "2026-06-10",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "ALLNETSYS COMERCIO I S LTDA",
+      "value": 140.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03420",
+      "date": "2026-06-10",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FUNCIONÁRIOS",
+      "counterparty": "SINDICATO DOS COMERCIARIOS DE",
+      "value": 65.37,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03421",
+      "date": "2026-06-10",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "MKB SENSORES LTDA",
+      "value": 1784.82,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03422",
+      "date": "2026-06-10",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "SEGURO SAÚDE",
+      "counterparty": "PORTO SEGURO SEGURO SAUDE S",
+      "value": 2620.16,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03423",
+      "date": "2026-06-10",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "MDS COMPONENTES ELETRONICOS LTDA (0000297)",
+      "value": 617.0,
+      "nota_fiscal": "4519"
+    },
+    {
+      "id": "tx03424",
+      "date": "2026-06-10",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "JOÃO DAGUIEL (0001389)",
+      "value": 12.99,
+      "nota_fiscal": "12725"
+    },
+    {
+      "id": "tx03425",
+      "date": "2026-06-10",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "WHASHINGTON DE SOUZA MENDES GELIO (0001391)",
+      "value": 21.99,
+      "nota_fiscal": "12726"
+    },
+    {
+      "id": "tx03426",
+      "date": "2026-06-10",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "CJS DOS SANTOS GONDOLAS (0000637)",
+      "value": 2447.8,
+      "nota_fiscal": "12727"
+    },
+    {
+      "id": "tx03427",
+      "date": "2026-06-10",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "MS TECNOPON EQUIPAMENTOS ESPECIAIS LTDA (0000373)",
+      "value": 1586.0,
+      "nota_fiscal": "12728"
+    },
+    {
+      "id": "tx03428",
+      "date": "2026-06-10",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "RENEW GROUP LTDA (0001390)",
+      "value": 14.99,
+      "nota_fiscal": "12729"
+    },
+    {
+      "id": "tx03429",
+      "date": "2026-06-10",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "ARIELTEK INDUSTRIA E COMERCIO LTDA (0000314)",
+      "value": 1092.24,
+      "nota_fiscal": "12730"
+    },
+    {
+      "id": "tx03430",
+      "date": "2026-06-10",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "PEDRO HENRIQUE DA MATA (0001332)",
+      "value": 580.8,
+      "nota_fiscal": "12732"
+    },
+    {
+      "id": "tx03431",
+      "date": "2026-06-10",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "SIGMED EQUIPAMENTOS ELETRONICOS LTDA EPP (0000064)",
+      "value": 793.5,
+      "nota_fiscal": "12733"
+    },
+    {
+      "id": "tx03432",
+      "date": "2026-06-10",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "ROYALCOMP",
+      "value": 987.5,
+      "nota_fiscal": "835"
+    },
+    {
+      "id": "tx03433",
+      "date": "2026-06-10",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "BANCO",
+      "counterparty": "BOLETO",
+      "value": 1.81,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03434",
+      "date": "2026-06-11",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "VINTEK IND., COMERCIO E SERVICOS LTDA - 0000894",
+      "value": 3033.06,
+      "nota_fiscal": "12622/01"
+    },
+    {
+      "id": "tx03435",
+      "date": "2026-06-11",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "SIMPLES CONNECT INDUSTRIA E COMERCIO LTA - 0000308",
+      "value": 1800.0,
+      "nota_fiscal": "12612/01"
+    },
+    {
+      "id": "tx03436",
+      "date": "2026-06-11",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "R. BAIAO INDUSTRIA E COMERCIO LTDA - 0000060",
+      "value": 638.62,
+      "nota_fiscal": "12603/01"
+    },
+    {
+      "id": "tx03437",
+      "date": "2026-06-11",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "DIGISYSTEM IND. DE SIST. ELETRO. LTDA - 0000040",
+      "value": 1553.0,
+      "nota_fiscal": "12611/01"
+    },
+    {
+      "id": "tx03438",
+      "date": "2026-06-11",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
+      "value": 1197.84,
+      "nota_fiscal": "12540/02"
+    },
+    {
+      "id": "tx03439",
+      "date": "2026-06-11",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO - 0000660",
+      "value": 943.77,
+      "nota_fiscal": "12567"
+    },
+    {
+      "id": "tx03440",
+      "date": "2026-06-11",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "MDI PROD E SISTEMAS LTDA - 0000101",
+      "value": 583.85,
+      "nota_fiscal": "12592"
+    },
+    {
+      "id": "tx03441",
+      "date": "2026-06-11",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "BANCO",
+      "counterparty": "BOLETOS",
+      "value": 12.67,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03442",
+      "date": "2026-06-11",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "DV TECNOLOGIA ELETROELETRONICA",
+      "value": 641.46,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03443",
+      "date": "2026-06-11",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "ACP C A COMP ELETRONICOS LTDA",
+      "value": 548.05,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03444",
+      "date": "2026-06-11",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "CIRCUITRONIX ELETRO E LTDA",
+      "value": 567.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03445",
+      "date": "2026-06-11",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "TRICONECT COMERCIAL ELETRONICA",
+      "value": 790.72,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03446",
+      "date": "2026-06-11",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "SQUIB TECNOLOGIA E I E LTDA",
+      "value": 1003.74,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03447",
+      "date": "2026-06-11",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 123.86,
+      "nota_fiscal": "208488"
+    },
+    {
+      "id": "tx03448",
+      "date": "2026-06-11",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 273.2,
+      "nota_fiscal": "208568"
+    },
+    {
+      "id": "tx03449",
+      "date": "2026-06-11",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "ACP COMERCIO ATACADISTA DE COMPONENTES E (0000249)",
+      "value": 12053.19,
+      "nota_fiscal": "264468"
+    },
+    {
+      "id": "tx03450",
+      "date": "2026-06-11",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "ALLNETSYS COMERCIO IMPORTACAO E SERVICOS (0000036)",
+      "value": 255.0,
+      "nota_fiscal": "34038"
+    },
+    {
+      "id": "tx03451",
+      "date": "2026-06-11",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "ALLNETSYS COMERCIO IMPORTACAO E SERVICOS (0000036)",
+      "value": 212.5,
+      "nota_fiscal": "34052"
+    },
+    {
+      "id": "tx03452",
+      "date": "2026-06-11",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "TRICOMP COMERCIAL ELETR. LTDA (0000278)",
+      "value": 816.2,
+      "nota_fiscal": "69298"
+    },
+    {
+      "id": "tx03453",
+      "date": "2026-06-11",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "IDALL COM. ATAC. DE COMP. ELETR. LTDA (0000011)",
+      "value": 987.0,
+      "nota_fiscal": "77100"
+    },
+    {
+      "id": "tx03454",
+      "date": "2026-06-11",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "IDALL COM. ATAC. DE COMP. ELETR. LTDA (0000011)",
+      "value": 2626.2,
+      "nota_fiscal": "77117"
+    },
+    {
+      "id": "tx03455",
+      "date": "2026-06-11",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "TRANSFORM TECNOLOGIA DE PONTA LTDA (0001388)",
+      "value": 1500.0,
+      "nota_fiscal": "12734"
+    },
+    {
+      "id": "tx03456",
+      "date": "2026-06-11",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "CLEYTON RAMOS NOGUEIRA (0001370)",
+      "value": 35.98,
+      "nota_fiscal": "12735"
+    },
+    {
+      "id": "tx03457",
+      "date": "2026-06-11",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "REGINALDO DOS SANTOS VIEIRA (0001396)",
+      "value": 26.99,
+      "nota_fiscal": "12736"
+    },
+    {
+      "id": "tx03458",
+      "date": "2026-06-11",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "NEXXO EQUIPAMENTOS ELETRONICOS LTDA (0000225)",
+      "value": 419.0,
+      "nota_fiscal": "12737"
+    },
+    {
+      "id": "tx03459",
+      "date": "2026-06-11",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "VIEWMED IND. A E COM. DE PROD. MEDICOSA (0000343)",
+      "value": 492.2,
+      "nota_fiscal": "12738"
+    },
+    {
+      "id": "tx03460",
+      "date": "2026-06-11",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "DIGISYSTEM IND. DE SIST. ELETRO. LTDA (0000040)",
+      "value": 1596.6,
+      "nota_fiscal": "12740"
+    },
+    {
+      "id": "tx03461",
+      "date": "2026-06-11",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "TRANSPORTES",
+      "counterparty": "DHL",
+      "value": 1167.25,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03462",
+      "date": "2026-06-11",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "LS",
+      "value": 1834.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03463",
+      "date": "2026-06-11",
+      "division": "importacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "DIGISYSTEM IND. DE SIST. ELETRO. LTDA (0000040)",
+      "value": 640.0,
+      "nota_fiscal": "862"
+    },
+    {
+      "id": "tx03464",
+      "date": "2026-06-12",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "INLINE",
+      "value": 349.7,
+      "nota_fiscal": "12742"
+    },
+    {
+      "id": "tx03465",
+      "date": "2026-06-12",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "T.G.L",
+      "value": 97.0,
+      "nota_fiscal": "12370"
+    },
+    {
+      "id": "tx03466",
+      "date": "2026-06-12",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "T.G.L",
+      "value": 36.0,
+      "nota_fiscal": "12743"
+    },
+    {
+      "id": "tx03467",
+      "date": "2026-06-12",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "BINDING ENERGY COMERCIO E SERVICOS EIREL - 0000489",
+      "value": 771.0,
+      "nota_fiscal": "12624/01"
+    },
+    {
+      "id": "tx03468",
+      "date": "2026-06-12",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "E DE OLIVEIRA BARBOSA ELETRONICA - 0000898",
+      "value": 934.87,
+      "nota_fiscal": "12619/01"
+    },
+    {
+      "id": "tx03469",
+      "date": "2026-06-12",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
+      "value": 728.8,
+      "nota_fiscal": "12554/02"
+    },
+    {
+      "id": "tx03470",
+      "date": "2026-06-12",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "SIMPLES CONNECT INDUSTRIA E COMERCIO LTA - 0000308",
+      "value": 570.0,
+      "nota_fiscal": "12553/02"
+    },
+    {
+      "id": "tx03471",
+      "date": "2026-06-12",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "ROYALCOMP COMPONENTES ELETR. LTDA - 0000570",
+      "value": 384.0,
+      "nota_fiscal": "12550/02"
+    },
+    {
+      "id": "tx03472",
+      "date": "2026-06-12",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS",
+      "value": 3500.0,
+      "nota_fiscal": "12477/02"
+    },
+    {
+      "id": "tx03473",
+      "date": "2026-06-12",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "BPM INDUSTRIA E COMERCIO - 0000541",
+      "value": 844.92,
+      "nota_fiscal": "12527/04"
+    },
+    {
+      "id": "tx03474",
+      "date": "2026-06-12",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "SÓCIOS",
+      "counterparty": "MARIA",
+      "value": 5000.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03475",
+      "date": "2026-06-12",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "DV TECNOLOGIA ELETROELETRONICA",
+      "value": 631.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03476",
+      "date": "2026-06-12",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "ACP C A COMP ELETRONICOS LTDA",
+      "value": 633.98,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03477",
+      "date": "2026-06-12",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "CIRCUITRONIX ELETRO E LTDA",
+      "value": 315.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03478",
+      "date": "2026-06-12",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "AIB COMERCIAL IMPORTACAO E EXP",
+      "value": 603.25,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03479",
+      "date": "2026-06-12",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "MEGAPIX COMPONENTES ELETRONICO",
+      "value": 208.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03480",
+      "date": "2026-06-12",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "IDALL COMERCIO ATACADISTA DE C",
+      "value": 666.07,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03481",
+      "date": "2026-06-12",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "ZENNER",
+      "value": 436.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03482",
+      "date": "2026-06-12",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "GASTOS FIXOS",
+      "counterparty": "TELEFONE / NET",
+      "value": 176.37,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03483",
+      "date": "2026-06-12",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA",
+      "value": 489.14,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03484",
+      "date": "2026-06-12",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "BANCO",
+      "counterparty": "BOLETOS",
+      "value": 12.67,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03485",
+      "date": "2026-06-12",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "ACP COMERCIO ATACADISTA DE COMPONENTES E (0000249)",
+      "value": 649.65,
+      "nota_fiscal": "264577"
+    },
+    {
+      "id": "tx03486",
+      "date": "2026-06-12",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "MAURICIO ANDREOTTI FABRIS (0001399)",
+      "value": 26.99,
+      "nota_fiscal": "12741"
+    },
+    {
+      "id": "tx03487",
+      "date": "2026-06-12",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "INLINE GERENC. EM PROJETOS LTDA (0000441)",
+      "value": 349.7,
+      "nota_fiscal": "12742"
+    },
+    {
+      "id": "tx03488",
+      "date": "2026-06-12",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "T.G.L. ELETRO ELETRONICO LTDA - ME (0000073)",
+      "value": 36.0,
+      "nota_fiscal": "12743"
+    },
+    {
+      "id": "tx03489",
+      "date": "2026-06-12",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "SEBASTIAO CESAR GRASSI ELETRONICOS - M.. (0000279)",
+      "value": 742.16,
+      "nota_fiscal": "12744"
+    },
+    {
+      "id": "tx03490",
+      "date": "2026-06-12",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "RUSSER BRASIL EIRELI (0000403)",
+      "value": 144.4,
+      "nota_fiscal": "12745"
+    },
+    {
+      "id": "tx03491",
+      "date": "2026-06-12",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "EXPOENTE TECNOLOGIA ELETRONICA LTDA (0000079)",
+      "value": 1098.0,
+      "nota_fiscal": "12747"
+    },
+    {
+      "id": "tx03492",
+      "date": "2026-06-12",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "VALNEI VIEIRA DA SILVA 00391345630 (0000070)",
+      "value": 618.5,
+      "nota_fiscal": "12748"
+    },
+    {
+      "id": "tx03493",
+      "date": "2026-06-12",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "FZW INNOVATION LTDA (0000848)",
+      "value": 740.8,
+      "nota_fiscal": "12749"
+    },
+    {
+      "id": "tx03494",
+      "date": "2026-06-12",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "TEC INSID",
+      "value": 5000.0,
+      "nota_fiscal": "12785"
+    },
+    {
+      "id": "tx03495",
+      "date": "2026-06-12",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "SEBASTIÃO",
+      "value": 15.3,
+      "nota_fiscal": "863"
+    },
+    {
+      "id": "tx03496",
+      "date": "2026-06-12",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "VINTEK",
+      "value": 336.0,
+      "nota_fiscal": "839"
+    },
+    {
+      "id": "tx03497",
+      "date": "2026-06-12",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "IDALL",
+      "value": 3723.63,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03498",
+      "date": "2026-06-12",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "BANCO",
+      "counterparty": "BOLETO",
+      "value": 3.62,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03499",
+      "date": "2026-06-12",
+      "division": "importacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "SEBASTIAO CESAR GRASSI ELETRONICOS - M.. (0000279)",
+      "value": 15.3,
+      "nota_fiscal": "863"
+    },
+    {
+      "id": "tx03500",
+      "date": "2026-06-15",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "ARSTA - 0000095",
+      "value": 417.0,
+      "nota_fiscal": "12628/01"
+    },
+    {
+      "id": "tx03501",
+      "date": "2026-06-15",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "VITORIA INDUSTRIA ELETRONICA LTDA - 0001305",
+      "value": 2520.0,
+      "nota_fiscal": "12631/01"
+    },
+    {
+      "id": "tx03502",
+      "date": "2026-06-15",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "RASATRONIC ELETRONICA INDUSTRIAL LTDA - 0000057",
+      "value": 452.46,
+      "nota_fiscal": "12630/01"
+    },
+    {
+      "id": "tx03503",
+      "date": "2026-06-15",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "FAST COMP COMERCIAL ELETRONICA LTDA - 0000569",
+      "value": 750.0,
+      "nota_fiscal": "12623/01"
+    },
+    {
+      "id": "tx03504",
+      "date": "2026-06-15",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "ELETROFELIX INDUSTRIA E COMERCIO LTDA - 0000477",
+      "value": 228.5,
+      "nota_fiscal": "12604/01"
+    },
+    {
+      "id": "tx03505",
+      "date": "2026-06-15",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "PRIMUS IMPORT COMERCIO DE IMPORTADOS - 0000048",
+      "value": 682.37,
+      "nota_fiscal": "12599/02"
+    },
+    {
+      "id": "tx03506",
+      "date": "2026-06-15",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "MARTEC MED INDUSTRIA E COMERCIO DE EQUIP - 0000788",
+      "value": 695.25,
+      "nota_fiscal": "12564/02"
+    },
+    {
+      "id": "tx03507",
+      "date": "2026-06-15",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "NEWTESC TECNOLOGIA E COMERCIO",
+      "value": 1643.75,
+      "nota_fiscal": "12424/04"
+    },
+    {
+      "id": "tx03508",
+      "date": "2026-06-15",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
+      "value": 5545.98,
+      "nota_fiscal": "12404/04"
+    },
+    {
+      "id": "tx03509",
+      "date": "2026-06-15",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "COMP TOTAL C I C ELETRONICOS",
+      "value": 626.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03510",
+      "date": "2026-06-15",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "IDALL COMERCIO ATACADISTA DE C",
+      "value": 931.73,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03511",
+      "date": "2026-06-15",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "IDALL COMERCIO ATACADISTA DE C",
+      "value": 1333.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03512",
+      "date": "2026-06-15",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "ACP C A COMP ELETRONICOS LTDA",
+      "value": 1890.06,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03513",
+      "date": "2026-06-15",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "ACP C A COMP ELETRONICOS LTDA",
+      "value": 502.77,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03514",
+      "date": "2026-06-15",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "COMP TOTAL C I C ELETRONICOS",
+      "value": 452.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03515",
+      "date": "2026-06-15",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "ACP C A COMP ELETRONICOS LTDA",
+      "value": 439.59,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03516",
+      "date": "2026-06-15",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "IDALL COMERCIO ATACADISTA DE C",
+      "value": 654.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03517",
+      "date": "2026-06-15",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA",
+      "value": 546.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03518",
+      "date": "2026-06-15",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "FASTCOMP COMERCIAL ELETRONICA",
+      "value": 545.99,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03519",
+      "date": "2026-06-15",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA",
+      "value": 714.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03520",
+      "date": "2026-06-15",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "ALLNETSYS COMERCIO I S LTDA",
+      "value": 320.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03521",
+      "date": "2026-06-15",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "TRICOMP COMERCIAL E LTDA",
+      "value": 93.28,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03522",
+      "date": "2026-06-15",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "TRICONECT COMERCIAL ELETRONICA",
+      "value": 79.5,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03523",
+      "date": "2026-06-15",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "TITRONIX COMPONENTES E LTDA",
+      "value": 880.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03524",
+      "date": "2026-06-15",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "GASTOS FIXOS",
+      "counterparty": "HANSER CONTABIL S S LTDA",
+      "value": 612.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03525",
+      "date": "2026-06-15",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "CIRCUITRONIX",
+      "value": 138.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03526",
+      "date": "2026-06-15",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "A TREE 2012 LUMINARIAS UNIPESS",
+      "value": 60.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03527",
+      "date": "2026-06-15",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "BANCO",
+      "counterparty": "BOLETOS",
+      "value": 16.29,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03528",
+      "date": "2026-06-15",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "LECOMP Com. de Comp. Eletronicos LTDA (0000312)",
+      "value": 50.0,
+      "nota_fiscal": "117607"
+    },
+    {
+      "id": "tx03529",
+      "date": "2026-06-15",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "MEGADEF COMPONENTES ELETRONICOS LTDA (0000039)",
+      "value": 266.11,
+      "nota_fiscal": "150420"
+    },
+    {
+      "id": "tx03530",
+      "date": "2026-06-15",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "TRICONECT COMERCIAL ELETR. LTDA (0000321)",
+      "value": 1944.04,
+      "nota_fiscal": "19683"
+    },
+    {
+      "id": "tx03531",
+      "date": "2026-06-15",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "MRD COMPONENTES ELETRONICOS LTDA. (0000388)",
+      "value": 357.0,
+      "nota_fiscal": "2030"
+    },
+    {
+      "id": "tx03532",
+      "date": "2026-06-15",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 1186.82,
+      "nota_fiscal": "208676"
+    },
+    {
+      "id": "tx03533",
+      "date": "2026-06-15",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 155.0,
+      "nota_fiscal": "208693"
+    },
+    {
+      "id": "tx03534",
+      "date": "2026-06-15",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "BEA COMERCIAL IMPORTACAOE EXPORTACAO LT (0000217)",
+      "value": 756.73,
+      "nota_fiscal": "555"
+    },
+    {
+      "id": "tx03535",
+      "date": "2026-06-15",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "TRICOMP COMERCIAL ELETR. LTDA (0000278)",
+      "value": 55.54,
+      "nota_fiscal": "69339"
+    },
+    {
+      "id": "tx03536",
+      "date": "2026-06-15",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "TRICOMP COMERCIAL ELETR. LTDA (0000278)",
+      "value": 1173.95,
+      "nota_fiscal": "69369"
+    },
+    {
+      "id": "tx03537",
+      "date": "2026-06-15",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "CIKA ELETRONICA DO BRASIL LTDA (0000021)",
+      "value": 392.35,
+      "nota_fiscal": "73043"
+    },
+    {
+      "id": "tx03538",
+      "date": "2026-06-15",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "IDALL COM. ATAC. DE COMP. ELETR. LTDA (0000011)",
+      "value": 970.0,
+      "nota_fiscal": "77140"
+    },
+    {
+      "id": "tx03539",
+      "date": "2026-06-15",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "BELKRON COMERCIAL (0000547)",
+      "value": 313.5,
+      "nota_fiscal": "12752"
+    },
+    {
+      "id": "tx03540",
+      "date": "2026-06-15",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E (0000081)",
+      "value": 405.78,
+      "nota_fiscal": "12754"
+    },
+    {
+      "id": "tx03541",
+      "date": "2026-06-15",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "EXPOENTE TECNOLOGIA ELETRONICA LTDA (0000079)",
+      "value": 652.0,
+      "nota_fiscal": "12755"
+    },
+    {
+      "id": "tx03542",
+      "date": "2026-06-15",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E (0000081)",
+      "value": 1321.45,
+      "nota_fiscal": "12756"
+    },
+    {
+      "id": "tx03543",
+      "date": "2026-06-15",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "CRISTOFOLI EQUIP. DE BIOSSEGURANCA LTDA (0000146)",
+      "value": 325.0,
+      "nota_fiscal": "12757"
+    },
+    {
+      "id": "tx03544",
+      "date": "2026-06-15",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "EMPRÉSTIMO",
+      "counterparty": "CAPITAL DE GIRO 17/48",
+      "value": 3744.24,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03545",
+      "date": "2026-06-15",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "GASTOS FIXOS",
+      "counterparty": "HANSER",
+      "value": 612.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03546",
+      "date": "2026-06-15",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "BANCO",
+      "counterparty": "BOLETO",
+      "value": 1.81,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03547",
+      "date": "2026-06-16",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "MAX LED ILMUN ITAU",
+      "value": 5000.0,
+      "nota_fiscal": "MOCIMENTO"
+    },
+    {
+      "id": "tx03548",
+      "date": "2026-06-16",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "BRJ",
+      "value": 1570.05,
+      "nota_fiscal": "SNF 12586"
+    },
+    {
+      "id": "tx03549",
+      "date": "2026-06-16",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "ARIELTEK INDUSTRIA E COMERCIO LTDA - 0000314",
+      "value": 928.13,
+      "nota_fiscal": "12610"
+    },
+    {
+      "id": "tx03550",
+      "date": "2026-06-16",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "T.G.L",
+      "value": 475.05,
+      "nota_fiscal": "12639"
+    },
+    {
+      "id": "tx03551",
+      "date": "2026-06-16",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "BANCO",
+      "counterparty": "BOLETOS",
+      "value": 5.43,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03552",
+      "date": "2026-06-16",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA",
+      "value": 360.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03553",
+      "date": "2026-06-16",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA",
+      "value": 434.21,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03554",
+      "date": "2026-06-16",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "TRICOMP COMERCIAL E LTDA",
+      "value": 572.4,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03555",
+      "date": "2026-06-16",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "FILCRILL COMPONENTES ELETRONIC",
+      "value": 826.34,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03556",
+      "date": "2026-06-16",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "MEGAPIX",
+      "value": 855.77,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03557",
+      "date": "2026-06-16",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "MOVIMENTO",
+      "counterparty": "MAX IMPORT ITAU",
+      "value": 1600.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03558",
+      "date": "2026-06-16",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "MOVIMENTO",
+      "counterparty": "MAX ILUM BRADESCO",
+      "value": 5000.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03559",
+      "date": "2026-06-16",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "PROELETRONICA COMPS ELETS IMPO E EXPO LT (0000273)",
+      "value": 386.0,
+      "nota_fiscal": "1497"
+    },
+    {
+      "id": "tx03560",
+      "date": "2026-06-16",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "FILCRILL COMPS ELETRS IMP E EXP EIRELLI (0000048)",
+      "value": 535.75,
+      "nota_fiscal": "17279"
+    },
+    {
+      "id": "tx03561",
+      "date": "2026-06-16",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "FILCRILL COMPS ELETRS IMP E EXP EIRELLI (0000048)",
+      "value": 107.94,
+      "nota_fiscal": "17290"
+    },
+    {
+      "id": "tx03562",
+      "date": "2026-06-16",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "VETRONIC COMERCIO ELETRONICA LTDA (0000038)",
+      "value": 302.01,
+      "nota_fiscal": "24237"
+    },
+    {
+      "id": "tx03563",
+      "date": "2026-06-16",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "ZENER COMPONENTES ELETRONICOS LTDA - ME (0000317)",
+      "value": 257.6,
+      "nota_fiscal": "24682"
+    },
+    {
+      "id": "tx03564",
+      "date": "2026-06-16",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "ZENER COMPONENTES ELETRONICOS LTDA - ME (0000317)",
+      "value": 960.0,
+      "nota_fiscal": "24691"
+    },
+    {
+      "id": "tx03565",
+      "date": "2026-06-16",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "TRELIK COMERCIAL IMPORTADORA LTDA (0000035)",
+      "value": 644.5,
+      "nota_fiscal": "32106"
+    },
+    {
+      "id": "tx03566",
+      "date": "2026-06-16",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "ALLNETSYS COMERCIO IMPORTACAO E SERVICOS (0000036)",
+      "value": 1195.0,
+      "nota_fiscal": "34076"
+    },
+    {
+      "id": "tx03567",
+      "date": "2026-06-16",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "A TREE 2012 LUMINARIAS EIRELI (0000248)",
+      "value": 60.0,
+      "nota_fiscal": "45482"
+    },
+    {
+      "id": "tx03568",
+      "date": "2026-06-16",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "IDALL COM. ATAC. DE COMP. ELETR. LTDA (0000011)",
+      "value": 1484.6,
+      "nota_fiscal": "77159"
+    },
+    {
+      "id": "tx03569",
+      "date": "2026-06-16",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "DMAX COMPONENTES ELETRONICOS LTDA (0000451)",
+      "value": 1820.0,
+      "nota_fiscal": "9182"
+    },
+    {
+      "id": "tx03570",
+      "date": "2026-06-16",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "FAVIANO SILVA DOS SANTOS (0001401)",
+      "value": 32.94,
+      "nota_fiscal": "12761"
+    },
+    {
+      "id": "tx03571",
+      "date": "2026-06-16",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "RODRIGO DANTAS PENA (0001402)",
+      "value": 33.98,
+      "nota_fiscal": "12762"
+    },
+    {
+      "id": "tx03572",
+      "date": "2026-06-16",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "WKS TECHNOLOGY DO BRASIL (0000208)",
+      "value": 200.0,
+      "nota_fiscal": "12763"
+    },
+    {
+      "id": "tx03573",
+      "date": "2026-06-16",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "EVOLUTEC INDUSTRIA E COMERCIO DE ELETROA (0000229)",
+      "value": 148.0,
+      "nota_fiscal": "12766"
+    },
+    {
+      "id": "tx03574",
+      "date": "2026-06-16",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "EVOLUTEC INDUSTRIA E COMERCIO DE ELETROA (0000229)",
+      "value": 44.0,
+      "nota_fiscal": "12767"
+    },
+    {
+      "id": "tx03575",
+      "date": "2026-06-16",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "FOCUS TECNOLOGIA E SOLUCOES LTDA (0000742)",
+      "value": 2245.0,
+      "nota_fiscal": "12768"
+    },
+    {
+      "id": "tx03576",
+      "date": "2026-06-16",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "CLENIO APARECIDO FURTADO DE OLIVEIA (0001400)",
+      "value": 44.1,
+      "nota_fiscal": "12769"
+    },
+    {
+      "id": "tx03577",
+      "date": "2026-06-16",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "SISTRANS SISTEMA DE SIN. DE TRANSITO LTA (0000067)",
+      "value": 678.1,
+      "nota_fiscal": "12770"
+    },
+    {
+      "id": "tx03578",
+      "date": "2026-06-16",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "ZILOCCHI ELETRONICA LTDA - EPP (0000130)",
+      "value": 2978.0,
+      "nota_fiscal": "12771"
+    },
+    {
+      "id": "tx03579",
+      "date": "2026-06-16",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "BRASMEDICAL IND. E COM. DE PRODUTOS PAR (0000017)",
+      "value": 4378.8,
+      "nota_fiscal": "12772"
+    },
+    {
+      "id": "tx03580",
+      "date": "2026-06-16",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "INSTITUTO MATTRON E INSERTS METALICOS LT (0000119)",
+      "value": 3420.38,
+      "nota_fiscal": "12773"
+    },
+    {
+      "id": "tx03581",
+      "date": "2026-06-16",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "INSTITUTO MATTRON E INSERTS METALICOS LT (0000119)",
+      "value": 800.56,
+      "nota_fiscal": "12774"
+    },
+    {
+      "id": "tx03582",
+      "date": "2026-06-16",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO (0000660)",
+      "value": 2852.3,
+      "nota_fiscal": "12775"
+    },
+    {
+      "id": "tx03583",
+      "date": "2026-06-16",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "ENGEMED INDUSTRIA E COMERCIO LTDA (0000663)",
+      "value": 148.0,
+      "nota_fiscal": "12776"
+    },
+    {
+      "id": "tx03584",
+      "date": "2026-06-16",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "MAX LED",
+      "value": 1600.0,
+      "nota_fiscal": "MOVIMENTO"
+    },
+    {
+      "id": "tx03585",
+      "date": "2026-06-16",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "simples conect",
+      "value": 7316.8,
+      "nota_fiscal": "838"
+    },
+    {
+      "id": "tx03586",
+      "date": "2026-06-16",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "BANCO",
+      "counterparty": "BOLETO",
+      "value": 1.81,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03587",
+      "date": "2026-06-16",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "LS",
+      "value": 786.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03588",
+      "date": "2026-06-16",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FUNCIONÁRIOS",
+      "counterparty": "INGRID",
+      "value": 200.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03589",
+      "date": "2026-06-16",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "TRANSPORTES",
+      "counterparty": "WANDO",
+      "value": 1000.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03590",
+      "date": "2026-06-17",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "BRASMEDICAL",
+      "value": 2143.74,
+      "nota_fiscal": "12627"
+    },
+    {
+      "id": "tx03591",
+      "date": "2026-06-17",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "FABRICIO DE LIMA",
+      "value": 185.3,
+      "nota_fiscal": "12787"
+    },
+    {
+      "id": "tx03592",
+      "date": "2026-06-17",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
+      "value": 282.0,
+      "nota_fiscal": "12644"
+    },
+    {
+      "id": "tx03593",
+      "date": "2026-06-17",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "J.M. MAQUINAS AUTOMOTIVAS EIRELI - 0000387",
+      "value": 1569.3,
+      "nota_fiscal": "12638"
+    },
+    {
+      "id": "tx03594",
+      "date": "2026-06-17",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "ELETROFELIX INDUSTRIA E COMERCIO LTDA - 0000477",
+      "value": 325.31,
+      "nota_fiscal": "12652"
+    },
+    {
+      "id": "tx03595",
+      "date": "2026-06-17",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "BANCO",
+      "counterparty": "BOLETOS",
+      "value": 7.24,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03596",
+      "date": "2026-06-17",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "COMP TOTAL C I C ELETRONICOS",
+      "value": 498.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03597",
+      "date": "2026-06-17",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "INSUMOS",
+      "counterparty": "GG COMERCIO DE EMBALAGENS LTDA",
+      "value": 360.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03598",
+      "date": "2026-06-17",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA",
+      "value": 1017.31,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03599",
+      "date": "2026-06-17",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "SOFT METAIS LTDA",
+      "value": 1372.01,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03600",
+      "date": "2026-06-17",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "TOTALITY COM TECNICO EM SEMICO",
+      "value": 1693.31,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03601",
+      "date": "2026-06-17",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "TRYNIT CREDERE CONSUL",
+      "value": 212.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03602",
+      "date": "2026-06-17",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "MDS COMPONENTES ELETRONICOS LT",
+      "value": 739.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03603",
+      "date": "2026-06-17",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "CIRCUITRONIX ELETRO ELETRONICA LTDA (0000442)",
+      "value": 138.0,
+      "nota_fiscal": "1093"
+    },
+    {
+      "id": "tx03604",
+      "date": "2026-06-17",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "E2E INDUSTRIA E COMERCIO DE COMPONENTES (0000306)",
+      "value": 1560.31,
+      "nota_fiscal": "123573"
+    },
+    {
+      "id": "tx03605",
+      "date": "2026-06-17",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "COBIX INDUSTRIA E COMERCIO DE METAIS LTD (0000397)",
+      "value": 5255.9,
+      "nota_fiscal": "146546"
+    },
+    {
+      "id": "tx03606",
+      "date": "2026-06-17",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "BREDA COMERCIO E IMPORTACAO LTDA - EPP (0000293)",
+      "value": 591.52,
+      "nota_fiscal": "20666"
+    },
+    {
+      "id": "tx03607",
+      "date": "2026-06-17",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 6390.55,
+      "nota_fiscal": "208815"
+    },
+    {
+      "id": "tx03608",
+      "date": "2026-06-17",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 7.29,
+      "nota_fiscal": "208835"
+    },
+    {
+      "id": "tx03609",
+      "date": "2026-06-17",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "ACP COMERCIO ATACADISTA DE COMPONENTES E (0000249)",
+      "value": 3696.58,
+      "nota_fiscal": "264710"
+    },
+    {
+      "id": "tx03610",
+      "date": "2026-06-17",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "MDS COMPONENTES ELETRONICOS LTDA (0000297)",
+      "value": 1644.5,
+      "nota_fiscal": "4565"
+    },
+    {
+      "id": "tx03611",
+      "date": "2026-06-17",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "DALEC INDUSTRIA E COMERCIO DE COMPONENTE (0000056)",
+      "value": 693.18,
+      "nota_fiscal": "5987"
+    },
+    {
+      "id": "tx03612",
+      "date": "2026-06-17",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "DALEC INDUSTRIA E COMERCIO DE COMPONENTE (0000056)",
+      "value": 217.64,
+      "nota_fiscal": "6019"
+    },
+    {
+      "id": "tx03613",
+      "date": "2026-06-17",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "BREDA COMERCIO E IMPORTACAO LTDA - EPP (0000292)",
+      "value": 738.01,
+      "nota_fiscal": "74695"
+    },
+    {
+      "id": "tx03614",
+      "date": "2026-06-17",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "IDALL COM. ATAC. DE COMP. ELETR. LTDA (0000011)",
+      "value": 553.0,
+      "nota_fiscal": "77179"
+    },
+    {
+      "id": "tx03615",
+      "date": "2026-06-17",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "GRANDE TECH COM, IMPORT, E EXPORT, DE CA (0000506)",
+      "value": 737.0,
+      "nota_fiscal": "12778"
+    },
+    {
+      "id": "tx03616",
+      "date": "2026-06-17",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "ALIFER (0000139)",
+      "value": 16013.3,
+      "nota_fiscal": "12780"
+    },
+    {
+      "id": "tx03617",
+      "date": "2026-06-17",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "SIMPLES CONNECT INDUSTRIA E COMERCIO LTA (0000308)",
+      "value": 991.0,
+      "nota_fiscal": "12781"
+    },
+    {
+      "id": "tx03618",
+      "date": "2026-06-17",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "NEWTESC TECNOLOGIA E COMERCIO LTDA (0000106)",
+      "value": 1675.0,
+      "nota_fiscal": "12782"
+    },
+    {
+      "id": "tx03619",
+      "date": "2026-06-17",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "MOTOPPAR DA AMAZONIA INDUSTRIA E COMERCI (0001405)",
+      "value": 645.0,
+      "nota_fiscal": "12783"
+    },
+    {
+      "id": "tx03620",
+      "date": "2026-06-17",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E (0000081)",
+      "value": 228.2,
+      "nota_fiscal": "12784"
+    },
+    {
+      "id": "tx03621",
+      "date": "2026-06-17",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "TEC INSIDE COM. E PROJ. DE EQUIP. ELETR (0000333)",
+      "value": 15191.55,
+      "nota_fiscal": "12785"
+    },
+    {
+      "id": "tx03622",
+      "date": "2026-06-17",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "VIEWMED IND. A E COM. DE PROD. MEDICOSA (0000343)",
+      "value": 1556.5,
+      "nota_fiscal": "12786"
+    },
+    {
+      "id": "tx03623",
+      "date": "2026-06-17",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "66.554.216 FABRICIO DE LIMA RIBEIRO (0001404)",
+      "value": 185.3,
+      "nota_fiscal": "12787"
+    },
+    {
+      "id": "tx03624",
+      "date": "2026-06-17",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "TRANSFIX ASSISTENCIA TECN. E VENDAS EQUI (0000199)",
+      "value": 995.0,
+      "nota_fiscal": "12788"
+    },
+    {
+      "id": "tx03625",
+      "date": "2026-06-17",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "J.M MAQUINAS",
+      "value": 2497.5,
+      "nota_fiscal": "840"
+    },
+    {
+      "id": "tx03626",
+      "date": "2026-06-17",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "ALLPRINT LATIN",
+      "value": 768.34,
+      "nota_fiscal": "842"
+    },
+    {
+      "id": "tx03627",
+      "date": "2026-06-17",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "BANCO",
+      "counterparty": "BOLETO",
+      "value": 3.62,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03628",
+      "date": "2026-06-17",
+      "division": "importacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "ALIFER (0000139)",
+      "value": 80.0,
+      "nota_fiscal": "864"
+    },
+    {
+      "id": "tx03629",
+      "date": "2026-06-17",
+      "division": "importacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "TEC INSIDE COM. E PROJ. DE EQUIP. ELETR (0000333)",
+      "value": 3080.0,
+      "nota_fiscal": "865"
+    },
+    {
+      "id": "tx03630",
+      "date": "2026-06-17",
+      "division": "importacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "TRANSFORM TECNOLOGIA DE PONTA LTDA (0001388)",
+      "value": 5821.0,
+      "nota_fiscal": "867"
+    },
+    {
+      "id": "tx03631",
+      "date": "2026-06-18",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "NEW TEC",
+      "value": 235.0,
+      "nota_fiscal": "12584 snf"
+    },
+    {
+      "id": "tx03632",
+      "date": "2026-06-18",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "NEXXO EQUIPAMENTOS ELETRONICOS LTDA - 0000225",
+      "value": 170.6,
+      "nota_fiscal": "12790"
+    },
+    {
+      "id": "tx03633",
+      "date": "2026-06-18",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "FOCUS TECNOLOGIA E SOLUCOES LTDA - 0000742",
+      "value": 578.94,
+      "nota_fiscal": "12488"
+    },
+    {
+      "id": "tx03634",
+      "date": "2026-06-18",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "FOCUS TECNOLOGIA E SOLUCOES LTDA - 0000742",
+      "value": 1007.89,
+      "nota_fiscal": "12648"
+    },
+    {
+      "id": "tx03635",
+      "date": "2026-06-18",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "FOCUS TECNOLOGIA E SOLUCOES LTDA - 0000742",
+      "value": 806.52,
+      "nota_fiscal": "12625"
+    },
+    {
+      "id": "tx03636",
+      "date": "2026-06-18",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "SIMPLES CONNECT INDUSTRIA E COMERCIO LTA - 0000308",
+      "value": 1319.0,
+      "nota_fiscal": "12568"
+    },
+    {
+      "id": "tx03637",
+      "date": "2026-06-18",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "VINTEK IND., COMERCIO E SERVICOS LTDA - 0000894",
+      "value": 3033.07,
+      "nota_fiscal": "12622"
+    },
+    {
+      "id": "tx03638",
+      "date": "2026-06-18",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "BPM INDUSTRIA E COMERCIO - 0000541",
+      "value": 1788.02,
+      "nota_fiscal": "12651"
+    },
+    {
+      "id": "tx03639",
+      "date": "2026-06-18",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "BANCO",
+      "counterparty": "BOLETOS",
+      "value": 10.86,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03640",
+      "date": "2026-06-18",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "TRICONECT COMERCIAL ELETRONICA",
+      "value": 706.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03641",
+      "date": "2026-06-18",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "ACP C A COMP ELETRONICOS LTDA",
+      "value": 929.44,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03642",
+      "date": "2026-06-18",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "SECURECOM SEC DE REC COM S A",
+      "value": 665.97,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03643",
+      "date": "2026-06-18",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "ACP C A COMP ELETRONICOS LTDA",
+      "value": 392.43,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03644",
+      "date": "2026-06-18",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "TRANSPORTES",
+      "counterparty": "GILBERTO CANDIDO TRANSP",
+      "value": 300.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03645",
+      "date": "2026-06-18",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "CONEXCABLE TECNOLOGIA LTDA (0000455)",
+      "value": 675.0,
+      "nota_fiscal": "128"
+    },
+    {
+      "id": "tx03646",
+      "date": "2026-06-18",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "TRICONECT COMERCIAL ELETR. LTDA (0000321)",
+      "value": 220.0,
+      "nota_fiscal": "19831"
+    },
+    {
+      "id": "tx03647",
+      "date": "2026-06-18",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "ALLNETSYS COMERCIO IMPORTACAO E SERVICOS (0000036)",
+      "value": 262.5,
+      "nota_fiscal": "34126"
+    },
+    {
+      "id": "tx03648",
+      "date": "2026-06-18",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "ACHEI COMPONENTES ELETRONICOS COMERCIO E (0000155)",
+      "value": 242.19,
+      "nota_fiscal": "55411"
+    },
+    {
+      "id": "tx03649",
+      "date": "2026-06-18",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "SOLSUSTENTAVEL PROD. ELETRO ELETRONICOS (0000125)",
+      "value": 596.0,
+      "nota_fiscal": "12789"
+    },
+    {
+      "id": "tx03650",
+      "date": "2026-06-18",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "NEXXO EQUIPAMENTOS ELETRONICOS LTDA (0000225)",
+      "value": 170.6,
+      "nota_fiscal": "12790"
+    },
+    {
+      "id": "tx03651",
+      "date": "2026-06-18",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "ONEIAS BATISTA DE OLIVEIRA (0001407)",
+      "value": 49.99,
+      "nota_fiscal": "12792"
+    },
+    {
+      "id": "tx03652",
+      "date": "2026-06-18",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "GRANDE TECH COM, IMPORT, E EXPORT, DE CA (0000506)",
+      "value": 400.0,
+      "nota_fiscal": "12793"
+    },
+    {
+      "id": "tx03653",
+      "date": "2026-06-18",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "VINTEK IND., COMERCIO E SERVICOS LTDA (0000894)",
+      "value": 10471.07,
+      "nota_fiscal": "12794"
+    },
+    {
+      "id": "tx03654",
+      "date": "2026-06-18",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "VOLTEX ELETRONICA LTDA (0001398)",
+      "value": 586.0,
+      "nota_fiscal": "12795"
+    },
+    {
+      "id": "tx03655",
+      "date": "2026-06-18",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "ELETROFELIX INDUSTRIA E COMERCIO LTDA (0000477)",
+      "value": 1751.5,
+      "nota_fiscal": "12796"
+    },
+    {
+      "id": "tx03656",
+      "date": "2026-06-18",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "PRODUPARK EQUIP. ELETRO. E IMP. LTDA (0000056)",
+      "value": 2374.0,
+      "nota_fiscal": "12797"
+    },
+    {
+      "id": "tx03657",
+      "date": "2026-06-18",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "VINTEK",
+      "value": 336.0,
+      "nota_fiscal": "839"
+    },
+    {
+      "id": "tx03658",
+      "date": "2026-06-18",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "B.P.M",
+      "value": 60.0,
+      "nota_fiscal": "845"
+    },
+    {
+      "id": "tx03659",
+      "date": "2026-06-18",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "BANCO",
+      "counterparty": "BOLETO",
+      "value": 3.62,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03660",
+      "date": "2026-06-18",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "TRANSPORTES",
+      "counterparty": "DHL",
+      "value": 360.08,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03661",
+      "date": "2026-06-18",
+      "division": "importacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "IMPORTAÇÃO",
+      "value": 6248.81,
+      "nota_fiscal": "WOLRD"
+    },
+    {
+      "id": "tx03662",
+      "date": "2026-06-18",
+      "division": "importacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "TRANSFORM TECNOLOGIA DE PONTA LTDA (0001388)",
+      "value": 2340.0,
+      "nota_fiscal": "868"
+    },
+    {
+      "id": "tx03663",
+      "date": "2026-06-18",
+      "division": "importacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "ALLPRINT LATINA AUTOMACAO DE MAQUINAS EA (0000291)",
+      "value": 2325.0,
+      "nota_fiscal": "869"
+    },
+    {
+      "id": "tx03664",
+      "date": "2026-06-18",
+      "division": "importacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "VINTEK IND., COMERCIO E SERVICOS LTDA (0000894)",
+      "value": 896.0,
+      "nota_fiscal": "870"
+    },
+    {
+      "id": "tx03665",
+      "date": "2026-06-19",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "EVOLUTEC",
+      "value": 620.4,
+      "nota_fiscal": "12646"
+    },
+    {
+      "id": "tx03666",
+      "date": "2026-06-19",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "BANCO",
+      "counterparty": "BOLETOS",
+      "value": 1.81,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03667",
+      "date": "2026-06-19",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "DV TECNOLOGIA ELETROELETRONICA",
+      "value": 631.01,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03668",
+      "date": "2026-06-19",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "ZENER COMPONENTES ELETRONIC LT",
+      "value": 489.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03669",
+      "date": "2026-06-19",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "ORANGE E BLACK DISTRIBUIDORA L",
+      "value": 490.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03670",
+      "date": "2026-06-19",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "CIRCUITRONIX ELETRO E LTDA",
+      "value": 548.1,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03671",
+      "date": "2026-06-19",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "IDALL COMERCIO ATACADISTA DE C",
+      "value": 1080.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03672",
+      "date": "2026-06-19",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FUNCIONÁRIOS",
+      "counterparty": "MATHEUS VALE",
+      "value": 720.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03673",
+      "date": "2026-06-19",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FUNCIONÁRIOS",
+      "counterparty": "THAMIRES",
+      "value": 855.2,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03674",
+      "date": "2026-06-19",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FUNCIONÁRIOS",
+      "counterparty": "FRANCOISE",
+      "value": 855.2,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03675",
+      "date": "2026-06-19",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FUNCIONÁRIOS",
+      "counterparty": "DARF",
+      "value": 1042.91,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03676",
+      "date": "2026-06-19",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FUNCIONÁRIOS",
+      "counterparty": "FGTS",
+      "value": 551.11,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03677",
+      "date": "2026-06-19",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "MEGADEF COMPONENTES ELETRONICOS LTDA (0000039)",
+      "value": 403.68,
+      "nota_fiscal": "150509"
+    },
+    {
+      "id": "tx03678",
+      "date": "2026-06-19",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA (0000318)",
+      "value": 250.0,
+      "nota_fiscal": "209019"
+    },
+    {
+      "id": "tx03679",
+      "date": "2026-06-19",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "TRICOMP COMERCIAL ELETR. LTDA (0000278)",
+      "value": 342.61,
+      "nota_fiscal": "69417"
+    },
+    {
+      "id": "tx03680",
+      "date": "2026-06-19",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "IDALL COM. ATAC. DE COMP. ELETR. LTDA (0000011)",
+      "value": 273.9,
+      "nota_fiscal": "77209"
+    },
+    {
+      "id": "tx03681",
+      "date": "2026-06-19",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "IDALL COM. ATAC. DE COMP. ELETR. LTDA (0000011)",
+      "value": 3600.0,
+      "nota_fiscal": "77210"
+    },
+    {
+      "id": "tx03682",
+      "date": "2026-06-19",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "ALIGERA EQUIPAMENTOS DIGITAIS LTDA (0000188)",
+      "value": 200.0,
+      "nota_fiscal": "12799"
+    },
+    {
+      "id": "tx03683",
+      "date": "2026-06-19",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "NUTRIEX INDUSTRIA DE NUTRACEUTICOS LTDA (0000988)",
+      "value": 6867.0,
+      "nota_fiscal": "12800"
+    },
+    {
+      "id": "tx03684",
+      "date": "2026-06-22",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "MS TECNOPON EQUIPAMENTOS ESPECIAIS LTDA - 0000373",
+      "value": 2398.83,
+      "nota_fiscal": "12586"
+    },
+    {
+      "id": "tx03685",
+      "date": "2026-06-22",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "RYON MAQUINAS LTDA - 0000662",
+      "value": 1318.0,
+      "nota_fiscal": "12582"
+    },
+    {
+      "id": "tx03686",
+      "date": "2026-06-22",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
+      "value": 246.0,
+      "nota_fiscal": "12655"
+    },
+    {
+      "id": "tx03687",
+      "date": "2026-06-22",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "TRASNFIX",
+      "value": 192.1,
+      "nota_fiscal": "12649"
+    },
+    {
+      "id": "tx03688",
+      "date": "2026-06-22",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "PREMIX",
+      "value": 236.05,
+      "nota_fiscal": "12808"
+    },
+    {
+      "id": "tx03689",
+      "date": "2026-06-22",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "FAST COMP COMERCIAL ELETRONICA LTDA - 0000569",
+      "value": 211.38,
+      "nota_fiscal": "12805"
+    },
+    {
+      "id": "tx03690",
+      "date": "2026-06-22",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "GG INDUSTRIA DE EQUIPAMENTOS MEDICOS LA - 0000592",
+      "value": 689.0,
+      "nota_fiscal": "12573/02"
+    },
+    {
+      "id": "tx03691",
+      "date": "2026-06-22",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "VIEWMED IND. A E COM. DE PROD. MEDICOSA - 0000343",
+      "value": 375.0,
+      "nota_fiscal": "12574/02"
+    },
+    {
+      "id": "tx03692",
+      "date": "2026-06-22",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "PRIMUS IMPORT COMERCIO DE IMPORTADOS - 0000048",
+      "value": 682.37,
+      "nota_fiscal": "12599/03"
+    },
+    {
+      "id": "tx03693",
+      "date": "2026-06-22",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "ELETROFELIX INDUSTRIA E COMERCIO LTDA - 0000477",
+      "value": 567.82,
+      "nota_fiscal": "12637/01"
+    },
+    {
+      "id": "tx03694",
+      "date": "2026-06-22",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "ZILOCCHI ELETRONICA LTDA - EPP - 0000130",
+      "value": 689.76,
+      "nota_fiscal": "12647/01"
+    },
+    {
+      "id": "tx03695",
+      "date": "2026-06-22",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
+      "value": 825.34,
+      "nota_fiscal": "12654/01"
+    },
+    {
+      "id": "tx03696",
+      "date": "2026-06-22",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "VIEWMED IND. A E COM. DE PROD. MEDICOSA - 0000343",
+      "value": 852.5,
+      "nota_fiscal": "12657/01"
+    },
+    {
+      "id": "tx03697",
+      "date": "2026-06-22",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "IMPOSTOS",
+      "counterparty": "DAS",
+      "value": 12531.52,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03698",
+      "date": "2026-06-22",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "SEGURO SAÚDE",
+      "counterparty": "PREVIDENCIA",
+      "value": 473.47,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03699",
+      "date": "2026-06-22",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "SEGURO SAÚDE",
+      "counterparty": "PREVIDENCIA",
+      "value": 496.24,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03700",
+      "date": "2026-06-22",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "ACP",
+      "value": 493.71,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03701",
+      "date": "2026-06-22",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "ACP",
+      "value": 3044.94,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03702",
+      "date": "2026-06-22",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "ELCOMP COMERCIO C E LTDA EPP",
+      "value": 613.8,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03703",
+      "date": "2026-06-22",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "IDALL COMERCIO ATACADISTA DE C",
+      "value": 619.9,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03704",
+      "date": "2026-06-22",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "VETRONIC COM ELETRONICA LTDA",
+      "value": 1003.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03705",
+      "date": "2026-06-22",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "ACP",
+      "value": 843.81,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03706",
+      "date": "2026-06-22",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "MDS",
+      "value": 557.5,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03707",
+      "date": "2026-06-22",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "METALTEX",
+      "value": 710.85,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03708",
+      "date": "2026-06-22",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "ACP",
+      "value": 487.59,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03709",
+      "date": "2026-06-22",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "BANCO",
+      "counterparty": "BOLETOS",
+      "value": 27.24,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03710",
+      "date": "2026-06-22",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "CIRCUITRONIX",
+      "value": 117.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03711",
+      "date": "2026-06-22",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "SÓCIOS",
+      "counterparty": "SÓCIOS",
+      "value": 6300.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03712",
+      "date": "2026-06-22",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "SALVIO EVILAZIO PEREIRA DE ARRUDA (C) (0001387)",
+      "value": 34.99,
+      "nota_fiscal": "12716"
+    },
+    {
+      "id": "tx03713",
+      "date": "2026-06-22",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "REIMOLD INDUSTRIA E COMRCIO DE MATERIAI (0000172)",
+      "value": 1241.13,
+      "nota_fiscal": "155516"
+    },
+    {
+      "id": "tx03714",
+      "date": "2026-06-22",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "ZENER COMPONENTES ELETRONICOS LTDA - ME (0000317)",
+      "value": 472.75,
+      "nota_fiscal": "24732"
+    },
+    {
+      "id": "tx03715",
+      "date": "2026-06-22",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "S-ohm Comercial Ltda. (0000183)",
+      "value": 319.24,
+      "nota_fiscal": "4152"
+    },
+    {
+      "id": "tx03716",
+      "date": "2026-06-22",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "MDS COMPONENTES ELETRONICOS LTDA (0000297)",
+      "value": 930.0,
+      "nota_fiscal": "4557"
+    },
+    {
+      "id": "tx03717",
+      "date": "2026-06-22",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "UNIVERSE LIGHTING IMPORTACAO EXPORTA€CO (0000305)",
+      "value": 825.0,
+      "nota_fiscal": "7743"
+    },
+    {
+      "id": "tx03718",
+      "date": "2026-06-22",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "COMP TOTAL COM. E IMP. DE COMP. ELETRON. (0000267)",
+      "value": 257.2,
+      "nota_fiscal": "86887"
+    },
+    {
+      "id": "tx03719",
+      "date": "2026-06-22",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "MEGAPIX COMP. ELETRONICOS LTDA-EPP (0000275)",
+      "value": 404.92,
+      "nota_fiscal": "93351"
+    },
+    {
+      "id": "tx03720",
+      "date": "2026-06-22",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "ANGELO CRISTER REIS SANTOS (0001409)",
+      "value": 26.99,
+      "nota_fiscal": "12802"
+    },
+    {
+      "id": "tx03721",
+      "date": "2026-06-22",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "AFONSO DECICO JUNIOR (0001408)",
+      "value": 222.94,
+      "nota_fiscal": "12803"
+    },
+    {
+      "id": "tx03722",
+      "date": "2026-06-22",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "TEC INSIDE COM. E PROJ. DE EQUIP. ELETR (0000333)",
+      "value": 365.0,
+      "nota_fiscal": "12804"
+    },
+    {
+      "id": "tx03723",
+      "date": "2026-06-22",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "FAST COMP COMERCIAL ELETRONICA LTDA (0000569)",
+      "value": 211.38,
+      "nota_fiscal": "12805"
+    },
+    {
+      "id": "tx03724",
+      "date": "2026-06-22",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "R. BAIAO INDUSTRIA E COMERCIO LTDA (0000060)",
+      "value": 1107.0,
+      "nota_fiscal": "12806"
+    },
+    {
+      "id": "tx03725",
+      "date": "2026-06-22",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E (0000081)",
+      "value": 856.0,
+      "nota_fiscal": "12807"
+    },
+    {
+      "id": "tx03726",
+      "date": "2026-06-22",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "PREMIX INDUSTRIA ELETROMECANIA LTDA (0000047)",
+      "value": 236.05,
+      "nota_fiscal": "12808"
+    },
+    {
+      "id": "tx03727",
+      "date": "2026-06-22",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "RYON MAQUINA",
+      "value": 900.0,
+      "nota_fiscal": "830"
+    },
+    {
+      "id": "tx03728",
+      "date": "2026-06-22",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "DENTSCLER",
+      "value": 274.5,
+      "nota_fiscal": "850"
+    },
+    {
+      "id": "tx03729",
+      "date": "2026-06-22",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "TRANSFIX",
+      "value": 7737.0,
+      "nota_fiscal": "844 + 854"
+    },
+    {
+      "id": "tx03730",
+      "date": "2026-06-22",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "FCP",
+      "value": 764.49,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03731",
+      "date": "2026-06-22",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "IDALL",
+      "value": 2516.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03732",
+      "date": "2026-06-22",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "IMPOSTOS",
+      "counterparty": "DAS",
+      "value": 5684.18,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03733",
+      "date": "2026-06-22",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "BANCO",
+      "counterparty": "BOLETO",
+      "value": 5.43,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03734",
+      "date": "2026-06-23",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "ARIELTEK INDUSTRIA E COMERCIO LTDA - 0000314",
+      "value": 928.13,
+      "nota_fiscal": "12610/03"
+    },
+    {
+      "id": "tx03735",
+      "date": "2026-06-23",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "SEBASTIAO CESAR GRASSI ELETRONICOS - M.. - 0000279",
+      "value": 742.16,
+      "nota_fiscal": "12744/01"
+    },
+    {
+      "id": "tx03736",
+      "date": "2026-06-23",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "BANCO",
+      "counterparty": "BOLETOS",
+      "value": 3.62,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03737",
+      "date": "2026-06-23",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA",
+      "value": 300.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03738",
+      "date": "2026-06-23",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "MDS",
+      "value": 411.75,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03739",
+      "date": "2026-06-23",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "EMPRÉSTIMO",
+      "counterparty": "CAPITAL DE GIRO",
+      "value": 2623.11,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03740",
+      "date": "2026-06-23",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "MEGADEF COMPONENTES ELETRONICOS LTDA (0000039)",
+      "value": 1353.96,
+      "nota_fiscal": "150572"
+    },
+    {
+      "id": "tx03741",
+      "date": "2026-06-23",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "ALLNETSYS COMERCIO IMPORTACAO E SERVICOS (0000036)",
+      "value": 244.0,
+      "nota_fiscal": "34207"
+    },
+    {
+      "id": "tx03742",
+      "date": "2026-06-23",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "TRICOMP COMERCIAL ELETR. LTDA (0000278)",
+      "value": 1441.18,
+      "nota_fiscal": "69511"
+    },
+    {
+      "id": "tx03743",
+      "date": "2026-06-23",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "IDALL COM. ATAC. DE COMP. ELETR. LTDA (0000011)",
+      "value": 620.0,
+      "nota_fiscal": "77254"
+    },
+    {
+      "id": "tx03744",
+      "date": "2026-06-23",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "IMPACTO COMPONENTES ELETRO ELETRRONICOS (0000154)",
+      "value": 300.0,
+      "nota_fiscal": "12809"
+    },
+    {
+      "id": "tx03745",
+      "date": "2026-06-23",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "ALUISIO ALVES DE OLIVEIRA (0001412)",
+      "value": 26.99,
+      "nota_fiscal": "12810"
+    },
+    {
+      "id": "tx03746",
+      "date": "2026-06-23",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E (0000081)",
+      "value": 313.6,
+      "nota_fiscal": "12811"
+    },
+    {
+      "id": "tx03747",
+      "date": "2026-06-23",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "ELETROFELIX INDUSTRIA E COMERCIO LTDA (0000477)",
+      "value": 2088.5,
+      "nota_fiscal": "12812"
+    },
+    {
+      "id": "tx03748",
+      "date": "2026-06-23",
+      "division": "importacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "ELETROFELIX INDUSTRIA E COMERCIO LTDA (0000477)",
+      "value": 420.0,
+      "nota_fiscal": "871"
+    },
+    {
+      "id": "tx03749",
+      "date": "2026-06-24",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS",
+      "value": 1163.75,
+      "nota_fiscal": "12465/04"
+    },
+    {
+      "id": "tx03750",
+      "date": "2026-06-24",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "DENTSCLER IND. DE APAR. ODONTO. EIRELLI - 0000390",
+      "value": 765.5,
+      "nota_fiscal": "12663/01"
+    },
+    {
+      "id": "tx03751",
+      "date": "2026-06-24",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "ALIGERA EQUIPAMENTOS DIGITAIS LTDA - 0000188",
+      "value": 800.0,
+      "nota_fiscal": "12671/01"
+    },
+    {
+      "id": "tx03752",
+      "date": "2026-06-24",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
+      "value": 277.8,
+      "nota_fiscal": "12674/01"
+    },
+    {
+      "id": "tx03753",
+      "date": "2026-06-24",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "BANCO",
+      "counterparty": "BOLETOS",
+      "value": 16.38,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03754",
+      "date": "2026-06-24",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "INSUMOS",
+      "counterparty": "GG EMBALAGENS",
+      "value": 360.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03755",
+      "date": "2026-06-24",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "MDS",
+      "value": 458.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03756",
+      "date": "2026-06-24",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "TRICOMP COMERCIAL E LTDA",
+      "value": 134.2,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03757",
+      "date": "2026-06-24",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "GEO ELETRON",
+      "value": 458.8,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03758",
+      "date": "2026-06-24",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "CIRCUITRONIX ELETRO ELETRONICA LTDA (0000442)",
+      "value": 117.0,
+      "nota_fiscal": "1121"
+    },
+    {
+      "id": "tx03759",
+      "date": "2026-06-24",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "FERRTECH",
+      "value": 651.25,
+      "nota_fiscal": "851"
+    },
+    {
+      "id": "tx03760",
+      "date": "2026-06-24",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "ALLPRINT LATIN",
+      "value": 768.33,
+      "nota_fiscal": "842"
+    },
+    {
+      "id": "tx03761",
+      "date": "2026-06-24",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "TEC INSID",
+      "value": 365.0,
+      "nota_fiscal": "12804"
+    },
+    {
+      "id": "tx03762",
+      "date": "2026-06-24",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "BANCO",
+      "counterparty": "BOLETO",
+      "value": 3.62,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03763",
+      "date": "2026-06-25",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000082",
+      "value": 765.96,
+      "nota_fiscal": "12361-12685-12712-12609-12360-12362"
+    },
+    {
+      "id": "tx03764",
+      "date": "2026-06-25",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "ACHEI COMPONENTES",
+      "value": 107.26,
+      "nota_fiscal": "12815"
+    },
+    {
+      "id": "tx03765",
+      "date": "2026-06-25",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "FAST COMP COMERCIAL ELETRONICA LTDA - 0000569",
+      "value": 150.0,
+      "nota_fiscal": "12818"
+    },
+    {
+      "id": "tx03766",
+      "date": "2026-06-25",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "VINTEK IND., COMERCIO E SERVICOS LTDA - 0000894",
+      "value": 3033.07,
+      "nota_fiscal": "12622/03"
+    },
+    {
+      "id": "tx03767",
+      "date": "2026-06-25",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "BPM INDUSTRIA E COMERCIO - 0000541",
+      "value": 1788.0,
+      "nota_fiscal": "12651/02"
+    },
+    {
+      "id": "tx03768",
+      "date": "2026-06-25",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "PROSPER-CARMON CONTROLES ELETRONICOS LTD - 0001324",
+      "value": 1207.91,
+      "nota_fiscal": "12656/01"
+    },
+    {
+      "id": "tx03769",
+      "date": "2026-06-25",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "BPM INDUSTRIA E COMERCIO - 0000541",
+      "value": 600.26,
+      "nota_fiscal": "12676/01"
+    },
+    {
+      "id": "tx03770",
+      "date": "2026-06-25",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "E DE OLIVEIRA BARBOSA ELETRONICA - 0000898",
+      "value": 718.0,
+      "nota_fiscal": "12680/01"
+    },
+    {
+      "id": "tx03771",
+      "date": "2026-06-25",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "MARTEC MED INDUSTRIA E COMERCIO DE EQUIP - 0000788",
+      "value": 739.0,
+      "nota_fiscal": "12682/01"
+    },
+    {
+      "id": "tx03772",
+      "date": "2026-06-25",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "INFOLITE TECNOLOGIA EM INFORMACAO - 0000540",
+      "value": 454.75,
+      "nota_fiscal": "12683/01"
+    },
+    {
+      "id": "tx03773",
+      "date": "2026-06-25",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "SPECTO PAINEIS ELETRONICO LTDA - 0000071",
+      "value": 856.36,
+      "nota_fiscal": "12695/01"
+    },
+    {
+      "id": "tx03774",
+      "date": "2026-06-25",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "BANCO",
+      "counterparty": "BOLETOS",
+      "value": 14.48,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03775",
+      "date": "2026-06-25",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "GASTOS FIXOS",
+      "counterparty": "SERASA",
+      "value": 1010.58,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03776",
+      "date": "2026-06-25",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "ORANGE",
+      "value": 190.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03777",
+      "date": "2026-06-25",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA",
+      "value": 421.25,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03778",
+      "date": "2026-06-25",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "MEGADEF",
+      "value": 266.11,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03779",
+      "date": "2026-06-25",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "SÓCIOS",
+      "counterparty": "MARIA",
+      "value": 4300.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03780",
+      "date": "2026-06-25",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "MEGADEF COMPONENTES ELETRONICOS LTDA (0000039)",
+      "value": 534.18,
+      "nota_fiscal": "150594"
+    },
+    {
+      "id": "tx03781",
+      "date": "2026-06-25",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "MRD COMPONENTES ELETRONICOS LTDA. (0000388)",
+      "value": 332.0,
+      "nota_fiscal": "2168"
+    },
+    {
+      "id": "tx03782",
+      "date": "2026-06-25",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "MRD COMPONENTES ELETRONICOS LTDA. (0000388)",
+      "value": 348.0,
+      "nota_fiscal": "2186"
+    },
+    {
+      "id": "tx03783",
+      "date": "2026-06-25",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "ZENER COMPONENTES ELETRONICOS LTDA - ME (0000317)",
+      "value": 590.0,
+      "nota_fiscal": "24774"
+    },
+    {
+      "id": "tx03784",
+      "date": "2026-06-25",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "TRANSFIX ASSISTENCIA TECN. E VENDAS EQUI (0000199)",
+      "value": 700.0,
+      "nota_fiscal": "12813"
+    },
+    {
+      "id": "tx03785",
+      "date": "2026-06-25",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "FITECA - FIACAO E TECELAGEM ARACAI LTDA (0001413)",
+      "value": 37.99,
+      "nota_fiscal": "12814"
+    },
+    {
+      "id": "tx03786",
+      "date": "2026-06-25",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "ACHEI COMPONENTES ELETRONICOS (0000503)",
+      "value": 107.26,
+      "nota_fiscal": "12815"
+    },
+    {
+      "id": "tx03787",
+      "date": "2026-06-25",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "S-OHM COMERCIAL LTDA (0000426)",
+      "value": 150.0,
+      "nota_fiscal": "12817"
+    },
+    {
+      "id": "tx03788",
+      "date": "2026-06-25",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "FAST COMP COMERCIAL ELETRONICA LTDA (0000569)",
+      "value": 150.0,
+      "nota_fiscal": "12818"
+    },
+    {
+      "id": "tx03789",
+      "date": "2026-06-25",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "GUSTAVO HENRIQUE DE SOUZA PATTA (0001414)",
+      "value": 49.98,
+      "nota_fiscal": "12819"
+    },
+    {
+      "id": "tx03790",
+      "date": "2026-06-25",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "antecipação titulos FRATA",
+      "value": 8365.49,
+      "nota_fiscal": "856"
+    },
+    {
+      "id": "tx03791",
+      "date": "2026-06-25",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "ROYALCOMP COMP",
+      "value": 987.5,
+      "nota_fiscal": "835/02"
+    },
+    {
+      "id": "tx03792",
+      "date": "2026-06-25",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "CARINE G RO",
+      "value": 868.9,
+      "nota_fiscal": "855/01"
+    },
+    {
+      "id": "tx03793",
+      "date": "2026-06-25",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "BANCO",
+      "counterparty": "BOLETO",
+      "value": 3.62,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03794",
+      "date": "2026-06-25",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "GASTOS FIXOS",
+      "counterparty": "Cartão de crédito",
+      "value": 10221.95,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03795",
+      "date": "2026-06-25",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "IMPORTAÇÃO",
+      "counterparty": "IMPORTAÇÕES",
+      "value": 10500.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03796",
+      "date": "2026-06-25",
+      "division": "importacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "RALCOMP COMP. ELETRONICOS EIRELI ME (0000474)",
+      "value": 110.5,
+      "nota_fiscal": "872"
+    },
+    {
+      "id": "tx03797",
+      "date": "2026-06-26",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
+      "value": 1197.84,
+      "nota_fiscal": "12540/03"
+    },
+    {
+      "id": "tx03798",
+      "date": "2026-06-26",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "ROYALCOMP COMPONENTES ELETR. LTDA - 0000570",
+      "value": 384.0,
+      "nota_fiscal": "12550/03"
+    },
+    {
+      "id": "tx03799",
+      "date": "2026-06-26",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "DIGISYSTEM IND. DE SIST. ELETRO. LTDA - 0000040",
+      "value": 1553.0,
+      "nota_fiscal": "12601"
+    },
+    {
+      "id": "tx03800",
+      "date": "2026-06-26",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "SIMPLES CONNECT INDUSTRIA E COMERCIO LTA - 0000308",
+      "value": 1800.0,
+      "nota_fiscal": "12612/02"
+    },
+    {
+      "id": "tx03801",
+      "date": "2026-06-26",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "SISTRANS SISTEMA DE SIN. DE TRANSITO LTA - 0000067",
+      "value": 747.32,
+      "nota_fiscal": "12629/01"
+    },
+    {
+      "id": "tx03802",
+      "date": "2026-06-26",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "BPM INDUSTRIA E COMERCIO - 0000541",
+      "value": 369.22,
+      "nota_fiscal": "12693/01"
+    },
+    {
+      "id": "tx03803",
+      "date": "2026-06-26",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "NEW-TEC",
+      "value": 194.0,
+      "nota_fiscal": "12587 E 12588"
+    },
+    {
+      "id": "tx03804",
+      "date": "2026-06-26",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "TRANSPORTES",
+      "counterparty": "ANDRÉ MOTOBOY",
+      "value": 50.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03805",
+      "date": "2026-06-26",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "FORNELL",
+      "value": 110.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03806",
+      "date": "2026-06-26",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "BANCO",
+      "counterparty": "BOLETOS",
+      "value": 10.86,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03807",
+      "date": "2026-06-26",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "MULT COMERCIAL LT",
+      "value": 367.98,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03808",
+      "date": "2026-06-26",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "ACP C A COMP ELETRONICOS LTDA",
+      "value": 548.05,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03809",
+      "date": "2026-06-26",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "CREDERE - TRYNIT",
+      "value": 240.62,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03810",
+      "date": "2026-06-26",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "MEGAPIX",
+      "value": 974.79,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03811",
+      "date": "2026-06-26",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "DISPLAY MAX ELETRONICA LTDA",
+      "value": 155.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03812",
+      "date": "2026-06-26",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "REIMOLD INDUSTRIA E COMERCIO DE MATERIAI",
+      "value": 1248.96,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03813",
+      "date": "2026-06-26",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "TRICOMP COMERCIAL E LTDA",
+      "value": 400.68,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03814",
+      "date": "2026-06-26",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "MEGAPIX COMP. ELETRONICOS LTDA-EPP (0000275)",
+      "value": 550.6,
+      "nota_fiscal": "93705"
+    },
+    {
+      "id": "tx03815",
+      "date": "2026-06-26",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "TRANSFORM TECNOLOGIA DE PONTA LTDA (0001388)",
+      "value": 960.0,
+      "nota_fiscal": "12821"
+    },
+    {
+      "id": "tx03816",
+      "date": "2026-06-26",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "PRODUTOS ELETRONICOS FRATA LTDA (0000223)",
+      "value": 300.0,
+      "nota_fiscal": "12822"
+    },
+    {
+      "id": "tx03817",
+      "date": "2026-06-26",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "RUSSER BRASIL EIRELI (0000403)",
+      "value": 13.5,
+      "nota_fiscal": "12823"
+    },
+    {
+      "id": "tx03818",
+      "date": "2026-06-26",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "BPM INDUSTRIA E COMERCIO (0000541)",
+      "value": 1272.4,
+      "nota_fiscal": "12824"
+    },
+    {
+      "id": "tx03819",
+      "date": "2026-06-26",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "S.T.E.E. TECNOLOGIA ELETROELETRONICA LT (0000062)",
+      "value": 1947.0,
+      "nota_fiscal": "12825"
+    },
+    {
+      "id": "tx03820",
+      "date": "2026-06-26",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "TGA TECNOLOGIA EQUIPAMENTOS ELETR. LTDA (0000533)",
+      "value": 370.0,
+      "nota_fiscal": "12826"
+    },
+    {
+      "id": "tx03821",
+      "date": "2026-06-26",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "CITTA ELETRONICA IND. E COM. LTDA ME (0000532)",
+      "value": 279.7,
+      "nota_fiscal": "12827"
+    },
+    {
+      "id": "tx03822",
+      "date": "2026-06-26",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "ARIELTEK INDUSTRIA E COMERCIO LTDA (0000314)",
+      "value": 382.0,
+      "nota_fiscal": "12828"
+    },
+    {
+      "id": "tx03823",
+      "date": "2026-06-26",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "INSTITUTO MATTRON E INSERTS METALICOS LT (0000119)",
+      "value": 1457.8,
+      "nota_fiscal": "12829"
+    },
+    {
+      "id": "tx03824",
+      "date": "2026-06-26",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "SSAT SINALIZACAO E ADESIVOS EIRELI EPP (0000072)",
+      "value": 2772.5,
+      "nota_fiscal": "12830"
+    },
+    {
+      "id": "tx03825",
+      "date": "2026-06-26",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "ZILOCCHI ELETRONICA LTDA - EPP (0000130)",
+      "value": 756.0,
+      "nota_fiscal": "12831"
+    },
+    {
+      "id": "tx03826",
+      "date": "2026-06-26",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "SEBASTIAO CESAR GRASSI ELETRONICOS - M.. (0000279)",
+      "value": 2741.53,
+      "nota_fiscal": "12833"
+    },
+    {
+      "id": "tx03827",
+      "date": "2026-06-26",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO (0000660)",
+      "value": 434.0,
+      "nota_fiscal": "12834"
+    },
+    {
+      "id": "tx03828",
+      "date": "2026-06-26",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "ALLPRINT LATINA AUT",
+      "value": 2275.0,
+      "nota_fiscal": "853/01"
+    },
+    {
+      "id": "tx03829",
+      "date": "2026-06-26",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "SIMPLES CONNECT IND",
+      "value": 7316.8,
+      "nota_fiscal": "838/02"
+    },
+    {
+      "id": "tx03830",
+      "date": "2026-06-26",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "R. BAIAO IND",
+      "value": 777.9,
+      "nota_fiscal": "861/01"
+    },
+    {
+      "id": "tx03831",
+      "date": "2026-06-26",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "BANCO",
+      "counterparty": "BOLETO",
+      "value": 5.43,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03832",
+      "date": "2026-06-26",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "SÓCIOS",
+      "counterparty": "ALEX",
+      "value": 1000.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03833",
+      "date": "2026-06-26",
+      "division": "importacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "TRANSFORM TECNOLOGIA DE PONTA LTDA (0001388)",
+      "value": 14148.5,
+      "nota_fiscal": "873"
+    },
+    {
+      "id": "tx03834",
+      "date": "2026-06-26",
+      "division": "importacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "BPM INDUSTRIA E COMERCIO (0000541)",
+      "value": 8.0,
+      "nota_fiscal": "874"
+    },
+    {
+      "id": "tx03835",
+      "date": "2026-06-29",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "FAST COMP COMERCIAL ELETRONICA LTDA - 0000569",
+      "value": 750.0,
+      "nota_fiscal": "12623/02"
+    },
+    {
+      "id": "tx03836",
+      "date": "2026-06-29",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
+      "value": 728.8,
+      "nota_fiscal": "12554/03"
+    },
+    {
+      "id": "tx03837",
+      "date": "2026-06-29",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "E DE OLIVEIRA BARBOSA ELETRONICA - 0000898",
+      "value": 934.88,
+      "nota_fiscal": "12619/02"
+    },
+    {
+      "id": "tx03838",
+      "date": "2026-06-29",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "BRASMEDICAL IND. E COM. DE PRODUTOS PAR - 0000017",
+      "value": 2081.5,
+      "nota_fiscal": "12627/02"
+    },
+    {
+      "id": "tx03839",
+      "date": "2026-06-29",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "BRASMEDICAL IND. E COM. DE PRODUTOS PAR - 0000017",
+      "value": 861.5,
+      "nota_fiscal": "12691/01"
+    },
+    {
+      "id": "tx03840",
+      "date": "2026-06-29",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "SSAT SINALIZACAO E ADESIVOS EIRELI EPP - 0000072",
+      "value": 926.54,
+      "nota_fiscal": "12696/01"
+    },
+    {
+      "id": "tx03841",
+      "date": "2026-06-29",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "ALLPRINT LATINA AUTOMACAO DE MAQUINAS EA - 0000291",
+      "value": 103.0,
+      "nota_fiscal": "12698/01"
+    },
+    {
+      "id": "tx03842",
+      "date": "2026-06-29",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "BANCO",
+      "counterparty": "BOLETOS",
+      "value": 12.67,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03843",
+      "date": "2026-06-29",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "COMP TOTAL C I C ELETRONICOS",
+      "value": 384.56,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03844",
+      "date": "2026-06-29",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "ACP C A COMP ELETRONICOS LTDA",
+      "value": 586.36,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03845",
+      "date": "2026-06-29",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "IDALL COMERCIO ATACADISTA DE COMPONENTES ELETRONIC",
+      "value": 666.07,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03846",
+      "date": "2026-06-29",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "ACP C A COMP ELETRONICOS LTDA",
+      "value": 718.74,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03847",
+      "date": "2026-06-29",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "COMP TOTAL C I C ELETRONICOS",
+      "value": 600.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03848",
+      "date": "2026-06-29",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "IDALL COMERCIO ATACADISTA DE COMPONENTES ELETRONIC",
+      "value": 530.93,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03849",
+      "date": "2026-06-29",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "GEO ELETRON S LTDA",
+      "value": 623.6,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03850",
+      "date": "2026-06-29",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "TRICONECT COMERCIAL ELETRONICA",
+      "value": 820.44,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03851",
+      "date": "2026-06-29",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "COMP TOTAL C I C ELETRONICOS",
+      "value": 400.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03852",
+      "date": "2026-06-29",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "MPX",
+      "value": 397.5,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03853",
+      "date": "2026-06-29",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "TRICONECT COMERCIAL ELETRONICA",
+      "value": 220.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03854",
+      "date": "2026-06-29",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "LECOMP Com. de Comp. Eletronicos LTDA (0000312)",
+      "value": 1055.0,
+      "nota_fiscal": "117843"
+    },
+    {
+      "id": "tx03855",
+      "date": "2026-06-29",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "MEGADEF COMPONENTES ELETRONICOS LTDA (0000039)",
+      "value": 1039.97,
+      "nota_fiscal": "150664"
+    },
+    {
+      "id": "tx03856",
+      "date": "2026-06-29",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "TRICONECT COMERCIAL ELETR. LTDA (0000321)",
+      "value": 152.6,
+      "nota_fiscal": "20039"
+    },
+    {
+      "id": "tx03857",
+      "date": "2026-06-29",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "VETRONIC COMERCIO ELETRONICA LTDA (0000038)",
+      "value": 1548.75,
+      "nota_fiscal": "24290"
+    },
+    {
+      "id": "tx03858",
+      "date": "2026-06-29",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "VETRONIC COMERCIO ELETRONICA LTDA (0000038)",
+      "value": 222.86,
+      "nota_fiscal": "24298"
+    },
+    {
+      "id": "tx03859",
+      "date": "2026-06-29",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "ACP COMERCIO ATACADISTA DE COMPONENTES E (0000249)",
+      "value": 1036.09,
+      "nota_fiscal": "265230"
+    },
+    {
+      "id": "tx03860",
+      "date": "2026-06-29",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "MDS COMPONENTES ELETRONICOS LTDA (0000297)",
+      "value": 859.0,
+      "nota_fiscal": "4599"
+    },
+    {
+      "id": "tx03861",
+      "date": "2026-06-29",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "ACHEI COMPONENTES ELETRONICOS COMERCIO E (0000155)",
+      "value": 25.0,
+      "nota_fiscal": "55931"
+    },
+    {
+      "id": "tx03862",
+      "date": "2026-06-29",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "TRICOMP COMERCIAL ELETR. LTDA (0000278)",
+      "value": 65.44,
+      "nota_fiscal": "69578"
+    },
+    {
+      "id": "tx03863",
+      "date": "2026-06-29",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "IDALL COM. ATAC. DE COMP. ELETR. LTDA (0000011)",
+      "value": 5072.5,
+      "nota_fiscal": "77293"
+    },
+    {
+      "id": "tx03864",
+      "date": "2026-06-29",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "FORNELL SECOND COMERCIO DE COMPONETES EL (0000219)",
+      "value": 110.0,
+      "nota_fiscal": "9858"
+    },
+    {
+      "id": "tx03865",
+      "date": "2026-06-29",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "IDALL",
+      "value": 3723.1,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03866",
+      "date": "2026-06-29",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "ACP",
+      "value": 1497.9,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03867",
+      "date": "2026-06-29",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "RUMO HENPTEC",
+      "value": 5741.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03868",
+      "date": "2026-06-29",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "BANCO",
+      "counterparty": "BOLETO",
+      "value": 5.43,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03869",
+      "date": "2026-06-30",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "CRISTOFOLI EQUIP. DE BIOSSEGURANCA LTDA - 0000146",
+      "value": 390.0,
+      "nota_fiscal": "12703/01"
+    },
+    {
+      "id": "tx03870",
+      "date": "2026-06-30",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "FIBERWAN IND. DE EQUIP. ELETTR. LTDA-EPP - 0000411",
+      "value": 368.0,
+      "nota_fiscal": "12709/01"
+    },
+    {
+      "id": "tx03871",
+      "date": "2026-06-30",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "EVOLUTEC",
+      "value": 192.0,
+      "nota_fiscal": "12766E12767"
+    },
+    {
+      "id": "tx03872",
+      "date": "2026-06-30",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "S-OHM",
+      "value": 150.0,
+      "nota_fiscal": "12817"
+    },
+    {
+      "id": "tx03873",
+      "date": "2026-06-30",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "VITORIA INDUSTRIA ELETRONICA LTDA - 0001305",
+      "value": 1150.0,
+      "nota_fiscal": "12710/01"
+    },
+    {
+      "id": "tx03874",
+      "date": "2026-06-30",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "E DE OLIVEIRA BARBOSA ELETRONICA - 0000898",
+      "value": 447.0,
+      "nota_fiscal": "12708/01"
+    },
+    {
+      "id": "tx03875",
+      "date": "2026-06-30",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "ONLAB ASSISTENCIA TECNICA - 0000549",
+      "value": 846.27,
+      "nota_fiscal": "12700/01"
+    },
+    {
+      "id": "tx03876",
+      "date": "2026-06-30",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "BANCO",
+      "counterparty": "BOLETOS",
+      "value": 9.05,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03877",
+      "date": "2026-06-30",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "DIGICOMP ELETRONICA LTDA",
+      "value": 509.57,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03878",
+      "date": "2026-06-30",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "VETRONIC COM ELETRONICA LTDA",
+      "value": 314.16,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03879",
+      "date": "2026-06-30",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "ALLNETSYS COMERCIO I S LTDA",
+      "value": 215.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03880",
+      "date": "2026-06-30",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "GASTOS FIXOS",
+      "counterparty": "ALUGUEL",
+      "value": 4200.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03881",
+      "date": "2026-06-30",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "ZENER COMPONENTES ELETRONICOS LTDA - ME (0000317)",
+      "value": 250.0,
+      "nota_fiscal": "24790"
+    },
+    {
+      "id": "tx03882",
+      "date": "2026-06-30",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "ACP COMERCIO ATACADISTA DE COMPONENTES E (0000249)",
+      "value": 1851.43,
+      "nota_fiscal": "265310"
+    },
+    {
+      "id": "tx03883",
+      "date": "2026-06-30",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "ACHEI COMPONENTES ELETRONICOS COMERCIO E (0000155)",
+      "value": 66.0,
+      "nota_fiscal": "55930"
+    },
+    {
+      "id": "tx03884",
+      "date": "2026-06-30",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "compra",
+      "category": null,
+      "counterparty": "ALLNETSYS COMERCIO IMPORTACAO E SERVICOS (0000036)",
+      "value": 280.0,
+      "nota_fiscal": "93952"
+    },
+    {
+      "id": "tx03885",
+      "date": "2026-06-30",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "R. BAIAO INDUSTRIA E COMERCIO LTDA (0000060)",
+      "value": 16087.96,
+      "nota_fiscal": "12835"
+    },
+    {
+      "id": "tx03886",
+      "date": "2026-06-30",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "R. BAIAO INDUSTRIA E COMERCIO LTDA (0000060)",
+      "value": 131.32,
+      "nota_fiscal": "12836"
+    },
+    {
+      "id": "tx03887",
+      "date": "2026-06-30",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "LUIS FERNANDO NEVES MIELI (0001417)",
+      "value": 16.99,
+      "nota_fiscal": "12837"
+    },
+    {
+      "id": "tx03888",
+      "date": "2026-06-30",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "MARCELO JOSE NUNES DA SILVA (0001416)",
+      "value": 39.99,
+      "nota_fiscal": "12838"
+    },
+    {
+      "id": "tx03889",
+      "date": "2026-06-30",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "LUCAS ALVES DE SOUZA (0001419)",
+      "value": 24.99,
+      "nota_fiscal": "12839"
+    },
+    {
+      "id": "tx03890",
+      "date": "2026-06-30",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "VALEXCELL INDUSTRIA E COMERCIO ELETRO (0000166)",
+      "value": 287.0,
+      "nota_fiscal": "12840"
+    },
+    {
+      "id": "tx03891",
+      "date": "2026-06-30",
+      "division": "iluminacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO (0000660)",
+      "value": 704.0,
+      "nota_fiscal": "12841"
+    },
+    {
+      "id": "tx03892",
+      "date": "2026-06-30",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "ALLPRINT LATINA",
+      "value": 600.0,
+      "nota_fiscal": "860/01"
+    },
+    {
+      "id": "tx03893",
+      "date": "2026-06-30",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "entrada",
+      "category": null,
+      "counterparty": "SSAT SINALIZACAO",
+      "value": 2700.0,
+      "nota_fiscal": "858/01"
+    },
+    {
+      "id": "tx03894",
+      "date": "2026-06-30",
+      "division": "importacao",
+      "basis": "financeiro",
+      "flow": "saida",
+      "category": "FORNECEDORES",
+      "counterparty": "LS",
+      "value": 786.0,
+      "nota_fiscal": null
+    },
+    {
+      "id": "tx03895",
+      "date": "2026-06-30",
+      "division": "importacao",
+      "basis": "nfe",
+      "flow": "venda",
+      "category": null,
+      "counterparty": "R. BAIAO INDUSTRIA E COMERCIO LTDA (0000060)",
+      "value": 1191.6,
+      "nota_fiscal": "875"
     }
   ],
   "cashflow": [
@@ -35926,26 +43296,26 @@ const MAXLED_DATA = {
     {
       "month": "2026-06",
       "division": "consolidado",
-      "entradas": 437741.28,
-      "saidas": 382401.92,
-      "resultado": 55339.36,
-      "tipo": "previsao"
+      "entradas": 233964.55,
+      "saidas": 236609.47,
+      "resultado": -2644.92,
+      "tipo": "realizado"
     },
     {
       "month": "2026-06",
       "division": "iluminacao",
-      "entradas": 302449.43,
-      "saidas": 293406.06,
-      "resultado": 9043.38,
-      "tipo": "previsao"
+      "entradas": 166003.46,
+      "saidas": 159080.69,
+      "resultado": 6922.77,
+      "tipo": "realizado"
     },
     {
       "month": "2026-06",
       "division": "importacao",
-      "entradas": 135291.85,
-      "saidas": 88995.86,
-      "resultado": 46295.99,
-      "tipo": "previsao"
+      "entradas": 67961.09,
+      "saidas": 77528.78,
+      "resultado": -9567.69,
+      "tipo": "realizado"
     },
     {
       "month": "2026-07",
@@ -36108,23 +43478,44 @@ const MAXLED_DATA = {
     {
       "month": "2026-05",
       "division": "consolidado",
-      "vendas": 246259.88,
+      "vendas": 247639.88,
       "compras": 118850.2,
-      "resultado": 127409.68
+      "resultado": 128789.68
     },
     {
       "month": "2026-05",
       "division": "iluminacao",
-      "vendas": 145976.98,
+      "vendas": 145856.98,
       "compras": 77752.02,
-      "resultado": 68224.96
+      "resultado": 68104.96
     },
     {
       "month": "2026-05",
       "division": "importacao",
-      "vendas": 100282.9,
+      "vendas": 101782.9,
       "compras": 41098.18,
-      "resultado": 59184.72
+      "resultado": 60684.72
+    },
+    {
+      "month": "2026-06",
+      "division": "consolidado",
+      "vendas": 207658.84,
+      "compras": 107576.5,
+      "resultado": 100082.34
+    },
+    {
+      "month": "2026-06",
+      "division": "iluminacao",
+      "vendas": 174605.04,
+      "compras": 101327.69,
+      "resultado": 73277.35
+    },
+    {
+      "month": "2026-06",
+      "division": "importacao",
+      "vendas": 33053.8,
+      "compras": 6248.81,
+      "resultado": 26804.99
     }
   ],
   "dre": [
@@ -36144,17 +43535,17 @@ const MAXLED_DATA = {
           "valor": 10000.0
         },
         {
+          "categoria": "FUNCIONÁRIOS",
+          "grupo": "Pessoal",
+          "valor": 9774.61
+        },
+        {
           "categoria": "GASTOS FIXOS",
           "grupo": "Administrativo",
           "valor": 6624.43
         },
         {
-          "categoria": "FUNCIONÁRIOS",
-          "grupo": "Pessoal",
-          "valor": 6513.29
-        },
-        {
-          "categoria": "EMPRÉSTIMO CAPITAL DE GIRO BRADESCO",
+          "categoria": "EMPRÉSTIMO",
           "grupo": "Dívida/Empréstimos",
           "valor": 6175.89
         },
@@ -36164,19 +43555,14 @@ const MAXLED_DATA = {
           "valor": 3298.84
         },
         {
+          "categoria": "INVESTIMENTO",
+          "grupo": "Administrativo",
+          "valor": 2569.71
+        },
+        {
           "categoria": "SÓCIOS",
           "grupo": "Pessoal",
           "valor": 2500.0
-        },
-        {
-          "categoria": "SEGURO SAÚDE",
-          "grupo": "Pessoal",
-          "valor": 2261.32
-        },
-        {
-          "categoria": "MARKETING",
-          "grupo": "Marketing & Vendas",
-          "valor": 2007.0
         },
         {
           "categoria": "CONSUMO",
@@ -36184,19 +43570,9 @@ const MAXLED_DATA = {
           "valor": 1741.18
         },
         {
-          "categoria": "FUNCIONÁRIOS (VR)",
-          "grupo": "Pessoal",
-          "valor": 1000.0
-        },
-        {
-          "categoria": "SEGURO DE VIDA SÓCIO",
-          "grupo": "Pessoal",
-          "valor": 969.71
-        },
-        {
-          "categoria": "INVESTIMENTO",
-          "grupo": "Administrativo",
-          "valor": 800.0
+          "categoria": "OUTRAS DESPESAS",
+          "grupo": "Outras",
+          "valor": 1207.0
         },
         {
           "categoria": "BANCO",
@@ -36230,39 +43606,24 @@ const MAXLED_DATA = {
       "lucro_bruto": 11881.08,
       "despesas": [
         {
+          "categoria": "IMPORTAÇÃO",
+          "grupo": "Logística/Importação",
+          "valor": 32471.34
+        },
+        {
           "categoria": "SÓCIOS",
           "grupo": "Pessoal",
           "valor": 31169.18
         },
         {
-          "categoria": "IMPORTAÇÃO",
-          "grupo": "Logística/Importação",
-          "valor": 30459.73
-        },
-        {
-          "categoria": "EMPRÉSTIMO PRONAMP",
+          "categoria": "EMPRÉSTIMO",
           "grupo": "Dívida/Empréstimos",
-          "valor": 3540.29
-        },
-        {
-          "categoria": "EMPRÉSTIMO FGI",
-          "grupo": "Dívida/Empréstimos",
-          "valor": 2920.88
-        },
-        {
-          "categoria": "TRANSPORTES IMPORTAÇÃO",
-          "grupo": "Logística/Importação",
-          "valor": 2011.61
+          "valor": 6461.17
         },
         {
           "categoria": "BRINDES",
           "grupo": "Marketing & Vendas",
-          "valor": 1327.0
-        },
-        {
-          "categoria": "MATERIAL DE ESCRITÓRIO",
-          "grupo": "Administrativo",
-          "valor": 1242.0
+          "valor": 2569.0
         },
         {
           "categoria": "FUNCIONÁRIOS",
@@ -36280,8 +43641,8 @@ const MAXLED_DATA = {
           "valor": 112.82
         },
         {
-          "categoria": "SEGURO DE EMPRÉSTIMO",
-          "grupo": "Dívida/Empréstimos",
+          "categoria": "SEGURO SAÚDE",
+          "grupo": "Pessoal",
           "valor": 109.79
         },
         {
@@ -36318,7 +43679,17 @@ const MAXLED_DATA = {
         {
           "categoria": "IMPORTAÇÃO",
           "grupo": "Logística/Importação",
-          "valor": 30459.73
+          "valor": 32471.34
+        },
+        {
+          "categoria": "EMPRÉSTIMO",
+          "grupo": "Dívida/Empréstimos",
+          "valor": 12637.06
+        },
+        {
+          "categoria": "FUNCIONÁRIOS",
+          "grupo": "Pessoal",
+          "valor": 10774.61
         },
         {
           "categoria": "MOVIMENTO",
@@ -36326,24 +43697,9 @@ const MAXLED_DATA = {
           "valor": 10000.0
         },
         {
-          "categoria": "FUNCIONÁRIOS",
-          "grupo": "Pessoal",
-          "valor": 7513.29
-        },
-        {
           "categoria": "GASTOS FIXOS",
           "grupo": "Administrativo",
           "valor": 7197.43
-        },
-        {
-          "categoria": "EMPRÉSTIMO CAPITAL DE GIRO BRADESCO",
-          "grupo": "Dívida/Empréstimos",
-          "valor": 6175.89
-        },
-        {
-          "categoria": "EMPRÉSTIMO PRONAMP",
-          "grupo": "Dívida/Empréstimos",
-          "valor": 3540.29
         },
         {
           "categoria": "TRANSPORTES",
@@ -36351,24 +43707,14 @@ const MAXLED_DATA = {
           "valor": 3298.84
         },
         {
-          "categoria": "EMPRÉSTIMO FGI",
-          "grupo": "Dívida/Empréstimos",
-          "valor": 2920.88
+          "categoria": "INVESTIMENTO",
+          "grupo": "Administrativo",
+          "valor": 2682.53
         },
         {
-          "categoria": "SEGURO SAÚDE",
-          "grupo": "Pessoal",
-          "valor": 2261.32
-        },
-        {
-          "categoria": "TRANSPORTES IMPORTAÇÃO",
-          "grupo": "Logística/Importação",
-          "valor": 2011.61
-        },
-        {
-          "categoria": "MARKETING",
+          "categoria": "BRINDES",
           "grupo": "Marketing & Vendas",
-          "valor": 2007.0
+          "valor": 2569.0
         },
         {
           "categoria": "CONSUMO",
@@ -36376,29 +43722,9 @@ const MAXLED_DATA = {
           "valor": 1836.18
         },
         {
-          "categoria": "BRINDES",
-          "grupo": "Marketing & Vendas",
-          "valor": 1327.0
-        },
-        {
-          "categoria": "MATERIAL DE ESCRITÓRIO",
-          "grupo": "Administrativo",
-          "valor": 1242.0
-        },
-        {
-          "categoria": "FUNCIONÁRIOS (VR)",
-          "grupo": "Pessoal",
-          "valor": 1000.0
-        },
-        {
-          "categoria": "SEGURO DE VIDA SÓCIO",
-          "grupo": "Pessoal",
-          "valor": 969.71
-        },
-        {
-          "categoria": "INVESTIMENTO",
-          "grupo": "Administrativo",
-          "valor": 912.82
+          "categoria": "OUTRAS DESPESAS",
+          "grupo": "Outras",
+          "valor": 1207.0
         },
         {
           "categoria": "BANCO",
@@ -36416,8 +43742,8 @@ const MAXLED_DATA = {
           "valor": 147.0
         },
         {
-          "categoria": "SEGURO DE EMPRÉSTIMO",
-          "grupo": "Dívida/Empréstimos",
+          "categoria": "SEGURO SAÚDE",
+          "grupo": "Pessoal",
           "valor": 109.79
         }
       ],
@@ -36439,7 +43765,12 @@ const MAXLED_DATA = {
         {
           "categoria": "FUNCIONÁRIOS",
           "grupo": "Pessoal",
-          "valor": 12265.25
+          "valor": 10665.25
+        },
+        {
+          "categoria": "EMPRÉSTIMO",
+          "grupo": "Dívida/Empréstimos",
+          "valor": 7841.39
         },
         {
           "categoria": "GASTOS FIXOS",
@@ -36450,11 +43781,6 @@ const MAXLED_DATA = {
           "categoria": "TRANSPORTES",
           "grupo": "Logística/Importação",
           "valor": 6695.26
-        },
-        {
-          "categoria": "EMPRÉSTIMO CAPITAL DE GIRO BRADESCO",
-          "grupo": "Dívida/Empréstimos",
-          "valor": 6241.39
         },
         {
           "categoria": "SÓCIOS",
@@ -36472,12 +43798,12 @@ const MAXLED_DATA = {
           "valor": 2500.0
         },
         {
-          "categoria": "SEGURO DE VIDA SÓCIO",
-          "grupo": "Pessoal",
-          "valor": 969.71
+          "categoria": "INVESTIMENTO",
+          "grupo": "Administrativo",
+          "valor": 1179.37
         },
         {
-          "categoria": "SEGURO SÓCIO CARRO",
+          "categoria": "SEGURO SAÚDE",
           "grupo": "Pessoal",
           "valor": 931.72
         },
@@ -36487,14 +43813,14 @@ const MAXLED_DATA = {
           "valor": 400.0
         },
         {
-          "categoria": "INVESTIMENTO",
-          "grupo": "Administrativo",
-          "valor": 209.66
-        },
-        {
           "categoria": "BANCO",
           "grupo": "Financeiro/Bancário",
-          "valor": 164.05
+          "valor": 144.14
+        },
+        {
+          "categoria": null,
+          "grupo": "Outras",
+          "valor": 19.91
         }
       ],
       "despesas_total": 47120.31,
@@ -36518,12 +43844,12 @@ const MAXLED_DATA = {
           "valor": 11983.06
         },
         {
-          "categoria": "CARTÃO DE CRÉDITO",
-          "grupo": "Financeiro/Bancário",
+          "categoria": "CONSUMO",
+          "grupo": "Administrativo",
           "valor": 10246.03
         },
         {
-          "categoria": "EMPRÉSTIMO FGI",
+          "categoria": "EMPRÉSTIMO",
           "grupo": "Dívida/Empréstimos",
           "valor": 6604.75
         },
@@ -36533,14 +43859,9 @@ const MAXLED_DATA = {
           "valor": 5282.08
         },
         {
-          "categoria": "TRANSPORTES IMPORTAÇÃO",
-          "grupo": "Logística/Importação",
-          "valor": 1248.66
-        },
-        {
           "categoria": "TRANSPORTES",
           "grupo": "Logística/Importação",
-          "valor": 820.0
+          "valor": 2068.66
         },
         {
           "categoria": "GASTOS FIXOS",
@@ -36558,8 +43879,8 @@ const MAXLED_DATA = {
           "valor": 112.82
         },
         {
-          "categoria": "SEGURO DE EMPRÉSTIMO",
-          "grupo": "Dívida/Empréstimos",
+          "categoria": "SEGURO SAÚDE",
+          "grupo": "Pessoal",
           "valor": 109.79
         },
         {
@@ -36584,39 +43905,34 @@ const MAXLED_DATA = {
       "lucro_bruto": 70025.09,
       "despesas": [
         {
-          "categoria": "FUNCIONÁRIOS",
-          "grupo": "Pessoal",
-          "valor": 17547.33
-        },
-        {
           "categoria": "SÓCIOS",
           "grupo": "Pessoal",
           "valor": 16983.06
         },
         {
-          "categoria": "CARTÃO DE CRÉDITO",
-          "grupo": "Financeiro/Bancário",
+          "categoria": "FUNCIONÁRIOS",
+          "grupo": "Pessoal",
+          "valor": 15947.33
+        },
+        {
+          "categoria": "EMPRÉSTIMO",
+          "grupo": "Dívida/Empréstimos",
+          "valor": 14446.14
+        },
+        {
+          "categoria": "CONSUMO",
+          "grupo": "Administrativo",
           "valor": 10246.03
+        },
+        {
+          "categoria": "TRANSPORTES",
+          "grupo": "Logística/Importação",
+          "valor": 8763.92
         },
         {
           "categoria": "GASTOS FIXOS",
           "grupo": "Administrativo",
           "valor": 8355.27
-        },
-        {
-          "categoria": "TRANSPORTES",
-          "grupo": "Logística/Importação",
-          "valor": 7515.26
-        },
-        {
-          "categoria": "EMPRÉSTIMO FGI",
-          "grupo": "Dívida/Empréstimos",
-          "valor": 6604.75
-        },
-        {
-          "categoria": "EMPRÉSTIMO CAPITAL DE GIRO BRADESCO",
-          "grupo": "Dívida/Empréstimos",
-          "valor": 6241.39
         },
         {
           "categoria": "MOVIMENTO",
@@ -36629,29 +43945,19 @@ const MAXLED_DATA = {
           "valor": 2500.0
         },
         {
-          "categoria": "TRANSPORTES IMPORTAÇÃO",
-          "grupo": "Logística/Importação",
-          "valor": 1248.66
+          "categoria": "INVESTIMENTO",
+          "grupo": "Administrativo",
+          "valor": 1292.19
         },
         {
-          "categoria": "SEGURO DE VIDA SÓCIO",
+          "categoria": "SEGURO SAÚDE",
           "grupo": "Pessoal",
-          "valor": 969.71
-        },
-        {
-          "categoria": "SEGURO SÓCIO CARRO",
-          "grupo": "Pessoal",
-          "valor": 931.72
+          "valor": 1041.51
         },
         {
           "categoria": "DEVOLUÇÃO",
           "grupo": "Outras",
           "valor": 400.0
-        },
-        {
-          "categoria": "INVESTIMENTO",
-          "grupo": "Administrativo",
-          "valor": 322.48
         },
         {
           "categoria": "MANUTENÇÃO",
@@ -36661,12 +43967,12 @@ const MAXLED_DATA = {
         {
           "categoria": "BANCO",
           "grupo": "Financeiro/Bancário",
-          "valor": 203.65
+          "valor": 183.74
         },
         {
-          "categoria": "SEGURO DE EMPRÉSTIMO",
-          "grupo": "Dívida/Empréstimos",
-          "valor": 109.79
+          "categoria": null,
+          "grupo": "Outras",
+          "valor": 19.91
         }
       ],
       "despesas_total": 84429.1,
@@ -36710,19 +44016,14 @@ const MAXLED_DATA = {
           "valor": 8868.3
         },
         {
-          "categoria": "EMPRÉSTIMO CAPITAL DE GIRO BRADESCO",
+          "categoria": "EMPRÉSTIMO",
           "grupo": "Dívida/Empréstimos",
-          "valor": 6303.62
+          "valor": 8840.83
         },
         {
           "categoria": "SÓCIOS",
           "grupo": "Pessoal",
           "valor": 6280.0
-        },
-        {
-          "categoria": "EMPRÉSTIMO CAPITAL DE GIRO ITAÚ",
-          "grupo": "Dívida/Empréstimos",
-          "valor": 2537.21
         },
         {
           "categoria": "INVESTIMENTO",
@@ -36735,7 +44036,7 @@ const MAXLED_DATA = {
           "valor": 1185.0
         },
         {
-          "categoria": "SEGURO SÓCIO CARRO",
+          "categoria": "SEGURO SAÚDE",
           "grupo": "Pessoal",
           "valor": 931.74
         },
@@ -36771,8 +44072,13 @@ const MAXLED_DATA = {
           "valor": 7781.85
         },
         {
-          "categoria": "CARTÃO DE CRÉDITO",
-          "grupo": "Financeiro/Bancário",
+          "categoria": "EMPRÉSTIMO",
+          "grupo": "Dívida/Empréstimos",
+          "valor": 6455.27
+        },
+        {
+          "categoria": "SÓCIOS",
+          "grupo": "Pessoal",
           "valor": 5169.3
         },
         {
@@ -36784,21 +44090,6 @@ const MAXLED_DATA = {
           "categoria": "FUNCIONÁRIOS",
           "grupo": "Pessoal",
           "valor": 3654.0
-        },
-        {
-          "categoria": "EMPRÉSTIMO PRONAMP",
-          "grupo": "Dívida/Empréstimos",
-          "valor": 3621.21
-        },
-        {
-          "categoria": "EMPRÉSTIMO FGI",
-          "grupo": "Dívida/Empréstimos",
-          "valor": 2724.27
-        },
-        {
-          "categoria": "SEGURO DE EMPRÉSTIMO",
-          "grupo": "Dívida/Empréstimos",
-          "valor": 109.79
         },
         {
           "categoria": "BANCO",
@@ -36832,6 +44123,11 @@ const MAXLED_DATA = {
           "valor": 17304.67
         },
         {
+          "categoria": "EMPRÉSTIMO",
+          "grupo": "Dívida/Empréstimos",
+          "valor": 15296.1
+        },
+        {
           "categoria": "MOVIMENTO",
           "grupo": "Financeiro/Bancário",
           "valor": 14000.0
@@ -36842,24 +44138,14 @@ const MAXLED_DATA = {
           "valor": 13992.21
         },
         {
+          "categoria": "SÓCIOS",
+          "grupo": "Pessoal",
+          "valor": 11449.3
+        },
+        {
           "categoria": "TRANSPORTES",
           "grupo": "Logística/Importação",
           "valor": 8868.3
-        },
-        {
-          "categoria": "EMPRÉSTIMO CAPITAL DE GIRO BRADESCO",
-          "grupo": "Dívida/Empréstimos",
-          "valor": 6303.62
-        },
-        {
-          "categoria": "SÓCIOS",
-          "grupo": "Pessoal",
-          "valor": 6280.0
-        },
-        {
-          "categoria": "CARTÃO DE CRÉDITO",
-          "grupo": "Financeiro/Bancário",
-          "valor": 5169.3
         },
         {
           "categoria": "INVESTIMENTO",
@@ -36867,27 +44153,12 @@ const MAXLED_DATA = {
           "valor": 5101.13
         },
         {
-          "categoria": "EMPRÉSTIMO PRONAMP",
-          "grupo": "Dívida/Empréstimos",
-          "valor": 3621.21
-        },
-        {
-          "categoria": "EMPRÉSTIMO FGI",
-          "grupo": "Dívida/Empréstimos",
-          "valor": 2724.27
-        },
-        {
-          "categoria": "EMPRÉSTIMO CAPITAL DE GIRO ITAÚ",
-          "grupo": "Dívida/Empréstimos",
-          "valor": 2537.21
-        },
-        {
           "categoria": "MANUTENÇÃO",
           "grupo": "Administrativo",
           "valor": 1185.0
         },
         {
-          "categoria": "SEGURO SÓCIO CARRO",
+          "categoria": "SEGURO SAÚDE",
           "grupo": "Pessoal",
           "valor": 931.74
         },
@@ -36895,11 +44166,6 @@ const MAXLED_DATA = {
           "categoria": "BANCO",
           "grupo": "Financeiro/Bancário",
           "valor": 289.21
-        },
-        {
-          "categoria": "SEGURO DE EMPRÉSTIMO",
-          "grupo": "Dívida/Empréstimos",
-          "valor": 109.79
         },
         {
           "categoria": null,
@@ -36925,7 +44191,7 @@ const MAXLED_DATA = {
         {
           "categoria": "SÓCIOS",
           "grupo": "Pessoal",
-          "valor": 14270.37
+          "valor": 17778.98
         },
         {
           "categoria": "FUNCIONÁRIOS",
@@ -36938,24 +44204,14 @@ const MAXLED_DATA = {
           "valor": 12500.0
         },
         {
+          "categoria": "EMPRÉSTIMO",
+          "grupo": "Dívida/Empréstimos",
+          "valor": 8938.82
+        },
+        {
           "categoria": "GASTOS FIXOS",
           "grupo": "Administrativo",
           "valor": 8196.66
-        },
-        {
-          "categoria": "EMPRÉSTIMO CAPITAL DE GIRO BRADESCO",
-          "grupo": "Dívida/Empréstimos",
-          "valor": 6372.54
-        },
-        {
-          "categoria": "CARTÃO DE CRÉDITO",
-          "grupo": "Financeiro/Bancário",
-          "valor": 3508.61
-        },
-        {
-          "categoria": "EMPRÉSTIMO CAPITAL DE GIRO ITAÚ",
-          "grupo": "Dívida/Empréstimos",
-          "valor": 2566.28
         },
         {
           "categoria": "INVESTIMENTO",
@@ -36963,7 +44219,7 @@ const MAXLED_DATA = {
           "valor": 969.71
         },
         {
-          "categoria": "SEGURO SÓCIO CARRO",
+          "categoria": "SEGURO SAÚDE",
           "grupo": "Pessoal",
           "valor": 931.74
         },
@@ -37004,9 +44260,14 @@ const MAXLED_DATA = {
           "valor": 25000.0
         },
         {
-          "categoria": "CARTÃO DE CRÉDITO",
-          "grupo": "Financeiro/Bancário",
-          "valor": 18314.99
+          "categoria": "TRANSPORTES",
+          "grupo": "Logística/Importação",
+          "valor": 14420.88
+        },
+        {
+          "categoria": "SÓCIOS",
+          "grupo": "Pessoal",
+          "valor": 10685.71
         },
         {
           "categoria": "FUNCIONÁRIOS",
@@ -37014,24 +44275,9 @@ const MAXLED_DATA = {
           "valor": 6864.12
         },
         {
-          "categoria": "EMPRÉSTIMO FGI",
+          "categoria": "EMPRÉSTIMO",
           "grupo": "Dívida/Empréstimos",
-          "valor": 6680.13
-        },
-        {
-          "categoria": "TRANSPORTES",
-          "grupo": "Logística/Importação",
-          "valor": 3640.0
-        },
-        {
-          "categoria": "SÓCIOS",
-          "grupo": "Pessoal",
-          "valor": 2350.0
-        },
-        {
-          "categoria": "TRANSPORTES IMPORTAÇÃO",
-          "grupo": "Logística/Importação",
-          "valor": 801.6
+          "valor": 6789.92
         },
         {
           "categoria": "GASTOS FIXOS",
@@ -37039,13 +44285,8 @@ const MAXLED_DATA = {
           "valor": 724.82
         },
         {
-          "categoria": "SEGURO DE EMPRÉSTIMO",
-          "grupo": "Dívida/Empréstimos",
-          "valor": 109.79
-        },
-        {
-          "categoria": "CONSUMO",
-          "grupo": "Administrativo",
+          "categoria": "INSUMOS",
+          "grupo": "Outras",
           "valor": 47.71
         },
         {
@@ -37075,14 +44316,14 @@ const MAXLED_DATA = {
           "valor": 43500.0
         },
         {
+          "categoria": "SÓCIOS",
+          "grupo": "Pessoal",
+          "valor": 28464.69
+        },
+        {
           "categoria": "IMPORTAÇÃO",
           "grupo": "Logística/Importação",
           "valor": 25000.0
-        },
-        {
-          "categoria": "CARTÃO DE CRÉDITO",
-          "grupo": "Financeiro/Bancário",
-          "valor": 21823.6
         },
         {
           "categoria": "FUNCIONÁRIOS",
@@ -37090,9 +44331,14 @@ const MAXLED_DATA = {
           "valor": 19965.0
         },
         {
-          "categoria": "SÓCIOS",
-          "grupo": "Pessoal",
-          "valor": 16620.37
+          "categoria": "EMPRÉSTIMO",
+          "grupo": "Dívida/Empréstimos",
+          "valor": 15728.74
+        },
+        {
+          "categoria": "TRANSPORTES",
+          "grupo": "Logística/Importação",
+          "valor": 14420.88
         },
         {
           "categoria": "GASTOS FIXOS",
@@ -37100,39 +44346,14 @@ const MAXLED_DATA = {
           "valor": 8921.48
         },
         {
-          "categoria": "EMPRÉSTIMO FGI",
-          "grupo": "Dívida/Empréstimos",
-          "valor": 6680.13
-        },
-        {
-          "categoria": "EMPRÉSTIMO CAPITAL DE GIRO BRADESCO",
-          "grupo": "Dívida/Empréstimos",
-          "valor": 6372.54
-        },
-        {
-          "categoria": "TRANSPORTES",
-          "grupo": "Logística/Importação",
-          "valor": 3640.0
-        },
-        {
-          "categoria": "EMPRÉSTIMO CAPITAL DE GIRO ITAÚ",
-          "grupo": "Dívida/Empréstimos",
-          "valor": 2566.28
-        },
-        {
           "categoria": "INVESTIMENTO",
           "grupo": "Administrativo",
           "valor": 969.71
         },
         {
-          "categoria": "SEGURO SÓCIO CARRO",
+          "categoria": "SEGURO SAÚDE",
           "grupo": "Pessoal",
           "valor": 931.74
-        },
-        {
-          "categoria": "TRANSPORTES IMPORTAÇÃO",
-          "grupo": "Logística/Importação",
-          "valor": 801.6
         },
         {
           "categoria": "BANCO",
@@ -37145,13 +44366,8 @@ const MAXLED_DATA = {
           "valor": 150.0
         },
         {
-          "categoria": "SEGURO DE EMPRÉSTIMO",
-          "grupo": "Dívida/Empréstimos",
-          "valor": 109.79
-        },
-        {
-          "categoria": "CONSUMO",
-          "grupo": "Administrativo",
+          "categoria": "INSUMOS",
+          "grupo": "Outras",
           "valor": 47.71
         }
       ],
@@ -37173,7 +44389,12 @@ const MAXLED_DATA = {
         {
           "categoria": "FUNCIONÁRIOS",
           "grupo": "Pessoal",
-          "valor": 8638.66
+          "valor": 9198.66
+        },
+        {
+          "categoria": "EMPRÉSTIMO",
+          "grupo": "Dívida/Empréstimos",
+          "valor": 9036.88
         },
         {
           "categoria": "SÓCIOS",
@@ -37181,34 +44402,19 @@ const MAXLED_DATA = {
           "valor": 8500.0
         },
         {
-          "categoria": "EMPRÉSTIMO CAPITAL DE GIRO BRADESCO",
-          "grupo": "Dívida/Empréstimos",
-          "valor": 6441.56
-        },
-        {
           "categoria": "GASTOS FIXOS",
           "grupo": "Administrativo",
           "valor": 5908.59
         },
         {
+          "categoria": "SEGURO SAÚDE",
+          "grupo": "Pessoal",
+          "valor": 3589.87
+        },
+        {
           "categoria": "TRANSPORTES",
           "grupo": "Logística/Importação",
           "valor": 3476.68
-        },
-        {
-          "categoria": "SEGURO SAÚDE",
-          "grupo": "Pessoal",
-          "valor": 2620.16
-        },
-        {
-          "categoria": "EMPRÉSTIMO CAPITAL DE GIRO ITAÚ",
-          "grupo": "Dívida/Empréstimos",
-          "valor": 2595.32
-        },
-        {
-          "categoria": "SEGURO DE VIDA SÓCIO",
-          "grupo": "Pessoal",
-          "valor": 969.71
         },
         {
           "categoria": "BANCO",
@@ -37224,11 +44430,6 @@ const MAXLED_DATA = {
           "categoria": "MOVIMENTO",
           "grupo": "Financeiro/Bancário",
           "valor": 666.36
-        },
-        {
-          "categoria": "FUNCIONÁRIOS (VR)",
-          "grupo": "Pessoal",
-          "valor": 560.0
         }
       ],
       "despesas_total": 41831.31,
@@ -37252,8 +44453,8 @@ const MAXLED_DATA = {
           "valor": 11548.24
         },
         {
-          "categoria": "GASTOS FICOS",
-          "grupo": "Outras",
+          "categoria": "GASTOS FIXOS",
+          "grupo": "Administrativo",
           "valor": 9935.04
         },
         {
@@ -37325,17 +44526,17 @@ const MAXLED_DATA = {
         {
           "categoria": "FUNCIONÁRIOS",
           "grupo": "Pessoal",
-          "valor": 18141.22
-        },
-        {
-          "categoria": "GASTOS FICOS",
-          "grupo": "Outras",
-          "valor": 9935.04
+          "valor": 18701.22
         },
         {
           "categoria": "EMPRÉSTIMO",
           "grupo": "Dívida/Empréstimos",
-          "valor": 6928.07
+          "valor": 15964.95
+        },
+        {
+          "categoria": "GASTOS FIXOS",
+          "grupo": "Administrativo",
+          "valor": 15843.63
         },
         {
           "categoria": "TRANSPORTES",
@@ -37343,19 +44544,14 @@ const MAXLED_DATA = {
           "valor": 6738.17
         },
         {
-          "categoria": "EMPRÉSTIMO CAPITAL DE GIRO BRADESCO",
-          "grupo": "Dívida/Empréstimos",
-          "valor": 6441.56
-        },
-        {
-          "categoria": "GASTOS FIXOS",
-          "grupo": "Administrativo",
-          "valor": 5908.59
-        },
-        {
           "categoria": "MOVIMENTO",
           "grupo": "Financeiro/Bancário",
           "valor": 5521.36
+        },
+        {
+          "categoria": "SEGURO SAÚDE",
+          "grupo": "Pessoal",
+          "valor": 3589.87
         },
         {
           "categoria": "SERVIÇOS",
@@ -37368,21 +44564,6 @@ const MAXLED_DATA = {
           "valor": 3200.0
         },
         {
-          "categoria": "SEGURO SAÚDE",
-          "grupo": "Pessoal",
-          "valor": 2620.16
-        },
-        {
-          "categoria": "EMPRÉSTIMO CAPITAL DE GIRO ITAÚ",
-          "grupo": "Dívida/Empréstimos",
-          "valor": 2595.32
-        },
-        {
-          "categoria": "SEGURO DE VIDA SÓCIO",
-          "grupo": "Pessoal",
-          "valor": 969.71
-        },
-        {
           "categoria": "BANCO",
           "grupo": "Financeiro/Bancário",
           "valor": 892.9
@@ -37391,11 +44572,6 @@ const MAXLED_DATA = {
           "categoria": "INSUMOS",
           "grupo": "Outras",
           "valor": 688.41
-        },
-        {
-          "categoria": "FUNCIONÁRIOS (VR)",
-          "grupo": "Pessoal",
-          "valor": 560.0
         },
         {
           "categoria": null,
@@ -37412,6 +44588,189 @@ const MAXLED_DATA = {
       "resultado_operacional": 7372.35,
       "margem_bruta": 0.4822,
       "margem_liquida": 0.0315
+    },
+    {
+      "month": "2026-06",
+      "division": "iluminacao",
+      "basis": "financeiro",
+      "receita_bruta": 166003.46,
+      "impostos": 12531.52,
+      "receita_liquida": 153471.94,
+      "custo_mercadorias": 87889.08,
+      "lucro_bruto": 65582.86,
+      "despesas": [
+        {
+          "categoria": "SÓCIOS",
+          "grupo": "Pessoal",
+          "valor": 15600.0
+        },
+        {
+          "categoria": "FUNCIONÁRIOS",
+          "grupo": "Pessoal",
+          "valor": 11434.25
+        },
+        {
+          "categoria": "IMPORTAÇÃO",
+          "grupo": "Logística/Importação",
+          "valor": 7886.18
+        },
+        {
+          "categoria": "GASTOS FIXOS",
+          "grupo": "Administrativo",
+          "valor": 6960.44
+        },
+        {
+          "categoria": "MOVIMENTO",
+          "grupo": "Financeiro/Bancário",
+          "valor": 6600.0
+        },
+        {
+          "categoria": "SEGURO SAÚDE",
+          "grupo": "Pessoal",
+          "valor": 3589.87
+        },
+        {
+          "categoria": "TRANSPORTES",
+          "grupo": "Logística/Importação",
+          "valor": 2628.66
+        },
+        {
+          "categoria": "EMPRÉSTIMO",
+          "grupo": "Dívida/Empréstimos",
+          "valor": 2623.11
+        },
+        {
+          "categoria": "INSUMOS",
+          "grupo": "Outras",
+          "valor": 720.0
+        },
+        {
+          "categoria": "BANCO",
+          "grupo": "Financeiro/Bancário",
+          "valor": 617.58
+        }
+      ],
+      "despesas_total": 58660.09,
+      "resultado_operacional": 6922.77,
+      "margem_bruta": 0.4273,
+      "margem_liquida": 0.0417
+    },
+    {
+      "month": "2026-06",
+      "division": "importacao",
+      "basis": "financeiro",
+      "receita_bruta": 67961.09,
+      "impostos": 5684.18,
+      "receita_liquida": 62276.91,
+      "custo_mercadorias": 31529.12,
+      "lucro_bruto": 30747.79,
+      "despesas": [
+        {
+          "categoria": "GASTOS FIXOS",
+          "grupo": "Administrativo",
+          "valor": 10833.95
+        },
+        {
+          "categoria": "IMPORTAÇÃO",
+          "grupo": "Logística/Importação",
+          "valor": 10500.0
+        },
+        {
+          "categoria": "EMPRÉSTIMO",
+          "grupo": "Dívida/Empréstimos",
+          "valor": 6676.57
+        },
+        {
+          "categoria": "SÓCIOS",
+          "grupo": "Pessoal",
+          "valor": 6000.0
+        },
+        {
+          "categoria": "FUNCIONÁRIOS",
+          "grupo": "Pessoal",
+          "valor": 3721.52
+        },
+        {
+          "categoria": "TRANSPORTES",
+          "grupo": "Logística/Importação",
+          "valor": 2527.33
+        },
+        {
+          "categoria": "BANCO",
+          "grupo": "Financeiro/Bancário",
+          "valor": 56.11
+        }
+      ],
+      "despesas_total": 40315.48,
+      "resultado_operacional": -9567.69,
+      "margem_bruta": 0.4937,
+      "margem_liquida": -0.1408
+    },
+    {
+      "month": "2026-06",
+      "division": "consolidado",
+      "basis": "financeiro",
+      "receita_bruta": 233964.55,
+      "impostos": 18215.7,
+      "receita_liquida": 215748.85,
+      "custo_mercadorias": 119418.2,
+      "lucro_bruto": 96330.65,
+      "despesas": [
+        {
+          "categoria": "SÓCIOS",
+          "grupo": "Pessoal",
+          "valor": 21600.0
+        },
+        {
+          "categoria": "IMPORTAÇÃO",
+          "grupo": "Logística/Importação",
+          "valor": 18386.18
+        },
+        {
+          "categoria": "GASTOS FIXOS",
+          "grupo": "Administrativo",
+          "valor": 17794.39
+        },
+        {
+          "categoria": "FUNCIONÁRIOS",
+          "grupo": "Pessoal",
+          "valor": 15155.77
+        },
+        {
+          "categoria": "EMPRÉSTIMO",
+          "grupo": "Dívida/Empréstimos",
+          "valor": 9299.68
+        },
+        {
+          "categoria": "MOVIMENTO",
+          "grupo": "Financeiro/Bancário",
+          "valor": 6600.0
+        },
+        {
+          "categoria": "TRANSPORTES",
+          "grupo": "Logística/Importação",
+          "valor": 5155.99
+        },
+        {
+          "categoria": "SEGURO SAÚDE",
+          "grupo": "Pessoal",
+          "valor": 3589.87
+        },
+        {
+          "categoria": "INSUMOS",
+          "grupo": "Outras",
+          "valor": 720.0
+        },
+        {
+          "categoria": "BANCO",
+          "grupo": "Financeiro/Bancário",
+          "valor": 673.69
+        }
+      ],
+      "despesas_total": 98975.57,
+      "resultado_operacional": -2644.92,
+      "margem_bruta": 0.4465,
+      "margem_liquida": -0.0113
     }
   ],
   "expenseCategories": [
@@ -37419,163 +44778,142 @@ const MAXLED_DATA = {
       "division": "iluminacao",
       "categoria": "FUNCIONÁRIOS",
       "grupo": "Pessoal",
-      "valor": 50856.29,
-      "pct_receita": 0.0627,
+      "valor": 64511.86,
+      "pct_receita": 0.066,
       "meses": {
-        "2026-01": 6513.29,
-        "2026-02": 12265.25,
+        "2026-01": 9774.61,
+        "2026-02": 10665.25,
         "2026-03": 10338.21,
         "2026-04": 13100.88,
-        "2026-05": 8638.66
-      }
-    },
-    {
-      "division": "iluminacao",
-      "categoria": "MOVIMENTO",
-      "grupo": "Financeiro/Bancário",
-      "valor": 41166.36,
-      "pct_receita": 0.0508,
-      "meses": {
-        "2026-01": 10000.0,
-        "2026-02": 4000.0,
-        "2026-03": 14000.0,
-        "2026-04": 12500.0,
-        "2026-05": 666.36
-      }
-    },
-    {
-      "division": "iluminacao",
-      "categoria": "GASTOS FIXOS",
-      "grupo": "Administrativo",
-      "valor": 37995.77,
-      "pct_receita": 0.0469,
-      "meses": {
-        "2026-01": 6624.43,
-        "2026-02": 7743.27,
-        "2026-03": 9522.82,
-        "2026-04": 8196.66,
-        "2026-05": 5908.59
+        "2026-05": 9198.66,
+        "2026-06": 11434.25
       }
     },
     {
       "division": "iluminacao",
       "categoria": "SÓCIOS",
       "grupo": "Pessoal",
-      "valor": 36550.37,
-      "pct_receita": 0.0451,
+      "valor": 55658.98,
+      "pct_receita": 0.057,
       "meses": {
         "2026-01": 2500.0,
         "2026-02": 5000.0,
         "2026-03": 6280.0,
-        "2026-04": 14270.37,
-        "2026-05": 8500.0
+        "2026-04": 17778.98,
+        "2026-05": 8500.0,
+        "2026-06": 15600.0
       }
     },
     {
       "division": "iluminacao",
-      "categoria": "EMPRÉSTIMO CAPITAL DE GIRO BRADESCO",
+      "categoria": "MOVIMENTO",
+      "grupo": "Financeiro/Bancário",
+      "valor": 47766.36,
+      "pct_receita": 0.0489,
+      "meses": {
+        "2026-01": 10000.0,
+        "2026-02": 4000.0,
+        "2026-03": 14000.0,
+        "2026-04": 12500.0,
+        "2026-05": 666.36,
+        "2026-06": 6600.0
+      }
+    },
+    {
+      "division": "iluminacao",
+      "categoria": "GASTOS FIXOS",
+      "grupo": "Administrativo",
+      "valor": 44956.21,
+      "pct_receita": 0.046,
+      "meses": {
+        "2026-01": 6624.43,
+        "2026-02": 7743.27,
+        "2026-03": 9522.82,
+        "2026-04": 8196.66,
+        "2026-05": 5908.59,
+        "2026-06": 6960.44
+      }
+    },
+    {
+      "division": "iluminacao",
+      "categoria": "EMPRÉSTIMO",
       "grupo": "Dívida/Empréstimos",
-      "valor": 31535.0,
-      "pct_receita": 0.0389,
+      "valor": 43456.92,
+      "pct_receita": 0.0445,
       "meses": {
         "2026-01": 6175.89,
-        "2026-02": 6241.39,
-        "2026-03": 6303.62,
-        "2026-04": 6372.54,
-        "2026-05": 6441.56
+        "2026-02": 7841.39,
+        "2026-03": 8840.83,
+        "2026-04": 8938.82,
+        "2026-05": 9036.88,
+        "2026-06": 2623.11
       }
     },
     {
       "division": "iluminacao",
       "categoria": "IMPORTAÇÃO",
       "grupo": "Logística/Importação",
-      "valor": 30000.0,
-      "pct_receita": 0.037,
+      "valor": 37886.18,
+      "pct_receita": 0.0388,
       "meses": {
-        "2026-03": 30000.0
+        "2026-03": 30000.0,
+        "2026-06": 7886.18
       }
     },
     {
       "division": "iluminacao",
       "categoria": "TRANSPORTES",
       "grupo": "Logística/Importação",
-      "valor": 22339.08,
-      "pct_receita": 0.0276,
+      "valor": 24967.74,
+      "pct_receita": 0.0256,
       "meses": {
         "2026-01": 3298.84,
         "2026-02": 6695.26,
         "2026-03": 8868.3,
-        "2026-05": 3476.68
-      }
-    },
-    {
-      "division": "iluminacao",
-      "categoria": "EMPRÉSTIMO CAPITAL DE GIRO ITAÚ",
-      "grupo": "Dívida/Empréstimos",
-      "valor": 7698.81,
-      "pct_receita": 0.0095,
-      "meses": {
-        "2026-03": 2537.21,
-        "2026-04": 2566.28,
-        "2026-05": 2595.32
+        "2026-05": 3476.68,
+        "2026-06": 2628.66
       }
     },
     {
       "division": "iluminacao",
       "categoria": "SEGURO SAÚDE",
       "grupo": "Pessoal",
-      "valor": 4881.48,
-      "pct_receita": 0.006,
+      "valor": 9974.94,
+      "pct_receita": 0.0102,
       "meses": {
-        "2026-01": 2261.32,
-        "2026-05": 2620.16
-      }
-    },
-    {
-      "division": "iluminacao",
-      "categoria": "CARTÃO DE CRÉDITO",
-      "grupo": "Financeiro/Bancário",
-      "valor": 3508.61,
-      "pct_receita": 0.0043,
-      "meses": {
-        "2026-04": 3508.61
+        "2026-02": 931.72,
+        "2026-03": 931.74,
+        "2026-04": 931.74,
+        "2026-05": 3589.87,
+        "2026-06": 3589.87
       }
     },
     {
       "division": "iluminacao",
       "categoria": "INVESTIMENTO",
       "grupo": "Administrativo",
-      "valor": 3167.68,
-      "pct_receita": 0.0039,
+      "valor": 5907.1,
+      "pct_receita": 0.006,
       "meses": {
-        "2026-01": 800.0,
-        "2026-02": 209.66,
+        "2026-01": 2569.71,
+        "2026-02": 1179.37,
         "2026-03": 1188.31,
         "2026-04": 969.71
       }
     },
     {
       "division": "iluminacao",
-      "categoria": "SEGURO DE VIDA SÓCIO",
-      "grupo": "Pessoal",
-      "valor": 2909.13,
-      "pct_receita": 0.0036,
+      "categoria": "BANCO",
+      "grupo": "Financeiro/Bancário",
+      "valor": 2691.33,
+      "pct_receita": 0.0028,
       "meses": {
-        "2026-01": 969.71,
-        "2026-02": 969.71,
-        "2026-05": 969.71
-      }
-    },
-    {
-      "division": "iluminacao",
-      "categoria": "SEGURO SÓCIO CARRO",
-      "grupo": "Pessoal",
-      "valor": 2795.2,
-      "pct_receita": 0.0034,
-      "meses": {
-        "2026-02": 931.72,
-        "2026-03": 931.74,
-        "2026-04": 931.74
+        "2026-01": 393.87,
+        "2026-02": 144.14,
+        "2026-03": 262.06,
+        "2026-04": 507.82,
+        "2026-05": 765.86,
+        "2026-06": 617.58
       }
     },
     {
@@ -37583,33 +44921,9 @@ const MAXLED_DATA = {
       "categoria": "CONTABILIDADE",
       "grupo": "Financeiro/Bancário",
       "valor": 2500.0,
-      "pct_receita": 0.0031,
-      "meses": {
-        "2026-02": 2500.0
-      }
-    },
-    {
-      "division": "iluminacao",
-      "categoria": "BANCO",
-      "grupo": "Financeiro/Bancário",
-      "valor": 2093.66,
       "pct_receita": 0.0026,
       "meses": {
-        "2026-01": 393.87,
-        "2026-02": 164.05,
-        "2026-03": 262.06,
-        "2026-04": 507.82,
-        "2026-05": 765.86
-      }
-    },
-    {
-      "division": "iluminacao",
-      "categoria": "MARKETING",
-      "grupo": "Marketing & Vendas",
-      "valor": 2007.0,
-      "pct_receita": 0.0025,
-      "meses": {
-        "2026-01": 2007.0
+        "2026-02": 2500.0
       }
     },
     {
@@ -37617,7 +44931,7 @@ const MAXLED_DATA = {
       "categoria": "CONSUMO",
       "grupo": "Administrativo",
       "valor": 1741.18,
-      "pct_receita": 0.0021,
+      "pct_receita": 0.0018,
       "meses": {
         "2026-01": 1741.18
       }
@@ -37627,7 +44941,7 @@ const MAXLED_DATA = {
       "categoria": "MANUTENÇÃO",
       "grupo": "Administrativo",
       "valor": 1585.0,
-      "pct_receita": 0.002,
+      "pct_receita": 0.0016,
       "meses": {
         "2026-01": 250.0,
         "2026-03": 1185.0,
@@ -37636,23 +44950,23 @@ const MAXLED_DATA = {
     },
     {
       "division": "iluminacao",
-      "categoria": "FUNCIONÁRIOS (VR)",
-      "grupo": "Pessoal",
-      "valor": 1560.0,
-      "pct_receita": 0.0019,
+      "categoria": "INSUMOS",
+      "grupo": "Outras",
+      "valor": 1408.41,
+      "pct_receita": 0.0014,
       "meses": {
-        "2026-01": 1000.0,
-        "2026-05": 560.0
+        "2026-05": 688.41,
+        "2026-06": 720.0
       }
     },
     {
       "division": "iluminacao",
-      "categoria": "INSUMOS",
+      "categoria": "OUTRAS DESPESAS",
       "grupo": "Outras",
-      "valor": 688.41,
-      "pct_receita": 0.0008,
+      "valor": 1207.0,
+      "pct_receita": 0.0012,
       "meses": {
-        "2026-05": 688.41
+        "2026-01": 1207.0
       }
     },
     {
@@ -37660,7 +44974,7 @@ const MAXLED_DATA = {
       "categoria": "DEVOLUÇÃO",
       "grupo": "Outras",
       "valor": 400.0,
-      "pct_receita": 0.0005,
+      "pct_receita": 0.0004,
       "meses": {
         "2026-02": 400.0
       }
@@ -37679,35 +44993,54 @@ const MAXLED_DATA = {
       "division": "iluminacao",
       "categoria": null,
       "grupo": "Outras",
-      "valor": 40.0,
-      "pct_receita": 0.0,
+      "valor": 59.91,
+      "pct_receita": 0.0001,
       "meses": {
+        "2026-02": 19.91,
         "2026-03": 40.0
-      }
-    },
-    {
-      "division": "importacao",
-      "categoria": "IMPORTAÇÃO",
-      "grupo": "Logística/Importação",
-      "valor": 58659.73,
-      "pct_receita": 0.2128,
-      "meses": {
-        "2026-01": 30459.73,
-        "2026-04": 25000.0,
-        "2026-05": 3200.0
       }
     },
     {
       "division": "importacao",
       "categoria": "SÓCIOS",
       "grupo": "Pessoal",
-      "valor": 57050.48,
-      "pct_receita": 0.207,
+      "valor": 76555.49,
+      "pct_receita": 0.2228,
       "meses": {
         "2026-01": 31169.18,
         "2026-02": 11983.06,
-        "2026-04": 2350.0,
-        "2026-05": 11548.24
+        "2026-03": 5169.3,
+        "2026-04": 10685.71,
+        "2026-05": 11548.24,
+        "2026-06": 6000.0
+      }
+    },
+    {
+      "division": "importacao",
+      "categoria": "IMPORTAÇÃO",
+      "grupo": "Logística/Importação",
+      "valor": 71171.34,
+      "pct_receita": 0.2071,
+      "meses": {
+        "2026-01": 32471.34,
+        "2026-04": 25000.0,
+        "2026-05": 3200.0,
+        "2026-06": 10500.0
+      }
+    },
+    {
+      "division": "importacao",
+      "categoria": "EMPRÉSTIMO",
+      "grupo": "Dívida/Empréstimos",
+      "valor": 39915.75,
+      "pct_receita": 0.1162,
+      "meses": {
+        "2026-01": 6461.17,
+        "2026-02": 6604.75,
+        "2026-03": 6455.27,
+        "2026-04": 6789.92,
+        "2026-05": 6928.07,
+        "2026-06": 6676.57
       }
     },
     {
@@ -37715,7 +45048,7 @@ const MAXLED_DATA = {
       "categoria": "MOVIMENTO",
       "grupo": "Financeiro/Bancário",
       "valor": 35855.0,
-      "pct_receita": 0.1301,
+      "pct_receita": 0.1044,
       "meses": {
         "2026-04": 31000.0,
         "2026-05": 4855.0
@@ -37723,97 +45056,57 @@ const MAXLED_DATA = {
     },
     {
       "division": "importacao",
-      "categoria": "CARTÃO DE CRÉDITO",
-      "grupo": "Financeiro/Bancário",
-      "valor": 33730.32,
-      "pct_receita": 0.1224,
+      "categoria": "GASTOS FIXOS",
+      "grupo": "Administrativo",
+      "valor": 30460.66,
+      "pct_receita": 0.0887,
       "meses": {
-        "2026-02": 10246.03,
-        "2026-03": 5169.3,
-        "2026-04": 18314.99
+        "2026-01": 573.0,
+        "2026-02": 612.0,
+        "2026-03": 7781.85,
+        "2026-04": 724.82,
+        "2026-05": 9935.04,
+        "2026-06": 10833.95
       }
     },
     {
       "division": "importacao",
       "categoria": "FUNCIONÁRIOS",
       "grupo": "Pessoal",
-      "valor": 26302.76,
-      "pct_receita": 0.0954,
+      "valor": 30024.28,
+      "pct_receita": 0.0874,
       "meses": {
         "2026-01": 1000.0,
         "2026-02": 5282.08,
         "2026-03": 3654.0,
         "2026-04": 6864.12,
-        "2026-05": 9502.56
-      }
-    },
-    {
-      "division": "importacao",
-      "categoria": "EMPRÉSTIMO FGI",
-      "grupo": "Dívida/Empréstimos",
-      "valor": 18930.03,
-      "pct_receita": 0.0687,
-      "meses": {
-        "2026-01": 2920.88,
-        "2026-02": 6604.75,
-        "2026-03": 2724.27,
-        "2026-04": 6680.13
-      }
-    },
-    {
-      "division": "importacao",
-      "categoria": "GASTOS FICOS",
-      "grupo": "Outras",
-      "valor": 9935.04,
-      "pct_receita": 0.036,
-      "meses": {
-        "2026-05": 9935.04
-      }
-    },
-    {
-      "division": "importacao",
-      "categoria": "GASTOS FIXOS",
-      "grupo": "Administrativo",
-      "valor": 9691.67,
-      "pct_receita": 0.0352,
-      "meses": {
-        "2026-01": 573.0,
-        "2026-02": 612.0,
-        "2026-03": 7781.85,
-        "2026-04": 724.82
+        "2026-05": 9502.56,
+        "2026-06": 3721.52
       }
     },
     {
       "division": "importacao",
       "categoria": "TRANSPORTES",
       "grupo": "Logística/Importação",
-      "valor": 7721.49,
-      "pct_receita": 0.028,
+      "valor": 22278.36,
+      "pct_receita": 0.0648,
       "meses": {
-        "2026-02": 820.0,
-        "2026-04": 3640.0,
-        "2026-05": 3261.49
+        "2026-02": 2068.66,
+        "2026-04": 14420.88,
+        "2026-05": 3261.49,
+        "2026-06": 2527.33
       }
     },
     {
       "division": "importacao",
-      "categoria": "EMPRÉSTIMO PRONAMP",
-      "grupo": "Dívida/Empréstimos",
-      "valor": 7161.5,
-      "pct_receita": 0.026,
+      "categoria": "CONSUMO",
+      "grupo": "Administrativo",
+      "valor": 10521.03,
+      "pct_receita": 0.0306,
       "meses": {
-        "2026-01": 3540.29,
-        "2026-03": 3621.21
-      }
-    },
-    {
-      "division": "importacao",
-      "categoria": "EMPRÉSTIMO",
-      "grupo": "Dívida/Empréstimos",
-      "valor": 6928.07,
-      "pct_receita": 0.0251,
-      "meses": {
-        "2026-05": 6928.07
+        "2026-01": 95.0,
+        "2026-02": 10246.03,
+        "2026-05": 180.0
       }
     },
     {
@@ -37821,7 +45114,7 @@ const MAXLED_DATA = {
       "categoria": "INVESTIMENTO",
       "grupo": "Administrativo",
       "valor": 4138.46,
-      "pct_receita": 0.015,
+      "pct_receita": 0.012,
       "meses": {
         "2026-01": 112.82,
         "2026-02": 112.82,
@@ -37830,22 +45123,10 @@ const MAXLED_DATA = {
     },
     {
       "division": "importacao",
-      "categoria": "TRANSPORTES IMPORTAÇÃO",
-      "grupo": "Logística/Importação",
-      "valor": 4061.87,
-      "pct_receita": 0.0147,
-      "meses": {
-        "2026-01": 2011.61,
-        "2026-02": 1248.66,
-        "2026-04": 801.6
-      }
-    },
-    {
-      "division": "importacao",
       "categoria": "SERVIÇOS",
       "grupo": "Outras",
       "valor": 3400.0,
-      "pct_receita": 0.0123,
+      "pct_receita": 0.0099,
       "meses": {
         "2026-05": 3400.0
       }
@@ -37854,33 +45135,10 @@ const MAXLED_DATA = {
       "division": "importacao",
       "categoria": "BRINDES",
       "grupo": "Marketing & Vendas",
-      "valor": 1327.0,
-      "pct_receita": 0.0048,
+      "valor": 2569.0,
+      "pct_receita": 0.0075,
       "meses": {
-        "2026-01": 1327.0
-      }
-    },
-    {
-      "division": "importacao",
-      "categoria": "MATERIAL DE ESCRITÓRIO",
-      "grupo": "Administrativo",
-      "valor": 1242.0,
-      "pct_receita": 0.0045,
-      "meses": {
-        "2026-01": 1242.0
-      }
-    },
-    {
-      "division": "importacao",
-      "categoria": "SEGURO DE EMPRÉSTIMO",
-      "grupo": "Dívida/Empréstimos",
-      "valor": 439.16,
-      "pct_receita": 0.0016,
-      "meses": {
-        "2026-01": 109.79,
-        "2026-02": 109.79,
-        "2026-03": 109.79,
-        "2026-04": 109.79
+        "2026-01": 2569.0
       }
     },
     {
@@ -37888,21 +45146,24 @@ const MAXLED_DATA = {
       "categoria": null,
       "grupo": "Outras",
       "valor": 331.9,
-      "pct_receita": 0.0012,
+      "pct_receita": 0.001,
       "meses": {
         "2026-05": 331.9
       }
     },
     {
       "division": "importacao",
-      "categoria": "CONSUMO",
-      "grupo": "Administrativo",
-      "valor": 322.71,
-      "pct_receita": 0.0012,
+      "categoria": "BANCO",
+      "grupo": "Financeiro/Bancário",
+      "valor": 292.13,
+      "pct_receita": 0.0009,
       "meses": {
-        "2026-01": 95.0,
-        "2026-04": 47.71,
-        "2026-05": 180.0
+        "2026-01": 18.7,
+        "2026-02": 39.6,
+        "2026-03": 27.15,
+        "2026-04": 23.53,
+        "2026-05": 127.04,
+        "2026-06": 56.11
       }
     },
     {
@@ -37910,48 +45171,57 @@ const MAXLED_DATA = {
       "categoria": "MANUTENÇÃO",
       "grupo": "Administrativo",
       "valor": 250.0,
-      "pct_receita": 0.0009,
+      "pct_receita": 0.0007,
       "meses": {
         "2026-02": 250.0
       }
     },
     {
       "division": "importacao",
-      "categoria": "BANCO",
-      "grupo": "Financeiro/Bancário",
-      "valor": 236.02,
-      "pct_receita": 0.0009,
+      "categoria": "SEGURO SAÚDE",
+      "grupo": "Pessoal",
+      "valor": 219.58,
+      "pct_receita": 0.0006,
       "meses": {
-        "2026-01": 18.7,
-        "2026-02": 39.6,
-        "2026-03": 27.15,
-        "2026-04": 23.53,
-        "2026-05": 127.04
+        "2026-01": 109.79,
+        "2026-02": 109.79
+      }
+    },
+    {
+      "division": "importacao",
+      "categoria": "INSUMOS",
+      "grupo": "Outras",
+      "valor": 47.71,
+      "pct_receita": 0.0001,
+      "meses": {
+        "2026-04": 47.71
       }
     },
     {
       "division": "consolidado",
       "categoria": "SÓCIOS",
       "grupo": "Pessoal",
-      "valor": 93600.85,
-      "pct_receita": 0.0862,
+      "valor": 132214.47,
+      "pct_receita": 0.1001,
       "meses": {
         "2026-01": 33669.18,
         "2026-02": 16983.06,
-        "2026-03": 6280.0,
-        "2026-04": 16620.37,
-        "2026-05": 20048.24
+        "2026-03": 11449.3,
+        "2026-04": 28464.69,
+        "2026-05": 20048.24,
+        "2026-06": 21600.0
       }
     },
     {
       "division": "consolidado",
       "categoria": "IMPORTAÇÃO",
       "grupo": "Logística/Importação",
-      "valor": 88659.73,
-      "pct_receita": 0.0816,
+      "valor": 109057.52,
+      "pct_receita": 0.0826,
       "meses": {
         "2026-03": 30000.0,
-        "2026-01": 30459.73,
+        "2026-06": 18386.18,
+        "2026-01": 32471.34,
         "2026-04": 25000.0,
         "2026-05": 3200.0
       }
@@ -37960,174 +45230,115 @@ const MAXLED_DATA = {
       "division": "consolidado",
       "categoria": "FUNCIONÁRIOS",
       "grupo": "Pessoal",
-      "valor": 77159.05,
-      "pct_receita": 0.071,
+      "valor": 94536.14,
+      "pct_receita": 0.0716,
       "meses": {
-        "2026-01": 7513.29,
-        "2026-02": 17547.33,
+        "2026-01": 10774.61,
+        "2026-02": 15947.33,
         "2026-03": 13992.21,
         "2026-04": 19965.0,
-        "2026-05": 18141.22
+        "2026-05": 18701.22,
+        "2026-06": 15155.77
       }
     },
     {
       "division": "consolidado",
       "categoria": "MOVIMENTO",
       "grupo": "Financeiro/Bancário",
-      "valor": 77021.36,
-      "pct_receita": 0.0709,
+      "valor": 83621.36,
+      "pct_receita": 0.0633,
       "meses": {
         "2026-01": 10000.0,
         "2026-02": 4000.0,
         "2026-03": 14000.0,
         "2026-04": 43500.0,
-        "2026-05": 5521.36
-      }
-    },
-    {
-      "division": "consolidado",
-      "categoria": "GASTOS FIXOS",
-      "grupo": "Administrativo",
-      "valor": 47687.44,
-      "pct_receita": 0.0439,
-      "meses": {
-        "2026-01": 7197.43,
-        "2026-02": 8355.27,
-        "2026-03": 17304.67,
-        "2026-04": 8921.48,
-        "2026-05": 5908.59
-      }
-    },
-    {
-      "division": "consolidado",
-      "categoria": "CARTÃO DE CRÉDITO",
-      "grupo": "Financeiro/Bancário",
-      "valor": 37238.93,
-      "pct_receita": 0.0343,
-      "meses": {
-        "2026-04": 21823.6,
-        "2026-02": 10246.03,
-        "2026-03": 5169.3
-      }
-    },
-    {
-      "division": "consolidado",
-      "categoria": "EMPRÉSTIMO CAPITAL DE GIRO BRADESCO",
-      "grupo": "Dívida/Empréstimos",
-      "valor": 31535.0,
-      "pct_receita": 0.029,
-      "meses": {
-        "2026-01": 6175.89,
-        "2026-02": 6241.39,
-        "2026-03": 6303.62,
-        "2026-04": 6372.54,
-        "2026-05": 6441.56
-      }
-    },
-    {
-      "division": "consolidado",
-      "categoria": "TRANSPORTES",
-      "grupo": "Logística/Importação",
-      "valor": 30060.57,
-      "pct_receita": 0.0277,
-      "meses": {
-        "2026-01": 3298.84,
-        "2026-02": 7515.26,
-        "2026-03": 8868.3,
-        "2026-05": 6738.17,
-        "2026-04": 3640.0
-      }
-    },
-    {
-      "division": "consolidado",
-      "categoria": "EMPRÉSTIMO FGI",
-      "grupo": "Dívida/Empréstimos",
-      "valor": 18930.03,
-      "pct_receita": 0.0174,
-      "meses": {
-        "2026-01": 2920.88,
-        "2026-02": 6604.75,
-        "2026-03": 2724.27,
-        "2026-04": 6680.13
-      }
-    },
-    {
-      "division": "consolidado",
-      "categoria": "GASTOS FICOS",
-      "grupo": "Outras",
-      "valor": 9935.04,
-      "pct_receita": 0.0091,
-      "meses": {
-        "2026-05": 9935.04
-      }
-    },
-    {
-      "division": "consolidado",
-      "categoria": "EMPRÉSTIMO CAPITAL DE GIRO ITAÚ",
-      "grupo": "Dívida/Empréstimos",
-      "valor": 7698.81,
-      "pct_receita": 0.0071,
-      "meses": {
-        "2026-03": 2537.21,
-        "2026-04": 2566.28,
-        "2026-05": 2595.32
-      }
-    },
-    {
-      "division": "consolidado",
-      "categoria": "INVESTIMENTO",
-      "grupo": "Administrativo",
-      "valor": 7306.14,
-      "pct_receita": 0.0067,
-      "meses": {
-        "2026-01": 912.82,
-        "2026-02": 322.48,
-        "2026-03": 5101.13,
-        "2026-04": 969.71
-      }
-    },
-    {
-      "division": "consolidado",
-      "categoria": "EMPRÉSTIMO PRONAMP",
-      "grupo": "Dívida/Empréstimos",
-      "valor": 7161.5,
-      "pct_receita": 0.0066,
-      "meses": {
-        "2026-01": 3540.29,
-        "2026-03": 3621.21
+        "2026-05": 5521.36,
+        "2026-06": 6600.0
       }
     },
     {
       "division": "consolidado",
       "categoria": "EMPRÉSTIMO",
       "grupo": "Dívida/Empréstimos",
-      "valor": 6928.07,
-      "pct_receita": 0.0064,
+      "valor": 83372.67,
+      "pct_receita": 0.0631,
       "meses": {
-        "2026-05": 6928.07
+        "2026-01": 12637.06,
+        "2026-02": 14446.14,
+        "2026-03": 15296.1,
+        "2026-04": 15728.74,
+        "2026-05": 15964.95,
+        "2026-06": 9299.68
+      }
+    },
+    {
+      "division": "consolidado",
+      "categoria": "GASTOS FIXOS",
+      "grupo": "Administrativo",
+      "valor": 75416.87,
+      "pct_receita": 0.0571,
+      "meses": {
+        "2026-01": 7197.43,
+        "2026-02": 8355.27,
+        "2026-03": 17304.67,
+        "2026-04": 8921.48,
+        "2026-05": 15843.63,
+        "2026-06": 17794.39
+      }
+    },
+    {
+      "division": "consolidado",
+      "categoria": "TRANSPORTES",
+      "grupo": "Logística/Importação",
+      "valor": 47246.1,
+      "pct_receita": 0.0358,
+      "meses": {
+        "2026-01": 3298.84,
+        "2026-02": 8763.92,
+        "2026-03": 8868.3,
+        "2026-05": 6738.17,
+        "2026-06": 5155.99,
+        "2026-04": 14420.88
+      }
+    },
+    {
+      "division": "consolidado",
+      "categoria": "CONSUMO",
+      "grupo": "Administrativo",
+      "valor": 12262.21,
+      "pct_receita": 0.0093,
+      "meses": {
+        "2026-01": 1836.18,
+        "2026-02": 10246.03,
+        "2026-05": 180.0
       }
     },
     {
       "division": "consolidado",
       "categoria": "SEGURO SAÚDE",
       "grupo": "Pessoal",
-      "valor": 4881.48,
-      "pct_receita": 0.0045,
+      "valor": 10194.52,
+      "pct_receita": 0.0077,
       "meses": {
-        "2026-01": 2261.32,
-        "2026-05": 2620.16
+        "2026-02": 1041.51,
+        "2026-03": 931.74,
+        "2026-04": 931.74,
+        "2026-05": 3589.87,
+        "2026-06": 3589.87,
+        "2026-01": 109.79
       }
     },
     {
       "division": "consolidado",
-      "categoria": "TRANSPORTES IMPORTAÇÃO",
-      "grupo": "Logística/Importação",
-      "valor": 4061.87,
-      "pct_receita": 0.0037,
+      "categoria": "INVESTIMENTO",
+      "grupo": "Administrativo",
+      "valor": 10045.56,
+      "pct_receita": 0.0076,
       "meses": {
-        "2026-01": 2011.61,
-        "2026-02": 1248.66,
-        "2026-04": 801.6
+        "2026-01": 2682.53,
+        "2026-02": 1292.19,
+        "2026-03": 5101.13,
+        "2026-04": 969.71
       }
     },
     {
@@ -38135,33 +45346,34 @@ const MAXLED_DATA = {
       "categoria": "SERVIÇOS",
       "grupo": "Outras",
       "valor": 3400.0,
-      "pct_receita": 0.0031,
+      "pct_receita": 0.0026,
       "meses": {
         "2026-05": 3400.0
       }
     },
     {
       "division": "consolidado",
-      "categoria": "SEGURO DE VIDA SÓCIO",
-      "grupo": "Pessoal",
-      "valor": 2909.13,
-      "pct_receita": 0.0027,
+      "categoria": "BANCO",
+      "grupo": "Financeiro/Bancário",
+      "valor": 2983.46,
+      "pct_receita": 0.0023,
       "meses": {
-        "2026-01": 969.71,
-        "2026-02": 969.71,
-        "2026-05": 969.71
+        "2026-01": 412.57,
+        "2026-02": 183.74,
+        "2026-03": 289.21,
+        "2026-04": 531.35,
+        "2026-05": 892.9,
+        "2026-06": 673.69
       }
     },
     {
       "division": "consolidado",
-      "categoria": "SEGURO SÓCIO CARRO",
-      "grupo": "Pessoal",
-      "valor": 2795.2,
-      "pct_receita": 0.0026,
+      "categoria": "BRINDES",
+      "grupo": "Marketing & Vendas",
+      "valor": 2569.0,
+      "pct_receita": 0.0019,
       "meses": {
-        "2026-02": 931.72,
-        "2026-03": 931.74,
-        "2026-04": 931.74
+        "2026-01": 2569.0
       }
     },
     {
@@ -38169,45 +45381,9 @@ const MAXLED_DATA = {
       "categoria": "CONTABILIDADE",
       "grupo": "Financeiro/Bancário",
       "valor": 2500.0,
-      "pct_receita": 0.0023,
-      "meses": {
-        "2026-02": 2500.0
-      }
-    },
-    {
-      "division": "consolidado",
-      "categoria": "BANCO",
-      "grupo": "Financeiro/Bancário",
-      "valor": 2329.68,
-      "pct_receita": 0.0021,
-      "meses": {
-        "2026-01": 412.57,
-        "2026-02": 203.65,
-        "2026-03": 289.21,
-        "2026-04": 531.35,
-        "2026-05": 892.9
-      }
-    },
-    {
-      "division": "consolidado",
-      "categoria": "CONSUMO",
-      "grupo": "Administrativo",
-      "valor": 2063.89,
       "pct_receita": 0.0019,
       "meses": {
-        "2026-01": 1836.18,
-        "2026-04": 47.71,
-        "2026-05": 180.0
-      }
-    },
-    {
-      "division": "consolidado",
-      "categoria": "MARKETING",
-      "grupo": "Marketing & Vendas",
-      "valor": 2007.0,
-      "pct_receita": 0.0018,
-      "meses": {
-        "2026-01": 2007.0
+        "2026-02": 2500.0
       }
     },
     {
@@ -38215,7 +45391,7 @@ const MAXLED_DATA = {
       "categoria": "MANUTENÇÃO",
       "grupo": "Administrativo",
       "valor": 1835.0,
-      "pct_receita": 0.0017,
+      "pct_receita": 0.0014,
       "meses": {
         "2026-01": 250.0,
         "2026-03": 1185.0,
@@ -38225,56 +45401,24 @@ const MAXLED_DATA = {
     },
     {
       "division": "consolidado",
-      "categoria": "FUNCIONÁRIOS (VR)",
-      "grupo": "Pessoal",
-      "valor": 1560.0,
-      "pct_receita": 0.0014,
-      "meses": {
-        "2026-01": 1000.0,
-        "2026-05": 560.0
-      }
-    },
-    {
-      "division": "consolidado",
-      "categoria": "BRINDES",
-      "grupo": "Marketing & Vendas",
-      "valor": 1327.0,
-      "pct_receita": 0.0012,
-      "meses": {
-        "2026-01": 1327.0
-      }
-    },
-    {
-      "division": "consolidado",
-      "categoria": "MATERIAL DE ESCRITÓRIO",
-      "grupo": "Administrativo",
-      "valor": 1242.0,
-      "pct_receita": 0.0011,
-      "meses": {
-        "2026-01": 1242.0
-      }
-    },
-    {
-      "division": "consolidado",
       "categoria": "INSUMOS",
       "grupo": "Outras",
-      "valor": 688.41,
-      "pct_receita": 0.0006,
+      "valor": 1456.12,
+      "pct_receita": 0.0011,
       "meses": {
-        "2026-05": 688.41
+        "2026-05": 688.41,
+        "2026-06": 720.0,
+        "2026-04": 47.71
       }
     },
     {
       "division": "consolidado",
-      "categoria": "SEGURO DE EMPRÉSTIMO",
-      "grupo": "Dívida/Empréstimos",
-      "valor": 439.16,
-      "pct_receita": 0.0004,
+      "categoria": "OUTRAS DESPESAS",
+      "grupo": "Outras",
+      "valor": 1207.0,
+      "pct_receita": 0.0009,
       "meses": {
-        "2026-01": 109.79,
-        "2026-02": 109.79,
-        "2026-03": 109.79,
-        "2026-04": 109.79
+        "2026-01": 1207.0
       }
     },
     {
@@ -38282,7 +45426,7 @@ const MAXLED_DATA = {
       "categoria": "DEVOLUÇÃO",
       "grupo": "Outras",
       "valor": 400.0,
-      "pct_receita": 0.0004,
+      "pct_receita": 0.0003,
       "meses": {
         "2026-02": 400.0
       }
@@ -38291,9 +45435,10 @@ const MAXLED_DATA = {
       "division": "consolidado",
       "categoria": null,
       "grupo": "Outras",
-      "valor": 371.9,
+      "valor": 391.81,
       "pct_receita": 0.0003,
       "meses": {
+        "2026-02": 19.91,
         "2026-03": 40.0,
         "2026-05": 331.9
       }
@@ -38315,24 +45460,32 @@ const MAXLED_DATA = {
       "tipo": "cliente",
       "basis": "financeiro",
       "nome": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO - 0000660",
-      "valor": 66452.0,
-      "n_transacoes": 43
+      "valor": 70832.29,
+      "n_transacoes": 48
     },
     {
       "division": "iluminacao",
       "tipo": "cliente",
       "basis": "financeiro",
       "nome": "VINTEK IND., COMERCIO E SERVICOS LTDA - 0000894",
-      "valor": 51497.04,
-      "n_transacoes": 14
+      "valor": 66521.67,
+      "n_transacoes": 19
+    },
+    {
+      "division": "iluminacao",
+      "tipo": "cliente",
+      "basis": "financeiro",
+      "nome": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
+      "valor": 52135.78,
+      "n_transacoes": 56
     },
     {
       "division": "iluminacao",
       "tipo": "cliente",
       "basis": "financeiro",
       "nome": "R. BAIAO INDUSTRIA E COMERCIO LTDA - 0000060",
-      "valor": 39080.11,
-      "n_transacoes": 13
+      "valor": 49940.66,
+      "n_transacoes": 17
     },
     {
       "division": "iluminacao",
@@ -38346,17 +45499,17 @@ const MAXLED_DATA = {
       "division": "iluminacao",
       "tipo": "cliente",
       "basis": "financeiro",
-      "nome": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
-      "valor": 32031.52,
-      "n_transacoes": 43
+      "nome": "PRODUTOS ELETRONICOS FRATA LTDA - 0000223",
+      "valor": 30979.0,
+      "n_transacoes": 14
     },
     {
       "division": "iluminacao",
       "tipo": "cliente",
       "basis": "financeiro",
-      "nome": "PRODUTOS ELETRONICOS FRATA LTDA - 0000223",
-      "valor": 30369.0,
-      "n_transacoes": 13
+      "nome": "BPM INDUSTRIA E COMERCIO - 0000541",
+      "valor": 20180.81,
+      "n_transacoes": 19
     },
     {
       "division": "iluminacao",
@@ -38370,6 +45523,22 @@ const MAXLED_DATA = {
       "division": "iluminacao",
       "tipo": "cliente",
       "basis": "financeiro",
+      "nome": "J.M. MAQUINAS AUTOMOTIVAS EIRELI - 0000387",
+      "valor": 19444.71,
+      "n_transacoes": 11
+    },
+    {
+      "division": "iluminacao",
+      "tipo": "cliente",
+      "basis": "financeiro",
+      "nome": "SSAT SINALIZACAO E ADESIVOS EIRELI EPP - 0000072",
+      "valor": 17543.9,
+      "n_transacoes": 16
+    },
+    {
+      "division": "iluminacao",
+      "tipo": "cliente",
+      "basis": "financeiro",
       "nome": "TAICON",
       "valor": 17103.8,
       "n_transacoes": 3
@@ -38378,32 +45547,8 @@ const MAXLED_DATA = {
       "division": "iluminacao",
       "tipo": "cliente",
       "basis": "financeiro",
-      "nome": "SSAT SINALIZACAO E ADESIVOS EIRELI EPP - 0000072",
-      "valor": 15917.36,
-      "n_transacoes": 14
-    },
-    {
-      "division": "iluminacao",
-      "tipo": "cliente",
-      "basis": "financeiro",
-      "nome": "BPM INDUSTRIA E COMERCIO - 0000541",
-      "valor": 13945.47,
-      "n_transacoes": 13
-    },
-    {
-      "division": "iluminacao",
-      "tipo": "cliente",
-      "basis": "financeiro",
-      "nome": "J.M. MAQUINAS AUTOMOTIVAS EIRELI - 0000387",
-      "valor": 13685.11,
-      "n_transacoes": 8
-    },
-    {
-      "division": "iluminacao",
-      "tipo": "cliente",
-      "basis": "financeiro",
-      "nome": "CARINE G RODRIGUES - 0000764",
-      "valor": 13596.38,
+      "nome": "NEWTESC TECNOLOGIA E COMERCIO LTDA - 0000106",
+      "valor": 16841.75,
       "n_transacoes": 9
     },
     {
@@ -38411,32 +45556,40 @@ const MAXLED_DATA = {
       "tipo": "fornecedor",
       "basis": "financeiro",
       "nome": "DAS",
-      "valor": 57953.26,
-      "n_transacoes": 4
+      "valor": 70484.78,
+      "n_transacoes": 5
     },
     {
       "division": "iluminacao",
       "tipo": "fornecedor",
       "basis": "financeiro",
       "nome": "ACP",
-      "valor": 46290.9,
-      "n_transacoes": 47
+      "valor": 54046.91,
+      "n_transacoes": 54
     },
     {
       "division": "iluminacao",
       "tipo": "fornecedor",
       "basis": "financeiro",
       "nome": "MARIA",
-      "valor": 40280.0,
-      "n_transacoes": 6
+      "valor": 49580.0,
+      "n_transacoes": 8
     },
     {
       "division": "iluminacao",
       "tipo": "fornecedor",
       "basis": "financeiro",
       "nome": "CAPITAL DE GIRO",
-      "valor": 39233.81,
-      "n_transacoes": 8
+      "valor": 41856.92,
+      "n_transacoes": 9
+    },
+    {
+      "division": "iluminacao",
+      "tipo": "fornecedor",
+      "basis": "financeiro",
+      "nome": "ACP C A COMP ELETRONICOS LTDA",
+      "valor": 35304.23,
+      "n_transacoes": 45
     },
     {
       "division": "iluminacao",
@@ -38450,25 +45603,25 @@ const MAXLED_DATA = {
       "division": "iluminacao",
       "tipo": "fornecedor",
       "basis": "financeiro",
-      "nome": "ACP C A COMP ELETRONICOS LTDA",
-      "valor": 22987.77,
-      "n_transacoes": 30
+      "nome": "IDALL COMERCIO ATACADISTA DE C",
+      "valor": 24640.44,
+      "n_transacoes": 33
     },
     {
       "division": "iluminacao",
       "tipo": "fornecedor",
       "basis": "financeiro",
       "nome": "MKB SENSORES LTDA",
-      "valor": 22762.99,
-      "n_transacoes": 10
+      "valor": 24547.81,
+      "n_transacoes": 11
     },
     {
       "division": "iluminacao",
       "tipo": "fornecedor",
       "basis": "financeiro",
       "nome": "MKB",
-      "valor": 20026.33,
-      "n_transacoes": 9
+      "valor": 22715.79,
+      "n_transacoes": 10
     },
     {
       "division": "iluminacao",
@@ -38490,25 +45643,17 @@ const MAXLED_DATA = {
       "division": "iluminacao",
       "tipo": "fornecedor",
       "basis": "financeiro",
-      "nome": "MAX IMPORT",
-      "valor": 16500.0,
-      "n_transacoes": 3
-    },
-    {
-      "division": "iluminacao",
-      "tipo": "fornecedor",
-      "basis": "financeiro",
-      "nome": "IDALL COMERCIO ATACADISTA DE C",
-      "valor": 16487.6,
-      "n_transacoes": 23
+      "nome": "ALUGUEL",
+      "valor": 16800.0,
+      "n_transacoes": 4
     },
     {
       "division": "importacao",
       "tipo": "cliente",
       "basis": "financeiro",
       "nome": "TRANSFIX",
-      "valor": 51133.69,
-      "n_transacoes": 18
+      "valor": 58870.69,
+      "n_transacoes": 19
     },
     {
       "division": "importacao",
@@ -38555,16 +45700,24 @@ const MAXLED_DATA = {
       "tipo": "cliente",
       "basis": "financeiro",
       "nome": "MAX LED",
-      "valor": 11000.0,
-      "n_transacoes": 2
+      "valor": 12600.0,
+      "n_transacoes": 3
+    },
+    {
+      "division": "importacao",
+      "tipo": "cliente",
+      "basis": "financeiro",
+      "nome": "J.M MAQUINAS",
+      "valor": 12498.7,
+      "n_transacoes": 3
     },
     {
       "division": "importacao",
       "tipo": "cliente",
       "basis": "financeiro",
       "nome": "FERRTECH",
-      "valor": 10825.84,
-      "n_transacoes": 8
+      "valor": 11477.09,
+      "n_transacoes": 9
     },
     {
       "division": "importacao",
@@ -38578,24 +45731,16 @@ const MAXLED_DATA = {
       "division": "importacao",
       "tipo": "cliente",
       "basis": "financeiro",
-      "nome": "ALLPRINT LATINA",
-      "valor": 6686.67,
-      "n_transacoes": 2
-    },
-    {
-      "division": "importacao",
-      "tipo": "cliente",
-      "basis": "financeiro",
-      "nome": "MAX LED ILUM",
-      "valor": 5500.0,
+      "nome": "antecipação titulos FRATA",
+      "valor": 8365.49,
       "n_transacoes": 1
     },
     {
       "division": "importacao",
       "tipo": "cliente",
       "basis": "financeiro",
-      "nome": "TAIKOM IMPORT",
-      "valor": 5460.0,
+      "nome": "simples conect",
+      "valor": 7316.8,
       "n_transacoes": 1
     },
     {
@@ -38618,9 +45763,25 @@ const MAXLED_DATA = {
       "division": "importacao",
       "tipo": "fornecedor",
       "basis": "financeiro",
+      "nome": "IDALL",
+      "valor": 32086.27,
+      "n_transacoes": 16
+    },
+    {
+      "division": "importacao",
+      "tipo": "fornecedor",
+      "basis": "financeiro",
       "nome": "SIMENTOR",
       "valor": 30000.0,
       "n_transacoes": 1
+    },
+    {
+      "division": "importacao",
+      "tipo": "fornecedor",
+      "basis": "financeiro",
+      "nome": "ALEX",
+      "valor": 26700.0,
+      "n_transacoes": 8
     },
     {
       "division": "importacao",
@@ -38650,48 +45811,32 @@ const MAXLED_DATA = {
       "division": "importacao",
       "tipo": "fornecedor",
       "basis": "financeiro",
-      "nome": "ALEX",
-      "valor": 20700.0,
+      "nome": "DAS",
+      "valor": 19824.42,
       "n_transacoes": 6
     },
     {
       "division": "importacao",
       "tipo": "fornecedor",
       "basis": "financeiro",
-      "nome": "IDALL",
-      "valor": 17707.54,
+      "nome": "LS",
+      "valor": 12513.0,
       "n_transacoes": 11
     },
     {
       "division": "importacao",
       "tipo": "fornecedor",
       "basis": "financeiro",
-      "nome": "DAS",
-      "valor": 14140.24,
-      "n_transacoes": 5
-    },
-    {
-      "division": "importacao",
-      "tipo": "fornecedor",
-      "basis": "financeiro",
-      "nome": "MARIA ROCHA",
-      "valor": 10200.0,
+      "nome": "RUMO HENPTEC",
+      "valor": 11482.0,
       "n_transacoes": 2
     },
     {
       "division": "importacao",
       "tipo": "fornecedor",
       "basis": "financeiro",
-      "nome": "LS",
-      "valor": 9107.0,
-      "n_transacoes": 8
-    },
-    {
-      "division": "importacao",
-      "tipo": "fornecedor",
-      "basis": "financeiro",
-      "nome": "CARTÃO DESPESAS DIA DIA",
-      "valor": 7571.95,
+      "nome": "IMPORTAÇÕES",
+      "valor": 10500.0,
       "n_transacoes": 1
     },
     {
@@ -38699,24 +45844,40 @@ const MAXLED_DATA = {
       "tipo": "cliente",
       "basis": "financeiro",
       "nome": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO - 0000660",
-      "valor": 66452.0,
-      "n_transacoes": 43
-    },
-    {
-      "division": "consolidado",
-      "tipo": "cliente",
-      "basis": "financeiro",
-      "nome": "TRANSFIX",
-      "valor": 57764.19,
-      "n_transacoes": 25
+      "valor": 70832.29,
+      "n_transacoes": 48
     },
     {
       "division": "consolidado",
       "tipo": "cliente",
       "basis": "financeiro",
       "nome": "VINTEK IND., COMERCIO E SERVICOS LTDA - 0000894",
-      "valor": 51497.04,
-      "n_transacoes": 14
+      "valor": 66521.67,
+      "n_transacoes": 19
+    },
+    {
+      "division": "consolidado",
+      "tipo": "cliente",
+      "basis": "financeiro",
+      "nome": "TRANSFIX",
+      "valor": 66001.19,
+      "n_transacoes": 27
+    },
+    {
+      "division": "consolidado",
+      "tipo": "cliente",
+      "basis": "financeiro",
+      "nome": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
+      "valor": 52135.78,
+      "n_transacoes": 56
+    },
+    {
+      "division": "consolidado",
+      "tipo": "cliente",
+      "basis": "financeiro",
+      "nome": "R. BAIAO INDUSTRIA E COMERCIO LTDA - 0000060",
+      "valor": 49940.66,
+      "n_transacoes": 17
     },
     {
       "division": "consolidado",
@@ -38725,14 +45886,6 @@ const MAXLED_DATA = {
       "nome": "SIMPLES CONECT",
       "valor": 47081.13,
       "n_transacoes": 12
-    },
-    {
-      "division": "consolidado",
-      "tipo": "cliente",
-      "basis": "financeiro",
-      "nome": "R. BAIAO INDUSTRIA E COMERCIO LTDA - 0000060",
-      "valor": 39080.11,
-      "n_transacoes": 13
     },
     {
       "division": "consolidado",
@@ -38754,17 +45907,9 @@ const MAXLED_DATA = {
       "division": "consolidado",
       "tipo": "cliente",
       "basis": "financeiro",
-      "nome": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
-      "valor": 32031.52,
-      "n_transacoes": 43
-    },
-    {
-      "division": "consolidado",
-      "tipo": "cliente",
-      "basis": "financeiro",
       "nome": "PRODUTOS ELETRONICOS FRATA LTDA - 0000223",
-      "valor": 30369.0,
-      "n_transacoes": 13
+      "valor": 30979.0,
+      "n_transacoes": 14
     },
     {
       "division": "consolidado",
@@ -38778,49 +45923,57 @@ const MAXLED_DATA = {
       "division": "consolidado",
       "tipo": "cliente",
       "basis": "financeiro",
+      "nome": "BPM INDUSTRIA E COMERCIO - 0000541",
+      "valor": 20180.81,
+      "n_transacoes": 19
+    },
+    {
+      "division": "consolidado",
+      "tipo": "cliente",
+      "basis": "financeiro",
       "nome": "FZW INNOVATION LTDA - 0000848",
       "valor": 19609.42,
       "n_transacoes": 13
     },
     {
       "division": "consolidado",
-      "tipo": "cliente",
-      "basis": "financeiro",
-      "nome": "TAIKON",
-      "valor": 19267.5,
-      "n_transacoes": 4
-    },
-    {
-      "division": "consolidado",
       "tipo": "fornecedor",
       "basis": "financeiro",
       "nome": "DAS",
-      "valor": 72093.5,
-      "n_transacoes": 9
+      "valor": 90309.2,
+      "n_transacoes": 11
     },
     {
       "division": "consolidado",
       "tipo": "fornecedor",
       "basis": "financeiro",
       "nome": "CAPITAL DE GIRO",
-      "valor": 61281.6,
-      "n_transacoes": 15
+      "valor": 63904.71,
+      "n_transacoes": 16
     },
     {
       "division": "consolidado",
       "tipo": "fornecedor",
       "basis": "financeiro",
       "nome": "ACP",
-      "valor": 46290.9,
-      "n_transacoes": 47
+      "valor": 55544.81,
+      "n_transacoes": 55
     },
     {
       "division": "consolidado",
       "tipo": "fornecedor",
       "basis": "financeiro",
       "nome": "MARIA",
-      "valor": 45780.0,
-      "n_transacoes": 8
+      "valor": 55080.0,
+      "n_transacoes": 10
+    },
+    {
+      "division": "consolidado",
+      "tipo": "fornecedor",
+      "basis": "financeiro",
+      "nome": "IDALL",
+      "valor": 51427.59,
+      "n_transacoes": 40
     },
     {
       "division": "consolidado",
@@ -38834,16 +45987,24 @@ const MAXLED_DATA = {
       "division": "consolidado",
       "tipo": "fornecedor",
       "basis": "financeiro",
-      "nome": "IDALL",
-      "valor": 37048.86,
-      "n_transacoes": 35
+      "nome": "MAX ILUMINAÇÃO",
+      "valor": 35855.0,
+      "n_transacoes": 2
     },
     {
       "division": "consolidado",
       "tipo": "fornecedor",
       "basis": "financeiro",
-      "nome": "MAX ILUMINAÇÃO",
-      "valor": 35855.0,
+      "nome": "ACP C A COMP ELETRONICOS LTDA",
+      "valor": 35304.23,
+      "n_transacoes": 45
+    },
+    {
+      "division": "consolidado",
+      "tipo": "fornecedor",
+      "basis": "financeiro",
+      "nome": "IMPORTAÇÃO",
+      "valor": 32886.18,
       "n_transacoes": 2
     },
     {
@@ -38858,33 +46019,17 @@ const MAXLED_DATA = {
       "division": "consolidado",
       "tipo": "fornecedor",
       "basis": "financeiro",
+      "nome": "ALEX",
+      "valor": 27700.0,
+      "n_transacoes": 9
+    },
+    {
+      "division": "consolidado",
+      "tipo": "fornecedor",
+      "basis": "financeiro",
       "nome": "VCP DESPACHANTE",
       "valor": 25246.44,
       "n_transacoes": 1
-    },
-    {
-      "division": "consolidado",
-      "tipo": "fornecedor",
-      "basis": "financeiro",
-      "nome": "IMPORTAÇÃO",
-      "valor": 25000.0,
-      "n_transacoes": 1
-    },
-    {
-      "division": "consolidado",
-      "tipo": "fornecedor",
-      "basis": "financeiro",
-      "nome": "CARTÃO DE CRÉDITO",
-      "valor": 23117.31,
-      "n_transacoes": 3
-    },
-    {
-      "division": "consolidado",
-      "tipo": "fornecedor",
-      "basis": "financeiro",
-      "nome": "ACP C A COMP ELETRONICOS LTDA",
-      "valor": 22987.77,
-      "n_transacoes": 30
     }
   ],
   "loans": [

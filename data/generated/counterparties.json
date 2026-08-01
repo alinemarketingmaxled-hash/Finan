@@ -4,24 +4,32 @@
     "tipo": "cliente",
     "basis": "financeiro",
     "nome": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO - 0000660",
-    "valor": 66452.0,
-    "n_transacoes": 43
+    "valor": 70832.29,
+    "n_transacoes": 48
   },
   {
     "division": "iluminacao",
     "tipo": "cliente",
     "basis": "financeiro",
     "nome": "VINTEK IND., COMERCIO E SERVICOS LTDA - 0000894",
-    "valor": 51497.04,
-    "n_transacoes": 14
+    "valor": 66521.67,
+    "n_transacoes": 19
+  },
+  {
+    "division": "iluminacao",
+    "tipo": "cliente",
+    "basis": "financeiro",
+    "nome": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
+    "valor": 52135.78,
+    "n_transacoes": 56
   },
   {
     "division": "iluminacao",
     "tipo": "cliente",
     "basis": "financeiro",
     "nome": "R. BAIAO INDUSTRIA E COMERCIO LTDA - 0000060",
-    "valor": 39080.11,
-    "n_transacoes": 13
+    "valor": 49940.66,
+    "n_transacoes": 17
   },
   {
     "division": "iluminacao",
@@ -35,17 +43,17 @@
     "division": "iluminacao",
     "tipo": "cliente",
     "basis": "financeiro",
-    "nome": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
-    "valor": 32031.52,
-    "n_transacoes": 43
+    "nome": "PRODUTOS ELETRONICOS FRATA LTDA - 0000223",
+    "valor": 30979.0,
+    "n_transacoes": 14
   },
   {
     "division": "iluminacao",
     "tipo": "cliente",
     "basis": "financeiro",
-    "nome": "PRODUTOS ELETRONICOS FRATA LTDA - 0000223",
-    "valor": 30369.0,
-    "n_transacoes": 13
+    "nome": "BPM INDUSTRIA E COMERCIO - 0000541",
+    "valor": 20180.81,
+    "n_transacoes": 19
   },
   {
     "division": "iluminacao",
@@ -59,6 +67,22 @@
     "division": "iluminacao",
     "tipo": "cliente",
     "basis": "financeiro",
+    "nome": "J.M. MAQUINAS AUTOMOTIVAS EIRELI - 0000387",
+    "valor": 19444.71,
+    "n_transacoes": 11
+  },
+  {
+    "division": "iluminacao",
+    "tipo": "cliente",
+    "basis": "financeiro",
+    "nome": "SSAT SINALIZACAO E ADESIVOS EIRELI EPP - 0000072",
+    "valor": 17543.9,
+    "n_transacoes": 16
+  },
+  {
+    "division": "iluminacao",
+    "tipo": "cliente",
+    "basis": "financeiro",
     "nome": "TAICON",
     "valor": 17103.8,
     "n_transacoes": 3
@@ -67,32 +91,8 @@
     "division": "iluminacao",
     "tipo": "cliente",
     "basis": "financeiro",
-    "nome": "SSAT SINALIZACAO E ADESIVOS EIRELI EPP - 0000072",
-    "valor": 15917.36,
-    "n_transacoes": 14
-  },
-  {
-    "division": "iluminacao",
-    "tipo": "cliente",
-    "basis": "financeiro",
-    "nome": "BPM INDUSTRIA E COMERCIO - 0000541",
-    "valor": 13945.47,
-    "n_transacoes": 13
-  },
-  {
-    "division": "iluminacao",
-    "tipo": "cliente",
-    "basis": "financeiro",
-    "nome": "J.M. MAQUINAS AUTOMOTIVAS EIRELI - 0000387",
-    "valor": 13685.11,
-    "n_transacoes": 8
-  },
-  {
-    "division": "iluminacao",
-    "tipo": "cliente",
-    "basis": "financeiro",
-    "nome": "CARINE G RODRIGUES - 0000764",
-    "valor": 13596.38,
+    "nome": "NEWTESC TECNOLOGIA E COMERCIO LTDA - 0000106",
+    "valor": 16841.75,
     "n_transacoes": 9
   },
   {
@@ -100,32 +100,40 @@
     "tipo": "fornecedor",
     "basis": "financeiro",
     "nome": "DAS",
-    "valor": 57953.26,
-    "n_transacoes": 4
+    "valor": 70484.78,
+    "n_transacoes": 5
   },
   {
     "division": "iluminacao",
     "tipo": "fornecedor",
     "basis": "financeiro",
     "nome": "ACP",
-    "valor": 46290.9,
-    "n_transacoes": 47
+    "valor": 54046.91,
+    "n_transacoes": 54
   },
   {
     "division": "iluminacao",
     "tipo": "fornecedor",
     "basis": "financeiro",
     "nome": "MARIA",
-    "valor": 40280.0,
-    "n_transacoes": 6
+    "valor": 49580.0,
+    "n_transacoes": 8
   },
   {
     "division": "iluminacao",
     "tipo": "fornecedor",
     "basis": "financeiro",
     "nome": "CAPITAL DE GIRO",
-    "valor": 39233.81,
-    "n_transacoes": 8
+    "valor": 41856.92,
+    "n_transacoes": 9
+  },
+  {
+    "division": "iluminacao",
+    "tipo": "fornecedor",
+    "basis": "financeiro",
+    "nome": "ACP C A COMP ELETRONICOS LTDA",
+    "valor": 35304.23,
+    "n_transacoes": 45
   },
   {
     "division": "iluminacao",
@@ -139,25 +147,25 @@
     "division": "iluminacao",
     "tipo": "fornecedor",
     "basis": "financeiro",
-    "nome": "ACP C A COMP ELETRONICOS LTDA",
-    "valor": 22987.77,
-    "n_transacoes": 30
+    "nome": "IDALL COMERCIO ATACADISTA DE C",
+    "valor": 24640.44,
+    "n_transacoes": 33
   },
   {
     "division": "iluminacao",
     "tipo": "fornecedor",
     "basis": "financeiro",
     "nome": "MKB SENSORES LTDA",
-    "valor": 22762.99,
-    "n_transacoes": 10
+    "valor": 24547.81,
+    "n_transacoes": 11
   },
   {
     "division": "iluminacao",
     "tipo": "fornecedor",
     "basis": "financeiro",
     "nome": "MKB",
-    "valor": 20026.33,
-    "n_transacoes": 9
+    "valor": 22715.79,
+    "n_transacoes": 10
   },
   {
     "division": "iluminacao",
@@ -179,25 +187,17 @@
     "division": "iluminacao",
     "tipo": "fornecedor",
     "basis": "financeiro",
-    "nome": "MAX IMPORT",
-    "valor": 16500.0,
-    "n_transacoes": 3
-  },
-  {
-    "division": "iluminacao",
-    "tipo": "fornecedor",
-    "basis": "financeiro",
-    "nome": "IDALL COMERCIO ATACADISTA DE C",
-    "valor": 16487.6,
-    "n_transacoes": 23
+    "nome": "ALUGUEL",
+    "valor": 16800.0,
+    "n_transacoes": 4
   },
   {
     "division": "importacao",
     "tipo": "cliente",
     "basis": "financeiro",
     "nome": "TRANSFIX",
-    "valor": 51133.69,
-    "n_transacoes": 18
+    "valor": 58870.69,
+    "n_transacoes": 19
   },
   {
     "division": "importacao",
@@ -244,16 +244,24 @@
     "tipo": "cliente",
     "basis": "financeiro",
     "nome": "MAX LED",
-    "valor": 11000.0,
-    "n_transacoes": 2
+    "valor": 12600.0,
+    "n_transacoes": 3
+  },
+  {
+    "division": "importacao",
+    "tipo": "cliente",
+    "basis": "financeiro",
+    "nome": "J.M MAQUINAS",
+    "valor": 12498.7,
+    "n_transacoes": 3
   },
   {
     "division": "importacao",
     "tipo": "cliente",
     "basis": "financeiro",
     "nome": "FERRTECH",
-    "valor": 10825.84,
-    "n_transacoes": 8
+    "valor": 11477.09,
+    "n_transacoes": 9
   },
   {
     "division": "importacao",
@@ -267,24 +275,16 @@
     "division": "importacao",
     "tipo": "cliente",
     "basis": "financeiro",
-    "nome": "ALLPRINT LATINA",
-    "valor": 6686.67,
-    "n_transacoes": 2
-  },
-  {
-    "division": "importacao",
-    "tipo": "cliente",
-    "basis": "financeiro",
-    "nome": "MAX LED ILUM",
-    "valor": 5500.0,
+    "nome": "antecipação titulos FRATA",
+    "valor": 8365.49,
     "n_transacoes": 1
   },
   {
     "division": "importacao",
     "tipo": "cliente",
     "basis": "financeiro",
-    "nome": "TAIKOM IMPORT",
-    "valor": 5460.0,
+    "nome": "simples conect",
+    "valor": 7316.8,
     "n_transacoes": 1
   },
   {
@@ -307,9 +307,25 @@
     "division": "importacao",
     "tipo": "fornecedor",
     "basis": "financeiro",
+    "nome": "IDALL",
+    "valor": 32086.27,
+    "n_transacoes": 16
+  },
+  {
+    "division": "importacao",
+    "tipo": "fornecedor",
+    "basis": "financeiro",
     "nome": "SIMENTOR",
     "valor": 30000.0,
     "n_transacoes": 1
+  },
+  {
+    "division": "importacao",
+    "tipo": "fornecedor",
+    "basis": "financeiro",
+    "nome": "ALEX",
+    "valor": 26700.0,
+    "n_transacoes": 8
   },
   {
     "division": "importacao",
@@ -339,48 +355,32 @@
     "division": "importacao",
     "tipo": "fornecedor",
     "basis": "financeiro",
-    "nome": "ALEX",
-    "valor": 20700.0,
+    "nome": "DAS",
+    "valor": 19824.42,
     "n_transacoes": 6
   },
   {
     "division": "importacao",
     "tipo": "fornecedor",
     "basis": "financeiro",
-    "nome": "IDALL",
-    "valor": 17707.54,
+    "nome": "LS",
+    "valor": 12513.0,
     "n_transacoes": 11
   },
   {
     "division": "importacao",
     "tipo": "fornecedor",
     "basis": "financeiro",
-    "nome": "DAS",
-    "valor": 14140.24,
-    "n_transacoes": 5
-  },
-  {
-    "division": "importacao",
-    "tipo": "fornecedor",
-    "basis": "financeiro",
-    "nome": "MARIA ROCHA",
-    "valor": 10200.0,
+    "nome": "RUMO HENPTEC",
+    "valor": 11482.0,
     "n_transacoes": 2
   },
   {
     "division": "importacao",
     "tipo": "fornecedor",
     "basis": "financeiro",
-    "nome": "LS",
-    "valor": 9107.0,
-    "n_transacoes": 8
-  },
-  {
-    "division": "importacao",
-    "tipo": "fornecedor",
-    "basis": "financeiro",
-    "nome": "CARTÃO DESPESAS DIA DIA",
-    "valor": 7571.95,
+    "nome": "IMPORTAÇÕES",
+    "valor": 10500.0,
     "n_transacoes": 1
   },
   {
@@ -388,24 +388,40 @@
     "tipo": "cliente",
     "basis": "financeiro",
     "nome": "BASSOMED EQUIPAMENTOS MEDICOS E ODONTOLO - 0000660",
-    "valor": 66452.0,
-    "n_transacoes": 43
-  },
-  {
-    "division": "consolidado",
-    "tipo": "cliente",
-    "basis": "financeiro",
-    "nome": "TRANSFIX",
-    "valor": 57764.19,
-    "n_transacoes": 25
+    "valor": 70832.29,
+    "n_transacoes": 48
   },
   {
     "division": "consolidado",
     "tipo": "cliente",
     "basis": "financeiro",
     "nome": "VINTEK IND., COMERCIO E SERVICOS LTDA - 0000894",
-    "valor": 51497.04,
-    "n_transacoes": 14
+    "valor": 66521.67,
+    "n_transacoes": 19
+  },
+  {
+    "division": "consolidado",
+    "tipo": "cliente",
+    "basis": "financeiro",
+    "nome": "TRANSFIX",
+    "valor": 66001.19,
+    "n_transacoes": 27
+  },
+  {
+    "division": "consolidado",
+    "tipo": "cliente",
+    "basis": "financeiro",
+    "nome": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
+    "valor": 52135.78,
+    "n_transacoes": 56
+  },
+  {
+    "division": "consolidado",
+    "tipo": "cliente",
+    "basis": "financeiro",
+    "nome": "R. BAIAO INDUSTRIA E COMERCIO LTDA - 0000060",
+    "valor": 49940.66,
+    "n_transacoes": 17
   },
   {
     "division": "consolidado",
@@ -414,14 +430,6 @@
     "nome": "SIMPLES CONECT",
     "valor": 47081.13,
     "n_transacoes": 12
-  },
-  {
-    "division": "consolidado",
-    "tipo": "cliente",
-    "basis": "financeiro",
-    "nome": "R. BAIAO INDUSTRIA E COMERCIO LTDA - 0000060",
-    "valor": 39080.11,
-    "n_transacoes": 13
   },
   {
     "division": "consolidado",
@@ -443,17 +451,9 @@
     "division": "consolidado",
     "tipo": "cliente",
     "basis": "financeiro",
-    "nome": "FERRTECH EQUIPAMENTOS ELETRONICA LTDA -E - 0000081",
-    "valor": 32031.52,
-    "n_transacoes": 43
-  },
-  {
-    "division": "consolidado",
-    "tipo": "cliente",
-    "basis": "financeiro",
     "nome": "PRODUTOS ELETRONICOS FRATA LTDA - 0000223",
-    "valor": 30369.0,
-    "n_transacoes": 13
+    "valor": 30979.0,
+    "n_transacoes": 14
   },
   {
     "division": "consolidado",
@@ -467,49 +467,57 @@
     "division": "consolidado",
     "tipo": "cliente",
     "basis": "financeiro",
+    "nome": "BPM INDUSTRIA E COMERCIO - 0000541",
+    "valor": 20180.81,
+    "n_transacoes": 19
+  },
+  {
+    "division": "consolidado",
+    "tipo": "cliente",
+    "basis": "financeiro",
     "nome": "FZW INNOVATION LTDA - 0000848",
     "valor": 19609.42,
     "n_transacoes": 13
   },
   {
     "division": "consolidado",
-    "tipo": "cliente",
-    "basis": "financeiro",
-    "nome": "TAIKON",
-    "valor": 19267.5,
-    "n_transacoes": 4
-  },
-  {
-    "division": "consolidado",
     "tipo": "fornecedor",
     "basis": "financeiro",
     "nome": "DAS",
-    "valor": 72093.5,
-    "n_transacoes": 9
+    "valor": 90309.2,
+    "n_transacoes": 11
   },
   {
     "division": "consolidado",
     "tipo": "fornecedor",
     "basis": "financeiro",
     "nome": "CAPITAL DE GIRO",
-    "valor": 61281.6,
-    "n_transacoes": 15
+    "valor": 63904.71,
+    "n_transacoes": 16
   },
   {
     "division": "consolidado",
     "tipo": "fornecedor",
     "basis": "financeiro",
     "nome": "ACP",
-    "valor": 46290.9,
-    "n_transacoes": 47
+    "valor": 55544.81,
+    "n_transacoes": 55
   },
   {
     "division": "consolidado",
     "tipo": "fornecedor",
     "basis": "financeiro",
     "nome": "MARIA",
-    "valor": 45780.0,
-    "n_transacoes": 8
+    "valor": 55080.0,
+    "n_transacoes": 10
+  },
+  {
+    "division": "consolidado",
+    "tipo": "fornecedor",
+    "basis": "financeiro",
+    "nome": "IDALL",
+    "valor": 51427.59,
+    "n_transacoes": 40
   },
   {
     "division": "consolidado",
@@ -523,16 +531,24 @@
     "division": "consolidado",
     "tipo": "fornecedor",
     "basis": "financeiro",
-    "nome": "IDALL",
-    "valor": 37048.86,
-    "n_transacoes": 35
+    "nome": "MAX ILUMINAÇÃO",
+    "valor": 35855.0,
+    "n_transacoes": 2
   },
   {
     "division": "consolidado",
     "tipo": "fornecedor",
     "basis": "financeiro",
-    "nome": "MAX ILUMINAÇÃO",
-    "valor": 35855.0,
+    "nome": "ACP C A COMP ELETRONICOS LTDA",
+    "valor": 35304.23,
+    "n_transacoes": 45
+  },
+  {
+    "division": "consolidado",
+    "tipo": "fornecedor",
+    "basis": "financeiro",
+    "nome": "IMPORTAÇÃO",
+    "valor": 32886.18,
     "n_transacoes": 2
   },
   {
@@ -547,32 +563,16 @@
     "division": "consolidado",
     "tipo": "fornecedor",
     "basis": "financeiro",
+    "nome": "ALEX",
+    "valor": 27700.0,
+    "n_transacoes": 9
+  },
+  {
+    "division": "consolidado",
+    "tipo": "fornecedor",
+    "basis": "financeiro",
     "nome": "VCP DESPACHANTE",
     "valor": 25246.44,
     "n_transacoes": 1
-  },
-  {
-    "division": "consolidado",
-    "tipo": "fornecedor",
-    "basis": "financeiro",
-    "nome": "IMPORTAÇÃO",
-    "valor": 25000.0,
-    "n_transacoes": 1
-  },
-  {
-    "division": "consolidado",
-    "tipo": "fornecedor",
-    "basis": "financeiro",
-    "nome": "CARTÃO DE CRÉDITO",
-    "valor": 23117.31,
-    "n_transacoes": 3
-  },
-  {
-    "division": "consolidado",
-    "tipo": "fornecedor",
-    "basis": "financeiro",
-    "nome": "ACP C A COMP ELETRONICOS LTDA",
-    "valor": 22987.77,
-    "n_transacoes": 30
   }
 ]

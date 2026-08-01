@@ -410,26 +410,26 @@
   {
     "month": "2026-06",
     "division": "consolidado",
-    "entradas": 437741.28,
-    "saidas": 382401.92,
-    "resultado": 55339.36,
-    "tipo": "previsao"
+    "entradas": 233964.55,
+    "saidas": 236609.47,
+    "resultado": -2644.92,
+    "tipo": "realizado"
   },
   {
     "month": "2026-06",
     "division": "iluminacao",
-    "entradas": 302449.43,
-    "saidas": 293406.06,
-    "resultado": 9043.38,
-    "tipo": "previsao"
+    "entradas": 166003.46,
+    "saidas": 159080.69,
+    "resultado": 6922.77,
+    "tipo": "realizado"
   },
   {
     "month": "2026-06",
     "division": "importacao",
-    "entradas": 135291.85,
-    "saidas": 88995.86,
-    "resultado": 46295.99,
-    "tipo": "previsao"
+    "entradas": 67961.09,
+    "saidas": 77528.78,
+    "resultado": -9567.69,
+    "tipo": "realizado"
   },
   {
     "month": "2026-07",

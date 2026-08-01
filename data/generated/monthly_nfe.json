@@ -86,22 +86,43 @@
   {
     "month": "2026-05",
     "division": "consolidado",
-    "vendas": 246259.88,
+    "vendas": 247639.88,
     "compras": 118850.2,
-    "resultado": 127409.68
+    "resultado": 128789.68
   },
   {
     "month": "2026-05",
     "division": "iluminacao",
-    "vendas": 145976.98,
+    "vendas": 145856.98,
     "compras": 77752.02,
-    "resultado": 68224.96
+    "resultado": 68104.96
   },
   {
     "month": "2026-05",
     "division": "importacao",
-    "vendas": 100282.9,
+    "vendas": 101782.9,
     "compras": 41098.18,
-    "resultado": 59184.72
+    "resultado": 60684.72
+  },
+  {
+    "month": "2026-06",
+    "division": "consolidado",
+    "vendas": 207658.84,
+    "compras": 107576.5,
+    "resultado": 100082.34
+  },
+  {
+    "month": "2026-06",
+    "division": "iluminacao",
+    "vendas": 174605.04,
+    "compras": 101327.69,
+    "resultado": 73277.35
+  },
+  {
+    "month": "2026-06",
+    "division": "importacao",
+    "vendas": 33053.8,
+    "compras": 6248.81,
+    "resultado": 26804.99
   }
 ]

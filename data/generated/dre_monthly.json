@@ -15,17 +15,17 @@
         "valor": 10000.0
       },
       {
+        "categoria": "FUNCIONÁRIOS",
+        "grupo": "Pessoal",
+        "valor": 9774.61
+      },
+      {
         "categoria": "GASTOS FIXOS",
         "grupo": "Administrativo",
         "valor": 6624.43
       },
       {
-        "categoria": "FUNCIONÁRIOS",
-        "grupo": "Pessoal",
-        "valor": 6513.29
-      },
-      {
-        "categoria": "EMPRÉSTIMO CAPITAL DE GIRO BRADESCO",
+        "categoria": "EMPRÉSTIMO",
         "grupo": "Dívida/Empréstimos",
         "valor": 6175.89
       },
@@ -35,19 +35,14 @@
         "valor": 3298.84
       },
       {
+        "categoria": "INVESTIMENTO",
+        "grupo": "Administrativo",
+        "valor": 2569.71
+      },
+      {
         "categoria": "SÓCIOS",
         "grupo": "Pessoal",
         "valor": 2500.0
-      },
-      {
-        "categoria": "SEGURO SAÚDE",
-        "grupo": "Pessoal",
-        "valor": 2261.32
-      },
-      {
-        "categoria": "MARKETING",
-        "grupo": "Marketing & Vendas",
-        "valor": 2007.0
       },
       {
         "categoria": "CONSUMO",
@@ -55,19 +50,9 @@
         "valor": 1741.18
       },
       {
-        "categoria": "FUNCIONÁRIOS (VR)",
-        "grupo": "Pessoal",
-        "valor": 1000.0
-      },
-      {
-        "categoria": "SEGURO DE VIDA SÓCIO",
-        "grupo": "Pessoal",
-        "valor": 969.71
-      },
-      {
-        "categoria": "INVESTIMENTO",
-        "grupo": "Administrativo",
-        "valor": 800.0
+        "categoria": "OUTRAS DESPESAS",
+        "grupo": "Outras",
+        "valor": 1207.0
       },
       {
         "categoria": "BANCO",
@@ -101,39 +86,24 @@
     "lucro_bruto": 11881.08,
     "despesas": [
       {
+        "categoria": "IMPORTAÇÃO",
+        "grupo": "Logística/Importação",
+        "valor": 32471.34
+      },
+      {
         "categoria": "SÓCIOS",
         "grupo": "Pessoal",
         "valor": 31169.18
       },
       {
-        "categoria": "IMPORTAÇÃO",
-        "grupo": "Logística/Importação",
-        "valor": 30459.73
-      },
-      {
-        "categoria": "EMPRÉSTIMO PRONAMP",
+        "categoria": "EMPRÉSTIMO",
         "grupo": "Dívida/Empréstimos",
-        "valor": 3540.29
-      },
-      {
-        "categoria": "EMPRÉSTIMO FGI",
-        "grupo": "Dívida/Empréstimos",
-        "valor": 2920.88
-      },
-      {
-        "categoria": "TRANSPORTES IMPORTAÇÃO",
-        "grupo": "Logística/Importação",
-        "valor": 2011.61
+        "valor": 6461.17
       },
       {
         "categoria": "BRINDES",
         "grupo": "Marketing & Vendas",
-        "valor": 1327.0
-      },
-      {
-        "categoria": "MATERIAL DE ESCRITÓRIO",
-        "grupo": "Administrativo",
-        "valor": 1242.0
+        "valor": 2569.0
       },
       {
         "categoria": "FUNCIONÁRIOS",
@@ -151,8 +121,8 @@
         "valor": 112.82
       },
       {
-        "categoria": "SEGURO DE EMPRÉSTIMO",
-        "grupo": "Dívida/Empréstimos",
+        "categoria": "SEGURO SAÚDE",
+        "grupo": "Pessoal",
         "valor": 109.79
       },
       {
@@ -189,7 +159,17 @@
       {
         "categoria": "IMPORTAÇÃO",
         "grupo": "Logística/Importação",
-        "valor": 30459.73
+        "valor": 32471.34
+      },
+      {
+        "categoria": "EMPRÉSTIMO",
+        "grupo": "Dívida/Empréstimos",
+        "valor": 12637.06
+      },
+      {
+        "categoria": "FUNCIONÁRIOS",
+        "grupo": "Pessoal",
+        "valor": 10774.61
       },
       {
         "categoria": "MOVIMENTO",
@@ -197,24 +177,9 @@
         "valor": 10000.0
       },
       {
-        "categoria": "FUNCIONÁRIOS",
-        "grupo": "Pessoal",
-        "valor": 7513.29
-      },
-      {
         "categoria": "GASTOS FIXOS",
         "grupo": "Administrativo",
         "valor": 7197.43
-      },
-      {
-        "categoria": "EMPRÉSTIMO CAPITAL DE GIRO BRADESCO",
-        "grupo": "Dívida/Empréstimos",
-        "valor": 6175.89
-      },
-      {
-        "categoria": "EMPRÉSTIMO PRONAMP",
-        "grupo": "Dívida/Empréstimos",
-        "valor": 3540.29
       },
       {
         "categoria": "TRANSPORTES",
@@ -222,24 +187,14 @@
         "valor": 3298.84
       },
       {
-        "categoria": "EMPRÉSTIMO FGI",
-        "grupo": "Dívida/Empréstimos",
-        "valor": 2920.88
+        "categoria": "INVESTIMENTO",
+        "grupo": "Administrativo",
+        "valor": 2682.53
       },
       {
-        "categoria": "SEGURO SAÚDE",
-        "grupo": "Pessoal",
-        "valor": 2261.32
-      },
-      {
-        "categoria": "TRANSPORTES IMPORTAÇÃO",
-        "grupo": "Logística/Importação",
-        "valor": 2011.61
-      },
-      {
-        "categoria": "MARKETING",
+        "categoria": "BRINDES",
         "grupo": "Marketing & Vendas",
-        "valor": 2007.0
+        "valor": 2569.0
       },
       {
         "categoria": "CONSUMO",
@@ -247,29 +202,9 @@
         "valor": 1836.18
       },
       {
-        "categoria": "BRINDES",
-        "grupo": "Marketing & Vendas",
-        "valor": 1327.0
-      },
-      {
-        "categoria": "MATERIAL DE ESCRITÓRIO",
-        "grupo": "Administrativo",
-        "valor": 1242.0
-      },
-      {
-        "categoria": "FUNCIONÁRIOS (VR)",
-        "grupo": "Pessoal",
-        "valor": 1000.0
-      },
-      {
-        "categoria": "SEGURO DE VIDA SÓCIO",
-        "grupo": "Pessoal",
-        "valor": 969.71
-      },
-      {
-        "categoria": "INVESTIMENTO",
-        "grupo": "Administrativo",
-        "valor": 912.82
+        "categoria": "OUTRAS DESPESAS",
+        "grupo": "Outras",
+        "valor": 1207.0
       },
       {
         "categoria": "BANCO",
@@ -287,8 +222,8 @@
         "valor": 147.0
       },
       {
-        "categoria": "SEGURO DE EMPRÉSTIMO",
-        "grupo": "Dívida/Empréstimos",
+        "categoria": "SEGURO SAÚDE",
+        "grupo": "Pessoal",
         "valor": 109.79
       }
     ],
@@ -310,7 +245,12 @@
       {
         "categoria": "FUNCIONÁRIOS",
         "grupo": "Pessoal",
-        "valor": 12265.25
+        "valor": 10665.25
+      },
+      {
+        "categoria": "EMPRÉSTIMO",
+        "grupo": "Dívida/Empréstimos",
+        "valor": 7841.39
       },
       {
         "categoria": "GASTOS FIXOS",
@@ -321,11 +261,6 @@
         "categoria": "TRANSPORTES",
         "grupo": "Logística/Importação",
         "valor": 6695.26
-      },
-      {
-        "categoria": "EMPRÉSTIMO CAPITAL DE GIRO BRADESCO",
-        "grupo": "Dívida/Empréstimos",
-        "valor": 6241.39
       },
       {
         "categoria": "SÓCIOS",
@@ -343,12 +278,12 @@
         "valor": 2500.0
       },
       {
-        "categoria": "SEGURO DE VIDA SÓCIO",
-        "grupo": "Pessoal",
-        "valor": 969.71
+        "categoria": "INVESTIMENTO",
+        "grupo": "Administrativo",
+        "valor": 1179.37
       },
       {
-        "categoria": "SEGURO SÓCIO CARRO",
+        "categoria": "SEGURO SAÚDE",
         "grupo": "Pessoal",
         "valor": 931.72
       },
@@ -358,14 +293,14 @@
         "valor": 400.0
       },
       {
-        "categoria": "INVESTIMENTO",
-        "grupo": "Administrativo",
-        "valor": 209.66
-      },
-      {
         "categoria": "BANCO",
         "grupo": "Financeiro/Bancário",
-        "valor": 164.05
+        "valor": 144.14
+      },
+      {
+        "categoria": null,
+        "grupo": "Outras",
+        "valor": 19.91
       }
     ],
     "despesas_total": 47120.31,
@@ -389,12 +324,12 @@
         "valor": 11983.06
       },
       {
-        "categoria": "CARTÃO DE CRÉDITO",
-        "grupo": "Financeiro/Bancário",
+        "categoria": "CONSUMO",
+        "grupo": "Administrativo",
         "valor": 10246.03
       },
       {
-        "categoria": "EMPRÉSTIMO FGI",
+        "categoria": "EMPRÉSTIMO",
         "grupo": "Dívida/Empréstimos",
         "valor": 6604.75
       },
@@ -404,14 +339,9 @@
         "valor": 5282.08
       },
       {
-        "categoria": "TRANSPORTES IMPORTAÇÃO",
-        "grupo": "Logística/Importação",
-        "valor": 1248.66
-      },
-      {
         "categoria": "TRANSPORTES",
         "grupo": "Logística/Importação",
-        "valor": 820.0
+        "valor": 2068.66
       },
       {
         "categoria": "GASTOS FIXOS",
@@ -429,8 +359,8 @@
         "valor": 112.82
       },
       {
-        "categoria": "SEGURO DE EMPRÉSTIMO",
-        "grupo": "Dívida/Empréstimos",
+        "categoria": "SEGURO SAÚDE",
+        "grupo": "Pessoal",
         "valor": 109.79
       },
       {
@@ -455,39 +385,34 @@
     "lucro_bruto": 70025.09,
     "despesas": [
       {
-        "categoria": "FUNCIONÁRIOS",
-        "grupo": "Pessoal",
-        "valor": 17547.33
-      },
-      {
         "categoria": "SÓCIOS",
         "grupo": "Pessoal",
         "valor": 16983.06
       },
       {
-        "categoria": "CARTÃO DE CRÉDITO",
-        "grupo": "Financeiro/Bancário",
+        "categoria": "FUNCIONÁRIOS",
+        "grupo": "Pessoal",
+        "valor": 15947.33
+      },
+      {
+        "categoria": "EMPRÉSTIMO",
+        "grupo": "Dívida/Empréstimos",
+        "valor": 14446.14
+      },
+      {
+        "categoria": "CONSUMO",
+        "grupo": "Administrativo",
         "valor": 10246.03
+      },
+      {
+        "categoria": "TRANSPORTES",
+        "grupo": "Logística/Importação",
+        "valor": 8763.92
       },
       {
         "categoria": "GASTOS FIXOS",
         "grupo": "Administrativo",
         "valor": 8355.27
-      },
-      {
-        "categoria": "TRANSPORTES",
-        "grupo": "Logística/Importação",
-        "valor": 7515.26
-      },
-      {
-        "categoria": "EMPRÉSTIMO FGI",
-        "grupo": "Dívida/Empréstimos",
-        "valor": 6604.75
-      },
-      {
-        "categoria": "EMPRÉSTIMO CAPITAL DE GIRO BRADESCO",
-        "grupo": "Dívida/Empréstimos",
-        "valor": 6241.39
       },
       {
         "categoria": "MOVIMENTO",
@@ -500,29 +425,19 @@
         "valor": 2500.0
       },
       {
-        "categoria": "TRANSPORTES IMPORTAÇÃO",
-        "grupo": "Logística/Importação",
-        "valor": 1248.66
+        "categoria": "INVESTIMENTO",
+        "grupo": "Administrativo",
+        "valor": 1292.19
       },
       {
-        "categoria": "SEGURO DE VIDA SÓCIO",
+        "categoria": "SEGURO SAÚDE",
         "grupo": "Pessoal",
-        "valor": 969.71
-      },
-      {
-        "categoria": "SEGURO SÓCIO CARRO",
-        "grupo": "Pessoal",
-        "valor": 931.72
+        "valor": 1041.51
       },
       {
         "categoria": "DEVOLUÇÃO",
         "grupo": "Outras",
         "valor": 400.0
-      },
-      {
-        "categoria": "INVESTIMENTO",
-        "grupo": "Administrativo",
-        "valor": 322.48
       },
       {
         "categoria": "MANUTENÇÃO",
@@ -532,12 +447,12 @@
       {
         "categoria": "BANCO",
         "grupo": "Financeiro/Bancário",
-        "valor": 203.65
+        "valor": 183.74
       },
       {
-        "categoria": "SEGURO DE EMPRÉSTIMO",
-        "grupo": "Dívida/Empréstimos",
-        "valor": 109.79
+        "categoria": null,
+        "grupo": "Outras",
+        "valor": 19.91
       }
     ],
     "despesas_total": 84429.1,
@@ -581,19 +496,14 @@
         "valor": 8868.3
       },
       {
-        "categoria": "EMPRÉSTIMO CAPITAL DE GIRO BRADESCO",
+        "categoria": "EMPRÉSTIMO",
         "grupo": "Dívida/Empréstimos",
-        "valor": 6303.62
+        "valor": 8840.83
       },
       {
         "categoria": "SÓCIOS",
         "grupo": "Pessoal",
         "valor": 6280.0
-      },
-      {
-        "categoria": "EMPRÉSTIMO CAPITAL DE GIRO ITAÚ",
-        "grupo": "Dívida/Empréstimos",
-        "valor": 2537.21
       },
       {
         "categoria": "INVESTIMENTO",
@@ -606,7 +516,7 @@
         "valor": 1185.0
       },
       {
-        "categoria": "SEGURO SÓCIO CARRO",
+        "categoria": "SEGURO SAÚDE",
         "grupo": "Pessoal",
         "valor": 931.74
       },
@@ -642,8 +552,13 @@
         "valor": 7781.85
       },
       {
-        "categoria": "CARTÃO DE CRÉDITO",
-        "grupo": "Financeiro/Bancário",
+        "categoria": "EMPRÉSTIMO",
+        "grupo": "Dívida/Empréstimos",
+        "valor": 6455.27
+      },
+      {
+        "categoria": "SÓCIOS",
+        "grupo": "Pessoal",
         "valor": 5169.3
       },
       {
@@ -655,21 +570,6 @@
         "categoria": "FUNCIONÁRIOS",
         "grupo": "Pessoal",
         "valor": 3654.0
-      },
-      {
-        "categoria": "EMPRÉSTIMO PRONAMP",
-        "grupo": "Dívida/Empréstimos",
-        "valor": 3621.21
-      },
-      {
-        "categoria": "EMPRÉSTIMO FGI",
-        "grupo": "Dívida/Empréstimos",
-        "valor": 2724.27
-      },
-      {
-        "categoria": "SEGURO DE EMPRÉSTIMO",
-        "grupo": "Dívida/Empréstimos",
-        "valor": 109.79
       },
       {
         "categoria": "BANCO",
@@ -703,6 +603,11 @@
         "valor": 17304.67
       },
       {
+        "categoria": "EMPRÉSTIMO",
+        "grupo": "Dívida/Empréstimos",
+        "valor": 15296.1
+      },
+      {
         "categoria": "MOVIMENTO",
         "grupo": "Financeiro/Bancário",
         "valor": 14000.0
@@ -713,24 +618,14 @@
         "valor": 13992.21
       },
       {
+        "categoria": "SÓCIOS",
+        "grupo": "Pessoal",
+        "valor": 11449.3
+      },
+      {
         "categoria": "TRANSPORTES",
         "grupo": "Logística/Importação",
         "valor": 8868.3
-      },
-      {
-        "categoria": "EMPRÉSTIMO CAPITAL DE GIRO BRADESCO",
-        "grupo": "Dívida/Empréstimos",
-        "valor": 6303.62
-      },
-      {
-        "categoria": "SÓCIOS",
-        "grupo": "Pessoal",
-        "valor": 6280.0
-      },
-      {
-        "categoria": "CARTÃO DE CRÉDITO",
-        "grupo": "Financeiro/Bancário",
-        "valor": 5169.3
       },
       {
         "categoria": "INVESTIMENTO",
@@ -738,27 +633,12 @@
         "valor": 5101.13
       },
       {
-        "categoria": "EMPRÉSTIMO PRONAMP",
-        "grupo": "Dívida/Empréstimos",
-        "valor": 3621.21
-      },
-      {
-        "categoria": "EMPRÉSTIMO FGI",
-        "grupo": "Dívida/Empréstimos",
-        "valor": 2724.27
-      },
-      {
-        "categoria": "EMPRÉSTIMO CAPITAL DE GIRO ITAÚ",
-        "grupo": "Dívida/Empréstimos",
-        "valor": 2537.21
-      },
-      {
         "categoria": "MANUTENÇÃO",
         "grupo": "Administrativo",
         "valor": 1185.0
       },
       {
-        "categoria": "SEGURO SÓCIO CARRO",
+        "categoria": "SEGURO SAÚDE",
         "grupo": "Pessoal",
         "valor": 931.74
       },
@@ -766,11 +646,6 @@
         "categoria": "BANCO",
         "grupo": "Financeiro/Bancário",
         "valor": 289.21
-      },
-      {
-        "categoria": "SEGURO DE EMPRÉSTIMO",
-        "grupo": "Dívida/Empréstimos",
-        "valor": 109.79
       },
       {
         "categoria": null,
@@ -796,7 +671,7 @@
       {
         "categoria": "SÓCIOS",
         "grupo": "Pessoal",
-        "valor": 14270.37
+        "valor": 17778.98
       },
       {
         "categoria": "FUNCIONÁRIOS",
@@ -809,24 +684,14 @@
         "valor": 12500.0
       },
       {
+        "categoria": "EMPRÉSTIMO",
+        "grupo": "Dívida/Empréstimos",
+        "valor": 8938.82
+      },
+      {
         "categoria": "GASTOS FIXOS",
         "grupo": "Administrativo",
         "valor": 8196.66
-      },
-      {
-        "categoria": "EMPRÉSTIMO CAPITAL DE GIRO BRADESCO",
-        "grupo": "Dívida/Empréstimos",
-        "valor": 6372.54
-      },
-      {
-        "categoria": "CARTÃO DE CRÉDITO",
-        "grupo": "Financeiro/Bancário",
-        "valor": 3508.61
-      },
-      {
-        "categoria": "EMPRÉSTIMO CAPITAL DE GIRO ITAÚ",
-        "grupo": "Dívida/Empréstimos",
-        "valor": 2566.28
       },
       {
         "categoria": "INVESTIMENTO",
@@ -834,7 +699,7 @@
         "valor": 969.71
       },
       {
-        "categoria": "SEGURO SÓCIO CARRO",
+        "categoria": "SEGURO SAÚDE",
         "grupo": "Pessoal",
         "valor": 931.74
       },
@@ -875,9 +740,14 @@
         "valor": 25000.0
       },
       {
-        "categoria": "CARTÃO DE CRÉDITO",
-        "grupo": "Financeiro/Bancário",
-        "valor": 18314.99
+        "categoria": "TRANSPORTES",
+        "grupo": "Logística/Importação",
+        "valor": 14420.88
+      },
+      {
+        "categoria": "SÓCIOS",
+        "grupo": "Pessoal",
+        "valor": 10685.71
       },
       {
         "categoria": "FUNCIONÁRIOS",
@@ -885,24 +755,9 @@
         "valor": 6864.12
       },
       {
-        "categoria": "EMPRÉSTIMO FGI",
+        "categoria": "EMPRÉSTIMO",
         "grupo": "Dívida/Empréstimos",
-        "valor": 6680.13
-      },
-      {
-        "categoria": "TRANSPORTES",
-        "grupo": "Logística/Importação",
-        "valor": 3640.0
-      },
-      {
-        "categoria": "SÓCIOS",
-        "grupo": "Pessoal",
-        "valor": 2350.0
-      },
-      {
-        "categoria": "TRANSPORTES IMPORTAÇÃO",
-        "grupo": "Logística/Importação",
-        "valor": 801.6
+        "valor": 6789.92
       },
       {
         "categoria": "GASTOS FIXOS",
@@ -910,13 +765,8 @@
         "valor": 724.82
       },
       {
-        "categoria": "SEGURO DE EMPRÉSTIMO",
-        "grupo": "Dívida/Empréstimos",
-        "valor": 109.79
-      },
-      {
-        "categoria": "CONSUMO",
-        "grupo": "Administrativo",
+        "categoria": "INSUMOS",
+        "grupo": "Outras",
         "valor": 47.71
       },
       {
@@ -946,14 +796,14 @@
         "valor": 43500.0
       },
       {
+        "categoria": "SÓCIOS",
+        "grupo": "Pessoal",
+        "valor": 28464.69
+      },
+      {
         "categoria": "IMPORTAÇÃO",
         "grupo": "Logística/Importação",
         "valor": 25000.0
-      },
-      {
-        "categoria": "CARTÃO DE CRÉDITO",
-        "grupo": "Financeiro/Bancário",
-        "valor": 21823.6
       },
       {
         "categoria": "FUNCIONÁRIOS",
@@ -961,9 +811,14 @@
         "valor": 19965.0
       },
       {
-        "categoria": "SÓCIOS",
-        "grupo": "Pessoal",
-        "valor": 16620.37
+        "categoria": "EMPRÉSTIMO",
+        "grupo": "Dívida/Empréstimos",
+        "valor": 15728.74
+      },
+      {
+        "categoria": "TRANSPORTES",
+        "grupo": "Logística/Importação",
+        "valor": 14420.88
       },
       {
         "categoria": "GASTOS FIXOS",
@@ -971,39 +826,14 @@
         "valor": 8921.48
       },
       {
-        "categoria": "EMPRÉSTIMO FGI",
-        "grupo": "Dívida/Empréstimos",
-        "valor": 6680.13
-      },
-      {
-        "categoria": "EMPRÉSTIMO CAPITAL DE GIRO BRADESCO",
-        "grupo": "Dívida/Empréstimos",
-        "valor": 6372.54
-      },
-      {
-        "categoria": "TRANSPORTES",
-        "grupo": "Logística/Importação",
-        "valor": 3640.0
-      },
-      {
-        "categoria": "EMPRÉSTIMO CAPITAL DE GIRO ITAÚ",
-        "grupo": "Dívida/Empréstimos",
-        "valor": 2566.28
-      },
-      {
         "categoria": "INVESTIMENTO",
         "grupo": "Administrativo",
         "valor": 969.71
       },
       {
-        "categoria": "SEGURO SÓCIO CARRO",
+        "categoria": "SEGURO SAÚDE",
         "grupo": "Pessoal",
         "valor": 931.74
-      },
-      {
-        "categoria": "TRANSPORTES IMPORTAÇÃO",
-        "grupo": "Logística/Importação",
-        "valor": 801.6
       },
       {
         "categoria": "BANCO",
@@ -1016,13 +846,8 @@
         "valor": 150.0
       },
       {
-        "categoria": "SEGURO DE EMPRÉSTIMO",
-        "grupo": "Dívida/Empréstimos",
-        "valor": 109.79
-      },
-      {
-        "categoria": "CONSUMO",
-        "grupo": "Administrativo",
+        "categoria": "INSUMOS",
+        "grupo": "Outras",
         "valor": 47.71
       }
     ],
@@ -1044,7 +869,12 @@
       {
         "categoria": "FUNCIONÁRIOS",
         "grupo": "Pessoal",
-        "valor": 8638.66
+        "valor": 9198.66
+      },
+      {
+        "categoria": "EMPRÉSTIMO",
+        "grupo": "Dívida/Empréstimos",
+        "valor": 9036.88
       },
       {
         "categoria": "SÓCIOS",
@@ -1052,34 +882,19 @@
         "valor": 8500.0
       },
       {
-        "categoria": "EMPRÉSTIMO CAPITAL DE GIRO BRADESCO",
-        "grupo": "Dívida/Empréstimos",
-        "valor": 6441.56
-      },
-      {
         "categoria": "GASTOS FIXOS",
         "grupo": "Administrativo",
         "valor": 5908.59
       },
       {
+        "categoria": "SEGURO SAÚDE",
+        "grupo": "Pessoal",
+        "valor": 3589.87
+      },
+      {
         "categoria": "TRANSPORTES",
         "grupo": "Logística/Importação",
         "valor": 3476.68
-      },
-      {
-        "categoria": "SEGURO SAÚDE",
-        "grupo": "Pessoal",
-        "valor": 2620.16
-      },
-      {
-        "categoria": "EMPRÉSTIMO CAPITAL DE GIRO ITAÚ",
-        "grupo": "Dívida/Empréstimos",
-        "valor": 2595.32
-      },
-      {
-        "categoria": "SEGURO DE VIDA SÓCIO",
-        "grupo": "Pessoal",
-        "valor": 969.71
       },
       {
         "categoria": "BANCO",
@@ -1095,11 +910,6 @@
         "categoria": "MOVIMENTO",
         "grupo": "Financeiro/Bancário",
         "valor": 666.36
-      },
-      {
-        "categoria": "FUNCIONÁRIOS (VR)",
-        "grupo": "Pessoal",
-        "valor": 560.0
       }
     ],
     "despesas_total": 41831.31,
@@ -1123,8 +933,8 @@
         "valor": 11548.24
       },
       {
-        "categoria": "GASTOS FICOS",
-        "grupo": "Outras",
+        "categoria": "GASTOS FIXOS",
+        "grupo": "Administrativo",
         "valor": 9935.04
       },
       {
@@ -1196,17 +1006,17 @@
       {
         "categoria": "FUNCIONÁRIOS",
         "grupo": "Pessoal",
-        "valor": 18141.22
-      },
-      {
-        "categoria": "GASTOS FICOS",
-        "grupo": "Outras",
-        "valor": 9935.04
+        "valor": 18701.22
       },
       {
         "categoria": "EMPRÉSTIMO",
         "grupo": "Dívida/Empréstimos",
-        "valor": 6928.07
+        "valor": 15964.95
+      },
+      {
+        "categoria": "GASTOS FIXOS",
+        "grupo": "Administrativo",
+        "valor": 15843.63
       },
       {
         "categoria": "TRANSPORTES",
@@ -1214,19 +1024,14 @@
         "valor": 6738.17
       },
       {
-        "categoria": "EMPRÉSTIMO CAPITAL DE GIRO BRADESCO",
-        "grupo": "Dívida/Empréstimos",
-        "valor": 6441.56
-      },
-      {
-        "categoria": "GASTOS FIXOS",
-        "grupo": "Administrativo",
-        "valor": 5908.59
-      },
-      {
         "categoria": "MOVIMENTO",
         "grupo": "Financeiro/Bancário",
         "valor": 5521.36
+      },
+      {
+        "categoria": "SEGURO SAÚDE",
+        "grupo": "Pessoal",
+        "valor": 3589.87
       },
       {
         "categoria": "SERVIÇOS",
@@ -1239,21 +1044,6 @@
         "valor": 3200.0
       },
       {
-        "categoria": "SEGURO SAÚDE",
-        "grupo": "Pessoal",
-        "valor": 2620.16
-      },
-      {
-        "categoria": "EMPRÉSTIMO CAPITAL DE GIRO ITAÚ",
-        "grupo": "Dívida/Empréstimos",
-        "valor": 2595.32
-      },
-      {
-        "categoria": "SEGURO DE VIDA SÓCIO",
-        "grupo": "Pessoal",
-        "valor": 969.71
-      },
-      {
         "categoria": "BANCO",
         "grupo": "Financeiro/Bancário",
         "valor": 892.9
@@ -1262,11 +1052,6 @@
         "categoria": "INSUMOS",
         "grupo": "Outras",
         "valor": 688.41
-      },
-      {
-        "categoria": "FUNCIONÁRIOS (VR)",
-        "grupo": "Pessoal",
-        "valor": 560.0
       },
       {
         "categoria": null,
@@ -1283,5 +1068,188 @@
     "resultado_operacional": 7372.35,
     "margem_bruta": 0.4822,
     "margem_liquida": 0.0315
+  },
+  {
+    "month": "2026-06",
+    "division": "iluminacao",
+    "basis": "financeiro",
+    "receita_bruta": 166003.46,
+    "impostos": 12531.52,
+    "receita_liquida": 153471.94,
+    "custo_mercadorias": 87889.08,
+    "lucro_bruto": 65582.86,
+    "despesas": [
+      {
+        "categoria": "SÓCIOS",
+        "grupo": "Pessoal",
+        "valor": 15600.0
+      },
+      {
+        "categoria": "FUNCIONÁRIOS",
+        "grupo": "Pessoal",
+        "valor": 11434.25
+      },
+      {
+        "categoria": "IMPORTAÇÃO",
+        "grupo": "Logística/Importação",
+        "valor": 7886.18
+      },
+      {
+        "categoria": "GASTOS FIXOS",
+        "grupo": "Administrativo",
+        "valor": 6960.44
+      },
+      {
+        "categoria": "MOVIMENTO",
+        "grupo": "Financeiro/Bancário",
+        "valor": 6600.0
+      },
+      {
+        "categoria": "SEGURO SAÚDE",
+        "grupo": "Pessoal",
+        "valor": 3589.87
+      },
+      {
+        "categoria": "TRANSPORTES",
+        "grupo": "Logística/Importação",
+        "valor": 2628.66
+      },
+      {
+        "categoria": "EMPRÉSTIMO",
+        "grupo": "Dívida/Empréstimos",
+        "valor": 2623.11
+      },
+      {
+        "categoria": "INSUMOS",
+        "grupo": "Outras",
+        "valor": 720.0
+      },
+      {
+        "categoria": "BANCO",
+        "grupo": "Financeiro/Bancário",
+        "valor": 617.58
+      }
+    ],
+    "despesas_total": 58660.09,
+    "resultado_operacional": 6922.77,
+    "margem_bruta": 0.4273,
+    "margem_liquida": 0.0417
+  },
+  {
+    "month": "2026-06",
+    "division": "importacao",
+    "basis": "financeiro",
+    "receita_bruta": 67961.09,
+    "impostos": 5684.18,
+    "receita_liquida": 62276.91,
+    "custo_mercadorias": 31529.12,
+    "lucro_bruto": 30747.79,
+    "despesas": [
+      {
+        "categoria": "GASTOS FIXOS",
+        "grupo": "Administrativo",
+        "valor": 10833.95
+      },
+      {
+        "categoria": "IMPORTAÇÃO",
+        "grupo": "Logística/Importação",
+        "valor": 10500.0
+      },
+      {
+        "categoria": "EMPRÉSTIMO",
+        "grupo": "Dívida/Empréstimos",
+        "valor": 6676.57
+      },
+      {
+        "categoria": "SÓCIOS",
+        "grupo": "Pessoal",
+        "valor": 6000.0
+      },
+      {
+        "categoria": "FUNCIONÁRIOS",
+        "grupo": "Pessoal",
+        "valor": 3721.52
+      },
+      {
+        "categoria": "TRANSPORTES",
+        "grupo": "Logística/Importação",
+        "valor": 2527.33
+      },
+      {
+        "categoria": "BANCO",
+        "grupo": "Financeiro/Bancário",
+        "valor": 56.11
+      }
+    ],
+    "despesas_total": 40315.48,
+    "resultado_operacional": -9567.69,
+    "margem_bruta": 0.4937,
+    "margem_liquida": -0.1408
+  },
+  {
+    "month": "2026-06",
+    "division": "consolidado",
+    "basis": "financeiro",
+    "receita_bruta": 233964.55,
+    "impostos": 18215.7,
+    "receita_liquida": 215748.85,
+    "custo_mercadorias": 119418.2,
+    "lucro_bruto": 96330.65,
+    "despesas": [
+      {
+        "categoria": "SÓCIOS",
+        "grupo": "Pessoal",
+        "valor": 21600.0
+      },
+      {
+        "categoria": "IMPORTAÇÃO",
+        "grupo": "Logística/Importação",
+        "valor": 18386.18
+      },
+      {
+        "categoria": "GASTOS FIXOS",
+        "grupo": "Administrativo",
+        "valor": 17794.39
+      },
+      {
+        "categoria": "FUNCIONÁRIOS",
+        "grupo": "Pessoal",
+        "valor": 15155.77
+      },
+      {
+        "categoria": "EMPRÉSTIMO",
+        "grupo": "Dívida/Empréstimos",
+        "valor": 9299.68
+      },
+      {
+        "categoria": "MOVIMENTO",
+        "grupo": "Financeiro/Bancário",
+        "valor": 6600.0
+      },
+      {
+        "categoria": "TRANSPORTES",
+        "grupo": "Logística/Importação",
+        "valor": 5155.99
+      },
+      {
+        "categoria": "SEGURO SAÚDE",
+        "grupo": "Pessoal",
+        "valor": 3589.87
+      },
+      {
+        "categoria": "INSUMOS",
+        "grupo": "Outras",
+        "valor": 720.0
+      },
+      {
+        "categoria": "BANCO",
+        "grupo": "Financeiro/Bancário",
+        "valor": 673.69
+      }
+    ],
+    "despesas_total": 98975.57,
+    "resultado_operacional": -2644.92,
+    "margem_bruta": 0.4465,
+    "margem_liquida": -0.0113
   }
 ]

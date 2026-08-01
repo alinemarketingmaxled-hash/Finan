@@ -1,11 +1,18 @@
 #!/usr/bin/env python3
 """
-ETL: DRE_MAX_LED_Correto_DASH_2_1.xlsx -> JSON data files for the web dashboard.
+ETL: DRE_MAX_LED_2026.xlsx -> JSON data files for the web dashboard.
 
-Reads the raw transaction sheets (source of truth) and a handful of
-pre-aggregated helper cells (for 2025 history and Jun-Sep/2026 forecasts,
-which don't exist as raw transactions) and produces normalized JSON under
-src/data/.
+Reads the raw transaction sheets (source of truth) from SRC and a handful of
+pre-aggregated helper cells from the "Home" sheet (2025 history, empréstimos,
+a receber/pagar) which don't exist as raw transactions and produces
+normalized JSON under data/generated/.
+
+SRC vs HOME_SRC: a workbook update replaced the transaction sheets (added
+junho/2026 and beyond) but dropped the "Home" sheet entirely. Home's content
+didn't change between the previous and current transactional files, so we
+keep reading it from the last file that still has it (HOME_SRC) instead of
+losing 2025 history/empréstimos/a receber-pagar. If a future update brings
+Home back into the main file, point HOME_SRC back at SRC.
 """
 import json
 import re
@@ -18,6 +25,7 @@ import openpyxl
 
 ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "data" / "source" / "DRE_MAX_LED_2026.xlsx"
+HOME_SRC = ROOT / "data" / "source" / "DRE_MAX_LED_2026_home_ref.xlsx"
 OUT = ROOT / "data" / "generated"
 OUT.mkdir(parents=True, exist_ok=True)
 SITE_JS = ROOT / "site" / "js"
@@ -65,6 +73,16 @@ def norm_cat(raw):
         "IMPORTAÇÕES": "IMPORTAÇÃO",
         "SEGURO SÓCIOS CARRO": "SEGURO SÓCIO CARRO",
         "OUTROS": "OUTRAS DESPESAS",
+        # variações/erros de digitação que apareceram na atualização com junho/2026
+        "EMPRESTIMO": "EMPRÉSTIMO",
+        "EMPRESTIMOS": "EMPRÉSTIMO",
+        "EMPRÉSTIMOS": "EMPRÉSTIMO",
+        "IMPOSTO": "IMPOSTOS",
+        "GASTOS FICOS": "GASTOS FIXOS",
+        "INSUMO": "INSUMOS",
+        "SÓCIO": "SÓCIOS",
+        "SEGURO": "SEGURO SAÚDE",
+        "ANUAL": "OUTRAS DESPESAS",
     }
     return aliases.get(s, s)
 
@@ -186,7 +204,7 @@ print(f"transactions.json: {len(tx_export)} rows")
 #    hardcoded in the workbook) + 2026 detailed (from tx) + Jun-Sep/2026
 #    forecast (workbook's own FORECAST formulas, already evaluated).
 # ---------------------------------------------------------------------------
-home = wb["Home"]
+home = openpyxl.load_workbook(HOME_SRC, data_only=True)["Home"]
 
 cashflow = []
 
