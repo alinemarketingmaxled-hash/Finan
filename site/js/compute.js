@@ -61,6 +61,32 @@
     return Storage.getClienteCategorias()[nome] || null;
   }
 
+  // Lançamentos/clientes sem classificação — alimenta a barra flutuante de
+  // classificação rápida. Cliente é por nome (não por lançamento), então só
+  // devolve os maiores por valor: com centenas de contrapartes pequenas,
+  // pedir pra classificar todas de uma vez não seria "rápido".
+  function uncategorized() {
+    const despesas = allTransactions().filter((t) => !t.cancelled && t.basis === "financeiro" && t.flow === "saida" && !t.category);
+
+    const clientMap = new Map();
+    allTransactions().forEach((t) => {
+      if (t.cancelled || !t.counterparty) return;
+      const isClientSide = (t.basis === "financeiro" && t.flow === "entrada") || (t.basis === "nfe" && t.flow === "venda");
+      if (!isClientSide || clienteCategoria(t.counterparty)) return;
+      if (!clientMap.has(t.counterparty)) clientMap.set(t.counterparty, { nome: t.counterparty, valor: 0, n: 0 });
+      const rec = clientMap.get(t.counterparty);
+      rec.valor += t.value; rec.n += 1;
+    });
+    const clientesAll = Array.from(clientMap.values()).sort((a, b) => b.valor - a.valor);
+
+    return {
+      despesas,
+      clientesTop: clientesAll.slice(0, 20).map((c) => Object.assign({}, c, { valor: round2(c.valor) })),
+      clientesTotalCount: clientesAll.length,
+      clientesTotalValor: round2(clientesAll.reduce((s, c) => s + c.valor, 0)),
+    };
+  }
+
   function previousMonth(monthKey) {
     let [y, m] = monthKey.split("-").map(Number);
     m -= 1; if (m < 1) { m = 12; y -= 1; }
@@ -419,12 +445,21 @@
       }
     });
 
-    // Pipeline vazio
-    out.push({
-      level: "info", icon: "target",
-      title: "Pipeline de vendas ainda não é usado",
-      body: `A aba de pipeline da planilha original não tem nenhuma oportunidade cadastrada. Acompanhar previsão de vendas por status (aberto/ganho/perdido) ajudaria a antecipar receita futura — hoje as projeções usam apenas médias históricas.`,
-    });
+    // Pipeline de vendas
+    const pipe = pipelineSummary("consolidado");
+    if (!pipe.items.length) {
+      out.push({
+        level: "info", icon: "users",
+        title: "Pipeline de vendas ainda não é usado",
+        body: `Cadastre oportunidades em aberto (empresa, mês previsto, valor, status) na página Pipeline pra acompanhar previsão de vendas além do histórico — ajuda a antecipar receita futura em vez de só projetar por média.`,
+      });
+    } else if (pipe.totalAberto > 0) {
+      out.push({
+        level: "info", icon: "users",
+        title: `Pipeline em aberto: ${Fmt.money(pipe.totalAberto, { compact: true })} em ${pipe.aberto.length} oportunidade(s)`,
+        body: `Se convertidas, essas oportunidades somam ${Fmt.money(pipe.totalAberto)} em receita potencial ainda não contabilizada nas projeções.${pipe.taxaConversao !== null ? ` Taxa de conversão histórica: ${Fmt.pct(pipe.taxaConversao)} (${pipe.ganho.length} ganha(s) de ${pipe.ganho.length + pipe.perdido.length} decidida(s)).` : ""}`,
+      });
+    }
 
     // Mês mais recente vs anterior
     if (months.length >= 2) {
@@ -447,6 +482,77 @@
   }
 
   // ---------------------------------------------------------------------
+  // Plano de ação: diferente de insights() (que aponta problemas), aqui a
+  // ideia é sugerir o que fazer a respeito — sempre citando números reais,
+  // nunca conselho genérico. Só gera ação pra divisão/situação que está
+  // efetivamente no negativo ou em risco; se está tudo bem, a lista vem vazia.
+  // ---------------------------------------------------------------------
+  const DISCRETIONARY_CATS = ["MARKETING", "PUBLICIDADE", "BRINDES", "CONSUMO", "INVESTIMENTO"];
+
+  function actionPlan() {
+    const actions = [];
+    const push = (priority, divisao, title, body, impacto) => actions.push({ priority, divisao, title, body, impacto: impacto || null });
+
+    DIVISIONS.forEach((div) => {
+      const label = MAXLED_DATA.meta.division_labels[div];
+      const dre = dreForPeriod(div, "acum", "financeiro");
+      if (dre.margem_liquida >= 0) return;
+
+      const topCat = dre.despesas[0];
+      if (topCat) {
+        const corte = round2(topCat.valor * 0.1);
+        push("alta", div, `${label}: revisar "${Fmt.titleCase(topCat.categoria)}"`,
+          `Maior despesa da divisão no período: ${Fmt.money(topCat.valor)} (${Fmt.pct(dre.receita_bruta ? topCat.valor / dre.receita_bruta : 0)} da receita bruta). Uma redução de 10% aí já melhoraria o resultado em ${Fmt.money(corte)}.`,
+          corte);
+      }
+
+      if (dre.receita_liquida > 0 && dre.custo_mercadorias / dre.receita_liquida > 0.5) {
+        push("alta", div, `${label}: revisar precificação`,
+          `Custo das mercadorias consome ${Fmt.pct(dre.custo_mercadorias / dre.receita_liquida)} da receita líquida (${Fmt.money(dre.custo_mercadorias)} de ${Fmt.money(dre.receita_liquida)}). Reajustar preço de venda ou renegociar custo de compra recupera margem rápido.`);
+      }
+
+      const topSup = topCounterparties(div, "saida", "financeiro", 1)[0];
+      if (topSup) {
+        push("media", div, `${label}: renegociar com ${Fmt.titleCase(topSup.nome)}`,
+          `Maior saída de caixa da divisão: ${Fmt.money(topSup.valor)} em ${topSup.n_transacoes} transação(ões). Buscar desconto por volume, prazo maior ou uma segunda fonte reduz custo e risco de dependência.`);
+      }
+
+      const disc = dre.despesas.filter((d) => DISCRETIONARY_CATS.includes(d.categoria));
+      const discTotal = round2(disc.reduce((s, d) => s + d.valor, 0));
+      if (discTotal > 0) {
+        push("media", div, `${label}: pausar gastos discricionários`,
+          `${disc.map((d) => Fmt.titleCase(d.categoria)).join(", ")} somam ${Fmt.money(discTotal)} no período — são despesas mais fáceis de reduzir temporariamente (ao contrário de folha ou fornecedores) até a divisão voltar a ficar positiva.`,
+          discTotal);
+      }
+    });
+
+    const worstLoan = loans("consolidado").slice().sort((a, b) => b.custo_efetivo_pct - a.custo_efetivo_pct)[0];
+    if (worstLoan && worstLoan.valor_restante > 0 && worstLoan.custo_efetivo_pct > 0.15) {
+      push(worstLoan.custo_efetivo_pct > 0.3 ? "alta" : "media", null, `Priorizar quitação: ${worstLoan.nome}`,
+        `Custo efetivo de ${Fmt.pct(worstLoan.custo_efetivo_pct)} sobre o saldo devedor de ${Fmt.money(worstLoan.valor_restante)}. Quanto antes quitar, menos juros/encargos acumulam.`);
+    }
+
+    DIVISIONS.forEach((div) => {
+      const label = MAXLED_DATA.meta.division_labels[div];
+      const negatives = receivablesPayables(div).filter((r) => r.saldo < 0);
+      if (negatives.length) {
+        const worst = negatives.slice().sort((a, b) => a.saldo - b.saldo)[0];
+        push("alta", div, `${label}: cobrir saldo projetado negativo`,
+          `Mês mais crítico nas contas a receber/pagar previstas: ${Fmt.monthLabel(worst.month)}, saldo de ${Fmt.money(worst.saldo)}. Antecipar recebíveis ou negociar prazo com fornecedores nesse período evita aperto de caixa.`);
+      }
+    });
+
+    const pipe = pipelineSummary("consolidado");
+    if (pipe.totalAberto > 0) {
+      push("baixa", null, "Acelerar oportunidades em aberto no pipeline",
+        `${Fmt.money(pipe.totalAberto)} em ${pipe.aberto.length} oportunidade(s) ainda não decidida(s). Focar em fechar as de maior valor ajuda a reverter o resultado mais rápido que só cortar custo.`);
+    }
+
+    const order = { alta: 0, media: 1, baixa: 2 };
+    return actions.sort((a, b) => order[a.priority] - order[b.priority]);
+  }
+
+  // ---------------------------------------------------------------------
   // Orçamento (localStorage) vs realizado
   // ---------------------------------------------------------------------
   function budgetStatus(division, month) {
@@ -463,10 +569,29 @@
     }).sort((a, b) => b.pct - a.pct);
   }
 
+  // ---------------------------------------------------------------------
+  // Pipeline de vendas (oportunidades cadastradas manualmente — a planilha
+  // original tem a aba mas não tinha nenhum lançamento).
+  // ---------------------------------------------------------------------
+  function pipelineSummary(division) {
+    const all = Storage.listPipeline();
+    const items = (!division || division === "consolidado") ? all : all.filter((p) => p.divisao === division);
+    const aberto = items.filter((p) => p.status === "aberto");
+    const ganho = items.filter((p) => p.status === "ganho");
+    const perdido = items.filter((p) => p.status === "perdido");
+    const sum = (list) => round2(list.reduce((s, p) => s + (Number(p.valor_previsto) || 0), 0));
+    const decididas = ganho.length + perdido.length;
+    return {
+      items, aberto, ganho, perdido,
+      totalAberto: sum(aberto), totalGanho: sum(ganho), totalPerdido: sum(perdido),
+      taxaConversao: decididas ? ganho.length / decididas : null,
+    };
+  }
+
   global.Compute = {
     DIVISIONS, round2,
-    allTransactions, detailedMonths, filterTx, previousMonth, clienteCategoria,
+    allTransactions, detailedMonths, filterTx, previousMonth, clienteCategoria, uncategorized,
     cashflowSeries, dailyCashflow, dreForPeriod, expenseCategoriesAgg, topCounterparties,
-    loans, loansTotals, receivablesPayables, healthScore, insights, budgetStatus,
+    loans, loansTotals, receivablesPayables, healthScore, insights, actionPlan, budgetStatus, pipelineSummary,
   };
 })(window);

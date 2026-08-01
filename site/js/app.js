@@ -12,6 +12,7 @@
       { id: "categorias", label: "Categorias & Fornecedores", icon: "tag" },
       { id: "saude", label: "Saúde Financeira", icon: "activity" },
       { id: "estrategia", label: "Estratégia & Insights", icon: "bulb" },
+      { id: "planoacao", label: "Plano de Ação", icon: "checkCircle" },
     ] },
     { group: "Obrigações", items: [
       { id: "emprestimos", label: "Dívidas & Empréstimos", icon: "banknote" },
@@ -20,6 +21,7 @@
     { group: "Planejamento", items: [
       { id: "metas", label: "Metas", icon: "target" },
       { id: "orcamento", label: "Orçamento", icon: "wallet" },
+      { id: "pipeline", label: "Pipeline", icon: "users" },
     ] },
     { group: "Sistema", items: [
       { id: "backup", label: "Backup & Exportação", icon: "download" },
@@ -35,10 +37,12 @@
     categorias: ["Categorias & Fornecedores", "Para onde vai o dinheiro"],
     saude: ["Saúde Financeira", "Score consolidado de saúde do negócio"],
     estrategia: ["Estratégia & Insights", "Leituras automáticas sobre os dados"],
+    planoacao: ["Plano de Ação", "Ideias concretas pra sair do negativo, com números reais"],
     emprestimos: ["Dívidas & Empréstimos", "Capital de giro e financiamentos ativos"],
     contas: ["A Receber / A Pagar", "Calendário de recebimentos e pagamentos"],
     metas: ["Metas", "Objetivos financeiros da empresa"],
     orcamento: ["Orçamento", "Limite mensal por categoria vs realizado"],
+    pipeline: ["Pipeline", "Oportunidades de venda em aberto, ganhas e perdidas"],
     backup: ["Backup & Exportação", "Exportar, importar e imprimir seus dados"],
     config: ["Configurações", "Tema, empresa e preferências"],
   };
@@ -138,6 +142,7 @@
     if (view) view(contentEl);
     else contentEl.appendChild(UI.emptyState({ icon: "info", title: "Página não encontrada" }));
     window.scrollTo({ top: 0 });
+    ClassifyBar.mount();
   }
 
   function routeFromHash() {

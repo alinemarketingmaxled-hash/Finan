@@ -413,6 +413,20 @@ table.data-table { width: 100%; font-size: 13px; }
 }
 @keyframes toast-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
 
+/* Barra flutuante de classificação rápida */
+.classify-bar {
+  position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); z-index: 90;
+  display: flex; align-items: center; gap: 12px; max-width: calc(100vw - 40px);
+  background: var(--surface-2); border: 1px solid var(--border-strong); border-radius: 999px;
+  box-shadow: var(--shadow); padding: 9px 10px 9px 16px; font-size: 12.5px; color: var(--text-primary);
+  animation: toast-in .18s ease-out;
+}
+.classify-bar > svg { color: var(--warning); flex: none; }
+.classify-bar > span { white-space: nowrap; }
+@media (max-width: 900px) {
+  .classify-bar { left: 12px; right: 12px; bottom: 12px; transform: none; max-width: none; border-radius: 14px; flex-wrap: wrap; }
+}
+
 /* Search */
 .search-box { position: relative; display: flex; align-items: center; }
 .search-box svg { position: absolute; left: 10px; width: 15px; height: 15px; color: var(--text-muted); }

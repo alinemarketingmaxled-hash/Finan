@@ -11,6 +11,7 @@
     overrides: NS + "overrides",
     clienteCategorias: NS + "clienteCategorias",
     categoriaAliases: NS + "categoriaAliases",
+    pipeline: NS + "pipeline",
   };
 
   function read(key, fallback) {
@@ -102,6 +103,23 @@
       write(KEYS.categoriaAliases, map);
     },
 
+    // ---- pipeline de vendas (oportunidades em aberto/ganhas/perdidas) ----
+    listPipeline() { return read(KEYS.pipeline, []); },
+    addPipelineItem(item) {
+      const list = this.listPipeline();
+      const row = Object.assign({ id: uid(), createdAt: new Date().toISOString() }, item);
+      list.push(row);
+      write(KEYS.pipeline, list);
+      return row;
+    },
+    updatePipelineItem(id, patch) {
+      const list = this.listPipeline().map((p) => (p.id === id ? Object.assign({}, p, patch) : p));
+      write(KEYS.pipeline, list);
+    },
+    removePipelineItem(id) {
+      write(KEYS.pipeline, this.listPipeline().filter((p) => p.id !== id));
+    },
+
     // ---- metas ----
     listMetas() { return read(KEYS.metas, []); },
     saveMetas(list) { write(KEYS.metas, list); },
@@ -154,6 +172,7 @@
         overrides: this.getOverrides(),
         clienteCategorias: this.getClienteCategorias(),
         categoriaAliases: this.getCategoriaAliases(),
+        pipeline: this.listPipeline(),
       };
     },
     importAll(payload) {
@@ -165,6 +184,7 @@
       if (payload.overrides) write(KEYS.overrides, payload.overrides);
       if (payload.clienteCategorias) write(KEYS.clienteCategorias, payload.clienteCategorias);
       if (payload.categoriaAliases) write(KEYS.categoriaAliases, payload.categoriaAliases);
+      if (Array.isArray(payload.pipeline)) write(KEYS.pipeline, payload.pipeline);
     },
     resetAll() {
       Object.values(KEYS).forEach((k) => localStorage.removeItem(k));
