@@ -17,6 +17,53 @@
     return lines.join("\n");
   }
 
+  function markBackedUp() {
+    Storage.setConfig({ lastBackupAt: new Date().toISOString() });
+  }
+
+  // Uma planilha .xlsx só, com uma aba por tipo de dado -- tudo que existe
+  // além da base original do Excel (lançamentos manuais já mesclados com a
+  // base, metas, orçamento, categoria de clientes, previsões, acessos).
+  function buildWorkbook() {
+    const wb = XLSX.utils.book_new();
+    const addSheet = (name, rows) => {
+      const ws = XLSX.utils.json_to_sheet(rows.length ? rows : [{}]);
+      XLSX.utils.book_append_sheet(wb, ws, name);
+    };
+
+    addSheet("Lançamentos", Compute.allTransactions().map((t) => ({
+      Data: t.date, Divisão: t.division, Base: t.basis, Tipo: t.flow,
+      Categoria: t.category || "", "Categoria do cliente": (t.flow === "entrada" || t.flow === "venda") ? (Compute.clienteCategoria(t.counterparty) || "") : "",
+      Contraparte: t.counterparty || "", Valor: t.value, "Nota Fiscal": t.nota_fiscal || "",
+      Observação: t.note || "", Origem: t.manual ? (t.origin === "import" ? "Importado" : "Manual") : "Excel (base)",
+      Cancelado: t.cancelled ? "Sim" : "Não",
+    })));
+
+    addSheet("Metas", Storage.listMetas().map((m) => ({
+      Título: m.title, Tipo: m.tipo, Divisão: m.divisao || "", "Valor alvo": m.targetValue,
+      Prazo: m.targetDate || "", "Valor atual (personalizada)": m.currentValue ?? "", "Criada em": m.createdAt || "",
+    })));
+
+    addSheet("Orçamento", Storage.listOrcamento().map((o) => ({
+      Divisão: o.division, Categoria: o.categoria, Limite: o.limite,
+    })));
+
+    addSheet("Categoria de clientes", Object.entries(Storage.getClienteCategorias()).map(([nome, categoria]) => ({
+      Cliente: nome, Categoria: categoria,
+    })));
+
+    addSheet("Previsões", Storage.listPipeline().map((p) => ({
+      Descrição: p.descricao, Tipo: p.tipo, Divisão: p.divisao, "Valor total": p.valor_total,
+      Parcelas: p.parcelas, "Mês início": p.mes_inicio || "", Status: p.status, Observação: p.nota || "",
+    })));
+
+    addSheet("Histórico de acessos", Storage.listLoginLog().map((l) => ({
+      Nome: l.name, "Data e hora": new Date(l.ts).toLocaleString("pt-BR"),
+    })));
+
+    return wb;
+  }
+
   function render(container) {
     const manualCount = Storage.listLancamentos().length;
     const metasCount = Storage.listMetas().length;
@@ -29,15 +76,21 @@
       UI.statTile({ label: "Lançamentos da base Excel", value: Fmt.num(MAXLED_DATA.transactions.length), foot: "Somente leitura" }),
     ]));
 
+    container.appendChild(backupReminderCard());
+
     container.appendChild(UI.sectionTitle("Exportar", "Baixe tudo (base do Excel + o que você adicionou) para guardar ou levar para outro computador"));
     container.appendChild(UI.h("div", { class: "grid grid-3" }, [
-      actionCard("download", "Exportar backup (JSON)", "Inclui lançamentos manuais, metas, orçamento e configurações — use para restaurar depois ou mover de navegador.", "Baixar JSON", () => {
-        download(`maxled-backup-${new Date().toISOString().slice(0, 10)}.json`, JSON.stringify(Storage.exportAll(), null, 2), "application/json");
-        UI.toast("Backup exportado.");
+      actionCard("fileText", "Planilha completa (.xlsx)", "Uma aba por tipo de dado: lançamentos (base + manuais), metas, orçamento, categoria de clientes, previsões e histórico de acessos.", "Baixar planilha", () => {
+        XLSX.writeFile(buildWorkbook(), `maxled-backup-${new Date().toISOString().slice(0, 10)}.xlsx`);
+        markBackedUp();
+        UI.toast("Planilha exportada.");
+        AppState.set({});
       }),
-      actionCard("fileText", "Exportar lançamentos (CSV)", "Base completa do Excel + lançamentos manuais, em uma planilha CSV para abrir no Excel/Sheets.", "Baixar CSV", () => {
-        download(`maxled-lancamentos-${new Date().toISOString().slice(0, 10)}.csv`, toCsv(Compute.allTransactions()), "text/csv");
-        UI.toast("CSV exportado.");
+      actionCard("download", "Backup técnico (JSON)", "O mesmo conteúdo, em formato pra restaurar depois pelo botão Importar abaixo (a planilha .xlsx é só leitura).", "Baixar JSON", () => {
+        download(`maxled-backup-${new Date().toISOString().slice(0, 10)}.json`, JSON.stringify(Storage.exportAll(), null, 2), "application/json");
+        markBackedUp();
+        UI.toast("Backup exportado.");
+        AppState.set({});
       }),
       actionCard("printer", "Imprimir / salvar PDF", "Abre a página atual em modo de impressão, sem menus — ótimo para levar a uma reunião.", "Imprimir", () => window.print()),
     ]));
@@ -47,6 +100,31 @@
 
     container.appendChild(UI.sectionTitle("Zona de risco"));
     container.appendChild(resetCard());
+  }
+
+  // Não tem como isso rodar sozinho todo dia: os dados só existem no
+  // localStorage deste navegador, sem servidor nem banco de dados guardando
+  // nada -- por isso o lembrete aqui é visual, não um backup automático de
+  // verdade. Ver nota abaixo do card.
+  function backupReminderCard() {
+    const lastIso = Storage.getConfig().lastBackupAt;
+    const days = lastIso ? Math.floor((Date.now() - new Date(lastIso).getTime()) / 86400000) : null;
+    const kind = days === null || days >= 3 ? "warning" : days === 0 ? "good" : "neutral";
+    const statusText = days === null ? "Nenhum backup exportado ainda neste navegador"
+      : days === 0 ? "Backup exportado hoje"
+      : days === 1 ? "Último backup: ontem"
+      : `Último backup: há ${Fmt.num(days)} dias`;
+
+    return UI.h("div", { class: "insight " + (kind === "good" ? "good" : kind === "warning" ? "warning" : "info"), style: "margin-bottom:20px;" }, [
+      UI.h("div", { class: "insight-icon" }, [Icon("download", { size: 17 })]),
+      UI.h("div", {}, [
+        UI.h("div", { class: "insight-title" }, [statusText]),
+        UI.h("div", { class: "insight-body" }, [
+          "Esse painel não tem servidor nem banco de dados — os dados existem só no navegador de cada aparelho, então não tem como um backup rodar sozinho todo dia sem alguém abrir o site. " +
+          "O mais próximo disso: exporte a planilha completa regularmente (ideal: sempre que mexer em algo importante). Se você quiser backup automático de verdade, precisa de um banco de dados no projeto — me avisa que eu configuro.",
+        ]),
+      ]),
+    ]);
   }
 
   function actionCard(icon, title, body, btnLabel, onClick) {
