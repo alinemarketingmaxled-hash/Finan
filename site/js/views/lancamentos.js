@@ -395,10 +395,75 @@
     confirmBtn.style.opacity = ".5";
 
     let parsed = null;
+    let mode = "padrao";
     const classifySelects = []; // [{ raw, select }]
+
+    // Planilha simples: não é o modelo de 8 abas da Max Led (ex: extrato de
+    // banco) -- divisão/tipo/categoria são escolhidos aqui uma vez e valem
+    // pra todas as linhas do arquivo.
+    const simpleDivSel = UI.h("select", {}, [
+      UI.h("option", { value: "iluminacao" }, ["Max Led Iluminação"]),
+      UI.h("option", { value: "importacao" }, ["Max Led Importação"]),
+    ]);
+    const simpleBasisSel = UI.h("select", {}, [
+      UI.h("option", { value: "financeiro" }, ["Financeiro (caixa)"]),
+      UI.h("option", { value: "nfe" }, ["Nota Fiscal (NFe)"]),
+    ]);
+    const simpleFlowSel = UI.h("select", {});
+    const simpleCatSel = UI.h("select", {}, [UI.h("option", { value: "" }, ["— deixar sem categoria —"])].concat(
+      Categories.list.map((c) => UI.h("option", { value: c }, [Fmt.titleCase(c)]))
+    ));
+    const simpleCatField = UI.field("Categoria (opcional)", simpleCatSel);
+
+    function syncSimpleFlowOptions() {
+      const isFin = simpleBasisSel.value === "financeiro";
+      UI.clear(simpleFlowSel);
+      (isFin ? [["entrada", "Entrada"], ["saida", "Saída"]] : [["venda", "Venda (saída de NFe)"], ["compra", "Compra (entrada de NFe)"]])
+        .forEach(([v, l]) => simpleFlowSel.appendChild(UI.h("option", { value: v }, [l])));
+      syncSimpleCatVisibility();
+    }
+    function syncSimpleCatVisibility() {
+      const isExpenseLike = (simpleBasisSel.value === "financeiro" && simpleFlowSel.value === "saida") || (simpleBasisSel.value === "nfe" && simpleFlowSel.value === "compra");
+      simpleCatField.style.display = isExpenseLike ? "" : "none";
+    }
+    simpleBasisSel.addEventListener("change", syncSimpleFlowOptions);
+    simpleFlowSel.addEventListener("change", syncSimpleCatVisibility);
+    syncSimpleFlowOptions();
+
+    const simpleFieldsWrap = UI.h("div", { style: "display:none;flex-direction:column;gap:12px;margin-bottom:14px;" }, [
+      UI.h("div", { class: "field-row" }, [UI.field("Divisão", simpleDivSel), UI.field("Base", simpleBasisSel)]),
+      UI.h("div", { class: "field-row" }, [UI.field("Tipo", simpleFlowSel), simpleCatField]),
+    ]);
+
+    function resetFileState() {
+      UI.clear(classifyBox);
+      classifyBox.style.display = "none";
+      classifySelects.length = 0;
+      parsed = null;
+      confirmBtn.disabled = true;
+      confirmBtn.style.opacity = ".5";
+    }
+
+    const modeSeg = UI.segmented([
+      { value: "padrao", label: "Planilha padrão Max Led" },
+      { value: "simples", label: "Planilha simples" },
+    ], mode, (v) => {
+      mode = v;
+      simpleFieldsWrap.style.display = mode === "simples" ? "flex" : "none";
+      fileInput.value = "";
+      fileInput.accept = mode === "simples" ? ".xlsx,.xlsm,.xls,.csv" : ".xlsx,.xlsm";
+      UI.clear(summaryBox);
+      summaryBox.appendChild(document.createTextNode(mode === "simples"
+        ? "Escolha divisão e tipo acima, depois selecione o arquivo. Leio a 1ª aba e tento achar as colunas de Data/Contraparte/Valor pelo cabeçalho; sem cabeçalho reconhecível, uso as 3 primeiras colunas nessa ordem."
+        : "Selecione o arquivo .xlsx atualizado (o mesmo formato/abas da planilha da Max Led). Vou ler tudo e adicionar só o que ainda não está aqui — nada é duplicado."));
+      resetFileState();
+    });
+
     const m = UI.modal({
       title: "Importar planilha Excel",
       body: [
+        modeSeg,
+        simpleFieldsWrap,
         UI.field("Arquivo", fileInput),
         summaryBox,
         classifyBox,
@@ -411,28 +476,41 @@
       const file = fileInput.files[0];
       if (!file) return;
       UI.clear(summaryBox);
-      UI.clear(classifyBox);
-      classifyBox.style.display = "none";
-      classifySelects.length = 0;
+      resetFileState();
       summaryBox.appendChild(document.createTextNode("Lendo arquivo…"));
-      confirmBtn.disabled = true;
-      confirmBtn.style.opacity = ".5";
       try {
         const buf = await file.arrayBuffer();
-        const { rows, found, missingSheets } = ExcelImport.parseWorkbook(buf);
-        if (!found.length) {
-          UI.clear(summaryBox);
-          summaryBox.appendChild(UI.h("span", { style: "color:var(--critical-text);" }, [
-            "Não reconheci nenhuma aba conhecida nesse arquivo. Confirme que é a planilha da Max Led (mesma estrutura de sempre).",
-          ]));
-          return;
+        let rows, missingSheets;
+        if (mode === "simples") {
+          const result = ExcelImport.parseSimpleSheet(buf, {
+            division: simpleDivSel.value, basis: simpleBasisSel.value, flow: simpleFlowSel.value, category: simpleCatSel.value || null,
+          });
+          rows = result.rows;
+          missingSheets = [];
+          if (!rows.length) {
+            UI.clear(summaryBox);
+            summaryBox.appendChild(UI.h("span", { style: "color:var(--critical-text);" }, [
+              "Não encontrei nenhuma linha válida (com data e valor) na primeira aba desse arquivo.",
+            ]));
+            return;
+          }
+        } else {
+          const result = ExcelImport.parseWorkbook(buf);
+          rows = result.rows; missingSheets = result.missingSheets;
+          if (!result.found.length) {
+            UI.clear(summaryBox);
+            summaryBox.appendChild(UI.h("span", { style: "color:var(--critical-text);" }, [
+              "Não reconheci nenhuma aba conhecida nesse arquivo. Confirme que é a planilha da Max Led (mesma estrutura de sempre), ou troque para \"Planilha simples\" acima.",
+            ]));
+            return;
+          }
         }
         const { toAdd, duplicates } = ExcelImport.dedupe(rows);
         parsed = toAdd;
         const s = ExcelImport.summarize(toAdd);
         UI.clear(summaryBox);
         const lines = [
-          `${found.length} aba(s) reconhecida(s) · ${Fmt.num(rows.length)} lançamento(s) lidos no arquivo.`,
+          `${Fmt.num(rows.length)} lançamento(s) lidos no arquivo.`,
           `${Fmt.num(toAdd.length)} são novos e serão importados · ${Fmt.num(duplicates.length)} já existiam e foram ignorados.`,
         ];
         if (s.total) lines.push(`Novos: ${Fmt.monthLabel(s.minDate.slice(0, 7))} até ${Fmt.monthLabel(s.maxDate.slice(0, 7))} · Iluminação: ${s.byDivision.iluminacao || 0} · Importação: ${s.byDivision.importacao || 0}.`);
@@ -468,7 +546,7 @@
         if (toAdd.length > 0) { confirmBtn.disabled = false; confirmBtn.style.opacity = "1"; }
       } catch (e) {
         UI.clear(summaryBox);
-        summaryBox.appendChild(UI.h("span", { style: "color:var(--critical-text);" }, ["Não consegui ler esse arquivo. Confirme que é um .xlsx válido."]));
+        summaryBox.appendChild(UI.h("span", { style: "color:var(--critical-text);" }, ["Não consegui ler esse arquivo. Confirme que é uma planilha válida."]));
       }
     });
 

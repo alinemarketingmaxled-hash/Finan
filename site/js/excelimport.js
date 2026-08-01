@@ -86,6 +86,84 @@
     return { rows, found, missingSheets };
   }
 
+  // ---------------------------------------------------------------------
+  // Importação simples: planilha qualquer (não o modelo de 8 abas da Max
+  // Led) -- lê só a 1ª aba, detecta as colunas Data/Contraparte/Valor/Nota
+  // pelo texto do cabeçalho (sem acento, sem caixa) e usa Divisão/Tipo/Base
+  // escolhidos manualmente (valem pra todas as linhas do arquivo).
+  // ---------------------------------------------------------------------
+  const HEADER_SYNONYMS = {
+    date: ["data", "date", "dia", "dt"],
+    counterparty: ["contraparte", "cliente", "fornecedor", "nome", "empresa", "descricao", "historico", "favorecido"],
+    value: ["valor", "value", "total", "montante", "quantia"],
+    nota: ["nota fiscal", "nota", "nf", "numero", "num"],
+  };
+
+  function normHeader(s) {
+    const noAccents = String(s || "").trim().toLowerCase().normalize("NFD").replace(/\p{Diacritic}/gu, "");
+    return noAccents;
+  }
+
+  function detectColumns(headerRow) {
+    const cols = { date: null, counterparty: null, value: null, nota: null };
+    (headerRow || []).forEach((cell, idx) => {
+      const h = normHeader(cell);
+      if (!h) return;
+      Object.keys(HEADER_SYNONYMS).forEach((key) => {
+        if (cols[key] === null && HEADER_SYNONYMS[key].some((syn) => h.includes(syn))) cols[key] = idx;
+      });
+    });
+    return cols;
+  }
+
+  // Uma linha de cabeçalho de verdade é só texto -- se a linha 0 já tem uma
+  // data ou número reais em alguma célula, é dado (ex: uma contraparte cujo
+  // nome contém "Fornecedor" não pode virar falso positivo de cabeçalho).
+  function looksLikeDataRow(row) {
+    return (row || []).some((cell) => toIsoDate(cell) || typeof cell === "number");
+  }
+
+  function parseSimpleSheet(arrayBuffer, opts) {
+    const wb = XLSX.read(arrayBuffer, { type: "array", cellDates: true });
+    const sheetName = wb.SheetNames[0];
+    const ws = sheetName ? wb.Sheets[sheetName] : null;
+    if (!ws) return { rows: [], sheetName: null };
+    const grid = XLSX.utils.sheet_to_json(ws, { header: 1, raw: true, defval: null });
+    if (!grid.length) return { rows: [], sheetName };
+
+    const detected = detectColumns(grid[0]);
+    const hasHeader = !looksLikeDataRow(grid[0]) && (detected.date !== null || detected.counterparty !== null || detected.value !== null);
+    let cols;
+    let startRow;
+    if (hasHeader) {
+      cols = detected;
+      if (cols.date === null) cols.date = 0;
+      if (cols.counterparty === null) cols.counterparty = 1;
+      if (cols.value === null) cols.value = 2;
+      startRow = 1;
+    } else {
+      cols = { date: 0, counterparty: 1, value: 2, nota: null };
+      startRow = 0;
+    }
+
+    const rows = [];
+    for (let i = startRow; i < grid.length; i++) {
+      const row = grid[i];
+      if (!row) continue;
+      const iso = toIsoDate(row[cols.date]);
+      const valueVal = row[cols.value];
+      if (!iso || typeof valueVal !== "number") continue;
+      rows.push({
+        date: iso, division: opts.division, basis: opts.basis, flow: opts.flow,
+        category: opts.category || null,
+        counterparty: row[cols.counterparty] !== null && row[cols.counterparty] !== undefined ? String(row[cols.counterparty]).trim() : null,
+        value: Math.round(Math.abs(valueVal) * 100) / 100,
+        nota_fiscal: cols.nota !== null ? fmtNota(row[cols.nota]) : null,
+      });
+    }
+    return { rows, sheetName, usedHeader: hasHeader };
+  }
+
   function dedupe(newRows) {
     const existing = new Set();
     MAXLED_DATA.transactions.forEach((t) => existing.add(fingerprint(t)));
@@ -147,5 +225,5 @@
     return { byDivision, minDate, maxDate, total: rows.length };
   }
 
-  global.ExcelImport = { parseWorkbook, dedupe, summarize, fingerprint, analyzeUnknowns, applyCategoriaClassification };
+  global.ExcelImport = { parseWorkbook, parseSimpleSheet, dedupe, summarize, fingerprint, analyzeUnknowns, applyCategoriaClassification };
 })(window);
