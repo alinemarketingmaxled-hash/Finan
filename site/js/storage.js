@@ -36,6 +36,9 @@
   function uid() {
     return Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
   }
+  function normName(s) {
+    return String(s || "").trim().toUpperCase().replace(/\s+/g, " ");
+  }
 
   const Storage = {
     KEYS,
@@ -84,11 +87,21 @@
     },
 
     // ---- categoria de cliente (por contraparte — vale pra todos os lançamentos dela) ----
+    // Chave é o nome normalizado (maiúsculo, sem espaço duplicado) pra "SIMPLES
+    // CONECT" e "Simples Conect" (digitado à mão num lançamento novo, por
+    // exemplo) caírem na mesma classificação em vez de virar dois clientes.
     getClienteCategorias() { return read(KEYS.clienteCategorias, {}); },
+    getClienteCategoria(nome) {
+      if (!nome) return null;
+      const map = this.getClienteCategorias();
+      return map[normName(nome)] || map[nome] || null; // 2º fallback: dado salvo antes dessa normalização existir
+    },
     setClienteCategoria(nome, categoria) {
       if (!nome) return;
+      const key = normName(nome);
+      if (!key) return;
       const map = this.getClienteCategorias();
-      if (categoria) map[nome] = categoria; else delete map[nome];
+      if (categoria) map[key] = categoria; else delete map[key];
       write(KEYS.clienteCategorias, map);
     },
 

@@ -57,8 +57,7 @@
   // contraparte (definido manualmente pelo usuário) — vale pra tudo que já
   // veio e pra tudo que vier depois daquele mesmo cliente.
   function clienteCategoria(nome) {
-    if (!nome) return null;
-    return Storage.getClienteCategorias()[nome] || null;
+    return Storage.getClienteCategoria(nome);
   }
 
   // Lançamentos/clientes sem classificação — alimenta a barra flutuante de

@@ -492,6 +492,15 @@
     return all.map((c) => UI.h("option", { value: c }, []));
   }
 
+  // Sugestões de contraparte já usada -- escolher da lista em vez de digitar
+  // de novo evita variação de nome (maiúscula/minúscula, espaço) que faria
+  // um cliente já classificado parecer "sem categoria" de novo.
+  function counterpartyOptions() {
+    const names = new Set();
+    Compute.allTransactions().forEach((t) => { if (t.counterparty) names.add(t.counterparty); });
+    return Array.from(names).sort().map((n) => UI.h("option", { value: n }, []));
+  }
+
   // existing: linha da tabela (base Excel, importada ou manual) quando em modo de edição.
   // onSaved: chamado após salvar — se vier, faz só um refresh local (tabela); senão, AppState.set({}).
   function openLancamentoModal(existing, onSaved) {
@@ -508,7 +517,8 @@
     ]);
     const catSel = UI.h("select", {}, Categories.list.map((c) => UI.h("option", { value: c }, [Fmt.titleCase(c)])));
     const dateInput = UI.h("input", { type: "date", class: "input" });
-    const cpInput = UI.h("input", { class: "input", placeholder: "Ex: Fornecedor XPTO, Cliente ABC…" });
+    const cpInput = UI.h("input", { class: "input", list: "counterpartyList", placeholder: "Ex: Fornecedor XPTO, Cliente ABC…" });
+    const cpDatalist = UI.h("datalist", { id: "counterpartyList" }, counterpartyOptions());
     const valueInput = UI.h("input", { type: "number", step: "0.01", min: "0", class: "input", placeholder: "0,00" });
     const noteInput = UI.h("textarea", { class: "input", rows: 2, placeholder: "Observação (opcional)" });
     const notaInput = UI.h("input", { class: "input", placeholder: "Ex: 11853 (opcional)" });
@@ -573,7 +583,7 @@
         UI.h("div", { class: "field-row" }, [UI.field("Divisão", divSel), UI.field("Base", basisSel)]),
         UI.h("div", { class: "field-row" }, [UI.field("Data", dateInput), UI.field("Tipo", flowSel)]),
         catField,
-        UI.field("Contraparte / cliente / fornecedor", cpInput),
+        UI.field("Contraparte / cliente / fornecedor", UI.h("div", {}, [cpInput, cpDatalist])),
         clienteCatField,
         UI.h("div", { class: "field-row" }, [UI.field("Valor (R$)", valueInput), notaField]),
         UI.field("Observação", noteInput),
