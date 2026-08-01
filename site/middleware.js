@@ -50,8 +50,13 @@ function parseCookies(header) {
 export default async function middleware(request) {
   const expectedPassword = process.env.BASIC_AUTH_PASSWORD;
   if (!expectedPassword) {
-    // Sem senha configurada no projeto: libera acesso em vez de travar o site.
-    return next();
+    // Sem senha configurada: nega acesso (fail-closed) em vez de liberar o
+    // site sem login. Uma variável de ambiente esquecida/removida não pode
+    // virar dado financeiro publicamente acessível sem ninguém perceber.
+    return new Response("Acesso indisponível: configuração de login pendente neste ambiente.", {
+      status: 503,
+      headers: { "content-type": "text/plain; charset=utf-8" },
+    });
   }
   const expectedUser = process.env.BASIC_AUTH_USER || "maxled";
   const expectedToken = await sha256Hex(`${expectedUser}:${expectedPassword}:maxled-session-v1`);

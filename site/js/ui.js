@@ -16,6 +16,26 @@
   }
   function clear(el) { while (el.firstChild) el.removeChild(el.firstChild); }
 
+  // Texto com <b>...</b> pra destacar trechos (números já formatados por
+  // nós). Nunca usa innerHTML: tudo fora das tags <b> vira texto puro, e o
+  // próprio conteúdo dentro delas também vai por textContent -- então mesmo
+  // que uma string interpolada aqui um dia venha de um lançamento importado
+  // (contraparte, categoria, observação), não tem como virar HTML executável.
+  function richText(text) {
+    const frag = document.createDocumentFragment();
+    String(text == null ? "" : text).split(/(<b>[\s\S]*?<\/b>)/g).forEach((part) => {
+      const m = /^<b>([\s\S]*)<\/b>$/.exec(part);
+      if (m) {
+        const b = document.createElement("b");
+        b.textContent = m[1];
+        frag.appendChild(b);
+      } else if (part) {
+        frag.appendChild(document.createTextNode(part));
+      }
+    });
+    return frag;
+  }
+
   const DIVISION_LABEL = () => MAXLED_DATA.meta.division_labels;
 
   function badgeDivision(division) {
@@ -90,18 +110,13 @@
   }
 
   function insightCard(insight) {
-    const el = h("div", { class: `insight ${insight.level}` }, [
+    return h("div", { class: `insight ${insight.level}` }, [
       h("div", { class: "insight-icon" }, [Icon(insight.icon || "info", { size: 17 })]),
       h("div", {}, [
         h("div", { class: "insight-title" }, [insight.title]),
-        h("div", { class: "insight-body" }),
+        h("div", { class: "insight-body" }, [richText(insight.body)]),
       ]),
     ]);
-    // body pode conter <b> para destacar números já formatados por nós (Fmt.*):
-    // seguro por construção — nunca interpolamos texto vindo do usuário sem
-    // passar por Fmt.esc/textContent antes.
-    el.querySelector(".insight-body").innerHTML = insight.body;
-    return el;
   }
 
   function table(opts) {
@@ -284,7 +299,7 @@
 
   global.UI = {
     chartCardWithTable,
-    h, clear, badgeDivision, badge, card, sectionTitle, emptyState, deltaEl, statTile,
+    h, clear, richText, badgeDivision, badge, card, sectionTitle, emptyState, deltaEl, statTile,
     insightCard, table, monthOptions, select, segmented, filterBar, toast, modal,
     confirmDialog, field, closeAllModals, periodLabel, divisionLabel: (d) => DIVISION_LABEL()[d] || d,
   };

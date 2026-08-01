@@ -18,12 +18,12 @@
       UI.h("div", { class: "insight-icon" }, [Icon("info", { size: 17 })]),
       UI.h("div", {}, [
         UI.h("div", { class: "insight-title" }, ["Como funciona"]),
-        UI.h("div", { class: "insight-body" }, [
+        UI.h("div", { class: "insight-body" }, [UI.richText(
           "Cadastre algo que você já sabe que vai entrar ou sair, mesmo que ainda não tenha acontecido: um pedido fechado em parcelas, uma compra grande programada, etc. " +
           "Informe o valor total, em quantas parcelas e o mês da 1ª — o sistema divide o valor e mostra em qual mês cada parcela cai. " +
           "É só planejamento: não vira lançamento nem entra no DRE sozinho. Quando a parcela realmente acontecer, registre o lançamento de verdade em Lançamentos. " +
-          "Marque como <b>Cancelado</b> se não for mais acontecer — some da previsão sem precisar apagar o histórico.",
-        ]),
+          "Marque como <b>Cancelado</b> se não for mais acontecer — some da previsão sem precisar apagar o histórico."
+        )]),
       ]),
     ]));
 

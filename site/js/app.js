@@ -157,7 +157,7 @@
     const params = new URLSearchParams(location.search);
     const name = params.get("welcome");
     if (!name) return;
-    Storage.logLogin(name);
+    Storage.logLogin(name.trim().slice(0, 60));
     history.replaceState(null, "", location.pathname + location.hash);
   }
   captureLoginWelcome();
