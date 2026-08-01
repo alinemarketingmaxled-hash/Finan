@@ -24,7 +24,7 @@
   // Uma planilha .xlsx só, com uma aba por tipo de dado -- tudo que existe
   // além da base original do Excel (lançamentos manuais já mesclados com a
   // base, metas, orçamento, categoria de clientes, previsões, acessos).
-  function buildWorkbook() {
+  async function buildWorkbook() {
     const wb = XLSX.utils.book_new();
     const addSheet = (name, rows) => {
       const ws = XLSX.utils.json_to_sheet(rows.length ? rows : [{}]);
@@ -57,7 +57,8 @@
       Parcelas: p.parcelas, "Mês início": p.mes_inicio || "", Status: p.status, Observação: p.nota || "",
     })));
 
-    addSheet("Histórico de acessos", Storage.listLoginLog().map((l) => ({
+    const loginLog = await fetch("/api/login-log").then((r) => (r.ok ? r.json() : { log: [] })).then((d) => d.log || []).catch(() => []);
+    addSheet("Histórico de acessos", loginLog.map((l) => ({
       Nome: l.name, "Data e hora": new Date(l.ts).toLocaleString("pt-BR"),
     })));
 
@@ -80,8 +81,8 @@
 
     container.appendChild(UI.sectionTitle("Exportar", "Baixe tudo (base do Excel + o que você adicionou) para guardar ou levar para outro computador"));
     container.appendChild(UI.h("div", { class: "grid grid-3" }, [
-      actionCard("fileText", "Planilha completa (.xlsx)", "Uma aba por tipo de dado: lançamentos (base + manuais), metas, orçamento, categoria de clientes, previsões e histórico de acessos.", "Baixar planilha", () => {
-        XLSX.writeFile(buildWorkbook(), `maxled-backup-${new Date().toISOString().slice(0, 10)}.xlsx`);
+      actionCard("fileText", "Planilha completa (.xlsx)", "Uma aba por tipo de dado: lançamentos (base + manuais), metas, orçamento, categoria de clientes, previsões e histórico de acessos.", "Baixar planilha", async () => {
+        XLSX.writeFile(await buildWorkbook(), `maxled-backup-${new Date().toISOString().slice(0, 10)}.xlsx`);
         markBackedUp();
         UI.toast("Planilha exportada.");
         AppState.set({});

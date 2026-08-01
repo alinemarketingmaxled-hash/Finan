@@ -24,6 +24,7 @@
       { id: "pipeline", label: "Previsões", icon: "users" },
     ] },
     { group: "Sistema", items: [
+      { id: "usuarios", label: "Gerenciar Usuários", icon: "building" },
       { id: "backup", label: "Backup & Exportação", icon: "download" },
       { id: "config", label: "Configurações", icon: "settings" },
     ] },
@@ -43,6 +44,7 @@
     metas: ["Metas", "Objetivos financeiros da empresa"],
     orcamento: ["Orçamento", "Limite mensal por categoria vs realizado"],
     pipeline: ["Previsões", "Entradas e saídas futuras que você já sabe que vão acontecer, mesmo parceladas"],
+    usuarios: ["Gerenciar Usuários", "Quem tem acesso ao painel — adicionar, editar ou remover contas"],
     backup: ["Backup & Exportação", "Exportar, importar e imprimir seus dados"],
     config: ["Configurações", "Tema, empresa e preferências"],
   };
@@ -152,12 +154,13 @@
   }
 
   // Login acabou de confirmar (middleware redireciona pra cá com ?welcome=Nome)
-  // -- registra no histórico de acessos e limpa a URL.
+  // -- o próprio login já registrou no histórico de acessos (banco de dados);
+  // aqui é só a saudação e limpar a URL.
   function captureLoginWelcome() {
     const params = new URLSearchParams(location.search);
     const name = params.get("welcome");
     if (!name) return;
-    Storage.logLogin(name.trim().slice(0, 60));
+    UI.toast(`Bem-vindo(a), ${name.trim().slice(0, 60)}!`);
     history.replaceState(null, "", location.pathname + location.hash);
   }
   captureLoginWelcome();

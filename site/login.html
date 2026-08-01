@@ -67,16 +67,12 @@
       </div>
     </div>
     <h1>Entrar</h1>
-    <p class="lead">Acesso restrito — informe seu nome, usuário e senha.</p>
+    <p class="lead">Acesso restrito — informe seu e-mail e senha.</p>
     <div id="errorBox" class="error" style="display:none;"></div>
     <form method="POST" action="/login">
       <div class="field">
-        <label for="displayName">Seu nome</label>
-        <input id="displayName" name="displayName" type="text" autocomplete="name" maxlength="60" autofocus required>
-      </div>
-      <div class="field">
-        <label for="user">Usuário</label>
-        <input id="user" name="user" type="text" autocomplete="username" autocapitalize="off" autocorrect="off" spellcheck="false" required>
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="email" autocomplete="username" autocapitalize="off" autocorrect="off" spellcheck="false" autofocus required>
       </div>
       <div class="field">
         <label for="pass">Senha</label>
@@ -89,13 +85,14 @@
     var params = new URLSearchParams(location.search);
     var box = document.getElementById("errorBox");
     if (params.get("blocked")) {
-      box.textContent = "Muitas tentativas incorretas. Aguarde alguns minutos antes de tentar de novo.";
+      var minutes = params.get("minutes");
+      box.textContent = "Muitas tentativas incorretas. Aguarde " + (minutes || "alguns") + " minuto(s) antes de tentar de novo.";
       box.style.display = "block";
     } else if (params.get("error")) {
       var remaining = params.get("remaining");
       box.textContent = remaining
-        ? "Usuário ou senha incorretos. Restam " + remaining + " tentativa(s) antes do bloqueio temporário."
-        : "Usuário ou senha incorretos.";
+        ? "E-mail ou senha incorretos. Restam " + remaining + " tentativa(s) antes do bloqueio temporário."
+        : "E-mail ou senha incorretos.";
       box.style.display = "block";
     }
   </script>
