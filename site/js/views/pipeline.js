@@ -114,8 +114,17 @@
     return btn;
   }
 
+  // Sugere nome de cliente/fornecedor já usado em algum lançamento, pra não
+  // ter que digitar (e arriscar grafar diferente) um nome que já existe.
+  function counterpartyOptions() {
+    const names = new Set();
+    Compute.allTransactions().forEach((t) => { if (t.counterparty) names.add(t.counterparty); });
+    return Array.from(names).sort().map((n) => UI.h("option", { value: n }, []));
+  }
+
   function openPipelineModal(existing, st) {
-    const descInput = UI.h("input", { class: "input", placeholder: "Ex: Pedido Cliente X, Compra de equipamento…" });
+    const descInput = UI.h("input", { class: "input", list: "previsaoNomeList", placeholder: "Ex: Pedido Cliente X, Compra de equipamento…" });
+    const descDatalist = UI.h("datalist", { id: "previsaoNomeList" }, counterpartyOptions());
     const tipoSel = UI.h("select", {}, Object.entries(TIPO_LABEL).map(([v, l]) => UI.h("option", { value: v }, [l])));
     const divSel = UI.h("select", {}, [
       UI.h("option", { value: "iluminacao" }, ["Max Led Iluminação"]),
@@ -163,7 +172,7 @@
     const m = UI.modal({
       title: existing ? "Editar previsão" : "Nova previsão",
       body: [
-        UI.field("Descrição", descInput),
+        UI.field("Descrição", UI.h("div", {}, [descInput, descDatalist])),
         UI.h("div", { class: "field-row" }, [UI.field("Tipo", tipoSel), UI.field("Divisão", divSel)]),
         UI.h("div", { class: "field-row" }, [UI.field("Valor total (R$)", valorInput), UI.field("Nº de parcelas", parcelasInput)]),
         UI.field("Mês da 1ª parcela", mesInput),
