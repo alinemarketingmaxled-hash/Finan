@@ -68,7 +68,7 @@
     </div>
     <h1>Entrar</h1>
     <p class="lead">Acesso restrito — informe seu nome, usuário e senha.</p>
-    <div id="errorBox" class="error" style="display:none;">Usuário ou senha incorretos.</div>
+    <div id="errorBox" class="error" style="display:none;"></div>
     <form method="POST" action="/login">
       <div class="field">
         <label for="displayName">Seu nome</label>
@@ -86,8 +86,17 @@
     </form>
   </div>
   <script>
-    if (new URLSearchParams(location.search).get("error")) {
-      document.getElementById("errorBox").style.display = "block";
+    var params = new URLSearchParams(location.search);
+    var box = document.getElementById("errorBox");
+    if (params.get("blocked")) {
+      box.textContent = "Muitas tentativas incorretas. Aguarde alguns minutos antes de tentar de novo.";
+      box.style.display = "block";
+    } else if (params.get("error")) {
+      var remaining = params.get("remaining");
+      box.textContent = remaining
+        ? "Usuário ou senha incorretos. Restam " + remaining + " tentativa(s) antes do bloqueio temporário."
+        : "Usuário ou senha incorretos.";
+      box.style.display = "block";
     }
   </script>
 </body>

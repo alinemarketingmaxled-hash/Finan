@@ -10,8 +10,17 @@ export const config = {
 };
 
 const COOKIE_NAME = "maxled_session";
+const ATTEMPTS_COOKIE = "maxled_attempts";
+const BLOCKED_COOKIE = "maxled_blocked_until";
 const LOGIN_PAGE = "/login.html";
 const LOGIN_ACTION = "/login"; // caminho virtual (sem arquivo estático correspondente)
+const MAX_ATTEMPTS = 7;
+const LOCKOUT_SECONDS = 15 * 60; // bloqueia 15min após a 7ª tentativa errada
+const ATTEMPTS_WINDOW_SECONDS = 30 * 60; // contador zera sozinho se ficar 30min sem tentar de novo
+
+function cookie(name, value, maxAgeSeconds) {
+  return `${name}=${value}; Path=/; HttpOnly; Secure; SameSite=Lax; Max-Age=${maxAgeSeconds}`;
+}
 
 async function sha256Hex(text) {
   const data = new TextEncoder().encode(text);
@@ -55,27 +64,53 @@ export default async function middleware(request) {
   }
 
   if (url.pathname === LOGIN_ACTION && request.method === "POST") {
+    const cookiesIn = parseCookies(request.headers.get("cookie"));
+
+    // Bloqueado de tentativas anteriores: recusa sem nem checar a senha.
+    const blockedUntil = parseInt(cookiesIn[BLOCKED_COOKIE] || "0", 10);
+    if (blockedUntil && Date.now() < blockedUntil) {
+      return new Response(null, { status: 303, headers: { Location: `${LOGIN_PAGE}?blocked=1` } });
+    }
+
+    let ok = false;
+    let displayName = "";
     try {
       const bodyText = await request.text();
       const form = new URLSearchParams(bodyText);
       const user = (form.get("user") || "").trim();
       const pass = form.get("pass") || "";
-      const displayName = (form.get("displayName") || "").trim().slice(0, 60);
-      if (timingSafeEqual(user, expectedUser) && timingSafeEqual(pass, expectedPassword)) {
-        // Nome é só pro histórico de acessos (site/js/views/config.js) -- não
-        // participa da autenticação, que continua sendo usuário/senha únicos.
-        const dest = "/" + (displayName ? `?welcome=${encodeURIComponent(displayName)}` : "");
-        const res = new Response(null, { status: 303, headers: { Location: dest } });
-        res.headers.append(
-          "Set-Cookie",
-          `${COOKIE_NAME}=${expectedToken}; Path=/; HttpOnly; Secure; SameSite=Lax; Max-Age=2592000`
-        );
-        return res;
-      }
+      displayName = (form.get("displayName") || "").trim().slice(0, 60);
+      ok = timingSafeEqual(user, expectedUser) && timingSafeEqual(pass, expectedPassword);
     } catch (e) {
-      // corpo malformado -> trata como credenciais inválidas abaixo
+      ok = false; // corpo malformado -> conta como tentativa errada abaixo
     }
-    return new Response(null, { status: 303, headers: { Location: `${LOGIN_PAGE}?error=1` } });
+
+    if (ok) {
+      // Nome é só pro histórico de acessos (site/js/views/config.js) -- não
+      // participa da autenticação, que continua sendo usuário/senha únicos.
+      const dest = "/" + (displayName ? `?welcome=${encodeURIComponent(displayName)}` : "");
+      const res = new Response(null, { status: 303, headers: { Location: dest } });
+      res.headers.append("Set-Cookie", cookie(COOKIE_NAME, expectedToken, 2592000));
+      res.headers.append("Set-Cookie", cookie(ATTEMPTS_COOKIE, "", 0));
+      res.headers.append("Set-Cookie", cookie(BLOCKED_COOKIE, "", 0));
+      return res;
+    }
+
+    // Senha/usuário errados: soma 1 tentativa; na 7ª, bloqueia por 15min.
+    // Guardado num cookie (não tem banco/servidor com estado nesse projeto),
+    // então limpar cookies ou trocar de navegador reseta a contagem -- serve
+    // pra desencorajar tentativa repetida/automatizada, não é à prova de um
+    // atacante que sabe disso.
+    const attempts = (parseInt(cookiesIn[ATTEMPTS_COOKIE] || "0", 10) || 0) + 1;
+    if (attempts >= MAX_ATTEMPTS) {
+      const res = new Response(null, { status: 303, headers: { Location: `${LOGIN_PAGE}?blocked=1` } });
+      res.headers.append("Set-Cookie", cookie(BLOCKED_COOKIE, Date.now() + LOCKOUT_SECONDS * 1000, LOCKOUT_SECONDS));
+      res.headers.append("Set-Cookie", cookie(ATTEMPTS_COOKIE, "", 0));
+      return res;
+    }
+    const res = new Response(null, { status: 303, headers: { Location: `${LOGIN_PAGE}?error=1&remaining=${MAX_ATTEMPTS - attempts}` } });
+    res.headers.append("Set-Cookie", cookie(ATTEMPTS_COOKIE, attempts, ATTEMPTS_WINDOW_SECONDS));
+    return res;
   }
 
   if (url.pathname === LOGIN_PAGE) {
