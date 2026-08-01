@@ -41,6 +41,8 @@
       if (opts.month && t.date.slice(0, 7) !== opts.month) return false;
       if (opts.from && t.date.slice(0, 7) < opts.from) return false;
       if (opts.to && t.date.slice(0, 7) > opts.to) return false;
+      if (opts.dateFrom && t.date < opts.dateFrom) return false;
+      if (opts.dateTo && t.date > opts.dateTo) return false;
       if (opts.category && t.category !== opts.category) return false;
       if (opts.search) {
         const s = opts.search.toLowerCase();
@@ -128,6 +130,20 @@
       }
     }
     return rows;
+  }
+
+  // Fluxo de caixa por dia (financeiro), num intervalo de datas — só existe
+  // pra dentro da janela com lançamento detalhado (2025 é só total mensal).
+  function dailyCashflow(division, dateFrom, dateTo) {
+    const map = new Map();
+    filterTx({ division, basis: "financeiro", dateFrom, dateTo }).forEach((t) => {
+      if (!map.has(t.date)) map.set(t.date, { date: t.date, entradas: 0, saidas: 0 });
+      const rec = map.get(t.date);
+      if (t.flow === "entrada") rec.entradas += t.value; else if (t.flow === "saida") rec.saidas += t.value;
+    });
+    return Array.from(map.values())
+      .map((r) => ({ date: r.date, entradas: round2(r.entradas), saidas: round2(r.saidas), resultado: round2(r.entradas - r.saidas) }))
+      .sort((a, b) => a.date.localeCompare(b.date));
   }
 
   // ---------------------------------------------------------------------
@@ -450,7 +466,7 @@
   global.Compute = {
     DIVISIONS, round2,
     allTransactions, detailedMonths, filterTx, previousMonth, clienteCategoria,
-    cashflowSeries, dreForPeriod, expenseCategoriesAgg, topCounterparties,
+    cashflowSeries, dailyCashflow, dreForPeriod, expenseCategoriesAgg, topCounterparties,
     loans, loansTotals, receivablesPayables, healthScore, insights, budgetStatus,
   };
 })(window);
