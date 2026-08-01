@@ -52,6 +52,7 @@ table { border-collapse: collapse; width: 100%; }
   --critical: #e66767;
   --good-text: #0ca30c;
   --critical-text: #e66767;
+  --neutral-text: #3987e5;
 
   /* categorical series (validated palette, dark step) */
   --series-1: #3987e5; /* blue */
@@ -87,6 +88,7 @@ table { border-collapse: collapse; width: 100%; }
   --shadow: 0 1px 2px rgba(11,11,11,0.06), 0 8px 24px rgba(11,11,11,0.08);
   --good-text: #006300;
   --critical-text: #d03b3b;
+  --neutral-text: #2a78d6;
   --series-1: #2a78d6;
   --series-2: #eb6834;
   --series-3: #1baf7a;
@@ -114,6 +116,7 @@ table { border-collapse: collapse; width: 100%; }
     --shadow: 0 1px 2px rgba(11,11,11,0.06), 0 8px 24px rgba(11,11,11,0.08);
     --good-text: #006300;
     --critical-text: #d03b3b;
+    --neutral-text: #2a78d6;
     --series-1: #2a78d6;
     --series-2: #eb6834;
     --series-3: #1baf7a;
@@ -286,7 +289,7 @@ select:focus, .input:focus { outline: 2px solid var(--accent); outline-offset: 1
 .stat-delta { font-size: 12px; font-weight: 700; display: inline-flex; align-items: center; gap: 3px; }
 .stat-delta.up { color: var(--good-text); }
 .stat-delta.down { color: var(--critical-text); }
-.stat-delta.flat { color: var(--text-muted); }
+.stat-delta.flat { color: var(--neutral-text); }
 .stat-foot { font-size: 11.5px; color: var(--text-muted); }
 .stat-tile .spark { margin-top: 2px; }
 
@@ -300,6 +303,7 @@ select:focus, .input:focus { outline: 2px solid var(--accent); outline-offset: 1
 .badge-warning { background: rgba(250,178,25,.16); color: #b9790a; }
 :root[data-theme="dark"] .badge-warning, :root:not([data-theme="light"]) .badge-warning { color: var(--warning); }
 .badge-critical { background: rgba(230,103,103,.15); color: var(--critical-text); }
+.badge-neutral { background: rgba(57,135,229,.14); color: var(--neutral-text); }
 .badge-muted { background: var(--surface-3); color: var(--text-secondary); }
 .badge-division-iluminacao { background: rgba(57,135,229,.15); color: var(--series-1); }
 .badge-division-importacao { background: rgba(217,89,38,.15); color: var(--series-2); }

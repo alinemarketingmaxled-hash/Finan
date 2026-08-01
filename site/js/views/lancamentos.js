@@ -189,17 +189,20 @@
     const summaryBox = UI.h("div", { style: "font-size:12.5px;color:var(--text-secondary);line-height:1.6;min-height:20px;" }, [
       "Selecione o arquivo .xlsx atualizado (o mesmo formato/abas da planilha da Max Led). Vou ler tudo e adicionar só o que ainda não está aqui — nada é duplicado.",
     ]);
+    const classifyBox = UI.h("div", { style: "display:none;flex-direction:column;gap:10px;" });
     const cancelBtn = UI.h("button", { class: "btn" }, ["Cancelar"]);
     const confirmBtn = UI.h("button", { class: "btn btn-accent" }, ["Confirmar importação"]);
     confirmBtn.disabled = true;
     confirmBtn.style.opacity = ".5";
 
     let parsed = null;
+    const classifySelects = []; // [{ raw, select }]
     const m = UI.modal({
       title: "Importar planilha Excel",
       body: [
         UI.field("Arquivo", fileInput),
         summaryBox,
+        classifyBox,
       ],
       footer: [cancelBtn, confirmBtn],
     });
@@ -209,6 +212,9 @@
       const file = fileInput.files[0];
       if (!file) return;
       UI.clear(summaryBox);
+      UI.clear(classifyBox);
+      classifyBox.style.display = "none";
+      classifySelects.length = 0;
       summaryBox.appendChild(document.createTextNode("Lendo arquivo…"));
       confirmBtn.disabled = true;
       confirmBtn.style.opacity = ".5";
@@ -233,6 +239,33 @@
         if (s.total) lines.push(`Novos: ${Fmt.monthLabel(s.minDate.slice(0, 7))} até ${Fmt.monthLabel(s.maxDate.slice(0, 7))} · Iluminação: ${s.byDivision.iluminacao || 0} · Importação: ${s.byDivision.importacao || 0}.`);
         if (missingSheets.length) lines.push(`Abas não encontradas (ok se não usa): ${missingSheets.join(", ")}.`);
         lines.forEach((l) => summaryBox.appendChild(UI.h("div", {}, [l])));
+
+        const { categories, weirdNotas } = ExcelImport.analyzeUnknowns(toAdd);
+        if (categories.length) {
+          classifyBox.style.display = "flex";
+          classifyBox.appendChild(UI.h("div", { class: "insight warning" }, [
+            UI.h("div", { class: "insight-icon" }, [Icon("alertTriangle", { size: 17 })]),
+            UI.h("div", {}, [
+              UI.h("div", { class: "insight-title" }, [`${categories.length} categoria(s) não reconhecida(s)`]),
+              UI.h("div", { class: "insight-body" }, ["A planilha trouxe um texto de categoria que eu não conheço. Escolha o grupo certo pra cada uma — eu lembro da escolha pras próximas importações."]),
+            ]),
+          ]));
+          categories.forEach((c) => {
+            const sel = UI.h("select", {}, Categories.list.map((cat) => UI.h("option", { value: cat }, [Fmt.titleCase(cat)])));
+            sel.value = "OUTRAS DESPESAS";
+            classifySelects.push({ raw: c.categoria, select: sel });
+            classifyBox.appendChild(UI.h("div", { class: "field-row", style: "align-items:end;" }, [
+              UI.field(`"${Fmt.titleCase(c.categoria)}" (${c.count}x · ${Fmt.money(c.sum)})`, sel),
+            ]));
+          });
+        }
+        if (weirdNotas > 0) {
+          classifyBox.style.display = "flex";
+          classifyBox.appendChild(UI.h("div", { style: "font-size:11.5px;color:var(--text-muted);" }, [
+            `${Fmt.num(weirdNotas)} lançamento(s) com nota fiscal em formato não numérico (ex: "SNF", "DEVOLUÇÃO") — vão ser importados como estão. Revise depois na tela de Lançamentos se precisar.`,
+          ]));
+        }
+
         if (toAdd.length > 0) { confirmBtn.disabled = false; confirmBtn.style.opacity = "1"; }
       } catch (e) {
         UI.clear(summaryBox);
@@ -242,6 +275,11 @@
 
     confirmBtn.addEventListener("click", () => {
       if (!parsed || !parsed.length) return;
+      if (classifySelects.length) {
+        const mapping = {};
+        classifySelects.forEach(({ raw, select }) => { mapping[raw] = select.value; });
+        parsed = ExcelImport.applyCategoriaClassification(parsed, mapping);
+      }
       Storage.addLancamentosBulk(parsed, "import");
       UI.toast(`${Fmt.num(parsed.length)} lançamento(s) importado(s).`);
       m.close();

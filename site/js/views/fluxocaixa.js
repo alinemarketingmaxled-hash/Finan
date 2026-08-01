@@ -36,7 +36,7 @@
         { key: "entradas", label: "Entradas", align: "right", render: (r) => Fmt.money(r.entradas) },
         { key: "saidas", label: "Saídas", align: "right", render: (r) => Fmt.money(r.saidas) },
         { key: "resultado", label: "Resultado", align: "right", render: (r) => Fmt.money(r.resultado) },
-        { key: "tipo", label: "Situação", render: (r) => UI.badge(r.tipo === "previsao" ? "Previsão" : "Realizado", r.tipo === "previsao" ? "muted" : "good") },
+        { key: "tipo", label: "Situação", render: (r) => UI.badge(r.tipo === "previsao" ? "Previsão" : "Realizado", r.tipo === "previsao" ? "neutral" : "good") },
       ],
       rows: cf,
     }));

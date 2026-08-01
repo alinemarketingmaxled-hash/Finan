@@ -1,7 +1,7 @@
 // AUTO-GERADO por scripts/extract_xlsx.py -- não editar à mão.
 const MAXLED_DATA = {
   "meta": {
-    "generated_at": "2026-08-01T15:35:47.556170Z",
+    "generated_at": "2026-08-01T15:44:36.675576Z",
     "company": "Max Led",
     "divisions": [
       "iluminacao",

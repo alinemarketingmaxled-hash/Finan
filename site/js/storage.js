@@ -10,6 +10,7 @@
     config: NS + "config",
     overrides: NS + "overrides",
     clienteCategorias: NS + "clienteCategorias",
+    categoriaAliases: NS + "categoriaAliases",
   };
 
   function read(key, fallback) {
@@ -89,6 +90,18 @@
       write(KEYS.clienteCategorias, map);
     },
 
+    // ---- categoria "aprendida" pra texto de categoria que a planilha trouxe e
+    // a gente não reconheceu (ex: digitado diferente) — usuário classifica uma
+    // vez na importação e todo lançamento igual (dessa vez e das próximas) usa
+    // a mesma categoria automaticamente ----
+    getCategoriaAliases() { return read(KEYS.categoriaAliases, {}); },
+    setCategoriaAlias(raw, categoria) {
+      if (!raw) return;
+      const map = this.getCategoriaAliases();
+      if (categoria) map[raw] = categoria; else delete map[raw];
+      write(KEYS.categoriaAliases, map);
+    },
+
     // ---- metas ----
     listMetas() { return read(KEYS.metas, []); },
     saveMetas(list) { write(KEYS.metas, list); },
@@ -140,6 +153,7 @@
         config: this.getConfig(),
         overrides: this.getOverrides(),
         clienteCategorias: this.getClienteCategorias(),
+        categoriaAliases: this.getCategoriaAliases(),
       };
     },
     importAll(payload) {
@@ -150,6 +164,7 @@
       if (payload.config) write(KEYS.config, payload.config);
       if (payload.overrides) write(KEYS.overrides, payload.overrides);
       if (payload.clienteCategorias) write(KEYS.clienteCategorias, payload.clienteCategorias);
+      if (payload.categoriaAliases) write(KEYS.categoriaAliases, payload.categoriaAliases);
     },
     resetAll() {
       Object.values(KEYS).forEach((k) => localStorage.removeItem(k));

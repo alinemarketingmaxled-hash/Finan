@@ -68,7 +68,7 @@
         { key: "month", label: "Mês", render: (r) => Fmt.monthLabel(r.month, "full") },
         { key: "entradas", label: "Entradas", align: "right", render: (r) => Fmt.money(r.entradas) },
         { key: "saidas", label: "Saídas", align: "right", render: (r) => Fmt.money(r.saidas) },
-        { key: "tipo", label: "Situação", render: (r) => UI.badge(r.tipo === "previsao" ? "Previsão" : "Realizado", r.tipo === "previsao" ? "muted" : "good") },
+        { key: "tipo", label: "Situação", render: (r) => UI.badge(r.tipo === "previsao" ? "Previsão" : "Realizado", r.tipo === "previsao" ? "neutral" : "good") },
       ],
       rows: cf,
     });
@@ -77,6 +77,10 @@
     // ---- Comparação de divisões ----
     container.appendChild(UI.sectionTitle("Iluminação vs Importação", "Participação de cada divisão no período selecionado"));
     container.appendChild(divisionCompareCard(st));
+
+    // ---- Resumo rápido (saúde, dívidas, contas, orçamento) ----
+    container.appendChild(UI.sectionTitle("Resumo rápido", "Status atual — clique num cartão pra ver o detalhe"));
+    container.appendChild(quickStatusRow(st));
 
     // ---- Insights em destaque ----
     const topInsights = Compute.insights().slice(0, 3);
@@ -101,7 +105,7 @@
       columns: [
         { key: "month", label: "Mês", render: (r) => Fmt.monthLabel(r.month, "full") },
         { key: "resultado", label: "Resultado", align: "right", render: (r) => Fmt.money(r.resultado) },
-        { key: "tipo", label: "Situação", render: (r) => UI.badge(r.tipo === "previsao" ? "Previsão" : "Realizado", r.tipo === "previsao" ? "muted" : "good") },
+        { key: "tipo", label: "Situação", render: (r) => UI.badge(r.tipo === "previsao" ? "Previsão" : "Realizado", r.tipo === "previsao" ? "neutral" : "good") },
       ],
       rows: cf,
     });
@@ -134,6 +138,49 @@
       ]),
       UI.h("div", { class: "tabular", style: "font-size:19px;font-weight:700;" }, [Fmt.money(dre.receita_bruta)]),
       UI.h("div", { style: "font-size:11.5px;color:var(--text-muted);margin-top:2px;" }, [`Resultado: ${Fmt.money(dre.resultado_operacional)}`]),
+    ]);
+  }
+
+  function scoreBand(score) {
+    if (score >= 80) return ["Excelente", "good"];
+    if (score >= 60) return ["Bom", "good"];
+    if (score >= 40) return ["Atenção", "warning"];
+    return ["Crítico", "critical"];
+  }
+
+  function quickStatusRow(st) {
+    const health = Compute.healthScore(st.division);
+    const [bandLabel, bandKind] = scoreBand(health.score);
+
+    const loans = Compute.loans(st.division);
+    const loanTotals = Compute.loansTotals(st.division);
+    const pctPago = loanTotals.valor_total ? loanTotals.valor_pago / loanTotals.valor_total : 0;
+
+    const recv = Compute.receivablesPayables(st.division);
+    const saldoProjetado = recv.reduce((s, r) => s + r.a_receber - r.a_pagar, 0);
+
+    const budgets = Compute.budgetStatus(st.division, st.month);
+    const estourados = budgets.filter((b) => b.pct >= 1).length;
+    const atencao = budgets.filter((b) => b.pct >= 0.9 && b.pct < 1).length;
+    const budgetKind = estourados ? "critical" : atencao ? "warning" : budgets.length ? "good" : "neutral";
+    const budgetLabel = estourados ? `${estourados} estourado(s)` : atencao ? `${atencao} perto do limite` : budgets.length ? "Sob controle" : "Nenhum definido";
+
+    return UI.h("div", { class: "grid grid-4" }, [
+      quickCard("saude", "activity", "Saúde financeira", `${health.score}/100`, bandLabel, bandKind),
+      quickCard("emprestimos", "banknote", "Dívida em aberto", Fmt.money(loanTotals.valor_restante, { compact: true }), `${Fmt.pct(pctPago)} já pago`, "neutral"),
+      quickCard("contas", "calendarCheck", "Saldo projetado (a receber − a pagar)", Fmt.money(saldoProjetado, { compact: true }), saldoProjetado >= 0 ? "Positivo" : "Atenção", saldoProjetado >= 0 ? "good" : "critical"),
+      quickCard("orcamento", "wallet", "Orçamento", budgetLabel, `${budgets.length} categoria(s) monitorada(s)`, budgetKind),
+    ]);
+  }
+
+  function quickCard(route, icon, label, value, badgeLabel, badgeKind) {
+    return UI.h("a", { href: `#/${route}`, class: "card", style: "display:block;text-decoration:none;color:inherit;" }, [
+      UI.h("div", { style: "display:flex;align-items:center;gap:7px;color:var(--text-secondary);margin-bottom:10px;" }, [
+        Icon(icon, { size: 14 }),
+        UI.h("span", { style: "font-size:12px;font-weight:600;" }, [label]),
+      ]),
+      UI.h("div", { class: "tabular", style: "font-size:20px;font-weight:700;margin-bottom:8px;" }, [value]),
+      UI.badge(badgeLabel, badgeKind),
     ]);
   }
 

@@ -184,6 +184,20 @@ print(f"Total transactions parsed: {len(tx)}")
 detailed_months = sorted({mkey(t["date"]) for t in tx})
 print(f"Detailed months present: {detailed_months}")
 
+# Guarda-corpo: categoria que não bate com nenhum grupo conhecido (nem direto,
+# nem via ALIASES) cai silenciosamente em "Outras" no DRE -- imprime pra nunca
+# passar batido num pagamento de imposto/fornecedor mal categorizado.
+unknown_cats = defaultdict(lambda: [0, 0.0])
+for t in tx:
+    if t["category"] and t["category"] not in GROUPS:
+        unknown_cats[t["category"]][0] += 1
+        unknown_cats[t["category"]][1] += t["value"]
+if unknown_cats:
+    print(f"\n*** ATENÇÃO: {len(unknown_cats)} categoria(s) não reconhecida(s), caindo em 'Outras' -- considere adicionar em ALIASES/GROUPS: ***")
+    for cat, (n, total) in sorted(unknown_cats.items(), key=lambda kv: -kv[1][1]):
+        print(f"    {cat!r}: {n} lançamento(s), R$ {total:,.2f}")
+    print()
+
 # Full transaction export (powers the Lançamentos ledger page + lets every
 # other view be recomputed client-side once manual entries are merged in).
 tx_sorted = sorted(tx, key=lambda t: t["date"])

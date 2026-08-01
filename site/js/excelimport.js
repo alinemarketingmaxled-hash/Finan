@@ -35,7 +35,9 @@
   function normCat(raw) {
     if (raw === null || raw === undefined || raw === "") return null;
     let s = String(raw).trim().toUpperCase().replace(/\s+/g, " ");
-    return ALIASES[s] || s;
+    if (ALIASES[s]) return ALIASES[s];
+    const learned = Storage.getCategoriaAliases();
+    return learned[s] || s;
   }
 
   function toIsoDate(d) {
@@ -101,6 +103,39 @@
     return { toAdd, duplicates };
   }
 
+  // Categorias que a planilha trouxe mas não batem com nenhum grupo conhecido
+  // (nem direto, nem via ALIASES/aprendidas) — o usuário classifica antes de
+  // confirmar a importação, em vez de cair silenciosamente em "Outras despesas".
+  // Nota fiscal não tem uma lista fechada pra validar contra (é texto livre),
+  // então só sinalizamos quando o valor não parece um número/referência normal
+  // (tem letra no meio, ex: "SNF", "DEVOLUÇÃO") pra revisão manual depois.
+  function analyzeUnknowns(rows) {
+    const catMap = new Map();
+    let weirdNotas = 0;
+    rows.forEach((r) => {
+      if (r.category && !(global.Categories && global.Categories.GROUPS[r.category])) {
+        if (!catMap.has(r.category)) catMap.set(r.category, { categoria: r.category, count: 0, sum: 0 });
+        const rec = catMap.get(r.category);
+        rec.count += 1;
+        rec.sum += r.value;
+      }
+      if (r.nota_fiscal && /[a-zA-Z]/.test(r.nota_fiscal)) weirdNotas += 1;
+    });
+    const categories = Array.from(catMap.values()).sort((a, b) => b.count - a.count);
+    return { categories, weirdNotas };
+  }
+
+  // Aplica a classificação escolhida pelo usuário (raw -> categoria válida) nas
+  // linhas a importar, e memoriza em Storage pra próximas importações já virem
+  // reconhecidas automaticamente.
+  function applyCategoriaClassification(rows, mapping) {
+    if (!mapping) return rows;
+    const keys = Object.keys(mapping);
+    if (!keys.length) return rows;
+    keys.forEach((raw) => Storage.setCategoriaAlias(raw, mapping[raw]));
+    return rows.map((r) => (r.category && mapping[r.category]) ? Object.assign({}, r, { category: mapping[r.category] }) : r);
+  }
+
   function summarize(rows) {
     const byDivision = {};
     let minDate = null, maxDate = null;
@@ -112,5 +147,5 @@
     return { byDivision, minDate, maxDate, total: rows.length };
   }
 
-  global.ExcelImport = { parseWorkbook, dedupe, summarize, fingerprint };
+  global.ExcelImport = { parseWorkbook, dedupe, summarize, fingerprint, analyzeUnknowns, applyCategoriaClassification };
 })(window);
