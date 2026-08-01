@@ -67,12 +67,16 @@
       </div>
     </div>
     <h1>Entrar</h1>
-    <p class="lead">Acesso restrito — informe usuário e senha.</p>
+    <p class="lead">Acesso restrito — informe seu nome, usuário e senha.</p>
     <div id="errorBox" class="error" style="display:none;">Usuário ou senha incorretos.</div>
     <form method="POST" action="/login">
       <div class="field">
+        <label for="displayName">Seu nome</label>
+        <input id="displayName" name="displayName" type="text" autocomplete="name" maxlength="60" autofocus required>
+      </div>
+      <div class="field">
         <label for="user">Usuário</label>
-        <input id="user" name="user" type="text" autocomplete="username" autocapitalize="off" autocorrect="off" spellcheck="false" autofocus required>
+        <input id="user" name="user" type="text" autocomplete="username" autocapitalize="off" autocorrect="off" spellcheck="false" required>
       </div>
       <div class="field">
         <label for="pass">Senha</label>

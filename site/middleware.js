@@ -60,8 +60,12 @@ export default async function middleware(request) {
       const form = new URLSearchParams(bodyText);
       const user = (form.get("user") || "").trim();
       const pass = form.get("pass") || "";
+      const displayName = (form.get("displayName") || "").trim().slice(0, 60);
       if (timingSafeEqual(user, expectedUser) && timingSafeEqual(pass, expectedPassword)) {
-        const res = new Response(null, { status: 303, headers: { Location: "/" } });
+        // Nome é só pro histórico de acessos (site/js/views/config.js) -- não
+        // participa da autenticação, que continua sendo usuário/senha únicos.
+        const dest = "/" + (displayName ? `?welcome=${encodeURIComponent(displayName)}` : "");
+        const res = new Response(null, { status: 303, headers: { Location: dest } });
         res.headers.append(
           "Set-Cookie",
           `${COOKIE_NAME}=${expectedToken}; Path=/; HttpOnly; Secure; SameSite=Lax; Max-Age=2592000`

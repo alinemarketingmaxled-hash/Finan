@@ -77,11 +77,12 @@
       const rec = clientMap.get(t.counterparty);
       rec.valor += t.value; rec.n += 1;
     });
-    const clientesAll = Array.from(clientMap.values()).sort((a, b) => b.valor - a.valor);
+    const clientesAll = Array.from(clientMap.values()).sort((a, b) => b.valor - a.valor).map((c) => Object.assign({}, c, { valor: round2(c.valor) }));
 
     return {
       despesas,
-      clientesTop: clientesAll.slice(0, 20).map((c) => Object.assign({}, c, { valor: round2(c.valor) })),
+      clientesAll,
+      clientesTop: clientesAll.slice(0, 20),
       clientesTotalCount: clientesAll.length,
       clientesTotalValor: round2(clientesAll.reduce((s, c) => s + c.valor, 0)),
     };

@@ -1,6 +1,8 @@
 (function () {
-  const local = { flow: "", category: "", search: "", page: 0, pageSize: 50, onlyUncategorized: false };
-  const selection = new Map(); // id -> row, persiste entre páginas/filtros até aplicar ou limpar
+  const local = { flow: "", category: "", search: "", page: 0, pageSize: 50, onlyUncategorized: false, showClientChecklist: false, clientPage: 0 };
+  const selection = new Map(); // id -> row (despesas/compras), persiste entre páginas/filtros até aplicar ou limpar
+  const clientSelection = new Map(); // nome -> {nome,valor,n}, separado -- cliente é por NOME, não por lançamento
+  const CLIENT_PAGE_SIZE = 30;
 
   function isExpenseLikeRow(r) {
     return (r.basis === "financeiro" && r.flow === "saida") || (r.basis === "nfe" && r.flow === "compra");
@@ -8,11 +10,12 @@
   function isClientSideRow(r) {
     return (r.basis === "financeiro" && r.flow === "entrada") || (r.basis === "nfe" && r.flow === "venda");
   }
+  // Só despesas/compras -- cliente sem categoria tem checklist próprio
+  // (buildClientChecklist), já que é por NOME e não por lançamento: um
+  // cliente com 50 lançamentos conta 1 vez ali, não 50.
   function needsCategoria(r) {
     if (r.cancelled) return false;
-    if (isExpenseLikeRow(r)) return !r.category;
-    if (isClientSideRow(r)) return !!r.counterparty && !Compute.clienteCategoria(r.counterparty);
-    return false;
+    return isExpenseLikeRow(r) && !r.category;
   }
 
   function render(container) {
@@ -44,7 +47,7 @@
     function syncUncatToggle() {
       const uncatCount = Compute.filterTx({ division: st.division, basis: st.basis, month: st.month !== "acum" ? st.month : undefined }).filter(needsCategoria).length;
       UI.clear(uncatToggle);
-      uncatToggle.appendChild(document.createTextNode(`Só sem categoria (${Fmt.num(uncatCount)})`));
+      uncatToggle.appendChild(document.createTextNode(`Só despesas sem categoria (${Fmt.num(uncatCount)})`));
       uncatToggle.className = "btn btn-sm" + (local.onlyUncategorized ? " btn-accent" : "");
     }
     syncUncatToggle();
@@ -52,11 +55,105 @@
     secondRow.appendChild(uncatToggle);
     container.appendChild(secondRow);
 
+    container.appendChild(buildClientChecklist(st));
+
     const listWrap = UI.h("div", {});
     container.appendChild(listWrap);
 
     refresh = () => { UI.clear(listWrap); listWrap.appendChild(buildTable(st, syncUncatToggle)); };
     refresh();
+  }
+
+  // Clientes sem categoria de cliente (por NOME, não por lançamento) --
+  // separado da tabela principal, com seleção/paginação próprias. Começa
+  // recolhido: com centenas de clientes de uma vez só, mostrar tudo aberto
+  // por padrão dominaria a página. Categoria de cliente não distingue
+  // divisão hoje, então a lista independe do filtro de divisão da barra.
+  function buildClientChecklist(st) {
+    const { clientesAll } = Compute.uncategorized();
+    if (!clientesAll.length) return UI.h("div", {});
+
+    const outer = UI.h("div", { style: "margin-top:12px;" });
+    let selfRefresh = () => { const fresh = buildClientChecklist(st); outer.replaceWith(fresh); };
+
+    const toggle = UI.h("button", { class: "btn btn-sm" + (local.showClientChecklist ? " btn-accent" : "") }, [
+      `${local.showClientChecklist ? "Esconder" : "Ver"} clientes sem categoria (${Fmt.num(clientesAll.length)})`,
+    ]);
+    toggle.addEventListener("click", () => { local.showClientChecklist = !local.showClientChecklist; local.clientPage = 0; selfRefresh(); });
+    outer.appendChild(toggle);
+
+    if (local.showClientChecklist) {
+      const pageCount = Math.max(1, Math.ceil(clientesAll.length / CLIENT_PAGE_SIZE));
+      local.clientPage = Math.min(local.clientPage, pageCount - 1);
+      const pageRows = clientesAll.slice(local.clientPage * CLIENT_PAGE_SIZE, (local.clientPage + 1) * CLIENT_PAGE_SIZE);
+
+      const allOnPageSelected = pageRows.length > 0 && pageRows.every((c) => clientSelection.has(c.nome));
+      const headerCb = UI.h("input", { type: "checkbox", title: "Selecionar todos nesta página" });
+      headerCb.checked = allOnPageSelected;
+      headerCb.addEventListener("change", () => {
+        if (headerCb.checked) pageRows.forEach((c) => clientSelection.set(c.nome, c));
+        else pageRows.forEach((c) => clientSelection.delete(c.nome));
+        selfRefresh();
+      });
+
+      const tableEl = UI.table({
+        columns: [
+          { key: "sel", label: headerCb, render: (c) => clientCheckbox(c, () => selfRefresh()) },
+          { key: "nome", label: "Cliente", wrap: true, render: (c) => Fmt.titleCase(c.nome) },
+          { key: "n", label: "Transações", align: "right" },
+          { key: "valor", label: "Valor total", align: "right", render: (c) => Fmt.money(c.valor) },
+        ],
+        rows: pageRows,
+        emptyText: "Nenhum cliente sem categoria.",
+      });
+
+      const pager = UI.h("div", { style: "display:flex;align-items:center;justify-content:flex-end;gap:10px;margin-top:14px;" }, [
+        UI.h("span", { style: "font-size:12px;color:var(--text-muted);" }, [`Página ${local.clientPage + 1} de ${pageCount}`]),
+        pagerBtn("chevronLeft", local.clientPage === 0, () => { local.clientPage--; selfRefresh(); }),
+        pagerBtn("chevronRight", local.clientPage >= pageCount - 1, () => { local.clientPage++; selfRefresh(); }),
+      ]);
+
+      const bulkBar = buildClientBulkBar(() => selfRefresh());
+      outer.appendChild(UI.h("div", { class: "card", style: "margin-top:10px;" }, [
+        UI.h("div", { style: "font-size:11.5px;color:var(--text-muted);margin-bottom:12px;" }, [
+          "Categoria de cliente vale pra todos os lançamentos daquele nome, não só um. Marque quantos quiser e aplique uma categoria pra todos de uma vez.",
+        ]),
+        bulkBar, tableEl, pager,
+      ]));
+    }
+
+    return outer;
+  }
+
+  function clientCheckbox(c, onChange) {
+    const cb = UI.h("input", { type: "checkbox" });
+    cb.checked = clientSelection.has(c.nome);
+    cb.addEventListener("change", () => {
+      if (cb.checked) clientSelection.set(c.nome, c); else clientSelection.delete(c.nome);
+      onChange();
+    });
+    return cb;
+  }
+
+  function buildClientBulkBar(onDone) {
+    if (!clientSelection.size) return UI.h("div", {});
+    const names = Array.from(clientSelection.keys());
+    const inp = UI.h("input", { class: "input", list: "bulkClienteCatList2", style: "width:170px;", placeholder: "Categoria do cliente…" });
+    const btn = UI.h("button", { class: "btn btn-sm btn-accent" }, ["Aplicar"]);
+    btn.addEventListener("click", () => {
+      const v = inp.value.trim();
+      if (!v) { UI.toast("Digite uma categoria de cliente."); return; }
+      names.forEach((nome) => { Storage.setClienteCategoria(nome, v.toUpperCase()); clientSelection.delete(nome); });
+      UI.toast(`${Fmt.num(names.length)} cliente(s) classificado(s) como ${Fmt.titleCase(v)}.`);
+      onDone();
+    });
+    const clearBtn = UI.h("button", { class: "btn btn-sm" }, ["Limpar seleção"]);
+    clearBtn.addEventListener("click", () => { clientSelection.clear(); onDone(); });
+    return UI.h("div", { style: "display:flex;align-items:center;gap:14px;flex-wrap:wrap;background:var(--surface-3);border-radius:10px;padding:10px 14px;margin-bottom:12px;" }, [
+      UI.h("div", { style: "font-weight:700;font-size:12.5px;" }, [`${Fmt.num(names.length)} cliente(s) selecionado(s)`]),
+      UI.h("div", { style: "display:flex;gap:6px;align-items:center;" }, [inp, UI.h("datalist", { id: "bulkClienteCatList2" }, clientCategoryOptions()), btn]),
+      clearBtn,
+    ]);
   }
 
   function buildTable(st, onDataChanged) {

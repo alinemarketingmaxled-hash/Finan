@@ -3,8 +3,40 @@
     container.appendChild(UI.sectionTitle("Aparência"));
     container.appendChild(themeCard());
 
+    container.appendChild(UI.sectionTitle("Histórico de acessos", "Nome e horário de quem entrou no painel — só os logins feitos neste navegador/aparelho"));
+    container.appendChild(loginLogCard());
+
     container.appendChild(UI.sectionTitle("Sobre os dados"));
     container.appendChild(aboutCard());
+  }
+
+  function loginLogCard() {
+    const log = Storage.listLoginLog();
+    if (!log.length) {
+      return UI.card([UI.emptyState({
+        icon: "activity", title: "Nenhum acesso registrado ainda neste aparelho",
+        body: "A partir do próximo login (informando o nome na tela de entrada), ele aparece aqui.",
+      })]);
+    }
+    const clearBtn = UI.h("button", { class: "btn btn-sm" }, ["Limpar histórico"]);
+    clearBtn.addEventListener("click", async () => {
+      const ok = await UI.confirmDialog("Limpar o histórico de acessos deste navegador? Não afeta outros aparelhos.");
+      if (ok) { Storage.clearLoginLog(); UI.toast("Histórico limpo."); AppState.set({}); }
+    });
+    const note = UI.h("div", { style: "font-size:11.5px;color:var(--text-muted);margin-bottom:14px;line-height:1.5;" }, [
+      "Este painel não tem servidor/banco de dados central, então esse histórico só mostra os acessos feitos aqui — não vê logins de outros computadores ou celulares.",
+    ]);
+    return UI.h("div", { class: "card" }, [
+      note,
+      UI.table({
+        columns: [
+          { key: "name", label: "Nome" },
+          { key: "ts", label: "Data e hora", render: (r) => new Date(r.ts).toLocaleString("pt-BR") },
+        ],
+        rows: log,
+      }),
+      UI.h("div", { style: "margin-top:14px;" }, [clearBtn]),
+    ]);
   }
 
   function themeCard() {

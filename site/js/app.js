@@ -151,6 +151,17 @@
     else { location.hash = "#/overview"; }
   }
 
+  // Login acabou de confirmar (middleware redireciona pra cá com ?welcome=Nome)
+  // -- registra no histórico de acessos e limpa a URL.
+  function captureLoginWelcome() {
+    const params = new URLSearchParams(location.search);
+    const name = params.get("welcome");
+    if (!name) return;
+    Storage.logLogin(name);
+    history.replaceState(null, "", location.pathname + location.hash);
+  }
+  captureLoginWelcome();
+
   window.addEventListener("hashchange", routeFromHash);
   scrimEl.addEventListener("click", () => shellEl.classList.remove("nav-open"));
   AppState.subscribe(render);

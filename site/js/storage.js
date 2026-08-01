@@ -12,6 +12,7 @@
     clienteCategorias: NS + "clienteCategorias",
     categoriaAliases: NS + "categoriaAliases",
     pipeline: NS + "pipeline",
+    loginLog: NS + "loginLog",
   };
 
   function read(key, fallback) {
@@ -120,6 +121,18 @@
       write(KEYS.pipeline, this.listPipeline().filter((p) => p.id !== id));
     },
 
+    // ---- histórico de acessos (só os feitos neste navegador/aparelho —
+    // não há servidor/banco central, então não vê login feito em outro
+    // dispositivo) ----
+    listLoginLog() { return read(KEYS.loginLog, []); },
+    logLogin(name) {
+      if (!name) return;
+      const list = this.listLoginLog();
+      list.unshift({ name, ts: new Date().toISOString() });
+      write(KEYS.loginLog, list.slice(0, 200));
+    },
+    clearLoginLog() { write(KEYS.loginLog, []); },
+
     // ---- metas ----
     listMetas() { return read(KEYS.metas, []); },
     saveMetas(list) { write(KEYS.metas, list); },
@@ -173,6 +186,7 @@
         clienteCategorias: this.getClienteCategorias(),
         categoriaAliases: this.getCategoriaAliases(),
         pipeline: this.listPipeline(),
+        loginLog: this.listLoginLog(),
       };
     },
     importAll(payload) {
@@ -185,6 +199,7 @@
       if (payload.clienteCategorias) write(KEYS.clienteCategorias, payload.clienteCategorias);
       if (payload.categoriaAliases) write(KEYS.categoriaAliases, payload.categoriaAliases);
       if (Array.isArray(payload.pipeline)) write(KEYS.pipeline, payload.pipeline);
+      if (Array.isArray(payload.loginLog)) write(KEYS.loginLog, payload.loginLog);
     },
     resetAll() {
       Object.values(KEYS).forEach((k) => localStorage.removeItem(k));
