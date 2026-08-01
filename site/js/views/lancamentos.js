@@ -1,5 +1,19 @@
 (function () {
-  const local = { flow: "", category: "", search: "", page: 0, pageSize: 50 };
+  const local = { flow: "", category: "", search: "", page: 0, pageSize: 50, onlyUncategorized: false };
+  const selection = new Map(); // id -> row, persiste entre páginas/filtros até aplicar ou limpar
+
+  function isExpenseLikeRow(r) {
+    return (r.basis === "financeiro" && r.flow === "saida") || (r.basis === "nfe" && r.flow === "compra");
+  }
+  function isClientSideRow(r) {
+    return (r.basis === "financeiro" && r.flow === "entrada") || (r.basis === "nfe" && r.flow === "venda");
+  }
+  function needsCategoria(r) {
+    if (r.cancelled) return false;
+    if (isExpenseLikeRow(r)) return !r.category;
+    if (isClientSideRow(r)) return !!r.counterparty && !Compute.clienteCategoria(r.counterparty);
+    return false;
+  }
 
   function render(container) {
     const st = AppState.get();
@@ -26,22 +40,33 @@
     } else {
       local.category = "";
     }
+    const uncatToggle = UI.h("button", {}, []);
+    function syncUncatToggle() {
+      const uncatCount = Compute.filterTx({ division: st.division, basis: st.basis, month: st.month !== "acum" ? st.month : undefined }).filter(needsCategoria).length;
+      UI.clear(uncatToggle);
+      uncatToggle.appendChild(document.createTextNode(`Só sem categoria (${Fmt.num(uncatCount)})`));
+      uncatToggle.className = "btn btn-sm" + (local.onlyUncategorized ? " btn-accent" : "");
+    }
+    syncUncatToggle();
+    uncatToggle.addEventListener("click", () => { local.onlyUncategorized = !local.onlyUncategorized; local.page = 0; refresh(); syncUncatToggle(); });
+    secondRow.appendChild(uncatToggle);
     container.appendChild(secondRow);
 
     const listWrap = UI.h("div", {});
     container.appendChild(listWrap);
 
-    refresh = () => { UI.clear(listWrap); listWrap.appendChild(buildTable(st)); };
+    refresh = () => { UI.clear(listWrap); listWrap.appendChild(buildTable(st, syncUncatToggle)); };
     refresh();
   }
 
-  function buildTable(st) {
+  function buildTable(st, onDataChanged) {
     const opts = { division: st.division, basis: st.basis, includeCancelled: true };
     if (st.month !== "acum") opts.month = st.month;
     if (local.flow) opts.flow = local.flow;
     if (local.category) opts.category = local.category;
     if (local.search) opts.search = local.search;
-    const rows = Compute.filterTx(opts).slice().sort((a, b) => b.date.localeCompare(a.date));
+    let rows = Compute.filterTx(opts).slice().sort((a, b) => b.date.localeCompare(a.date));
+    if (local.onlyUncategorized) rows = rows.filter(needsCategoria);
 
     const total = rows.filter((r) => !r.cancelled).reduce((s, r) => s + (["entrada", "venda"].includes(r.flow) ? r.value : -r.value), 0);
     const nCancelled = rows.filter((r) => r.cancelled).length;
@@ -57,8 +82,19 @@
     const pageRows = rows.slice(local.page * local.pageSize, (local.page + 1) * local.pageSize);
 
     let selfRefresh = () => {};
+
+    const allOnPageSelected = pageRows.length > 0 && pageRows.every((r) => selection.has(r.id));
+    const headerCb = UI.h("input", { type: "checkbox", title: "Selecionar todos nesta página" });
+    headerCb.checked = allOnPageSelected;
+    headerCb.addEventListener("change", () => {
+      if (headerCb.checked) pageRows.forEach((r) => selection.set(r.id, r));
+      else pageRows.forEach((r) => selection.delete(r.id));
+      selfRefresh();
+    });
+
     const tableEl = UI.table({
       columns: [
+        { key: "sel", label: headerCb, render: (r) => rowCheckbox(r, () => selfRefresh()) },
         { key: "date", label: "Data", render: (r) => Fmt.dateBR(r.date) },
         { key: "division", label: "Divisão", render: (r) => UI.badgeDivision(r.division) },
         { key: "flow", label: "Tipo", render: (r) => flowCell(r) },
@@ -71,7 +107,7 @@
       ],
       rows: pageRows,
       rowAttrs: (r) => (r.cancelled ? { style: "opacity:.5;" } : null),
-      emptyText: "Nenhum lançamento encontrado para esse filtro.",
+      emptyText: local.onlyUncategorized ? "Nenhum lançamento sem categoria nesse filtro — tudo classificado por aqui." : "Nenhum lançamento encontrado para esse filtro.",
     });
 
     const pager = UI.h("div", { style: "display:flex;align-items:center;justify-content:flex-end;gap:10px;margin-top:14px;" }, [
@@ -80,12 +116,78 @@
       pagerBtn("chevronRight", local.page >= pageCount - 1, () => { local.page++; selfRefresh(); }),
     ]);
 
-    const wrap = UI.h("div", { class: "card" }, [summary, tableEl, pager]);
+    const bulkBar = buildBulkBar(() => selfRefresh());
+    const wrap = UI.h("div", { class: "card" }, [summary, bulkBar, tableEl, pager]);
     selfRefresh = () => {
-      const fresh = buildTable(st);
+      const fresh = buildTable(st, onDataChanged);
       wrap.replaceWith(fresh);
+      if (onDataChanged) onDataChanged();
     };
     return wrap;
+  }
+
+  function rowCheckbox(r, onChange) {
+    const cb = UI.h("input", { type: "checkbox" });
+    cb.checked = selection.has(r.id);
+    cb.addEventListener("change", () => {
+      if (cb.checked) selection.set(r.id, r); else selection.delete(r.id);
+      onChange();
+    });
+    return cb;
+  }
+
+  // Barra de ação em lote: some sozinha quando não há seleção. Mostra o
+  // controle certo pra cada tipo de linha selecionada (despesa/compra usa
+  // categoria fixa; entrada/venda usa categoria de cliente por nome) — os
+  // dois podem aparecer juntos se a seleção for mista.
+  function buildBulkBar(onDone) {
+    if (!selection.size) return UI.h("div", {});
+    const rows = Array.from(selection.values());
+    const hasExpenseLike = rows.some(isExpenseLikeRow);
+    const hasClientSide = rows.some(isClientSideRow);
+
+    const children = [UI.h("div", { style: "font-weight:700;font-size:12.5px;" }, [`${Fmt.num(rows.length)} selecionado(s)`])];
+
+    if (hasExpenseLike) {
+      const sel = UI.h("select", {}, Categories.list.map((c) => UI.h("option", { value: c }, [Fmt.titleCase(c)])));
+      const btn = UI.h("button", { class: "btn btn-sm btn-accent" }, ["Aplicar categoria"]);
+      btn.addEventListener("click", () => {
+        let n = 0;
+        rows.forEach((r) => {
+          if (!isExpenseLikeRow(r)) return;
+          if (r.manual) Storage.updateLancamento(r.id, { category: sel.value }); else Storage.setOverride(r.id, { category: sel.value });
+          selection.delete(r.id);
+          n++;
+        });
+        UI.toast(`${Fmt.num(n)} despesa(s) classificada(s) como ${Fmt.titleCase(sel.value)}.`);
+        onDone();
+      });
+      children.push(UI.h("div", { style: "display:flex;gap:6px;align-items:center;" }, [sel, btn]));
+    }
+
+    if (hasClientSide) {
+      const inp = UI.h("input", { class: "input", list: "bulkClienteCatList", style: "width:170px;", placeholder: "Categoria do cliente…" });
+      const btn = UI.h("button", { class: "btn btn-sm btn-accent" }, ["Aplicar aos clientes"]);
+      btn.addEventListener("click", () => {
+        const v = inp.value.trim();
+        if (!v) { UI.toast("Digite uma categoria de cliente."); return; }
+        const names = new Set();
+        rows.forEach((r) => { if (isClientSideRow(r)) names.add(r.counterparty); });
+        names.forEach((nome) => Storage.setClienteCategoria(nome, v.toUpperCase()));
+        rows.forEach((r) => { if (isClientSideRow(r)) selection.delete(r.id); });
+        UI.toast(`${Fmt.num(names.size)} cliente(s) classificado(s) como ${Fmt.titleCase(v)}.`);
+        onDone();
+      });
+      children.push(UI.h("div", { style: "display:flex;gap:6px;align-items:center;" }, [
+        inp, UI.h("datalist", { id: "bulkClienteCatList" }, clientCategoryOptions()), btn,
+      ]));
+    }
+
+    const clearBtn = UI.h("button", { class: "btn btn-sm" }, ["Limpar seleção"]);
+    clearBtn.addEventListener("click", () => { selection.clear(); onDone(); });
+    children.push(clearBtn);
+
+    return UI.h("div", { style: "display:flex;align-items:center;gap:14px;flex-wrap:wrap;background:var(--surface-3);border-radius:10px;padding:10px 14px;margin-bottom:12px;" }, children);
   }
 
   function categoriaCell(r) {
@@ -412,4 +514,5 @@
   window.Views = window.Views || {};
   window.Views.lancamentos = render;
   window.Views.openLancamentoModal = openLancamentoModal;
+  window.Views.presetUncategorizedFilter = () => { local.onlyUncategorized = true; local.page = 0; };
 })();
