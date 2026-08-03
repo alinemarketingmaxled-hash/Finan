@@ -23,9 +23,18 @@
       return fallback;
     }
   }
+  // "config" (tema etc.) é preferência do aparelho, não entra no salvamento
+  // automático compartilhado. suppressSyncNotify existe pra quando o próprio
+  // Sync.pull() grava localmente o que já veio do servidor -- nesse caso não
+  // faz sentido agendar um novo salvamento (seria salvar de volta a mesma
+  // coisa que acabou de chegar).
+  let suppressSyncNotify = false;
   function write(key, value) {
     try {
       localStorage.setItem(key, JSON.stringify(value));
+      if (!suppressSyncNotify && key !== KEYS.config && global.Sync && global.Sync.notifyLocalChange) {
+        global.Sync.notifyLocalChange();
+      }
       return true;
     } catch (e) {
       console.warn("storage: falha ao gravar", key, e);
@@ -42,6 +51,14 @@
   const Storage = {
     KEYS,
     uid,
+
+    // Executa fn() sem disparar o salvamento automático compartilhado --
+    // usado pelo Sync.pull() ao aplicar localmente o que já veio do servidor.
+    runWithoutSync(fn) {
+      const prev = suppressSyncNotify;
+      suppressSyncNotify = true;
+      try { return fn(); } finally { suppressSyncNotify = prev; }
+    },
 
     // ---- lançamentos manuais ----
     listLancamentos() { return read(KEYS.lancamentos, []); },

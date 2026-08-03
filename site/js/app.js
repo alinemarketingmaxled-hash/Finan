@@ -122,9 +122,62 @@
     const printBtn = UI.h("button", { class: "icon-btn no-print", title: "Imprimir / exportar PDF" }, [Icon("printer", { size: 16 })]);
     printBtn.addEventListener("click", () => window.print());
 
-    const right = UI.h("div", { class: "topbar-right" }, [printBtn, themeBtn]);
+    const right = UI.h("div", { class: "topbar-right" }, [buildSyncWidget(), printBtn, themeBtn]);
     topbarEl.appendChild(left);
     topbarEl.appendChild(right);
+  }
+
+  // Indicador + controle de sincronização com o banco compartilhado: o que
+  // qualquer perfil adiciona/edita é salvo sozinho pouco depois da alteração
+  // (Sync.notifyLocalChange, chamado de dentro do storage.js, cuida do
+  // debounce) -- o botão mostra o status ("Salvo" / "Salvando…") e também dá
+  // pra clicar pra forçar/tentar de novo na hora. "Atualizar" busca o que
+  // outros perfis já salvaram, sem esperar reload da página.
+  function buildSyncWidget() {
+    const st = Sync.status();
+    const refreshBtn = UI.h("button", { class: "icon-btn", title: "Buscar dados salvos por outros perfis" }, [Icon("refresh", { size: 15 })]);
+    refreshBtn.disabled = st.pulling || st.saving;
+
+    let label = "Salvo";
+    if (st.saving) label = "Salvando…";
+    else if (st.error) label = "Tentar de novo";
+    else if (st.dirty) label = "Salvar";
+
+    const variant = st.error ? " btn-danger" : (st.dirty || st.saving) ? " btn-accent" : "";
+    const saveBtn = UI.h("button", { class: "btn btn-sm" + variant, title: syncTitle(st) }, [
+      Icon(st.error ? "alertTriangle" : "upload", { size: 14 }),
+      UI.h("span", {}, [label]),
+    ]);
+    saveBtn.disabled = st.saving || st.pulling || (!st.dirty && !st.error);
+
+    refreshBtn.addEventListener("click", async () => {
+      const res = await Sync.pull();
+      if (res.ok) {
+        UI.toast(res.hadData ? "Dados atualizados com o que outros perfis salvaram." : "Ainda não há dados salvos no compartilhado.");
+        render();
+      } else {
+        UI.toast("Não consegui buscar os dados salvos agora.");
+      }
+    });
+    saveBtn.addEventListener("click", async () => {
+      const res = await Sync.push();
+      if (res.ok) {
+        UI.toast("Dados salvos — visível para todos os perfis.");
+      } else if (res.conflict) {
+        UI.toast("Alguém salvou mudanças mais recentes. Clique em atualizar antes de salvar de novo.");
+      } else {
+        UI.toast("Não consegui salvar agora. Vou tentar de novo sozinho em instantes.");
+      }
+    });
+
+    return UI.h("div", { style: "display:flex;align-items:center;gap:4px;" }, [refreshBtn, saveBtn]);
+  }
+  function syncTitle(st) {
+    if (st.error) return "Erro ao salvar: " + st.error + " -- clique pra tentar de novo";
+    if (st.saving) return "Salvando…";
+    if (st.dirty) return "Alterações serão salvas automaticamente em instantes (ou clique pra salvar agora)";
+    if (st.updatedAt) return `Salvo às ${new Date(st.updatedAt).toLocaleString("pt-BR")}${st.updatedBy ? " por " + st.updatedBy : ""}`;
+    return "Tudo salvo";
   }
 
   function currentIsDark() {
@@ -168,7 +221,15 @@
   window.addEventListener("hashchange", routeFromHash);
   scrimEl.addEventListener("click", () => shellEl.classList.remove("nav-open"));
   AppState.subscribe(render);
+  // Só a barra de topo -- status de salvar/salvo não deve fechar modal aberto
+  // nem redesenhar a página inteira toda vez que o auto-save muda de estado.
+  Sync.onChange(() => buildTopbar());
 
   routeFromHash();
   render();
+
+  // Busca o que já foi salvo por outros perfis ao abrir o app. Se não houver
+  // nada salvo ainda (primeiro uso), mantém os dados locais como estão --
+  // quem tiver dado local vira a base compartilhada no primeiro salvamento.
+  Sync.pull().then((res) => { if (res.ok && res.hadData) render(); });
 })();

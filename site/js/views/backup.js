@@ -103,26 +103,26 @@
     container.appendChild(resetCard());
   }
 
-  // Não tem como isso rodar sozinho todo dia: os dados só existem no
-  // localStorage deste navegador, sem servidor nem banco de dados guardando
-  // nada -- por isso o lembrete aqui é visual, não um backup automático de
-  // verdade. Ver nota abaixo do card.
+  // Os lançamentos manuais, metas, orçamento etc. já são salvos sozinhos no
+  // banco compartilhado (visível pra todo perfil, ver indicador "Salvar" no
+  // topo) -- essa exportação aqui é uma cópia extra, por fora do painel, pra
+  // guardar off-line, levar pra outro lugar ou abrir numa planilha comum.
   function backupReminderCard() {
     const lastIso = Storage.getConfig().lastBackupAt;
     const days = lastIso ? Math.floor((Date.now() - new Date(lastIso).getTime()) / 86400000) : null;
-    const kind = days === null || days >= 3 ? "warning" : days === 0 ? "good" : "neutral";
-    const statusText = days === null ? "Nenhum backup exportado ainda neste navegador"
-      : days === 0 ? "Backup exportado hoje"
-      : days === 1 ? "Último backup: ontem"
-      : `Último backup: há ${Fmt.num(days)} dias`;
+    const kind = days === null || days >= 14 ? "warning" : "neutral";
+    const statusText = days === null ? "Nenhuma cópia externa exportada ainda"
+      : days === 0 ? "Última cópia exportada hoje"
+      : days === 1 ? "Última cópia exportada: ontem"
+      : `Última cópia exportada: há ${Fmt.num(days)} dias`;
 
-    return UI.h("div", { class: "insight " + (kind === "good" ? "good" : kind === "warning" ? "warning" : "info"), style: "margin-bottom:20px;" }, [
+    return UI.h("div", { class: "insight " + (kind === "warning" ? "warning" : "info"), style: "margin-bottom:20px;" }, [
       UI.h("div", { class: "insight-icon" }, [Icon("download", { size: 17 })]),
       UI.h("div", {}, [
         UI.h("div", { class: "insight-title" }, [statusText]),
         UI.h("div", { class: "insight-body" }, [
-          "Esse painel não tem servidor nem banco de dados — os dados existem só no navegador de cada aparelho, então não tem como um backup rodar sozinho todo dia sem alguém abrir o site. " +
-          "O mais próximo disso: exporte a planilha completa regularmente (ideal: sempre que mexer em algo importante). Se você quiser backup automático de verdade, precisa de um banco de dados no projeto — me avisa que eu configuro.",
+          "Seus dados já ficam salvos automaticamente no banco compartilhado do painel (todo perfil vê a mesma coisa). " +
+          "Essa exportação aqui é uma cópia extra, por fora — útil pra guardar off-line, mandar pro contador ou abrir no Excel.",
         ]),
       ]),
     ]);
@@ -146,7 +146,7 @@
     fileInput.addEventListener("change", async () => {
       const file = fileInput.files[0];
       if (!file) return;
-      const ok = await UI.confirmDialog("Importar esse backup vai substituir seus lançamentos manuais, metas e orçamento salvos neste navegador. Continuar?");
+      const ok = await UI.confirmDialog("Importar esse backup vai substituir os lançamentos manuais, metas e orçamento salvos -- e como fica salvo automaticamente, isso vale pra todos os perfis, não só este navegador. Continuar?");
       if (!ok) { fileInput.value = ""; return; }
       try {
         const text = await file.text();
@@ -162,15 +162,24 @@
       UI.h("span", { style: "font-size:12px;color:var(--text-muted);" }, ["Aceita apenas arquivos exportados por este painel."])]);
   }
 
+  // Só limpa a cópia deste navegador e busca de novo o que está salvo no
+  // compartilhado -- não apaga o que já foi salvo pra todo mundo. (Importante:
+  // resetAll() não passa pelo write() normal, então não dispara o auto-save;
+  // sem o pull logo em seguida, o próximo lançamento adicionado salvaria por
+  // cima do compartilhado com os dados locais já esvaziados.)
   function resetCard() {
-    const btn = UI.h("button", { class: "btn btn-danger btn-sm" }, [Icon("trash", { size: 14 }), "Apagar dados locais"]);
+    const btn = UI.h("button", { class: "btn btn-danger btn-sm" }, [Icon("trash", { size: 14 }), "Limpar cópia local e buscar do compartilhado"]);
     btn.addEventListener("click", async () => {
-      const ok = await UI.confirmDialog("Isso apaga lançamentos manuais, metas, orçamento e preferências salvas neste navegador. A base vinda do Excel não é afetada. Deseja continuar?");
-      if (ok) { Storage.resetAll(); UI.toast("Dados locais apagados."); AppState.set({}); }
+      const ok = await UI.confirmDialog("Isso limpa lançamentos manuais, metas, orçamento e preferências salvos neste navegador e busca de novo o que está salvo no compartilhado. A base vinda do Excel não é afetada, e o que já foi salvo pra todo mundo continua intacto. Deseja continuar?");
+      if (!ok) return;
+      Storage.resetAll();
+      await Sync.pull();
+      UI.toast("Cópia local atualizada com o compartilhado.");
+      AppState.set({});
     });
     return UI.h("div", { class: "card" }, [
-      UI.h("div", { style: "font-weight:700;font-size:13.5px;margin-bottom:6px;" }, ["Apagar tudo o que foi adicionado neste navegador"]),
-      UI.h("div", { style: "font-size:12px;color:var(--text-muted);margin-bottom:14px;" }, ["Remove lançamentos manuais, metas, orçamento e notas estratégicas. A planilha original nunca é alterada — exporte um backup antes, se quiser guardar."]),
+      UI.h("div", { style: "font-weight:700;font-size:13.5px;margin-bottom:6px;" }, ["Limpar e ressincronizar este navegador"]),
+      UI.h("div", { style: "font-size:12px;color:var(--text-muted);margin-bottom:14px;" }, ["Apaga a cópia local (lançamentos manuais, metas, orçamento, notas) e busca de novo do banco compartilhado. Não afeta o que já está salvo pra outros perfis — exporte uma cópia antes, se quiser guardar algo que ainda não foi salvo."]),
       btn,
     ]);
   }

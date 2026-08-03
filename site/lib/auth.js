@@ -49,6 +49,17 @@ async function ensureSchema() {
         ts TIMESTAMPTZ NOT NULL DEFAULT now()
       );
     `);
+    // Dado compartilhado do app (lançamentos manuais, metas, orçamento etc.)
+    // -- uma linha só (id=1), pra todo perfil ver a mesma coisa depois de
+    // salvar. updated_at guarda controle de conflito otimista (ver api/data.js).
+    await db.query(`
+      CREATE TABLE IF NOT EXISTS app_data (
+        id INTEGER PRIMARY KEY DEFAULT 1,
+        data JSONB NOT NULL,
+        updated_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+        updated_by TEXT
+      );
+    `);
     await seedFirstUser(db);
   })();
   return schemaReady;
