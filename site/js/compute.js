@@ -315,17 +315,79 @@
     };
   }
 
+  // Notas fiscais adicionadas manualmente/importadas na tela de Contas somam
+  // por mês (do vencimento) + divisão, por cima do que já veio da extração
+  // da planilha -- mantém a conta em dia entre uma importação completa e outra.
+  function contasExtrasByMonthDivision() {
+    const map = new Map();
+    Storage.listContasExtras().forEach((e) => {
+      const month = (e.vencimento || "").slice(0, 7);
+      if (!month) return;
+      const key = month + "|" + e.division;
+      if (!map.has(key)) map.set(key, { month, division: e.division, a_receber: 0, a_pagar: 0 });
+      const rec = map.get(key);
+      if (e.tipo === "a_receber") rec.a_receber += e.valor;
+      else if (e.tipo === "a_pagar") rec.a_pagar += e.valor;
+    });
+    return map;
+  }
+
+  function receivablesPayablesByDivision() {
+    const base = new Map();
+    MAXLED_DATA.receivablesPayables.forEach((r) => {
+      base.set(r.month + "|" + r.division, { month: r.month, division: r.division, a_receber: r.a_receber, a_pagar: r.a_pagar });
+    });
+    contasExtrasByMonthDivision().forEach((extra, key) => {
+      if (!base.has(key)) base.set(key, { month: extra.month, division: extra.division, a_receber: 0, a_pagar: 0 });
+      const rec = base.get(key);
+      rec.a_receber = round2(rec.a_receber + extra.a_receber);
+      rec.a_pagar = round2(rec.a_pagar + extra.a_pagar);
+    });
+    return Array.from(base.values()).map((r) => Object.assign(r, { saldo: round2(r.a_receber - r.a_pagar) }));
+  }
+
   function receivablesPayables(division) {
+    const merged = receivablesPayablesByDivision();
     if (!division || division === "consolidado") {
       const map = new Map();
-      MAXLED_DATA.receivablesPayables.forEach((r) => {
+      merged.forEach((r) => {
         if (!map.has(r.month)) map.set(r.month, { month: r.month, a_receber: 0, a_pagar: 0 });
         const rec = map.get(r.month);
         rec.a_receber += r.a_receber; rec.a_pagar += r.a_pagar;
       });
       return Array.from(map.values()).map((r) => Object.assign(r, { saldo: round2(r.a_receber - r.a_pagar) }));
     }
-    return MAXLED_DATA.receivablesPayables.filter((r) => r.division === division);
+    return merged.filter((r) => r.division === division);
+  }
+
+  // Janela fixa de N meses a partir do mês atual (real, hoje) -- sempre "os
+  // próximos N meses", recalculada a cada chamada, então rola sozinha quando
+  // o mês vira, sem precisar reimportar a planilha. Meses sem nenhum dado
+  // (ainda não cobertos pela extração ou por nota fiscal manual) aparecem
+  // zerados, pra manter a faixa sempre com N meses. O que ficou pra trás (mês
+  // anterior ao atual) não desaparece: vira "vencido", separado.
+  function receivablesPayablesWindow(division, monthsAhead) {
+    monthsAhead = monthsAhead || 5;
+    const all = receivablesPayables(division);
+    const byMonth = new Map(all.map((r) => [r.month, r]));
+    const now = new Date();
+    const months = [];
+    for (let i = 0; i < monthsAhead; i++) {
+      const d = new Date(now.getFullYear(), now.getMonth() + i, 1);
+      months.push(d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0"));
+    }
+    const currentKey = months[0];
+    const overdueRows = all.filter((r) => r.month < currentKey);
+    const rows = months.map((m) => byMonth.get(m) || { month: m, a_receber: 0, a_pagar: 0, saldo: 0 });
+    return {
+      rows,
+      overdue: {
+        months: overdueRows.map((r) => r.month).sort(),
+        a_receber: round2(overdueRows.reduce((s, r) => s + r.a_receber, 0)),
+        a_pagar: round2(overdueRows.reduce((s, r) => s + r.a_pagar, 0)),
+        saldo: round2(overdueRows.reduce((s, r) => s + r.saldo, 0)),
+      },
+    };
   }
 
   // ---------------------------------------------------------------------
@@ -619,6 +681,6 @@
     DIVISIONS, round2,
     allTransactions, detailedMonths, filterTx, previousMonth, clienteCategoria, uncategorized,
     cashflowSeries, dailyCashflow, dreForPeriod, expenseCategoriesAgg, topCounterparties,
-    loans, loansTotals, receivablesPayables, healthScore, insights, actionPlan, budgetStatus, pipelineSummary, pipelineInstallments,
+    loans, loansTotals, receivablesPayables, receivablesPayablesWindow, healthScore, insights, actionPlan, budgetStatus, pipelineSummary, pipelineInstallments,
   };
 })(window);

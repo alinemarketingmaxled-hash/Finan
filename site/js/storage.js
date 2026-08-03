@@ -12,6 +12,7 @@
     clienteCategorias: NS + "clienteCategorias",
     categoriaAliases: NS + "categoriaAliases",
     pipeline: NS + "pipeline",
+    contasExtras: NS + "contasExtras",
   };
 
   function read(key, fallback) {
@@ -150,6 +151,25 @@
       write(KEYS.pipeline, this.listPipeline().filter((p) => p.id !== id));
     },
 
+    // ---- notas fiscais a receber/a pagar (tela de Contas) -- complementa a
+    // previsão que vem da base do Excel (extração periódica), pra manter a
+    // conta em dia entre uma importação completa e outra ----
+    listContasExtras() { return read(KEYS.contasExtras, []); },
+    addContaExtra(entry) {
+      const row = Object.assign({ id: uid(), createdAt: new Date().toISOString() }, entry);
+      write(KEYS.contasExtras, this.listContasExtras().concat([row]));
+      return row;
+    },
+    addContasExtrasBulk(entries) {
+      const now = new Date().toISOString();
+      const rows = entries.map((entry) => Object.assign({ id: uid(), createdAt: now }, entry));
+      write(KEYS.contasExtras, this.listContasExtras().concat(rows));
+      return rows;
+    },
+    removeContaExtra(id) {
+      write(KEYS.contasExtras, this.listContasExtras().filter((c) => c.id !== id));
+    },
+
     // ---- metas ----
     listMetas() { return read(KEYS.metas, []); },
     saveMetas(list) { write(KEYS.metas, list); },
@@ -203,6 +223,7 @@
         clienteCategorias: this.getClienteCategorias(),
         categoriaAliases: this.getCategoriaAliases(),
         pipeline: this.listPipeline(),
+        contasExtras: this.listContasExtras(),
       };
     },
     importAll(payload) {
@@ -215,6 +236,7 @@
       if (payload.clienteCategorias) write(KEYS.clienteCategorias, payload.clienteCategorias);
       if (payload.categoriaAliases) write(KEYS.categoriaAliases, payload.categoriaAliases);
       if (Array.isArray(payload.pipeline)) write(KEYS.pipeline, payload.pipeline);
+      if (Array.isArray(payload.contasExtras)) write(KEYS.contasExtras, payload.contasExtras);
     },
     resetAll() {
       Object.values(KEYS).forEach((k) => localStorage.removeItem(k));

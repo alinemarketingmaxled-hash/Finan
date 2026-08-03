@@ -164,6 +164,106 @@
     return { rows, sheetName, usedHeader: hasHeader };
   }
 
+  // ---------------------------------------------------------------------
+  // Notas fiscais (a receber/a pagar) pra tela de Contas -- planilha própria
+  // (data de vencimento, tipo, divisão, valor, contraparte, nota, obs),
+  // separada dos lançamentos normais. Detecta colunas pelo cabeçalho; tipo e
+  // divisão caem no valor escolhido manualmente (opts) quando a planilha não
+  // trouxer uma coluna reconhecível ou o texto da célula não bater com nada.
+  // ---------------------------------------------------------------------
+  const NF_HEADER_SYNONYMS = {
+    vencimento: ["vencimento", "vencto", "data"],
+    tipo: ["tipo"],
+    divisao: ["divisao", "empresa", "unidade", "filial"],
+    valor: ["valor", "total", "montante"],
+    contraparte: ["cliente", "fornecedor", "contraparte", "favorecido", "nome"],
+    nota: ["nota fiscal", "numero da nota", "numero nf", "num nota", "nfe", "nf-e"],
+    observacao: ["observacao", "obs", "descricao", "historico"],
+  };
+  const TIPO_CONTA_SYNONYMS = {
+    a_receber: ["receber", "entrada", "receita", "recebimento"],
+    a_pagar: ["pagar", "saida", "despesa", "pagamento"],
+  };
+  const DIVISAO_CONTA_SYNONYMS = {
+    iluminacao: ["iluminacao", "ilumi", "led"],
+    importacao: ["importacao", "import"],
+  };
+  function normTipoConta(raw) {
+    const s = normHeader(raw);
+    if (!s) return null;
+    if (TIPO_CONTA_SYNONYMS.a_receber.some((syn) => s.includes(syn))) return "a_receber";
+    if (TIPO_CONTA_SYNONYMS.a_pagar.some((syn) => s.includes(syn))) return "a_pagar";
+    return null;
+  }
+  function normDivisaoConta(raw) {
+    const s = normHeader(raw);
+    if (!s) return null;
+    if (DIVISAO_CONTA_SYNONYMS.iluminacao.some((syn) => s.includes(syn))) return "iluminacao";
+    if (DIVISAO_CONTA_SYNONYMS.importacao.some((syn) => s.includes(syn))) return "importacao";
+    return null;
+  }
+  function detectNfColumns(headerRow) {
+    const cols = { vencimento: null, tipo: null, divisao: null, valor: null, contraparte: null, nota: null, observacao: null };
+    (headerRow || []).forEach((cell, idx) => {
+      const h = normHeader(cell);
+      if (!h) return;
+      Object.keys(NF_HEADER_SYNONYMS).forEach((key) => {
+        if (cols[key] === null && NF_HEADER_SYNONYMS[key].some((syn) => h.includes(syn))) cols[key] = idx;
+      });
+    });
+    return cols;
+  }
+
+  // opts: { tipoFallback: 'a_receber'|'a_pagar'|null, divisionFallback: 'iluminacao'|'importacao'|null }
+  function parseNotasFiscais(arrayBuffer, opts) {
+    opts = opts || {};
+    const empty = { rows: [], sheetName: null, usedHeader: false, skipped: { data: 0, valor: 0, tipo: 0, divisao: 0 } };
+    const wb = XLSX.read(arrayBuffer, { type: "array", cellDates: true });
+    const sheetName = wb.SheetNames[0];
+    const ws = sheetName ? wb.Sheets[sheetName] : null;
+    if (!ws) return empty;
+    const grid = XLSX.utils.sheet_to_json(ws, { header: 1, raw: true, defval: null });
+    if (!grid.length) return Object.assign({}, empty, { sheetName });
+
+    const detected = detectNfColumns(grid[0]);
+    const hasHeader = !looksLikeDataRow(grid[0]) && (detected.vencimento !== null || detected.valor !== null);
+    let cols, startRow;
+    if (hasHeader) {
+      cols = detected;
+      if (cols.vencimento === null) cols.vencimento = 0;
+      if (cols.valor === null) cols.valor = 1;
+      startRow = 1;
+    } else {
+      // Mesma ordem-padrão do parseSimpleSheet (data/contraparte/valor), pra
+      // planilha sem cabeçalho se comportar de forma previsível nos dois casos.
+      cols = { vencimento: 0, contraparte: 1, valor: 2, tipo: null, divisao: null, nota: null, observacao: null };
+      startRow = 0;
+    }
+
+    const rows = [];
+    const skipped = { data: 0, valor: 0, tipo: 0, divisao: 0 };
+    for (let i = startRow; i < grid.length; i++) {
+      const row = grid[i];
+      if (!row) continue;
+      const iso = toIsoDate(row[cols.vencimento]);
+      if (!iso) { skipped.data += 1; continue; }
+      const valorRaw = row[cols.valor];
+      if (typeof valorRaw !== "number") { skipped.valor += 1; continue; }
+      const tipo = (cols.tipo !== null ? normTipoConta(row[cols.tipo]) : null) || opts.tipoFallback || null;
+      if (!tipo) { skipped.tipo += 1; continue; }
+      const division = (cols.divisao !== null ? normDivisaoConta(row[cols.divisao]) : null) || opts.divisionFallback || null;
+      if (!division) { skipped.divisao += 1; continue; }
+      rows.push({
+        vencimento: iso, tipo, division,
+        valor: Math.round(Math.abs(valorRaw) * 100) / 100,
+        contraparte: cols.contraparte !== null && row[cols.contraparte] !== null && row[cols.contraparte] !== undefined ? String(row[cols.contraparte]).trim() : null,
+        nota_fiscal: cols.nota !== null ? fmtNota(row[cols.nota]) : null,
+        observacao: cols.observacao !== null && row[cols.observacao] !== null && row[cols.observacao] !== undefined ? String(row[cols.observacao]).trim() : null,
+      });
+    }
+    return { rows, sheetName, usedHeader: hasHeader, skipped };
+  }
+
   function dedupe(newRows) {
     const existing = new Set();
     MAXLED_DATA.transactions.forEach((t) => existing.add(fingerprint(t)));
@@ -225,5 +325,5 @@
     return { byDivision, minDate, maxDate, total: rows.length };
   }
 
-  global.ExcelImport = { parseWorkbook, parseSimpleSheet, dedupe, summarize, fingerprint, analyzeUnknowns, applyCategoriaClassification };
+  global.ExcelImport = { parseWorkbook, parseSimpleSheet, parseNotasFiscais, dedupe, summarize, fingerprint, analyzeUnknowns, applyCategoriaClassification };
 })(window);
