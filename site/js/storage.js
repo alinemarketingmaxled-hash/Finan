@@ -13,6 +13,8 @@
     categoriaAliases: NS + "categoriaAliases",
     pipeline: NS + "pipeline",
     contasExtras: NS + "contasExtras",
+    loanOverrides: NS + "loanOverrides",
+    loansExtras: NS + "loansExtras",
   };
 
   function read(key, fallback) {
@@ -101,6 +103,29 @@
       const map = this.getOverrides();
       delete map[id];
       write(KEYS.overrides, map);
+    },
+
+    // ---- empréstimos: edição dos que vieram da planilha (por id) + os
+    // adicionados na mão (novo contrato) -- mesma lógica de overrides que já
+    // existe pra lançamentos, aplicada a empréstimos ----
+    getLoanOverrides() { return read(KEYS.loanOverrides, {}); },
+    setLoanOverride(id, patch) {
+      const map = this.getLoanOverrides();
+      map[id] = Object.assign({}, map[id], patch);
+      write(KEYS.loanOverrides, map);
+    },
+    listLoansExtras() { return read(KEYS.loansExtras, []); },
+    addLoanExtra(loan) {
+      const row = Object.assign({ id: uid(), createdAt: new Date().toISOString() }, loan);
+      write(KEYS.loansExtras, this.listLoansExtras().concat([row]));
+      return row;
+    },
+    updateLoanExtra(id, patch) {
+      const list = this.listLoansExtras().map((l) => (l.id === id ? Object.assign({}, l, patch) : l));
+      write(KEYS.loansExtras, list);
+    },
+    removeLoanExtra(id) {
+      write(KEYS.loansExtras, this.listLoansExtras().filter((l) => l.id !== id));
     },
 
     // ---- categoria de cliente (por contraparte — vale pra todos os lançamentos dela) ----
@@ -224,6 +249,8 @@
         categoriaAliases: this.getCategoriaAliases(),
         pipeline: this.listPipeline(),
         contasExtras: this.listContasExtras(),
+        loanOverrides: this.getLoanOverrides(),
+        loansExtras: this.listLoansExtras(),
       };
     },
     importAll(payload) {
@@ -237,6 +264,8 @@
       if (payload.categoriaAliases) write(KEYS.categoriaAliases, payload.categoriaAliases);
       if (Array.isArray(payload.pipeline)) write(KEYS.pipeline, payload.pipeline);
       if (Array.isArray(payload.contasExtras)) write(KEYS.contasExtras, payload.contasExtras);
+      if (payload.loanOverrides) write(KEYS.loanOverrides, payload.loanOverrides);
+      if (Array.isArray(payload.loansExtras)) write(KEYS.loansExtras, payload.loansExtras);
     },
     resetAll() {
       Object.values(KEYS).forEach((k) => localStorage.removeItem(k));

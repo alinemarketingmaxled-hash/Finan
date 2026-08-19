@@ -297,8 +297,18 @@
   // ---------------------------------------------------------------------
   // Empréstimos
   // ---------------------------------------------------------------------
+  // Empréstimos: base da planilha (com edição por id guardada à parte, mesmo
+  // esquema de overrides de lançamentos) + contratos novos cadastrados na
+  // mão -- assim dá pra manter o pagamento em dia sem depender de uma nova
+  // extração completa da planilha.
+  function loansAll() {
+    const overrides = Storage.getLoanOverrides();
+    const base = MAXLED_DATA.loans.map((l) => (overrides[l.id] ? Object.assign({}, l, overrides[l.id]) : l));
+    return base.concat(Storage.listLoansExtras());
+  }
   function loans(division) {
-    const list = division && division !== "consolidado" ? MAXLED_DATA.loans.filter((l) => l.divisao === division) : MAXLED_DATA.loans;
+    const all = loansAll();
+    const list = division && division !== "consolidado" ? all.filter((l) => l.divisao === division) : all;
     return list.map((l) => Object.assign({}, l, {
       pct_pago: l.valor_total ? l.valor_pago / l.valor_total : 0,
       custo_efetivo_pct: l.valor_total ? (l.valor_final_com_acrescimo - l.valor_total) / l.valor_total : 0,
