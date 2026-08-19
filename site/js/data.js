@@ -46040,15 +46040,15 @@ const MAXLED_DATA = {
       "banco": "Bradesco",
       "valor_total": 150000,
       "parcelas_total": 48,
-      "parcelas_pagas": 46,
+      "parcelas_pagas": 48,
       "parcela_com_juros": 6251.07,
-      "parcelas_restantes": 2,
-      "valor_restante": 31535.0,
-      "valor_pago": 118465,
+      "parcelas_restantes": 0,
+      "valor_restante": 0,
+      "valor_pago": 150000,
       "acrescimo": 112500,
       "valor_final_com_acrescimo": 262500,
       "data_inicial": "2023-03-03",
-      "data_final_prevista": "2027-03-03"
+      "data_final_prevista": "2026-08-03"
     },
     {
       "id": "itau_giro",
