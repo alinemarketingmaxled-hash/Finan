@@ -9,15 +9,42 @@ function getPool() {
   if (!pool) {
     const connectionString = process.env.POSTGRES_URL || process.env.PRISMA_DATABASE_URL || process.env.DATABASE_URL;
     if (!connectionString) throw new Error("Nenhuma variável de conexão com o banco encontrada (POSTGRES_URL).");
-    pool = new Pool({ connectionString, max: 3 });
+    // max baixo de propósito: cada requisição normalmente só faz 1 query por
+    // vez, e a página carrega umas 20 requisições quase simultâneas (uma por
+    // arquivo .js) -- um pool grande por instância só aumenta o pico de
+    // conexões abertas ao mesmo tempo no banco.
+    pool = new Pool({ connectionString, max: 2 });
   }
   return pool;
+}
+
+// Tenta de novo com espera curta entre tentativas -- cobre tanto uma
+// oscilação passageira de conexão quanto um banco que "dormiu" por
+// inatividade (comum em Postgres serverless) e precisa de um instante pra
+// acordar na primeira conexão depois de um tempo parado.
+async function withRetry(fn, attempts, baseDelayMs) {
+  attempts = attempts || 3;
+  baseDelayMs = baseDelayMs || 300;
+  let lastErr;
+  for (let i = 0; i < attempts; i++) {
+    try {
+      return await fn();
+    } catch (e) {
+      lastErr = e;
+      if (i < attempts - 1) await new Promise((resolve) => setTimeout(resolve, baseDelayMs * (i + 1)));
+    }
+  }
+  throw lastErr;
 }
 
 let schemaReady = null;
 // Idempotente -- roda a cada cold start, mas CREATE TABLE IF NOT EXISTS é
 // barato quando já existe. Sem sistema de migração à parte: o app é pequeno
-// o bastante pra isso ser suficiente.
+// o bastante pra isso ser suficiente. As 4 tabelas viram uma query só (menos
+// uma ida-e-volta ao banco por instância fria). Não tenta de novo aqui
+// dentro -- quem chama (validateSession) já envolve tudo (isso + a query)
+// numa única retentativa; tentar duas vezes em duas camadas encadeadas só
+// multiplicaria o tempo de espera numa falha de verdade.
 async function ensureSchema() {
   if (schemaReady) return schemaReady;
   schemaReady = (async () => {
@@ -32,27 +59,18 @@ async function ensureSchema() {
         locked_until TIMESTAMPTZ,
         created_at TIMESTAMPTZ NOT NULL DEFAULT now()
       );
-    `);
-    await db.query(`
       CREATE TABLE IF NOT EXISTS sessions (
         token TEXT PRIMARY KEY,
         user_id INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
         created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
         expires_at TIMESTAMPTZ NOT NULL
       );
-    `);
-    await db.query(`
       CREATE TABLE IF NOT EXISTS login_log (
         id SERIAL PRIMARY KEY,
         user_id INTEGER REFERENCES users(id) ON DELETE SET NULL,
         name TEXT NOT NULL,
         ts TIMESTAMPTZ NOT NULL DEFAULT now()
       );
-    `);
-    // Dado compartilhado do app (lançamentos manuais, metas, orçamento etc.)
-    // -- uma linha só (id=1), pra todo perfil ver a mesma coisa depois de
-    // salvar. updated_at guarda controle de conflito otimista (ver api/data.js).
-    await db.query(`
       CREATE TABLE IF NOT EXISTS app_data (
         id INTEGER PRIMARY KEY DEFAULT 1,
         data JSONB NOT NULL,
@@ -61,7 +79,7 @@ async function ensureSchema() {
       );
     `);
     await seedFirstUser(db);
-  })();
+  })().catch((e) => { schemaReady = null; throw e; }); // não deixa uma falha "travar" tentativas futuras
   return schemaReady;
 }
 
@@ -133,20 +151,39 @@ async function attemptLogin(email, password) {
   return { ok: true, token, user: { id: row.id, name: row.name, email: row.email } };
 }
 
+// Cache curto de sessão validada -- sem isso, cada carregamento de página
+// dispara ~20 requisições quase simultâneas (uma por arquivo .js) e CADA
+// UMA bate no banco pra confirmar a mesma sessão de novo, multiplicando a
+// carga por nada. TTL curto (a troca é: até 20s de atraso pra um logout ou
+// edição de perfil valer em todo lugar, em troca de não sobrecarregar o
+// banco a cada clique).
+const sessionCache = new Map(); // token -> { user, expiresAtMs }
+const SESSION_CACHE_TTL_MS = 20000;
+
 async function validateSession(token) {
   if (!token) return null;
-  await ensureSchema();
-  const db = getPool();
-  const { rows } = await db.query(
-    `SELECT u.id, u.name, u.email FROM sessions s JOIN users u ON u.id = s.user_id
-     WHERE s.token = $1 AND s.expires_at > now()`,
-    [token]
-  );
-  return rows[0] || null;
+  const cached = sessionCache.get(token);
+  if (cached && cached.expiresAtMs > Date.now()) return cached.user;
+
+  const user = await withRetry(async () => {
+    await ensureSchema();
+    const db = getPool();
+    const { rows } = await db.query(
+      `SELECT u.id, u.name, u.email FROM sessions s JOIN users u ON u.id = s.user_id
+       WHERE s.token = $1 AND s.expires_at > now()`,
+      [token]
+    );
+    return rows[0] || null;
+  });
+
+  if (user) sessionCache.set(token, { user, expiresAtMs: Date.now() + SESSION_CACHE_TTL_MS });
+  else sessionCache.delete(token);
+  return user;
 }
 
 async function destroySession(token) {
   if (!token) return;
+  sessionCache.delete(token);
   await ensureSchema();
   await getPool().query("DELETE FROM sessions WHERE token = $1", [token]);
 }
