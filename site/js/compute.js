@@ -294,6 +294,24 @@
       .slice(0, n || 12);
   }
 
+  // Clientes que só compraram uma vez no período todo (não olha o filtro de
+  // mês da página -- "comprou uma vez" só faz sentido olhando o histórico
+  // inteiro) -- candidatos a reativação, ordenados pelo valor da compra.
+  function oneTimeClients(division) {
+    const map = new Map();
+    filterTx({ division, basis: "financeiro", flow: "entrada" }).forEach((t) => {
+      if (!t.counterparty || t.category === "IMPOSTOS") return;
+      if (!map.has(t.counterparty)) map.set(t.counterparty, { nome: t.counterparty, valor: 0, n: 0, data: t.date });
+      const rec = map.get(t.counterparty);
+      rec.valor += t.value; rec.n += 1;
+      if (t.date > rec.data) rec.data = t.date;
+    });
+    return Array.from(map.values())
+      .filter((c) => c.n === 1)
+      .map((c) => Object.assign({}, c, { valor: round2(c.valor), categoria: clienteCategoria(c.nome) }))
+      .sort((a, b) => b.valor - a.valor);
+  }
+
   // ---------------------------------------------------------------------
   // Empréstimos
   // ---------------------------------------------------------------------
@@ -689,7 +707,7 @@
 
   global.Compute = {
     DIVISIONS, round2,
-    allTransactions, detailedMonths, filterTx, previousMonth, clienteCategoria, uncategorized,
+    allTransactions, detailedMonths, filterTx, previousMonth, clienteCategoria, uncategorized, oneTimeClients,
     cashflowSeries, dailyCashflow, dreForPeriod, expenseCategoriesAgg, topCounterparties,
     loans, loansTotals, receivablesPayables, receivablesPayablesWindow, healthScore, insights, actionPlan, budgetStatus, pipelineSummary, pipelineInstallments,
   };

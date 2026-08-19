@@ -23,6 +23,8 @@
       counterpartyCard("Maiores clientes", "entrada", st),
     ]));
 
+    container.appendChild(oneTimeClientsSection(st));
+
     container.appendChild(UI.sectionTitle("Detalhamento completo"));
     container.appendChild(UI.h("div", { class: "card" }, [UI.table({
       columns: [
@@ -56,6 +58,31 @@
     card.appendChild(wrap);
     Charts.stackedShareBar(wrap, { items, formatValue: Fmt.money });
     return card;
+  }
+
+  // Clientes que só compraram uma vez em toda a base (não muda com o filtro
+  // de mês da página — "compra única" olha o histórico inteiro) -- lista de
+  // reativação: quem já comprou antes e não voltou, do maior valor pro menor.
+  function oneTimeClientsSection(st) {
+    const list = Compute.oneTimeClients(st.division);
+    const total = list.reduce((s, c) => s + c.valor, 0);
+    const wrap = UI.h("div", {}, [
+      UI.sectionTitle("Clientes para reativar", `${Fmt.num(list.length)} cliente(s) que compraram só uma vez, somando ${Fmt.money(total)} — candidatos a contato de retorno`),
+    ]);
+    if (!list.length) {
+      wrap.appendChild(UI.card([UI.emptyState({ icon: "users", title: "Nenhum cliente de compra única nessa divisão" })]));
+      return wrap;
+    }
+    wrap.appendChild(UI.h("div", { class: "card" }, [UI.table({
+      columns: [
+        { key: "nome", label: "Cliente", wrap: true, render: (r) => Fmt.titleCase(r.nome) },
+        { key: "categoria", label: "Categoria", render: (r) => (r.categoria ? UI.badge(Fmt.titleCase(r.categoria), "muted") : "—") },
+        { key: "data", label: "Data da compra", render: (r) => Fmt.dateBR(r.data) },
+        { key: "valor", label: "Valor", align: "right", render: (r) => Fmt.money(r.valor) },
+      ],
+      rows: list,
+    })]));
+    return wrap;
   }
 
   function counterpartyCard(title, flow, st) {
