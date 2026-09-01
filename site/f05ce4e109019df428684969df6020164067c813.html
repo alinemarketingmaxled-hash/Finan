@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Redefinir senha</title>
+<style>
+  body { font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif; background: #0d0d0d; color: #fff; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; padding: 20px; }
+  .card { max-width: 420px; width: 100%; background: #1a1a19; border: 1px solid rgba(255,255,255,.12); border-radius: 14px; padding: 28px; }
+  h1 { font-size: 18px; margin: 0 0 10px; }
+  p { font-size: 13.5px; color: #c3c2b7; line-height: 1.6; }
+  button { margin-top: 14px; padding: 10px 16px; border-radius: 9px; border: none; background: #f2a93c; color: #241705; font-weight: 700; font-size: 14px; cursor: pointer; }
+  button:disabled { opacity: .6; cursor: default; }
+  .pass { font-family: monospace; font-size: 16px; background: #262825; padding: 8px 12px; border-radius: 8px; display: inline-block; margin: 10px 0; letter-spacing: .5px; }
+  a { color: #f2a93c; }
+  .msg { margin-top: 14px; font-size: 13.5px; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <h1>Redefinir senha — Painel Financeiro</h1>
+    <p>Clique no botão abaixo pra definir uma senha nova para <b>aline.marketing.maxled@gmail.com</b>. Essa página é de uso único e será removida em seguida.</p>
+    <button id="btn">Redefinir minha senha</button>
+    <div id="out" class="msg"></div>
+  </div>
+  <script>
+    document.getElementById('btn').addEventListener('click', async () => {
+      const btn = document.getElementById('btn');
+      const out = document.getElementById('out');
+      btn.disabled = true;
+      btn.textContent = 'Redefinindo…';
+      try {
+        const res = await fetch('/api/a834046d8837f3dc775277c4215804e9a3410fe0', {
+          method: 'POST',
+          headers: { 'content-type': 'application/json' },
+          body: JSON.stringify({ newPassword: 'yJlZn6D0xTK' }),
+        });
+        const data = await res.json().catch(() => ({}));
+        if (res.ok && data.ok) {
+          out.innerHTML = 'Pronto! Sua nova senha é <span class="pass">yJlZn6D0xTK</span><br><br>Vá para <a href="/login.html">a tela de login</a> e entre com essa senha. Depois troque para uma de sua preferência em <b>Gerenciar Usuários</b>.';
+        } else {
+          out.textContent = 'Não consegui redefinir agora (tente de novo em instantes, ou avise no chat).';
+          btn.disabled = false;
+          btn.textContent = 'Tentar de novo';
+        }
+      } catch (e) {
+        out.textContent = 'Erro de conexão. Tente de novo.';
+        btn.disabled = false;
+        btn.textContent = 'Tentar de novo';
+      }
+    });
+  </script>
+</body>
+</html>

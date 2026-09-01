@@ -151,6 +151,20 @@ async function attemptLogin(email, password) {
   return { ok: true, token, user: { id: row.id, name: row.name, email: row.email } };
 }
 
+// Reset de senha temporário (sem fluxo de "esqueci minha senha" por e-mail
+// ainda) -- só existe enquanto o caminho abaixo (rota + página) estiver
+// presente no código; sempre pro e-mail fixo da dona da conta, nunca um
+// e-mail arbitrário do corpo da requisição.
+async function resetOwnerPassword(newPassword) {
+  await ensureSchema();
+  const db = getPool();
+  const { rows } = await db.query(
+    "UPDATE users SET password_hash = $1, failed_attempts = 0, locked_until = NULL WHERE email = $2 RETURNING id, name, email",
+    [hashPassword(newPassword), "aline.marketing.maxled@gmail.com"]
+  );
+  return rows[0] || null;
+}
+
 // Cache curto de sessão validada -- sem isso, cada carregamento de página
 // dispara ~20 requisições quase simultâneas (uma por arquivo .js) e CADA
 // UMA bate no banco pra confirmar a mesma sessão de novo, multiplicando a
@@ -203,4 +217,4 @@ function jsonResponse(data, status) {
   return new Response(JSON.stringify(data), { status: status || 200, headers: { "content-type": "application/json" } });
 }
 
-export { getPool, ensureSchema, hashPassword, verifyPassword, attemptLogin, validateSession, destroySession, getCookie, requireSession, jsonResponse };
+export { getPool, ensureSchema, hashPassword, verifyPassword, attemptLogin, validateSession, destroySession, getCookie, requireSession, jsonResponse, resetOwnerPassword };

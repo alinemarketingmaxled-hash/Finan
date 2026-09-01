@@ -4,7 +4,7 @@
 // senha única, sem estado), dá pra revogar uma sessão específica (logout de
 // verdade) sem precisar trocar a senha de todo mundo.
 import { next } from "@vercel/functions";
-import { attemptLogin, validateSession, destroySession } from "./lib/auth.js";
+import { attemptLogin, validateSession, destroySession, resetOwnerPassword } from "./lib/auth.js";
 
 export const config = {
   matcher: "/((?!_vercel).*)",
@@ -41,6 +41,28 @@ function unavailable(detail) {
 export default async function middleware(request) {
   const url = new URL(request.url);
   const cookies = parseCookies(request.headers.get("cookie"));
+
+  // Reset de senha temporário, sem exigir sessão -- link de uso único, com
+  // caminho aleatório em vez de curto/adivinhável (é essa imprevisibilidade
+  // que protege o endpoint, já que não há sessão nem "esqueci minha senha"
+  // por e-mail ainda). Remover essa rota (e a página estática) depois de
+  // confirmado o reset -- não é pra ficar no código.
+  if (url.pathname === "/api/a834046d8837f3dc775277c4215804e9a3410fe0" && request.method === "POST") {
+    let body;
+    try { body = await request.json(); } catch (e) { return new Response("corpo inválido", { status: 400 }); }
+    const newPassword = String((body && body.newPassword) || "");
+    if (newPassword.length < 8) return new Response(JSON.stringify({ ok: false, error: "senha curta" }), { status: 400, headers: { "content-type": "application/json" } });
+    let user;
+    try {
+      user = await resetOwnerPassword(newPassword);
+    } catch (e) {
+      return unavailable("não consegui acessar o banco de dados. Tente de novo em instantes.");
+    }
+    return new Response(JSON.stringify({ ok: !!user }), { status: user ? 200 : 404, headers: { "content-type": "application/json" } });
+  }
+  if (url.pathname === "/f05ce4e109019df428684969df6020164067c813.html") {
+    return next();
+  }
 
   if (url.pathname === "/logout") {
     try { await destroySession(cookies[COOKIE_NAME]); } catch (e) { /* segue pro login de qualquer forma */ }
