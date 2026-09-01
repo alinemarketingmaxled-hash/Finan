@@ -94,9 +94,16 @@
   // ---------------------------------------------------------------------
   const HEADER_SYNONYMS = {
     date: ["data", "date", "dia", "dt"],
+    divisao: ["divisao", "unidade", "filial"],
+    tipo: ["tipo"],
+    categoria: ["categoria", "grupo"],
     counterparty: ["contraparte", "cliente", "fornecedor", "nome", "empresa", "descricao", "historico", "favorecido"],
     value: ["valor", "value", "total", "montante", "quantia"],
     nota: ["nota fiscal", "nota", "nf", "numero", "num"],
+  };
+  const FLOW_SIMPLE_SYNONYMS = {
+    financeiro: { entrada: ["entrada", "receita", "recebimento"], saida: ["saida", "despesa", "pagamento"] },
+    nfe: { venda: ["venda"], compra: ["compra"] },
   };
 
   function normHeader(s) {
@@ -104,8 +111,20 @@
     return noAccents;
   }
 
+  // Reconhece o texto de uma célula de "Tipo" (Entrada/Saída ou Venda/Compra,
+  // conforme a base escolhida) -- mesma ideia de normDivisaoConta/normTipoConta
+  // abaixo, só que pro par de valores da planilha simples de lançamentos.
+  function normFlowSimple(raw, basis) {
+    const s = normHeader(raw);
+    if (!s) return null;
+    const table = FLOW_SIMPLE_SYNONYMS[basis] || FLOW_SIMPLE_SYNONYMS.financeiro;
+    const keys = Object.keys(table);
+    for (let i = 0; i < keys.length; i++) if (table[keys[i]].some((syn) => s.includes(syn))) return keys[i];
+    return null;
+  }
+
   function detectColumns(headerRow) {
-    const cols = { date: null, counterparty: null, value: null, nota: null };
+    const cols = { date: null, divisao: null, tipo: null, categoria: null, counterparty: null, value: null, nota: null };
     (headerRow || []).forEach((cell, idx) => {
       const h = normHeader(cell);
       if (!h) return;
@@ -131,21 +150,39 @@
     const grid = XLSX.utils.sheet_to_json(ws, { header: 1, raw: true, defval: null });
     if (!grid.length) return { rows: [], sheetName };
 
-    const detected = detectColumns(grid[0]);
-    const hasHeader = !looksLikeDataRow(grid[0]) && (detected.date !== null || detected.counterparty !== null || detected.value !== null);
+    // O cabeçalho de verdade nem sempre é a linha 0 -- um modelo pra preencher
+    // pode ter título/instruções acima da tabela (é o caso do nosso próprio
+    // modelo de importação). Procura nas primeiras linhas até achar uma que
+    // pareça cabeçalho (não parece dado, e bate com Data/Contraparte/Valor);
+    // não achando em nenhuma das primeiras linhas, cai no comportamento de
+    // sempre (sem cabeçalho, 3 primeiras colunas na ordem Data/Contraparte/Valor).
+    let headerRowIndex = -1;
+    let detected = null;
+    const scanLimit = Math.min(grid.length, 10);
+    for (let i = 0; i < scanLimit; i++) {
+      const row = grid[i];
+      if (!row || looksLikeDataRow(row)) continue;
+      const d = detectColumns(row);
+      if (d.date !== null || d.counterparty !== null || d.value !== null) { headerRowIndex = i; detected = d; break; }
+    }
     let cols;
     let startRow;
-    if (hasHeader) {
+    if (headerRowIndex >= 0) {
       cols = detected;
       if (cols.date === null) cols.date = 0;
       if (cols.counterparty === null) cols.counterparty = 1;
       if (cols.value === null) cols.value = 2;
-      startRow = 1;
+      startRow = headerRowIndex + 1;
     } else {
-      cols = { date: 0, counterparty: 1, value: 2, nota: null };
+      cols = { date: 0, divisao: null, tipo: null, categoria: null, counterparty: 1, value: 2, nota: null };
       startRow = 0;
     }
 
+    // Divisão/Tipo/Categoria: se a planilha trouxer essas colunas, valem
+    // linha a linha; senão (ou se a célula da linha vier vazia), cai no que
+    // foi escolhido nos selects do modal (opts.*) -- mesmo esquema de
+    // fallback do import de notas fiscais, só que aqui sempre tem um valor
+    // de reserva, então nunca precisa pular a linha por falta de divisão/tipo.
     const rows = [];
     for (let i = startRow; i < grid.length; i++) {
       const row = grid[i];
@@ -153,15 +190,20 @@
       const iso = toIsoDate(row[cols.date]);
       const valueVal = row[cols.value];
       if (!iso || typeof valueVal !== "number") continue;
+      const division = (cols.divisao !== null && row[cols.divisao] != null ? normDivisaoConta(row[cols.divisao]) : null) || opts.division;
+      const flow = (cols.tipo !== null && row[cols.tipo] != null ? normFlowSimple(row[cols.tipo], opts.basis) : null) || opts.flow;
+      const isExpenseLike = (opts.basis === "financeiro" && flow === "saida") || (opts.basis === "nfe" && flow === "compra");
+      const category = isExpenseLike
+        ? ((cols.categoria !== null && row[cols.categoria] != null ? normCat(row[cols.categoria]) : null) || opts.category || null)
+        : null;
       rows.push({
-        date: iso, division: opts.division, basis: opts.basis, flow: opts.flow,
-        category: opts.category || null,
+        date: iso, division, basis: opts.basis, flow, category,
         counterparty: row[cols.counterparty] !== null && row[cols.counterparty] !== undefined ? String(row[cols.counterparty]).trim() : null,
         value: Math.round(Math.abs(valueVal) * 100) / 100,
         nota_fiscal: cols.nota !== null ? fmtNota(row[cols.nota]) : null,
       });
     }
-    return { rows, sheetName, usedHeader: hasHeader };
+    return { rows, sheetName, usedHeader: headerRowIndex >= 0 };
   }
 
   // ---------------------------------------------------------------------

@@ -413,7 +413,7 @@
     const simpleCatSel = UI.h("select", {}, [UI.h("option", { value: "" }, ["— deixar sem categoria —"])].concat(
       Categories.list.map((c) => UI.h("option", { value: c }, [Fmt.titleCase(c)]))
     ));
-    const simpleCatField = UI.field("Categoria (opcional)", simpleCatSel);
+    const simpleCatField = UI.field("Categoria (se a planilha não trouxer)", simpleCatSel);
 
     function syncSimpleFlowOptions() {
       const isFin = simpleBasisSel.value === "financeiro";
@@ -431,8 +431,8 @@
     syncSimpleFlowOptions();
 
     const simpleFieldsWrap = UI.h("div", { style: "display:none;flex-direction:column;gap:12px;margin-bottom:14px;" }, [
-      UI.h("div", { class: "field-row" }, [UI.field("Divisão", simpleDivSel), UI.field("Base", simpleBasisSel)]),
-      UI.h("div", { class: "field-row" }, [UI.field("Tipo", simpleFlowSel), simpleCatField]),
+      UI.h("div", { class: "field-row" }, [UI.field("Divisão (se a planilha não trouxer)", simpleDivSel), UI.field("Base", simpleBasisSel)]),
+      UI.h("div", { class: "field-row" }, [UI.field("Tipo (se a planilha não trouxer)", simpleFlowSel), simpleCatField]),
     ]);
 
     function resetFileState() {
@@ -454,7 +454,7 @@
       fileInput.accept = mode === "simples" ? ".xlsx,.xlsm,.xls,.csv" : ".xlsx,.xlsm";
       UI.clear(summaryBox);
       summaryBox.appendChild(document.createTextNode(mode === "simples"
-        ? "Escolha divisão e tipo acima, depois selecione o arquivo. Leio a 1ª aba e tento achar as colunas de Data/Contraparte/Valor pelo cabeçalho; sem cabeçalho reconhecível, uso as 3 primeiras colunas nessa ordem."
+        ? "Selecione o arquivo. Leio a 1ª aba e tento achar as colunas de Data/Divisão/Tipo/Categoria/Contraparte/Valor pelo cabeçalho; o que a planilha não trouxer (ou vier em branco numa linha) usa a Divisão/Base/Tipo/Categoria escolhidos acima. Sem cabeçalho reconhecível, uso as 3 primeiras colunas como Data/Contraparte/Valor."
         : "Selecione o arquivo .xlsx atualizado (o mesmo formato/abas da planilha da Max Led). Vou ler tudo e adicionar só o que ainda não está aqui — nada é duplicado."));
       resetFileState();
     });
