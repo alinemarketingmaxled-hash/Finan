@@ -101,6 +101,8 @@
   }
 
   function nfActionsCell(entry) {
+    const editBtn = UI.h("button", { class: "icon-btn", title: "Editar" }, [Icon("edit", { size: 13 })]);
+    editBtn.addEventListener("click", () => openNfModal(null, entry));
     const removeBtn = UI.h("button", { class: "icon-btn", title: "Remover" }, [Icon("trash", { size: 13 })]);
     removeBtn.addEventListener("click", async () => {
       const ok = await UI.confirmDialog(`Remover essa nota fiscal (${Fmt.money(entry.valor)}, vencimento ${Fmt.dateBR(entry.vencimento)})?`);
@@ -109,7 +111,7 @@
       UI.toast("Nota fiscal removida.");
       AppState.set({});
     });
-    return UI.h("div", { style: "display:flex;justify-content:flex-end;" }, [removeBtn]);
+    return UI.h("div", { style: "display:flex;justify-content:flex-end;gap:4px;" }, [editBtn, removeBtn]);
   }
 
   function counterpartyOptions() {
@@ -124,13 +126,15 @@
     return btn;
   }
 
-  function openNfModal(st) {
+  // st: divisão default pra uma nota nova (só usado quando existing é null).
+  // existing: a nota a editar, ou null pra cadastrar uma nova.
+  function openNfModal(st, existing) {
+    const isEdit = !!existing;
     const tipoSel = UI.h("select", {}, Object.entries(TIPO_LABEL).map(([v, l]) => UI.h("option", { value: v }, [l])));
     const divSel = UI.h("select", {}, [
       UI.h("option", { value: "iluminacao" }, ["Max Led Iluminação"]),
       UI.h("option", { value: "importacao" }, ["Max Led Importação"]),
     ]);
-    divSel.value = st && st.division !== "consolidado" ? st.division : "iluminacao";
     const vencInput = UI.h("input", { type: "date", class: "input" });
     const valorInput = UI.h("input", { type: "number", step: "0.01", min: "0", class: "input", placeholder: "0,00" });
     const cpInput = UI.h("input", { class: "input", list: "contaNfNomeList", placeholder: "Nome do cliente/fornecedor" });
@@ -138,10 +142,19 @@
     const notaInput = UI.h("input", { class: "input", placeholder: "Nº da nota fiscal" });
     const obsInput = UI.h("textarea", { class: "input", rows: 2, placeholder: "Observação (opcional)" });
 
+    if (isEdit) {
+      tipoSel.value = existing.tipo; divSel.value = existing.division;
+      vencInput.value = existing.vencimento || ""; valorInput.value = existing.valor ?? "";
+      cpInput.value = existing.contraparte || ""; notaInput.value = existing.nota_fiscal || "";
+      obsInput.value = existing.observacao || "";
+    } else {
+      divSel.value = st && st.division !== "consolidado" ? st.division : "iluminacao";
+    }
+
     const cancelBtn = UI.h("button", { class: "btn" }, ["Cancelar"]);
-    const saveBtn = UI.h("button", { class: "btn btn-accent" }, ["Salvar nota fiscal"]);
+    const saveBtn = UI.h("button", { class: "btn btn-accent" }, [isEdit ? "Salvar alterações" : "Salvar nota fiscal"]);
     const m = UI.modal({
-      title: "Nova nota fiscal",
+      title: isEdit ? "Editar nota fiscal" : "Nova nota fiscal",
       body: [
         UI.h("div", { class: "field-row" }, [UI.field("Tipo", tipoSel), UI.field("Divisão", divSel)]),
         UI.h("div", { class: "field-row" }, [UI.field("Vencimento", vencInput), UI.field("Valor (R$)", valorInput)]),
@@ -154,14 +167,15 @@
     cancelBtn.addEventListener("click", () => m.close());
     saveBtn.addEventListener("click", () => {
       if (!vencInput.value || !valorInput.value) { UI.toast("Preencha ao menos o vencimento e o valor."); return; }
-      Storage.addContaExtra({
+      const patch = {
         tipo: tipoSel.value, division: divSel.value, vencimento: vencInput.value,
         valor: Math.round(parseFloat(valorInput.value) * 100) / 100,
         contraparte: cpInput.value.trim() || null,
         nota_fiscal: notaInput.value.trim() || null,
         observacao: obsInput.value.trim() || null,
-      });
-      UI.toast("Nota fiscal salva.");
+      };
+      if (isEdit) { Storage.updateContaExtra(existing.id, patch); UI.toast("Nota fiscal atualizada."); }
+      else { Storage.addContaExtra(patch); UI.toast("Nota fiscal salva."); }
       m.close();
       AppState.set({});
     });
@@ -260,4 +274,5 @@
 
   window.Views = window.Views || {};
   window.Views.contas = render;
+  window.Views.openNfModal = openNfModal;
 })();

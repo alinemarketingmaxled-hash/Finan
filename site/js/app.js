@@ -25,6 +25,7 @@
     ] },
     { group: "Sistema", items: [
       { id: "usuarios", label: "Gerenciar Usuários", icon: "building" },
+      { id: "importacoes", label: "Importações", icon: "upload" },
       { id: "backup", label: "Backup & Exportação", icon: "download" },
       { id: "config", label: "Configurações", icon: "settings" },
     ] },
@@ -45,6 +46,7 @@
     orcamento: ["Orçamento", "Limite mensal por categoria vs realizado"],
     pipeline: ["Previsões", "Entradas e saídas futuras que você já sabe que vão acontecer, mesmo parceladas"],
     usuarios: ["Gerenciar Usuários", "Quem tem acesso ao painel — adicionar, editar ou remover contas"],
+    importacoes: ["Importações", "Planilhas Excel já importadas — revisar, editar ou remover cada lote"],
     backup: ["Backup & Exportação", "Exportar, importar e imprimir seus dados"],
     config: ["Configurações", "Tema, empresa e preferências"],
   };

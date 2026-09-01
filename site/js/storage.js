@@ -91,6 +91,14 @@
       const list = this.listLancamentos().filter((r) => r.origin !== origin);
       write(KEYS.lancamentos, list);
     },
+    // Um "lote" de importação = todo lançamento que caiu no mesmo
+    // addLancamentosBulk (mesmo createdAt, atribuído uma vez por chamada, não
+    // por linha) -- usado na tela de Importações pra remover uma planilha
+    // inteira de uma vez, sem precisar apagar lançamento por lançamento.
+    removeLancamentosByBatch(createdAt) {
+      const list = this.listLancamentos().filter((r) => r.createdAt !== createdAt);
+      write(KEYS.lancamentos, list);
+    },
 
     // ---- overrides (edição/cancelamento de lançamentos da base Excel ou importados) ----
     getOverrides() { return read(KEYS.overrides, {}); },
@@ -187,12 +195,20 @@
     },
     addContasExtrasBulk(entries) {
       const now = new Date().toISOString();
-      const rows = entries.map((entry) => Object.assign({ id: uid(), createdAt: now }, entry));
+      const rows = entries.map((entry) => Object.assign({ id: uid(), createdAt: now, origin: "import" }, entry));
       write(KEYS.contasExtras, this.listContasExtras().concat(rows));
       return rows;
     },
     removeContaExtra(id) {
       write(KEYS.contasExtras, this.listContasExtras().filter((c) => c.id !== id));
+    },
+    updateContaExtra(id, patch) {
+      const list = this.listContasExtras().map((c) => (c.id === id ? Object.assign({}, c, patch) : c));
+      write(KEYS.contasExtras, list);
+    },
+    removeContasExtrasByBatch(createdAt) {
+      const list = this.listContasExtras().filter((c) => c.createdAt !== createdAt);
+      write(KEYS.contasExtras, list);
     },
 
     // ---- metas ----
