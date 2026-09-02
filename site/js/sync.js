@@ -8,6 +8,16 @@
 // de novo na hora.
 (function (global) {
   const AUTOSAVE_DELAY_MS = 1500;
+  const FETCH_TIMEOUT_MS = 20000;
+
+  // fetch sem timeout, se o servidor ficar pendurado (banco lento/acordando),
+  // trava "Salvando…"/"Buscando…" pra sempre sem nunca virar um erro que o
+  // botão "Tentar de novo" possa, de fato, tentar de novo.
+  function fetchWithTimeout(url, opts) {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
+    return fetch(url, Object.assign({}, opts, { signal: controller.signal })).finally(() => clearTimeout(timer));
+  }
 
   let lastUpdatedAt = null;
   let lastUpdatedBy = null;
@@ -43,12 +53,16 @@
 
   function onChange(cb) { onChangeCb = cb; }
   function emit() { if (onChangeCb) onChangeCb(status()); }
+  function errorMessage(e) {
+    if (e && e.name === "AbortError") return "demorou muito pra responder";
+    return String((e && e.message) || e);
+  }
 
   async function pull() {
     pulling = true;
     emit();
     try {
-      const res = await fetch("/api/data");
+      const res = await fetchWithTimeout("/api/data");
       if (!res.ok) throw new Error("falha ao buscar dados compartilhados");
       const body = await res.json();
       if (body.data) {
@@ -60,7 +74,7 @@
       lastError = null;
       return { ok: true, hadData: !!body.data };
     } catch (e) {
-      lastError = String(e.message || e);
+      lastError = errorMessage(e);
       console.warn("Sync.pull:", e);
       return { ok: false, error: lastError };
     } finally {
@@ -75,7 +89,7 @@
     emit();
     try {
       const payload = sharedPayload();
-      const res = await fetch("/api/data", {
+      const res = await fetchWithTimeout("/api/data", {
         method: "PUT",
         headers: { "content-type": "application/json" },
         body: JSON.stringify({ data: payload, expectedUpdatedAt: lastUpdatedAt }),
@@ -91,7 +105,7 @@
       lastError = null;
       return { ok: true, updatedAt: body.updatedAt, updatedBy: body.updatedBy };
     } catch (e) {
-      lastError = String(e.message || e);
+      lastError = errorMessage(e);
       return { ok: false, error: lastError };
     } finally {
       saving = false;
