@@ -389,6 +389,7 @@
       "Selecione o arquivo .xlsx atualizado (o mesmo formato/abas da planilha da Max Led). Vou ler tudo e adicionar só o que ainda não está aqui — nada é duplicado.",
     ]);
     const classifyBox = UI.h("div", { style: "display:none;flex-direction:column;gap:10px;" });
+    const reviewBox = UI.h("div", { style: "display:none;flex-direction:column;gap:10px;margin-top:6px;" });
     const cancelBtn = UI.h("button", { class: "btn" }, ["Cancelar"]);
     const confirmBtn = UI.h("button", { class: "btn btn-accent" }, ["Confirmar importação"]);
     confirmBtn.disabled = true;
@@ -396,7 +397,18 @@
 
     let parsed = null;
     let mode = "padrao";
+    let reviewIncluded = new Set(); // índices (em `parsed`) marcados pra importar -- só usado no modo "simples"
     const classifySelects = []; // [{ raw, select }]
+
+    // Confirmar sempre reflete o que está de fato selecionado pra entrar:
+    // no modo simples, só o que ficou marcado na lista de revisão; no modo
+    // padrão (sem revisão linha a linha), tudo que foi lido e não é duplicado.
+    function updateConfirmState() {
+      const n = mode === "simples" ? reviewIncluded.size : (parsed ? parsed.length : 0);
+      confirmBtn.disabled = !n;
+      confirmBtn.style.opacity = n ? "1" : ".5";
+      confirmBtn.textContent = mode === "simples" && parsed && parsed.length ? `Confirmar importação (${n})` : "Confirmar importação";
+    }
 
     // Planilha simples: não é o modelo de 8 abas da Max Led (ex: extrato de
     // banco) -- divisão/tipo/categoria são escolhidos aqui uma vez e valem
@@ -439,9 +451,79 @@
       UI.clear(classifyBox);
       classifyBox.style.display = "none";
       classifySelects.length = 0;
+      UI.clear(reviewBox);
+      reviewBox.style.display = "none";
+      reviewIncluded = new Set();
       parsed = null;
+      confirmBtn.textContent = "Confirmar importação";
       confirmBtn.disabled = true;
       confirmBtn.style.opacity = ".5";
+    }
+
+    // Lista de revisão (só planilha simples): cada linha lida vira uma
+    // caixinha marcada por padrão -- desmarcar tira ESSA linha da importação,
+    // sem precisar escolher um tipo só pro arquivo inteiro. O segmentado
+    // Todas/Entradas/Saídas só filtra o que aparece na lista, não desmarca.
+    function buildReviewChecklist(rows, included, onChange) {
+      function isEntradaLike(r) { return r.flow === "entrada" || r.flow === "venda"; }
+      let filter = "todas";
+      const countLabel = UI.h("div", { style: "font-size:11.5px;color:var(--text-muted);" });
+      const tableWrap = UI.h("div", { style: "max-height:280px;overflow-y:auto;border:1px solid var(--border);border-radius:8px;" });
+
+      function updateCount() { countLabel.textContent = `${included.size} de ${rows.length} selecionada(s) pra importar`; }
+
+      function checkboxCell(i) {
+        const cb = UI.h("input", { type: "checkbox" });
+        cb.checked = included.has(i);
+        cb.addEventListener("change", () => {
+          if (cb.checked) included.add(i); else included.delete(i);
+          updateCount();
+          onChange();
+        });
+        return cb;
+      }
+
+      function refreshTable() {
+        const indices = rows.map((r, i) => i).filter((i) => {
+          if (filter === "todas") return true;
+          return filter === "entrada" ? isEntradaLike(rows[i]) : !isEntradaLike(rows[i]);
+        });
+        UI.clear(tableWrap);
+        tableWrap.appendChild(UI.table({
+          columns: [
+            { key: "sel", label: "", render: checkboxCell },
+            { key: "date", label: "Data", render: (i) => Fmt.dateBR(rows[i].date) },
+            { key: "flow", label: "Tipo", render: (i) => UI.badge(isEntradaLike(rows[i]) ? "Entrada" : "Saída", isEntradaLike(rows[i]) ? "good" : "critical") },
+            { key: "division", label: "Divisão", render: (i) => UI.badgeDivision(rows[i].division) },
+            { key: "category", label: "Categoria", render: (i) => (rows[i].category ? UI.badge(Fmt.titleCase(rows[i].category), "muted") : "—") },
+            { key: "counterparty", label: "Contraparte", wrap: true, render: (i) => rows[i].counterparty || "—" },
+            { key: "value", label: "Valor", align: "right", render: (i) => Fmt.money(rows[i].value) },
+          ],
+          rows: indices,
+          emptyText: "Nenhuma linha nesse filtro.",
+        }));
+      }
+
+      const entradaCount = rows.filter(isEntradaLike).length;
+      const seg = UI.segmented([
+        { value: "todas", label: `Todas (${rows.length})` },
+        { value: "entrada", label: `Entradas (${entradaCount})` },
+        { value: "saida", label: `Saídas (${rows.length - entradaCount})` },
+      ], filter, (v) => { filter = v; refreshTable(); });
+      const selectAllBtn = UI.h("button", { class: "btn btn-ghost btn-sm" }, ["Marcar todas"]);
+      selectAllBtn.addEventListener("click", () => { rows.forEach((r, i) => included.add(i)); refreshTable(); updateCount(); onChange(); });
+      const clearAllBtn = UI.h("button", { class: "btn btn-ghost btn-sm" }, ["Desmarcar todas"]);
+      clearAllBtn.addEventListener("click", () => { included.clear(); refreshTable(); updateCount(); onChange(); });
+
+      const wrap = UI.h("div", { style: "display:flex;flex-direction:column;gap:8px;" }, [
+        UI.h("div", { style: "display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;" }, [
+          seg, UI.h("div", { style: "display:flex;gap:6px;" }, [selectAllBtn, clearAllBtn]),
+        ]),
+        countLabel, tableWrap,
+      ]);
+      refreshTable();
+      updateCount();
+      return wrap;
     }
 
     const modeSeg = UI.segmented([
@@ -454,7 +536,7 @@
       fileInput.accept = mode === "simples" ? ".xlsx,.xlsm,.xls,.csv" : ".xlsx,.xlsm";
       UI.clear(summaryBox);
       summaryBox.appendChild(document.createTextNode(mode === "simples"
-        ? "Selecione o arquivo. Leio a 1ª aba e tento achar as colunas de Data/Divisão/Tipo/Categoria/Contraparte/Valor pelo cabeçalho; o que a planilha não trouxer (ou vier em branco numa linha) usa a Divisão/Base/Tipo/Categoria escolhidos acima. Sem cabeçalho reconhecível, uso as 3 primeiras colunas como Data/Contraparte/Valor."
+        ? "Selecione o arquivo. Leio a 1ª aba e tento achar as colunas de Data/Divisão/Tipo/Categoria/Contraparte/Valor pelo cabeçalho (entrada e saída podem estar juntas numa coluna Tipo, ou separadas em duas colunas de valor); o que a planilha não trouxer usa a Divisão/Base/Tipo/Categoria escolhidos acima. Depois de ler, você escolhe linha a linha o que entra. Sem cabeçalho reconhecível, uso as 3 primeiras colunas como Data/Contraparte/Valor."
         : "Selecione o arquivo .xlsx atualizado (o mesmo formato/abas da planilha da Max Led). Vou ler tudo e adicionar só o que ainda não está aqui — nada é duplicado."));
       resetFileState();
     });
@@ -467,6 +549,7 @@
         UI.field("Arquivo", fileInput),
         summaryBox,
         classifyBox,
+        reviewBox,
       ],
       footer: [cancelBtn, confirmBtn],
     });
@@ -511,7 +594,9 @@
         UI.clear(summaryBox);
         const lines = [
           `${Fmt.num(rows.length)} lançamento(s) lidos no arquivo.`,
-          `${Fmt.num(toAdd.length)} são novos e serão importados · ${Fmt.num(duplicates.length)} já existiam e foram ignorados.`,
+          mode === "simples"
+            ? `${Fmt.num(toAdd.length)} são novos (${Fmt.num(duplicates.length)} já existiam e foram ignorados) — escolha abaixo quais entram.`
+            : `${Fmt.num(toAdd.length)} são novos e serão importados · ${Fmt.num(duplicates.length)} já existiam e foram ignorados.`,
         ];
         if (s.total) lines.push(`Novos: ${Fmt.monthLabel(s.minDate.slice(0, 7))} até ${Fmt.monthLabel(s.maxDate.slice(0, 7))} · Iluminação: ${s.byDivision.iluminacao || 0} · Importação: ${s.byDivision.importacao || 0}.`);
         if (missingSheets.length) lines.push(`Abas não encontradas (ok se não usa): ${missingSheets.join(", ")}.`);
@@ -543,7 +628,13 @@
           ]));
         }
 
-        if (toAdd.length > 0) { confirmBtn.disabled = false; confirmBtn.style.opacity = "1"; }
+        if (mode === "simples" && toAdd.length) {
+          reviewIncluded = new Set(toAdd.map((r, i) => i));
+          reviewBox.style.display = "flex";
+          UI.clear(reviewBox);
+          reviewBox.appendChild(buildReviewChecklist(toAdd, reviewIncluded, updateConfirmState));
+        }
+        updateConfirmState();
       } catch (e) {
         UI.clear(summaryBox);
         summaryBox.appendChild(UI.h("span", { style: "color:var(--critical-text);" }, ["Não consegui ler esse arquivo. Confirme que é uma planilha válida."]));
@@ -552,13 +643,15 @@
 
     confirmBtn.addEventListener("click", () => {
       if (!parsed || !parsed.length) return;
+      let toImport = mode === "simples" ? parsed.filter((r, i) => reviewIncluded.has(i)) : parsed;
+      if (!toImport.length) { UI.toast("Nenhuma linha selecionada pra importar."); return; }
       if (classifySelects.length) {
         const mapping = {};
         classifySelects.forEach(({ raw, select }) => { mapping[raw] = select.value; });
-        parsed = ExcelImport.applyCategoriaClassification(parsed, mapping);
+        toImport = ExcelImport.applyCategoriaClassification(toImport, mapping);
       }
-      Storage.addLancamentosBulk(parsed, "import");
-      UI.toast(`${Fmt.num(parsed.length)} lançamento(s) importado(s).`);
+      Storage.addLancamentosBulk(toImport, "import");
+      UI.toast(`${Fmt.num(toImport.length)} lançamento(s) importado(s).`);
       m.close();
       AppState.set({});
     });

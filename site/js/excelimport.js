@@ -99,6 +99,11 @@
     categoria: ["categoria", "grupo"],
     counterparty: ["contraparte", "cliente", "fornecedor", "nome", "empresa", "descricao", "historico", "favorecido"],
     value: ["valor", "value", "total", "montante", "quantia"],
+    // Planilha com entrada e saída em colunas de valor separadas (uma
+    // preenchida, outra em branco, por linha) em vez de uma coluna "Valor" +
+    // uma coluna "Tipo" -- comum em extrato bancário simples (débito/crédito).
+    entradaValor: ["entrada", "credito", "recebimento"],
+    saidaValor: ["saida", "debito", "pagamento"],
     nota: ["nota fiscal", "nota", "nf", "numero", "num"],
   };
   const FLOW_SIMPLE_SYNONYMS = {
@@ -124,7 +129,7 @@
   }
 
   function detectColumns(headerRow) {
-    const cols = { date: null, divisao: null, tipo: null, categoria: null, counterparty: null, value: null, nota: null };
+    const cols = { date: null, divisao: null, tipo: null, categoria: null, counterparty: null, value: null, entradaValor: null, saidaValor: null, nota: null };
     (headerRow || []).forEach((cell, idx) => {
       const h = normHeader(cell);
       if (!h) return;
@@ -163,7 +168,7 @@
       const row = grid[i];
       if (!row || looksLikeDataRow(row)) continue;
       const d = detectColumns(row);
-      if (d.date !== null || d.counterparty !== null || d.value !== null) { headerRowIndex = i; detected = d; break; }
+      if (d.date !== null || d.counterparty !== null || d.value !== null || d.entradaValor !== null || d.saidaValor !== null) { headerRowIndex = i; detected = d; break; }
     }
     let cols;
     let startRow;
@@ -174,7 +179,7 @@
       if (cols.value === null) cols.value = 2;
       startRow = headerRowIndex + 1;
     } else {
-      cols = { date: 0, divisao: null, tipo: null, categoria: null, counterparty: 1, value: 2, nota: null };
+      cols = { date: 0, divisao: null, tipo: null, categoria: null, counterparty: 1, value: 2, entradaValor: null, saidaValor: null, nota: null };
       startRow = 0;
     }
 
@@ -188,10 +193,24 @@
       const row = grid[i];
       if (!row) continue;
       const iso = toIsoDate(row[cols.date]);
-      const valueVal = row[cols.value];
+      // Valor: coluna única (Valor), ou -- se a planilha não tiver uma --
+      // colunas de Entrada/Saída separadas, olhando qual das duas veio
+      // preenchida na linha (o tipo já sai determinado disso também).
+      let valueVal = cols.value !== null ? row[cols.value] : null;
+      let colFlow = null;
+      if (typeof valueVal !== "number" && (cols.entradaValor !== null || cols.saidaValor !== null)) {
+        const ev = cols.entradaValor !== null ? row[cols.entradaValor] : null;
+        const sv = cols.saidaValor !== null ? row[cols.saidaValor] : null;
+        if (typeof ev === "number" && ev !== 0) { valueVal = ev; colFlow = "entrada"; }
+        else if (typeof sv === "number" && sv !== 0) { valueVal = sv; colFlow = "saida"; }
+      }
       if (!iso || typeof valueVal !== "number") continue;
       const division = (cols.divisao !== null && row[cols.divisao] != null ? normDivisaoConta(row[cols.divisao]) : null) || opts.division;
-      const flow = (cols.tipo !== null && row[cols.tipo] != null ? normFlowSimple(row[cols.tipo], opts.basis) : null) || opts.flow;
+      // colFlow só existe em entrada/saída (vocabulário de Financeiro) -- não
+      // faz sentido pra Nota Fiscal (venda/compra), então só entra na conta
+      // quando a base escolhida é mesmo Financeiro.
+      const flow = (cols.tipo !== null && row[cols.tipo] != null ? normFlowSimple(row[cols.tipo], opts.basis) : null)
+        || (opts.basis === "financeiro" ? colFlow : null) || opts.flow;
       const isExpenseLike = (opts.basis === "financeiro" && flow === "saida") || (opts.basis === "nfe" && flow === "compra");
       const category = isExpenseLike
         ? ((cols.categoria !== null && row[cols.categoria] != null ? normCat(row[cols.categoria]) : null) || opts.category || null)
