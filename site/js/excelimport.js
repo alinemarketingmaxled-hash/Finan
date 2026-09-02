@@ -116,11 +116,15 @@
     categoria: ["categoria", "grupo"],
     counterparty: ["contraparte", "cliente", "fornecedor", "nome", "empresa", "descricao", "historico", "favorecido"],
     value: ["valor", "value", "total", "montante", "quantia"],
-    // Planilha com entrada e saída em colunas de valor separadas (uma
-    // preenchida, outra em branco, por linha) em vez de uma coluna "Valor" +
-    // uma coluna "Tipo" -- comum em extrato bancário simples (débito/crédito).
+    // Planilha com entrada e saída (financeiro) ou venda e compra (nota
+    // fiscal) em colunas de valor separadas (uma preenchida, outra em
+    // branco, por linha) em vez de uma coluna "Valor" + uma coluna "Tipo" --
+    // comum em extrato bancário simples (débito/crédito) ou controle de NFe
+    // com as duas operações juntas na mesma planilha.
     entradaValor: ["entrada", "credito", "recebimento"],
     saidaValor: ["saida", "debito", "pagamento"],
+    vendaValor: ["venda"],
+    compraValor: ["compra"],
     nota: ["nota fiscal", "nota", "nf", "numero", "num"],
   };
   const FLOW_SIMPLE_SYNONYMS = {
@@ -146,7 +150,7 @@
   }
 
   function detectColumns(headerRow) {
-    const cols = { date: null, divisao: null, tipo: null, categoria: null, counterparty: null, value: null, entradaValor: null, saidaValor: null, nota: null };
+    const cols = { date: null, divisao: null, tipo: null, categoria: null, counterparty: null, value: null, entradaValor: null, saidaValor: null, vendaValor: null, compraValor: null, nota: null };
     (headerRow || []).forEach((cell, idx) => {
       const h = normHeader(cell);
       if (!h) return;
@@ -200,10 +204,19 @@
       cols = detected;
       if (cols.date === null) cols.date = 0;
       if (cols.counterparty === null) cols.counterparty = 1;
-      if (cols.value === null) cols.value = 2;
+      // Só chuta a coluna 2 como "Valor" se a planilha também não tiver duas
+      // colunas separadas pro par certo (Entrada/Saída ou Venda/Compra) --
+      // senão essa posição quase sempre É uma das duas colunas separadas
+      // (ex: "Venda" na coluna 2), e chutar "Valor" ali rouba a linha do
+      // caminho de detecção por coluna separada mais abaixo, fazendo cada
+      // linha cair no Tipo escolhido no modal em vez do que a própria coluna diz.
+      const hasSplitCols = opts.basis === "nfe"
+        ? (cols.vendaValor !== null || cols.compraValor !== null)
+        : (cols.entradaValor !== null || cols.saidaValor !== null);
+      if (cols.value === null && !hasSplitCols) cols.value = 2;
       startRow = headerRowIndex + 1;
     } else {
-      cols = { date: 0, divisao: null, tipo: null, categoria: null, counterparty: 1, value: 2, entradaValor: null, saidaValor: null, nota: null };
+      cols = { date: 0, divisao: null, tipo: null, categoria: null, counterparty: 1, value: 2, entradaValor: null, saidaValor: null, vendaValor: null, compraValor: null, nota: null };
       startRow = 0;
     }
 
@@ -218,23 +231,31 @@
       if (!row) continue;
       const iso = toIsoDate(row[cols.date]);
       // Valor: coluna única (Valor), ou -- se a planilha não tiver uma --
-      // colunas de Entrada/Saída separadas, olhando qual das duas veio
-      // preenchida na linha (o tipo já sai determinado disso também).
+      // colunas separadas pro par certo do vocabulário da base escolhida
+      // (Entrada/Saída no Financeiro, Venda/Compra na Nota Fiscal), olhando
+      // qual das duas veio preenchida na linha (o tipo já sai determinado
+      // disso também -- é o que permite venda e compra juntas num arquivo só).
       let valueVal = cols.value !== null ? row[cols.value] : null;
       let colFlow = null;
-      if (typeof valueVal !== "number" && (cols.entradaValor !== null || cols.saidaValor !== null)) {
-        const ev = cols.entradaValor !== null ? row[cols.entradaValor] : null;
-        const sv = cols.saidaValor !== null ? row[cols.saidaValor] : null;
-        if (typeof ev === "number" && ev !== 0) { valueVal = ev; colFlow = "entrada"; }
-        else if (typeof sv === "number" && sv !== 0) { valueVal = sv; colFlow = "saida"; }
+      if (typeof valueVal !== "number") {
+        if (opts.basis === "nfe" && (cols.vendaValor !== null || cols.compraValor !== null)) {
+          const vv = cols.vendaValor !== null ? row[cols.vendaValor] : null;
+          const cv = cols.compraValor !== null ? row[cols.compraValor] : null;
+          if (typeof vv === "number" && vv !== 0) { valueVal = vv; colFlow = "venda"; }
+          else if (typeof cv === "number" && cv !== 0) { valueVal = cv; colFlow = "compra"; }
+        } else if (cols.entradaValor !== null || cols.saidaValor !== null) {
+          const ev = cols.entradaValor !== null ? row[cols.entradaValor] : null;
+          const sv = cols.saidaValor !== null ? row[cols.saidaValor] : null;
+          if (typeof ev === "number" && ev !== 0) { valueVal = ev; colFlow = "entrada"; }
+          else if (typeof sv === "number" && sv !== 0) { valueVal = sv; colFlow = "saida"; }
+        }
       }
       if (!iso || typeof valueVal !== "number") continue;
       const division = (cols.divisao !== null && row[cols.divisao] != null ? normDivisaoConta(row[cols.divisao]) : null) || opts.division;
-      // colFlow só existe em entrada/saída (vocabulário de Financeiro) -- não
-      // faz sentido pra Nota Fiscal (venda/compra), então só entra na conta
-      // quando a base escolhida é mesmo Financeiro.
+      // colFlow já sai no vocabulário certo pra base escolhida (não precisa
+      // mais travar por basis aqui como antes).
       const flow = (cols.tipo !== null && row[cols.tipo] != null ? normFlowSimple(row[cols.tipo], opts.basis) : null)
-        || (opts.basis === "financeiro" ? colFlow : null) || opts.flow;
+        || colFlow || opts.flow;
       const isExpenseLike = (opts.basis === "financeiro" && flow === "saida") || (opts.basis === "nfe" && flow === "compra");
       const category = isExpenseLike
         ? ((cols.categoria !== null && row[cols.categoria] != null ? normCat(row[cols.categoria]) : null) || opts.category || null)
