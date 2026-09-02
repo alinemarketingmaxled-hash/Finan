@@ -168,13 +168,38 @@
     return (row || []).some((cell) => toIsoDate(cell) || typeof cell === "number");
   }
 
+  // Lê TODAS as abas do arquivo (não só a primeira) -- planilha simples pode
+  // vir com mais de uma aba (ex: "Vendas" + "Compras", ou "Entradas" +
+  // "Saídas"), cada uma com sua própria tabela. Cada aba passa pela mesma
+  // detecção de cabeçalho/colunas de sempre; abas sem nenhuma linha
+  // reconhecível (data + valor) simplesmente não contribuem linha nenhuma,
+  // sem precisar de nenhum tratamento especial (é o caso, por exemplo, da
+  // aba oculta "Categorias" do nosso próprio modelo de importação).
+  //
+  // Quando uma aba não tem coluna "Tipo" nem colunas de valor separadas pra
+  // decidir o Tipo linha a linha, o NOME da aba serve de pista adicional
+  // antes de cair no Tipo escolhido no modal -- mesma ideia (e mesmo texto
+  // reconhecido) das abas fixas "SAÍDA NFE ILUMI"/"ENTRADAS - FIN - ilumi"
+  // do modelo de 8 abas, só que aqui o nome pode ser qualquer coisa.
   function parseSimpleSheet(arrayBuffer, opts) {
     const wb = readWorkbook(arrayBuffer);
-    const sheetName = wb.SheetNames[0];
-    const ws = sheetName ? wb.Sheets[sheetName] : null;
-    if (!ws) return { rows: [], sheetName: null };
+    const sheetNames = wb.SheetNames || [];
+    const perSheet = [];
+    const rows = [];
+    sheetNames.forEach((sheetName) => {
+      const ws = wb.Sheets[sheetName];
+      if (!ws) return;
+      const sheetFlow = normFlowSimple(sheetName, opts.basis);
+      const result = parseOneSheetGrid(ws, opts, sheetFlow);
+      if (result.rows.length) rows.push(...result.rows);
+      perSheet.push({ sheetName, count: result.rows.length, usedHeader: result.usedHeader });
+    });
+    return { rows, sheetNames, perSheet };
+  }
+
+  function parseOneSheetGrid(ws, opts, sheetFlow) {
     const grid = XLSX.utils.sheet_to_json(ws, { header: 1, raw: true, defval: null });
-    if (!grid.length) return { rows: [], sheetName };
+    if (!grid.length) return { rows: [], usedHeader: false };
 
     // O cabeçalho de verdade nem sempre é a linha 0 -- um modelo pra preencher
     // pode ter título/instruções acima da tabela (é o caso do nosso próprio
@@ -252,10 +277,14 @@
       }
       if (!iso || typeof valueVal !== "number") continue;
       const division = (cols.divisao !== null && row[cols.divisao] != null ? normDivisaoConta(row[cols.divisao]) : null) || opts.division;
-      // colFlow já sai no vocabulário certo pra base escolhida (não precisa
-      // mais travar por basis aqui como antes).
+      // Ordem de prioridade pro Tipo da linha: coluna "Tipo" da própria linha
+      // -> colunas de valor separadas (colFlow) -> nome da aba (sheetFlow,
+      // ex: aba "Compras") -> Tipo escolhido no modal (opts.flow, só quando
+      // nada acima deu pista nenhuma). colFlow/sheetFlow já saem no
+      // vocabulário certo pra base escolhida (não precisa mais travar por
+      // basis aqui como antes).
       const flow = (cols.tipo !== null && row[cols.tipo] != null ? normFlowSimple(row[cols.tipo], opts.basis) : null)
-        || colFlow || opts.flow;
+        || colFlow || sheetFlow || opts.flow;
       const isExpenseLike = (opts.basis === "financeiro" && flow === "saida") || (opts.basis === "nfe" && flow === "compra");
       const category = isExpenseLike
         ? ((cols.categoria !== null && row[cols.categoria] != null ? normCat(row[cols.categoria]) : null) || opts.category || null)
@@ -267,7 +296,7 @@
         nota_fiscal: cols.nota !== null ? fmtNota(row[cols.nota]) : null,
       });
     }
-    return { rows, sheetName, usedHeader: headerRowIndex >= 0 };
+    return { rows, usedHeader: headerRowIndex >= 0 };
   }
 
   // ---------------------------------------------------------------------

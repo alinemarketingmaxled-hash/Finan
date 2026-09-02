@@ -571,17 +571,22 @@
       summaryBox.appendChild(document.createTextNode("Lendo arquivo…"));
       try {
         const buf = await file.arrayBuffer();
-        let rows, missingSheets;
+        let rows, missingSheets, sheetBreakdown = null;
         if (mode === "simples") {
           const result = ExcelImport.parseSimpleSheet(buf, {
             division: simpleDivSel.value, basis: simpleBasisSel.value, flow: simpleFlowSel.value, category: simpleCatSel.value || null,
           });
           rows = result.rows;
           missingSheets = [];
+          // Só mostra o detalhe por aba quando tem mais de uma aba de verdade
+          // (arquivo de aba única não precisa desse nível de detalhe).
+          if (result.sheetNames.length > 1) sheetBreakdown = result.perSheet;
           if (!rows.length) {
             UI.clear(summaryBox);
             summaryBox.appendChild(UI.h("span", { style: "color:var(--critical-text);" }, [
-              "Não encontrei nenhuma linha válida (com data e valor) na primeira aba desse arquivo.",
+              result.sheetNames.length > 1
+                ? `Não encontrei nenhuma linha válida (com data e valor) em nenhuma das ${result.sheetNames.length} abas desse arquivo (${result.sheetNames.join(", ")}).`
+                : "Não encontrei nenhuma linha válida (com data e valor) nesse arquivo.",
             ]));
             return;
           }
@@ -608,6 +613,7 @@
         ];
         if (s.total) lines.push(`Novos: ${Fmt.monthLabel(s.minDate.slice(0, 7))} até ${Fmt.monthLabel(s.maxDate.slice(0, 7))} · Iluminação: ${s.byDivision.iluminacao || 0} · Importação: ${s.byDivision.importacao || 0}.`);
         if (missingSheets.length) lines.push(`Abas não encontradas (ok se não usa): ${missingSheets.join(", ")}.`);
+        if (sheetBreakdown) lines.push(`Por aba: ${sheetBreakdown.map((s2) => `${s2.sheetName} (${s2.count})`).join(" · ")}.`);
         lines.forEach((l) => summaryBox.appendChild(UI.h("div", {}, [l])));
 
         const { categories, weirdNotas } = ExcelImport.analyzeUnknowns(toAdd);
