@@ -384,7 +384,7 @@
   }
 
   function openImportModal() {
-    const fileInput = UI.h("input", { type: "file", accept: ".xlsx,.xlsm" });
+    const fileInput = UI.h("input", { type: "file" });
     const summaryBox = UI.h("div", { style: "font-size:12.5px;color:var(--text-secondary);line-height:1.6;min-height:20px;" }, [
       "Selecione o arquivo .xlsx atualizado (o mesmo formato/abas da planilha da Max Led). Vou ler tudo e adicionar só o que ainda não está aqui — nada é duplicado.",
     ]);
@@ -533,7 +533,6 @@
       mode = v;
       simpleFieldsWrap.style.display = mode === "simples" ? "flex" : "none";
       fileInput.value = "";
-      fileInput.accept = mode === "simples" ? ".xlsx,.xlsm,.xls,.csv" : ".xlsx,.xlsm";
       UI.clear(summaryBox);
       summaryBox.appendChild(document.createTextNode(mode === "simples"
         ? "Selecione o arquivo. Leio a 1ª aba e tento achar as colunas de Data/Divisão/Tipo/Categoria/Contraparte/Valor pelo cabeçalho (entrada e saída podem estar juntas numa coluna Tipo, ou separadas em duas colunas de valor); o que a planilha não trouxer usa a Divisão/Base/Tipo/Categoria escolhidos acima. Depois de ler, você escolhe linha a linha o que entra. Sem cabeçalho reconhecível, uso as 3 primeiras colunas como Data/Contraparte/Valor."

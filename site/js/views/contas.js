@@ -188,7 +188,7 @@
   }
 
   function openNfImportModal(st) {
-    const fileInput = UI.h("input", { type: "file", accept: ".xlsx,.xlsm,.xls,.csv" });
+    const fileInput = UI.h("input", { type: "file" });
     const summaryBox = UI.h("div", { style: "font-size:12.5px;color:var(--text-secondary);line-height:1.6;min-height:20px;" }, [
       "Selecione a planilha. Tento reconhecer as colunas de Vencimento, Tipo, Divisão, Valor, Cliente/Fornecedor e Nota fiscal pelo cabeçalho — o que eu não conseguir identificar, você escolhe abaixo (vale pra planilha inteira).",
     ]);
