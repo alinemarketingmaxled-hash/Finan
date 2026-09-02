@@ -17,11 +17,72 @@
       .sort((a, b) => b.createdAt.localeCompare(a.createdAt));
   }
 
+  // Remove tudo de um mês de uma vez, não só o que veio de planilha --
+  // lançamento da base Excel não dá pra apagar de verdade, então esse vira
+  // cancelado (mesmo mecanismo do botão individual "Cancelar lançamento");
+  // manual/importado e nota fiscal saem mesmo.
+  function monthsWithData() {
+    const months = new Set(AppState.detailedMonths);
+    Storage.listContasExtras().forEach((c) => { if (c.vencimento) months.add(c.vencimento.slice(0, 7)); });
+    return Array.from(months).sort();
+  }
+
+  function monthCleanupSection() {
+    const months = monthsWithData();
+    if (!months.length) return UI.h("div", {});
+
+    const sel = UI.h("select", {}, months.map((m) => UI.h("option", { value: m }, [Fmt.monthLabel(m, "full")])));
+    sel.value = months[months.length - 1];
+    const previewWrap = UI.h("div", { style: "font-size:12.5px;color:var(--text-secondary);margin-top:10px;" });
+    const removeBtn = UI.h("button", { class: "btn btn-sm", style: "margin-top:10px;" }, [Icon("trash", { size: 13 }), "Remover esse mês inteiro"]);
+
+    function matchFor(mk) {
+      const lancs = Compute.allTransactions().filter((t) => t.date.slice(0, 7) === mk && !t.cancelled);
+      const nfs = Storage.listContasExtras().filter((c) => c.vencimento && c.vencimento.slice(0, 7) === mk);
+      return { lancs, nfs };
+    }
+    function updatePreview() {
+      const { lancs, nfs } = matchFor(sel.value);
+      const base = lancs.filter((t) => !t.manual).length;
+      const manual = lancs.filter((t) => t.manual).length;
+      UI.clear(previewWrap);
+      const parts = [];
+      if (lancs.length) parts.push(`${lancs.length} lançamento(s)${base ? ` (${base} da base Excel + ${manual} adicionado(s)/importado(s))` : ""}`);
+      if (nfs.length) parts.push(`${nfs.length} nota(s) fiscal(is)`);
+      previewWrap.textContent = parts.length ? `Esse mês tem: ${parts.join(" e ")}.` : "Sem nada cadastrado nesse mês.";
+      removeBtn.disabled = !lancs.length && !nfs.length;
+      removeBtn.style.opacity = removeBtn.disabled ? ".5" : "1";
+    }
+    sel.addEventListener("change", updatePreview);
+    updatePreview();
+
+    removeBtn.addEventListener("click", async () => {
+      const { lancs, nfs } = matchFor(sel.value);
+      const ok = await UI.confirmDialog(
+        `Remover tudo de ${Fmt.monthLabel(sel.value, "full")}? ${lancs.length} lançamento(s) e ${nfs.length} nota(s) fiscal(is) serão afetados -- os que vieram da base Excel ficam cancelados (não somem do histórico), o resto é apagado de verdade.`
+      );
+      if (!ok) return;
+      lancs.forEach((t) => { if (t.manual) Storage.removeLancamento(t.id); else Storage.setOverride(t.id, { cancelled: true }); });
+      nfs.forEach((c) => Storage.removeContaExtra(c.id));
+      UI.toast(`Mês removido: ${lancs.length} lançamento(s) e ${nfs.length} nota(s) fiscal(is).`);
+      AppState.set({});
+    });
+
+    return UI.h("div", { class: "card" }, [
+      UI.h("div", { class: "card-subtitle", style: "margin-bottom:12px;" }, ["Apaga tudo de um mês de uma vez, não importa como entrou (planilha, um a um ou da base original)"]),
+      sel, previewWrap, removeBtn,
+    ]);
+  }
+
   function render(container) {
+    container.appendChild(UI.sectionTitle("Remover um mês inteiro", ""));
+    container.appendChild(monthCleanupSection());
+
     const lancBatches = groupByCreatedAt(Storage.listLancamentos().filter((r) => r.origin === "import"));
     const nfBatches = groupByCreatedAt(Storage.listContasExtras().filter((r) => r.origin === "import"));
 
     if (!lancBatches.length && !nfBatches.length) {
+      container.appendChild(UI.sectionTitle("Lotes importados", ""));
       container.appendChild(UI.card([UI.emptyState({
         icon: "upload", title: "Nenhuma planilha importada ainda",
         body: "Quando você importar um Excel em Lançamentos ou em A Receber/A Pagar, os lotes aparecem aqui pra revisar, editar ou remover.",
