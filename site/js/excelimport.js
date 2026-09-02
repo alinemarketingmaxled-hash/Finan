@@ -349,19 +349,28 @@
     return { rows, sheetName, usedHeader: hasHeader, skipped };
   }
 
+  // Conta ocorrências por fingerprint (não só presença) -- duas vendas
+  // diferentes pro mesmo cliente, no mesmo dia, mesmo valor, têm a mesma
+  // fingerprint, mas são lançamentos de verdade, não a mesma linha duas
+  // vezes. Cada ocorrência na planilha nova só vira "duplicata" se já existir
+  // uma correspondente ainda não "consumida" -- a partir da (N+1)-ésima igual
+  // (N = quantas já existem), entra como novo lançamento de qualquer forma.
   function dedupe(newRows) {
-    const existing = new Set();
-    MAXLED_DATA.transactions.forEach((t) => existing.add(fingerprint(t)));
-    Storage.listLancamentos().forEach((t) => existing.add(fingerprint(t)));
+    const existingCounts = new Map();
+    function bump(map, fp) { map.set(fp, (map.get(fp) || 0) + 1); }
+    MAXLED_DATA.transactions.forEach((t) => bump(existingCounts, fingerprint(t)));
+    Storage.listLancamentos().forEach((t) => bump(existingCounts, fingerprint(t)));
 
     const toAdd = [];
     const duplicates = [];
-    const seenInBatch = new Set();
+    const seenInBatch = new Map();
     newRows.forEach((r) => {
       const fp = fingerprint(r);
-      if (existing.has(fp) || seenInBatch.has(fp)) { duplicates.push(r); return; }
-      seenInBatch.add(fp);
-      toAdd.push(r);
+      const already = existingCounts.get(fp) || 0;
+      const seenCount = (seenInBatch.get(fp) || 0) + 1;
+      seenInBatch.set(fp, seenCount);
+      if (seenCount <= already) duplicates.push(r);
+      else toAdd.push(r);
     });
     return { toAdd, duplicates };
   }
