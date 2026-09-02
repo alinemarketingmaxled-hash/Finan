@@ -161,6 +161,13 @@
     // pareça cabeçalho (não parece dado, e bate com Data/Contraparte/Valor);
     // não achando em nenhuma das primeiras linhas, cai no comportamento de
     // sempre (sem cabeçalho, 3 primeiras colunas na ordem Data/Contraparte/Valor).
+    //
+    // De propósito NÃO aceita a linha só por causa de Entrada/Saída
+    // detectadas (cols.entradaValor/saidaValor): essas palavras aparecem
+    // fácil dentro de uma frase de instrução (ex: "...em linhas de Saída...",
+    // como no nosso próprio modelo) e não só como cabeçalho de coluna -- um
+    // arquivo de verdade com colunas de Entrada/Saída separadas quase sempre
+    // também tem Data ou Contraparte/Descrição na mesma linha, que já basta.
     let headerRowIndex = -1;
     let detected = null;
     const scanLimit = Math.min(grid.length, 10);
@@ -168,7 +175,7 @@
       const row = grid[i];
       if (!row || looksLikeDataRow(row)) continue;
       const d = detectColumns(row);
-      if (d.date !== null || d.counterparty !== null || d.value !== null || d.entradaValor !== null || d.saidaValor !== null) { headerRowIndex = i; detected = d; break; }
+      if (d.date !== null || d.counterparty !== null || d.value !== null) { headerRowIndex = i; detected = d; break; }
     }
     let cols;
     let startRow;
