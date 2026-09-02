@@ -3,6 +3,23 @@
 // com o mesmo mapeamento de colunas, para que dados novos (meses seguintes)
 // possam ser adicionados sem precisar gerar um novo data.js.
 (function (global) {
+  // .xlsx/.xlsm/.xls são binário (ZIP ou OLE) e vão pro SheetJS como array de
+  // bytes; qualquer outra coisa (.csv, .txt) é texto puro, e sem isso o
+  // SheetJS lê como Latin-1 -- "Divisão" vira "DivisÃ£o" e nada bate mais com
+  // as listas de sinônimo (acento nunca reconhecido). Decodifica como UTF-8
+  // antes de entregar, então.
+  function readWorkbook(arrayBuffer) {
+    const bytes = new Uint8Array(arrayBuffer, 0, Math.min(8, arrayBuffer.byteLength));
+    const isZip = bytes[0] === 0x50 && bytes[1] === 0x4b; // PK.. (xlsx/xlsm/xlsb)
+    const isOle = bytes[0] === 0xd0 && bytes[1] === 0xcf && bytes[2] === 0x11 && bytes[3] === 0xe0; // xls antigo
+    if (isZip || isOle) return XLSX.read(arrayBuffer, { type: "array", cellDates: true });
+    // csv/tsv/texto puro: sem indicar o codepage o SheetJS assume Latin-1 e
+    // "Divisão" vira "DivisÃ£o" (nunca bate com as listas de sinônimo depois).
+    // codepage 65001 = UTF-8. Mantém "array" (não "string") pra não perder a
+    // conversão automática de data/número que só existe nesse modo.
+    return XLSX.read(arrayBuffer, { type: "array", cellDates: true, codepage: 65001 });
+  }
+
   // sheet: [division, basis, flow, dateCol, catCol, cpCol, valCol, notaCol] (índices 0-based, iguais ao ETL em Python)
   // ENTRADA NFE ILUMI: os cabeçalhos "Cliente"/"Nota" estão trocados em relação ao
   // conteúdo real da planilha — col. 1 é o número da nota, col. 2 é o nome do cliente.
@@ -56,7 +73,7 @@
   }
 
   function parseWorkbook(arrayBuffer) {
-    const wb = XLSX.read(arrayBuffer, { type: "array", cellDates: true });
+    const wb = readWorkbook(arrayBuffer);
     const found = [];
     const missingSheets = [];
     const rows = [];
@@ -148,7 +165,7 @@
   }
 
   function parseSimpleSheet(arrayBuffer, opts) {
-    const wb = XLSX.read(arrayBuffer, { type: "array", cellDates: true });
+    const wb = readWorkbook(arrayBuffer);
     const sheetName = wb.SheetNames[0];
     const ws = sheetName ? wb.Sheets[sheetName] : null;
     if (!ws) return { rows: [], sheetName: null };
@@ -286,7 +303,7 @@
   function parseNotasFiscais(arrayBuffer, opts) {
     opts = opts || {};
     const empty = { rows: [], sheetName: null, usedHeader: false, skipped: { data: 0, valor: 0, tipo: 0, divisao: 0 } };
-    const wb = XLSX.read(arrayBuffer, { type: "array", cellDates: true });
+    const wb = readWorkbook(arrayBuffer);
     const sheetName = wb.SheetNames[0];
     const ws = sheetName ? wb.Sheets[sheetName] : null;
     if (!ws) return empty;

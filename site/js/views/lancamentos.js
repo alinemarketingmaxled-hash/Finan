@@ -637,6 +637,8 @@
       } catch (e) {
         UI.clear(summaryBox);
         summaryBox.appendChild(UI.h("span", { style: "color:var(--critical-text);" }, ["Não consegui ler esse arquivo. Confirme que é uma planilha válida."]));
+        summaryBox.appendChild(UI.h("div", { style: "font-size:11px;color:var(--text-muted);margin-top:4px;" }, [`Detalhe técnico: ${e && e.message ? e.message : e}`]));
+        console.warn("Importar planilha:", e);
       }
     });
 
