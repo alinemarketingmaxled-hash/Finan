@@ -427,19 +427,20 @@
     ));
     const simpleCatField = UI.field("Categoria (se a planilha não trouxer)", simpleCatSel);
 
-    // Dica de como misturar os dois tipos (entrada+saída ou venda+compra) num
-    // arquivo só: o select acima só vale linha a linha quando a planilha não
-    // trouxer nada melhor -- uma coluna "Tipo" com o texto certo por linha, ou
-    // duas colunas de valor separadas, sempre têm prioridade sobre ele.
-    const simpleFlowHint = UI.h("div", { style: "font-size:11.5px;color:var(--text-muted);margin-top:-4px;" });
+    // Dica: Divisão/Base/Tipo escolhidos aqui embaixo são só o padrão de
+    // reserva. Se a própria planilha trouxer uma coluna "Tipo"
+    // (Entrada/Saída/Venda/Compra), colunas de valor separadas, ou até abas
+    // com esses nomes (ex: uma aba "Vendas" e outra "Entradas" no mesmo
+    // arquivo), uso o que vier de lá, linha a linha e aba a aba -- dá pra
+    // misturar financeiro e nota fiscal no mesmo arquivo sem escolher nada aqui.
+    const simpleFlowHint = UI.h("div", { style: "font-size:11.5px;color:var(--text-muted);margin-top:-4px;" }, [
+      `Se a planilha trouxer uma coluna "Tipo" (Entrada/Saída/Venda/Compra), colunas de valor separadas (ex: "Entrada"+"Saída" ou "Venda"+"Compra"), ou abas com esses nomes, uso o que vier de lá -- Base e Tipo aqui embaixo só valem pra quem não trouxer nada disso.`,
+    ]);
     function syncSimpleFlowOptions() {
       const isFin = simpleBasisSel.value === "financeiro";
       UI.clear(simpleFlowSel);
       (isFin ? [["entrada", "Entrada"], ["saida", "Saída"]] : [["venda", "Venda (saída de NFe)"], ["compra", "Compra (entrada de NFe)"]])
         .forEach(([v, l]) => simpleFlowSel.appendChild(UI.h("option", { value: v }, [l])));
-      simpleFlowHint.textContent = isFin
-        ? `Pra ter entrada e saída juntas no mesmo arquivo: coloque uma coluna "Tipo" (Entrada/Saída) ou duas colunas de valor, uma "Entrada" e outra "Saída" -- o que estiver na planilha vale linha a linha, isso aqui só é o padrão pro resto.`
-        : `Pra ter venda e compra juntas no mesmo arquivo: coloque uma coluna "Tipo" (Venda/Compra) ou duas colunas de valor, uma "Venda" e outra "Compra" -- o que estiver na planilha vale linha a linha, isso aqui só é o padrão pro resto.`;
       syncSimpleCatVisibility();
     }
     function syncSimpleCatVisibility() {
@@ -451,7 +452,7 @@
     syncSimpleFlowOptions();
 
     const simpleFieldsWrap = UI.h("div", { style: "display:none;flex-direction:column;gap:12px;margin-bottom:14px;" }, [
-      UI.h("div", { class: "field-row" }, [UI.field("Divisão (se a planilha não trouxer)", simpleDivSel), UI.field("Base", simpleBasisSel)]),
+      UI.h("div", { class: "field-row" }, [UI.field("Divisão (se a planilha não trouxer)", simpleDivSel), UI.field("Base (se a planilha não trouxer)", simpleBasisSel)]),
       UI.h("div", { class: "field-row" }, [UI.field("Tipo (se a planilha não trouxer)", simpleFlowSel), simpleCatField]),
       simpleFlowHint,
     ]);

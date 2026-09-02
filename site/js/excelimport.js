@@ -2,6 +2,19 @@
 // transações que o scripts/extract_xlsx.py usa para montar a base original,
 // com o mesmo mapeamento de colunas, para que dados novos (meses seguintes)
 // possam ser adicionados sem precisar gerar um novo data.js.
+//
+// js/vendor/xlsx.full.min.js tem um patch manual (o arquivo não tem gerenciador
+// de dependência/build pra reaplicar em upgrade -- se trocar esse vendor file,
+// checar se ainda precisa): o parser de .ods original lança uma exceção e
+// derruba a leitura do arquivo INTEIRO quando uma célula tem
+// office:value-type que não é nenhum dos padrão (boolean/float/percentage/
+// currency/date/time/string) -- acontece, por exemplo, com célula de fórmula
+// quebrada (#REF!, #DIV/0! etc.) que o programa que gerou o .ods marcou com
+// um tipo não padrão. O patch trata esse caso igual a uma célula de texto
+// (mesma coisa que já fazia pra string/text/vazio) em vez de derrubar a
+// leitura -- a célula em si fica sem valor numérico (a linha dela é ignorada
+// normalmente, como qualquer linha sem Data+Valor), mas o resto do arquivo
+// continua sendo lido certinho.
 (function (global) {
   // .xlsx/.xlsm/.xls são binário (ZIP ou OLE) e vão pro SheetJS como array de
   // bytes; qualquer outra coisa (.csv, .txt) é texto puro, e sem isso o
@@ -105,9 +118,11 @@
 
   // ---------------------------------------------------------------------
   // Importação simples: planilha qualquer (não o modelo de 8 abas da Max
-  // Led) -- lê só a 1ª aba, detecta as colunas Data/Contraparte/Valor/Nota
-  // pelo texto do cabeçalho (sem acento, sem caixa) e usa Divisão/Tipo/Base
-  // escolhidos manualmente (valem pra todas as linhas do arquivo).
+  // Led) -- lê TODAS as abas, detecta as colunas Data/Contraparte/Valor/Nota
+  // pelo texto do cabeçalho (sem acento, sem caixa) e a Divisão/Base/Tipo de
+  // cada linha pelo que a própria planilha trouxer (coluna, colunas de valor
+  // separadas, ou nome da aba); Divisão/Base/Tipo escolhidos no modal só
+  // valem de reserva, pra linha/aba que não trouxer nenhuma pista disso.
   // ---------------------------------------------------------------------
   const HEADER_SYNONYMS = {
     date: ["data", "date", "dia", "dt"],
@@ -137,15 +152,23 @@
     return noAccents;
   }
 
-  // Reconhece o texto de uma célula de "Tipo" (Entrada/Saída ou Venda/Compra,
-  // conforme a base escolhida) -- mesma ideia de normDivisaoConta/normTipoConta
-  // abaixo, só que pro par de valores da planilha simples de lançamentos.
-  function normFlowSimple(raw, basis) {
+  // Reconhece o texto de uma célula/nome de aba como Entrada/Saída/Venda/Compra
+  // -- olha as DUAS bases (não só a escolhida no modal) e devolve qual base +
+  // tipo bateu, pra planilha poder trazer financeiro e nota fiscal juntos
+  // (ex: aba "Vendas" e aba "Entradas" no mesmo arquivo) sem precisar que a
+  // pessoa escolha uma Base fixa pro arquivo inteiro -- mesma ideia de
+  // normDivisaoConta/normTipoConta abaixo, só que pro par valor/base daqui.
+  function detectBasisFlow(raw) {
     const s = normHeader(raw);
     if (!s) return null;
-    const table = FLOW_SIMPLE_SYNONYMS[basis] || FLOW_SIMPLE_SYNONYMS.financeiro;
-    const keys = Object.keys(table);
-    for (let i = 0; i < keys.length; i++) if (table[keys[i]].some((syn) => s.includes(syn))) return keys[i];
+    const bases = Object.keys(FLOW_SIMPLE_SYNONYMS);
+    for (let b = 0; b < bases.length; b++) {
+      const table = FLOW_SIMPLE_SYNONYMS[bases[b]];
+      const keys = Object.keys(table);
+      for (let i = 0; i < keys.length; i++) {
+        if (table[keys[i]].some((syn) => s.includes(syn))) return { basis: bases[b], flow: keys[i] };
+      }
+    }
     return null;
   }
 
@@ -189,15 +212,15 @@
     sheetNames.forEach((sheetName) => {
       const ws = wb.Sheets[sheetName];
       if (!ws) return;
-      const sheetFlow = normFlowSimple(sheetName, opts.basis);
-      const result = parseOneSheetGrid(ws, opts, sheetFlow);
+      const sheetBasisFlow = detectBasisFlow(sheetName);
+      const result = parseOneSheetGrid(ws, opts, sheetBasisFlow);
       if (result.rows.length) rows.push(...result.rows);
       perSheet.push({ sheetName, count: result.rows.length, usedHeader: result.usedHeader });
     });
     return { rows, sheetNames, perSheet };
   }
 
-  function parseOneSheetGrid(ws, opts, sheetFlow) {
+  function parseOneSheetGrid(ws, opts, sheetBasisFlow) {
     const grid = XLSX.utils.sheet_to_json(ws, { header: 1, raw: true, defval: null });
     if (!grid.length) return { rows: [], usedHeader: false };
 
@@ -230,14 +253,14 @@
       if (cols.date === null) cols.date = 0;
       if (cols.counterparty === null) cols.counterparty = 1;
       // Só chuta a coluna 2 como "Valor" se a planilha também não tiver duas
-      // colunas separadas pro par certo (Entrada/Saída ou Venda/Compra) --
-      // senão essa posição quase sempre É uma das duas colunas separadas
-      // (ex: "Venda" na coluna 2), e chutar "Valor" ali rouba a linha do
-      // caminho de detecção por coluna separada mais abaixo, fazendo cada
-      // linha cair no Tipo escolhido no modal em vez do que a própria coluna diz.
-      const hasSplitCols = opts.basis === "nfe"
-        ? (cols.vendaValor !== null || cols.compraValor !== null)
-        : (cols.entradaValor !== null || cols.saidaValor !== null);
+      // colunas separadas pra nenhum dos dois pares (Entrada/Saída ou
+      // Venda/Compra) -- senão essa posição quase sempre É uma das colunas
+      // separadas (ex: "Venda" na coluna 2), e chutar "Valor" ali rouba a
+      // linha do caminho de detecção por coluna separada mais abaixo, fazendo
+      // cada linha cair no Tipo escolhido no modal em vez do que a própria
+      // coluna diz. Não trava mais numa base fixa -- a planilha pode trazer
+      // qualquer um dos dois pares, com ou sem a Base do modal bater.
+      const hasSplitCols = cols.vendaValor !== null || cols.compraValor !== null || cols.entradaValor !== null || cols.saidaValor !== null;
       if (cols.value === null && !hasSplitCols) cols.value = 2;
       startRow = headerRowIndex + 1;
     } else {
@@ -256,41 +279,46 @@
       if (!row) continue;
       const iso = toIsoDate(row[cols.date]);
       // Valor: coluna única (Valor), ou -- se a planilha não tiver uma --
-      // colunas separadas pro par certo do vocabulário da base escolhida
-      // (Entrada/Saída no Financeiro, Venda/Compra na Nota Fiscal), olhando
-      // qual das duas veio preenchida na linha (o tipo já sai determinado
-      // disso também -- é o que permite venda e compra juntas num arquivo só).
+      // colunas separadas de um dos dois pares (Entrada/Saída ou
+      // Venda/Compra), olhando qual das duas veio preenchida na linha (a
+      // base+tipo já saem determinados disso também). Testa os dois pares
+      // (não só o da Base escolhida no modal) -- é o que permite a planilha
+      // trazer financeiro e nota fiscal juntos, cada linha com sua própria base.
       let valueVal = cols.value !== null ? row[cols.value] : null;
-      let colFlow = null;
+      let colBasisFlow = null;
       if (typeof valueVal !== "number") {
-        if (opts.basis === "nfe" && (cols.vendaValor !== null || cols.compraValor !== null)) {
+        if (cols.vendaValor !== null || cols.compraValor !== null) {
           const vv = cols.vendaValor !== null ? row[cols.vendaValor] : null;
           const cv = cols.compraValor !== null ? row[cols.compraValor] : null;
-          if (typeof vv === "number" && vv !== 0) { valueVal = vv; colFlow = "venda"; }
-          else if (typeof cv === "number" && cv !== 0) { valueVal = cv; colFlow = "compra"; }
-        } else if (cols.entradaValor !== null || cols.saidaValor !== null) {
+          if (typeof vv === "number" && vv !== 0) { valueVal = vv; colBasisFlow = { basis: "nfe", flow: "venda" }; }
+          else if (typeof cv === "number" && cv !== 0) { valueVal = cv; colBasisFlow = { basis: "nfe", flow: "compra" }; }
+        }
+        if (typeof valueVal !== "number" && (cols.entradaValor !== null || cols.saidaValor !== null)) {
           const ev = cols.entradaValor !== null ? row[cols.entradaValor] : null;
           const sv = cols.saidaValor !== null ? row[cols.saidaValor] : null;
-          if (typeof ev === "number" && ev !== 0) { valueVal = ev; colFlow = "entrada"; }
-          else if (typeof sv === "number" && sv !== 0) { valueVal = sv; colFlow = "saida"; }
+          if (typeof ev === "number" && ev !== 0) { valueVal = ev; colBasisFlow = { basis: "financeiro", flow: "entrada" }; }
+          else if (typeof sv === "number" && sv !== 0) { valueVal = sv; colBasisFlow = { basis: "financeiro", flow: "saida" }; }
         }
       }
       if (!iso || typeof valueVal !== "number") continue;
       const division = (cols.divisao !== null && row[cols.divisao] != null ? normDivisaoConta(row[cols.divisao]) : null) || opts.division;
-      // Ordem de prioridade pro Tipo da linha: coluna "Tipo" da própria linha
-      // -> colunas de valor separadas (colFlow) -> nome da aba (sheetFlow,
-      // ex: aba "Compras") -> Tipo escolhido no modal (opts.flow, só quando
-      // nada acima deu pista nenhuma). colFlow/sheetFlow já saem no
-      // vocabulário certo pra base escolhida (não precisa mais travar por
-      // basis aqui como antes).
-      const flow = (cols.tipo !== null && row[cols.tipo] != null ? normFlowSimple(row[cols.tipo], opts.basis) : null)
-        || colFlow || sheetFlow || opts.flow;
-      const isExpenseLike = (opts.basis === "financeiro" && flow === "saida") || (opts.basis === "nfe" && flow === "compra");
+      // Ordem de prioridade pra Base+Tipo da linha: coluna "Tipo" da própria
+      // linha -> colunas de valor separadas (colBasisFlow) -> nome da aba
+      // (sheetBasisFlow, ex: aba "Compras") -> Base/Tipo escolhidos no modal
+      // (opts.*, só quando nada acima deu pista nenhuma). Cada uma dessas
+      // pistas já resolve base E tipo juntos -- não trava mais numa base fixa
+      // pro arquivo inteiro, então uma aba de financeiro e uma de nota fiscal
+      // no mesmo arquivo saem cada uma com a base certa.
+      const resolved = (cols.tipo !== null && row[cols.tipo] != null ? detectBasisFlow(row[cols.tipo]) : null)
+        || colBasisFlow || sheetBasisFlow || { basis: opts.basis, flow: opts.flow };
+      const basis = resolved.basis;
+      const flow = resolved.flow;
+      const isExpenseLike = (basis === "financeiro" && flow === "saida") || (basis === "nfe" && flow === "compra");
       const category = isExpenseLike
         ? ((cols.categoria !== null && row[cols.categoria] != null ? normCat(row[cols.categoria]) : null) || opts.category || null)
         : null;
       rows.push({
-        date: iso, division, basis: opts.basis, flow, category,
+        date: iso, division, basis, flow, category,
         counterparty: row[cols.counterparty] !== null && row[cols.counterparty] !== undefined ? String(row[cols.counterparty]).trim() : null,
         value: Math.round(Math.abs(valueVal) * 100) / 100,
         nota_fiscal: cols.nota !== null ? fmtNota(row[cols.nota]) : null,
