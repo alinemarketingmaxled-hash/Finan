@@ -229,7 +229,7 @@
       summaryBox.appendChild(document.createTextNode("Lendo arquivo…"));
       try {
         const buf = await file.arrayBuffer();
-        const result = ExcelImport.parseNotasFiscais(buf, {
+        const result = await ExcelImport.parseNotasFiscais(buf, {
           tipoFallback: tipoFallbackSel.value || null,
           divisionFallback: divFallbackSel.value || null,
         });

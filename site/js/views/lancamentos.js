@@ -588,7 +588,7 @@
         const buf = await file.arrayBuffer();
         let rows, missingSheets, sheetBreakdown = null;
         if (mode === "simples") {
-          const result = ExcelImport.parseSimpleSheet(buf, {
+          const result = await ExcelImport.parseSimpleSheet(buf, {
             division: simpleDivSel.value, basis: simpleBasisSel.value, flow: simpleFlowSel.value, category: simpleCatSel.value || null,
           });
           rows = result.rows;
@@ -606,7 +606,7 @@
             return;
           }
         } else {
-          const result = ExcelImport.parseWorkbook(buf);
+          const result = await ExcelImport.parseWorkbook(buf);
           rows = result.rows; missingSheets = result.missingSheets;
           if (!result.found.length) {
             UI.clear(summaryBox);
@@ -628,7 +628,7 @@
         ];
         if (s.total) lines.push(`Novos: ${Fmt.monthLabel(s.minDate.slice(0, 7))} até ${Fmt.monthLabel(s.maxDate.slice(0, 7))} · Iluminação: ${s.byDivision.iluminacao || 0} · Importação: ${s.byDivision.importacao || 0}.`);
         if (missingSheets.length) lines.push(`Abas não encontradas (ok se não usa): ${missingSheets.join(", ")}.`);
-        if (sheetBreakdown) lines.push(`Por aba: ${sheetBreakdown.map((s2) => `${s2.sheetName} (${s2.count})`).join(" · ")}.`);
+        if (sheetBreakdown) lines.push(`Por aba: ${sheetBreakdown.map((s2) => `${s2.sheetName} (${s2.unrecognized ? "estrutura não reconhecida" : s2.count})`).join(" · ")}.`);
         lines.forEach((l) => summaryBox.appendChild(UI.h("div", {}, [l])));
 
         const { categories, weirdNotas } = ExcelImport.analyzeUnknowns(toAdd);
