@@ -471,6 +471,32 @@
       confirmBtn.style.opacity = ".5";
     }
 
+    // Filtro por aba (só quando o arquivo tem mais de uma aba com linha de
+    // verdade, ex: uma aba por mês): cada aba vira uma caixinha marcada por
+    // padrão -- desmarcar tira TODAS as linhas daquela aba da lista de uma
+    // vez (ex: "só quero Agosto" -- desmarca as outras 7). Reaproveita o
+    // mesmo Set `included` da lista de revisão logo abaixo.
+    function buildSheetFilter(rows, included, onChange) {
+      const bySheet = new Map();
+      rows.forEach((r, i) => {
+        if (!bySheet.has(r.sheetName)) bySheet.set(r.sheetName, []);
+        bySheet.get(r.sheetName).push(i);
+      });
+      const items = Array.from(bySheet.entries()).map(([sheetName, indices]) => {
+        const cb = UI.h("input", { type: "checkbox" });
+        cb.checked = indices.every((i) => included.has(i));
+        cb.addEventListener("change", () => {
+          indices.forEach((i) => { if (cb.checked) included.add(i); else included.delete(i); });
+          onChange();
+        });
+        return UI.h("label", { style: "display:flex;align-items:center;gap:5px;font-size:12px;cursor:pointer;" }, [cb, `${sheetName} (${indices.length})`]);
+      });
+      return UI.h("div", { style: "display:flex;flex-direction:column;gap:6px;padding:10px;border:1px solid var(--border);border-radius:8px;" }, [
+        UI.h("div", { style: "font-size:11.5px;font-weight:700;color:var(--text-secondary);" }, ["Só trazer da(s) aba(s):"]),
+        UI.h("div", { style: "display:flex;flex-wrap:wrap;gap:10px;" }, items),
+      ]);
+    }
+
     // Lista de revisão (só planilha simples): cada linha lida vira uma
     // caixinha marcada por padrão -- desmarcar tira ESSA linha da importação,
     // sem precisar escolher um tipo só pro arquivo inteiro. O segmentado
@@ -660,8 +686,15 @@
         if (mode === "simples" && toAdd.length) {
           reviewIncluded = new Set(toAdd.map((r, i) => i));
           reviewBox.style.display = "flex";
-          UI.clear(reviewBox);
-          reviewBox.appendChild(buildReviewChecklist(toAdd, reviewIncluded, updateConfirmState));
+          const distinctSheets = new Set(toAdd.map((r) => r.sheetName));
+          const renderReviewArea = () => {
+            UI.clear(reviewBox);
+            if (distinctSheets.size > 1) {
+              reviewBox.appendChild(buildSheetFilter(toAdd, reviewIncluded, () => { updateConfirmState(); renderReviewArea(); }));
+            }
+            reviewBox.appendChild(buildReviewChecklist(toAdd, reviewIncluded, updateConfirmState));
+          };
+          renderReviewArea();
         }
         updateConfirmState();
       } catch (e) {
@@ -681,6 +714,9 @@
         classifySelects.forEach(({ raw, select }) => { mapping[raw] = select.value; });
         toImport = ExcelImport.applyCategoriaClassification(toImport, mapping);
       }
+      // sheetName só serve pro filtro por aba aqui no modal -- não faz parte
+      // do formato de lançamento gravado.
+      toImport = toImport.map((r) => { const copy = Object.assign({}, r); delete copy.sheetName; return copy; });
       Storage.addLancamentosBulk(toImport, "import");
       UI.toast(`${Fmt.num(toImport.length)} lançamento(s) importado(s).`);
       m.close();

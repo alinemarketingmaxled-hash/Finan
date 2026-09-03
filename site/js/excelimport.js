@@ -378,7 +378,11 @@
       if (!ws) return;
       const sheetBasisFlow = detectBasisFlow(sheetName);
       const result = parseOneSheetGrid(ws, opts, sheetBasisFlow);
-      if (result.rows.length) rows.push(...result.rows);
+      // sheetName vai junto em cada linha só pra dar pra filtrar por aba
+      // (ex: "só quero o mês de Agosto") na tela de revisão antes de
+      // confirmar -- removido de novo antes de gravar (Storage.addLancamentosBulk
+      // ganha só o que sobrou depois do filtro, sem esse campo a mais).
+      if (result.rows.length) rows.push(...result.rows.map((r) => Object.assign({}, r, { sheetName })));
       perSheet.push({ sheetName, count: result.rows.length, usedHeader: result.usedHeader, unrecognized: result.unrecognized });
     });
     return { rows, sheetNames, perSheet };
