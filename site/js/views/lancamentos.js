@@ -298,6 +298,7 @@
   function flowCell(r) {
     const children = [flowBadge(r.flow)];
     if (r.cancelled) children.push(UI.badge("Cancelado", "critical"));
+    if (r.needsReview) children.push(UI.badge("Revisar valor", "warning"));
     return UI.h("div", { style: "display:flex;gap:4px;align-items:center;flex-wrap:wrap;" }, children);
   }
 
@@ -507,7 +508,10 @@
             { key: "division", label: "Divisão", render: (i) => UI.badgeDivision(rows[i].division) },
             { key: "category", label: "Categoria", render: (i) => (rows[i].category ? UI.badge(Fmt.titleCase(rows[i].category), "muted") : "—") },
             { key: "counterparty", label: "Contraparte", wrap: true, render: (i) => rows[i].counterparty || "—" },
-            { key: "value", label: "Valor", align: "right", render: (i) => Fmt.money(rows[i].value) },
+            {
+              key: "value", label: "Valor", align: "right", render: (i) => UI.h("div", { style: "display:flex;gap:5px;align-items:center;justify-content:flex-end;" },
+                rows[i].needsReview ? [UI.badge("Revisar", "warning"), Fmt.money(rows[i].value)] : [Fmt.money(rows[i].value)]),
+            },
           ],
           rows: indices,
           emptyText: "Nenhuma linha nesse filtro.",
@@ -515,6 +519,7 @@
       }
 
       const entradaCount = rows.filter(isEntradaLike).length;
+      const reviewCount = rows.filter((r) => r.needsReview).length;
       const seg = UI.segmented([
         { value: "todas", label: `Todas (${rows.length})` },
         { value: "entrada", label: `Entradas (${entradaCount})` },
@@ -531,6 +536,15 @@
         ]),
         countLabel, tableWrap,
       ]);
+      if (reviewCount) {
+        wrap.insertBefore(UI.h("div", { class: "insight warning" }, [
+          UI.h("div", { class: "insight-icon" }, [Icon("alertTriangle", { size: 17 })]),
+          UI.h("div", {}, [
+            UI.h("div", { class: "insight-title" }, [`${reviewCount} linha(s) sem um valor que dava pra ler`]),
+            UI.h("div", { class: "insight-body" }, [`Célula quebrada ou ilegível na planilha (ex: fórmula com erro) -- entram com R$0,00 e marcadas "Revisar", pra você corrigir o valor certo depois de importar, direto na lista de Lançamentos.`]),
+          ]),
+        ]), tableWrap);
+      }
       refreshTable();
       updateCount();
       return wrap;
@@ -545,7 +559,7 @@
       fileInput.value = "";
       UI.clear(summaryBox);
       summaryBox.appendChild(document.createTextNode(mode === "simples"
-        ? "Selecione o arquivo. Leio a 1ª aba e tento achar as colunas de Data/Divisão/Tipo/Categoria/Contraparte/Valor pelo cabeçalho (entrada e saída podem estar juntas numa coluna Tipo, ou separadas em duas colunas de valor); o que a planilha não trouxer usa a Divisão/Base/Tipo/Categoria escolhidos acima. Depois de ler, você escolhe linha a linha o que entra. Sem cabeçalho reconhecível, uso as 3 primeiras colunas como Data/Contraparte/Valor."
+        ? "Selecione o arquivo. Leio todas as abas e tento achar as colunas de Data/Divisão/Base/Tipo/Categoria/Contraparte/Valor pelo cabeçalho (financeiro e nota fiscal podem estar juntos, numa coluna Tipo ou em colunas de valor separadas, ou até em abas diferentes); o que a planilha não trouxer usa a Divisão/Base/Tipo/Categoria escolhidos acima. Linha sem data não entra; linha com valor ilegível entra com R$0,00 marcada pra revisar (nunca some sozinha). Depois de ler, você escolhe linha a linha o que entra. Sem cabeçalho reconhecível, uso as 3 primeiras colunas como Data/Contraparte/Valor."
         : "Selecione o arquivo .xlsx atualizado (o mesmo formato/abas da planilha da Max Led). Vou ler tudo e adicionar só o que ainda não está aqui — nada é duplicado."));
       resetFileState();
     });
@@ -792,6 +806,7 @@
         category: isExpenseLike() ? catSel.value : null,
         counterparty, value, note: noteInput.value.trim(),
         nota_fiscal: notaInput.value.trim() || null,
+        needsReview: false, // valor > 0 obrigatório pra chegar aqui (ver validação acima) -- se veio de uma importação "revisar", já foi revisado.
       };
       if (isEdit) {
         if (existing.manual) Storage.updateLancamento(existing.id, patch);

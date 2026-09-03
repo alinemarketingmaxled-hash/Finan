@@ -300,7 +300,16 @@
           else if (typeof sv === "number" && sv !== 0) { valueVal = sv; colBasisFlow = { basis: "financeiro", flow: "saida" }; }
         }
       }
-      if (!iso || typeof valueVal !== "number") continue;
+      // Sem data não dá pra importar de jeito nenhum (não tem mês/dia pra
+      // colocar a linha em lugar nenhum do sistema) -- essa continua pulando.
+      // Sem valor utilizável (célula de fórmula quebrada, valor ilegível,
+      // planilha sem nenhuma coluna de valor reconhecida) NÃO pula mais: a
+      // pedido, entra do mesmo jeito com R$0,00 e marcada pra revisar, em vez
+      // de sumir sem deixar rastro -- fica fácil de achar depois (filtro
+      // "revisar" na lista de conferência, e destacada na tela de Lançamentos).
+      if (!iso) continue;
+      const needsReview = typeof valueVal !== "number";
+      if (needsReview) valueVal = 0;
       const division = (cols.divisao !== null && row[cols.divisao] != null ? normDivisaoConta(row[cols.divisao]) : null) || opts.division;
       // Ordem de prioridade pra Base+Tipo da linha: coluna "Tipo" da própria
       // linha -> colunas de valor separadas (colBasisFlow) -> nome da aba
@@ -322,6 +331,7 @@
         counterparty: row[cols.counterparty] !== null && row[cols.counterparty] !== undefined ? String(row[cols.counterparty]).trim() : null,
         value: Math.round(Math.abs(valueVal) * 100) / 100,
         nota_fiscal: cols.nota !== null ? fmtNota(row[cols.nota]) : null,
+        needsReview,
       });
     }
     return { rows, usedHeader: headerRowIndex >= 0 };

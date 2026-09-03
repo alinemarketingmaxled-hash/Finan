@@ -10,7 +10,7 @@
       id: m.id, date: m.date, division: m.division, basis: m.basis || "financeiro",
       flow: m.flow, category: m.category || null, counterparty: m.counterparty || null,
       value: Number(m.value) || 0, manual: true, origin: m.origin || null, note: m.note || "",
-      nota_fiscal: m.nota_fiscal || null, cancelled: !!m.cancelled,
+      nota_fiscal: m.nota_fiscal || null, cancelled: !!m.cancelled, needsReview: !!m.needsReview,
     };
   }
 
