@@ -27,6 +27,8 @@
       { id: "forecast", label: "Forecast", icon: "trendingUp" },
       { id: "cenarios", label: "Cenários", icon: "fork" },
       { id: "investimentos", label: "Investimentos", icon: "sparkles" },
+      { id: "marketing", label: "Marketing", icon: "megaphone" },
+      { id: "comoanalisar", label: "Como Analisar", icon: "bulb" },
     ] },
     { group: "Sistema", items: [
       { id: "usuarios", label: "Gerenciar Usuários", icon: "building" },
@@ -55,6 +57,8 @@
     cenarios: ["Cenários", "Base, Conservador, Crescimento e simulação rápida sobre o Forecast"],
     investimentos: ["Investimentos", "Capacidade de investir e decisão registrada (avaliando/aprovado/rejeitado)"],
     visaoestrategica: ["Visão Estratégica", "Resumo executivo de 1 tela -- caixa, receita, dívida, obrigações, capacidade e alertas"],
+    marketing: ["Marketing", "Quanto um investimento em publicidade precisa trazer de retorno pra se pagar"],
+    comoanalisar: ["Como Analisar", "Roteiro em tópicos de como juntar os números do painel numa decisão"],
     usuarios: ["Gerenciar Usuários", "Quem tem acesso ao painel — adicionar, editar ou remover contas"],
     importacoes: ["Importações", "Planilhas Excel já importadas — revisar, editar ou remover cada lote"],
     backup: ["Backup & Exportação", "Exportar, importar e imprimir seus dados"],
@@ -134,7 +138,13 @@
     const printBtn = UI.h("button", { class: "icon-btn no-print", title: "Imprimir / exportar PDF" }, [Icon("printer", { size: 16 })]);
     printBtn.addEventListener("click", () => window.print());
 
-    const right = UI.h("div", { class: "topbar-right" }, [buildSyncWidget(), printBtn, themeBtn]);
+    const rightChildren = [buildSyncWidget(), printBtn, themeBtn];
+    if (Tour.isAvailable(state.view)) {
+      const helpBtn = UI.h("button", { class: "icon-btn no-print", title: "Tour guiado desta página" }, [Icon("info", { size: 16 })]);
+      helpBtn.addEventListener("click", () => Tour.start(state.view));
+      rightChildren.unshift(helpBtn);
+    }
+    const right = UI.h("div", { class: "topbar-right" }, rightChildren);
     topbarEl.appendChild(left);
     topbarEl.appendChild(right);
   }
@@ -199,17 +209,51 @@
     return window.matchMedia ? matchMedia("(prefers-color-scheme: dark)").matches : true;
   }
 
+  // Só null na primeira carga -- garante que o prompt de tour e o
+  // encerramento do tour ativo disparem exatamente na troca de página, nunca
+  // num re-render da mesma página (filtro de divisão, salvar um formulário).
+  let lastRenderedView = null;
+
+  function removeTourPrompt() {
+    const el = document.querySelector('[data-role="tourprompt"]');
+    if (el) el.remove();
+  }
+
+  // Prompt automático, uma vez por página por sessão -- ver Tour.shouldPrompt.
+  function maybeShowTourPrompt(view) {
+    if (!Tour.shouldPrompt(view)) return;
+    Tour.markPrompted(view);
+    const yesBtn = UI.h("button", { class: "btn btn-accent btn-sm" }, ["Ver tour"]);
+    yesBtn.addEventListener("click", () => { removeTourPrompt(); Tour.start(view); });
+    const noBtn = UI.h("button", { class: "btn btn-sm" }, ["Agora não"]);
+    noBtn.addEventListener("click", removeTourPrompt);
+    const box = UI.h("div", { class: "tour-prompt" }, [
+      UI.h("div", { class: "tour-prompt-title" }, ["Quer um tour rápido desta página?"]),
+      UI.h("div", { class: "tour-prompt-body" }, ["Mostra rapidamente o que cada parte da tela significa."]),
+      UI.h("div", { style: "display:flex;gap:8px;justify-content:flex-end;" }, [noBtn, yesBtn]),
+    ]);
+    box.setAttribute("data-role", "tourprompt");
+    document.body.appendChild(box);
+  }
+
   function render() {
     UI.closeAllModals();
     buildSidebar();
     buildTopbar();
     UI.clear(contentEl);
     const state = AppState.get();
+    const isNewPageVisit = state.view !== lastRenderedView;
+    if (isNewPageVisit) {
+      Tour.onNavigate(state.view);
+      removeTourPrompt();
+      lastRenderedView = state.view;
+    }
     const view = window.Views && window.Views[state.view];
     if (view) view(contentEl);
     else contentEl.appendChild(UI.emptyState({ icon: "info", title: "Página não encontrada" }));
     window.scrollTo({ top: 0 });
     ClassifyBar.mount();
+    if (isNewPageVisit) maybeShowTourPrompt(state.view);
   }
 
   function routeFromHash() {

@@ -35,7 +35,7 @@
     ]));
 
     container.appendChild(UI.sectionTitle("Capacidade mês a mês", "Confirmado − Estimado (dívida) − caixa mínimo − já aprovado = capacidade"));
-    container.appendChild(UI.h("div", { class: "card" }, [UI.table({
+    container.appendChild(UI.h("div", { class: "card", "data-tour": "iv-formula" }, [UI.table({
       columns: [
         { key: "month", label: "Mês", render: (r) => Fmt.monthLabel(r.month, "full") },
         { key: "confirmado", label: "Confirmado", align: "right", render: (r) => Fmt.money(r.confirmado) },
@@ -48,15 +48,17 @@
     })]));
 
     const list = Storage.listInvestimentos();
-    container.appendChild(UI.sectionTitle("Investimentos cadastrados", `${list.length} no total`));
+    const listSection = UI.h("div", { "data-tour": "iv-list" }, []);
+    container.appendChild(listSection);
+    listSection.appendChild(UI.sectionTitle("Investimentos cadastrados", `${list.length} no total`));
     if (!list.length) {
-      container.appendChild(UI.card([UI.emptyState({
+      listSection.appendChild(UI.card([UI.emptyState({
         icon: "wallet", title: "Nenhum investimento cadastrado",
         body: "Clique em \"Novo investimento\" pra registrar uma decisão em avaliação.",
       })]));
       return;
     }
-    container.appendChild(UI.h("div", { class: "card" }, [UI.table({
+    listSection.appendChild(UI.h("div", { class: "card" }, [UI.table({
       columns: [
         { key: "nome", label: "Nome", wrap: true },
         { key: "divisao", label: "Divisão", render: (r) => (r.divisao ? UI.badgeDivision(r.divisao) : UI.badge("Todas", "muted")) },

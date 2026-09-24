@@ -17,6 +17,7 @@
     loansExtras: NS + "loansExtras",
     cenarios: NS + "cenarios",
     investimentos: NS + "investimentos",
+    marketingSimulacoes: NS + "marketingSimulacoes",
   };
 
   function read(key, fallback) {
@@ -282,6 +283,19 @@
       write(KEYS.investimentos, this.listInvestimentos().filter((i) => i.id !== id));
     },
 
+    // ---- simulações de retorno de marketing (Planejamento) ----
+    listMarketingSimulacoes() { return read(KEYS.marketingSimulacoes, []); },
+    addMarketingSimulacao(sim) {
+      const list = this.listMarketingSimulacoes();
+      const row = Object.assign({ id: uid(), createdAt: new Date().toISOString() }, sim);
+      list.push(row);
+      write(KEYS.marketingSimulacoes, list);
+      return row;
+    },
+    removeMarketingSimulacao(id) {
+      write(KEYS.marketingSimulacoes, this.listMarketingSimulacoes().filter((s) => s.id !== id));
+    },
+
     // ---- config ----
     getConfig() { return read(KEYS.config, {}); },
     setConfig(patch) {
@@ -307,6 +321,7 @@
         loansExtras: this.listLoansExtras(),
         cenarios: this.listCenarios(),
         investimentos: this.listInvestimentos(),
+        marketingSimulacoes: this.listMarketingSimulacoes(),
       };
     },
     importAll(payload) {
@@ -324,6 +339,7 @@
       if (Array.isArray(payload.loansExtras)) write(KEYS.loansExtras, payload.loansExtras);
       if (Array.isArray(payload.cenarios)) write(KEYS.cenarios, payload.cenarios);
       if (Array.isArray(payload.investimentos)) write(KEYS.investimentos, payload.investimentos);
+      if (Array.isArray(payload.marketingSimulacoes)) write(KEYS.marketingSimulacoes, payload.marketingSimulacoes);
     },
     resetAll() {
       Object.values(KEYS).forEach((k) => localStorage.removeItem(k));

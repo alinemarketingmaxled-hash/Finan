@@ -8,7 +8,7 @@
     const st = AppState.get();
     UI.filterBar(container, { showMonth: false });
 
-    container.appendChild(UI.h("div", { class: "insight info", style: "margin-bottom:20px;" }, [
+    container.appendChild(UI.h("div", { class: "insight info", style: "margin-bottom:20px;", "data-tour": "fc-insight" }, [
       UI.h("div", { class: "insight-icon" }, [Icon("info", { size: 17 })]),
       UI.h("div", {}, [
         UI.h("div", { class: "insight-title" }, ["O que é este número"]),
@@ -46,8 +46,9 @@
     ]));
 
     container.appendChild(UI.sectionTitle("Realizado vs Projetado", "Linha tracejada = projeção por tendência"));
-    container.appendChild(UI.h("div", { style: "margin-bottom:12px;" }, [UI.statusLegend()]));
-    container.appendChild(UI.chartCardWithTable({
+    const fcLegend = UI.h("div", { style: "margin-bottom:12px;", "data-tour": "fc-legend" }, [UI.statusLegend()]);
+    container.appendChild(fcLegend);
+    const fcChartCard = UI.chartCardWithTable({
       title: "Entradas vs Saídas",
       subtitle: UI.divisionLabel(st.division),
       draw: (wrap) => Charts.lineArea(wrap, {
@@ -66,7 +67,9 @@
         { key: "status", label: "Situação", render: (r) => UI.statusBadge(r.status) },
       ],
       rows,
-    }));
+    });
+    fcChartCard.setAttribute("data-tour", "fc-chart");
+    container.appendChild(fcChartCard);
 
     container.appendChild(UI.sectionTitle("Resultado mensal projetado", "Verde = superávit · vermelho = déficit"));
     container.appendChild(UI.chartCardWithTable({

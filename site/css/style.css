@@ -460,9 +460,33 @@ table.data-table { width: 100%; font-size: 13px; }
   .field-row { grid-template-columns: 1fr; }
 }
 
+/* Como Analisar -- cards estilo flashcard, com brilho colorido cíclico */
+.topic-card { position: relative; z-index: 0; display: flex; flex-direction: column; gap: 10px; min-height: 190px; border-radius: 16px; padding: 18px; background: linear-gradient(180deg, var(--surface-2), var(--surface) 65%); border: 1px solid var(--border); }
+.topic-card::before { content: ""; position: absolute; inset: -14px; z-index: -1; border-radius: 28px; filter: blur(30px); opacity: .35; pointer-events: none; background: var(--tc-glow, var(--accent)); }
+.topic-card.tc-1 { --tc-glow: var(--accent); box-shadow: 0 0 0 1px rgba(242,169,60,.4), 0 0 30px -6px rgba(242,169,60,.75); }
+.topic-card.tc-2 { --tc-glow: var(--series-1); box-shadow: 0 0 0 1px rgba(57,135,229,.4), 0 0 30px -6px rgba(57,135,229,.75); }
+.topic-card.tc-3 { --tc-glow: var(--series-3); box-shadow: 0 0 0 1px rgba(25,158,112,.4), 0 0 30px -6px rgba(25,158,112,.75); }
+.topic-num { flex: none; width: 32px; height: 32px; border-radius: 10px; background: var(--tc-glow, var(--accent)); color: #161511; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 13px; }
+.topic-title { font-size: 14px; font-weight: 700; }
+.topic-body { font-size: 12.5px; color: var(--text-secondary); line-height: 1.6; flex: 1; }
+.topic-body b { color: var(--text-primary); }
+.topic-link { font-size: 12px; font-weight: 700; color: var(--tc-glow, var(--accent)); background: none; border: none; padding: 0; cursor: pointer; text-align: left; }
+
+/* Tour com spotlight -- realça o elemento real, escurece o resto */
+.tour-highlight { position: relative; z-index: 1001; box-shadow: 0 0 0 9999px rgba(0,0,0,.72); border-radius: 12px; }
+.tour-bar { position: fixed; left: 50%; bottom: 22px; transform: translateX(-50%); z-index: 1002; background: var(--surface-2); border: 1px solid var(--border-strong); border-radius: 12px; padding: 12px 14px; display: flex; align-items: center; gap: 10px; box-shadow: 0 14px 34px rgba(0,0,0,.45); max-width: min(520px, 92vw); }
+.tour-bar .tour-counter { font-size: 11px; color: var(--text-muted); flex: none; white-space: nowrap; }
+.tour-bar .tour-text { flex: 1; min-width: 0; }
+.tour-bar .tour-title { font-weight: 700; font-size: 12.5px; margin-bottom: 2px; }
+.tour-bar .tour-body { font-size: 11.5px; color: var(--text-secondary); line-height: 1.4; }
+.tour-prompt { position: fixed; right: 22px; top: 84px; z-index: 1002; background: var(--surface-2); border: 1px solid var(--border-strong); border-radius: 12px; padding: 14px; max-width: 260px; box-shadow: 0 14px 34px rgba(0,0,0,.45); }
+.tour-prompt .tour-prompt-title { font-weight: 700; font-size: 13px; margin-bottom: 6px; }
+.tour-prompt .tour-prompt-body { font-size: 12px; color: var(--text-secondary); margin-bottom: 10px; line-height: 1.5; }
+
 /* Print */
 @media print {
-  .sidebar, .topbar, .filter-row, .btn, .no-print { display: none !important; }
+  .sidebar, .topbar, .filter-row, .btn, .no-print, .tour-bar, .tour-prompt { display: none !important; }
   .app-shell { display: block; }
   .content { padding: 0; max-width: none; }
+  .tour-highlight { box-shadow: none !important; }
 }

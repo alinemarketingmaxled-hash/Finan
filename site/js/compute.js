@@ -882,6 +882,31 @@
     }).sort((a, b) => b.pct - a.pct);
   }
 
+  // ---------------------------------------------------------------------
+  // Marketing: quanto um investimento em publicidade/marketing precisa
+  // trazer de volta em vendas pra pelo menos se pagar. Usa a margem bruta
+  // real do período (receita menos impostos e custo de mercadoria, antes
+  // das despesas fixas) -- é o número certo pra isso, porque uma venda
+  // extra gerada pela campanha ainda tem custo de mercadoria, mas não
+  // costuma aumentar despesa fixa (aluguel, folha etc.). Margem líquida
+  // também é mostrada, como referência mais conservadora. Sem margem
+  // positiva no período, não dá pra calcular um retorno mínimo honesto.
+  // ---------------------------------------------------------------------
+  function marketingReturnNeeded(division, month, valorInvestido) {
+    const dre = dreForPeriod(division, month, "financeiro");
+    const valor = Number(valorInvestido) || 0;
+    const margemBruta = dre.margem_bruta;
+    const margemLiquida = dre.margem_liquida;
+    return {
+      valorInvestido: round2(valor),
+      margemBruta, margemLiquida,
+      receitaBrutaPeriodo: dre.receita_bruta,
+      retornoMinimoBruto: margemBruta > 0 ? round2(valor / margemBruta) : null,
+      retornoMinimoLiquido: margemLiquida > 0 ? round2(valor / margemLiquida) : null,
+      roasMinimo: margemBruta > 0 ? round2(1 / margemBruta) : null,
+    };
+  }
+
   // Série mensal de uma categoria de despesa -- só existe pra meses com
   // lançamento detalhado (a base agregada de 2025 não guarda categoria por
   // mês, só total; ver dreForYear). Base de categoryForecast().
@@ -1004,6 +1029,6 @@
     loans, loansTotals, receivablesPayables, receivablesPayablesWindow, healthScore, insights, actionPlan, budgetStatus, pipelineSummary, pipelineInstallments,
     forecast, loanInstallmentsForecast, visaoFutura,
     applyScenario, scenariosSummary, committedInvestments, investmentCapacity,
-    categoryForecast, metaStatus,
+    categoryForecast, metaStatus, marketingReturnNeeded,
   };
 })(window);

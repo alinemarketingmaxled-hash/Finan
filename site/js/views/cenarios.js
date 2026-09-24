@@ -22,7 +22,7 @@
 
     const scenarios = Compute.scenariosSummary(st.division, { monthsAhead: 12 });
     container.appendChild(UI.sectionTitle("Cenários", "Base, Conservador, Crescimento e os que você salvar"));
-    container.appendChild(UI.h("div", { class: "grid grid-3", style: "align-items:start;" }, scenarios.map(scenarioCard)));
+    container.appendChild(UI.h("div", { class: "grid grid-3", style: "align-items:start;", "data-tour": "cn-cards" }, scenarios.map(scenarioCard)));
 
     const saved = Storage.listCenarios();
     if (saved.length) {
@@ -125,7 +125,7 @@
     });
 
     container.appendChild(UI.sectionTitle("Simulação rápida", "Não salva nada até você clicar em \"Salvar como cenário\""));
-    container.appendChild(UI.h("div", { class: "card", style: "margin-bottom:20px;" }, [
+    container.appendChild(UI.h("div", { class: "card", style: "margin-bottom:20px;", "data-tour": "cn-quicksim" }, [
       UI.h("div", { class: "field-row" }, [
         UI.field("Variação de receita", UI.h("div", { style: "display:flex;align-items:center;gap:10px;" }, [receitaInput, receitaLabel])),
         UI.field("Variação de despesa", UI.h("div", { style: "display:flex;align-items:center;gap:10px;" }, [despesaInput, despesaLabel])),

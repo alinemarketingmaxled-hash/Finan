@@ -14,7 +14,7 @@
     const st = AppState.get();
     UI.filterBar(container, { showMonth: false });
 
-    container.appendChild(UI.h("div", { class: "insight info", style: "margin-bottom:20px;" }, [
+    container.appendChild(UI.h("div", { class: "insight info", style: "margin-bottom:20px;", "data-tour": "vf-insight" }, [
       UI.h("div", { class: "insight-icon" }, [Icon("info", { size: 17 })]),
       UI.h("div", {}, [
         UI.h("div", { class: "insight-title" }, ["Como ler esta tela"]),
@@ -42,7 +42,7 @@
 
     container.appendChild(UI.sectionTitle("Resultado combinado por mês", "Confirmado + Projetado -- barra tracejada mostra participação do Confirmado"));
     container.appendChild(UI.h("div", { style: "margin-bottom:12px;" }, [UI.statusLegend()]));
-    container.appendChild(UI.chartCardWithTable({
+    const vfChartCard = UI.chartCardWithTable({
       title: "Confirmado vs Projetado",
       subtitle: UI.divisionLabel(st.division),
       draw: (wrap) => Charts.lineArea(wrap, {
@@ -55,7 +55,9 @@
       }),
       columns: tableColumns(),
       rows,
-    }));
+    });
+    vfChartCard.setAttribute("data-tour", "vf-chart");
+    container.appendChild(vfChartCard);
 
     container.appendChild(UI.sectionTitle("Resultado acumulado projetado", "Soma corrida desde o início do histórico -- não é saldo bancário real"));
     container.appendChild(UI.chartCardWithTable({
@@ -74,7 +76,7 @@
     }));
 
     container.appendChild(UI.sectionTitle("Detalhe mensal", "Confirmado, Estimado (à parte) e Projetado lado a lado"));
-    container.appendChild(UI.h("div", { class: "card" }, [UI.table({ columns: tableColumns(), rows })]));
+    container.appendChild(UI.h("div", { class: "card", "data-tour": "vf-table" }, [UI.table({ columns: tableColumns(), rows })]));
   }
 
   function tableColumns() {

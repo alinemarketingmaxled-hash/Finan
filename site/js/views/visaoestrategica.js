@@ -25,7 +25,7 @@
     const receitaMeta = Storage.listMetas().find((m) => m.tipo === "receita_mensal" && (m.divisao === st.division || m.divisao === "consolidado"));
 
     container.appendChild(UI.sectionTitle("Caixa", "Resultado acumulado -- não é saldo bancário real (a base não guarda saldo inicial de caixa)"));
-    container.appendChild(UI.h("div", { class: "grid grid-4" }, [
+    container.appendChild(UI.h("div", { class: "grid grid-4", "data-tour": "ve-caixa" }, [
       UI.statTile({ label: "Acumulado até hoje", value: Fmt.money(acumuladoAtual), foot: "Soma corrida desde o início do histórico" }),
       UI.statTile({ label: `Pior mês projetado (${HORIZONTE}m)`, value: vf.piorMes ? Fmt.money(vf.piorMes.acumulado) : "—", foot: vf.piorMes ? Fmt.monthLabel(vf.piorMes.month, "full") : "Sem dado" }),
       UI.statTile({ label: "Vencido (não recebido/pago)", value: Fmt.money(vf.overdue.saldo) }),
@@ -40,27 +40,29 @@
     ]));
 
     container.appendChild(UI.sectionTitle("Dívida", "Ver detalhe em Dívidas & Empréstimos"));
-    container.appendChild(UI.h("div", { class: "grid grid-3" }, [
+    container.appendChild(UI.h("div", { class: "grid grid-3", "data-tour": "ve-divida" }, [
       UI.statTile({ label: "Saldo devedor", value: Fmt.money(loanTotals.valor_restante), foot: "O que falta pagar hoje" }),
       UI.statTile({ label: `Compromisso futuro (${HORIZONTE}m)`, value: Fmt.money(compromissoFuturo), foot: "Parcelas estimadas -- inclui juros embutidos na parcela" }),
       UI.statTile({ label: "Custo total em juros/encargos", value: Fmt.money(loanTotals.custo_total_juros) }),
     ]));
 
     container.appendChild(UI.sectionTitle("Cenário rápido", "Base vs Conservador -- resultado projetado 12 meses"));
-    container.appendChild(UI.h("div", { class: "grid grid-2" }, [
+    container.appendChild(UI.h("div", { class: "grid grid-2", "data-tour": "ve-cenario" }, [
       UI.statTile({ label: "Base (tendência atual)", value: base ? Fmt.money(base.resultado) : "—" }),
       UI.statTile({ label: "Conservador (receita -10%, despesa +5%)", value: conservador ? Fmt.money(conservador.resultado) : "—", foot: base && conservador ? `${Fmt.money(round2sum([conservador.resultado, -base.resultado]))} vs Base` : "" }),
     ]));
 
     const alerts = buildAlerts({ vf, cap, loanTotals, conservador, dreAtual, receitaMeta, fc });
-    container.appendChild(UI.sectionTitle("Alertas", "Resumo do que precisa de atenção -- sempre no fim da tela"));
+    const alertsSection = UI.h("div", { "data-tour": "ve-alertas" }, []);
+    alertsSection.appendChild(UI.sectionTitle("Alertas", "Resumo do que precisa de atenção -- sempre no fim da tela"));
     if (!alerts.length) {
-      container.appendChild(UI.card([UI.emptyState({ icon: "checkCircle", title: "Nada fora do esperado nos números resumidos acima" })]));
+      alertsSection.appendChild(UI.card([UI.emptyState({ icon: "checkCircle", title: "Nada fora do esperado nos números resumidos acima" })]));
     } else {
       const wrap = UI.h("div", { style: "display:flex;flex-direction:column;gap:10px;" });
       alerts.forEach((a) => wrap.appendChild(UI.insightCard(a)));
-      container.appendChild(wrap);
+      alertsSection.appendChild(wrap);
     }
+    container.appendChild(alertsSection);
 
     container.appendChild(UI.h("div", { style: "margin-top:20px;padding-top:14px;border-top:1px solid var(--border);color:var(--text-muted);font-size:11.5px;" }, [
       "Cada número desta tela vem de outra tela já existente (Dívidas, Forecast, Visão Futura, Metas, Investimentos, Cenários) -- nada é calculado de novo só pra este resumo.",
