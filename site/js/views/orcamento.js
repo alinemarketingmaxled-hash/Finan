@@ -26,6 +26,7 @@
   function budgetCard(r, st) {
     const pct = r.limite ? r.atual / r.limite : 0;
     const [kind, label] = statusFor(pct);
+    const forecastPct = r.forecast !== null && r.limite ? r.forecast / r.limite : null;
     const card = UI.h("div", { class: "card" }, [
       UI.h("div", { style: "display:flex;justify-content:space-between;align-items:flex-start;" }, [
         UI.h("div", { style: "font-weight:700;font-size:13.5px;" }, [Fmt.titleCase(r.categoria)]),
@@ -37,6 +38,12 @@
           UI.h("span", { class: "tabular" }, [Fmt.pct(pct)]),
         ]),
         UI.h("div", { class: "meter-track" }, [UI.h("div", { class: `meter-fill ${kind}`, style: `width:${Math.min(100, pct * 100)}%;` })]),
+      ]),
+      UI.h("div", { style: "margin-top:12px;padding-top:10px;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;" }, [
+        UI.h("span", { style: "font-size:11px;color:var(--text-muted);" }, ["Forecast (mês que vem)"]),
+        r.forecast === null
+          ? UI.badge("Dados insuficientes para projeção", "muted")
+          : UI.h("span", { class: "tabular", style: `font-size:12.5px;font-weight:700;${forecastPct >= 1 ? "color:var(--critical-text);" : ""}` }, [Fmt.money(r.forecast)]),
       ]),
     ]);
     return card;

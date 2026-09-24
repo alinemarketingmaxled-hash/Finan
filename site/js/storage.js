@@ -15,6 +15,8 @@
     contasExtras: NS + "contasExtras",
     loanOverrides: NS + "loanOverrides",
     loansExtras: NS + "loansExtras",
+    cenarios: NS + "cenarios",
+    investimentos: NS + "investimentos",
   };
 
   function read(key, fallback) {
@@ -244,6 +246,42 @@
       write(KEYS.orcamento, list);
     },
 
+    // ---- cenários (Planejamento -- BASE/CONSERVADOR/CRESCIMENTO são fixos no
+    // Compute, aqui só ficam os cenários que a própria usuária salvar) ----
+    listCenarios() { return read(KEYS.cenarios, []); },
+    addCenario(cenario) {
+      const list = this.listCenarios();
+      const row = Object.assign({ id: uid(), createdAt: new Date().toISOString(), ativo: true }, cenario);
+      list.push(row);
+      write(KEYS.cenarios, list);
+      return row;
+    },
+    updateCenario(id, patch) {
+      const list = this.listCenarios().map((c) => (c.id === id ? Object.assign({}, c, patch) : c));
+      write(KEYS.cenarios, list);
+    },
+    removeCenario(id) {
+      write(KEYS.cenarios, this.listCenarios().filter((c) => c.id !== id));
+    },
+
+    // ---- investimentos (Planejamento -- decisão de investir é um status
+    // dentro do próprio registro: avaliando/aprovado/rejeitado/concluido) ----
+    listInvestimentos() { return read(KEYS.investimentos, []); },
+    addInvestimento(inv) {
+      const list = this.listInvestimentos();
+      const row = Object.assign({ id: uid(), createdAt: new Date().toISOString(), status: "avaliando" }, inv);
+      list.push(row);
+      write(KEYS.investimentos, list);
+      return row;
+    },
+    updateInvestimento(id, patch) {
+      const list = this.listInvestimentos().map((i) => (i.id === id ? Object.assign({}, i, patch) : i));
+      write(KEYS.investimentos, list);
+    },
+    removeInvestimento(id) {
+      write(KEYS.investimentos, this.listInvestimentos().filter((i) => i.id !== id));
+    },
+
     // ---- config ----
     getConfig() { return read(KEYS.config, {}); },
     setConfig(patch) {
@@ -267,6 +305,8 @@
         contasExtras: this.listContasExtras(),
         loanOverrides: this.getLoanOverrides(),
         loansExtras: this.listLoansExtras(),
+        cenarios: this.listCenarios(),
+        investimentos: this.listInvestimentos(),
       };
     },
     importAll(payload) {
@@ -282,6 +322,8 @@
       if (Array.isArray(payload.contasExtras)) write(KEYS.contasExtras, payload.contasExtras);
       if (payload.loanOverrides) write(KEYS.loanOverrides, payload.loanOverrides);
       if (Array.isArray(payload.loansExtras)) write(KEYS.loansExtras, payload.loansExtras);
+      if (Array.isArray(payload.cenarios)) write(KEYS.cenarios, payload.cenarios);
+      if (Array.isArray(payload.investimentos)) write(KEYS.investimentos, payload.investimentos);
     },
     resetAll() {
       Object.values(KEYS).forEach((k) => localStorage.removeItem(k));

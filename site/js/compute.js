@@ -5,6 +5,14 @@
   const round2 = (v) => Math.round((v + Number.EPSILON) * 100) / 100;
   const sumVal = (list) => list.reduce((s, t) => s + t.value, 0);
 
+  // Classificação de confiança usada em todo o módulo de Planejamento
+  // (Forecast, Visão Futura, Cenários, Investimentos, Visão Estratégica):
+  // REALIZADO já aconteceu; CONFIRMADO é compromisso documentado (Previsões,
+  // A Receber/A Pagar); ESTIMADO vem de uma obrigação/premissa real (parcela
+  // de empréstimo, retorno esperado de investimento); PROJETADO é tendência
+  // estatística (regressão), sem lastro documentado.
+  const STATUS = { REALIZADO: "realizado", CONFIRMADO: "confirmado", ESTIMADO: "estimado", PROJETADO: "projetado" };
+
   function manualAsTx(m) {
     return {
       id: m.id, date: m.date, division: m.division, basis: m.basis || "financeiro",
@@ -129,8 +137,11 @@
     return out;
   }
 
-  function cashflowSeries(division, forecastMonths) {
-    forecastMonths = forecastMonths === undefined ? 4 : forecastMonths;
+  // Série mensal só do realizado (base 2025 pré-agregada + meses detalhados) --
+  // extraída de cashflowSeries pra ser reaproveitada por forecast()/visaoFutura()
+  // sem duplicar a lógica de junção. Saída idêntica às linhas tipo:"realizado"
+  // que cashflowSeries já devolvia.
+  function realizedMonthlySeries(division) {
     const dMonths = new Set(detailedMonths());
     const out = new Map();
     MAXLED_DATA.cashflow.filter((r) => r.division === division && r.tipo === "realizado").forEach((r) => {
@@ -142,9 +153,14 @@
       const rec = out.get(m);
       if (t.flow === "entrada") rec.entradas += t.value; else if (t.flow === "saida") rec.saidas += t.value;
     });
-    const rows = Array.from(out.entries())
+    return Array.from(out.entries())
       .map(([month, v]) => ({ month, entradas: round2(v.entradas), saidas: round2(v.saidas), resultado: round2(v.entradas - v.saidas), tipo: "realizado" }))
       .sort((a, b) => a.month.localeCompare(b.month));
+  }
+
+  function cashflowSeries(division, forecastMonths) {
+    forecastMonths = forecastMonths === undefined ? 4 : forecastMonths;
+    const rows = realizedMonthlySeries(division);
 
     if (rows.length && forecastMonths > 0) {
       const fEntradas = forecastNext(rows.map((r) => r.entradas), forecastMonths, 6);
@@ -419,6 +435,211 @@
   }
 
   // ---------------------------------------------------------------------
+  // Forecast: mesma regressão linear de cashflowSeries, mas rotulada por
+  // STATUS e com horizonte configurável (a página Forecast usa 12 meses;
+  // cashflowSeries continua com o padrão de 4 usado no Fluxo de Caixa).
+  // ---------------------------------------------------------------------
+  function forecast(division, opts) {
+    opts = opts || {};
+    const monthsAhead = opts.monthsAhead || 12;
+    const trailing = opts.trailing || 6;
+    const realized = realizedMonthlySeries(division);
+    const rows = realized.map((r) => Object.assign({ status: STATUS.REALIZADO }, r));
+    if (realized.length && monthsAhead > 0) {
+      const fEntradas = forecastNext(realized.map((r) => r.entradas), monthsAhead, trailing);
+      const fSaidas = forecastNext(realized.map((r) => r.saidas), monthsAhead, trailing);
+      let month = realized[realized.length - 1].month;
+      for (let k = 0; k < monthsAhead; k++) {
+        month = nextMonthKey(month);
+        rows.push({
+          month, entradas: fEntradas[k], saidas: fSaidas[k], resultado: round2(fEntradas[k] - fSaidas[k]),
+          tipo: "previsao", status: STATUS.PROJETADO,
+        });
+      }
+    }
+    return rows;
+  }
+
+  // Parcelas de empréstimo ainda não pagas, projetadas mês a mês -- a base de
+  // dados não guarda o dia de vencimento nem o mês de cada parcela futura, só
+  // o valor da parcela atual e quantas ainda restam. Por isso essa é uma
+  // ESTIMATIVA explícita: presume cadência mensal regular a partir do mês que
+  // vem, usando o valor de parcela já registrado no contrato (nunca inventa
+  // valor). Usado por visaoFutura() para a linha "Estimado (dívida)".
+  function loanInstallmentsForecast(division, monthsAhead) {
+    monthsAhead = monthsAhead || 12;
+    const now = new Date();
+    const months = [];
+    for (let i = 1; i <= monthsAhead; i++) {
+      const d = new Date(now.getFullYear(), now.getMonth() + i, 1);
+      months.push(d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0"));
+    }
+    const byMonth = new Map(months.map((m) => [m, 0]));
+    loans(division).filter((l) => l.parcelas_restantes > 0 && l.parcela_com_juros > 0).forEach((l) => {
+      const n = Math.min(l.parcelas_restantes, monthsAhead);
+      for (let i = 0; i < n; i++) {
+        const key = months[i];
+        byMonth.set(key, byMonth.get(key) + l.parcela_com_juros);
+      }
+    });
+    return months.map((month) => ({ month, valor: round2(byMonth.get(month)) }));
+  }
+
+  // ---------------------------------------------------------------------
+  // Visão Futura: uma única tabela mensal juntando o que já é compromisso
+  // documentado (CONFIRMADO: Previsões + A Receber/A Pagar), o que é
+  // obrigação real projetada (ESTIMADO: parcelas de empréstimo -- mostrado à
+  // parte do combinado, nunca somado, porque o PROJETADO por tendência já
+  // embute implicitamente um nível "típico" de pagamento de dívida no
+  // histórico) e a tendência estatística (PROJETADO: forecast()). O
+  // "acumulado" continua a mesma convenção já usada em Fluxo de Caixa (soma
+  // corrida do resultado desde o início do histórico) -- não é saldo
+  // bancário real, porque a base de dados não registra um saldo inicial de
+  // caixa; nunca rotular como "caixa hoje" na tela.
+  // ---------------------------------------------------------------------
+  function visaoFutura(division, opts) {
+    opts = opts || {};
+    const monthsAhead = opts.monthsAhead || 6;
+    const pipe = pipelineSummary(division);
+    const rp = receivablesPayablesWindow(division, monthsAhead);
+    const loanInst = loanInstallmentsForecast(division, monthsAhead);
+    const investInst = committedInvestments(division, monthsAhead);
+    const fc = forecast(division, { monthsAhead });
+    const projRows = fc.filter((r) => r.status === STATUS.PROJETADO);
+
+    const now = new Date();
+    const months = [];
+    for (let i = 0; i < monthsAhead; i++) {
+      const d = new Date(now.getFullYear(), now.getMonth() + i, 1);
+      months.push(d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0"));
+    }
+
+    const pipeByMonth = new Map(pipe.monthly.map((r) => [r.mes, r]));
+    const rpByMonth = new Map(rp.rows.map((r) => [r.month, r]));
+    const loanByMonth = new Map(loanInst.map((r) => [r.month, r.valor]));
+    const investByMonth = new Map(investInst.map((r) => [r.month, r.valor]));
+    const projByMonth = new Map(projRows.map((r) => [r.month, r]));
+
+    const rows = months.map((month) => {
+      const p = pipeByMonth.get(month) || { entrada: 0, saida: 0 };
+      const rpx = rpByMonth.get(month) || { a_receber: 0, a_pagar: 0 };
+      const confirmadoEntrada = round2(p.entrada + rpx.a_receber);
+      const confirmadoSaida = round2(p.saida + rpx.a_pagar);
+      const confirmado = round2(confirmadoEntrada - confirmadoSaida);
+      const estimadoDivida = round2(loanByMonth.get(month) || 0);
+      // Investimento já aprovado (Compute.investmentCapacity) -- mesmo
+      // tratamento da parcela de dívida: ESTIMADO à parte, nunca somado ao
+      // combinado (fecha a mão-dupla entre Investimentos e Visão Futura).
+      const estimadoInvestimento = round2(investByMonth.get(month) || 0);
+      const proj = projByMonth.get(month) || null;
+      const projetado = proj ? proj.resultado : null;
+      const combinado = proj !== null ? round2(confirmado + projetado) : confirmado;
+      return { month, confirmadoEntrada, confirmadoSaida, confirmado, estimadoDivida, estimadoInvestimento, projetado, combinado };
+    });
+
+    let running = round2(realizedMonthlySeries(division).reduce((s, r) => s + r.resultado, 0));
+    const rowsWithAccum = rows.map((r) => {
+      running = round2(running + r.combinado);
+      return Object.assign({}, r, { acumulado: running });
+    });
+
+    const piorMes = rowsWithAccum.length ? rowsWithAccum.slice().sort((a, b) => a.acumulado - b.acumulado)[0] : null;
+
+    return { rows: rowsWithAccum, piorMes, overdue: rp.overdue };
+  }
+
+  // ---------------------------------------------------------------------
+  // Cenários: aplica premissas percentuais (variação de receita/despesa)
+  // sobre a linha PROJETADO do Forecast -- nunca sobre Realizado/Confirmado.
+  // Sempre parte do mesmo forecast() já usado em Forecast/Visão Futura, então
+  // um cenário com premissas zeradas reproduz a linha Base idêntica.
+  // ---------------------------------------------------------------------
+  const SYSTEM_SCENARIOS = [
+    { id: "sistema-conservador", nome: "Conservador", isSistema: true, descricao: "Queda de receita e alta de despesa -- teste de resistência.", premissas: { receita_pct: -0.10, despesa_pct: 0.05 } },
+    { id: "sistema-crescimento", nome: "Crescimento", isSistema: true, descricao: "Receita acelerando acima da tendência atual.", premissas: { receita_pct: 0.15, despesa_pct: 0.08 } },
+  ];
+
+  function applyScenario(rows, premissas) {
+    premissas = premissas || {};
+    const rp = Number(premissas.receita_pct) || 0;
+    const dp = Number(premissas.despesa_pct) || 0;
+    return rows.map((r) => {
+      const entradas = round2(r.entradas * (1 + rp));
+      const saidas = round2(r.saidas * (1 + dp));
+      return Object.assign({}, r, { entradas, saidas, resultado: round2(entradas - saidas) });
+    });
+  }
+
+  function scenariosList(division) {
+    const saved = Storage.listCenarios().filter((c) => !c.divisao || c.divisao === "consolidado" || c.divisao === division || division === "consolidado");
+    return [{ id: "sistema-base", nome: "Base", isSistema: true, descricao: "Tendência atual, sem nenhum ajuste (igual ao Forecast).", premissas: {} }]
+      .concat(SYSTEM_SCENARIOS, saved);
+  }
+
+  function scenariosSummary(division, opts) {
+    opts = opts || {};
+    const monthsAhead = opts.monthsAhead || 12;
+    const baseRows = forecast(division, { monthsAhead }).filter((r) => r.status === STATUS.PROJETADO);
+    return scenariosList(division).map((c) => {
+      const rows = applyScenario(baseRows, c.premissas);
+      const totalEntradas = round2(rows.reduce((s, r) => s + r.entradas, 0));
+      const totalSaidas = round2(rows.reduce((s, r) => s + r.saidas, 0));
+      return {
+        id: c.id, nome: c.nome, isSistema: !!c.isSistema, premissas: c.premissas,
+        divisao: c.divisao, descricao: c.descricao || "",
+        rows, totalEntradas, totalSaidas, resultado: round2(totalEntradas - totalSaidas),
+      };
+    });
+  }
+
+  // ---------------------------------------------------------------------
+  // Investimentos: capacidade = caixa que sobra depois de proteger o
+  // combinado de Visão Futura (Confirmado+Projetado) e as parcelas de
+  // dívida (Estimado) -- exclui o Projetado por tendência por completo do
+  // "já comprometido" (conservador: não dimensiona investimento em cima de
+  // uma extrapolação estatística), e desconta o que já foi aprovado antes.
+  // ---------------------------------------------------------------------
+  function committedInvestments(division, monthsAhead) {
+    monthsAhead = monthsAhead || 6;
+    const now = new Date();
+    const months = [];
+    for (let i = 0; i < monthsAhead; i++) {
+      const d = new Date(now.getFullYear(), now.getMonth() + i, 1);
+      months.push(d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0"));
+    }
+    const approved = Storage.listInvestimentos().filter((inv) => inv.status === "aprovado" && inv.data_prevista);
+    const byMonth = new Map(months.map((m) => [m, 0]));
+    approved.forEach((inv) => {
+      if (!inv.divisao || inv.divisao === division || division === "consolidado") {
+        const m = String(inv.data_prevista).slice(0, 7);
+        if (byMonth.has(m)) byMonth.set(m, round2(byMonth.get(m) + (Number(inv.valor) || 0)));
+      }
+    });
+    return months.map((month) => ({ month, valor: byMonth.get(month) }));
+  }
+
+  function investmentCapacity(division, opts) {
+    opts = opts || {};
+    const monthsAhead = opts.monthsAhead || 6;
+    const caixaMinimo = opts.caixaMinimo !== undefined ? (Number(opts.caixaMinimo) || 0) : (Number(Storage.getConfig().caixaMinimo) || 0);
+    const vf = visaoFutura(division, { monthsAhead });
+    const aprovados = committedInvestments(division, monthsAhead);
+    const aprovadosByMonth = new Map(aprovados.map((a) => [a.month, a.valor]));
+
+    const rows = vf.rows.map((r) => {
+      const jaAprovado = aprovadosByMonth.get(r.month) || 0;
+      // Conservador por design: exclui o Projetado por completo (só Confirmado),
+      // desconta a parcela de dívida estimada, o caixa mínimo reservado (se
+      // configurado) e o que já foi aprovado antes.
+      const capacidade = round2(r.confirmado - r.estimadoDivida - caixaMinimo - jaAprovado);
+      return { month: r.month, confirmado: r.confirmado, estimadoDivida: r.estimadoDivida, jaAprovado, caixaMinimo, capacidade };
+    });
+    const capacidadeTotal = round2(rows.reduce((s, r) => s + r.capacidade, 0));
+    const jaAprovadoTotal = round2(aprovados.reduce((s, a) => s + a.valor, 0));
+    return { rows, capacidadeTotal, jaAprovadoTotal, caixaMinimo };
+  }
+
+  // ---------------------------------------------------------------------
   // Indicador de saúde financeira (0-100)
   // ---------------------------------------------------------------------
   function clampScore(v) { return Math.max(0, Math.min(100, v)); }
@@ -655,8 +876,79 @@
     return budgets.map((b) => {
       const actual = (monthCats.find((c) => c.categoria === b.categoria) || { valor: 0 }).valor;
       const pct = b.limite ? actual / b.limite : 0;
-      return { division: b.division, categoria: b.categoria, limite: b.limite, atual: round2(actual), pct };
+      const cf = categoryForecast(division, b.categoria, { monthsAhead: 1 });
+      const forecastValor = cf.insufficientData ? null : (cf.projected[0] ? cf.projected[0].valor : null);
+      return { division: b.division, categoria: b.categoria, limite: b.limite, atual: round2(actual), pct, forecast: forecastValor };
     }).sort((a, b) => b.pct - a.pct);
+  }
+
+  // Série mensal de uma categoria de despesa -- só existe pra meses com
+  // lançamento detalhado (a base agregada de 2025 não guarda categoria por
+  // mês, só total; ver dreForYear). Base de categoryForecast().
+  function categoryMonthlySeries(division, categoria) {
+    return detailedMonths().map((month) => {
+      const saidas = filterTx({ division, basis: "financeiro", flow: "saida", month }).filter((t) => (t.category || "OUTRAS DESPESAS") === categoria);
+      return { month, valor: round2(sumVal(saidas)) };
+    });
+  }
+
+  // Mesmo motor de regressão do forecast(), aplicado a uma categoria (usado
+  // por Orçamento). Exige pelo menos 2 meses com valor > 0 pra projetar --
+  // menos que isso, devolve insufficientData:true (nunca inventa número).
+  function categoryForecast(division, categoria, opts) {
+    opts = opts || {};
+    const monthsAhead = opts.monthsAhead || 3;
+    const series = categoryMonthlySeries(division, categoria);
+    const nonZero = series.filter((r) => r.valor > 0).length;
+    if (nonZero < 2) return { history: series, projected: [], insufficientData: true };
+    const trailing = Math.min(opts.trailing || 6, series.length);
+    const proj = forecastNext(series.map((r) => r.valor), monthsAhead, trailing);
+    let month = series[series.length - 1].month;
+    const projected = proj.map((valor) => { month = nextMonthKey(month); return { month, valor }; });
+    return { history: series, projected, insufficientData: false };
+  }
+
+  // Série mensal de margem líquida (financeiro) -- reaproveita dreForPeriod
+  // por mês detalhado; base de metaStatus() pra metas do tipo margem_liquida.
+  function marginMonthlySeries(division) {
+    return detailedMonths().map((month) => ({ month, valor: dreForPeriod(division, month, "financeiro").margem_liquida }));
+  }
+
+  // ---------------------------------------------------------------------
+  // Status de meta: {valorAtual, forecast, desvio, provavelAtingir} --
+  // "provavelAtingir" só existe quando há uma projeção real derivável pro
+  // tipo da meta (receita e margem, via regressão); quitação de dívida e
+  // meta personalizada não têm uma série pra regredir de forma honesta, então
+  // devolvem forecast:null + insufficientData:true em vez de inventar.
+  // Nunca marca com base no valor parcial de hoje -- sempre contra o forecast.
+  // ---------------------------------------------------------------------
+  function metaStatus(meta) {
+    const months = detailedMonths();
+    const lastMonth = months[months.length - 1];
+    const target = Number(meta.targetValue) || 0;
+    let valorAtual = 0, forecastValor = null, insufficientData = true;
+
+    if (meta.tipo === "receita_mensal" && lastMonth) {
+      valorAtual = dreForPeriod(meta.divisao, lastMonth, "financeiro").receita_bruta;
+      const fc = forecast(meta.divisao, { monthsAhead: 1 }).filter((r) => r.status === STATUS.PROJETADO)[0];
+      if (fc) { forecastValor = fc.entradas; insufficientData = false; }
+    } else if (meta.tipo === "margem_liquida" && lastMonth) {
+      valorAtual = dreForPeriod(meta.divisao, lastMonth, "financeiro").margem_liquida;
+      const series = marginMonthlySeries(meta.divisao);
+      if (series.length >= 2) {
+        const proj = forecastNext(series.map((r) => r.valor), 1, Math.min(6, series.length));
+        forecastValor = proj[0]; insufficientData = false;
+      }
+    } else if (meta.tipo === "quitacao_divida") {
+      const t = loansTotals(meta.divisao);
+      valorAtual = t.valor_total ? t.valor_pago / t.valor_total : 0;
+    } else {
+      valorAtual = Number(meta.currentValue) || 0;
+    }
+
+    const desvio = forecastValor !== null ? round2(forecastValor - target) : null;
+    const provavelAtingir = forecastValor !== null ? (target >= 0 ? forecastValor >= target : forecastValor <= target) : null;
+    return { valorAtual: round2(valorAtual), forecast: forecastValor !== null ? round2(forecastValor) : null, desvio, provavelAtingir, insufficientData };
   }
 
   // ---------------------------------------------------------------------
@@ -706,9 +998,12 @@
   }
 
   global.Compute = {
-    DIVISIONS, round2,
+    DIVISIONS, round2, STATUS,
     allTransactions, detailedMonths, filterTx, previousMonth, clienteCategoria, uncategorized, oneTimeClients,
-    cashflowSeries, dailyCashflow, dreForPeriod, expenseCategoriesAgg, topCounterparties,
+    realizedMonthlySeries, cashflowSeries, dailyCashflow, dreForPeriod, expenseCategoriesAgg, topCounterparties,
     loans, loansTotals, receivablesPayables, receivablesPayablesWindow, healthScore, insights, actionPlan, budgetStatus, pipelineSummary, pipelineInstallments,
+    forecast, loanInstallmentsForecast, visaoFutura,
+    applyScenario, scenariosSummary, committedInvestments, investmentCapacity,
+    categoryForecast, metaStatus,
   };
 })(window);

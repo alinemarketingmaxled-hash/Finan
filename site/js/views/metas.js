@@ -43,6 +43,7 @@
     const target = Number(meta.targetValue) || 1;
     const pct = Math.max(0, Math.min(100, (cur / target) * 100));
     const fmt = (v) => (isPct ? Fmt.pct(v) : Fmt.money(v));
+    const status = Compute.metaStatus(meta);
 
     const card = UI.h("div", { class: "card" }, [
       UI.h("div", { style: "display:flex;justify-content:space-between;align-items:flex-start;gap:8px;" }, [
@@ -60,6 +61,23 @@
         UI.h("div", { class: "meter-track" }, [UI.h("div", { class: `meter-fill ${pct >= 100 ? "good" : pct >= 50 ? "" : "warning"}`, style: `width:${pct}%;` })]),
       ]),
       meta.targetDate ? UI.h("div", { style: "font-size:11.5px;color:var(--text-muted);margin-top:10px;" }, [`Prazo: ${Fmt.dateBR(meta.targetDate)}`]) : null,
+      UI.h("div", { style: "margin-top:12px;padding-top:10px;border-top:1px solid var(--border);" }, [
+        status.insufficientData
+          ? UI.h("div", { style: "display:flex;justify-content:space-between;align-items:center;" }, [
+              UI.h("span", { style: "font-size:11px;color:var(--text-muted);" }, ["Forecast"]),
+              UI.badge("Dados insuficientes para projeção", "muted"),
+            ])
+          : UI.h("div", {}, [
+              UI.h("div", { style: "display:flex;justify-content:space-between;align-items:center;" }, [
+                UI.h("span", { style: "font-size:11px;color:var(--text-muted);" }, ["Forecast (mês que vem)"]),
+                UI.h("span", { class: "tabular", style: "font-size:12.5px;font-weight:700;" }, [fmt(status.forecast)]),
+              ]),
+              UI.h("div", { style: "display:flex;justify-content:space-between;align-items:center;margin-top:4px;" }, [
+                UI.h("span", { style: "font-size:11px;color:var(--text-muted);" }, ["Desvio vs meta"]),
+                UI.badge(fmt(status.desvio), status.provavelAtingir ? "good" : "critical"),
+              ]),
+            ]),
+      ]),
     ]);
     return card;
   }

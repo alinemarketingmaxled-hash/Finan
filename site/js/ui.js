@@ -47,6 +47,26 @@
     return h("span", { class: `badge badge-${kind || "muted"}` }, [text]);
   }
 
+  // Classificação de confiança usada no módulo de Planejamento (Forecast,
+  // Visão Futura, Cenários, Investimentos, Visão Estratégica) -- ver
+  // Compute.STATUS. Mesmos badges já usados em outras telas, sem CSS novo.
+  const STATUS_META = {
+    realizado: { label: "Realizado", kind: "good" },
+    confirmado: { label: "Confirmado", kind: "neutral" },
+    estimado: { label: "Estimado", kind: "warning" },
+    projetado: { label: "Projetado", kind: "muted" },
+  };
+  function statusBadge(status) {
+    const meta = STATUS_META[status] || { label: status, kind: "muted" };
+    return badge(meta.label, meta.kind);
+  }
+  function statusLegend() {
+    return h("div", { style: "display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;" },
+      Object.keys(STATUS_META).map((k) => h("div", { style: "display:flex;align-items:center;gap:6px;" }, [
+        statusBadge(k),
+      ])));
+  }
+
   function card(children, opts) {
     opts = opts || {};
     const c = h("div", { class: "card" + (opts.class ? " " + opts.class : "") }, []);
@@ -299,7 +319,7 @@
 
   global.UI = {
     chartCardWithTable,
-    h, clear, richText, badgeDivision, badge, card, sectionTitle, emptyState, deltaEl, statTile,
+    h, clear, richText, badgeDivision, badge, statusBadge, statusLegend, card, sectionTitle, emptyState, deltaEl, statTile,
     insightCard, table, monthOptions, select, segmented, filterBar, toast, modal,
     confirmDialog, field, closeAllModals, periodLabel, divisionLabel: (d) => DIVISION_LABEL()[d] || d,
   };
