@@ -21,6 +21,12 @@
 <div data-role="classifybar"></div>
 
 <script src="js/vendor/xlsx.full.min.js"></script>
+<script type="module">
+  import * as pdfjsLib from "./js/vendor/pdf.min.mjs";
+  pdfjsLib.GlobalWorkerOptions.workerSrc = "./js/vendor/pdf.worker.min.mjs";
+  window.pdfjsLib = pdfjsLib;
+</script>
+<script src="js/pdfnota.js"></script>
 <script src="js/data.js"></script>
 <script src="js/format.js"></script>
 <script src="js/storage.js"></script>

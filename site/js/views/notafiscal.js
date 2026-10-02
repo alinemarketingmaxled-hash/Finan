@@ -42,7 +42,7 @@
       nfMonth = months.withData.length ? months.withData[months.withData.length - 1] : months.all[months.all.length - 1];
     }
 
-    UI.filterBar(container, { showMonth: false, showBasis: false, extra: [addBtn(st), downloadBtn(st)] });
+    UI.filterBar(container, { showMonth: false, showBasis: false, extra: [importPdfBtn(st), addBtn(st), downloadBtn(st)] });
 
     container.appendChild(UI.h("div", { style: "margin-bottom:16px;" }, [
       UI.segmented(months.all.map((m) => ({ value: m, label: Fmt.monthLabel(m) })), nfMonth, (v) => { nfMonth = v; AppState.set({}); }),
@@ -53,8 +53,9 @@
       UI.h("div", {}, [
         UI.h("div", { class: "insight-title" }, ["Como funciona"]),
         UI.h("div", { class: "insight-body" }, [UI.richText(
-          "As notas vêm automaticamente dos lançamentos já cadastrados (Nota Fiscal/NFe) -- nada pra importar aqui. Compra e venda ficam em tabelas separadas, ordenadas pelo número da nota. Em vendas, um número que falta na sequência aparece em vermelho -- é a numeração que a própria Max Led emite, então um buraco pode indicar nota não lançada ou cancelada sem registrar. " +
+          "As notas vêm automaticamente dos lançamentos já cadastrados (Nota Fiscal/NFe). Compra e venda ficam em tabelas separadas, ordenadas pelo número da nota. Em vendas, um número que falta na sequência aparece em vermelho -- é a numeração que a própria Max Led emite, então um buraco pode indicar nota não lançada ou cancelada sem registrar. " +
           "Pra mudar valor/nome de uma nota real, edite o lançamento correspondente; aqui dá pra mudar o status (cancelada/devolvida) direto. " +
+          "<b>Importar PDF</b> lê o arquivo da nota (DANFE) e tenta preencher número/valor/data/nome sozinho -- sempre revise antes de salvar, porque o PDF pode vir num formato diferente do esperado. " +
           "<b>SNF</b> (Sem Nota Fiscal) é pra lançar rápido algo que não tem nota -- fica numa lista à parte, sem entrar na checagem de sequência. \"Nova nota\" é só pra uma nota que ainda não tem lançamento correspondente."
         )]),
       ]),
@@ -239,7 +240,33 @@
     return btn;
   }
 
-  function openModal(existing, st) {
+  // Lê o PDF (DANFE), tenta achar número/valor/data/nome/tipo e abre o mesmo
+  // modal de "Nova nota" já preenchido -- o que não for encontrado fica em
+  // branco pra completar à mão. Nunca salva sozinho: é só um atalho pra não
+  // digitar tudo de novo, a conferência final é sempre manual.
+  function importPdfBtn(st) {
+    const fileInput = UI.h("input", { type: "file", accept: "application/pdf", style: "display:none;" });
+    const btn = UI.h("button", { class: "btn btn-sm" }, [Icon("upload", { size: 14 }), "Importar PDF"]);
+    btn.addEventListener("click", () => fileInput.click());
+    fileInput.addEventListener("change", async () => {
+      const file = fileInput.files[0];
+      fileInput.value = "";
+      if (!file) return;
+      UI.toast("Lendo PDF...");
+      try {
+        const found = await PdfNota.parseDanfe(file);
+        if (!found.numero && !found.valor && !found.nome) {
+          UI.toast("Não consegui reconhecer os campos desse PDF -- preencha manualmente.");
+        }
+        openModal(null, st, found);
+      } catch (e) {
+        UI.toast("Não foi possível ler esse PDF: " + e.message);
+      }
+    });
+    return UI.h("div", {}, [btn, fileInput]);
+  }
+
+  function openModal(existing, st, prefill) {
     const numeroInput = UI.h("input", { type: "number", step: "1", min: "1", class: "input" });
     const nomeInput = UI.h("input", { class: "input", placeholder: "Cliente ou fornecedor" });
     const valorInput = UI.h("input", { type: "number", step: "0.01", min: "0", class: "input" });
@@ -258,6 +285,13 @@
     } else {
       divSel.value = st && st.division !== "consolidado" ? st.division : "iluminacao";
       mesInput.value = nfMonth; statusSel.value = "normal";
+      if (prefill) {
+        if (prefill.numero) numeroInput.value = prefill.numero;
+        if (prefill.nome) nomeInput.value = prefill.nome;
+        if (prefill.valor) valorInput.value = prefill.valor;
+        if (prefill.tipo) tipoSel.value = prefill.tipo;
+        if (prefill.data) mesInput.value = prefill.data.slice(0, 7);
+      }
     }
 
     const cancelBtn = UI.h("button", { class: "btn" }, ["Cancelar"]);
