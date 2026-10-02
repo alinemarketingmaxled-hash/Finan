@@ -24,22 +24,28 @@
   let nfBusca = "";
 
   function availableMonths(division) {
-    const months = new Set();
-    Compute.filterTx({ division, basis: "nfe" }).forEach((t) => months.add(t.date.slice(0, 7)));
-    Storage.listNotasFiscais().forEach((n) => { if (n.mes) months.add(n.mes); });
-    months.add(currentMonthKey());
-    return Array.from(months).sort();
+    const withData = new Set();
+    Compute.filterTx({ division, basis: "nfe" }).forEach((t) => withData.add(t.date.slice(0, 7)));
+    Storage.listNotasFiscais().forEach((n) => { if (n.mes) withData.add(n.mes); });
+    const all = new Set(withData);
+    all.add(currentMonthKey());
+    return { all: Array.from(all).sort(), withData: Array.from(withData).sort() };
   }
 
   function render(container) {
     const st = AppState.get();
     const months = availableMonths(st.division);
-    if (nfMonth === null || !months.includes(nfMonth)) nfMonth = months[months.length - 1];
+    if (nfMonth === null || !months.all.includes(nfMonth)) {
+      // Prioriza o último mês com dado de verdade -- cair no mês corrente
+      // (que normalmente não tem nenhuma nota ainda) deixaria a tela parecendo
+      // vazia à toa, igual ao problema já relatado antes dessa correção.
+      nfMonth = months.withData.length ? months.withData[months.withData.length - 1] : months.all[months.all.length - 1];
+    }
 
     UI.filterBar(container, { showMonth: false, showBasis: false, extra: [addBtn(st), downloadBtn(st)] });
 
     container.appendChild(UI.h("div", { style: "margin-bottom:16px;" }, [
-      UI.segmented(months.map((m) => ({ value: m, label: Fmt.monthLabel(m) })), nfMonth, (v) => { nfMonth = v; AppState.set({}); }),
+      UI.segmented(months.all.map((m) => ({ value: m, label: Fmt.monthLabel(m) })), nfMonth, (v) => { nfMonth = v; AppState.set({}); }),
     ]));
 
     container.appendChild(UI.h("div", { class: "insight info", style: "margin-bottom:20px;" }, [
@@ -127,7 +133,7 @@
           { key: "divisao", label: "Divisão", render: (r) => (st.division === "consolidado" ? UI.badgeDivision(r.divisao) : "") },
           { key: "nome", label: "Nome", wrap: true, render: (r) => r.missing ? UI.badge("Faltando", "critical") : (r.nome || "—") },
           { key: "valor", label: "Valor", align: "right", render: (r) => (r.missing || r.valor === null ? "—" : Fmt.money(r.valor)) },
-          { key: "status", label: "Status", render: (r) => (r.missing ? "" : statusSelectCell(r)) },
+          { key: "status", label: "Status", render: (r) => (r.missing ? missingReasonCell(r) : statusSelectCell(r)) },
           { key: "actions", label: "", render: (r) => (r.missing || r.origem === "nfe" ? "" : actionsCell(r)) },
         ],
         rows,
@@ -135,6 +141,28 @@
         emptyText: "Nenhuma nota fiscal nesse filtro -- lance em Lançamentos (base Nota Fiscal/NFe) ou cadastre aqui.",
       })]),
     ]);
+  }
+
+  // Número faltando na sequência sem motivo registrado ainda -- marcar aqui
+  // cria uma nota manual mínima (só número/status), pra não ficar um
+  // "Faltando" vermelho sem explicação indefinidamente. Dá pra completar
+  // nome/valor depois editando essa nota como qualquer outra manual.
+  function missingReasonCell(r) {
+    const sel = UI.h("select", { style: "font-size:12px;" }, [
+      UI.h("option", { value: "" }, ["Por que falta?"]),
+      UI.h("option", { value: "cancelada" }, ["Cancelada"]),
+      UI.h("option", { value: "devolvida" }, ["Devolvida"]),
+    ]);
+    sel.addEventListener("change", () => {
+      if (!sel.value) return;
+      Storage.addNotaFiscal({
+        numero: r.numero, divisao: r.divisao, tipo: r.tipo, mes: nfMonth,
+        status: sel.value, nome: null, valor: null, origem: "manual",
+      });
+      UI.toast(`Nota ${r.numero} marcada como ${STATUS_LABEL[sel.value].toLowerCase()}.`);
+      AppState.set({});
+    });
+    return sel;
   }
 
   function statusSelectCell(r) {
