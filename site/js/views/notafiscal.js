@@ -6,9 +6,6 @@
 // numeração.
 (function () {
   const STATUS_LABEL = { normal: "Normal", cancelada: "Cancelada", devolvida: "Devolvida" };
-  const STATUS_KIND = { normal: "good", cancelada: "critical", devolvida: "warning" };
-  const TIPO_LABEL = { compra: "Compra", venda: "Venda" };
-  const TIPO_KIND = { compra: "neutral", venda: "good" };
 
   function currentMonthKey() {
     const d = new Date();
@@ -18,23 +15,31 @@
   // Estado só desta página (mês/filtros não são um conceito global do app,
   // igual o período acum/mês de outras telas) -- fica no módulo, não em
   // AppState, e some num reload de página (comportamento aceitável aqui).
-  let nfMonth = currentMonthKey();
+  // nfMonth começa null e é ajustado pro mês mais recente com dado real na
+  // primeira renderização -- sem isso, abrir a página no mês corrente podia
+  // cair num mês sem nenhuma nota (a base real cobre até jun/26, por ex.).
+  let nfMonth = null;
   let nfTipo = "todos";
   let nfStatus = "todos";
   let nfBusca = "";
 
-  function availableMonths() {
-    const months = new Set(Storage.listNotasFiscais().map((n) => n.mes).filter(Boolean));
+  function availableMonths(division) {
+    const months = new Set();
+    Compute.filterTx({ division, basis: "nfe" }).forEach((t) => months.add(t.date.slice(0, 7)));
+    Storage.listNotasFiscais().forEach((n) => { if (n.mes) months.add(n.mes); });
     months.add(currentMonthKey());
     return Array.from(months).sort();
   }
 
   function render(container) {
     const st = AppState.get();
+    const months = availableMonths(st.division);
+    if (nfMonth === null || !months.includes(nfMonth)) nfMonth = months[months.length - 1];
+
     UI.filterBar(container, { showMonth: false, showBasis: false, extra: [addBtn(st), downloadBtn(st)] });
 
     container.appendChild(UI.h("div", { style: "margin-bottom:16px;" }, [
-      UI.segmented(availableMonths().map((m) => ({ value: m, label: Fmt.monthLabel(m) })), nfMonth, (v) => { nfMonth = v; AppState.set({}); }),
+      UI.segmented(months.map((m) => ({ value: m, label: Fmt.monthLabel(m) })), nfMonth, (v) => { nfMonth = v; AppState.set({}); }),
     ]));
 
     container.appendChild(UI.h("div", { class: "insight info", style: "margin-bottom:20px;" }, [
@@ -42,8 +47,9 @@
       UI.h("div", {}, [
         UI.h("div", { class: "insight-title" }, ["Como funciona"]),
         UI.h("div", { class: "insight-body" }, [UI.richText(
-          "Compra e venda ficam em tabelas separadas, ordenadas pelo número da nota. Em vendas, um número que falta na sequência aparece em vermelho -- é a numeração que a própria Max Led emite, então um buraco pode indicar nota não lançada ou cancelada sem registrar aqui. " +
-          "<b>SNF</b> (Sem Nota Fiscal) é pra lançar rápido algo que não tem nota -- fica numa lista à parte, sem entrar na checagem de sequência."
+          "As notas vêm automaticamente dos lançamentos já cadastrados (Nota Fiscal/NFe) -- nada pra importar aqui. Compra e venda ficam em tabelas separadas, ordenadas pelo número da nota. Em vendas, um número que falta na sequência aparece em vermelho -- é a numeração que a própria Max Led emite, então um buraco pode indicar nota não lançada ou cancelada sem registrar. " +
+          "Pra mudar valor/nome de uma nota real, edite o lançamento correspondente; aqui dá pra mudar o status (cancelada/devolvida) direto. " +
+          "<b>SNF</b> (Sem Nota Fiscal) é pra lançar rápido algo que não tem nota -- fica numa lista à parte, sem entrar na checagem de sequência. \"Nova nota\" é só pra uma nota que ainda não tem lançamento correspondente."
         )]),
       ]),
     ]));
@@ -121,14 +127,29 @@
           { key: "divisao", label: "Divisão", render: (r) => (st.division === "consolidado" ? UI.badgeDivision(r.divisao) : "") },
           { key: "nome", label: "Nome", wrap: true, render: (r) => r.missing ? UI.badge("Faltando", "critical") : (r.nome || "—") },
           { key: "valor", label: "Valor", align: "right", render: (r) => (r.missing || r.valor === null ? "—" : Fmt.money(r.valor)) },
-          { key: "status", label: "Status", render: (r) => (r.missing ? "" : UI.badge(STATUS_LABEL[r.status || "normal"], STATUS_KIND[r.status || "normal"])) },
-          { key: "actions", label: "", render: (r) => (r.missing ? "" : actionsCell(r)) },
+          { key: "status", label: "Status", render: (r) => (r.missing ? "" : statusSelectCell(r)) },
+          { key: "actions", label: "", render: (r) => (r.missing || r.origem === "nfe" ? "" : actionsCell(r)) },
         ],
         rows,
         rowAttrs: (r) => (r.missing ? { style: "background:rgba(230,103,103,.08);" } : null),
-        emptyText: "Nenhuma nota fiscal cadastrada pra esse filtro.",
+        emptyText: "Nenhuma nota fiscal nesse filtro -- lance em Lançamentos (base Nota Fiscal/NFe) ou cadastre aqui.",
       })]),
     ]);
+  }
+
+  function statusSelectCell(r) {
+    const sel = UI.h("select", { style: "font-size:12px;" }, Object.entries(STATUS_LABEL).map(([v, l]) => UI.h("option", { value: v }, [l])));
+    sel.value = r.status || "normal";
+    sel.addEventListener("change", () => {
+      if (r.origem === "manual") {
+        Storage.updateNotaFiscal(r.id, { status: sel.value });
+      } else {
+        Storage.setOverride(r.id, { cancelled: sel.value === "cancelada", nfStatus: sel.value === "devolvida" ? "devolvida" : null });
+      }
+      UI.toast("Status atualizado.");
+      AppState.set({});
+    });
+    return sel;
   }
 
   function numeroCell(r) {
@@ -228,7 +249,7 @@
       if (!numeroInput.value || !nomeInput.value.trim() || !valorInput.value || !mesInput.value) { UI.toast("Preencha número, nome, valor e mês."); return; }
       const payload = {
         numero: parseInt(numeroInput.value, 10), nome: nomeInput.value.trim(), valor: parseFloat(valorInput.value),
-        divisao: divSel.value, tipo: tipoSel.value, mes: mesInput.value, status: statusSel.value, origem: "nfe",
+        divisao: divSel.value, tipo: tipoSel.value, mes: mesInput.value, status: statusSel.value, origem: "manual",
       };
       if (existing) Storage.updateNotaFiscal(existing.id, payload); else Storage.addNotaFiscal(payload);
       UI.toast("Nota fiscal salva.");

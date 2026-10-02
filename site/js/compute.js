@@ -883,31 +883,62 @@
   }
 
   // ---------------------------------------------------------------------
-  // Notas fiscais (controle fiscal -- separado dos lançamentos financeiros).
+  // Notas fiscais (controle fiscal). Fonte principal: os lançamentos
+  // basis:"nfe" que JÁ existem (vindos da planilha/importação) -- mesmo
+  // princípio de allTransactions()/loans(): nunca duplicar um dado que já
+  // está no sistema. Storage.notasFiscais só complementa: nota nova ainda
+  // sem lançamento correspondente, e os lançamentos "SNF" (sem nota fiscal).
+  // Status cancelada reaproveita o override de cancelamento que já existe
+  // pra qualquer lançamento; "devolvida" é um override novo (nfStatus),
+  // só usado por esta tela -- não afeta DRE/fluxo de caixa.
+  //
   // Detecção de número faltando só faz sentido pra VENDA: é a numeração que
   // a própria Max Led emite (sequencial por divisão/CNPJ). Nota de COMPRA é
   // emitida por cada fornecedor com a numeração dele -- não existe uma
   // sequência única pra detectar buraco, por isso só ordena. Uma nota
   // cancelada/devolvida conta como existente (não é buraco), só muda o status.
+  // Número não-numérico (raro, mas existe na base) nunca entra na checagem
+  // de sequência -- só aparece na lista, ordenado por último.
   // ---------------------------------------------------------------------
+  function isNumeroSequencial(numero) { return /^\d+$/.test(String(numero == null ? "" : numero).trim()); }
+
+  function notaFiscalStatusFor(tx) {
+    if (tx.cancelled) return "cancelada";
+    const ov = Storage.getOverrides()[tx.id];
+    if (ov && ov.nfStatus === "devolvida") return "devolvida";
+    return "normal";
+  }
+
+  function notasFiscaisRows(division, month) {
+    const real = filterTx({ division, basis: "nfe", month, includeCancelled: true }).map((t) => ({
+      id: t.id, numero: t.nota_fiscal, nome: t.counterparty, valor: t.value,
+      tipo: t.flow, divisao: t.division, status: notaFiscalStatusFor(t), origem: "nfe",
+    }));
+    const manual = Storage.listNotasFiscais().filter((n) => n.mes === month && n.origem !== "snf"
+      && (division === "consolidado" || n.divisao === division))
+      .map((n) => Object.assign({ origem: "manual" }, n));
+    return real.concat(manual);
+  }
+
   function notaFiscalGaps(rows) {
-    const sorted = rows.slice().sort((a, b) => Number(a.numero) - Number(b.numero));
+    const numericos = rows.filter((r) => isNumeroSequencial(r.numero));
+    const outros = rows.filter((r) => !isNumeroSequencial(r.numero));
+    const sorted = numericos.slice().sort((a, b) => Number(a.numero) - Number(b.numero));
     const out = [];
     sorted.forEach((r, i) => {
       out.push(Object.assign({}, r, { missing: false }));
       if (i < sorted.length - 1) {
         const cur = Number(r.numero), next = Number(sorted[i + 1].numero);
         for (let n = cur + 1; n < next; n++) {
-          out.push({ numero: n, nome: null, valor: null, tipo: "venda", divisao: r.divisao, status: null, missing: true });
+          out.push({ numero: n, nome: null, valor: null, tipo: "venda", divisao: r.divisao, status: null, missing: true, origem: null });
         }
       }
     });
-    return out;
+    return out.concat(outros.map((r) => Object.assign({}, r, { missing: false })));
   }
 
   function notasFiscaisSummary(division, month) {
-    const all = Storage.listNotasFiscais().filter((n) => n.mes === month && n.origem !== "snf"
-      && (division === "consolidado" || n.divisao === division));
+    const all = notasFiscaisRows(division, month);
     const divisoes = division === "consolidado" ? DIVISIONS : [division];
 
     let vendas = [];
@@ -916,7 +947,8 @@
     });
     vendas.sort((a, b) => (a.divisao === b.divisao ? Number(a.numero) - Number(b.numero) : a.divisao.localeCompare(b.divisao)));
 
-    const compras = all.filter((n) => n.tipo === "compra").slice().sort((a, b) => Number(a.numero) - Number(b.numero));
+    const compras = all.filter((n) => n.tipo === "compra").slice()
+      .sort((a, b) => (a.divisao === b.divisao ? Number(a.numero) - Number(b.numero) : a.divisao.localeCompare(b.divisao)));
 
     const snf = Storage.listNotasFiscais().filter((n) => n.mes === month && n.origem === "snf"
       && (division === "consolidado" || n.divisao === division));

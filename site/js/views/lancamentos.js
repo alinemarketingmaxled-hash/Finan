@@ -394,58 +394,58 @@
   // reconstruído a cada tecla, pra não perder o foco/cursor enquanto digita
   // (mesmo cuidado já usado no slider de Cenários).
   function quickEntryPanel(st) {
+    const divSel = UI.h("select", {}, [
+      UI.h("option", { value: "iluminacao" }, ["Max Led Iluminação"]),
+      UI.h("option", { value: "importacao" }, ["Max Led Importação"]),
+    ]);
+    divSel.value = st.division !== "consolidado" ? st.division : "iluminacao";
+
     const rowsBody = UI.h("tbody", {});
-    const totalsBox = UI.h("div", { class: "grid grid-2" });
+    const totalsBox = UI.h("div", {});
     const rows = [];
 
     function recomputeTotals() {
-      const totals = { iluminacao: { entrada: 0, saida: 0 }, importacao: { entrada: 0, saida: 0 } };
+      let entrada = 0, saida = 0;
       rows.forEach((r) => {
         const v = parseFloat(r.valueInput.value);
         if (!v || v <= 0) return;
-        totals[r.divSel.value][r.tipoSel.value] += v;
+        if (r.tipoSel.value === "entrada") entrada += v; else saida += v;
       });
       UI.clear(totalsBox);
-      [["iluminacao", "Max Led Iluminação"], ["importacao", "Max Led Importação"]].forEach(([key, label]) => {
-        const t = totals[key];
-        totalsBox.appendChild(UI.h("div", { class: "card", style: "padding:12px 14px;" }, [
-          UI.h("div", { style: "font-weight:700;font-size:12.5px;margin-bottom:6px;" }, [label]),
-          UI.h("div", { style: "display:flex;justify-content:space-between;gap:10px;font-size:12px;" }, [
-            UI.h("span", { class: "tabular", style: "color:var(--good-text);" }, [`Entrada ${Fmt.money(t.entrada)}`]),
-            UI.h("span", { class: "tabular", style: "color:var(--critical-text);" }, [`Saída ${Fmt.money(t.saida)}`]),
-          ]),
-          UI.h("div", { class: "tabular", style: "font-weight:700;margin-top:4px;" }, [`Saldo ${Fmt.money(t.entrada - t.saida)}`]),
-        ]));
-      });
+      totalsBox.appendChild(UI.h("div", { class: "card", style: "padding:12px 16px;display:flex;gap:28px;flex-wrap:wrap;" }, [
+        totalStat("Entrada", entrada, "good-text"),
+        totalStat("Saída", saida, "critical-text"),
+        totalStat("Saldo", entrada - saida, null),
+      ]));
+    }
+    function totalStat(label, value, colorVar) {
+      return UI.h("div", {}, [
+        UI.h("div", { style: "font-size:11px;color:var(--text-muted);" }, [label]),
+        UI.h("div", { class: "tabular", style: `font-weight:700;font-size:15px;${colorVar ? `color:var(--${colorVar});` : ""}` }, [Fmt.money(value)]),
+      ]);
     }
 
     function addRow() {
       const dateInput = UI.h("input", { type: "date", class: "input", style: "min-width:132px;" });
       dateInput.value = new Date().toISOString().slice(0, 10);
-      const divSel = UI.h("select", {}, [
-        UI.h("option", { value: "iluminacao" }, ["Iluminação"]),
-        UI.h("option", { value: "importacao" }, ["Importação"]),
-      ]);
-      divSel.value = st.division !== "consolidado" ? st.division : "iluminacao";
       const tipoSel = UI.h("select", {}, [UI.h("option", { value: "entrada" }, ["Entrada"]), UI.h("option", { value: "saida" }, ["Saída"])]);
-      const cpInput = UI.h("input", { class: "input", list: "quickCpList", placeholder: "Cliente/fornecedor", style: "min-width:150px;" });
+      const cpInput = UI.h("input", { class: "input", list: "quickCpList", placeholder: "Cliente/fornecedor", style: "min-width:170px;" });
       const catSel = UI.h("select", {}, [UI.h("option", { value: "" }, ["—"])].concat(Categories.list.map((c) => UI.h("option", { value: c }, [Fmt.titleCase(c)]))));
       const catTd = UI.h("td", {}, [catSel]);
-      const valueInput = UI.h("input", { type: "number", step: "0.01", min: "0", class: "input", placeholder: "0,00", style: "width:100px;" });
-      const notaInput = UI.h("input", { class: "input", placeholder: "Nº (opc.)", style: "width:85px;" });
+      const valueInput = UI.h("input", { type: "number", step: "0.01", min: "0", class: "input", placeholder: "0,00", style: "width:110px;" });
+      const notaInput = UI.h("input", { class: "input", placeholder: "Nº (opc.)", style: "width:90px;" });
       const removeBtn = UI.h("button", { class: "icon-btn", title: "Remover linha" }, [Icon("trash", { size: 12 })]);
 
       function syncCatVisibility() { catTd.style.display = tipoSel.value === "saida" ? "" : "none"; }
       tipoSel.addEventListener("change", () => { syncCatVisibility(); recomputeTotals(); });
-      divSel.addEventListener("change", recomputeTotals);
       valueInput.addEventListener("input", recomputeTotals);
 
       const tr = UI.h("tr", {}, [
-        UI.h("td", {}, [dateInput]), UI.h("td", {}, [divSel]), UI.h("td", {}, [tipoSel]),
+        UI.h("td", {}, [dateInput]), UI.h("td", {}, [tipoSel]),
         UI.h("td", {}, [cpInput]), catTd, UI.h("td", {}, [valueInput]), UI.h("td", {}, [notaInput]),
         UI.h("td", {}, [removeBtn]),
       ]);
-      const rowObj = { tr, dateInput, divSel, tipoSel, cpInput, catSel, valueInput, notaInput };
+      const rowObj = { tr, dateInput, tipoSel, cpInput, catSel, valueInput, notaInput };
       removeBtn.addEventListener("click", () => {
         tr.remove();
         rows.splice(rows.indexOf(rowObj), 1);
@@ -470,27 +470,32 @@
         if (!r.dateInput.value || !value || value <= 0) return;
         const isSaida = r.tipoSel.value === "saida";
         toSave.push({
-          date: r.dateInput.value, division: r.divSel.value, basis: "financeiro", flow: r.tipoSel.value,
+          date: r.dateInput.value, division: divSel.value, basis: "financeiro", flow: r.tipoSel.value,
           category: isSaida ? (r.catSel.value || null) : null,
           counterparty: r.cpInput.value.trim() || null, value, nota_fiscal: r.notaInput.value.trim() || null, note: "",
         });
       });
       if (!toSave.length) { UI.toast("Preencha pelo menos uma linha com data e valor."); return; }
       Storage.addLancamentosBulk(toSave, "quick-entry");
-      UI.toast(`${Fmt.num(toSave.length)} lançamento(s) salvos.`);
+      UI.toast(`${Fmt.num(toSave.length)} lançamento(s) salvos em ${Fmt.titleCase(divSel.options[divSel.selectedIndex].text)}.`);
       local.showQuickEntry = false;
       AppState.set({});
     });
 
     const table = UI.h("table", { class: "data-table" }, [
-      UI.h("thead", {}, [UI.h("tr", {}, ["Data", "Divisão", "Tipo", "Contraparte", "Categoria", "Valor", "Nota Fiscal", ""].map((l) => UI.h("th", {}, [l])))]),
+      UI.h("thead", {}, [UI.h("tr", {}, ["Data", "Tipo", "Contraparte", "Categoria", "Valor", "Nota Fiscal", ""].map((l) => UI.h("th", {}, [l])))]),
       rowsBody,
     ]);
 
     return UI.h("div", { class: "card", style: "margin-bottom:20px;" }, [
-      UI.h("div", { style: "font-weight:700;font-size:13px;margin-bottom:4px;" }, ["Lançamento rápido"]),
-      UI.h("div", { style: "font-size:11.5px;color:var(--text-muted);margin-bottom:14px;" }, [
-        "Preencha quantas linhas precisar e salve tudo de uma vez. Linha em branco (sem data ou valor) é ignorada. Categoria só se aplica à saída.",
+      UI.h("div", { style: "display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:12px;margin-bottom:14px;" }, [
+        UI.h("div", {}, [
+          UI.h("div", { style: "font-weight:700;font-size:13px;margin-bottom:4px;" }, ["Lançamento rápido"]),
+          UI.h("div", { style: "font-size:11.5px;color:var(--text-muted);" }, [
+            "Escolha a empresa, preencha as linhas e salve tudo de uma vez. Linha em branco é ignorada.",
+          ]),
+        ]),
+        UI.field("Empresa", divSel),
       ]),
       totalsBox,
       UI.h("div", { style: "overflow-x:auto;margin-top:14px;" }, [table]),
