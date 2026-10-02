@@ -883,6 +883,53 @@
   }
 
   // ---------------------------------------------------------------------
+  // Notas fiscais (controle fiscal -- separado dos lançamentos financeiros).
+  // Detecção de número faltando só faz sentido pra VENDA: é a numeração que
+  // a própria Max Led emite (sequencial por divisão/CNPJ). Nota de COMPRA é
+  // emitida por cada fornecedor com a numeração dele -- não existe uma
+  // sequência única pra detectar buraco, por isso só ordena. Uma nota
+  // cancelada/devolvida conta como existente (não é buraco), só muda o status.
+  // ---------------------------------------------------------------------
+  function notaFiscalGaps(rows) {
+    const sorted = rows.slice().sort((a, b) => Number(a.numero) - Number(b.numero));
+    const out = [];
+    sorted.forEach((r, i) => {
+      out.push(Object.assign({}, r, { missing: false }));
+      if (i < sorted.length - 1) {
+        const cur = Number(r.numero), next = Number(sorted[i + 1].numero);
+        for (let n = cur + 1; n < next; n++) {
+          out.push({ numero: n, nome: null, valor: null, tipo: "venda", divisao: r.divisao, status: null, missing: true });
+        }
+      }
+    });
+    return out;
+  }
+
+  function notasFiscaisSummary(division, month) {
+    const all = Storage.listNotasFiscais().filter((n) => n.mes === month && n.origem !== "snf"
+      && (division === "consolidado" || n.divisao === division));
+    const divisoes = division === "consolidado" ? DIVISIONS : [division];
+
+    let vendas = [];
+    divisoes.forEach((div) => {
+      vendas = vendas.concat(notaFiscalGaps(all.filter((n) => n.divisao === div && n.tipo === "venda")));
+    });
+    vendas.sort((a, b) => (a.divisao === b.divisao ? Number(a.numero) - Number(b.numero) : a.divisao.localeCompare(b.divisao)));
+
+    const compras = all.filter((n) => n.tipo === "compra").slice().sort((a, b) => Number(a.numero) - Number(b.numero));
+
+    const snf = Storage.listNotasFiscais().filter((n) => n.mes === month && n.origem === "snf"
+      && (division === "consolidado" || n.divisao === division));
+
+    return {
+      vendas, compras, snf,
+      faltantesCount: vendas.filter((r) => r.missing).length,
+      totalVendas: round2(vendas.filter((r) => !r.missing && r.status !== "cancelada").reduce((s, r) => s + (Number(r.valor) || 0), 0)),
+      totalCompras: round2(compras.filter((r) => r.status !== "cancelada").reduce((s, r) => s + (Number(r.valor) || 0), 0)),
+    };
+  }
+
+  // ---------------------------------------------------------------------
   // Marketing: quanto um investimento em publicidade/marketing precisa
   // trazer de volta em vendas pra pelo menos se pagar. Usa a margem bruta
   // real do período (receita menos impostos e custo de mercadoria, antes
@@ -1029,6 +1076,6 @@
     loans, loansTotals, receivablesPayables, receivablesPayablesWindow, healthScore, insights, actionPlan, budgetStatus, pipelineSummary, pipelineInstallments,
     forecast, loanInstallmentsForecast, visaoFutura,
     applyScenario, scenariosSummary, committedInvestments, investmentCapacity,
-    categoryForecast, metaStatus, marketingReturnNeeded,
+    categoryForecast, metaStatus, marketingReturnNeeded, notasFiscaisSummary,
   };
 })(window);

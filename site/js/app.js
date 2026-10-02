@@ -5,6 +5,7 @@
       { id: "overview", label: "Visão Geral", icon: "home" },
       { id: "fluxocaixa", label: "Fluxo de Caixa", icon: "trendingUp" },
       { id: "lancamentos", label: "Lançamentos", icon: "list" },
+      { id: "notafiscal", label: "Nota Fiscal", icon: "receipt" },
       { id: "divisoes", label: "Divisões", icon: "layers" },
     ] },
     { group: "Análise", items: [
@@ -41,6 +42,7 @@
     overview: ["Visão Geral", "Resumo consolidado da Max Led"],
     fluxocaixa: ["Fluxo de Caixa", "Entradas, saídas e saldo acumulado ao longo do tempo"],
     lancamentos: ["Lançamentos", "Todas as entradas e saídas, financeiro e nota fiscal"],
+    notafiscal: ["Nota Fiscal", "Controle fiscal: notas de compra e venda por divisão, numeração e status"],
     divisoes: ["Divisões", "Max Led Iluminação vs Max Led Importação"],
     dre: ["DRE", "Demonstrativo de resultado do exercício"],
     categorias: ["Categorias & Fornecedores", "Para onde vai o dinheiro"],

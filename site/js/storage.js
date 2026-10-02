@@ -18,6 +18,7 @@
     cenarios: NS + "cenarios",
     investimentos: NS + "investimentos",
     marketingSimulacoes: NS + "marketingSimulacoes",
+    notasFiscais: NS + "notasFiscais",
   };
 
   function read(key, fallback) {
@@ -296,6 +297,24 @@
       write(KEYS.marketingSimulacoes, this.listMarketingSimulacoes().filter((s) => s.id !== id));
     },
 
+    // ---- notas fiscais (aba Nota Fiscal -- controle da parte fiscal,
+    // separado dos lançamentos financeiros) ----
+    listNotasFiscais() { return read(KEYS.notasFiscais, []); },
+    addNotaFiscal(nf) {
+      const list = this.listNotasFiscais();
+      const row = Object.assign({ id: uid(), createdAt: new Date().toISOString(), status: "normal" }, nf);
+      list.push(row);
+      write(KEYS.notasFiscais, list);
+      return row;
+    },
+    updateNotaFiscal(id, patch) {
+      const list = this.listNotasFiscais().map((n) => (n.id === id ? Object.assign({}, n, patch) : n));
+      write(KEYS.notasFiscais, list);
+    },
+    removeNotaFiscal(id) {
+      write(KEYS.notasFiscais, this.listNotasFiscais().filter((n) => n.id !== id));
+    },
+
     // ---- config ----
     getConfig() { return read(KEYS.config, {}); },
     setConfig(patch) {
@@ -322,6 +341,7 @@
         cenarios: this.listCenarios(),
         investimentos: this.listInvestimentos(),
         marketingSimulacoes: this.listMarketingSimulacoes(),
+        notasFiscais: this.listNotasFiscais(),
       };
     },
     importAll(payload) {
@@ -340,6 +360,7 @@
       if (Array.isArray(payload.cenarios)) write(KEYS.cenarios, payload.cenarios);
       if (Array.isArray(payload.investimentos)) write(KEYS.investimentos, payload.investimentos);
       if (Array.isArray(payload.marketingSimulacoes)) write(KEYS.marketingSimulacoes, payload.marketingSimulacoes);
+      if (Array.isArray(payload.notasFiscais)) write(KEYS.notasFiscais, payload.notasFiscais);
     },
     resetAll() {
       Object.values(KEYS).forEach((k) => localStorage.removeItem(k));

@@ -42,6 +42,7 @@
     fork: 'M6 3v7a3 3 0 0 0 3 3h6a3 3 0 0 0 3-3V3 M12 13v8 M6 3v4 M18 3v4',
     flag: 'M5 3v18 M5 4h11l-2.5 4L16 12H5',
     megaphone: 'M3 11v3a1 1 0 0 0 1 1h2l5 4.5V5.5L6 10H4a1 1 0 0 0-1 1Z M15 8.5a4 4 0 0 1 0 6 M18 5.5a8 8 0 0 1 0 12',
+    receipt: 'M6 2h12v19l-2-1.3-2 1.3-2-1.3-2 1.3-2-1.3-2 1.3V2Z M9 7h6 M9 11h6 M9 15h3.5',
   };
 
   function icon(name, opts) {
