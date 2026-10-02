@@ -430,14 +430,25 @@
       dateInput.value = new Date().toISOString().slice(0, 10);
       const tipoSel = UI.h("select", {}, [UI.h("option", { value: "entrada" }, ["Entrada"]), UI.h("option", { value: "saida" }, ["Saída"])]);
       const cpInput = UI.h("input", { class: "input", list: "quickCpList", placeholder: "Cliente/fornecedor", style: "min-width:170px;" });
-      const catSel = UI.h("select", {}, [UI.h("option", { value: "" }, ["—"])].concat(Categories.list.map((c) => UI.h("option", { value: c }, [Fmt.titleCase(c)]))));
+      const catSel = UI.h("select", { style: "min-width:150px;" });
       const catTd = UI.h("td", {}, [catSel]);
       const valueInput = UI.h("input", { type: "number", step: "0.01", min: "0", class: "input", placeholder: "0,00", style: "width:110px;" });
       const notaInput = UI.h("input", { class: "input", placeholder: "Nº (opc.)", style: "width:90px;" });
       const removeBtn = UI.h("button", { class: "icon-btn", title: "Remover linha" }, [Icon("trash", { size: 12 })]);
 
-      function syncCatVisibility() { catTd.style.display = tipoSel.value === "saida" ? "" : "none"; }
-      tipoSel.addEventListener("change", () => { syncCatVisibility(); recomputeTotals(); });
+      // Saída usa a taxonomia de despesa (fornecedores, impostos, investimento...);
+      // entrada usa categoria de cliente (atacado, varejo...), que é salva por
+      // contraparte (Storage.setClienteCategoria), não no lançamento em si.
+      function syncCatOptions() {
+        const isSaida = tipoSel.value === "saida";
+        const list = isSaida ? Categories.list : Categories.clientList;
+        const prev = catSel.value;
+        UI.clear(catSel);
+        catSel.appendChild(UI.h("option", { value: "" }, [isSaida ? "— categoria —" : "— categoria de cliente —"]));
+        list.forEach((c) => catSel.appendChild(UI.h("option", { value: c }, [Fmt.titleCase(c)])));
+        if (list.includes(prev)) catSel.value = prev;
+      }
+      tipoSel.addEventListener("change", () => { syncCatOptions(); recomputeTotals(); });
       valueInput.addEventListener("input", recomputeTotals);
 
       const tr = UI.h("tr", {}, [
@@ -453,7 +464,7 @@
       });
       rows.push(rowObj);
       rowsBody.appendChild(tr);
-      syncCatVisibility();
+      syncCatOptions();
     }
 
     for (let i = 0; i < 5; i++) addRow();
@@ -469,10 +480,14 @@
         const value = parseFloat(r.valueInput.value);
         if (!r.dateInput.value || !value || value <= 0) return;
         const isSaida = r.tipoSel.value === "saida";
+        const counterparty = r.cpInput.value.trim() || null;
+        if (!isSaida && r.catSel.value && counterparty) {
+          Storage.setClienteCategoria(counterparty, r.catSel.value);
+        }
         toSave.push({
           date: r.dateInput.value, division: divSel.value, basis: "financeiro", flow: r.tipoSel.value,
           category: isSaida ? (r.catSel.value || null) : null,
-          counterparty: r.cpInput.value.trim() || null, value, nota_fiscal: r.notaInput.value.trim() || null, note: "",
+          counterparty, value, nota_fiscal: r.notaInput.value.trim() || null, note: "",
         });
       });
       if (!toSave.length) { UI.toast("Preencha pelo menos uma linha com data e valor."); return; }
