@@ -1,5 +1,5 @@
 (function () {
-  const local = { flow: "", category: "", search: "", page: 0, pageSize: 50, onlyUncategorized: false, showClientChecklist: false, clientPage: 0 };
+  const local = { flow: "", category: "", search: "", page: 0, pageSize: 50, onlyUncategorized: false, showClientChecklist: false, clientPage: 0, showQuickEntry: false };
   const selection = new Map(); // id -> row (despesas/compras), persiste entre páginas/filtros até aplicar ou limpar
   const clientSelection = new Map(); // nome -> {nome,valor,n}, separado -- cliente é por NOME, não por lançamento
   const CLIENT_PAGE_SIZE = 30;
@@ -24,8 +24,12 @@
 
     UI.filterBar(container, {
       showMonth: true, showBasis: true,
-      extra: [searchBox(() => refresh()), importBtn(), addBtn()],
+      extra: [searchBox(() => refresh()), importBtn(), quickEntryToggleBtn(), addBtn()],
     });
+
+    const quickEntryWrap = UI.h("div", {});
+    container.appendChild(quickEntryWrap);
+    if (local.showQuickEntry) quickEntryWrap.appendChild(quickEntryPanel(st));
 
     const flowOptions = st.basis === "financeiro"
       ? [{ value: "", label: "Todos os tipos" }, { value: "entrada", label: "Entradas" }, { value: "saida", label: "Saídas" }]
@@ -373,9 +377,126 @@
   }
 
   function addBtn() {
-    const btn = UI.h("button", { class: "btn btn-accent btn-sm" }, [Icon("plus", { size: 14 }), "Novo lançamento"]);
+    const btn = UI.h("button", { class: "btn btn-sm" }, [Icon("plus", { size: 14 }), "Lançamento único"]);
     btn.addEventListener("click", () => openLancamentoModal());
     return btn;
+  }
+
+  function quickEntryToggleBtn() {
+    const btn = UI.h("button", { class: "btn btn-accent btn-sm" }, [Icon("list", { size: 14 }), local.showQuickEntry ? "Fechar lançamento rápido" : "Lançamento rápido"]);
+    btn.addEventListener("click", () => { local.showQuickEntry = !local.showQuickEntry; AppState.set({}); });
+    return btn;
+  }
+
+  // Lançamento em lote, em formato de planilha: várias linhas de uma vez,
+  // com o total de entrada/saída por divisão atualizando ao digitar. Cada
+  // input é criado uma única vez e só lido no total/no salvar -- nunca
+  // reconstruído a cada tecla, pra não perder o foco/cursor enquanto digita
+  // (mesmo cuidado já usado no slider de Cenários).
+  function quickEntryPanel(st) {
+    const rowsBody = UI.h("tbody", {});
+    const totalsBox = UI.h("div", { class: "grid grid-2" });
+    const rows = [];
+
+    function recomputeTotals() {
+      const totals = { iluminacao: { entrada: 0, saida: 0 }, importacao: { entrada: 0, saida: 0 } };
+      rows.forEach((r) => {
+        const v = parseFloat(r.valueInput.value);
+        if (!v || v <= 0) return;
+        totals[r.divSel.value][r.tipoSel.value] += v;
+      });
+      UI.clear(totalsBox);
+      [["iluminacao", "Max Led Iluminação"], ["importacao", "Max Led Importação"]].forEach(([key, label]) => {
+        const t = totals[key];
+        totalsBox.appendChild(UI.h("div", { class: "card", style: "padding:12px 14px;" }, [
+          UI.h("div", { style: "font-weight:700;font-size:12.5px;margin-bottom:6px;" }, [label]),
+          UI.h("div", { style: "display:flex;justify-content:space-between;gap:10px;font-size:12px;" }, [
+            UI.h("span", { class: "tabular", style: "color:var(--good-text);" }, [`Entrada ${Fmt.money(t.entrada)}`]),
+            UI.h("span", { class: "tabular", style: "color:var(--critical-text);" }, [`Saída ${Fmt.money(t.saida)}`]),
+          ]),
+          UI.h("div", { class: "tabular", style: "font-weight:700;margin-top:4px;" }, [`Saldo ${Fmt.money(t.entrada - t.saida)}`]),
+        ]));
+      });
+    }
+
+    function addRow() {
+      const dateInput = UI.h("input", { type: "date", class: "input", style: "min-width:132px;" });
+      dateInput.value = new Date().toISOString().slice(0, 10);
+      const divSel = UI.h("select", {}, [
+        UI.h("option", { value: "iluminacao" }, ["Iluminação"]),
+        UI.h("option", { value: "importacao" }, ["Importação"]),
+      ]);
+      divSel.value = st.division !== "consolidado" ? st.division : "iluminacao";
+      const tipoSel = UI.h("select", {}, [UI.h("option", { value: "entrada" }, ["Entrada"]), UI.h("option", { value: "saida" }, ["Saída"])]);
+      const cpInput = UI.h("input", { class: "input", list: "quickCpList", placeholder: "Cliente/fornecedor", style: "min-width:150px;" });
+      const catSel = UI.h("select", {}, [UI.h("option", { value: "" }, ["—"])].concat(Categories.list.map((c) => UI.h("option", { value: c }, [Fmt.titleCase(c)]))));
+      const catTd = UI.h("td", {}, [catSel]);
+      const valueInput = UI.h("input", { type: "number", step: "0.01", min: "0", class: "input", placeholder: "0,00", style: "width:100px;" });
+      const notaInput = UI.h("input", { class: "input", placeholder: "Nº (opc.)", style: "width:85px;" });
+      const removeBtn = UI.h("button", { class: "icon-btn", title: "Remover linha" }, [Icon("trash", { size: 12 })]);
+
+      function syncCatVisibility() { catTd.style.display = tipoSel.value === "saida" ? "" : "none"; }
+      tipoSel.addEventListener("change", () => { syncCatVisibility(); recomputeTotals(); });
+      divSel.addEventListener("change", recomputeTotals);
+      valueInput.addEventListener("input", recomputeTotals);
+
+      const tr = UI.h("tr", {}, [
+        UI.h("td", {}, [dateInput]), UI.h("td", {}, [divSel]), UI.h("td", {}, [tipoSel]),
+        UI.h("td", {}, [cpInput]), catTd, UI.h("td", {}, [valueInput]), UI.h("td", {}, [notaInput]),
+        UI.h("td", {}, [removeBtn]),
+      ]);
+      const rowObj = { tr, dateInput, divSel, tipoSel, cpInput, catSel, valueInput, notaInput };
+      removeBtn.addEventListener("click", () => {
+        tr.remove();
+        rows.splice(rows.indexOf(rowObj), 1);
+        recomputeTotals();
+      });
+      rows.push(rowObj);
+      rowsBody.appendChild(tr);
+      syncCatVisibility();
+    }
+
+    for (let i = 0; i < 5; i++) addRow();
+    recomputeTotals();
+
+    const addRowBtn = UI.h("button", { class: "btn btn-sm" }, [Icon("plus", { size: 13 }), "Adicionar linha"]);
+    addRowBtn.addEventListener("click", addRow);
+
+    const saveBtn = UI.h("button", { class: "btn btn-accent" }, ["Salvar tudo"]);
+    saveBtn.addEventListener("click", () => {
+      const toSave = [];
+      rows.forEach((r) => {
+        const value = parseFloat(r.valueInput.value);
+        if (!r.dateInput.value || !value || value <= 0) return;
+        const isSaida = r.tipoSel.value === "saida";
+        toSave.push({
+          date: r.dateInput.value, division: r.divSel.value, basis: "financeiro", flow: r.tipoSel.value,
+          category: isSaida ? (r.catSel.value || null) : null,
+          counterparty: r.cpInput.value.trim() || null, value, nota_fiscal: r.notaInput.value.trim() || null, note: "",
+        });
+      });
+      if (!toSave.length) { UI.toast("Preencha pelo menos uma linha com data e valor."); return; }
+      Storage.addLancamentosBulk(toSave, "quick-entry");
+      UI.toast(`${Fmt.num(toSave.length)} lançamento(s) salvos.`);
+      local.showQuickEntry = false;
+      AppState.set({});
+    });
+
+    const table = UI.h("table", { class: "data-table" }, [
+      UI.h("thead", {}, [UI.h("tr", {}, ["Data", "Divisão", "Tipo", "Contraparte", "Categoria", "Valor", "Nota Fiscal", ""].map((l) => UI.h("th", {}, [l])))]),
+      rowsBody,
+    ]);
+
+    return UI.h("div", { class: "card", style: "margin-bottom:20px;" }, [
+      UI.h("div", { style: "font-weight:700;font-size:13px;margin-bottom:4px;" }, ["Lançamento rápido"]),
+      UI.h("div", { style: "font-size:11.5px;color:var(--text-muted);margin-bottom:14px;" }, [
+        "Preencha quantas linhas precisar e salve tudo de uma vez. Linha em branco (sem data ou valor) é ignorada. Categoria só se aplica à saída.",
+      ]),
+      totalsBox,
+      UI.h("div", { style: "overflow-x:auto;margin-top:14px;" }, [table]),
+      UI.h("div", { style: "display:flex;justify-content:space-between;margin-top:14px;" }, [addRowBtn, saveBtn]),
+      UI.h("datalist", { id: "quickCpList" }, counterpartyOptions()),
+    ]);
   }
 
   function importBtn() {
